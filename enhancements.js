@@ -1,4 +1,6 @@
 'use strict';
+/* Landings de servicio ya construidas (tarea 4.2). Solo en español; en/pt/fr no tienen todavía estas páginas. */
+const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccion-de-datos-personales-ecuador/index.html'};
 (() => {
   // Prefijo de rutas para las páginas de otros idiomas (carpetas en/, pt/, fr/).
   const BASE=document.documentElement.dataset.base||'';
@@ -93,7 +95,11 @@
     const actions=node('div','practice-actions');
     const ask=node('button','button button-primary practice-ask',null,{type:'button','data-practice-ask':service.id});
     ask.append(node('span','',t('serviceAsk')),node('span','',' ↗',{'aria-hidden':'true'}));
-    actions.append(ask);wrap.append(actions,node('p','practice-note',t('serviceScope')));
+    actions.append(ask);
+    // Tarea 4.2: enlace a la landing del servicio cuando ya existe (solo versión en español).
+    const page=SERVICE_PAGES[service.id];
+    if(page){const more=node('a','button button-outline practice-more',null,{href:page});more.append(node('span','','Ver el servicio'),node('span','',' →',{'aria-hidden':'true'}));actions.append(more);}
+    wrap.append(actions,node('p','practice-note',t('serviceScope')));
     return wrap;
   }
   function renderPanel(animate){
@@ -355,3 +361,6 @@
   reduced.addEventListener('change',()=>{document.documentElement.classList.toggle('motion-enabled',!reduced.matches&&!!revealObserver);if(reduced.matches)$$('.reveal').forEach(el=>el.classList.add('is-revealed'));});
 
 })();
+/* Enlaces del pie a servicios sin página propia todavía: #servicio-<id> abre ese servicio en la Home (tarea 4.2, provisional). */
+(()=>{function openService(){const m=location.hash.match(/^#servicio-([a-z]+)$/);if(!m)return;const row=document.getElementById('practice-row-'+m[1]);if(!row)return;const more=row.closest('details');if(more)more.open=true;if(row.getAttribute('aria-current')!=='true'&&row.getAttribute('aria-expanded')!=='true')row.click();(row.closest('.practice-item')||row).scrollIntoView({block:'center'});}
+addEventListener('hashchange',openService);if(document.readyState==='complete')setTimeout(openService,60);else addEventListener('load',()=>setTimeout(openService,60));})();

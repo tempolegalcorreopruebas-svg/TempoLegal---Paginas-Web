@@ -16,23 +16,39 @@
     return element;
   };
 
-  // Navegación móvil: estado accesible y cierre con Escape o al elegir un enlace.
+  // Navegación móvil (tarea 1.2): estado accesible, foco dentro del menú,
+  // cierre con Escape, al elegir un enlace o al pulsar fuera, y página bloqueada mientras está abierto.
   const menuButton = $('.menu-toggle');
   const nav = $('#main-nav');
-  function closeMenu() {
-    menuButton.setAttribute('aria-expanded', 'false');
-    menuButton.querySelector('.sr-only').textContent = t('menuOpen');
-    nav.classList.remove('is-open');
-  }
-  menuButton.addEventListener('click', () => {
-    const open = menuButton.getAttribute('aria-expanded') !== 'true';
+  const menuItems = () => [...nav.querySelectorAll('a[href],button:not([disabled])')];
+  const isMenuOpen = () => menuButton.getAttribute('aria-expanded') === 'true';
+  function setMenu(open, returnFocus) {
     menuButton.setAttribute('aria-expanded', String(open));
     menuButton.querySelector('.sr-only').textContent = t(open ? 'menuClose' : 'menuOpen');
     nav.classList.toggle('is-open', open);
+    document.body.classList.toggle('menu-open', open);
+    if (open) { const first = menuItems()[0]; if (first) first.focus(); }
+    else if (returnFocus) menuButton.focus();
+  }
+  function closeMenu(returnFocus) { if (isMenuOpen() || nav.classList.contains('is-open')) setMenu(false, returnFocus); }
+  menuButton.addEventListener('click', () => setMenu(!isMenuOpen(), false));
+  nav.addEventListener('click', event => { if (event.target.closest('a,button')) closeMenu(false); });
+  document.addEventListener('keydown', event => {
+    if (!isMenuOpen()) return;
+    if (event.key === 'Escape') { event.preventDefault(); closeMenu(true); return; }
+    if (event.key !== 'Tab') return;
+    // Recorrido circular: enlaces del menú y botón de cerrar.
+    const cycle = [...menuItems(), menuButton];
+    const index = cycle.indexOf(document.activeElement);
+    if (index === -1) return;
+    const next = event.shiftKey ? (index - 1 + cycle.length) % cycle.length : (index + 1) % cycle.length;
+    event.preventDefault();
+    cycle[next].focus();
   });
-  nav.addEventListener('click', event => { if (event.target.closest('a,button')) closeMenu(); });
-  document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
-  matchMedia('(min-width: 1101px)').addEventListener('change', event => { if (event.matches) closeMenu(); });
+  document.addEventListener('click', event => {
+    if (isMenuOpen() && !event.target.closest('.site-header')) closeMenu(false);
+  });
+  matchMedia('(min-width: 1101px)').addEventListener('change', event => { if (event.matches) closeMenu(false); });
 
   // Diálogos nativos: confinamiento de foco, Escape y restauración del foco.
   function updateDialogLock() { document.body.classList.toggle('dialog-open', !!$('dialog[open]')); }

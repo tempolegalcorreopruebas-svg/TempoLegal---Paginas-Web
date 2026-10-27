@@ -275,7 +275,7 @@ window.TEMPO_CONTENT = {
       {
         "name": "Francisco Mosquera Aulestia",
         "company": "Grupo Mosquera Aulestia (GMA)",
-        "image": "francisco-approved.jpg",
+        "image": "francisco-approved.webp",
         "logo": "client-029.svg",
         "website": "https://mosqueraulestia.com/",
         "id": "francisco",
@@ -294,7 +294,7 @@ window.TEMPO_CONTENT = {
       {
         "name": "Ana Cecilia Andrade",
         "company": "Grupo FLP",
-        "image": "ana-approved.jpg",
+        "image": "ana-approved.webp",
         "logo": "client-027.svg",
         "website": "https://www.flp.co/",
         "id": "ana",
@@ -334,7 +334,7 @@ window.TEMPO_CONTENT = {
       {
         "name": "Juan Pazmiño",
         "company": "Rectificadora Pazmiño S.A.",
-        "image": "juan-approved.jpg",
+        "image": "juan-approved.webp",
         "logo": "client-050.svg",
         "website": "https://rpazmino.com/",
         "id": "juan",
@@ -612,7 +612,7 @@ window.TEMPO_CONTENT = {
     "clientReview": {
       "name": "Eleazar Becerra",
       "company": "Cámara de Comercio Exterior",
-      "image": "eleazar-approved.jpg",
+      "image": "eleazar-approved.webp",
       "logo": "client-004.png",
       "website": "https://www.camaracomercioexterior.edu.pe/",
       "id": "eleazar",
@@ -1108,7 +1108,7 @@ window.TEMPO_CONTENT = {
       {
         "name": "Francisco Mosquera Aulestia",
         "company": "Grupo Mosquera Aulestia (GMA)",
-        "image": "francisco-approved.jpg",
+        "image": "francisco-approved.webp",
         "logo": "client-029.svg",
         "website": "https://mosqueraulestia.com/",
         "id": "francisco",
@@ -1127,7 +1127,7 @@ window.TEMPO_CONTENT = {
       {
         "name": "Juan Pazmiño",
         "company": "Rectificadora Pazmiño S.A.",
-        "image": "juan-approved.jpg",
+        "image": "juan-approved.webp",
         "logo": "client-050.svg",
         "website": "https://rpazmino.com/",
         "id": "juan",
@@ -1161,7 +1161,7 @@ window.TEMPO_CONTENT = {
       {
         "name": "Ana Cecilia Andrade",
         "company": "Grupo FLP",
-        "image": "ana-approved.jpg",
+        "image": "ana-approved.webp",
         "logo": "client-027.svg",
         "website": "https://www.flp.co/",
         "id": "ana",
@@ -1432,7 +1432,7 @@ window.TEMPO_CONTENT = {
     "clientReview": {
       "name": "Eleazar Becerra",
       "company": "Cámara de Comercio Exterior",
-      "image": "eleazar-approved.jpg",
+      "image": "eleazar-approved.webp",
       "logo": "client-004.png",
       "website": "https://www.camaracomercioexterior.edu.pe/",
       "id": "eleazar",
@@ -1925,7 +1925,7 @@ window.TEMPO_CONTENT = {
       {
         "name": "Francisco Mosquera Aulestia",
         "company": "Grupo Mosquera Aulestia (GMA)",
-        "image": "francisco-approved.jpg",
+        "image": "francisco-approved.webp",
         "logo": "client-029.svg",
         "website": "https://mosqueraulestia.com/",
         "id": "francisco",
@@ -1944,7 +1944,7 @@ window.TEMPO_CONTENT = {
       {
         "name": "Juan Pazmiño",
         "company": "Rectificadora Pazmiño S.A.",
-        "image": "juan-approved.jpg",
+        "image": "juan-approved.webp",
         "logo": "client-050.svg",
         "website": "https://rpazmino.com/",
         "id": "juan",
@@ -1978,7 +1978,7 @@ window.TEMPO_CONTENT = {
       {
         "name": "Ana Cecilia Andrade",
         "company": "Grupo FLP",
-        "image": "ana-approved.jpg",
+        "image": "ana-approved.webp",
         "logo": "client-027.svg",
         "website": "https://www.flp.co/",
         "id": "ana",
@@ -2249,7 +2249,7 @@ window.TEMPO_CONTENT = {
     "clientReview": {
       "name": "Eleazar Becerra",
       "company": "Cámara de Comercio Exterior",
-      "image": "eleazar-approved.jpg",
+      "image": "eleazar-approved.webp",
       "logo": "client-004.png",
       "website": "https://www.camaracomercioexterior.edu.pe/",
       "id": "eleazar",
@@ -2742,7 +2742,7 @@ window.TEMPO_CONTENT = {
       {
         "name": "Francisco Mosquera Aulestia",
         "company": "Grupo Mosquera Aulestia (GMA)",
-        "image": "francisco-approved.jpg",
+        "image": "francisco-approved.webp",
         "logo": "client-029.svg",
         "website": "https://mosqueraulestia.com/",
         "id": "francisco",
@@ -2761,7 +2761,7 @@ window.TEMPO_CONTENT = {
       {
         "name": "Juan Pazmiño",
         "company": "Rectificadora Pazmiño S.A.",
-        "image": "juan-approved.jpg",
+        "image": "juan-approved.webp",
         "logo": "client-050.svg",
         "website": "https://rpazmino.com/",
         "id": "juan",
@@ -2795,7 +2795,7 @@ window.TEMPO_CONTENT = {
       {
         "name": "Ana Cecilia Andrade",
         "company": "Grupo FLP",
-        "image": "ana-approved.jpg",
+        "image": "ana-approved.webp",
         "logo": "client-027.svg",
         "website": "https://www.flp.co/",
         "id": "ana",
@@ -3066,7 +3066,7 @@ window.TEMPO_CONTENT = {
     "clientReview": {
       "name": "Eleazar Becerra",
       "company": "Cámara de Comercio Exterior",
-      "image": "eleazar-approved.jpg",
+      "image": "eleazar-approved.webp",
       "logo": "client-004.png",
       "website": "https://www.camaracomercioexterior.edu.pe/",
       "id": "eleazar",

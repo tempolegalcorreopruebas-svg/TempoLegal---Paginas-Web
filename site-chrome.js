@@ -21,6 +21,7 @@
     document.querySelectorAll('[data-footer-route]').forEach(link => {
       const href = link.getAttribute('href');
       if (href.startsWith('#')) return;
+      if (href.includes('/')) return; // landings en carpetas: se deja la ruta completa (tarea 4.2)
       const url = new URL(href, location.href);
       url.searchParams.set('lang', language.language);
       link.setAttribute('href', url.pathname.split('/').pop() + url.search + url.hash);
