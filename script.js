@@ -16,23 +16,39 @@
     return element;
   };
 
-  // Navegación móvil: estado accesible y cierre con Escape o al elegir un enlace.
+  // Navegación móvil (tarea 1.2): estado accesible, foco dentro del menú,
+  // cierre con Escape, al elegir un enlace o al pulsar fuera, y página bloqueada mientras está abierto.
   const menuButton = $('.menu-toggle');
   const nav = $('#main-nav');
-  function closeMenu() {
-    menuButton.setAttribute('aria-expanded', 'false');
-    menuButton.querySelector('.sr-only').textContent = t('menuOpen');
-    nav.classList.remove('is-open');
-  }
-  menuButton.addEventListener('click', () => {
-    const open = menuButton.getAttribute('aria-expanded') !== 'true';
+  const menuItems = () => [...nav.querySelectorAll('a[href],button:not([disabled])')];
+  const isMenuOpen = () => menuButton.getAttribute('aria-expanded') === 'true';
+  function setMenu(open, returnFocus) {
     menuButton.setAttribute('aria-expanded', String(open));
     menuButton.querySelector('.sr-only').textContent = t(open ? 'menuClose' : 'menuOpen');
     nav.classList.toggle('is-open', open);
+    document.body.classList.toggle('menu-open', open);
+    if (open) { const first = menuItems()[0]; if (first) first.focus(); }
+    else if (returnFocus) menuButton.focus();
+  }
+  function closeMenu(returnFocus) { if (isMenuOpen() || nav.classList.contains('is-open')) setMenu(false, returnFocus); }
+  menuButton.addEventListener('click', () => setMenu(!isMenuOpen(), false));
+  nav.addEventListener('click', event => { if (event.target.closest('a,button')) closeMenu(false); });
+  document.addEventListener('keydown', event => {
+    if (!isMenuOpen()) return;
+    if (event.key === 'Escape') { event.preventDefault(); closeMenu(true); return; }
+    if (event.key !== 'Tab') return;
+    // Recorrido circular: enlaces del menú y botón de cerrar.
+    const cycle = [...menuItems(), menuButton];
+    const index = cycle.indexOf(document.activeElement);
+    if (index === -1) return;
+    const next = event.shiftKey ? (index - 1 + cycle.length) % cycle.length : (index + 1) % cycle.length;
+    event.preventDefault();
+    cycle[next].focus();
   });
-  nav.addEventListener('click', event => { if (event.target.closest('a,button')) closeMenu(); });
-  document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
-  matchMedia('(min-width: 1101px)').addEventListener('change', event => { if (event.matches) closeMenu(); });
+  document.addEventListener('click', event => {
+    if (isMenuOpen() && !event.target.closest('.site-header')) closeMenu(false);
+  });
+  matchMedia('(min-width: 1101px)').addEventListener('change', event => { if (event.matches) closeMenu(false); });
 
   // Diálogos nativos: confinamiento de foco, Escape y restauración del foco.
   function updateDialogLock() { document.body.classList.toggle('dialog-open', !!$('dialog[open]')); }
@@ -120,9 +136,6 @@
     $('.hero-visual').addEventListener('pointerleave',()=>{pointerTarget=0;requestScrollUpdate();});
   }
 
-  let diagnosisSummary = '';
-  const radarComponent=(()=>{
-    if(!$('#radar'))return {summary:()=>'',refresh:()=>{}};
   // Radar: escala orientativa de atención, editable por la firma (no valoración legal).
   // Los índices de respuestas y los pesos no dependen del idioma.
   const impacts = [
@@ -149,16 +162,16 @@
   };
   const polygonPoints = values => values.map((value, i) => position(i, value).map(n => n.toFixed(2)).join(',')).join(' ');
   const grid = $('#radar-grid');
-  [25, 50, 75, 100].forEach(value => grid.append(svgElement('polygon', { points: polygonPoints(Array(5).fill(value)) })));
+  [25, 50, 75, 100].forEach(value => grid?.append(svgElement('polygon', { points: polygonPoints(Array(5).fill(value)) })));
   areas.forEach((_, i) => {
     const [x,y] = position(i, 100);
-    grid.append(svgElement('line', {x1:cx,y1:cy,x2:x,y2:y}));
+    grid?.append(svgElement('line', {x1:cx,y1:cy,x2:x,y2:y}));
   });
   const markers = areas.map(() => {
     const circle = svgElement('circle', {r:5.5});
-    $('#radar-markers').append(circle); return circle;
+    $('#radar-markers')?.append(circle); return circle;
   });
-  $('#radar-markers').append(svgElement('circle', { cx,cy,r:2.8,class:'center-dot' }));
+  $('#radar-markers')?.append(svgElement('circle', { cx,cy,r:2.8,class:'center-dot' }));
   function getScores() {
     const scores = Array(5).fill(0);
     answers.forEach((answer, i) => {
@@ -171,6 +184,7 @@
     return scores;
   }
   function paintRadar(values) {
+    if (!grid) return;
     $('#radar-shape').setAttribute('points', polygonPoints(values));
     markers.forEach((circle, i) => {
       const [x,y] = position(i, values[i]);
@@ -179,6 +193,7 @@
     });
   }
   function updateRadar() {
+    if (!grid) return;
     cancelAnimationFrame(chartFrame);
     const initial = [...displayedValues];
     const target = getScores().map(score => Math.max(6, score));
@@ -199,12 +214,14 @@
   const progress = $('.question-progress');
   const previous = $('#previous-question');
   function updateProgress(complete = false) {
+    if (!progress) return;
     const count = answers.filter(answer => answer !== null).length;
     progress.setAttribute('aria-valuenow', count);
     $('span', progress).style.width = `${count / 6 * 100}%`;
     $('#question-counter').textContent = complete ? t('complete') : t('questionCounter', {number:currentQuestion + 1});
   }
   function renderQuestion(focus = false) {
+    if (!stage) return;
     transitioning = false;
     clearTimeout(questionTimer);
     updateProgress();
@@ -248,7 +265,7 @@
       else { currentQuestion++; renderQuestion(true); }
     }, reducedMotion.matches ? 0 : 420);
   }
-  previous.addEventListener('click', () => {
+  previous?.addEventListener('click', () => {
     if (transitioning || currentQuestion === 0) return;
     currentQuestion--;renderQuestion(true);
   });
@@ -256,7 +273,7 @@
     clearTimeout(questionTimer);answers.fill(null);currentQuestion = 0;diagnosisSummary = '';assessmentComplete = false;
     renderQuestion(true);updateRadar();$('#radar-caption').textContent = t('captionStart');
   }
-
+  let diagnosisSummary = '';
   const priorityText = score => t(score >= 85 ? 'priorityHigh' : score >= 40 ? 'priorityMedium' : 'priorityLow');
   function buildDiagnosisSummary() {
     if (!assessmentComplete) return '';
@@ -278,6 +295,7 @@
       const priority = document.createElement('span');priority.className = `priority priority-${score >= 85 ? 'high' : score >= 40 ? 'medium' : 'low'}`;priority.textContent = priorityText(score);
       row.append(title,priority);list.append(row);
     });
+    if (requestData.telefono) requestText += '\n\n' + t('phoneField') + ': ' + requestData.telefono;
     diagnosisSummary = buildDiagnosisSummary();
     const actions = document.createElement('div');actions.className = 'diagnostic-result-actions';
     const contact = document.createElement('button');contact.className = 'button button-primary';contact.textContent = t('consultLawyer');
@@ -290,21 +308,6 @@
     $('#radar-caption').textContent = t('captionComplete');
   }
   renderQuestion();paintRadar(displayedValues);
-
-    return {summary:buildDiagnosisSummary,refresh:()=>{
-    areas = I18n.get('areas');
-    questions = I18n.get('questions').map((question,i) => ({...question,impacts:impacts[i]}));
-    // Si el cambio coincide con la transición de una respuesta, se completa el avance.
-    if (transitioning) {
-      clearTimeout(questionTimer);transitioning = false;previous.disabled = false;
-      if (currentQuestion === questions.length - 1) assessmentComplete = true;
-      else currentQuestion++;
-    }
-    if (assessmentComplete) renderResult(false);
-    else renderQuestion(false);
-    updateRadar();
-    }};
-  })();
 
   // Contacto: las claves internas son estables; el texto se genera en el idioma elegido.
   const form = $('#contact-form');
@@ -326,8 +329,8 @@
     const selected = [...form.elements.servicio.options].find(option => option.value === requestData.servicio);
     const serviceName = selected?.textContent || t('businessAdvice');
     requestText = `${t('requestTitle')}\n\n${t('name')}: ${requestData.nombre}\n${t('email')}: ${requestData.correo}\n${t('company')}: ${requestData.empresa || t('notProvided')}\n${t('service')}: ${serviceName}\n${t('languageField')}: ${I18n.names[I18n.language]}\n\n${t('enquiryLabel')}:\n${requestData.mensaje}`;
-    if(requestData.telefono)requestText += '\nTeléfono o WhatsApp: '+requestData.telefono;
-    diagnosisSummary = radarComponent.summary();
+    if (requestData.telefono) requestText += '\n\n' + t('phoneField') + ': ' + requestData.telefono;
+    diagnosisSummary = buildDiagnosisSummary();
     if (requestData.servicio === 'Radar legal empresarial' && diagnosisSummary) requestText += '\n\n' + diagnosisSummary;
     const send = $('#contact-send');
     let destination = '';
@@ -343,13 +346,14 @@
     send.hidden = !destination;
     if (destination) { send.href = destination;send.target = '_blank';send.rel = 'noopener noreferrer'; }
     else send.removeAttribute('href');
+    document.dispatchEvent(new CustomEvent('tempo:requestprepared',{detail:{data:requestData,summary:requestText,assessment:requestData.servicio==='Radar legal empresarial'?diagnosisSummary:''}}));
   }
   function validateField(field) {
     field.setCustomValidity('');
     if (field.required && !field.value.trim()) field.setCustomValidity(t('requiredField'));
     else if (field.type === 'email' && field.validity.typeMismatch) field.setCustomValidity(t('invalidEmail'));
   }
-  const fields = $$('input,textarea,select',form);
+  const fields = $$('input:not([name=website]),textarea',form);
   fields.forEach(field => {
     field.addEventListener('invalid', () => validateField(field));
     field.addEventListener('input', () => field.setCustomValidity(''));
@@ -370,7 +374,17 @@
     document.body.append(link);link.click();link.remove();setTimeout(() => URL.revokeObjectURL(url), 1000);
   });
   document.addEventListener('tempo:languagechange', () => {
-    radarComponent.refresh();
+    areas = I18n.get('areas');
+    questions = I18n.get('questions').map((question,i) => ({...question,impacts:impacts[i]}));
+    // Si el cambio coincide con la transición de una respuesta, se completa el avance.
+    if (transitioning) {
+      clearTimeout(questionTimer);transitioning = false;previous.disabled = false;
+      if (currentQuestion === questions.length - 1) assessmentComplete = true;
+      else currentQuestion++;
+    }
+    if (assessmentComplete) renderResult(false);
+    else renderQuestion(false);
+    updateRadar();
     $('.menu-toggle .sr-only').textContent = t(menuButton.getAttribute('aria-expanded') === 'true' ? 'menuClose' : 'menuOpen');
     updateContactCopy();
     fields.forEach(field => field.setCustomValidity(''));
@@ -378,7 +392,6 @@
     requestScrollUpdate();
   });
   updateContactCopy();
-  $('#contact-submit').disabled=false;
   function openInquiry(service) {
     if(service)form.elements.servicio.value=service;
     form.hidden=false;$('#contact-result').hidden=true;
@@ -388,8 +401,10 @@
   // Las páginas de casos pueden llevar directamente a la consulta correspondiente.
   try {
     const entry=new URL(location.href);
-    if(entry.searchParams.get('consulta')==='proteccion-datos'){
-      openInquiry('Protección de datos');
+    const requestedService=entry.searchParams.get('consulta');
+    const service=(window.TempoI18n.get('serviceItems')||[]).find(item=>item.formValue===requestedService||item.id===requestedService);
+    if(requestedService==='proteccion-datos'||requestedService==='empresa'||service){
+      openInquiry(service?.formValue||(requestedService==='proteccion-datos'?'Protección de datos':undefined));
       entry.searchParams.delete('consulta');
       history.replaceState(history.state,'',entry);
     }

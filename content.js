@@ -1,10 +1,12 @@
+'use strict';
+// Ruben's current Spanish copy with integrated detail routes and translated functionality.
 window.TEMPO_CONTENT = {
   "es": {
     "navTeam": "Equipo",
     "navResources": "Publicaciones",
     "servicesEyebrow": "Servicios para empresas",
-    "servicesHeading": "Servicios legales para empresas\nen Ecuador.",
-    "servicesIntro": "Asesoría para crear, operar y desarrollar su empresa, con apoyo jurídico, contable y de cumplimiento.",
+    "servicesHeading": "Asesoría para cada etapa\nde su empresa.",
+    "servicesIntro": "Servicios jurídicos, contables y de cumplimiento para crear, operar y desarrollar su empresa en Ecuador.",
     "filterAll": "Todas las áreas",
     "filterBusiness": "Empresa",
     "filterData": "Datos y tecnología",
@@ -37,9 +39,9 @@ window.TEMPO_CONTENT = {
     "internationalCta": "Planificar mi llegada a Ecuador",
     "internationalTags": "Constitución · Representación legal · Domicilio fiscal · Contabilidad",
     "mapLegend": "Conexiones regionales · Atención desde Quito",
-    "teamEyebrow": "Personas detrás del trabajo",
+    "teamEyebrow": "Equipo",
     "teamHeading": "Responsables de cada área",
-    "teamIntro": "Conozca a quienes coordinan las principales áreas de la firma.",
+    "teamIntro": "Conozca a quienes coordinan las principales áreas de la firma. TempoLegal integra asesoría jurídica, contable y tecnológica. Rolando Valencia, Ingeniero, es Coordinador de Servicios Financieros. Finanzas · Administración.",
     "profileMore": "Ver perfil",
     "testimonialsEyebrow": "Testimonios",
     "testimonialsHeading": "Lo que dicen nuestros clientes",
@@ -48,7 +50,7 @@ window.TEMPO_CONTENT = {
     "reviewNext": "Siguiente testimonio",
     "reviewGo": "Ver testimonio {number}",
     "resourcesEyebrow": "Lecturas para decidir mejor",
-    "resourcesHeading": "Guías legales para empresas.",
+    "resourcesHeading": "Guías para empresas",
     "resourcesIntro": "Publicaciones sobre derecho corporativo, empresas extranjeras y protección de datos.",
     "faqEyebrow": "Antes de conversar",
     "faqHeading": "Respuestas claras,\ndesde el inicio.",
@@ -75,7 +77,8 @@ window.TEMPO_CONTENT = {
           "Estatutos y reformas",
           "Actas y aumentos de capital",
           "Contratos y acuerdos de socios"
-        ]
+        ],
+        "page": "services/corporate-law/"
       },
       {
         "id": "data",
@@ -100,7 +103,8 @@ window.TEMPO_CONTENT = {
           "Constitución y establecimiento",
           "Representación legal y domicilio fiscal",
           "Coordinación societaria y contable"
-        ]
+        ],
+        "page": "services/soft-landing/"
       },
       {
         "id": "accounting",
@@ -112,7 +116,8 @@ window.TEMPO_CONTENT = {
           "Contabilidad y estados financieros",
           "Obligaciones ante SRI y Superintendencia",
           "Cumplimiento y acompañamiento recurrente"
-        ]
+        ],
+        "page": "servicios-contabilidad/"
       },
       {
         "id": "incorporation",
@@ -126,7 +131,8 @@ window.TEMPO_CONTENT = {
           "Diseño de estatutos",
           "Nombramientos y registros",
           "RUC y acompañamiento inicial"
-        ]
+        ],
+        "page": "constitucion-de-empresas-sas/"
       },
       {
         "id": "employment",
@@ -174,7 +180,8 @@ window.TEMPO_CONTENT = {
           "Poderes y documentación",
           "Actos y registros societarios",
           "Coordinación de trámites"
-        ]
+        ],
+        "page": "tramites-notariales-y-societarios/"
       }
     ],
     "teamItems": [
@@ -220,7 +227,7 @@ window.TEMPO_CONTENT = {
         "degree": "Ingeniero",
         "role": "Coordinador de Servicios Financieros",
         "specialty": "Finanzas · Administración",
-        "photo":"assets/team/2026-10-24_Rolando_TempoLegal_Fondo_Quito_RECREACION_HD.png",
+        "photo": "assets/team/2026-10-24_Rolando_TempoLegal_Fondo_Quito_RECREACION_HD.png",
         "page": null
       },
       {
@@ -275,7 +282,7 @@ window.TEMPO_CONTENT = {
       {
         "name": "Francisco Mosquera Aulestia",
         "company": "Grupo Mosquera Aulestia (GMA)",
-        "image": "francisco-approved.jpg",
+        "image": "francisco-approved.webp",
         "logo": "client-029.svg",
         "website": "https://mosqueraulestia.com/",
         "id": "francisco",
@@ -294,7 +301,7 @@ window.TEMPO_CONTENT = {
       {
         "name": "Ana Cecilia Andrade",
         "company": "Grupo FLP",
-        "image": "ana-approved.jpg",
+        "image": "ana-approved.webp",
         "logo": "client-027.svg",
         "website": "https://www.flp.co/",
         "id": "ana",
@@ -334,7 +341,7 @@ window.TEMPO_CONTENT = {
       {
         "name": "Juan Pazmiño",
         "company": "Rectificadora Pazmiño S.A.",
-        "image": "juan-approved.jpg",
+        "image": "juan-approved.webp",
         "logo": "client-050.svg",
         "website": "https://rpazmino.com/",
         "id": "juan",
@@ -373,7 +380,7 @@ window.TEMPO_CONTENT = {
         "body": "Criterios para ordenar el control del grupo, separar actividades y preparar la sucesión.",
         "categoryKey": "insightCategoryCorporate",
         "serviceId": "corporate",
-        "page": "https://tempolegal.com/holding-familiar-ecuador-estructura-sucesion/"
+        "page": "holding-familiar-ecuador-estructura-sucesion/"
       },
       {
         "id": "shareholders",
@@ -381,7 +388,7 @@ window.TEMPO_CONTENT = {
         "body": "Aspectos societarios, contables, laborales y de cumplimiento para planificar la operación.",
         "categoryKey": "insightCategoryForeign",
         "serviceId": "foreign",
-        "page": "https://tempolegal.com/empresa-extranjera-ecuador-primeros-90-dias/"
+        "page": "empresa-extranjera-ecuador-primeros-90-dias/"
       },
       {
         "id": "breach",
@@ -389,7 +396,7 @@ window.TEMPO_CONTENT = {
         "body": "Criterios de obligatoriedad y preguntas para revisar la situación de su organización.",
         "categoryKey": "insightCategoryData",
         "serviceId": "data",
-        "page": "https://tempolegal.com/dpd-obligatorio-ecuador-2026-criterios-spdp/"
+        "page": "dpd-obligatorio-ecuador-2026-criterios-spdp/"
       }
     ],
     "faqItems": [
@@ -412,7 +419,7 @@ window.TEMPO_CONTENT = {
     ],
     "serviceLabel_data": "Protección de datos personales",
     "serviceLabel_corporate": "Derecho corporativo y societario",
-    "serviceLabel_incorporation": "Constitución de SAS",
+    "serviceLabel_incorporation": "Constitución de compañías",
     "serviceLabel_foreign": "Empresas extranjeras en Ecuador",
     "serviceLabel_employment": "Derecho laboral empresarial",
     "serviceLabel_accounting": "Contabilidad y tributario",
@@ -581,10 +588,10 @@ window.TEMPO_CONTENT = {
     "projectIndex": "En esta página",
     "projectRelated": "Otros casos que puede conocer.",
     "projectCtaTitle": "Conversemos sobre su empresa.",
-    "projectCtaBody": "Comparta el contexto y el servicio que le interesa. Le respondemos el mismo día hábil para conocer su necesidad y coordinar el siguiente paso.",
+    "projectCtaBody": "Comparta el contexto y el servicio que le interesa. Un abogado del equipo podrá orientar el siguiente paso.",
     "projectHome": "Volver al inicio",
     "coverageEyebrow": "Cobertura",
-    "internationalTitle": "Soft landing en Ecuador:\nsu equipo local desde Quito.",
+    "internationalTitle": "Su equipo local,\ndesde Quito.",
     "internationalDescription": "Constituir una compañía es el inicio. Coordinamos representación legal, domicilio, contabilidad, contratación y cumplimiento para acompañar su operación en Ecuador.\nEste acompañamiento se conoce como soft landing. El alcance se acuerda según su estructura y sus necesidades; los trámites bancarios y otras autorizaciones dependen de las entidades competentes.",
     "coverageOrigins": "países de origen de nuestros clientes",
     "foreignCount": "empresas extranjeras constituidas",
@@ -612,7 +619,7 @@ window.TEMPO_CONTENT = {
     "clientReview": {
       "name": "Eleazar Becerra",
       "company": "Cámara de Comercio Exterior",
-      "image": "eleazar-approved.jpg",
+      "image": "eleazar-approved.webp",
       "logo": "client-004.png",
       "website": "https://www.camaracomercioexterior.edu.pe/",
       "id": "eleazar",
@@ -682,22 +689,22 @@ window.TEMPO_CONTENT = {
     "privacyClose": "Cerrar",
     "privacyChoiceNote": "La elección se guarda en este navegador. El mapa solo se carga si lo permite.",
     "heroEyebrow": "Firma jurídica empresarial · Quito · Ecuador",
-    "heroDescription": "Asesoramos a empresas nacionales y extranjeras en derecho corporativo, protección de datos y establecimiento y operación en Ecuador, con un equipo jurídico, contable y tecnológico.",
+    "heroDescription": "Asesoramos a empresas nacionales y extranjeras en derecho corporativo, protección de datos y establecimiento y operación en Ecuador, con apoyo jurídico, contable y tecnológico.",
     "bookLong": "Solicitar orientación inicial",
     "proofOrganizations": "empresas y organizaciones asesoradas",
     "proofData": "implementaciones de la LOPDP",
     "proofForeign": "empresas extranjeras constituidas",
     "methodTitle": "Una ruta clara\ndesde el inicio.",
     "methodDescription": "Primero entendemos la necesidad. Después definimos qué trabajo se requiere y cómo lo ejecutaremos.",
-    "step1Description": "Nos cuenta el contexto de su empresa. Respondemos el mismo día hábil y coordinamos la información necesaria para orientar el siguiente paso.",
+    "step1Description": "Nos cuenta el contexto de su empresa y orientamos el siguiente paso.",
     "step2Description": "Acordamos alcance, entregables, tiempos y honorarios.",
     "step3Description": "Desarrollamos el servicio y coordinamos con su equipo la información necesaria.",
     "step4Description": "Mantenemos seguimiento y soporte cuando el servicio lo requiere.",
     "footerDescription": "Abogados para empresas en Ecuador. Oficina en Quito · Atención en todo el país.",
-    "contactDescription": "Comparta el contexto y el servicio que le interesa. Le respondemos el mismo día hábil para conocer su necesidad y coordinar el siguiente paso.",
+    "contactDescription": "Comparta el contexto y el servicio que le interesa. Un abogado del equipo podrá orientar el siguiente paso.",
     "company": "Empresa o proyecto",
-    "pageTitle": "Abogados para empresas en Quito y Ecuador | TempoLegal",
-    "pageDescription": "Abogados para empresas en Quito y Ecuador: derecho corporativo, protección de datos, soft landing y apoyo contable. Orientación inicial sin costo.",
+    "pageTitle": "Abogados para empresas en Ecuador | TempoLegal",
+    "pageDescription": "Asesoramos a empresas nacionales y extranjeras en derecho corporativo, protección de datos y establecimiento y operación en Ecuador, con apoyo jurídico, contable y tecnológico.",
     "legacyCaseItems": [
       {
         "id": "solca",
@@ -846,7 +853,13 @@ window.TEMPO_CONTENT = {
     ],
     "insightCategoryForeign": "Empresas extranjeras",
     "footerTerms": "Términos y Aviso Legal",
-    "book": "Solicitar orientación"
+    "serviceReadFull": "Conocer el servicio",
+    "contactProcessingPurpose": "Usaremos sus datos para responder su solicitud y coordinar la reunión. Más información en la ",
+    "contactNoMarketing": ". Enviar este formulario no le obliga a contratar ni le suscribe a publicidad.",
+    "legalHome": "Volver al inicio",
+    "companyAbout": "Nosotros",
+    "companyContact": "Contacto",
+    "phoneField": "Teléfono o WhatsApp"
   },
   "en": {
     "navTeam": "Our team",
@@ -936,7 +949,8 @@ window.TEMPO_CONTENT = {
           "Bylaws and amendments",
           "Resolutions and capital increases",
           "Contracts and shareholder agreements"
-        ]
+        ],
+        "page": "services/corporate-law/"
       },
       {
         "id": "incorporation",
@@ -948,7 +962,8 @@ window.TEMPO_CONTENT = {
           "Bylaws preparation",
           "Appointments and registrations",
           "Tax registration and initial support"
-        ]
+        ],
+        "page": "constitucion-de-empresas-sas/"
       },
       {
         "id": "foreign",
@@ -960,7 +975,8 @@ window.TEMPO_CONTENT = {
           "Incorporation and establishment",
           "Legal representation and tax address",
           "Corporate and accounting coordination"
-        ]
+        ],
+        "page": "services/soft-landing/"
       },
       {
         "id": "employment",
@@ -984,7 +1000,8 @@ window.TEMPO_CONTENT = {
           "Accounting and financial statements",
           "Tax and corporate reporting",
           "Compliance and ongoing support"
-        ]
+        ],
+        "page": "servicios-contabilidad/"
       },
       {
         "id": "ip",
@@ -1020,7 +1037,8 @@ window.TEMPO_CONTENT = {
           "Powers of attorney and documentation",
           "Corporate acts and registrations",
           "Formalities coordination"
-        ]
+        ],
+        "page": "tramites-notariales-y-societarios/"
       }
     ],
     "teamItems": [
@@ -1108,7 +1126,7 @@ window.TEMPO_CONTENT = {
       {
         "name": "Francisco Mosquera Aulestia",
         "company": "Grupo Mosquera Aulestia (GMA)",
-        "image": "francisco-approved.jpg",
+        "image": "francisco-approved.webp",
         "logo": "client-029.svg",
         "website": "https://mosqueraulestia.com/",
         "id": "francisco",
@@ -1127,7 +1145,7 @@ window.TEMPO_CONTENT = {
       {
         "name": "Juan Pazmiño",
         "company": "Rectificadora Pazmiño S.A.",
-        "image": "juan-approved.jpg",
+        "image": "juan-approved.webp",
         "logo": "client-050.svg",
         "website": "https://rpazmino.com/",
         "id": "juan",
@@ -1161,7 +1179,7 @@ window.TEMPO_CONTENT = {
       {
         "name": "Ana Cecilia Andrade",
         "company": "Grupo FLP",
-        "image": "ana-approved.jpg",
+        "image": "ana-approved.webp",
         "logo": "client-027.svg",
         "website": "https://www.flp.co/",
         "id": "ana",
@@ -1193,7 +1211,7 @@ window.TEMPO_CONTENT = {
         "body": "Criteria for organizing group control, separating activities and preparing succession.",
         "categoryKey": "insightCategoryCorporate",
         "serviceId": "corporate",
-        "page": "https://tempolegal.com/holding-familiar-ecuador-estructura-sucesion/"
+        "page": "holding-familiar-ecuador-estructura-sucesion/"
       },
       {
         "id": "shareholders",
@@ -1201,7 +1219,7 @@ window.TEMPO_CONTENT = {
         "body": "Corporate, accounting, employment and compliance considerations for planning operations.",
         "categoryKey": "insightCategoryForeign",
         "serviceId": "foreign",
-        "page": "https://tempolegal.com/empresa-extranjera-ecuador-primeros-90-dias/"
+        "page": "empresa-extranjera-ecuador-primeros-90-dias/"
       },
       {
         "id": "breach",
@@ -1209,7 +1227,7 @@ window.TEMPO_CONTENT = {
         "body": "Mandatory appointment criteria and questions to assess your organization’s situation.",
         "categoryKey": "insightCategoryData",
         "serviceId": "data",
-        "page": "https://tempolegal.com/dpd-obligatorio-ecuador-2026-criterios-spdp/"
+        "page": "dpd-obligatorio-ecuador-2026-criterios-spdp/"
       }
     ],
     "faqItems": [
@@ -1432,7 +1450,7 @@ window.TEMPO_CONTENT = {
     "clientReview": {
       "name": "Eleazar Becerra",
       "company": "Cámara de Comercio Exterior",
-      "image": "eleazar-approved.jpg",
+      "image": "eleazar-approved.webp",
       "logo": "client-004.png",
       "website": "https://www.camaracomercioexterior.edu.pe/",
       "id": "eleazar",
@@ -1663,7 +1681,14 @@ window.TEMPO_CONTENT = {
       }
     ],
     "insightCategoryForeign": "Foreign companies",
-    "footerTerms": "Terms and Legal Notice"
+    "footerTerms": "Terms and Legal Notice",
+    "serviceReadFull": "Explore the service",
+    "contactProcessingPurpose": "We will use your data to respond to your request and coordinate the meeting. More information in the ",
+    "contactNoMarketing": ". Submitting this form does not oblige you to engage our services or subscribe you to advertising.",
+    "legalHome": "Back to home",
+    "companyAbout": "About us",
+    "companyContact": "Contact",
+    "phoneField": "Phone or WhatsApp"
   },
   "pt": {
     "navTeam": "Equipe",
@@ -1753,7 +1778,8 @@ window.TEMPO_CONTENT = {
           "Estatutos e alterações",
           "Atas e aumentos de capital",
           "Contratos e acordos de sócios"
-        ]
+        ],
+        "page": "services/corporate-law/"
       },
       {
         "id": "incorporation",
@@ -1765,7 +1791,8 @@ window.TEMPO_CONTENT = {
           "Elaboração de estatutos",
           "Nomeações e registros",
           "RUC e acompanhamento inicial"
-        ]
+        ],
+        "page": "constitucion-de-empresas-sas/"
       },
       {
         "id": "foreign",
@@ -1777,7 +1804,8 @@ window.TEMPO_CONTENT = {
           "Constituição e instalação",
           "Representação legal e domicílio fiscal",
           "Coordenação societária e contábil"
-        ]
+        ],
+        "page": "services/soft-landing/"
       },
       {
         "id": "employment",
@@ -1801,7 +1829,8 @@ window.TEMPO_CONTENT = {
           "Contabilidade e demonstrações financeiras",
           "Obrigações fiscais e societárias",
           "Conformidade e acompanhamento contínuo"
-        ]
+        ],
+        "page": "servicios-contabilidad/"
       },
       {
         "id": "ip",
@@ -1837,7 +1866,8 @@ window.TEMPO_CONTENT = {
           "Procurações e documentação",
           "Atos e registros societários",
           "Coordenação de trâmites"
-        ]
+        ],
+        "page": "tramites-notariales-y-societarios/"
       }
     ],
     "teamItems": [
@@ -1925,7 +1955,7 @@ window.TEMPO_CONTENT = {
       {
         "name": "Francisco Mosquera Aulestia",
         "company": "Grupo Mosquera Aulestia (GMA)",
-        "image": "francisco-approved.jpg",
+        "image": "francisco-approved.webp",
         "logo": "client-029.svg",
         "website": "https://mosqueraulestia.com/",
         "id": "francisco",
@@ -1944,7 +1974,7 @@ window.TEMPO_CONTENT = {
       {
         "name": "Juan Pazmiño",
         "company": "Rectificadora Pazmiño S.A.",
-        "image": "juan-approved.jpg",
+        "image": "juan-approved.webp",
         "logo": "client-050.svg",
         "website": "https://rpazmino.com/",
         "id": "juan",
@@ -1978,7 +2008,7 @@ window.TEMPO_CONTENT = {
       {
         "name": "Ana Cecilia Andrade",
         "company": "Grupo FLP",
-        "image": "ana-approved.jpg",
+        "image": "ana-approved.webp",
         "logo": "client-027.svg",
         "website": "https://www.flp.co/",
         "id": "ana",
@@ -2010,7 +2040,7 @@ window.TEMPO_CONTENT = {
         "body": "Critérios para organizar o controle do grupo, separar atividades e preparar a sucessão.",
         "categoryKey": "insightCategoryCorporate",
         "serviceId": "corporate",
-        "page": "https://tempolegal.com/holding-familiar-ecuador-estructura-sucesion/"
+        "page": "holding-familiar-ecuador-estructura-sucesion/"
       },
       {
         "id": "shareholders",
@@ -2018,7 +2048,7 @@ window.TEMPO_CONTENT = {
         "body": "Aspectos societários, contábeis, trabalhistas e de conformidade para planejar a operação.",
         "categoryKey": "insightCategoryForeign",
         "serviceId": "foreign",
-        "page": "https://tempolegal.com/empresa-extranjera-ecuador-primeros-90-dias/"
+        "page": "empresa-extranjera-ecuador-primeros-90-dias/"
       },
       {
         "id": "breach",
@@ -2026,7 +2056,7 @@ window.TEMPO_CONTENT = {
         "body": "Critérios de obrigatoriedade e perguntas para analisar a situação da sua organização.",
         "categoryKey": "insightCategoryData",
         "serviceId": "data",
-        "page": "https://tempolegal.com/dpd-obligatorio-ecuador-2026-criterios-spdp/"
+        "page": "dpd-obligatorio-ecuador-2026-criterios-spdp/"
       }
     ],
     "faqItems": [
@@ -2249,7 +2279,7 @@ window.TEMPO_CONTENT = {
     "clientReview": {
       "name": "Eleazar Becerra",
       "company": "Cámara de Comercio Exterior",
-      "image": "eleazar-approved.jpg",
+      "image": "eleazar-approved.webp",
       "logo": "client-004.png",
       "website": "https://www.camaracomercioexterior.edu.pe/",
       "id": "eleazar",
@@ -2480,7 +2510,14 @@ window.TEMPO_CONTENT = {
       }
     ],
     "insightCategoryForeign": "Empresas estrangeiras",
-    "footerTerms": "Termos e Aviso Legal"
+    "footerTerms": "Termos e Aviso Legal",
+    "serviceReadFull": "Conhecer o serviço",
+    "contactProcessingPurpose": "Usaremos seus dados para responder à solicitação e coordenar a reunião. Mais informações na ",
+    "contactNoMarketing": ". Enviar este formulário não obriga você a contratar nem o inscreve em publicidade.",
+    "legalHome": "Voltar ao início",
+    "companyAbout": "Sobre nós",
+    "companyContact": "Contato",
+    "phoneField": "Telefone ou WhatsApp"
   },
   "fr": {
     "navTeam": "Équipe",
@@ -2570,7 +2607,8 @@ window.TEMPO_CONTENT = {
           "Statuts et modifications",
           "Actes et augmentations de capital",
           "Contrats et accords d’associés"
-        ]
+        ],
+        "page": "services/corporate-law/"
       },
       {
         "id": "incorporation",
@@ -2582,7 +2620,8 @@ window.TEMPO_CONTENT = {
           "Préparation des statuts",
           "Nominations et inscriptions",
           "Immatriculation fiscale et suivi initial"
-        ]
+        ],
+        "page": "constitucion-de-empresas-sas/"
       },
       {
         "id": "foreign",
@@ -2594,7 +2633,8 @@ window.TEMPO_CONTENT = {
           "Constitution et implantation",
           "Représentation légale et domicile fiscal",
           "Coordination sociétaire et comptable"
-        ]
+        ],
+        "page": "services/soft-landing/"
       },
       {
         "id": "employment",
@@ -2618,7 +2658,8 @@ window.TEMPO_CONTENT = {
           "Comptabilité et états financiers",
           "Obligations fiscales et sociétaires",
           "Conformité et accompagnement régulier"
-        ]
+        ],
+        "page": "servicios-contabilidad/"
       },
       {
         "id": "ip",
@@ -2654,7 +2695,8 @@ window.TEMPO_CONTENT = {
           "Procurations et documentation",
           "Actes et registres sociétaires",
           "Coordination des formalités"
-        ]
+        ],
+        "page": "tramites-notariales-y-societarios/"
       }
     ],
     "teamItems": [
@@ -2742,7 +2784,7 @@ window.TEMPO_CONTENT = {
       {
         "name": "Francisco Mosquera Aulestia",
         "company": "Grupo Mosquera Aulestia (GMA)",
-        "image": "francisco-approved.jpg",
+        "image": "francisco-approved.webp",
         "logo": "client-029.svg",
         "website": "https://mosqueraulestia.com/",
         "id": "francisco",
@@ -2761,7 +2803,7 @@ window.TEMPO_CONTENT = {
       {
         "name": "Juan Pazmiño",
         "company": "Rectificadora Pazmiño S.A.",
-        "image": "juan-approved.jpg",
+        "image": "juan-approved.webp",
         "logo": "client-050.svg",
         "website": "https://rpazmino.com/",
         "id": "juan",
@@ -2795,7 +2837,7 @@ window.TEMPO_CONTENT = {
       {
         "name": "Ana Cecilia Andrade",
         "company": "Grupo FLP",
-        "image": "ana-approved.jpg",
+        "image": "ana-approved.webp",
         "logo": "client-027.svg",
         "website": "https://www.flp.co/",
         "id": "ana",
@@ -2827,7 +2869,7 @@ window.TEMPO_CONTENT = {
         "body": "Critères pour organiser le contrôle du groupe, séparer les activités et préparer la succession.",
         "categoryKey": "insightCategoryCorporate",
         "serviceId": "corporate",
-        "page": "https://tempolegal.com/holding-familiar-ecuador-estructura-sucesion/"
+        "page": "holding-familiar-ecuador-estructura-sucesion/"
       },
       {
         "id": "shareholders",
@@ -2835,7 +2877,7 @@ window.TEMPO_CONTENT = {
         "body": "Aspects sociétaires, comptables, sociaux et de conformité pour planifier l’activité.",
         "categoryKey": "insightCategoryForeign",
         "serviceId": "foreign",
-        "page": "https://tempolegal.com/empresa-extranjera-ecuador-primeros-90-dias/"
+        "page": "empresa-extranjera-ecuador-primeros-90-dias/"
       },
       {
         "id": "breach",
@@ -2843,7 +2885,7 @@ window.TEMPO_CONTENT = {
         "body": "Critères de désignation obligatoire et questions pour examiner la situation de votre organisation.",
         "categoryKey": "insightCategoryData",
         "serviceId": "data",
-        "page": "https://tempolegal.com/dpd-obligatorio-ecuador-2026-criterios-spdp/"
+        "page": "dpd-obligatorio-ecuador-2026-criterios-spdp/"
       }
     ],
     "faqItems": [
@@ -3066,7 +3108,7 @@ window.TEMPO_CONTENT = {
     "clientReview": {
       "name": "Eleazar Becerra",
       "company": "Cámara de Comercio Exterior",
-      "image": "eleazar-approved.jpg",
+      "image": "eleazar-approved.webp",
       "logo": "client-004.png",
       "website": "https://www.camaracomercioexterior.edu.pe/",
       "id": "eleazar",
@@ -3297,6 +3339,13 @@ window.TEMPO_CONTENT = {
       }
     ],
     "insightCategoryForeign": "Entreprises étrangères",
-    "footerTerms": "Conditions et mentions légales"
+    "footerTerms": "Conditions et mentions légales",
+    "serviceReadFull": "Découvrir le service",
+    "contactProcessingPurpose": "Nous utiliserons vos données pour répondre à votre demande et organiser la réunion. Plus d’informations dans la ",
+    "contactNoMarketing": ". L’envoi de ce formulaire ne vous oblige pas à souscrire à nos services et ne vous abonne pas à des communications publicitaires.",
+    "legalHome": "Retour à l’accueil",
+    "companyAbout": "Notre cabinet",
+    "companyContact": "Contact",
+    "phoneField": "Téléphone ou WhatsApp"
   }
 };

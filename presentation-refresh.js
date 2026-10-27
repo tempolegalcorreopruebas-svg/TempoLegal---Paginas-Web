@@ -29,8 +29,7 @@
   }
   // Hash links reveal the additional approved experience before navigation.
   document.querySelectorAll('a[href="#testimonio-eleazar"]').forEach(link => link.addEventListener('click', () => {
-    const experience=document.querySelector('.client-experience') || document.querySelector('#testimonio-eleazar .quote-full');
-    if(experience)experience.open=true;
+    document.querySelector('.client-experience').open = true;
   }));
   if (dialog) dialog.querySelectorAll('a').forEach(link => link.addEventListener('click', () => dialog.close()));
   const groupPhoto = window.TEMPO_CONFIG?.technicalTeamPhoto;

@@ -1,0 +1,27 @@
+<!-- =====================================================================
+     COMPONENTE · Logos de clientes (tarea 1.4)
+     Necesita: base.css, componentes.css y clients-carousel.js (defer).
+     - Copiar este bloque en la landing y poner solo los logos aprobados
+       para esa página (tarea 0.5: no usar un logo solo porque está en la carpeta).
+     - Cada logo: <div class="client-logo"><img alt="Nombre" src="..."><span aria-hidden="true" class="client-logo-name">Nombre</span></div>
+     - Una o dos filas (.clients-marquee-row). La segunda se mueve al revés.
+     - El JS duplica cada fila para el bucle; no duplicar logos a mano.
+     - Fondo oscuro: añadir la clase logos-on-dark a la <section>.
+     ===================================================================== -->
+<section aria-labelledby="logos-title" class="logos-block section-space">
+<div class="container">
+<h2 class="t-label" id="logos-title">Empresas que confían en TempoLegal</h2>
+<div aria-label="Empresas e instituciones acompañadas" class="clients-marquee" role="region">
+<div aria-label="Empresas e instituciones acompañadas" class="clients-marquee-row" tabindex="0"><div class="clients-marquee-lane"><div class="clients-marquee-set">
+<div class="client-logo"><img alt="Asista Centros Médicos" decoding="async" loading="lazy" src="assets/clients-premium/client-003.svg"><span aria-hidden="true" class="client-logo-name">Asista Centros Médicos</span></div>
+<div class="client-logo"><img alt="Corporación Médica Pazmiño Narváez" decoding="async" loading="lazy" src="assets/clients-premium/client-014.svg"><span aria-hidden="true" class="client-logo-name">Corporación Médica Pazmiño Narváez</span></div>
+<div class="client-logo"><img alt="SOLCA" decoding="async" loading="lazy" src="assets/clients-premium/client-054.png"><span aria-hidden="true" class="client-logo-name">SOLCA</span></div>
+<!-- … más logos aprobados … -->
+</div></div></div>
+</div>
+<div class="clients-marquee-footer">
+<span class="clients-marquee-caption"><span aria-hidden="true" class="clients-motion-led"></span><span data-i18n="clientsMotionNote">Empresas de distintos sectores, en movimiento</span></span>
+<button aria-label="Pausar movimiento" aria-pressed="false" class="clients-motion-toggle" data-i18n-aria-label="clientsPause" type="button"><span aria-hidden="true" class="clients-motion-icon"></span><span data-i18n="clientsPause">Pausar movimiento</span></button>
+</div>
+</div>
+</section>

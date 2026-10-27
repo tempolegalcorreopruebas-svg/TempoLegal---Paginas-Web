@@ -21,9 +21,10 @@
     document.querySelectorAll('[data-footer-route]').forEach(link => {
       const href = link.getAttribute('href');
       if (href.startsWith('#')) return;
+      if (href.includes('/')) return; // landings en carpetas: se deja la ruta completa (tarea 4.2)
       const url = new URL(href, location.href);
-      url.searchParams.set('lang', language.language);
-      link.setAttribute('href', url.pathname.split('/').pop() + url.search + url.hash);
+      url.searchParams.delete('lang');
+      link.setAttribute('href', url.href);
     });
     const map = document.querySelector('.footer-map iframe');
     if (map) map.title = language.t('footerMapTitle');
@@ -55,65 +56,8 @@
   updateFooter();
 })();
 
-// Optional external maps load only after an affirmative choice, with withdrawal in the footer.
-(() => {
-  const I = window.TempoI18n;
-  const storageKey = 'tempo-privacy-choices';
-  let mapsAllowed = false;
-  try { const saved = JSON.parse(localStorage.getItem(storageKey)); mapsAllowed = saved?.version === '4.3' && saved.maps === true; } catch {}
-  const maps = [...document.querySelectorAll('.footer-map iframe[data-src]')];
-  const buttons = [...document.querySelectorAll('[data-map-consent]')];
-  const preferenceButtons = [...document.querySelectorAll('[data-privacy-preferences]')];
-  function updateMaps() {
-    maps.forEach(frame => {
-      if (mapsAllowed) { frame.src = frame.dataset.src; frame.hidden = false; }
-      else { frame.removeAttribute('src'); frame.hidden = true; }
-      frame.closest('.footer-map').querySelector('.footer-map-consent').hidden = mapsAllowed;
-    });
-  }
-  function saveChoice(allowed) {
-    mapsAllowed = allowed;
-    try { localStorage.setItem(storageKey, JSON.stringify({version:'4.3', maps:allowed})); } catch {}
-    updateMaps();
-  }
-  const dialog = document.createElement('dialog');
-  dialog.className = 'privacy-preferences-dialog';
-  dialog.setAttribute('aria-labelledby', 'privacy-preferences-title');
-  // All markup is static. Localized labels are assigned through textContent.
-  dialog.innerHTML = '<div class="privacy-preferences-heading"><h2 id="privacy-preferences-title"></h2><button type="button" class="privacy-preferences-close">×</button></div><h3></h3><label><input type="checkbox" id="privacy-maps-choice"><span></span></label><p class="privacy-choice-note"></p><div class="privacy-preferences-actions"><button type="button" data-privacy-save></button><button type="button" data-privacy-reject></button></div>';
-  document.body.append(dialog);
-  const checkbox = dialog.querySelector('input');
-  function translate() {
-    dialog.querySelector('h2').textContent = I.t('privacyPreferences');
-    dialog.querySelector('h3').textContent = I.t('privacyExternalContent');
-    dialog.querySelector('label span').textContent = I.t('privacyMapsChoice');
-    dialog.querySelector('.privacy-choice-note').textContent = I.t('privacyChoiceNote');
-    dialog.querySelector('[data-privacy-save]').textContent = I.t('privacySave');
-    dialog.querySelector('[data-privacy-reject]').textContent = I.t('privacyReject');
-    dialog.querySelector('.privacy-preferences-close').setAttribute('aria-label', I.t('privacyClose'));
-  }
-  function close() { dialog.close(); }
-  buttons.forEach(button => { button.disabled = false; button.addEventListener('click', () => saveChoice(true)); });
-  preferenceButtons.forEach(button => { button.hidden = false; button.addEventListener('click', () => {
-    checkbox.checked = mapsAllowed;
-    dialog.showModal();
-    document.body.classList.add('privacy-settings-open');
-  }); });
-  dialog.querySelector('.privacy-preferences-close').addEventListener('click', close);
-  dialog.querySelector('[data-privacy-save]').addEventListener('click', () => { saveChoice(checkbox.checked); close(); });
-  dialog.querySelector('[data-privacy-reject]').addEventListener('click', () => { saveChoice(false); close(); });
-  dialog.addEventListener('close', () => document.body.classList.remove('privacy-settings-open'));
-  dialog.addEventListener('click', event => {
-    if (event.target !== dialog) return;
-    const rect = dialog.getBoundingClientRect();
-    if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) close();
-  });
-  document.addEventListener('tempo:languagechange', translate);
-  translate(); updateMaps();
-})();
-
-// Selector de idioma con banderas: reemplaza visualmente el <select> nativo,
-// que se conserva oculto para que i18n.js siga funcionando igual.
+// Flag language selector: visually replaces the native select,
+// which stays hidden so the existing i18n behavior remains available.
 (() => {
   const select = document.getElementById('language-select');
   const control = select?.closest('.language-control');

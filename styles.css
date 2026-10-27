@@ -1,7 +1,4 @@
-@font-face{font-family:Editorial;src:url('assets/fonts/editorial.woff') format('woff');font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:TempoSans;src:url('assets/fonts/sans.woff') format('woff');font-weight:400;font-style:normal;font-display:swap}
-@font-face{font-family:TempoSans;src:url('assets/fonts/sans-medium.woff') format('woff');font-weight:600 800;font-style:normal;font-display:swap}
-:root{--ink:#17323c;--muted:#566268;--teal:#006e8c;--paper:#f0f3f2;--line:#dce1e1;--serif:Editorial,Georgia,serif;--sans:TempoSans,Arial,sans-serif;--ease:cubic-bezier(.2,.65,.3,1);--gutter:6.25vw}
+@import url("base.css"); /* Sistema visual común: colores, fuentes, escala y espacios */
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:32px}
 body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:clamp(15px,1.05vw,21px);line-height:1.55;-webkit-font-smoothing:antialiased}
@@ -21,7 +18,7 @@ h2{font-size:clamp(40px,3.8vw,74px);letter-spacing:-.035em}
 h3{font-size:clamp(27px,1.9vw,38px);letter-spacing:-.02em}
 button{border:0;background:none;padding:0}
 .container{width:calc(100% - var(--gutter)*2);max-width:1680px;margin-inline:auto}
-.eyebrow{font-family:var(--sans);font-size:clamp(10px,.69vw,13px);font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--teal);line-height:1.5}
+.eyebrow{font-family:var(--sans);font-size:clamp(12px,.69vw,13px);font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--teal);line-height:1.5}
 .button{display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:48px;padding:14px 30px;font-size:clamp(14px,.84vw,17px);letter-spacing:.015em;border:1px solid transparent;border-radius:1px;transition:background .25s,color .25s,transform .25s,box-shadow .25s;text-align:center}
 .button:hover{transform:translateY(-2px)}
 .button-primary{background:var(--teal);color:white}
@@ -66,7 +63,7 @@ h1{font-size:clamp(65px,5.42vw,106px);letter-spacing:-.035em;line-height:.93}
 .hero.is-in-view .brand-diamonds i{animation-play-state:running}
 @keyframes diamond-drift{from{transform:translate3d(0,-12px,0) rotate(45deg)}to{transform:translate3d(7px,12px,0) rotate(45deg)}}
 .commitment{position:absolute;z-index:5;left:5%;bottom:7%;padding:14px 0 14px 22px;background:transparent;border:0;border-left:4px solid #9FD3DF;backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:none;max-width:90%;width:max-content;white-space:normal;animation:badge-in 1s var(--ease) .8s both}
-.commitment .eyebrow{font-size:clamp(10px,.65vw,13px);letter-spacing:.18em;color:#9FD3DF}
+.commitment .eyebrow{font-size:clamp(12px,.65vw,13px);letter-spacing:.18em;color:#9FD3DF}
 .commitment p{font-family:var(--serif);font-size:clamp(20px,1.43vw,28px);margin-top:7px;line-height:1.15;letter-spacing:-.025em;color:#FFFFFF;text-shadow:0 2px 8px #0008}
 .intro-enter{animation:intro-in .9s var(--ease) both}
 .hero-copy h1{animation-delay:.1s;color:#FFFFFF}
@@ -110,7 +107,7 @@ to{opacity:1;transform:translateY(0)}
 .radar-section h2{font-size:clamp(39px,3.6vw,70px);letter-spacing:-.03em}
 .radar-layout{display:grid;grid-template-columns:45.2% 1fr;gap:3.8%;align-items:start;margin-top:66px}
 .diagnostic-card{background:#fff;border:1px solid #dde2e2;min-height:clamp(460px,32.8vw,640px);padding:clamp(25px,2.1vw,42px);box-shadow:0 25px 45px -30px #19354140;position:relative}
-.card-meta{display:flex;justify-content:space-between;gap:12px;color:#7b898f;font-size:clamp(10px,.7vw,13px);letter-spacing:.16em;text-transform:uppercase;line-height:1.4}
+.card-meta{display:flex;justify-content:space-between;gap:12px;color:#7b898f;font-size:clamp(12px,.7vw,13px);letter-spacing:.16em;text-transform:uppercase;line-height:1.4}
 .question-progress{height:2px;background:#e0e5e5;margin-top:18px;overflow:hidden}
 .question-progress span{display:block;width:0;height:100%;background:var(--teal);transition:width .55s var(--ease)}
 #question-stage{padding-top:clamp(30px,3.1vw,60px)}
@@ -124,7 +121,7 @@ to{opacity:1;transform:translateY(0)}
 .question-navigation{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:22px;min-height:25px}
 .quiet-button{font-size:12px;color:#62757d;border-bottom:1px solid transparent}
 .quiet-button:hover{border-color:#62757d}
-#question-hint{font-size:11px;color:#89979b}
+#question-hint{font-size:12px;color:#89979b}
 .question-enter{animation:question-enter .38s var(--ease) both}
 @keyframes question-enter{from{opacity:0;transform:translateX(12px)}
 to{opacity:1;transform:none}
@@ -138,18 +135,18 @@ to{opacity:1;transform:none}
 #radar-shape{fill:#007a9b24;stroke:var(--teal);stroke-width:2;stroke-linejoin:round}
 #radar-markers circle{fill:#fff;stroke:var(--teal);stroke-width:2}
 #radar-markers .center-dot{fill:#8c9da3;stroke:none}
-.radar-figure figcaption{text-align:center;font-size:11px;color:#819198;margin-top:-10px;letter-spacing:.02em}
+.radar-figure figcaption{text-align:center;font-size:12px;color:#819198;margin-top:-10px;letter-spacing:.02em}
 .result-eyebrow{margin-bottom:12px}
 .result-title{font-size:clamp(29px,2vw,38px);margin-bottom:18px}
 .result-list{list-style:none;padding:0;margin:0 0 22px}
 .result-list li{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid #f0f2f2;font-size:clamp(13px,.85vw,17px)}
-.priority{font-family:var(--sans);font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:3px 6px;white-space:nowrap;line-height:1.5}
+.priority{font-family:var(--sans);font-size:12px;letter-spacing:.1em;text-transform:uppercase;padding:3px 6px;white-space:nowrap;line-height:1.5}
 .priority-high{color:white;background:var(--teal)}
 .priority-medium{color:var(--teal);background:#e9f2f3}
 .priority-low{color:#71868a;background:#f0f3f2}
 .diagnostic-result-actions{display:flex;flex-wrap:wrap;align-items:center;gap:16px}
 .diagnostic-result-actions .button{padding:10px 18px;min-height:42px;font-size:12px}
-.result-fineprint{font-size:11px;color:#869498;line-height:1.5;margin-top:16px}
+.result-fineprint{font-size:12px;color:#869498;line-height:1.5;margin-top:16px}
 .restart-radar{font-size:12px;color:#73858c;border-bottom:1px solid #b9c4c7}
 .radar-legend-values{list-style:none}
 /*Pie de página y diálogos.*/
@@ -168,7 +165,7 @@ to{opacity:1;transform:none}
 .service-list{margin:30px 0}
 .service-list>button{width:100%;display:flex;align-items:center;gap:24px;text-align:left;padding:20px 0;border-bottom:1px solid #dce4e4;transition:color .2s}
 .service-list>button:hover{color:var(--teal)}
-.service-list>button>span:first-child{font-size:11px;color:#78919c}
+.service-list>button>span:first-child{font-size:12px;color:#78919c}
 .service-list>button>span:nth-child(2){font-family:var(--serif);font-size:26px;line-height:1.2}
 .service-list small{display:block;font-family:var(--sans);font-size:13px;color:#6b7e86;margin-top:8px}
 .service-list b{margin-left:auto;font-size:21px;font-weight:400}
@@ -179,7 +176,7 @@ to{opacity:1;transform:none}
 input,select,textarea{display:block;width:100%;margin-top:6px;border:1px solid #d0dcde;background:#fff;color:var(--ink);padding:11px 13px;font-size:14px;border-radius:0;outline-offset:2px}
 input::placeholder,textarea::placeholder{color:#98a5aa}
 textarea{resize:vertical}
-.form-note{font-size:11px;color:#84969e;line-height:1.5;margin:4px 0 20px}
+.form-note{font-size:12px;color:#84969e;line-height:1.5;margin:4px 0 20px}
 #contact-result{padding-top:32px}
 #contact-result h3{font-size:42px;margin:14px 0}
 #contact-result>p:not(.eyebrow){font-size:15px;color:#627a84}
@@ -218,13 +215,13 @@ h1{font-size:clamp(60px,6vw,75px)}
 .step-copy{padding-top:45px}
 .radar-layout{gap:3%;grid-template-columns:47% 1fr}
 .radar-labels text{font-size:16px}
-.card-meta{font-size:9px;letter-spacing:.13em}
+.card-meta{font-size:12px;letter-spacing:.13em}
 .diagnostic-card{padding:24px;min-height:480px}
 #question-stage{padding-top:35px}
 .question-title{font-size:28px}
 .answer-option{font-size:15px;padding:12px 15px}
-#question-hint{font-size:9px}
-.priority{font-size:8px}}
+#question-hint{font-size:12px}
+.priority{font-size:12px}}
 /*Móvil: lectura vertical, navegación desplegable y radar debajo del formulario.*/
 @media(max-width:900px){.site-header{height:78px}
 .brand{font-size:18px}
@@ -240,13 +237,13 @@ nav .button{font-size:14px;align-self:flex-start}
 h1{font-size:clamp(50px,6.6vw,65px)}
 .hero-description{font-size:14px}
 .desktop-break{display:none}
-.hero-copy .eyebrow{font-size:9px;letter-spacing:.17em}
+.hero-copy .eyebrow{font-size:12px;letter-spacing:.17em}
 .hero-actions{gap:20px;align-items:flex-start;flex-direction:column}
 .hero-actions .button{font-size:12px;min-height:44px}
 .hero-visual{width:89%;margin-left:7%}
 .commitment{left:5%;padding:11px 0 11px 18px}
 .commitment p{font-size:18px}
-.commitment .eyebrow{font-size:8px}
+.commitment .eyebrow{font-size:12px}
 .method-heading{display:block}
 .method-heading>p{max-width:620px;margin-top:25px;padding-bottom:0;font-size:16px}
 .method h2{font-size:44px}
@@ -257,12 +254,12 @@ h1{font-size:clamp(50px,6.6vw,65px)}
 .radar-layout{grid-template-columns:1fr 1fr;gap:25px;margin-top:45px}
 .diagnostic-card{padding:22px;min-height:475px}
 .card-meta{flex-wrap:wrap;gap:7px}
-.card-meta span:nth-child(2){font-size:8px}
+.card-meta span:nth-child(2){font-size:12px}
 .question-title{font-size:25px}
 .answer-option{font-size:14px;gap:12px}
 .radar-figure{margin-top:0;align-self:center}
 .radar-labels text{font-size:17px}
-.radar-figure figcaption{font-size:10px;margin-top:12px}
+.radar-figure figcaption{font-size:12px;margin-top:12px}
 #question-hint{display:none}
 .footer-inner{flex-wrap:wrap}
 .footer-inner .text-link{font-size:12px}}
@@ -274,7 +271,7 @@ nav{top:74px}
 .hero{min-height:auto}
 .hero-layout{display:flex;flex-direction:column;align-items:stretch;min-height:auto;padding-block:38px 32px}
 .hero-copy{padding-bottom:0}
-.hero-copy .eyebrow{font-size:8.5px;letter-spacing:.19em;margin-bottom:26px}
+.hero-copy .eyebrow{font-size:12px;letter-spacing:.19em;margin-bottom:26px}
 h1{font-size:clamp(53px,12vw,76px);line-height:.96;letter-spacing:-.04em}
 .hero-description{font-size:15px;line-height:1.6;margin-top:25px;max-width:95%}
 .hero-actions{flex-direction:row;align-items:center;gap:24px;margin-top:27px}
@@ -283,12 +280,12 @@ h1{font-size:clamp(53px,12vw,76px);line-height:.96;letter-spacing:-.04em}
 .hero-visual{width:72%;margin:62px 4% 0 auto;max-width:360px}
 .portrait-backdrop{right:-11%;top:-5%;height:87%}
 .commitment{left:5%;bottom:7%;padding:11px 0 11px 18px}
-.commitment .eyebrow{font-size:8px}
+.commitment .eyebrow{font-size:12px}
 .commitment p{font-size:21px}
 .method{height:auto;--progress:1}
 .method-sticky{position:relative;min-height:auto;display:block}
 .method .container{padding-block:65px 62px}
-.method-heading .eyebrow{font-size:9px;margin-bottom:24px}
+.method-heading .eyebrow{font-size:12px;margin-bottom:24px}
 .method h2{font-size:41px;max-width:340px}
 .method-heading>p{font-size:15px;max-width:100%;margin-top:24px}
 .steps{display:block;margin:45px 0 0 0}
@@ -302,12 +299,12 @@ h1{font-size:clamp(53px,12vw,76px);line-height:.96;letter-spacing:-.04em}
 .step-copy h3{font-size:29px;white-space:normal;margin-bottom:12px}
 .step-copy p{font-size:14px;max-width:95%;line-height:1.65}
 .radar-section{padding:65px 0 55px;min-height:auto}
-.radar-section>.container>.eyebrow{font-size:9px;margin-bottom:23px}
+.radar-section>.container>.eyebrow{font-size:12px;margin-bottom:23px}
 .radar-section h2{font-size:40px;max-width:370px;line-height:1.06}
 .radar-layout{display:flex;flex-direction:column;margin-top:34px;gap:30px}
 .diagnostic-card{width:100%;padding:25px 22px 22px;min-height:460px}
-.card-meta{font-size:9px;letter-spacing:.13em;flex-wrap:nowrap}
-.card-meta span:nth-child(2){font-size:8px;text-align:right}
+.card-meta{font-size:12px;letter-spacing:.13em;flex-wrap:nowrap}
+.card-meta span:nth-child(2){font-size:12px;text-align:right}
 .question-title{font-size:27px;line-height:1.14;min-height:0;margin-bottom:24px}
 #question-stage{padding-top:34px}
 .answer-list{gap:12px}
@@ -316,20 +313,20 @@ h1{font-size:clamp(53px,12vw,76px);line-height:.96;letter-spacing:-.04em}
 .question-navigation{margin-top:20px}
 .radar-figure{width:100%;margin:0;align-self:auto}
 .radar-labels text{font-size:18px}
-.radar-figure figcaption{font-size:10px;margin-top:0}
+.radar-figure figcaption{font-size:12px;margin-top:0}
 .result-title{font-size:28px}
 .result-list li{font-size:13px}
-.priority{font-size:8px}
+.priority{font-size:12px}
 .diagnostic-result-actions{gap:14px}
-.result-fineprint{font-size:10px}
+.result-fineprint{font-size:12px}
 .site-footer{padding:28px 0}
 .footer-inner{display:grid;grid-template-columns:1fr auto;gap:19px}
-.footer-inner>p{grid-column:1;grid-row:2;font-size:11px}
+.footer-inner>p{grid-column:1;grid-row:2;font-size:12px}
 .footer-inner>.text-link{grid-column:1;grid-row:3;justify-self:start;font-size:12px}
 .back-top{grid-column:2;grid-row:1/3}
 .site-dialog{padding:38px 25px 30px;max-height:92svh}
 .site-dialog h2{font-size:39px}
-.site-dialog .eyebrow{font-size:9px}
+.site-dialog .eyebrow{font-size:12px}
 .service-list>button{gap:17px}
 .service-list>button>span:nth-child(2){font-size:24px}
 .service-list small{font-size:12px}
@@ -353,7 +350,7 @@ h1{font-size:clamp(53px,12vw,76px);line-height:.96;letter-spacing:-.04em}
 .radar-layout{grid-template-columns:1fr 1fr;gap:30px}
 .diagnostic-card{min-height:0;box-shadow:none;border:0}
 .radar-section h2{font-size:32px}
-.radar-section .eyebrow{font-size:10px}
+.radar-section .eyebrow{font-size:12px}
 .result-title{font-size:25px}
 .radar-figure{margin:0}
 .result-list li{font-size:12px}
@@ -386,23 +383,39 @@ nav .button{font-size:14px;align-self:flex-start}}
 @media(max-width:640px){.header-inner{gap:8px}
 .header-tools{gap:8px}
 .language-control{width:89px}
-.language-control select{font-size:11px;padding-left:20px}
+.language-control select{font-size:12px;padding-left:20px}
 .language-control svg{width:13px;height:13px}
 .header-tools .menu-toggle{width:30px}
 .brand{font-size:16px;gap:5px}
 .brand-mark{width:21px}
 html[lang=en] h1,html[lang=pt] h1,html[lang=fr] h1{font-size:clamp(48px,11.3vw,72px)}
-.card-meta{font-size:8px;gap:8px}
-.card-meta span:nth-child(2){font-size:7.5px}
+.card-meta{font-size:12px;gap:8px}
+.card-meta span:nth-child(2){font-size:12px}
 .result-list li{gap:7px;font-size:12px}
-.priority{font-size:7px;letter-spacing:.04em;padding-inline:4px}
-.diagnostic-result-actions .button{font-size:11px}}
+.priority{font-size:12px;letter-spacing:.04em;padding-inline:4px}
+.diagnostic-result-actions .button{font-size:12px}}
 @media(max-width:360px){.brand{font-size:14px}
 .header-tools{gap:4px}
 .language-control{width:85px}
 .hero-actions{gap:15px}
-.hero-actions .button{font-size:11px;padding-inline:13px}
-.hero-actions .text-link{font-size:11px}}
+.hero-actions .button{font-size:12px;padding-inline:13px}
+.hero-actions .text-link{font-size:12px}}
 @media(max-width:640px){html[lang=fr] h1{font-size:clamp(44px,10.5vw,68px)}
-.card-meta{font-size:9px}
-.card-meta span:nth-child(2){font-size:8.5px}}
+.card-meta{font-size:12px}
+.card-meta span:nth-child(2){font-size:12px}}
+/* ---------- Tarea 1.2 · Cabecera y menú ----------
+   Hamburguesa hasta 1100 px (cubre 1024 px). Panel con scroll propio,
+   botón de contacto visible, foco visible y página bloqueada con el menú abierto. */
+.site-header :focus-visible{outline-color:var(--white)}
+@media(max-width:1100px){
+body.menu-open{overflow:hidden}
+.site-header nav.is-open{max-height:calc(100dvh - var(--header-height));overflow-y:auto;overscroll-behavior:contain;gap:6px;padding-block:18px 28px}
+.site-header nav.is-open a{display:flex;align-items:center;min-height:44px;padding-block:4px}
+.site-header nav.is-open a:after{bottom:6px}
+.site-header nav.is-open .nav-cta{align-self:flex-start;margin-top:14px;min-height:48px;padding:12px 24px;font-size:15px;background:var(--teal);color:var(--white);border-color:var(--teal)}
+.site-header nav.is-open .nav-cta:hover{background:var(--teal-hover);border-color:var(--teal-hover)}
+.site-header nav.is-open :focus-visible{outline-color:var(--teal)}
+.site-header nav.is-open .nav-cta:focus-visible{outline-color:var(--petroleo)}
+.menu-toggle{min-width:44px;min-height:44px;align-items:center}
+}
+@media(max-width:640px){.site-header nav.is-open .nav-cta{align-self:stretch}}

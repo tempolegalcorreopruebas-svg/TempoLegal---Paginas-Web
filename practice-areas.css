@@ -10,7 +10,7 @@
 .services-section .service-filters button:hover{color:#173E4B;background:#E8F0F1}
 .services-section .service-filters button[aria-pressed=true]{color:#fff;background:#123F4C}
 .services-section .service-filters button:focus-visible{outline:2px solid #3E7490;outline-offset:3px}
-.filter-count{font-size:10px;font-weight:600;letter-spacing:.06em;color:#86A0A8;font-variant-numeric:tabular-nums}
+.filter-count{font-size:12px;font-weight:600;letter-spacing:.06em;color:#86A0A8;font-variant-numeric:tabular-nums}
 .service-filters button[aria-pressed=true] .filter-count{color:#9FD3DF}
 
 /* Distribución */
@@ -25,12 +25,12 @@
 .practice-row{display:grid;grid-template-columns:38px 30px minmax(0,1fr) 44px;align-items:center;gap:22px;width:100%;min-height:clamp(84px,6.4vw,104px);padding:14px 4px 14px 22px;border:0;background:transparent;text-align:left;color:#193B45;transition:background .35s var(--ease)}
 .practice-row:hover,.practice-item.is-active .practice-row{background:linear-gradient(90deg,#FFFFFF 0,#FFFFFF00 92%)}
 .practice-row:focus-visible{outline:2px solid #3E7490;outline-offset:-2px}
-.practice-index{font-size:11px;font-weight:600;letter-spacing:.16em;color:#8AA3AB;font-variant-numeric:tabular-nums;transition:color .3s}
+.practice-index{font-size:12px;font-weight:600;letter-spacing:.16em;color:#8AA3AB;font-variant-numeric:tabular-nums;transition:color .3s}
 .practice-icon{display:grid;place-items:center;width:30px;height:30px;color:#5E8796;transition:color .3s,transform .45s var(--ease)}
 .practice-icon svg{width:26px;height:26px}
 .practice-text{display:flex;flex-direction:column;gap:7px;min-width:0}
 .practice-title{font-family:var(--serif);font-size:clamp(22px,1.75vw,31px);line-height:1.12;letter-spacing:-.022em;color:#193B45;transition:color .3s,transform .45s var(--ease)}
-.practice-category{font-size:10.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#7D969E}
+.practice-category{font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#7D969E}
 .practice-arrow{display:grid;place-items:center;width:44px;height:44px;border:1px solid #C6D7DA;border-radius:50%;color:#3E7490;transition:background .35s var(--ease),border-color .35s,color .35s,transform .45s var(--ease)}
 .practice-arrow svg{width:18px;height:18px}
 .practice-row:hover .practice-title,.practice-item.is-active .practice-title{color:#0E5C73;transform:translateX(6px)}
@@ -47,11 +47,11 @@
 .practice-panel-watermark{position:absolute;right:clamp(22px,2.4vw,40px);top:clamp(10px,1.4vw,22px);font-family:var(--serif);font-size:clamp(110px,10vw,170px);line-height:1;letter-spacing:-.05em;color:#FFFFFF0D;pointer-events:none;user-select:none}
 .practice-panel-icon{display:grid;place-items:center;width:52px;height:52px;margin-bottom:30px;border:1px solid #9FD3DF59;border-radius:50%;color:#9FD3DF}
 .practice-panel-icon svg{width:26px;height:26px}
-.practice-panel-meta{display:flex;justify-content:space-between;gap:20px;margin-bottom:18px;font-size:10.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#9FD3DF}
+.practice-panel-meta{display:flex;justify-content:space-between;gap:20px;margin-bottom:18px;font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#9FD3DF}
 .practice-panel-count{color:#9FD3DFA6;font-variant-numeric:tabular-nums}
 .practice-panel-title{font-size:clamp(32px,2.75vw,48px);line-height:1.06;letter-spacing:-.03em;color:#F6FAFB;max-width:15ch;margin-bottom:20px}
 .practice-panel .practice-summary{color:#C9DDE2;font-size:clamp(14px,1vw,17px);line-height:1.7;max-width:46ch;padding-bottom:26px;margin-bottom:26px;border-bottom:1px solid #FFFFFF1F}
-.practice-label{font-size:10.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#7FA9B5;margin-bottom:16px}
+.practice-label{font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#7FA9B5;margin-bottom:16px}
 .practice-scope{list-style:none;margin:0 0 32px;padding:0;display:grid;gap:13px}
 .practice-scope li{position:relative;padding-left:28px;font-size:clamp(14px,.98vw,16px);line-height:1.5;color:#EEF6F7}
 .practice-scope li:before{content:'';position:absolute;left:2px;top:.45em;width:9px;height:9px;border:1px solid #9FD3DF;transform:rotate(45deg)}
