@@ -33,10 +33,10 @@
   function updateLinks(){
     $$('[data-project-home]').forEach(link=>{
       const hash=link.getAttribute('href').split('#')[1];
-      link.setAttribute('href','index.html?lang='+I.language+(hash?'#'+hash:''));
+      link.setAttribute('href','./'+(hash?'#'+hash:''));
     });
-    $$('[data-project-consult]').forEach(link=>link.setAttribute('href','index.html?lang='+I.language+(['gma','cce'].includes(id)?'':'&consulta=proteccion-datos')+'#contacto'));
-    $$('[data-project-privacy]').forEach(link=>link.setAttribute('href','politica-de-privacidad.html?lang='+I.language));
+    $$('[data-project-consult]').forEach(link=>link.setAttribute('href','./'+(['gma','cce'].includes(id)?'':'?consulta=proteccion-datos')+'#contacto'));
+    $$('[data-project-privacy]').forEach(link=>link.setAttribute('href','politica-de-privacidad/'));
   }
   function renderPage(){
     const current=I.get('caseItems'),cases=current.some(project=>project.id===id)?current:I.get('legacyCaseItems'),item=cases.find(project=>project.id===id);if(!item)return;
@@ -53,7 +53,7 @@
     });
     const related=$('#project-related');retire(related);related.replaceChildren();
     cases.filter(project=>project.id!==id).forEach(project=>{
-      const card=node('a','project-related-card project-reveal',null,{href:project.page+'?lang='+I.language});
+      const card=node('a','project-related-card project-reveal',null,{href:project.page});
       card.append(node('p','eyebrow',project.sector),node('h3','',project.name),node('p','',project.summary),node('span','text-link',t('casesReadFull')));related.append(card);
     });
     updateLinks();reveal();requestUpdate();

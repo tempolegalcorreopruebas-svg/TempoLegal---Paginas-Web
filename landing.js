@@ -57,18 +57,7 @@
     if (config.technicalTeamNames && names) { names.textContent = config.technicalTeamNames; names.hidden = false; }
   });
 
-  // Mapa del pie: solo se carga si la persona lo autoriza.
-  document.querySelectorAll('.footer-map').forEach(map => {
-    const allow = map.querySelector('[data-map-consent]');
-    const frame = map.querySelector('iframe[data-src]');
-    if (!allow || !frame) return;
-    allow.disabled = false;
-    allow.addEventListener('click', () => {
-      frame.src = frame.dataset.src;
-      frame.hidden = false;
-      map.querySelector('.footer-map-consent').hidden = true;
-    });
-  });
+  // External map consent is handled by privacy-consent.js.
 
   // Enlaces de WhatsApp, teléfono y correo con los datos de config.js.
   const phone = String(config.whatsapp || '').replace(/\D/g, '');

@@ -97,8 +97,8 @@ const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccio
     ask.append(node('span','',t('serviceAsk')),node('span','',' ↗',{'aria-hidden':'true'}));
     actions.append(ask);
     // Tarea 4.2: enlace a la landing del servicio cuando ya existe (solo versión en español).
-    const page=SERVICE_PAGES[service.id];
-    if(page){const more=node('a','button button-outline practice-more',null,{href:page});more.append(node('span','','Ver el servicio'),node('span','',' →',{'aria-hidden':'true'}));actions.append(more);}
+    const page=SERVICE_PAGES[service.id]||service.page;
+    if(page){const more=node('a','button button-outline practice-more',null,{href:page});more.append(node('span','',t('serviceReadFull')),node('span','',' →',{'aria-hidden':'true'}));actions.append(more);}
     wrap.append(actions,node('p','practice-note',t('serviceScope')));
     return wrap;
   }
@@ -173,7 +173,7 @@ const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccio
   $('#services-grid').addEventListener('pointerover',event=>{
     if(!desktopPractice.matches||event.pointerType==='touch')return;
     const item=event.target.closest('.practice-item');if(!item)return;
-    clearTimeout(hoverTimer);hoverTimer=setTimeout(()=>selectPractice(item.dataset.serviceId),90);
+    clearTimeout(hoverTimer);hoverTimer=setTimeout(()=>{if(!$('#practice-panel')?.contains(document.activeElement))selectPractice(item.dataset.serviceId);},90);
   });
   $('#services-grid').addEventListener('pointerleave',()=>clearTimeout(hoverTimer));
   $('#services-grid').addEventListener('focusin',event=>{const item=event.target.closest('.practice-item');if(item&&desktopPractice.matches&&event.target.matches('.practice-row'))selectPractice(item.dataset.serviceId);});
@@ -239,7 +239,7 @@ const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccio
       card.append(photo,node('h3','',person.name));
       if(HOME_REVIEW&&person.degree)card.append(node('p','team-person-degree',person.degree));
       card.append(node('p','team-person-role',person.role),node('p','team-person-specialty',person.specialty));
-      if(person.page){const link=node('a','team-profile-link',null,{href:person.page+'?lang='+I.language,target:'_blank',rel:'noopener noreferrer','aria-label':t('profileOpenLabel',{name:person.name})});link.append(node('span','',t('profileMore')),node('span','','↗',{'aria-hidden':'true'}));card.append(link);}
+      if(person.page){const link=node('a','team-profile-link',null,{href:person.page,target:'_blank',rel:'noopener noreferrer','aria-label':t('profileOpenLabel',{name:person.name})});link.append(node('span','',t('profileMore')),node('span','','↗',{'aria-hidden':'true'}));card.append(link);}
       grid.append(card);
     });reveal(grid);
   }
@@ -295,7 +295,7 @@ const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccio
       const copy=node('div','insight-copy');
       if(featured)copy.append(node('p','insight-category',t(article.categoryKey)));
       copy.append(node('h3','',article.title,{id:titleId}),node('p','insight-summary',article.body));
-      const action=node('a','insight-action',null,{href:article.page+'?lang='+I.language,'aria-label':t('insightReadLabel',{topic:article.title})});
+      const action=node('a','insight-action',null,{href:article.page,'aria-label':t('insightReadLabel',{topic:article.title})});
       action.append(node('span','',t('insightRead')),node('span','insight-arrow','→',{'aria-hidden':'true'}));
       copy.append(action);card.append(meta,copy);
       if(featured)card.append(node('p','insight-edition',t('insightCollection')));
@@ -315,7 +315,7 @@ const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccio
     I.get('caseItems').forEach((item,index)=>{
       const titleId='case-title-'+item.id;
       const card=node('article','case-card reveal',null,{'aria-labelledby':titleId});card.style.setProperty('--reveal-delay',index*90+'ms');
-      const link=node('a','case-card-link',null,{href:item.page+'?lang='+I.language,'aria-labelledby':titleId});
+      const link=node('a','case-card-link',null,{href:item.page,'aria-labelledby':titleId});
       const art=node('div','case-art',null,{'aria-hidden':'true'}),brand=node('span','case-brand');
       brand.append(node('img','',null,{src:BASE+'assets/clients-premium/'+logos[item.id],alt:'',loading:'lazy',decoding:'async',width:'320',height:'200'}));art.append(brand);
       const content=node('div','case-content'),meta=node('div','case-meta');
@@ -351,7 +351,7 @@ const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccio
   function renderAll(){renderServices();renderSectors();renderTeam();renderReview();renderCases();renderArticles();renderFaq();if(selectedService)populateService();}
   document.addEventListener('toggle',event=>{if(event.target.matches('details'))document.dispatchEvent(new Event('tempo:layoutchange'));},true);
   function updatePrivacyLinks(){
-    document.querySelectorAll('[data-privacy-link]').forEach(link=>link.setAttribute('href','politica-de-privacidad.html?lang='+I.language));
+    document.querySelectorAll('[data-privacy-link]').forEach(link=>link.setAttribute('href','politica-de-privacidad/'));
   }
   updatePrivacyLinks();
   document.addEventListener('tempo:languagechange',updatePrivacyLinks);
