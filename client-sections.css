@@ -105,3 +105,83 @@ html.motion-paused .coverage-section .coverage-pulse{animation-play-state:paused
 @media(max-width:360px){.coverage-copy h2{font-size:30px}.team-reference-grid{gap:25px 15px}.team-person h3{font-size:14px}.team-person-role,.team-person-specialty{font-size:12px}.testimonials-heading h2{font-size:31px}}
 @media(prefers-reduced-motion:reduce){.coverage-hub .coverage-pulse{animation:none;opacity:.4;transform:none}.coverage-routes path{stroke-dashoffset:0}.coverage-place{opacity:1}.coverage-section.is-visible .coverage-routes path,.coverage-section.is-visible .coverage-place{animation:none}}
 @media print{.coverage-section,.team-reference,.testimonials-reference,.client-experience{display:none!important}}
+
+/* Point 13: team discovery link with a restrained hover effect. */
+.team-discover{display:flex;justify-content:center;margin-top:42px}
+.team-discover-link{position:relative;display:inline-flex;align-items:center;gap:24px;overflow:hidden;isolation:isolate;padding:18px 25px;border:1px solid #24565c;border-radius:999px;background:#fff;color:#16434c;font:600 15px/1.4 var(--sans);text-decoration:none;box-shadow:0 5px 18px #123f4e0a;transition:transform .25s ease,box-shadow .25s ease,color .25s ease}
+.team-discover-link:before{content:'';position:absolute;inset:0;z-index:-1;background:#16434c;transform:translateY(102%);transition:transform .3s ease}
+.team-discover-arrow{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#e5eeea;color:#16434c;transition:transform .25s ease}
+.team-discover-link:is(:hover,:focus-visible){color:#fff;transform:translateY(-3px);box-shadow:0 12px 25px #123f4e22}
+.team-discover-link:is(:hover,:focus-visible):before{transform:translateY(0)}
+.team-discover-link:is(:hover,:focus-visible) .team-discover-arrow{transform:rotate(45deg)}
+.team-discover-link:focus-visible{outline:3px solid #9a8035;outline-offset:5px}
+@media(max-width:640px){.team-discover{margin-top:30px}.team-discover-link{max-width:100%;padding:15px 20px;gap:16px;font-size:14px}}
+@media(prefers-reduced-motion:reduce){.team-discover-link,.team-discover-link:before,.team-discover-arrow{transition:none}.team-discover-link:is(:hover,:focus-visible),.team-discover-link:is(:hover,:focus-visible) .team-discover-arrow{transform:none}}
+
+/* Expanded coverage atlas: Ecuador and outbound Quito connections. */
+.coverage-section{position:relative;padding:64px 0;background:radial-gradient(ellipse at 72% 42%,#20535b 0%,#123b47 48%,#102f3c 100%)}
+.coverage-section:before{content:'';position:absolute;inset:0;background-image:linear-gradient(#98dcd505 1px,transparent 1px),linear-gradient(90deg,#98dcd505 1px,transparent 1px);background-size:48px 48px;pointer-events:none}
+.coverage-section .coverage-layout{position:relative;width:94%;max-width:1760px;grid-template-columns:minmax(270px,.68fr) minmax(0,1.72fr);gap:3%;align-items:stretch}
+.coverage-section .coverage-copy{padding-block:28px;align-self:center}
+.coverage-section .coverage-copy h2{font-size:clamp(33px,3vw,49px);line-height:1.12}
+.coverage-section .coverage-description{font-size:15px;line-height:1.8;margin-top:24px}
+.coverage-section .coverage-proof{margin-top:30px;gap:24px}
+.coverage-section .coverage-proof strong{font-size:42px}
+.coverage-map-premium{position:relative;display:flex;align-items:center;align-self:stretch;min-height:660px;border:1px solid #b4e5dc20;border-radius:28px;background:radial-gradient(ellipse at 31% 53%,#66d6bd0e,transparent 48%),linear-gradient(135deg,#ffffff04,#071e2b24);box-shadow:inset 0 1px 0 #ffffff08,0 30px 70px #061f291a;isolation:isolate}
+.coverage-map-premium .coverage-map-svg{width:100%;height:100%;min-height:660px;aspect-ratio:auto;overflow:visible;filter:drop-shadow(0 8px 24px #061c2520)}
+.coverage-map-premium .coverage-map-svg>image{opacity:.95}
+.coverage-map-premium .coverage-routes path{stroke:url(#coverage-route-light);stroke-width:1.25;opacity:.8;fill:none}
+.coverage-map-premium .coverage-place>circle{stroke:#99d7d0;stroke-width:1.2;opacity:.8}
+.coverage-map-premium .coverage-place .coverage-core{fill:#e1fff6;stroke:none}
+.coverage-map-premium .coverage-place text{font-size:15px;fill:#f0fcfa;stroke:#133c47;stroke-width:5px;letter-spacing:.55px}
+.coverage-map-premium .coverage-place .coverage-city{font-size:12px;fill:#b1d2d4;letter-spacing:0}
+.coverage-map-premium .coverage-ecuador{fill:#d6b76c;fill-opacity:.8;stroke:#ffe5a4;stroke-width:.8;filter:drop-shadow(0 0 6px #e4c57b80)}
+.coverage-map-premium .coverage-hub .coverage-origin-aura{fill:#f3d98a;opacity:.07;filter:none}
+.coverage-map-premium .coverage-hub .coverage-origin-ring{fill:none;stroke:#f2d48a;stroke-width:1;opacity:.75;filter:none}
+.coverage-map-premium .coverage-hub>circle:not(.coverage-pulse):not(.coverage-origin-aura):not(.coverage-origin-ring){fill:#fff4ca;filter:drop-shadow(0 0 6px #ffe9aa)}
+.coverage-map-premium .coverage-hub .coverage-pulse{stroke:#f1d58a}
+.coverage-map-premium .coverage-hub text{font-size:23px;fill:#ffe9b4;stroke:#123b47;stroke-width:6px}
+.coverage-flow{opacity:.95;filter:drop-shadow(0 0 3px #9af2e5)}
+.coverage-origin-card{position:absolute;right:24px;bottom:25px;width:205px;padding:18px 20px;border:1px solid #d9c0874d;border-radius:18px;background:linear-gradient(140deg,#183f49f5,#102e3af0);box-shadow:0 12px 28px #061b2830;backdrop-filter:blur(12px)}
+.coverage-origin-caption{display:block;color:#bed7d3;font:500 10px/1.5 var(--sans);letter-spacing:.08em;text-transform:uppercase}
+.coverage-origin-detail{display:flex;align-items:center;gap:12px;margin-top:12px}
+.coverage-origin-detail svg{width:72px;height:68px;flex:none;overflow:visible}
+.coverage-origin-detail svg path{fill:#d4b57233;stroke:#e9ca85;stroke-width:.55}
+.coverage-origin-detail svg circle{fill:#fff4ca;filter:drop-shadow(0 0 1px #ffe6a3)}
+.coverage-origin-detail strong{display:block;font:600 12px/1.5 var(--sans);letter-spacing:.12em;color:#edce8c}
+.coverage-origin-detail div>span{display:block;font:30px/1.2 var(--serif);color:#fff6df;margin-top:2px}
+.coverage-origin-card>p{font:11px/1.5 var(--sans);color:#adc9cc;border-top:1px solid #cfe4df1a;padding-top:10px;margin-top:10px}
+.coverage-map-legend{position:absolute;left:24px;bottom:25px;display:flex;align-items:center;gap:9px;font:11px/1.5 var(--sans);letter-spacing:.03em;color:#aecdcf}
+.coverage-map-legend>span{width:6px;height:6px;border-radius:50%;background:#e9c980;box-shadow:0 0 0 4px #e9c98012}
+@media(min-width:1600px){.coverage-map-premium,.coverage-map-premium .coverage-map-svg{min-height:740px}}
+@media(max-width:1100px){.coverage-section .coverage-layout{grid-template-columns:minmax(245px,.7fr) minmax(0,1.3fr);gap:2%}.coverage-section .coverage-copy h2{font-size:34px}.coverage-map-premium,.coverage-map-premium .coverage-map-svg{min-height:640px}.coverage-origin-card{right:18px;bottom:20px;width:180px;padding:14px}.coverage-origin-detail svg{width:58px;height:58px}.coverage-map-legend{left:18px;bottom:20px;max-width:110px}}
+@media(max-width:900px){.coverage-section .coverage-layout{grid-template-columns:1fr;gap:28px;width:90%}.coverage-section .coverage-copy{max-width:none;padding-block:0}.coverage-section .coverage-copy h2{max-width:620px}.coverage-section .coverage-description{max-width:720px}.coverage-section .coverage-proof{max-width:430px}.coverage-map-premium{max-width:none;min-height:570px}.coverage-map-premium .coverage-map-svg{min-height:570px}}
+@media(max-width:640px){.coverage-section{padding-block:44px}.coverage-section .coverage-layout{width:92%;gap:26px}.coverage-section .coverage-copy h2{font-size:34px}.coverage-section .coverage-description{font-size:14px}.coverage-map-premium{display:block;min-height:0;border-radius:20px;padding:16px 8px 0}.coverage-map-premium .coverage-map-svg{height:auto;min-height:0;aspect-ratio:790/440}.coverage-map-premium .coverage-hub text{font-size:25px}.coverage-origin-card{position:relative;right:auto;bottom:auto;width:auto;display:grid;grid-template-columns:1fr 1.2fr;align-items:center;gap:6px 16px;margin:12px 10px 18px;padding:15px 18px}.coverage-origin-caption{grid-column:1}.coverage-origin-detail{grid-column:2;grid-row:1 / span 2;margin-top:0}.coverage-origin-card>p{grid-column:1;margin:0;border:0;padding:0;font-size:10px}.coverage-origin-detail div>span{font-size:26px}.coverage-map-legend{position:relative;left:auto;bottom:auto;max-width:none;margin:0 16px 18px}.coverage-map-premium .coverage-mobile-list{padding:18px 10px 20px;margin-top:0}.coverage-flow{opacity:.8}}
+@media(prefers-reduced-motion:reduce){.coverage-flow{display:none}.coverage-map-premium .coverage-routes path{stroke-dashoffset:0;animation:none}.coverage-map-premium .coverage-place{opacity:1;animation:none}.coverage-map-premium .coverage-pulse{animation:none;opacity:.4}}
+
+/* Full world atlas with country borders and separated destination callouts. */
+.coverage-section .coverage-layout{grid-template-columns:1fr;max-width:1680px;gap:30px;width:92%}
+.coverage-section .coverage-copy{display:grid;grid-template-columns:.95fr 1.45fr;gap:16px 60px;max-width:none;padding-block:0}
+.coverage-copy>.reference-eyebrow{grid-column:1;margin:0}
+.coverage-section .coverage-copy h2{grid-column:1;grid-row:2;font-size:clamp(32px,3vw,46px);max-width:480px}
+.coverage-section .coverage-description{grid-column:2;grid-row:1 / span 2;margin:0;font-size:15px;max-width:850px}
+.coverage-section .coverage-proof{grid-column:1;grid-row:3;max-width:420px;margin:8px 0 0;gap:30px}
+.coverage-section .coverage-proof strong{font-size:34px}
+.coverage-section .coverage-sectors{grid-column:2;grid-row:3;align-self:center;margin:0;padding-top:16px}
+.coverage-map-premium{display:block;min-height:0;padding:12px;overflow:hidden}
+.coverage-map-premium .world-coverage-svg{width:100%;height:auto;min-height:0;aspect-ratio:1200/650;filter:none}
+.world-continent-label{font:500 10px var(--sans);letter-spacing:2px;fill:#a0c6c6;opacity:.5;pointer-events:none}
+.coverage-map-premium .coverage-routes path{stroke-width:1.25;opacity:.65}
+.world-country-label>path{fill:none;stroke:#a2d8cd;stroke-width:.8;stroke-opacity:.6}
+.world-country-label rect{fill:#123843;fill-opacity:.96;stroke:#80b7b5;stroke-opacity:.32;stroke-width:.7}
+.world-country-label text{font:600 13px var(--sans);letter-spacing:.5px;fill:#edf9f4;text-transform:uppercase}
+.world-country-label .world-city-label{font:400 10.5px var(--sans);letter-spacing:0;fill:#bad6d6;text-transform:none}
+.world-destination circle:first-child{fill:#153f49;stroke:#b5e3d6;stroke-width:1}
+.world-destination circle:last-child{fill:#e0f7ec;stroke:none}
+.world-quito .world-quito-leader{fill:none;stroke:#eed18c;stroke-width:1}
+.world-quito rect{fill:#183b42;stroke:#dbba70;stroke-width:.8}
+.coverage-map-premium .world-quito text{font:500 17px var(--serif);stroke:none;fill:#ffe8ac}
+.coverage-map-premium .coverage-origin-card{left:28px;right:auto;bottom:32px;width:190px;padding:14px 17px}
+.coverage-map-premium .coverage-map-legend{left:auto;right:30px;bottom:25px;max-width:none}
+@media(max-width:900px){.coverage-section .coverage-copy{gap:18px 28px}.coverage-section .coverage-description{font-size:14px}.coverage-section .coverage-copy h2{font-size:34px}.coverage-map-premium .coverage-origin-card{width:165px;left:20px;bottom:25px;padding:12px}.coverage-origin-detail svg{width:48px;height:48px}.coverage-origin-detail div>span{font-size:24px}.coverage-origin-caption{font-size:9px}.coverage-origin-card>p{font-size:10px}}
+@media(max-width:640px){.coverage-section .coverage-copy{display:block}.coverage-copy>.reference-eyebrow{margin-bottom:18px}.coverage-section .coverage-description{margin-top:22px}.coverage-section .coverage-proof{margin-top:24px}.coverage-section .coverage-sectors{margin-top:22px}.coverage-map-premium{padding:8px 0 0;overflow:hidden}.coverage-map-premium .world-coverage-svg{width:100%;height:auto;min-height:0;aspect-ratio:1200/650}.world-country-label{display:none}.world-continent-label{font-size:13px;letter-spacing:1px}.coverage-map-premium .world-quito text{font-size:22px}.coverage-map-premium .coverage-origin-card{position:relative;left:auto;right:auto;bottom:auto;width:auto;display:grid;margin:16px 14px;padding:15px}.coverage-origin-detail svg{width:60px;height:60px}.coverage-origin-caption{font-size:10px}.coverage-origin-card>p{font-size:11px}.coverage-map-premium .coverage-map-legend{position:relative;right:auto;left:auto;bottom:auto;margin:0 18px 18px}.coverage-map-premium .coverage-mobile-list{display:block}.coverage-mobile-list ul{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 20px}}

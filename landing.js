@@ -13,7 +13,7 @@
   if (button && nav) {
     new MutationObserver(() => {
       const open = isOpen();
-      if (label) label.textContent = open ? 'Cerrar menú' : 'Abrir menú';
+      if (label) label.textContent = window.TempoI18n ? window.TempoI18n.t(open ? 'menuClose' : 'menuOpen') : (open ? 'Cerrar menú' : 'Abrir menú');
       nav.classList.toggle('is-open', open);
       nav.classList.toggle('open', open);
       document.body.classList.toggle('menu-open', open);
@@ -41,20 +41,20 @@
 
   // Foto conjunta del equipo de informática (tarea 0.1): se activa desde config.js.
   document.querySelectorAll('[data-it-team-photo]').forEach(figure => {
+    const names = figure.querySelector('.it-team-names');
+    if (config.technicalTeamNames && names) { names.textContent = config.technicalTeamNames; names.hidden = false; }
     const src = config.technicalTeamPhoto;
     if (!src) return;
     const base = document.querySelector('link[href$="base.css"]')?.getAttribute('href').replace(/base\.css$/, '') || '';
     const img = new Image();
     img.src = /^https?:|^\//.test(src) ? src : base + src;
-    img.alt = 'Equipo de informática de TempoLegal';
+    img.alt = window.TempoI18n ? window.TempoI18n.t('itTeamAlt') : 'Equipo de informática de TempoLegal';
     img.loading = 'lazy';
     img.decoding = 'async';
     const frame = figure.querySelector('.it-team-photo-frame');
     frame.replaceChildren(img);
     frame.removeAttribute('aria-hidden');
     figure.classList.add('has-photo');
-    const names = figure.querySelector('.it-team-names');
-    if (config.technicalTeamNames && names) { names.textContent = config.technicalTeamNames; names.hidden = false; }
   });
 
   // External map consent is handled by privacy-consent.js.

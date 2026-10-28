@@ -59,21 +59,25 @@ const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccio
   }
 
   let filter='all', selectedService=null, selectedSector='health';
+  let serviceQuery='';
+  const normalizeService=value=>String(value||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
+  const serviceMatches=(service,query)=>{const text=normalizeService([service.title,service.summary,categoryName(service.category),...(service.bullets||[])].join(' '));return normalizeService(query).split(/\s+/).filter(Boolean).every(term=>text.includes(term));};
+
   const services=()=>I.get('serviceItems');
   function categoryName(category){return t({data:'filterData',business:'filterBusiness',operations:'filterOperations'}[category]);}
   // Áreas de práctica: índice editorial + panel de detalle (escritorio) / acordeón (móvil).
   const PRACTICE_ICONS={
-    data:'<path d="M12 3 4.5 6v5.2c0 4.6 3.2 8.6 7.5 9.8 4.3-1.2 7.5-5.2 7.5-9.8V6Z"/><rect x="9" y="10.5" width="6" height="5" rx=".8"/><path d="M10.2 10.5V9a1.8 1.8 0 0 1 3.6 0v1.5"/>',
-    corporate:'<path d="M3.5 20.5h17M5 20.5V9.5M19 20.5V9.5M9.7 20.5V9.5M14.3 20.5V9.5M3.5 9.5h17L12 3.5Z"/>',
-    incorporation:'<path d="M14 3.5H7a1.5 1.5 0 0 0-1.5 1.5v14A1.5 1.5 0 0 0 7 20.5h10a1.5 1.5 0 0 0 1.5-1.5V8Z"/><path d="M14 3.5V8h4.5M9 12.5h6M9 16h3.5"/>',
-    foreign:'<circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.3 3.6 5.1 3.6 8.5s-1.2 6.2-3.6 8.5c-2.4-2.3-3.6-5.1-3.6-8.5s1.2-6.2 3.6-8.5Z"/>',
-    employment:'<circle cx="9" cy="8" r="3"/><path d="M3.5 19.5c.6-3.3 2.6-5 5.5-5s4.9 1.7 5.5 5"/><circle cx="16.8" cy="9" r="2.3"/><path d="M16.2 14.2c2.3 0 3.8 1.5 4.3 4.3"/>',
-    accounting:'<rect x="4.5" y="3.5" width="15" height="17" rx="1.5"/><path d="M8 7.5h8M8 17v-3M12 17v-5.5M16 17v-7"/>',
-    ip:'<circle cx="12" cy="12" r="8.5"/><path d="M10 16.5v-9h2.6a2.6 2.6 0 0 1 0 5.2H10M12.8 12.7l2.7 3.8"/>',
-    disputes:'<path d="M12 4v16.5M7.5 20.5h9M5 7.5h14M12 4.5l-7 3M12 4.5l7 3M5 7.5 2.8 13a2.4 2.4 0 0 0 4.4 0ZM19 7.5 16.8 13a2.4 2.4 0 0 0 4.4 0Z"/>',
-    notarial:'<path d="M14.5 4.5 19.5 9.5 10 19H5v-5Z"/><path d="M12.5 6.5l5 5M4.5 21h15"/>'
-  };
-  const practiceIcon=id=>'<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">'+(PRACTICE_ICONS[id]||PRACTICE_ICONS.corporate)+'</svg>';
+    "corporate": "<path d=\"M5 27V8.5l13-3V27M18 12l9 2v13M3 27h26M10 12h3m-3 5h3m-3 5h3M22 18h1m-1 4h1\"/><path class=\"practice-icon-accent\" d=\"M5 8.5l13-3M10 27v-2h3v2\"/>",
+    "data": "<path d=\"M16 3.5 26 7v7.8c0 6.1-4.2 10.9-10 13.7-5.8-2.8-10-7.6-10-13.7V7Z\"/><path d=\"M11 11.5h10M11 15.5h5\"/><path class=\"practice-icon-accent\" d=\"m12 21 2.8 2.6 5.7-6\"/>",
+    "foreign": "<circle cx=\"16\" cy=\"16\" r=\"11\"/><path d=\"M5 16h22M16 5c-4 3.5-5.5 7-5.5 11S12 23.5 16 27M16 5c4 3.5 5.5 7 5.5 11S20 23.5 16 27\"/><path class=\"practice-icon-accent\" d=\"M6.3 10.8c5.8 2.7 13.6 2.7 19.4 0M6.3 21.2c5.8-2.7 13.6-2.7 19.4 0\"/>",
+    "accounting": "<path d=\"M7 4.5h16a2 2 0 0 1 2 2v20H9a2 2 0 0 1-2-2Zm0 0v20a2 2 0 0 0 2 2M11 9h10M11 13h6M11 21v-3m5 3v-5\"/><path class=\"practice-icon-accent\" d=\"M21 21v-8M4.5 10H9M4.5 15H9M4.5 20H9\"/>",
+    "incorporation": "<path d=\"M19.5 4.5H8a2 2 0 0 0-2 2v20h20V11ZM19.5 4.5V11H26M11 15h10M11 19h5\"/><path class=\"practice-icon-accent\" d=\"M20.5 20v6M17.5 23h6\"/>",
+    "employment": "<rect x=\"4\" y=\"10\" width=\"24\" height=\"16\" rx=\"2\"/><path d=\"M11 10V7a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v3M4 15.5c6.8 4 17.2 4 24 0\"/><path class=\"practice-icon-accent\" d=\"M13 16.5v4h6v-4\"/>",
+    "ip": "<path d=\"M11 22c0-2.5-4-4-4-9a9 9 0 0 1 18 0c0 5-4 6.5-4 9M11 22h10M12 25.5h8M14 28h4M16 22v-7\"/><path class=\"practice-icon-accent\" d=\"m12.5 11 3.5 4 3.5-4\"/>",
+    "disputes": "<path d=\"M16 5v22M10 27h12M5 10l11-4 11 4M7 10l-4 9h8Zm18 0-4 9h8Z\"/><path class=\"practice-icon-accent\" d=\"M3 19c1 4 7 4 8 0m10 0c1 4 7 4 8 0\"/>",
+    "notarial": "<path d=\"M18 4.5H7v23h18v-16ZM18 4.5v7h7M11 15h8M11 19h5\"/><path class=\"practice-icon-accent\" d=\"m16 24 9-9 3 3-9 9h-3Z\"/>"
+};
+  const practiceIcon=id=>'<svg class="practice-symbol" viewBox="0 0 32 32" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">'+(PRACTICE_ICONS[id]||PRACTICE_ICONS.corporate)+'</svg>';
   const ARROW='<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M13 6.5 18.5 12 13 17.5"/></svg>';
   const desktopPractice=matchMedia('(min-width: 961px)');
   let selectedPractice='data',openPractice=null;
@@ -102,12 +106,28 @@ const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccio
     wrap.append(actions,node('p','practice-note',t('serviceScope')));
     return wrap;
   }
+  let panelFitFrame=0;
+  function fitPracticePanel(){
+    cancelAnimationFrame(panelFitFrame);
+    panelFitFrame=requestAnimationFrame(()=>{
+      const panel=$('#practice-panel');if(!panel||!desktopPractice.matches)return;
+      const inner=panel.querySelector('.practice-panel-inner');if(!inner)return;
+      const header=document.querySelector('.site-header,.tl-header');
+      const available=Math.max(300,innerHeight-(header?.getBoundingClientRect().height||72)-32);
+      panel.dataset.density='regular';
+      if(inner.getBoundingClientRect().height>available)panel.dataset.density='compact';
+      if(inner.getBoundingClientRect().height>available)panel.dataset.density='dense';
+    });
+  }
+  addEventListener('resize',fitPracticePanel,{passive:true});
+  document.fonts?.ready.then(fitPracticePanel);
   function renderPanel(animate){
     const panel=$('#practice-panel');if(!panel)return;
     const service=services().find(s=>s.id===selectedPractice)||services()[0];
     const inner=node('div','practice-panel-inner');inner.append(practiceDetail(service,{panel:true}));
     panel.replaceChildren(inner);panel.setAttribute('aria-labelledby','practice-panel-title');
-    if(animate&&!reduced.matches&&inner.animate)inner.animate([{opacity:0,transform:'translateY(10px)'},{opacity:1,transform:'translateY(0)'}],{duration:420,easing:'cubic-bezier(.2,.65,.3,1)'});
+    fitPracticePanel();
+    if(animate&&!reduced.matches&&inner.animate)inner.animate([{opacity:.6},{opacity:1}],{duration:180,easing:'ease-out'});
   }
   function syncPractice(){
     const desktop=desktopPractice.matches;
@@ -123,6 +143,8 @@ const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccio
     if(id===selectedPractice)return;selectedPractice=id;renderPanel(animate);syncPractice();
   }
   function renderServices() {
+    const search=$('#service-search');
+    if(search){search.closest('.service-search').hidden=false;search.placeholder=t('serviceSearchPlaceholder');$('#service-search-clear').setAttribute('aria-label',t('serviceSearchClear'));}
     const list=$('#services-grid');retire(list);list.replaceChildren();
     const total=services().length;
     services().forEach((service,index)=>{
@@ -160,8 +182,13 @@ const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccio
   }
   function applyFilter(animate=true) {
     const items=$$('.practice-item');let count=0,first=null;
-    if(HOME_REVIEW&&filter!=='all')$('#more-services').open=true;
-    items.forEach(item=>{item.hidden=filter!=='all'&&item.dataset.category!==filter;if(!item.hidden){count++;first=first||item.dataset.serviceId;}});
+    if(HOME_REVIEW&&(filter!=='all'||serviceQuery))$('#more-services').open=true;
+    const byId=new Map(services().map(service=>[service.id,service]));
+    items.forEach(item=>{item.hidden=(filter!=='all'&&item.dataset.category!==filter)||!serviceMatches(byId.get(item.dataset.serviceId),serviceQuery);if(!item.hidden){count++;first=first||item.dataset.serviceId;}});
+    const more=$('#more-services');if(more)more.closest('.more-services-wrapper').hidden=![...more.querySelectorAll('.practice-item')].some(item=>!item.hidden);
+    const empty=$('#service-search-empty');if(empty)empty.hidden=count!==0;
+    $('.practice-layout')?.classList.toggle('is-search-empty',count===0);
+    const clear=$('#service-search-clear');if(clear)clear.hidden=!serviceQuery;
     $$('[data-filter]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.filter===filter)));
     $('#service-count').textContent=t('servicesCount',{count});
     const visible=items.filter(item=>!item.hidden);
@@ -169,6 +196,8 @@ const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccio
     if(animate&&!reduced.matches)visible.forEach((item,index)=>{if(item.animate)item.animate([{opacity:0,transform:'translateY(8px)'},{opacity:1,transform:'translateY(0)'}],{duration:300+Math.min(index,6)*40,easing:'cubic-bezier(.2,.65,.3,1)'});});
     document.dispatchEvent(new Event('tempo:layoutchange'));
   }
+  $('#service-search')?.addEventListener('input',event=>{serviceQuery=event.target.value;applyFilter(false);});
+  $('#service-search-clear')?.addEventListener('click',()=>{serviceQuery='';$('#service-search').value='';applyFilter(false);$('#service-search').focus();});
   let hoverTimer=0;
   $('#services-grid').addEventListener('pointerover',event=>{
     if(!desktopPractice.matches||event.pointerType==='touch')return;
@@ -273,7 +302,9 @@ const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccio
     else author.append(node('span','quote-initials',item.id==='pablo'?'PLP':'EB',{'aria-hidden':'true'}));
     const identity=node('div','quote-identity');identity.append(node('h3','',item.name,{id:'autor-'+item.id}),node('p','quote-role',item.role));if(item.company)identity.append(node('p','quote-company',item.company));
     if(item.website&&['juan','eleazar'].includes(item.id))identity.append(node('a','quote-website',new URL(item.website).hostname,{href:item.website,target:'_blank',rel:'noopener noreferrer'}));
-    author.append(identity);card.append(quote,author);return card;
+    author.append(identity);
+    if(item.logo)author.append(node('img','quote-logo',null,{src:BASE+'assets/testimonials/'+item.logo,alt:item.company,width:'120',height:'60',loading:'lazy',decoding:'async'}));
+    card.append(quote,author);return card;
   }
   function renderReview() {
     if(HOME_REVIEW){$('#review-stage').replaceChildren(...I.get('reviewItems').map(homeReviewCard));return;}

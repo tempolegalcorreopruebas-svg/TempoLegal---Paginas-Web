@@ -1,4 +1,21 @@
 #!/usr/bin/env python3
+"""HISTÓRICO · NO EJECUTAR SOBRE LA VERSIÓN INTEGRADA (28/10/2026).
+
+Este script generó la primera versión de las 8 landings de protección de datos
+a partir de las maquetas (27/10/2026). Desde la integración con el trabajo de
+Antony, las landings se mantienen editando su HTML; volver a generarlas borraría
+local-navigation.js, el consentimiento de privacidad y otros ajustes integrados.
+Para cabecera y pie usar _tools/build-header.py y _tools/build-footer.py.
+Solo se ejecuta con --forzar.
+"""
+from __future__ import annotations
+import sys as _sys
+if __name__ == '__main__' and '--forzar' not in _sys.argv:
+    print(__doc__)
+    raise SystemExit(1)
+if '--forzar' in _sys.argv:
+    _sys.argv.remove('--forzar')
+
 """Construye las landings de protección de datos y las 3 herramientas LOPDP.
 
 Uso (desde la raíz del repositorio):
@@ -16,7 +33,6 @@ Qué hace con cada maqueta (los TEXTOS no se tocan):
   - Mantiene noindex hasta la publicación (tarea 5.6).
 Herramientas: una sola versión, desde 00_HERRAMIENTAS, en herramientas-lopdp/<nombre>/.
 """
-from __future__ import annotations
 
 import hashlib
 import os

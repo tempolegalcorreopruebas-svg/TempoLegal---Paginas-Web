@@ -32,12 +32,23 @@
     document.querySelector('.client-experience').open = true;
   }));
   if (dialog) dialog.querySelectorAll('a').forEach(link => link.addEventListener('click', () => dialog.close()));
-  const groupPhoto = window.TEMPO_CONFIG?.technicalTeamPhoto;
-  if (groupPhoto) {
-    const section = document.querySelector('.technical-team');
-    const photo = section.querySelector('[data-technical-team-photo]');
-    photo.src = (document.documentElement.dataset.base || '') + groupPhoto;
-    photo.alt = I.t('technicalTeamAlt');
-    section.hidden = false;
+  // Foto del equipo de informática (tarea 0.1): nombres y foto se activan desde config.js.
+  const teamFigure = document.querySelector('[data-technical-team-figure]');
+  if (teamFigure) {
+    const groupPhoto = window.TEMPO_CONFIG?.technicalTeamPhoto;
+    const teamNames = window.TEMPO_CONFIG?.technicalTeamNames;
+    const caption = teamFigure.querySelector('.it-team-names');
+    if (teamNames && caption) { caption.textContent = teamNames; caption.hidden = false; }
+    if (groupPhoto) {
+      const photo = new Image();
+      photo.src = /^https?:|^\//.test(groupPhoto) ? groupPhoto : (document.documentElement.dataset.base || '') + groupPhoto;
+      photo.alt = I.t('technicalTeamAlt');
+      photo.loading = 'lazy';
+      photo.decoding = 'async';
+      const frame = teamFigure.querySelector('.it-team-photo-frame');
+      frame.replaceChildren(photo);
+      frame.removeAttribute('aria-hidden');
+      teamFigure.classList.add('has-photo');
+    }
   }
 })();

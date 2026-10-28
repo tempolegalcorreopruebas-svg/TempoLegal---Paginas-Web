@@ -47,7 +47,7 @@ final class EmailTransport
             'Service: ' . $data['service'],
             'Language: ' . $data['language'],
             'Privacy notice acknowledged: yes',
-            'Privacy policy: V4.3, 2026-10-22',
+            'Privacy policy: V4.4, 2026-10-27',
             '',
             $data['message'],
             '',

@@ -64,7 +64,7 @@ window.TEMPO_CONTENT = {
     "contactDirect": "Atención directa de un abogado del equipo.",
     "privacyLink": "Privacidad",
     "termsLink": "Términos y Aviso Legal",
-    "footerStatement": "TempoLegal es la marca bajo la cual prestan servicios LEGALTEMPO S.A.S. y Juan Alberto Gómez Benalcázar.",
+    "footerStatement": "LEGALTEMPO S.A.S., RUC 1793241972001, opera este sitio y presta los servicios ofrecidos bajo la marca TempoLegal.",
     "rights": "Todos los derechos reservados.",
     "serviceItems": [
       {
@@ -320,7 +320,7 @@ window.TEMPO_CONTENT = {
       {
         "name": "Eleazar Becerra",
         "company": "Cámara de Comercio Exterior",
-        "image": null,
+        "image": "eleazar-approved.webp",
         "logo": "client-004.png",
         "website": "https://www.camaracomercioexterior.edu.pe/",
         "id": "eleazar",
@@ -859,7 +859,8 @@ window.TEMPO_CONTENT = {
     "legalHome": "Volver al inicio",
     "companyAbout": "Nosotros",
     "companyContact": "Contacto",
-    "phoneField": "Teléfono o WhatsApp"
+    "phoneField": "Teléfono o WhatsApp",
+    "book": "Solicitar orientación"
   },
   "en": {
     "navTeam": "Our team",
@@ -924,7 +925,7 @@ window.TEMPO_CONTENT = {
     "contactDirect": "Direct attention from a lawyer on our team.",
     "privacyLink": "Privacy",
     "termsLink": "Terms and Legal Notice",
-    "footerStatement": "TempoLegal is the brand under which LEGALTEMPO S.A.S. and Juan Alberto Gómez Benalcázar provide services.",
+    "footerStatement": "LEGALTEMPO S.A.S., RUC 1793241972001, operates this website and provides the services offered under the TempoLegal brand.",
     "rights": "All rights reserved.",
     "serviceItems": [
       {
@@ -1048,7 +1049,7 @@ window.TEMPO_CONTENT = {
         "role": "Lawyer · Founding partner",
         "bio": "Corporate law, foreign companies and data protection. Has served as counsel in debt recovery proceedings involving over USD 15 million.",
         "specialty": "Specialist in soft landing and foreign companies. Corporate law · Data protection",
-        "photo": "assets/team/juan-alberto.webp",
+        "photo": "assets/team/2026-10-21-JUAN-ALBERTO-FONDO-HOME.jpg",
         "photoWidth": 900,
         "photoHeight": 900,
         "page": "team-juan-alberto-gomez.html"
@@ -1059,7 +1060,7 @@ window.TEMPO_CONTENT = {
         "role": "Lawyer · Master’s degree · Senior lawyer",
         "bio": "Master’s in Compliance and Data Protection. Contracts, document management and prevention.",
         "specialty": "Data protection · Compliance",
-        "photo": "assets/team/emilie.webp",
+        "photo": "assets/team/2026-10-24_Emillie_Donoso_TempoLegal_Fondo_Quito_RECREACION_HD.png",
         "photoWidth": 900,
         "photoHeight": 900,
         "page": "team-emilie-donoso.html"
@@ -1070,7 +1071,7 @@ window.TEMPO_CONTENT = {
         "role": "Lawyer · Master’s degree · Senior lawyer",
         "bio": "Master’s in Procedural Law. Commercial contracts, corporate restructuring and legal risk management.",
         "specialty": "Corporate law · Employment law",
-        "photo": "assets/team/daniela.webp",
+        "photo": "assets/team/2026-10-24_Daniela_Barahona_TempoLegal_Fondo_Quito_RECREACION_HD.png",
         "photoWidth": 900,
         "photoHeight": 900,
         "page": "team-daniela-barahona.html"
@@ -1753,7 +1754,7 @@ window.TEMPO_CONTENT = {
     "contactDirect": "Atendimento direto por um advogado da equipe.",
     "privacyLink": "Privacidade",
     "termsLink": "Termos e Aviso Legal",
-    "footerStatement": "TempoLegal é a marca sob a qual LEGALTEMPO S.A.S. e Juan Alberto Gómez Benalcázar prestam serviços.",
+    "footerStatement": "LEGALTEMPO S.A.S., RUC 1793241972001, opera este site e presta os serviços oferecidos sob a marca TempoLegal.",
     "rights": "Todos os direitos reservados.",
     "serviceItems": [
       {
@@ -1877,7 +1878,7 @@ window.TEMPO_CONTENT = {
         "role": "Advogado · Sócio fundador",
         "bio": "Direito societário, empresas estrangeiras e proteção de dados. Atuou como procurador judicial em processos de recuperação de créditos envolvendo mais de USD 15 milhões.",
         "specialty": "Especialista em soft landing e empresas estrangeiras. Direito empresarial · Proteção de dados",
-        "photo": "assets/team/juan-alberto.webp",
+        "photo": "assets/team/2026-10-21-JUAN-ALBERTO-FONDO-HOME.jpg",
         "photoWidth": 900,
         "photoHeight": 900,
         "page": "team-juan-alberto-gomez.html"
@@ -1888,7 +1889,7 @@ window.TEMPO_CONTENT = {
         "role": "Advogada · Mestre · Advogada sênior",
         "bio": "Mestrado em Conformidade e Proteção de Dados. Contratos, gestão documental e prevenção.",
         "specialty": "Proteção de dados · Conformidade",
-        "photo": "assets/team/emilie.webp",
+        "photo": "assets/team/2026-10-24_Emillie_Donoso_TempoLegal_Fondo_Quito_RECREACION_HD.png",
         "photoWidth": 900,
         "photoHeight": 900,
         "page": "team-emilie-donoso.html"
@@ -1899,7 +1900,7 @@ window.TEMPO_CONTENT = {
         "role": "Advogada · Mestre · Advogada sênior",
         "bio": "Mestre em Direito Processual. Contratos comerciais, reorganização societária e gestão de riscos jurídicos.",
         "specialty": "Direito empresarial · Trabalhista",
-        "photo": "assets/team/daniela.webp",
+        "photo": "assets/team/2026-10-24_Daniela_Barahona_TempoLegal_Fondo_Quito_RECREACION_HD.png",
         "photoWidth": 900,
         "photoHeight": 900,
         "page": "team-daniela-barahona.html"
@@ -2582,7 +2583,7 @@ window.TEMPO_CONTENT = {
     "contactDirect": "Un contact direct avec un avocat de notre équipe.",
     "privacyLink": "Confidentialité",
     "termsLink": "Conditions et mentions légales",
-    "footerStatement": "TempoLegal est la marque sous laquelle LEGALTEMPO S.A.S. et Juan Alberto Gómez Benalcázar fournissent leurs services.",
+    "footerStatement": "LEGALTEMPO S.A.S., RUC 1793241972001, exploite ce site et fournit les services proposés sous la marque TempoLegal.",
     "rights": "Tous droits réservés.",
     "serviceItems": [
       {
@@ -2706,7 +2707,7 @@ window.TEMPO_CONTENT = {
         "role": "Avocat · Associé fondateur",
         "bio": "Droit des sociétés, entreprises étrangères et protection des données. A représenté des clients dans des procédures de recouvrement portant sur plus de 15 millions USD.",
         "specialty": "Spécialiste du soft landing et des entreprises étrangères. Droit des sociétés · Protection des données",
-        "photo": "assets/team/juan-alberto.webp",
+        "photo": "assets/team/2026-10-21-JUAN-ALBERTO-FONDO-HOME.jpg",
         "photoWidth": 900,
         "photoHeight": 900,
         "page": "team-juan-alberto-gomez.html"
@@ -2717,7 +2718,7 @@ window.TEMPO_CONTENT = {
         "role": "Avocate · Titulaire d’un master · Avocate senior",
         "bio": "Master en conformité et protection des données. Contrats, gestion documentaire et prévention.",
         "specialty": "Protection des données · Conformité",
-        "photo": "assets/team/emilie.webp",
+        "photo": "assets/team/2026-10-24_Emillie_Donoso_TempoLegal_Fondo_Quito_RECREACION_HD.png",
         "photoWidth": 900,
         "photoHeight": 900,
         "page": "team-emilie-donoso.html"
@@ -2728,7 +2729,7 @@ window.TEMPO_CONTENT = {
         "role": "Avocate · Titulaire d’un master · Avocate senior",
         "bio": "Master en droit processuel. Contrats commerciaux, restructuration sociétaire et gestion des risques juridiques.",
         "specialty": "Droit des sociétés · Droit du travail",
-        "photo": "assets/team/daniela.webp",
+        "photo": "assets/team/2026-10-24_Daniela_Barahona_TempoLegal_Fondo_Quito_RECREACION_HD.png",
         "photoWidth": 900,
         "photoHeight": 900,
         "page": "team-daniela-barahona.html"
@@ -3349,3 +3350,11 @@ window.TEMPO_CONTENT = {
     "phoneField": "Téléphone ou WhatsApp"
   }
 };
+
+// Shared floating WhatsApp action label.
+Object.entries({"es":"Solicitar orientación","en":"Request guidance","pt":"Solicitar orientação","fr":"Demander conseil"}).forEach(([code,label])=>{window.TEMPO_CONTENT[code].whatsappAction=label;});
+
+// Service search interface labels.
+Object.entries({"es":{"serviceSearchLabel":"Buscar un servicio","serviceSearchPlaceholder":"Ej.: protección de datos, contratos, contabilidad…","serviceSearchClear":"Limpiar búsqueda","serviceSearchEmpty":"No encontramos servicios con esa búsqueda. Prueba otras palabras o cambia el filtro."},"en":{"serviceSearchLabel":"Find a service","serviceSearchPlaceholder":"E.g. data protection, contracts, accounting…","serviceSearchClear":"Clear search","serviceSearchEmpty":"No services match your search. Try other words or change the filter."},"pt":{"serviceSearchLabel":"Buscar um serviço","serviceSearchPlaceholder":"Ex.: proteção de dados, contratos, contabilidade…","serviceSearchClear":"Limpar busca","serviceSearchEmpty":"Nenhum serviço encontrado. Tente outras palavras ou altere o filtro."},"fr":{"serviceSearchLabel":"Rechercher un service","serviceSearchPlaceholder":"Ex. : protection des données, contrats, comptabilité…","serviceSearchClear":"Effacer la recherche","serviceSearchEmpty":"Aucun service ne correspond. Essayez d’autres mots ou changez le filtre."}}).forEach(([code,labels])=>Object.assign(window.TEMPO_CONTENT[code],labels));
+
+Object.entries({"es":"Inicio","en":"Home","pt":"Início","fr":"Accueil"}).forEach(([code,label])=>{window.TEMPO_CONTENT[code].menuHome=label;});

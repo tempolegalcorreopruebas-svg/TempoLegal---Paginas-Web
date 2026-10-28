@@ -104,3 +104,33 @@
 @media(max-width:700px){.service-page .service-header .header-inner{gap:14px}.service-page .service-header-back{display:none}.service-page .service-header-nav{margin-left:auto;font-size:10px;gap:12px}.service-page .service-header .brand img{width:120px}.service-page .service-hero{padding:28px 0 45px}.service-page .service-hero-grid{display:block}.service-page .service-back{margin-bottom:32px;font-size:10px}.service-page h1{font-size:clamp(40px,10vw,64px);margin:22px 0 24px}.service-page .service-lead{font-size:15px;line-height:1.85}.service-page .service-overview{margin-top:35px;padding:28px;border-radius:2px 2px 36px 2px}.service-page .service-overview-title{font-size:29px;margin:28px 0}.service-page .service-portrait{max-width:340px;margin:45px auto 0}.service-page .service-proof{grid-template-columns:1fr 1fr;gap:24px;padding-top:35px;padding-bottom:20px}.service-page .service-proof strong{font-size:44px}.service-page .service-proof>p{grid-column:1/-1;justify-self:start;max-width:none}.service-page .service-layout{display:block;padding-top:40px}.service-page .service-sidebar{position:static;margin-bottom:45px}.service-page .service-sidebar ol{display:grid;grid-template-columns:1fr 1fr;gap:0 22px;margin-bottom:20px}.service-page .service-sidebar nav a{font-size:11px;padding:12px 0}.service-page .service-sidebar li+li{border:0}.service-page .service-section{padding-bottom:28px;margin-bottom:30px}.service-page .service-section>p:not(.eyebrow){font-size:15px}.service-page .service-section h2,.service-page .service-related h2,.service-page .service-cta h2,.service-page .about-team>h2{font-size:36px}.service-page .service-conditions{padding:27px 24px;margin-bottom:45px}.service-page .service-scope li{font-size:14px}.service-page .service-process{margin-top:20px}.service-page .service-process li{grid-template-columns:25px minmax(0,1fr);gap:8px 12px}.service-page .service-related{padding:45px 0 50px}.service-page .service-related-links{grid-template-columns:1fr;margin-top:20px}.service-page .service-related-links a{font-size:26px;padding:20px 0}.service-page .service-cta{padding:45px 0}.service-page .service-cta>.container{display:block}.service-page .service-cta .button{max-width:100%;margin-top:30px}.service-page .service-hero-wide{padding:55px 0 45px}.service-page .about-intro{display:block;padding-top:42px}.service-page .about-team-grid{gap:40px 22px}.service-page .about-member h3{font-size:28px}.service-page .about-member p{font-size:11px}.service-page .about-member img{margin-bottom:20px}.service-page .about-financial{padding:25px}.service-page .contact-layout{display:block;padding-top:40px}.service-page .contact-channel>a{font-size:32px}}
 @media(max-width:380px){.service-page .service-header-nav{gap:9px;font-size:9px}.service-page .service-header .brand img{width:105px}.service-page .service-header-nav a:first-child{display:none}.service-page .service-header .header-inner{gap:9px}.service-page .about-team-grid{grid-template-columns:1fr}.service-page .about-member{display:grid;grid-template-columns:100px minmax(0,1fr);gap:18px}.service-page .about-member img{margin:0}.service-page .about-member h3{font-size:27px}.service-page .service-sidebar ol{grid-template-columns:1fr}.service-page .service-actions{gap:20px}.service-page .service-proof p{font-size:11px}}
 @media(prefers-reduced-motion:reduce){.service-page .service-portrait:before,.service-page .service-question>div{animation:none}.service-page.service-motion .service-reveal{opacity:1;transform:none;transition:none}.service-page .service-sidebar nav a{transition:none}}
+
+/* Point 13: group portrait on the about page. */
+.service-page .about-team-group{margin:48px auto 0;max-width:1000px}
+.service-page .about-team-group img{display:block;width:100%;height:auto;border-radius:12px}
+.service-page .about-team-group figcaption{margin-top:12px;font-size:13px;color:var(--muted)}
+@media(max-width:640px){.service-page .about-team-group{margin-top:30px}}
+
+/* Technical team moved beside the group portrait. */
+.technical-team{display:grid;grid-template-columns:.7fr 1.3fr;gap:50px;align-items:center;margin-top:60px;padding-top:45px;border-top:1px solid #d3e1e5}
+.technical-team[hidden]{display:none}
+.technical-team h3{font:400 28px/1.3 var(--serif)}
+.technical-team img{width:100%;height:auto;max-height:540px;object-fit:contain}
+.technical-team .it-team-photo{margin:0;min-width:0}
+.technical-team .it-team-photo-frame{display:grid;place-items:center;aspect-ratio:16/10;width:100%;border-radius:var(--radius-lg,18px);overflow:hidden;background:linear-gradient(140deg,#e3eef0,#f4f8f8 55%,#e9f1f2);border:1px dashed #b7cdd3;color:#7ea3ad}
+.technical-team .it-team-photo.has-photo .it-team-photo-frame{border:0;background:#dfe9eb}
+.technical-team .it-team-photo-frame img{width:100%;height:100%;max-height:none;object-fit:cover}
+.technical-team .it-team-names{margin-top:12px;font-size:14px;color:#46626e}
+@media(max-width:900px){.technical-team{grid-template-columns:1fr;gap:25px}}
+@media(max-width:640px){.technical-team{margin-top:30px;padding-top:25px}}
+
+/* Individual technology team cards. */
+.service-page .technical-team{grid-template-columns:1fr;gap:28px;text-align:center}
+.service-page .technical-team>div:first-child{max-width:760px;margin-inline:auto}
+.service-page .technical-team-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;width:100%;max-width:1000px;margin-inline:auto}
+.service-page .technical-person{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;min-width:0;padding:36px 20px;border:1px solid #d3e1e5;border-radius:18px;background:linear-gradient(145deg,#f5f9f9,#e8f0f1);box-shadow:0 8px 24px #123f4e08;transition:transform .25s ease,box-shadow .25s ease}
+.service-page .technical-person:hover{transform:translateY(-5px);box-shadow:0 16px 30px #123f4e15}
+.service-page .technical-person-avatar{display:grid;place-items:center;width:88px;height:88px;border-radius:50%;background:#16434c;color:#fff;font:400 30px/1 var(--serif)}
+.service-page .technical-person h4{margin:0;color:#16434c;font:500 clamp(20px,2vw,26px)/1.3 var(--serif);overflow-wrap:anywhere}
+@media(max-width:640px){.service-page .technical-team-cards{grid-template-columns:1fr;max-width:380px;gap:16px}.service-page .technical-person{padding:28px 20px}}
+@media(prefers-reduced-motion:reduce){.service-page .technical-person{transition:none}.service-page .technical-person:hover{transform:none}}
