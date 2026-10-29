@@ -1,0 +1,107 @@
+/* Cobertura, equipo y testimonios del paquete de actualización. */
+.reference-eyebrow{display:flex;align-items:center;gap:12px;font:600 12px/1.5 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:#446b7b;margin:0 0 23px}
+.reference-eyebrow:before{content:'';width:28px;height:1px;background:currentColor}
+.reference-index{color:#94aab4;letter-spacing:.16em;margin-left:2px}
+
+.coverage-section{padding:83px 0 78px;background:#103e4c;color:#f5fafb;overflow:hidden}
+.coverage-layout{display:grid;grid-template-columns:minmax(0,.66fr) minmax(0,1.34fr);gap:4%;align-items:center;max-width:1320px}
+.coverage-copy{position:relative;z-index:1}
+.coverage-copy>.reference-eyebrow{color:#a7cfdf;margin-bottom:22px}
+.coverage-copy h2{font-family:var(--serif);font-size:clamp(31px,2.9vw,43px);font-weight:600;line-height:1.12;letter-spacing:-.025em}
+.coverage-description{font-size:16px;line-height:1.85;color:#bdd4de;margin-top:23px}
+.coverage-proof{display:grid;grid-template-columns:1fr 1fr;gap:35px;margin-top:33px}
+.coverage-proof strong{display:block;font:600 39px/1.2 var(--sans);color:#f1fafc;letter-spacing:-.025em}
+.coverage-proof p{font-size:12px;line-height:1.75;color:#b6d1dd;margin-top:7px;max-width:165px}
+.coverage-sectors{font-size:12px;line-height:2;color:#edf6fa;padding-top:21px;margin-top:31px;border-top:1px solid #90b6c34d}
+.coverage-sectors .reference-eyebrow{display:inline;font-size:12px;color:#a6cdda;margin-right:11px;letter-spacing:.17em}
+.coverage-sectors .reference-eyebrow:before{display:none}
+.coverage-map{width:100%;min-width:0;margin:0}
+.coverage-map-svg{width:100%;height:auto;aspect-ratio:765/360;overflow:visible;display:block}
+.coverage-routes path{stroke:#5b8aa5;stroke-width:1.2;stroke-dasharray:1;stroke-dashoffset:1;opacity:.9}
+.coverage-section.is-visible .coverage-routes path{animation:coverage-route 1.4s var(--ease) var(--route-delay) both}
+.coverage-place{opacity:0}
+.coverage-section.is-visible .coverage-place{animation:coverage-place .5s ease var(--place-delay) forwards}
+.coverage-place>circle{fill:none;stroke:#afcfdc;stroke-width:1;opacity:.8}
+.coverage-place .coverage-core{fill:#f2fbfe;stroke:none;opacity:1}
+.coverage-place text{font:600 17px var(--sans);text-transform:uppercase;letter-spacing:.3px;fill:#f4fafc;paint-order:stroke;stroke:#103e4c;stroke-width:4px;stroke-linejoin:round}
+.coverage-place .coverage-city{font:400 13px var(--sans);text-transform:none;letter-spacing:0;fill:#c4dfe9}
+.coverage-hub circle{fill:#f2fbff;filter:drop-shadow(0 0 5px #c3eeff)}
+.coverage-hub .coverage-pulse{fill:none;stroke:#8ab7cc;stroke-width:1.15;filter:none;opacity:0;transform-box:fill-box;transform-origin:center;animation:coverage-heartbeat 3.6s cubic-bezier(.25,.45,.35,1) infinite;animation-play-state:paused}
+.coverage-section.is-in-view .coverage-pulse{animation-play-state:running}
+html.motion-paused .coverage-section .coverage-pulse{animation-play-state:paused}
+@keyframes coverage-heartbeat{0%{transform:scale(.55);opacity:0}18%{opacity:.5}100%{transform:scale(2.8);opacity:0}}
+.coverage-label-line{stroke:#47748bc2;stroke-width:.8;vector-effect:non-scaling-stroke}
+.coverage-hub text{paint-order:stroke;stroke:#103e4c;stroke-width:4px;stroke-linejoin:round;font:400 22px var(--serif);fill:#f2fafc}
+.coverage-mobile-list{display:none}
+@keyframes coverage-route{to{stroke-dashoffset:0}}
+@keyframes coverage-place{to{opacity:1}}
+
+.team-reference{background:#fff;padding:78px 0 74px;color:#103e4c}
+.team-reference>.container{max-width:1320px}
+.team-reference .section-heading{display:grid;grid-template-columns:.8fr 1.2fr;gap:8%;align-items:end;margin-bottom:48px}
+.team-reference h2{font-family:var(--serif);font-weight:600;font-size:39px;line-height:1.15;letter-spacing:-.02em}
+.team-reference .section-intro{font-size:16px;color:#526f7d;line-height:1.8;max-width:630px;margin:0}
+.team-reference-grid{display:grid;grid-template-columns:1.25fr repeat(3,minmax(0,1fr));gap:32px;align-items:start}
+.team-person{min-width:0}
+.team-person:not(:first-child){padding-top:clamp(45px,6vw,80px)}
+.team-person-photo{width:100%;aspect-ratio:.75;overflow:hidden;background:#eef4f5;margin-bottom:17px}
+.team-person-photo img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.team-person h3{font:600 17px/1.4 var(--sans);letter-spacing:-.015em;color:#103e4c;margin:0 0 4px}
+.team-person-role,.team-person-specialty{font-size:12px;line-height:1.65;color:#587482;margin:0}
+.team-profile-link{margin-top:15px;outline-offset:5px;font:600 12px/1.6 var(--sans);color:#176278;display:inline-flex;gap:6px;border-bottom:1px solid #658b9a;padding-bottom:4px}
+
+
+.testimonials-reference{background:#f4f8f9;padding:72px 0 70px;color:#103e4c}
+.testimonials-reference>.container{max-width:1320px}
+.testimonials-heading{margin-bottom:57px}
+.testimonials-heading h2{font:400 clamp(36px,3.4vw,54px)/1.08 var(--serif);letter-spacing:-.03em;max-width:100%}
+.testimonials-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:46px 65px}
+.quote-card{display:flex;flex-direction:column;min-width:0;border-top:1px solid #305969;padding-top:32px;position:relative}
+.quote-card:before{content:'“';font:400 110px/1 var(--serif);color:#d7bd6d80;position:absolute;right:-2px;top:1px;pointer-events:none}
+.quote-text{position:relative;z-index:1;margin:0;padding:0}
+.quote-text p{font:400 14px/1.9 var(--sans);color:#526f7f;margin:0 0 16px}
+.quote-text p:first-child{font:400 clamp(21px,1.45vw,25px)/1.42 var(--serif);letter-spacing:-.012em;color:#123f4e;margin-bottom:19px;padding-right:10px}
+.quote-personal .quote-text p:first-child{font-size:20px;font-weight:400;line-height:1.6}
+.quote-author{display:grid;grid-template-columns:80px minmax(0,1fr) 90px;gap:13px;align-items:center;margin-top:auto;padding-top:20px;background:none}
+.quote-portrait{width:80px;height:100px;border-radius:3px;object-fit:contain;object-position:center}
+.quote-identity{min-width:0}
+.quote-identity h3{font:600 14px/1.5 var(--sans);color:#103e4c;letter-spacing:0;margin:0 0 4px}
+.quote-role,.quote-company{font:400 12px/1.7 var(--sans);color:#557385;margin:0}
+.quote-company{margin-top:2px}
+.quote-website{display:inline-block;font:400 12px/1.65 var(--sans);color:#678b9d;border-bottom:1px solid #bdced6;margin-top:5px;overflow-wrap:anywhere;max-width:100%}
+.quote-logo{width:90px;height:57px;object-fit:contain;align-self:end;justify-self:end}
+.quote-nophoto .quote-author{grid-template-columns:minmax(0,1fr) 90px}
+.quote-personal .quote-author{grid-template-columns:1fr}
+.quote-personal-note{font:400 12px/1.75 var(--sans);color:#6b8796;margin-top:7px}
+.quote-translation{font:400 12px/1.7 var(--sans);color:#6b8796;margin:0 0 8px}
+.quote-original{font-size:12px;margin:0 0 10px;color:#446e80}
+.quote-original>summary{cursor:pointer;line-height:1.8}
+.quote-original-text{margin:12px 0 0;padding:13px 16px;background:#eaf1f4;border-left:2px solid #a3bdca}
+.quote-original-text>p{font-size:12px;line-height:1.8;color:#4c6b7c;margin:0 0 12px}
+.quote-original-text>p:last-child{margin-bottom:0}
+.testimonials-source-note{font:400 12px/1.8 var(--sans);color:#748d9b;margin-top:28px}
+.client-experience{margin-top:30px;border-top:1px solid #bdced6;padding-top:21px;color:#173f50}
+.client-experience>summary{cursor:pointer;font:600 15px/1.6 var(--sans);padding-bottom:8px}
+.client-experience .quote-card{margin-top:20px;max-width:850px;border-top:0;padding-top:17px}
+.client-experience .quote-author{padding-top:14px}
+
+@media(max-width:1100px){
+ .coverage-layout{grid-template-columns:.95fr 1.05fr;gap:3%}.coverage-copy h2{font-size:34px}.coverage-description{font-size:14px}.coverage-proof{gap:20px}.coverage-proof strong{font-size:36px}
+ .team-reference-grid{gap:23px}.team-person h3{font-size:15px}.team-reference .section-intro{font-size:14px}.team-person-role,.team-person-specialty{font-size:12px}
+ .testimonials-grid{gap:40px}.quote-author{grid-template-columns:76px minmax(0,1fr);gap:12px}.quote-portrait{width:76px;height:95px}.quote-logo{grid-column:2;justify-self:start;width:85px;height:42px;margin-top:1px}.quote-nophoto .quote-author{grid-template-columns:1fr}.quote-nophoto .quote-logo{grid-column:1}
+}
+@media(max-width:900px){
+ .coverage-section{padding-block:62px 50px}.coverage-layout{grid-template-columns:1fr;gap:25px}.coverage-copy{max-width:680px}.coverage-copy h2{font-size:34px;max-width:610px}.coverage-description{font-size:15px}.coverage-proof{max-width:430px;margin-top:28px}.coverage-sectors{max-width:680px;margin-top:26px}.coverage-map{max-width:800px;margin-inline:auto}
+ .team-reference{padding-block:60px}.team-reference .section-heading{gap:30px;grid-template-columns:.8fr 1.2fr;margin-bottom:35px}.team-reference h2{font-size:35px}.team-reference-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:35px 25px}.team-person:not(:first-child){padding:0}.team-person-photo{aspect-ratio:.9}.team-person h3{font-size:18px}.team-person-role,.team-person-specialty{font-size:12px}
+ .testimonials-reference{padding-block:60px}.testimonials-grid{gap:35px 30px}.quote-text p:first-child{font-size:20px}.quote-text p{font-size:13px}.quote-author{grid-template-columns:76px minmax(0,1fr)}.quote-role,.quote-company{font-size:12px}.quote-logo{width:85px}.quote-identity h3{font-size:13px}
+}
+@media(max-width:640px){
+ .reference-eyebrow{font-size:12px;gap:10px;margin-bottom:19px}.reference-eyebrow:before{width:23px}
+ .coverage-section{padding-block:49px 38px}.coverage-layout{gap:26px}.coverage-copy h2{font-size:33px;line-height:1.14}.coverage-description{font-size:14px;line-height:1.85;margin-top:22px}.coverage-proof{gap:28px;max-width:100%;margin-top:27px}.coverage-proof strong{font-size:37px}.coverage-proof p{font-size:12px;max-width:150px}.coverage-sectors{font-size:12px;line-height:2;padding-top:18px;margin-top:24px}.coverage-sectors .reference-eyebrow{font-size:12px}
+ .coverage-map-svg{width:100%;max-width:100%;margin-left:0;overflow:visible}.coverage-place text,.coverage-label-line{display:none}.coverage-hub text{font-size:32px}.coverage-mobile-list{display:block;margin-top:22px;border-top:1px solid #759aaa55;padding-top:20px}.coverage-mobile-list>p{font:600 13px/1.6 var(--sans);color:#c5e1ec;margin:0}.coverage-mobile-list ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 20px;list-style:none;margin:20px 0 0;padding:0;color:#edf7fb}.coverage-mobile-list li{min-width:0;display:flex;flex-direction:column;gap:3px}.coverage-mobile-list strong{font:600 15px/1.4 var(--sans)}.coverage-mobile-list li>span{font:400 12px/1.5 var(--sans);color:#b9d6e2}
+ .team-reference{padding-block:49px}.team-reference .section-heading{display:block;margin-bottom:30px}.team-reference h2{font-size:34px}.team-reference .section-intro{font-size:14px;line-height:1.85;max-width:100%;margin-top:22px}.team-reference-grid{gap:28px 18px}.team-person-photo{aspect-ratio:.75;margin-bottom:13px}.team-person h3{font-size:15px;line-height:1.5}.team-person-role,.team-person-specialty{font-size:12px;line-height:1.75}.team-profile-link{margin-top:12px;font-size:12px}
+ .testimonials-reference{padding-block:48px}.testimonials-heading{margin-bottom:33px}.testimonials-heading h2{font-size:34px;line-height:1.15}.testimonials-grid{grid-template-columns:1fr;gap:34px}.quote-card{padding-top:27px}.quote-card:before{font-size:80px;top:0}.quote-text p:first-child{font-size:21px;line-height:1.45;padding-right:0;margin-bottom:18px}.quote-text p{font-size:14px;line-height:1.9;margin-bottom:15px}.quote-personal .quote-text p:first-child{font-size:20px;line-height:1.65}.quote-author{grid-template-columns:76px minmax(0,1fr);gap:12px;padding-top:13px}.quote-portrait{width:76px;height:95px}.quote-identity h3{font-size:14px}.quote-role,.quote-company{font-size:12px;line-height:1.75}.quote-website{font-size:12px}.quote-logo{grid-column:2;justify-self:start;width:100px;height:48px}.quote-translation{font-size:12px}.quote-personal-note{font-size:12px}.quote-original{font-size:12px}.client-experience{margin-top:25px}.client-experience .quote-card{padding-top:20px}.testimonials-source-note{font-size:12px;margin-top:24px}
+}
+@media(max-width:360px){.coverage-copy h2{font-size:30px}.team-reference-grid{gap:25px 15px}.team-person h3{font-size:14px}.team-person-role,.team-person-specialty{font-size:12px}.testimonials-heading h2{font-size:31px}}
+@media(prefers-reduced-motion:reduce){.coverage-hub .coverage-pulse{animation:none;opacity:.4;transform:none}.coverage-routes path{stroke-dashoffset:0}.coverage-place{opacity:1}.coverage-section.is-visible .coverage-routes path,.coverage-section.is-visible .coverage-place{animation:none}}
+@media print{.coverage-section,.team-reference,.testimonials-reference,.client-experience{display:none!important}}

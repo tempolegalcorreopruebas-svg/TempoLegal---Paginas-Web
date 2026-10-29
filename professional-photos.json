@@ -1,0 +1,79 @@
+[
+  {
+    "id": "juan-gomez",
+    "source": "Juan Alberto Gómez 1.jpg",
+    "asset": "assets/team/professional-2026/juan-alberto.webp",
+    "width": 1066,
+    "height": 1600
+  },
+  {
+    "id": "daniela-barahona",
+    "source": "Daniela Barahona.jpg",
+    "asset": "assets/team/professional-2026/daniela-barahona.webp",
+    "width": 1066,
+    "height": 1600
+  },
+  {
+    "id": "emilie-donoso",
+    "source": "Emillie Donoso.jpg",
+    "asset": "assets/team/professional-2026/emillie-donoso.webp",
+    "width": 1066,
+    "height": 1600
+  },
+  {
+    "id": "rolando-valencia",
+    "source": "Rolando Valencia.jpg",
+    "asset": "assets/team/professional-2026/rolando-valencia.webp",
+    "width": 1066,
+    "height": 1600
+  },
+  {
+    "id": "gabriel-calvopina",
+    "source": "Gabriel Calvopiña.jpg",
+    "asset": "assets/team/professional-2026/gabriel-calvopina.webp",
+    "width": 1200,
+    "height": 1200
+  },
+  {
+    "id": "daniela-vicuna",
+    "source": "Daniela Vicuña.jpg",
+    "asset": "assets/team/professional-2026/daniela-vicuna.webp",
+    "width": 1066,
+    "height": 1600
+  },
+  {
+    "id": "karla-amaguaya",
+    "source": "Karla Amaguaya.jpg",
+    "asset": "assets/team/professional-2026/karla-amaguaya.webp",
+    "width": 1066,
+    "height": 1600
+  },
+  {
+    "id": "raquel-paez",
+    "source": "Raquel Paez.jpg",
+    "asset": "assets/team/professional-2026/raquel-paez.webp",
+    "width": 1066,
+    "height": 1600
+  },
+  {
+    "id": "gabriela-pazmino",
+    "source": "Gabriela Pazmiño.jpg",
+    "asset": "assets/team/professional-2026/gabriela-pazmino.webp",
+    "width": 1066,
+    "height": 1600
+  },
+  {
+    "id": "celso-aguilar",
+    "source": "Ab. Celso Aguilar.jpg",
+    "asset": "assets/team/professional-2026/celso-aguilar.webp",
+    "width": 1200,
+    "height": 1200
+  },
+  {
+    "id": "santiago-villarreal",
+    "source": "Santiago Villareal.jpg",
+    "asset": "assets/team/professional-2026/santiago-villarreal.webp",
+    "width": 1200,
+    "height": 1200
+  }
+]

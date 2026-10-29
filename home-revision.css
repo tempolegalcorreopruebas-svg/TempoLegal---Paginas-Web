@@ -1,0 +1,98 @@
+/* Approved home review, sections 1–3. Existing identity and reusable animations retained. */
+html[data-home-review] .clients-heading h2{font:500 clamp(25px,2.5vw,38px)/1.2 var(--serif);max-width:38ch}
+.client-name-only{font:600 19px/1.35 var(--sans);text-align:center;color:#16434c;max-width:19ch;padding:12px}
+html[data-home-review] .coverage-cta{margin-top:26px;white-space:normal;text-align:left}
+.coverage-place{cursor:pointer;outline:none}
+.coverage-place .coverage-hit{fill:transparent;stroke:none;opacity:1}
+.coverage-place .coverage-core,.coverage-place text{transition:fill .2s,stroke .2s}
+.coverage-place:is(:hover,:focus-visible,.is-active) .coverage-core{fill:#e5c97c}
+.coverage-place:is(:hover,:focus-visible,.is-active)>circle:not(.coverage-hit){stroke:#e5c97c;stroke-width:2}
+.coverage-place:is(:hover,:focus-visible,.is-active) text{fill:#ffe7a5}
+.coverage-place:focus-visible .coverage-hit{stroke:#e5c97c;stroke-width:1.5;stroke-dasharray:3 3}
+.coverage-section.is-visible .coverage-routes .coverage-route-flow{stroke:#b3d6e6;stroke-width:1.8;stroke-dasharray:.06 .94;stroke-dashoffset:1;opacity:.65;animation:coverage-flow 5s linear var(--route-delay) infinite;animation-play-state:paused}
+.coverage-section.is-in-view .coverage-routes .coverage-route-flow{animation-play-state:running}
+.coverage-routes .is-active{stroke:#e5c97c;stroke-width:2;opacity:1}
+html.motion-paused .coverage-routes .coverage-route-flow{animation-play-state:paused}
+.coverage-map-status{min-height:1.5em;margin:16px 0 0;text-align:center;color:#d7e8ed;font-size:13px}
+@keyframes coverage-flow{from{stroke-dashoffset:1}to{stroke-dashoffset:-1}}
+html[data-home-review] .cases-section{padding-block:52px}
+html[data-home-review] .cases-section .section-heading{margin-bottom:26px;align-items:center}
+html[data-home-review] .cases-section h2{font-size:clamp(30px,3vw,44px)}
+html[data-home-review] .cases-section .section-intro{font-size:14px;max-width:46ch}
+html[data-home-review] .cases-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-block:1px solid #b8cbce}
+html[data-home-review] .case-card,html[data-home-review] .case-card:first-child,html[data-home-review] .case-card:nth-child(3){background:transparent;border:0;border-radius:0;box-shadow:none;overflow:visible}
+html[data-home-review] .case-card+.case-card{border-left:1px solid #b8cbce}
+html[data-home-review] .case-card-link,html[data-home-review] .case-card:first-child .case-card-link,html[data-home-review] .case-card:nth-child(2) .case-card-link{display:flex;flex-direction:row;align-items:center;gap:16px;min-height:150px;padding:20px;color:#16434c}
+html[data-home-review] .case-art,html[data-home-review] .case-card:nth-child(2) .case-art,html[data-home-review] .case-card:nth-child(3) .case-art{flex:0 0 80px;min-height:0;height:70px;order:0;background:transparent;border:0}
+html[data-home-review] .case-art:before,html[data-home-review] .case-art:after,html[data-home-review] .case-card:before{display:none}
+html[data-home-review] .case-brand,html[data-home-review] .case-card:first-child .case-brand{width:100%;height:70px;padding:4px;transform:none}
+html[data-home-review] .case-brand img,html[data-home-review] .case-card:first-child .case-brand img{width:100%;max-height:64px;object-fit:contain;filter:none}
+html[data-home-review] .case-content,html[data-home-review] .case-card:nth-child(2) .case-content{padding:0;min-width:0;order:1}
+html[data-home-review] .case-content h3,html[data-home-review] .case-card:first-child .case-content h3{font:500 clamp(17px,1.35vw,22px)/1.3 var(--serif);color:#16434c;margin:0}
+html[data-home-review] .case-cta,html[data-home-review] .case-card:first-child .case-cta{margin-top:12px;font-size:12px;color:#326170}
+html[data-home-review] .case-cta-line{width:22px}
+html[data-home-review] .testimonials-reference{padding-block:58px}
+html[data-home-review] .testimonials-reference>.container{max-width:1160px}
+html[data-home-review] .testimonials-heading{text-align:center;margin-bottom:30px}
+html[data-home-review] .testimonials-heading .reference-eyebrow{justify-content:center}
+html[data-home-review] .testimonials-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:30px}
+html[data-home-review] .quote-card{flex:0 1 calc(50% - 15px);padding:24px 12px 0;max-width:550px}
+html[data-home-review] .quote-card:before{font-size:70px;right:12px;top:8px}
+html[data-home-review] .quote-text p:first-child{font-size:21px;line-height:1.45;padding-right:34px;margin-bottom:12px}
+html[data-home-review] .quote-full summary{padding:10px 0}
+html[data-home-review] .quote-author{grid-template-columns:56px minmax(0,1fr) 70px;gap:12px;padding-top:15px}
+html[data-home-review] .quote-logo{grid-column:auto;width:70px;height:44px;object-fit:contain;justify-self:end;align-self:center;margin:0;background:#fff;border-radius:3px;padding:4px}
+html[data-home-review] .quote-card-pablo .quote-author{grid-template-columns:56px minmax(0,1fr)}
+html[data-home-review] .testimonials-source-note{text-align:center;margin-top:24px}
+html[data-home-review] .team-reference .section-heading{position:relative}
+html[data-home-review] .team-all-link{grid-column:2;justify-self:start;margin-top:-10px;font-size:14px}
+html[data-home-review] .team-person-photo img{object-fit:cover;object-position:center 25%}
+html[data-home-review] .method{height:auto}
+html[data-home-review] .method-sticky{position:relative;top:auto;min-height:0}
+html[data-home-review] .method .container{padding-block:60px}
+html[data-home-review] .method-heading h2{font-size:clamp(34px,3.6vw,52px)}
+html[data-home-review] .method-heading .eyebrow{margin-bottom:18px}
+html[data-home-review] .method-heading>p{font-size:15px;max-width:42%;padding-bottom:0}
+html[data-home-review] .steps{margin-top:58px}
+html[data-home-review] .step-copy{padding-top:25px;opacity:1;transform:none}
+html[data-home-review] .step-copy h3{font-size:25px}
+html[data-home-review] .ghost-number{display:none}
+html[data-home-review] .step-node{width:44px;height:44px;font-size:13px}
+html[data-home-review] .steps:before,html[data-home-review] .steps:after{top:21px}
+html[data-home-review] .resources-section{padding-block:58px}
+html[data-home-review] .resources-section .section-heading{margin-bottom:30px}
+html[data-home-review] .insight-feature{grid-row:span 2;padding:30px;border-top-right-radius:55px;min-height:0}
+html[data-home-review] .insight-feature .insight-meta{margin-bottom:40px}
+html[data-home-review] .insight-feature .insight-copy h3{font-size:clamp(30px,2.7vw,42px);max-width:20ch}
+html[data-home-review] .insight-feature .insight-summary{margin-top:18px;line-height:1.7}
+html[data-home-review] .insight-feature .insight-action{margin-top:20px}
+html[data-home-review] .insight-edition{margin-top:24px}
+html[data-home-review] .insight-row{padding-block:22px}
+html[data-home-review] .insight-row .insight-copy h3{font-size:clamp(25px,2.2vw,34px)}
+html[data-home-review] .insight-art{width:190px;height:190px;right:-35px;opacity:.45}
+html[data-home-review] .publications-all-link{display:table;margin:28px auto 0;font-size:14px}
+.directory-page .language-menu,.directory-page .language-control{display:none}
+.directory-content{padding-top:140px}
+.directory-content h1{font:400 clamp(44px,5vw,72px)/1.05 var(--serif);color:#16434c;margin:18px 0 26px}
+.directory-intro{font-size:18px;line-height:1.7;max-width:70ch;margin-bottom:44px}
+.directory-content .team-reference-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px;max-width:1080px;margin:auto}
+.directory-content .team-person-photo{aspect-ratio:4/5;overflow:hidden;border-radius:4px}
+.directory-content .team-person-photo img{width:100%;height:100%;object-fit:cover;object-position:center 25%}
+.directory-content .team-person h3{font:400 27px/1.2 var(--serif);margin-top:20px}
+.directory-content .team-person-degree{font-size:13px;margin-top:12px}
+.directory-team-group{max-width:1000px;margin:64px auto 0}
+.directory-team-group img{display:block;width:100%;height:auto;object-fit:contain}
+.directory-team-group figcaption{font-size:13px;margin-top:12px;color:#4d6873}
+.publications-directory{max-width:1000px}
+.publication-entry{border-top:1px solid #bcced0;padding:28px 0;display:grid;grid-template-columns:1.3fr 1fr;gap:16px 40px;align-items:start}
+.publication-entry h2{font:400 30px/1.2 var(--serif);color:#16434c}
+.publication-entry p{font-size:15px;line-height:1.7}
+.publication-entry>.text-link{grid-column:2;font-size:13px;justify-self:start}
+@media(max-width:1100px){html[data-home-review] .case-card-link,html[data-home-review] .case-card:nth-child(2) .case-card-link{flex-direction:column;align-items:flex-start;gap:14px;min-height:205px}html[data-home-review] .case-art{width:100%;flex-basis:60px}html[data-home-review] .case-brand{max-width:110px}html[data-home-review] .case-card:first-child .case-brand{max-width:110px}}
+@media(max-width:760px){html[data-home-review] .cases-grid{grid-template-columns:1fr}html[data-home-review] .case-card+.case-card{border-left:0;border-top:1px solid #b8cbce}html[data-home-review] .case-card-link,html[data-home-review] .case-card:nth-child(2) .case-card-link{flex-direction:row;align-items:center;min-height:116px;padding:18px 8px;gap:20px}html[data-home-review] .case-art,html[data-home-review] .case-card:nth-child(2) .case-art{width:80px;flex:0 0 80px}html[data-home-review] .quote-card{flex-basis:100%;max-width:580px}html[data-home-review] .team-all-link{grid-column:1;margin-top:0}html[data-home-review] .method-heading>p{max-width:100%;margin-top:18px}html[data-home-review] .steps{margin-top:34px;display:grid;grid-template-columns:1fr 1fr;gap:28px}html[data-home-review] .steps:before,html[data-home-review] .steps:after{display:none}html[data-home-review] .step{padding:0;min-height:0}html[data-home-review] .step-node{position:static}html[data-home-review] .step-copy{padding-top:16px;max-width:100%}html[data-home-review] .step-copy p{max-width:100%}html[data-home-review] .insight-feature{grid-row:auto}.directory-content .team-reference-grid{grid-template-columns:1fr 1fr;gap:28px}.publication-entry{grid-template-columns:1fr;gap:14px}.publication-entry>.text-link{grid-column:1}}
+@media(max-width:400px){html[data-home-review] .quote-author{grid-template-columns:48px minmax(0,1fr);gap:12px}html[data-home-review] .quote-logo{grid-column:2;justify-self:start}html[data-home-review] .steps{grid-template-columns:1fr;gap:24px}html[data-home-review] .step{display:grid;grid-template-columns:44px 1fr;gap:18px}html[data-home-review] .step-copy{padding-top:0}.directory-content .team-reference-grid{grid-template-columns:1fr}.directory-content{padding-top:110px}}
+@media(prefers-reduced-motion:reduce){.coverage-routes .coverage-route-flow{animation:none!important;display:none}.coverage-place .coverage-core,.coverage-place text{transition:none}html[data-home-review] .step-copy{animation:none;transition:none;transform:none;opacity:1}}
+
+/* Additional named team members supplied in the professional photo delivery. */
+.team-additional{margin-top:64px}
+.team-additional>h2{font:400 clamp(30px,3vw,44px)/1.15 var(--serif);color:#16434c;margin:16px 0 36px}

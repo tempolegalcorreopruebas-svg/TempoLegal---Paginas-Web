@@ -1,0 +1,342 @@
+[
+  {
+    "id": "client-001",
+    "name": "AMEVEA Ecuador",
+    "src": "assets/clients-premium/client-001.png"
+  },
+  {
+    "id": "client-002",
+    "name": "APC Asesores",
+    "src": "assets/clients-premium/client-002.svg"
+  },
+  {
+    "id": "client-003",
+    "name": "Asista Centros Médicos",
+    "src": "assets/clients-premium/client-003.svg"
+  },
+  {
+    "id": "client-004",
+    "name": "CCE Cámara de Comercio Exterior",
+    "src": "assets/clients-premium/client-004.png"
+  },
+  {
+    "id": "client-005",
+    "name": "CIVE Clínica Internacional de la Visión",
+    "src": "assets/clients-premium/client-005.svg"
+  },
+  {
+    "id": "client-006",
+    "name": "COFPH Centro Oftalmológico Dr. Fernando Pólit Huerta",
+    "src": "assets/clients-premium/client-006.svg"
+  },
+  {
+    "id": "client-007",
+    "name": "Centro Quirúrgico Quito Tenis",
+    "src": "assets/clients-premium/client-007.png"
+  },
+  {
+    "id": "client-008",
+    "name": "Certificada EC",
+    "src": "assets/clients-premium/client-008.svg"
+  },
+  {
+    "id": "client-009",
+    "name": "Coimpexa (GMA)",
+    "src": "assets/clients-premium/client-009.svg"
+  },
+  {
+    "id": "client-010",
+    "name": "Colegio Miguel Ángel Buonarroti (escudo)",
+    "src": "assets/clients-premium/client-010.svg"
+  },
+  {
+    "id": "client-011",
+    "name": "Colegio Miguel Ángel Buonarroti",
+    "src": "assets/clients-premium/client-011.svg"
+  },
+  {
+    "id": "client-012",
+    "name": "Comunidad Bahá'í del Ecuador",
+    "src": "assets/clients-premium/client-012.svg"
+  },
+  {
+    "id": "client-013",
+    "name": "Cordiagnostics",
+    "src": "assets/clients-premium/client-013.svg"
+  },
+  {
+    "id": "client-014",
+    "name": "Corporación Médica Pazmiño Narváez",
+    "src": "assets/clients-premium/client-014.svg"
+  },
+  {
+    "id": "client-015",
+    "name": "Danielcom Equipment Supply",
+    "src": "assets/clients-premium/client-015.png"
+  },
+  {
+    "id": "client-016",
+    "name": "Diamond Developers (vertical con lema)",
+    "src": "assets/clients-premium/client-016.svg"
+  },
+  {
+    "id": "client-017",
+    "name": "Diamond Developers",
+    "src": "assets/clients-premium/client-017.svg"
+  },
+  {
+    "id": "client-018",
+    "name": "Difarmacy Distribuidora Farmacéutica C&Y",
+    "src": "assets/clients-premium/client-018.svg"
+  },
+  {
+    "id": "client-019",
+    "name": "Dismaconcobre",
+    "src": "assets/clients-premium/client-019.png"
+  },
+  {
+    "id": "client-020",
+    "name": "Ecuaservoil",
+    "src": "assets/clients-premium/client-020.svg"
+  },
+  {
+    "id": "client-021",
+    "name": "Endoscopia Quito Dr. José David Guzmán",
+    "src": "assets/clients-premium/client-021.svg"
+  },
+  {
+    "id": "client-022",
+    "name": "Energie Solutions",
+    "src": "assets/clients-premium/client-022.svg"
+  },
+  {
+    "id": "client-023",
+    "name": "Epidata",
+    "src": "assets/clients-premium/client-023.png"
+  },
+  {
+    "id": "client-024",
+    "name": "Equity Casa de Valores",
+    "src": "assets/clients-premium/client-024.png"
+  },
+  {
+    "id": "client-025",
+    "name": "Estudia Europa",
+    "src": "assets/clients-premium/client-025.svg"
+  },
+  {
+    "id": "client-026",
+    "name": "FLP FL Procesados del Ecuador (horizontal con lema)",
+    "src": "assets/clients-premium/client-026.svg"
+  },
+  {
+    "id": "client-027",
+    "name": "FLP FL Procesados del Ecuador",
+    "src": "assets/clients-premium/client-027.svg"
+  },
+  {
+    "id": "client-028",
+    "name": "Farmacia Pazmiño Narváez",
+    "src": "assets/clients-premium/client-028.svg"
+  },
+  {
+    "id": "client-029",
+    "name": "GMA Grupo Mosquera Aulestia",
+    "src": "assets/clients-premium/client-029.svg"
+  },
+  {
+    "id": "client-030",
+    "name": "Geoconcret",
+    "src": "assets/clients-premium/client-030.png"
+  },
+  {
+    "id": "client-031",
+    "name": "Grupo Toledo",
+    "src": "assets/clients-premium/client-031.svg"
+  },
+  {
+    "id": "client-032",
+    "name": "Hermanas Franciscanas Misioneras de la Inmaculada (escudo)",
+    "src": "assets/clients-premium/client-032.png"
+  },
+  {
+    "id": "client-033",
+    "name": "Hermanas Franciscanas Misioneras de la Inmaculada (horizontal)",
+    "src": "assets/clients-premium/client-033.png"
+  },
+  {
+    "id": "client-034",
+    "name": "HireX (Grupo Conéctate)",
+    "src": "assets/clients-premium/client-034.svg"
+  },
+  {
+    "id": "client-035",
+    "name": "INISEG (UINMA)",
+    "src": "assets/clients-premium/client-035.png"
+  },
+  {
+    "id": "client-036",
+    "name": "Inginost",
+    "src": "assets/clients-premium/client-036.svg"
+  },
+  {
+    "id": "client-037",
+    "name": "Intercilsa",
+    "src": "assets/clients-premium/client-037.svg"
+  },
+  {
+    "id": "client-038",
+    "name": "Klop Tools",
+    "src": "assets/clients-premium/client-038.svg"
+  },
+  {
+    "id": "client-039",
+    "name": "Laboratorio Diagen",
+    "src": "assets/clients-premium/client-039.svg"
+  },
+  {
+    "id": "client-040",
+    "name": "Laboratorio Santa Rita (Bahialabs)",
+    "src": "assets/clients-premium/client-040.svg"
+  },
+  {
+    "id": "client-041",
+    "name": "Lestercorp",
+    "src": "assets/clients-premium/client-041.svg"
+  },
+  {
+    "id": "client-042",
+    "name": "Logisticstrans (SACEI)",
+    "src": "assets/clients-premium/client-042.svg"
+  },
+  {
+    "id": "client-044",
+    "name": "MW Turismo",
+    "src": "assets/clients-premium/client-044.svg"
+  },
+  {
+    "id": "client-045",
+    "name": "Mallku Travel",
+    "src": "assets/clients-premium/client-045.svg"
+  },
+  {
+    "id": "client-046",
+    "name": "Northospital (Clinmeyd)",
+    "src": "assets/clients-premium/client-046.svg"
+  },
+  {
+    "id": "client-048",
+    "name": "Petrosupply",
+    "src": "assets/clients-premium/client-048.svg"
+  },
+  {
+    "id": "client-049",
+    "name": "Pinturas Don Polo (Pintauri)",
+    "src": "assets/clients-premium/client-049.png"
+  },
+  {
+    "id": "client-050",
+    "name": "Rectificadora Pazmiño Rectipaz",
+    "src": "assets/clients-premium/client-050.svg"
+  },
+  {
+    "id": "client-051",
+    "name": "Rodgal Parts",
+    "src": "assets/clients-premium/client-051.svg"
+  },
+  {
+    "id": "client-052",
+    "name": "SACEI",
+    "src": "assets/clients-premium/client-052.svg"
+  },
+  {
+    "id": "client-053",
+    "name": "SCD Sistema de Control Documental",
+    "src": "assets/clients-premium/client-053.svg"
+  },
+  {
+    "id": "client-054",
+    "name": "SOLCA",
+    "src": "assets/clients-premium/client-054.png"
+  },
+  {
+    "id": "client-055",
+    "name": "SaludDerma",
+    "src": "assets/clients-premium/client-055.svg"
+  },
+  {
+    "id": "client-056",
+    "name": "Samari Spa Resort",
+    "src": "assets/clients-premium/client-056.svg"
+  },
+  {
+    "id": "client-057",
+    "name": "Smart Control Automation Smarcon",
+    "src": "assets/clients-premium/client-057.svg"
+  },
+  {
+    "id": "client-058",
+    "name": "Transbolivariana",
+    "src": "assets/clients-premium/client-058.svg"
+  },
+  {
+    "id": "client-059",
+    "name": "Transporexa (GMA)",
+    "src": "assets/clients-premium/client-059.svg"
+  },
+  {
+    "id": "client-060",
+    "name": "UE La Porciúncula Loja",
+    "src": "assets/clients-premium/client-060.png"
+  },
+  {
+    "id": "client-061",
+    "name": "UE Nuestra Señora de Fátima Riobamba",
+    "src": "assets/clients-premium/client-061.svg"
+  },
+  {
+    "id": "client-062",
+    "name": "UE San Francisco de Asís Salcedo",
+    "src": "assets/clients-premium/client-062.png"
+  },
+  {
+    "id": "client-063",
+    "name": "UE San Francisco del Alvernia",
+    "src": "assets/clients-premium/client-063.png"
+  },
+  {
+    "id": "client-064",
+    "name": "UE San José Milagro (escudo)",
+    "src": "assets/clients-premium/client-064.png"
+  },
+  {
+    "id": "client-065",
+    "name": "UE San José Milagro (horizontal)",
+    "src": "assets/clients-premium/client-065.png"
+  },
+  {
+    "id": "client-066",
+    "name": "UE Santa María de los Ángeles (escudo)",
+    "src": "assets/clients-premium/client-066.png"
+  },
+  {
+    "id": "client-067",
+    "name": "UE Santa María de los Ángeles",
+    "src": "assets/clients-premium/client-067.png"
+  },
+  {
+    "id": "client-068",
+    "name": "UE Santa Teresita La Libertad (escudo oficial 2026)",
+    "src": "assets/clients-premium/client-068.png"
+  },
+  {
+    "id": "client-069",
+    "name": "UINMA (Grupo INISEG)",
+    "src": "assets/clients-premium/client-069.svg"
+  },
+  {
+    "id": "client-070",
+    "name": "Unity 369 Seguros",
+    "src": "assets/clients-premium/client-070.svg"
+  }
+]

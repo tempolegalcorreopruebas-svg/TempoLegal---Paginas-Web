@@ -1,0 +1,87 @@
+{
+  "scope": "Source package only; production hosting, mailbox and remotely configured tags have not been audited.",
+  "reviewed": "2026-10-28",
+  "privacy_document": "4.4",
+  "terms_document": "1.3",
+  "consent_notice_version": null,
+  "technologies": [
+    {
+      "name": "tempo-privacy-choices",
+      "type": "localStorage",
+      "status": "retired_no_preferences_ui",
+      "purpose": "Historical key is no longer read by the site.",
+      "duration": "180 days; rechecked at read and once per minute on a long-open document.",
+      "personal_enquiry_content": false
+    },
+    {
+      "name": "tempo-legal-language",
+      "type": "localStorage",
+      "status": "existing_functionality",
+      "purpose": "Remember the user-selected display language.",
+      "duration": "Until changed or cleared by the visitor/browser.",
+      "personal_enquiry_content": false
+    },
+    {
+      "name": "tempo-measurement-excluded",
+      "type": "localStorage",
+      "status": "only_if_manually_set_by_tester",
+      "purpose": "Exclude a test browser from analytics.",
+      "duration": "Until cleared by tester/browser.",
+      "personal_enquiry_content": false
+    },
+    {
+      "name": "tempo_contact",
+      "type": "first_party_session_cookie",
+      "status": "only_after_configured_https_api_is_used",
+      "purpose": "CSRF and form session security.",
+      "duration": "Browser session; CSRF token expires after 30 minutes. Server PHP session retention must be set on Hostinger.",
+      "flags": [
+        "Secure",
+        "HttpOnly",
+        "SameSite=Lax",
+        "Path=/api/"
+      ]
+    },
+    {
+      "name": "Google Maps",
+      "type": "external_iframe",
+      "status": "direct_lazy_iframe_no_preferences_prompt",
+      "purpose": "Display public office location directly.",
+      "recipient": "Google",
+      "duration": "Third-party storage subject to browser/provider; policy lists NID at 6 months. Verify actual production behaviour."
+    },
+    {
+      "name": "Google Analytics 4",
+      "type": "external_script_and_optional_first_party_cookies",
+      "status": "prepared_disabled_no_real_id",
+      "purpose": "Production-only page views and the two defined contact events. No preferences UI in this revision.",
+      "recipient": "Google",
+      "identifiers": [
+        "_ga",
+        "_ga_<stream>"
+      ],
+      "duration": "Cookie expiry configured for 730 days, without refresh; browsers may cap it. Account user/event retention must be configured to 14 months.",
+      "withdrawal": "Disable flag, remove loader, clear accessible first-party _ga cookies and reload active document."
+    },
+    {
+      "name": "GTM containers, Google Ads, Meta Pixel, reCAPTCHA, Clixtell",
+      "type": "external_tracking_or_security_services",
+      "status": "not_installed_by_this_package",
+      "purpose": "Historical legal document inventory requires reconciliation before publication."
+    },
+    {
+      "name": "Self-hosted fonts, images and illustrative connection map",
+      "type": "local_static_assets",
+      "status": "existing_no_optional_vendor_load",
+      "purpose": "Presentation and illustration."
+    },
+    {
+      "name": "SMTP and private request state",
+      "type": "server_processing",
+      "status": "prepared_disabled_until_configured",
+      "purpose": "Send explicitly submitted enquiries and prevent abuse/duplicate sends.",
+      "duration": "Rate and request state eligible for probabilistic cleanup after 48 hours. Mailbox, PHP session, backups and hosting log retention require operational configuration.",
+      "content": "Email contains the submitted enquiry, notice acknowledgement and policy version. Request/rate state stores HMACs, counters, status and reference, not enquiry text."
+    }
+  ]
+}
