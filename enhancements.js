@@ -342,19 +342,19 @@ const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccio
   }
   function renderCases(){
     const grid=$('#cases-grid');retire(grid);grid.replaceChildren();
-    const logos={solca:'client-054.png',pazmino:'client-014.svg',asistanet:'client-003.svg',gma:'client-029.svg',cce:'client-004.png'};
+    const logos={"gma":"assets/clients-home/1-01.webp","cce":"assets/clients-home/2-01.webp","solca":"assets/clients-home/2-02.webp","pazmino":"assets/clients-premium/client-014.svg","asistanet":"assets/clients-premium/client-003.svg"};
     I.get('caseItems').forEach((item,index)=>{
       const titleId='case-title-'+item.id;
       const card=node('article','case-card reveal',null,{'aria-labelledby':titleId});card.style.setProperty('--reveal-delay',index*90+'ms');
       const link=node('a','case-card-link',null,{href:item.page,'aria-labelledby':titleId});
       const art=node('div','case-art',null,{'aria-hidden':'true'}),brand=node('span','case-brand');
-      brand.append(node('img','',null,{src:BASE+'assets/clients-premium/'+logos[item.id],alt:'',loading:'lazy',decoding:'async',width:'320',height:'200'}));art.append(brand);
+      brand.append(node('img','',null,{src:BASE+logos[item.id],alt:'',loading:'lazy',decoding:'async',width:'320',height:'200'}));art.append(brand);
       const content=node('div','case-content'),meta=node('div','case-meta');
       meta.append(node('span','case-index',String(index+1).padStart(2,'0')+' / 03'),node('span','case-sector',item.sector));
-      content.append(meta,node('h3','',item.name,{id:titleId}),node('p','case-summary',item.summary));
+      content.append(node('h3','',item.name,{id:titleId}));if(!HOME_REVIEW)content.append(meta,node('p','case-summary',item.summary));
       const tags=node('ul','case-tags');(item.tags||[]).slice(0,2).forEach(tag=>tags.append(node('li','',tag)));
       const action=node('span','case-cta');action.append(node('span','',t('casesExplore')),node('span','case-cta-line',null,{'aria-hidden':'true'}));
-      content.append(tags,action);link.append(art,content);card.append(link);grid.append(card);
+      if(!HOME_REVIEW)content.append(tags);content.append(action);link.append(art,content);card.append(link);grid.append(card);
     });reveal(grid);
   }
   // Parallax muy leve del logotipo, limitado a esta sección y desactivado si se reduce el movimiento.
@@ -378,7 +378,7 @@ const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccio
       }
     });
   }
-  $('#cases-consult').addEventListener('click',()=>window.TempoUI.openInquiry('Protección de datos'));
+  $('#cases-consult')?.addEventListener('click',()=>window.TempoUI.openInquiry('Protección de datos'));
   function renderAll(){renderServices();renderSectors();renderTeam();renderReview();renderCases();renderArticles();renderFaq();if(selectedService)populateService();}
   document.addEventListener('toggle',event=>{if(event.target.matches('details'))document.dispatchEvent(new Event('tempo:layoutchange'));},true);
   function updatePrivacyLinks(){

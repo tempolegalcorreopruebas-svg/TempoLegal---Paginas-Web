@@ -441,52 +441,6 @@ window.TEMPO_CONTENT = {
     "casesJump": "Ver casos de éxito →",
     "caseItems": [
       {
-        "id": "solca",
-        "name": "Unidad Oncológica de SOLCA Zamora Chinchipe",
-        "icon": "data",
-        "sector": "Salud",
-        "summary": "Una institución que trata datos sensibles de pacientes requería implementar y supervisar su sistema de cumplimiento.",
-        "facts": [
-          {
-            "label": "El reto",
-            "body": "Una institución que trata datos sensibles de pacientes requería implementar y supervisar su sistema de cumplimiento."
-          },
-          {
-            "label": "El acompañamiento",
-            "body": "Diagnóstico e implementación de la LOPDP, DPD externo, capacitación y atención de requerimientos, con seguimiento remoto y visitas presenciales."
-          },
-          {
-            "label": "Aporte del acompañamiento",
-            "body": "Continuidad en la supervisión del sistema de cumplimiento y acompañamiento desde Quito."
-          }
-        ],
-        "page": "caso-solca.html",
-        "tags": [
-          "Salud",
-          "LOPDP"
-        ],
-        "story": [
-          {
-            "heading": "El reto",
-            "paragraphs": [
-              "Una institución que trata datos sensibles de pacientes requería implementar y supervisar su sistema de cumplimiento."
-            ]
-          },
-          {
-            "heading": "El acompañamiento",
-            "paragraphs": [
-              "Diagnóstico e implementación de la LOPDP, DPD externo, capacitación y atención de requerimientos, con seguimiento remoto y visitas presenciales."
-            ]
-          },
-          {
-            "heading": "Aporte del acompañamiento",
-            "paragraphs": [
-              "Continuidad en la supervisión del sistema de cumplimiento y acompañamiento desde Quito."
-            ]
-          }
-        ]
-      },
-      {
         "id": "gma",
         "name": "Grupo Mosquera Aulestia",
         "icon": "data",
@@ -574,6 +528,52 @@ window.TEMPO_CONTENT = {
             "heading": "Aporte del acompañamiento",
             "paragraphs": [
               "Una contraparte local para coordinar las necesidades jurídicas, contables y administrativas en Ecuador."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "solca",
+        "name": "Unidad Oncológica de SOLCA Zamora Chinchipe",
+        "icon": "data",
+        "sector": "Salud",
+        "summary": "Una institución que trata datos sensibles de pacientes requería implementar y supervisar su sistema de cumplimiento.",
+        "facts": [
+          {
+            "label": "El reto",
+            "body": "Una institución que trata datos sensibles de pacientes requería implementar y supervisar su sistema de cumplimiento."
+          },
+          {
+            "label": "El acompañamiento",
+            "body": "Diagnóstico e implementación de la LOPDP, DPD externo, capacitación y atención de requerimientos, con seguimiento remoto y visitas presenciales."
+          },
+          {
+            "label": "Aporte del acompañamiento",
+            "body": "Continuidad en la supervisión del sistema de cumplimiento y acompañamiento desde Quito."
+          }
+        ],
+        "page": "caso-solca.html",
+        "tags": [
+          "Salud",
+          "LOPDP"
+        ],
+        "story": [
+          {
+            "heading": "El reto",
+            "paragraphs": [
+              "Una institución que trata datos sensibles de pacientes requería implementar y supervisar su sistema de cumplimiento."
+            ]
+          },
+          {
+            "heading": "El acompañamiento",
+            "paragraphs": [
+              "Diagnóstico e implementación de la LOPDP, DPD externo, capacitación y atención de requerimientos, con seguimiento remoto y visitas presenciales."
+            ]
+          },
+          {
+            "heading": "Aporte del acompañamiento",
+            "paragraphs": [
+              "Continuidad en la supervisión del sistema de cumplimiento y acompañamiento desde Quito."
             ]
           }
         ]
@@ -1273,52 +1273,6 @@ window.TEMPO_CONTENT = {
     "casesJump": "Explore case studies →",
     "caseItems": [
       {
-        "id": "solca",
-        "name": "SOLCA Oncology Unit in Zamora Chinchipe",
-        "icon": "data",
-        "sector": "Healthcare",
-        "summary": "An institution handling sensitive patient data needed to implement and oversee its compliance system.",
-        "facts": [
-          {
-            "label": "The challenge",
-            "body": "An institution handling sensitive patient data needed to implement and oversee its compliance system."
-          },
-          {
-            "label": "Our support",
-            "body": "LOPDP assessment and implementation, external DPO, training and responses to requests, with remote follow-up and in-person visits."
-          },
-          {
-            "label": "Contribution of the support",
-            "body": "Continuity in compliance oversight and support from Quito."
-          }
-        ],
-        "page": "caso-solca.html",
-        "tags": [
-          "Healthcare",
-          "LOPDP"
-        ],
-        "story": [
-          {
-            "heading": "The challenge",
-            "paragraphs": [
-              "An institution handling sensitive patient data needed to implement and oversee its compliance system."
-            ]
-          },
-          {
-            "heading": "Our support",
-            "paragraphs": [
-              "LOPDP assessment and implementation, external DPO, training and responses to requests, with remote follow-up and in-person visits."
-            ]
-          },
-          {
-            "heading": "Contribution of the support",
-            "paragraphs": [
-              "Continuity in compliance oversight and support from Quito."
-            ]
-          }
-        ]
-      },
-      {
         "id": "gma",
         "name": "Grupo Mosquera Aulestia",
         "icon": "data",
@@ -1406,6 +1360,52 @@ window.TEMPO_CONTENT = {
             "heading": "Contribution of the support",
             "paragraphs": [
               "A local counterpart to coordinate legal, accounting and administrative needs in Ecuador."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "solca",
+        "name": "SOLCA Oncology Unit in Zamora Chinchipe",
+        "icon": "data",
+        "sector": "Healthcare",
+        "summary": "An institution handling sensitive patient data needed to implement and oversee its compliance system.",
+        "facts": [
+          {
+            "label": "The challenge",
+            "body": "An institution handling sensitive patient data needed to implement and oversee its compliance system."
+          },
+          {
+            "label": "Our support",
+            "body": "LOPDP assessment and implementation, external DPO, training and responses to requests, with remote follow-up and in-person visits."
+          },
+          {
+            "label": "Contribution of the support",
+            "body": "Continuity in compliance oversight and support from Quito."
+          }
+        ],
+        "page": "caso-solca.html",
+        "tags": [
+          "Healthcare",
+          "LOPDP"
+        ],
+        "story": [
+          {
+            "heading": "The challenge",
+            "paragraphs": [
+              "An institution handling sensitive patient data needed to implement and oversee its compliance system."
+            ]
+          },
+          {
+            "heading": "Our support",
+            "paragraphs": [
+              "LOPDP assessment and implementation, external DPO, training and responses to requests, with remote follow-up and in-person visits."
+            ]
+          },
+          {
+            "heading": "Contribution of the support",
+            "paragraphs": [
+              "Continuity in compliance oversight and support from Quito."
             ]
           }
         ]
@@ -2102,52 +2102,6 @@ window.TEMPO_CONTENT = {
     "casesJump": "Ver casos de sucesso →",
     "caseItems": [
       {
-        "id": "solca",
-        "name": "Unidade Oncológica da SOLCA Zamora Chinchipe",
-        "icon": "data",
-        "sector": "Saúde",
-        "summary": "Uma instituição que trata dados sensíveis de pacientes precisava implementar e supervisionar seu sistema de conformidade.",
-        "facts": [
-          {
-            "label": "O desafio",
-            "body": "Uma instituição que trata dados sensíveis de pacientes precisava implementar e supervisionar seu sistema de conformidade."
-          },
-          {
-            "label": "O acompanhamento",
-            "body": "Diagnóstico e implementação da LOPDP, DPD externo, capacitação e atendimento de solicitações, com acompanhamento remoto e visitas presenciais."
-          },
-          {
-            "label": "Contribuição do acompanhamento",
-            "body": "Continuidade na supervisão do sistema de conformidade e acompanhamento a partir de Quito."
-          }
-        ],
-        "page": "caso-solca.html",
-        "tags": [
-          "Saúde",
-          "LOPDP"
-        ],
-        "story": [
-          {
-            "heading": "O desafio",
-            "paragraphs": [
-              "Uma instituição que trata dados sensíveis de pacientes precisava implementar e supervisionar seu sistema de conformidade."
-            ]
-          },
-          {
-            "heading": "O acompanhamento",
-            "paragraphs": [
-              "Diagnóstico e implementação da LOPDP, DPD externo, capacitação e atendimento de solicitações, com acompanhamento remoto e visitas presenciais."
-            ]
-          },
-          {
-            "heading": "Contribuição do acompanhamento",
-            "paragraphs": [
-              "Continuidade na supervisão do sistema de conformidade e acompanhamento a partir de Quito."
-            ]
-          }
-        ]
-      },
-      {
         "id": "gma",
         "name": "Grupo Mosquera Aulestia",
         "icon": "data",
@@ -2235,6 +2189,52 @@ window.TEMPO_CONTENT = {
             "heading": "Contribuição do acompanhamento",
             "paragraphs": [
               "Uma contraparte local para coordenar as necessidades jurídicas, contábeis e administrativas no Equador."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "solca",
+        "name": "Unidade Oncológica da SOLCA Zamora Chinchipe",
+        "icon": "data",
+        "sector": "Saúde",
+        "summary": "Uma instituição que trata dados sensíveis de pacientes precisava implementar e supervisionar seu sistema de conformidade.",
+        "facts": [
+          {
+            "label": "O desafio",
+            "body": "Uma instituição que trata dados sensíveis de pacientes precisava implementar e supervisionar seu sistema de conformidade."
+          },
+          {
+            "label": "O acompanhamento",
+            "body": "Diagnóstico e implementação da LOPDP, DPD externo, capacitação e atendimento de solicitações, com acompanhamento remoto e visitas presenciais."
+          },
+          {
+            "label": "Contribuição do acompanhamento",
+            "body": "Continuidade na supervisão do sistema de conformidade e acompanhamento a partir de Quito."
+          }
+        ],
+        "page": "caso-solca.html",
+        "tags": [
+          "Saúde",
+          "LOPDP"
+        ],
+        "story": [
+          {
+            "heading": "O desafio",
+            "paragraphs": [
+              "Uma instituição que trata dados sensíveis de pacientes precisava implementar e supervisionar seu sistema de conformidade."
+            ]
+          },
+          {
+            "heading": "O acompanhamento",
+            "paragraphs": [
+              "Diagnóstico e implementação da LOPDP, DPD externo, capacitação e atendimento de solicitações, com acompanhamento remoto e visitas presenciais."
+            ]
+          },
+          {
+            "heading": "Contribuição do acompanhamento",
+            "paragraphs": [
+              "Continuidade na supervisão do sistema de conformidade e acompanhamento a partir de Quito."
             ]
           }
         ]
@@ -2931,52 +2931,6 @@ window.TEMPO_CONTENT = {
     "casesJump": "Découvrir les études de cas →",
     "caseItems": [
       {
-        "id": "solca",
-        "name": "Unité oncologique SOLCA de Zamora Chinchipe",
-        "icon": "data",
-        "sector": "Santé",
-        "summary": "Une institution traitant des données sensibles de patients devait mettre en œuvre et superviser son système de conformité.",
-        "facts": [
-          {
-            "label": "Le défi",
-            "body": "Une institution traitant des données sensibles de patients devait mettre en œuvre et superviser son système de conformité."
-          },
-          {
-            "label": "L’accompagnement",
-            "body": "Diagnostic et mise en œuvre de la LOPDP, DPD externe, formation et traitement des demandes, avec suivi à distance et visites sur place."
-          },
-          {
-            "label": "Apport de l’accompagnement",
-            "body": "Continuité dans la supervision du système de conformité et accompagnement depuis Quito."
-          }
-        ],
-        "page": "caso-solca.html",
-        "tags": [
-          "Santé",
-          "LOPDP"
-        ],
-        "story": [
-          {
-            "heading": "Le défi",
-            "paragraphs": [
-              "Une institution traitant des données sensibles de patients devait mettre en œuvre et superviser son système de conformité."
-            ]
-          },
-          {
-            "heading": "L’accompagnement",
-            "paragraphs": [
-              "Diagnostic et mise en œuvre de la LOPDP, DPD externe, formation et traitement des demandes, avec suivi à distance et visites sur place."
-            ]
-          },
-          {
-            "heading": "Apport de l’accompagnement",
-            "paragraphs": [
-              "Continuité dans la supervision du système de conformité et accompagnement depuis Quito."
-            ]
-          }
-        ]
-      },
-      {
         "id": "gma",
         "name": "Grupo Mosquera Aulestia",
         "icon": "data",
@@ -3064,6 +3018,52 @@ window.TEMPO_CONTENT = {
             "heading": "Apport de l’accompagnement",
             "paragraphs": [
               "Un interlocuteur local pour coordonner les besoins juridiques, comptables et administratifs en Équateur."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "solca",
+        "name": "Unité oncologique SOLCA de Zamora Chinchipe",
+        "icon": "data",
+        "sector": "Santé",
+        "summary": "Une institution traitant des données sensibles de patients devait mettre en œuvre et superviser son système de conformité.",
+        "facts": [
+          {
+            "label": "Le défi",
+            "body": "Une institution traitant des données sensibles de patients devait mettre en œuvre et superviser son système de conformité."
+          },
+          {
+            "label": "L’accompagnement",
+            "body": "Diagnostic et mise en œuvre de la LOPDP, DPD externe, formation et traitement des demandes, avec suivi à distance et visites sur place."
+          },
+          {
+            "label": "Apport de l’accompagnement",
+            "body": "Continuité dans la supervision du système de conformité et accompagnement depuis Quito."
+          }
+        ],
+        "page": "caso-solca.html",
+        "tags": [
+          "Santé",
+          "LOPDP"
+        ],
+        "story": [
+          {
+            "heading": "Le défi",
+            "paragraphs": [
+              "Une institution traitant des données sensibles de patients devait mettre en œuvre et superviser son système de conformité."
+            ]
+          },
+          {
+            "heading": "L’accompagnement",
+            "paragraphs": [
+              "Diagnostic et mise en œuvre de la LOPDP, DPD externe, formation et traitement des demandes, avec suivi à distance et visites sur place."
+            ]
+          },
+          {
+            "heading": "Apport de l’accompagnement",
+            "paragraphs": [
+              "Continuité dans la supervision du système de conformité et accompagnement depuis Quito."
             ]
           }
         ]
