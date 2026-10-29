@@ -60,3 +60,5 @@
 .technical-team .it-team-photo.has-photo .it-team-photo-frame{border:0;background:#dfe9eb}
 .technical-team .it-team-photo-frame img{width:100%;height:100%;max-height:none;object-fit:cover}
 .technical-team .it-team-names{margin-top:12px;font-size:14px;color:#46626e}
+/* Foco visible en el buscador de servicios (revisión 27 oct, sección 6: navegación con teclado) */
+#service-search:focus-visible{outline:2px solid #08758e;outline-offset:2px}

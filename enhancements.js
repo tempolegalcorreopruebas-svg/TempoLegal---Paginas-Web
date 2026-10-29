@@ -150,7 +150,7 @@ const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccio
     const list=$('#services-grid');retire(list);list.replaceChildren();
     const total=services().length;
     services().forEach((service,index)=>{
-      const item=node('li','practice-item reveal');item.dataset.category=service.category;item.dataset.serviceId=service.id;
+      const item=node('li','practice-item reveal');item.dataset.category=service.category;item.dataset.serviceId=service.id;item.id='servicio-'+service.id;
       item.style.setProperty('--reveal-delay',Math.min(index,8)*45+'ms');
       const row=node('button','practice-row',null,{type:'button',id:'practice-row-'+service.id});
       const num=node('span','practice-index',pad(index+1),{'aria-hidden':'true'});
