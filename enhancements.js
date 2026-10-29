@@ -143,6 +143,8 @@ const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccio
     if(id===selectedPractice)return;selectedPractice=id;renderPanel(animate);syncPractice();
   }
   function renderServices() {
+    // La portada muestra todos los servicios; las pestañas por categoría ya no se usan.
+    if(HOME_REVIEW) $('.service-filters')?.remove();
     const search=$('#service-search');
     if(search){search.closest('.service-search').hidden=false;search.placeholder=t('serviceSearchPlaceholder');$('#service-search-clear').setAttribute('aria-label',t('serviceSearchClear'));}
     const list=$('#services-grid');retire(list);list.replaceChildren();
@@ -331,7 +333,14 @@ const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccio
       copy.append(action);card.append(meta,copy);
       if(featured)card.append(node('p','insight-edition',t('insightCollection')));
       grid.append(card);
-    });reveal(grid);
+    });
+    // Como en la versión de Antony: acceso a una página independiente de publicaciones.
+    const archiveLabels={es:'Ver todas las publicaciones',en:'View all publications',pt:'Ver todas as publicações',fr:'Voir toutes les publications'};
+    const old=$('#all-publications');if(old)old.remove();
+    const all=node('div','all-publications',null,{id:'all-publications'});
+    all.append(node('a','all-publications-toggle',archiveLabels[I.language]||archiveLabels.es,{href:BASE+'publicaciones/'}));
+    grid.after(all);
+    reveal(grid);
   }
   function renderFaq() {
     const list=$('#faq-list');if(!list)return;const open=new Set($$('details[open]',list).map(el=>el.dataset.faq));retire(list);list.replaceChildren();

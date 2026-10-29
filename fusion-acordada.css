@@ -32,3 +32,43 @@ html[data-home-review] .testimonials-source-note{text-align:center;margin-top:24
 @media(max-width:1100px){html[data-home-review] .case-card-link,html[data-home-review] .case-card:nth-child(2) .case-card-link{flex-direction:column;align-items:flex-start;gap:14px;min-height:205px}html[data-home-review] .case-art{width:100%;flex-basis:60px}html[data-home-review] .case-brand{max-width:110px}html[data-home-review] .case-card:first-child .case-brand{max-width:110px}}
 @media(max-width:760px){html[data-home-review] .cases-grid{grid-template-columns:1fr}html[data-home-review] .case-card+.case-card{border-left:0;border-top:1px solid #b8cbce}html[data-home-review] .case-card-link,html[data-home-review] .case-card:nth-child(2) .case-card-link{flex-direction:row;align-items:center;min-height:116px;padding:18px 8px;gap:20px}html[data-home-review] .case-art,html[data-home-review] .case-card:nth-child(2) .case-art{width:80px;flex:0 0 80px}html[data-home-review] .quote-card{flex-basis:100%;max-width:580px}}
 @media(max-width:400px){html[data-home-review] .quote-author{grid-template-columns:48px minmax(0,1fr);gap:12px}html[data-home-review] .quote-logo{grid-column:2;justify-self:start}}
+
+/* Ajustes finales: mostrar todos los servicios sin pestañas de filtro. */
+html[data-home-review] .service-filters{display:none!important}
+
+/* Testimonio destacado: un espacio real para el nombre y el cargo. */
+html[data-home-review] .quote-card-ana{
+  flex:1 1 100%;max-width:1120px;
+  display:grid;grid-template-columns:minmax(0,1.2fr) minmax(320px,.8fr);
+  column-gap:clamp(28px,4vw,58px);align-items:center;
+  padding:34px clamp(26px,3.5vw,46px)
+}
+html[data-home-review] .quote-card-ana .quote-text{min-width:0}
+html[data-home-review] .quote-card-ana .quote-text p:first-child{padding-right:28px}
+html[data-home-review] .quote-card-ana .quote-author{
+  grid-template-columns:64px minmax(0,1fr);gap:14px;
+  align-items:center;min-width:0;padding:0;margin:0
+}
+html[data-home-review] .quote-card-ana .quote-portrait{width:64px;height:64px}
+html[data-home-review] .quote-card-ana .quote-identity{min-width:0}
+html[data-home-review] .quote-card-ana .quote-identity h3{overflow-wrap:normal}
+html[data-home-review] .quote-card-ana .quote-logo{
+  grid-column:2;justify-self:start;width:90px;height:52px;margin-top:10px
+}
+@media(max-width:830px){
+  html[data-home-review] .quote-card-ana{grid-template-columns:minmax(0,1fr);gap:26px}
+  html[data-home-review] .quote-card-ana .quote-author{max-width:560px}
+}
+@media(max-width:480px){
+  html[data-home-review] .quote-card-ana{padding:27px 22px}
+  html[data-home-review] .quote-card-ana .quote-text p:first-child{padding-right:8px}
+}
+
+/* Publicaciones: enlace a la página de listado, como en la versión de Antony. */
+#recursos .all-publications{margin:32px auto 0;text-align:center}
+#recursos .all-publications-toggle{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:44px;padding:8px 0;
+  border-bottom:1px solid #527f8e;color:#17485b;
+  font:600 14px/1.5 var(--sans)
+}
