@@ -144,3 +144,21 @@
 .site-footer .footer-location{padding-top:40px;border-top:1px solid #ffffff1f}
 .footer-bottom p{font-size:13px}
 }
+
+/* Point 18: WhatsApp capsule inspired by the CumpliDatos reference. */
+.whatsapp-float{display:inline-flex;align-items:center;justify-content:center;gap:10px;width:auto;height:48px;padding:0 22px 0 18px;right:max(24px,env(safe-area-inset-right));bottom:max(24px,env(safe-area-inset-bottom));border-radius:999px;background:#25d366;color:#fff;box-shadow:0 16px 36px -14px #040f1f99;transition:transform .25s cubic-bezier(.2,.7,.2,1),background .25s ease}
+.whatsapp-float>svg{width:24px;height:24px;flex:none}
+.whatsapp-caption{font:600 16px/1.2 var(--sans);white-space:nowrap}
+.whatsapp-float:hover{background:#20bd5a;transform:translateY(-3px);box-shadow:0 16px 36px -14px #040f1f99}
+@media(max-width:600px){.whatsapp-float{height:48px;width:auto;max-width:calc(100vw - 32px);padding:0 18px 0 15px;right:max(16px,env(safe-area-inset-right));bottom:max(18px,env(safe-area-inset-bottom));gap:9px}.whatsapp-float>svg{width:24px;height:24px}.whatsapp-caption{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.whatsapp-float{transition:none}.whatsapp-float:hover{transform:none}}
+@media print{.whatsapp-float{display:none!important}}
+
+/* Quiet, refined map link without an external-link arrow. */
+.site-footer .footer-map-link{display:inline-flex;justify-content:flex-start;align-items:center;min-height:44px;margin-top:12px;padding-block:8px;color:#c1dbe0;letter-spacing:.02em;text-decoration:none}
+.site-footer .footer-map-link>span{position:relative;display:inline-block;padding-bottom:3px}
+.site-footer .footer-map-link>span:after{content:'';position:absolute;left:0;bottom:0;width:100%;height:1px;background:currentColor;transform:scaleX(.25);transform-origin:left;opacity:.45;transition:transform .3s ease,opacity .3s ease}
+.site-footer .footer-map-link:is(:hover,:focus-visible){color:#fff}
+.site-footer .footer-map-link:is(:hover,:focus-visible)>span:after{transform:scaleX(1);opacity:.85}
+.site-footer .footer-map-link:focus-visible{outline:2px solid #9fcac8;outline-offset:5px;border-radius:3px}
+@media(prefers-reduced-motion:reduce){.site-footer .footer-map-link>span:after{transition:none}}

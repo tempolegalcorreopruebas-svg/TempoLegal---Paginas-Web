@@ -1,7 +1,7 @@
 'use strict';
 // Local preferences contain only category choices, notice version and expiry, never enquiry data.
 (() => {
-  const version = '4.3-web-1';
+  const version = '4.4-web-1';
   const key = 'tempo-privacy-choices';
   const lifetime = 180 * 24 * 60 * 60 * 1000;
   const text = {

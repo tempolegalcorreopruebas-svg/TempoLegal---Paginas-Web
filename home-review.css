@@ -67,3 +67,7 @@ html[data-home-review] .team-person:hover .team-person-photo img{transform:scale
 html[data-home-review] :is(.section-intro,.case-summary,.insight-summary,.cases-bottom p,.testimonials-source-note){color:#4d6873}
 html[data-home-review] :is(.case-index,.case-sector,.case-tags li,.insight-meta span,.quote-website){color:#3e6576}
 html[data-home-review] .cases-grid .case-card:first-child :is(.case-index,.case-sector,.case-summary,.case-tags li),html[data-home-review] .insight-feature :is(.insight-meta span,.insight-summary){color:#c3dae0}
+
+/* Punto 11: fotos y logos de testimonios; Pablo conserva solo su identidad textual. */
+html[data-home-review] .quote-author{grid-template-columns:56px minmax(0,1fr);gap:13px}
+html[data-home-review] .quote-author .quote-logo{grid-column:2;justify-self:start;align-self:center;box-sizing:border-box;width:110px;max-width:100%;height:60px;object-fit:contain;background:#fff;padding:6px;border-radius:4px}

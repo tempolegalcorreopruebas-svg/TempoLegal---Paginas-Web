@@ -10,3 +10,4 @@ server/tempo-private/state/
 .openai/
 qa-*.html
 *.bundle
+_traducciones/pendiente-*.json

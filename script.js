@@ -20,7 +20,7 @@
   // cierre con Escape, al elegir un enlace o al pulsar fuera, y página bloqueada mientras está abierto.
   const menuButton = $('.menu-toggle');
   const nav = $('#main-nav');
-  const menuItems = () => [...nav.querySelectorAll('a[href],button:not([disabled])')];
+  const menuItems = () => [...nav.querySelectorAll('a[href],button:not([disabled])')].filter(el => el.offsetParent !== null);
   const isMenuOpen = () => menuButton.getAttribute('aria-expanded') === 'true';
   function setMenu(open, returnFocus) {
     menuButton.setAttribute('aria-expanded', String(open));
@@ -92,6 +92,14 @@
 
   // Interpolación dependiente del tiempo: movimiento suave y ningún bucle en reposo.
   const hero = $('.hero'), method = $('.method'), steps = $$('.step');
+  // Reveal each step once when it enters the viewport.
+  if ('IntersectionObserver' in window && !reducedMotion.matches) {
+    const stepObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('active'); stepObserver.unobserve(entry.target); } });
+    }, {threshold:0.12});
+    steps.forEach(step => stepObserver.observe(step));
+    reducedMotion.addEventListener('change', () => { if (reducedMotion.matches) { stepObserver.disconnect(); steps.forEach(step => step.classList.add('active')); } });
+  } else { steps.forEach(step => step.classList.add('active')); }
   const motion = {photo:0,backdrop:0,diamond:0,pointer:0,progress:0};
   const target = {...motion};
   let scrollFrame = 0, needsMeasure = true, lastFrame = 0, pointerTarget = 0;
@@ -99,7 +107,7 @@
     const heroBounds = hero.getBoundingClientRect(), methodBounds = method.getBoundingClientRect();
     const offset = !mobile.matches && !reducedMotion.matches && heroBounds.bottom > 0 ? clamp(-heroBounds.top,0,innerHeight) : 0;
     target.photo = offset*.035;target.backdrop = -offset*.065;target.diamond = -offset*.045;
-    target.progress = mobile.matches || reducedMotion.matches ? 1 : clamp(.035 + (-methodBounds.top / Math.max(1,methodBounds.height-innerHeight)) * 1.12);
+    target.progress = reducedMotion.matches ? 1 : clamp((innerHeight * .85 - methodBounds.top) / Math.max(1,methodBounds.height * .65));
     target.pointer = reducedMotion.matches ? 0 : pointerTarget;
     const height = Math.max(1,document.documentElement.scrollHeight-innerHeight);
     document.documentElement.style.setProperty('--reading-progress',clamp(scrollY/height).toFixed(5));
@@ -119,7 +127,8 @@
     hero.style.setProperty('--diamond-shift',motion.diamond.toFixed(2)+'px');
     hero.style.setProperty('--diamond-x',motion.pointer.toFixed(2)+'px');
     method.style.setProperty('--progress',motion.progress.toFixed(4));
-    steps.forEach((step,i)=>step.classList.toggle('active',motion.progress>=i*.25));
+    steps.forEach((step,i)=>step.style.setProperty('--step-progress',clamp(motion.progress * steps.length - i).toFixed(4)));
+    // Step visibility is handled by the viewport observer.
     if(settling&&!document.hidden)scrollFrame=requestAnimationFrame(updateScroll);else lastFrame=0;
   }
   function requestScrollUpdate(){needsMeasure=true;if(!scrollFrame&&!document.hidden)scrollFrame=requestAnimationFrame(updateScroll);}
@@ -410,3 +419,4 @@
     }
   } catch (_) {}
 })();
+
