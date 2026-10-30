@@ -1,0 +1,2303 @@
+{
+  "accounting-support": {
+    "source": "contabilidad y soporte.html",
+    "target": "servicios-contabilidad/index.html",
+    "title": "Contabilidad y soporte administrativo en Ecuador.",
+    "eyebrow": "SOFT LANDING · CONTINUIDAD DE SU OPERACIÓN EN ECUADOR",
+    "lead": "Cuentas claras. Un equipo con quien coordinar.",
+    "description": "Acompañamos la operación de su empresa en Ecuador con contabilidad, coordinación tributaria y soporte administrativo definido, en conexión con su equipo y su casa matriz.",
+    "action": "Solicitar propuesta contable",
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Su proyecto y el alcance del servicio",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Contadores, financieros y abogadosCoordinación entre las áreas que su operación necesita."
+          },
+          {
+            "type": "paragraph",
+            "text": "Empresas nuevas y en operaciónTambién revisión, transición y periodos pendientes."
+          },
+          {
+            "type": "paragraph",
+            "text": "Alcance y responsables definidosQué hacemos nosotros y qué aporta su equipo."
+          },
+          {
+            "type": "eyebrow",
+            "text": "ASÍ SE CONECTA EL TRABAJO"
+          },
+          {
+            "type": "steps",
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "text": "Su información"
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Comprobantes y respaldos."
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "text": "Registro y revisión"
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Contabilidad y conciliaciones."
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "text": "Obligaciones"
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Preparación y seguimiento."
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "text": "Información para usted"
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Reportes según su encargo."
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Esquema del servicio. Actividades y periodicidad se definen en la propuesta."
+          }
+        ]
+      },
+      {
+        "id": "references",
+        "sourceId": "clientes",
+        "title": "Experiencia de TempoLegal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Organizaciones acompañadas por la firma en distintos servicios jurídicos, contables o de establecimiento. Cada encargo tiene un alcance propio."
+          },
+          {
+            "type": "paragraph",
+            "text": "Epidata; INISEG; HireX · Grupo Conéctate; Cámara de Comercio Exterior; Grupo Tasker; UINMA · ámbito educativo vinculado a INISEG; EduLink · estructura vinculada a CCE; GestiaGlobal · estructura vinculada a CCE."
+          },
+          {
+            "type": "paragraph",
+            "text": "Las marcas y sociedades vinculadas se muestran con su contexto. No representan ocho grupos independientes ni acreditan el mismo servicio en todos los casos."
+          }
+        ]
+      },
+      {
+        "id": "context",
+        "sourceId": "situacion",
+        "title": "¿Qué necesita ordenar hoy?",
+        "blocks": [
+          {
+            "type": "eyebrow",
+            "text": "SU PUNTO DE PARTIDA"
+          },
+          {
+            "type": "paragraph",
+            "text": "Podemos incorporarnos desde el primer mes o a una operación que ya existe."
+          },
+          {
+            "type": "disclosure",
+            "text": "Empiece con una base organizada.",
+            "blocks": [
+              {
+                "type": "eyebrow",
+                "text": "ARRANQUE CONTABLE"
+              },
+              {
+                "type": "paragraph",
+                "text": "Revisamos su actividad, obligaciones, sistema y documentos para definir el trabajo desde el inicio. Definimos el acompañamiento contable y administrativo según su estructura y las necesidades de su operación en Ecuador."
+              },
+              {
+                "type": "link",
+                "text": "Solicitar una propuesta para mi operación ↗",
+                "href": "#contacto"
+              }
+            ]
+          },
+          {
+            "type": "disclosure",
+            "text": "Delegue la gestión o complemente a su equipo.",
+            "blocks": [
+              {
+                "type": "eyebrow",
+                "text": "CONTINUIDAD DE LA OPERACIÓN"
+              },
+              {
+                "type": "paragraph",
+                "text": "Podemos llevar la contabilidad o supervisar y coordinar con su contador. Acordamos registros, revisiones, reportes, nómina y tareas administrativas según lo que realmente necesita."
+              },
+              {
+                "type": "link",
+                "text": "Definir el servicio ↓",
+                "href": "#servicios"
+              }
+            ]
+          },
+          {
+            "type": "disclosure",
+            "text": "Primero, saber qué está pendiente.",
+            "blocks": [
+              {
+                "type": "eyebrow",
+                "text": "REVISIÓN Y TRANSICIÓN"
+              },
+              {
+                "type": "paragraph",
+                "text": "Identificamos periodos, declaraciones, registros y respaldos disponibles. La regularización y la transición se proponen con alcance propio, separadas de la gestión corriente."
+              },
+              {
+                "type": "link",
+                "text": "Conocer cómo comenzamos ↓",
+                "href": "#metodo"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "scope",
+        "sourceId": "servicios",
+        "title": "Contabilidad como base. Apoyo según su operación.",
+        "blocks": [
+          {
+            "type": "eyebrow",
+            "text": "UN SERVICIO QUE SE PUEDE EXPLICAR"
+          },
+          {
+            "type": "paragraph",
+            "text": "Antes de contratar, definimos actividades, entregables, frecuencia y responsables. Puede necesitar uno de estos frentes o una coordinación entre varios."
+          },
+          {
+            "type": "disclosure",
+            "text": "Registros que expliquen su negocio.",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "01 / CONTABILIDAD Y TRIBUTACIÓN"
+              },
+              {
+                "type": "list",
+                "items": [
+                  [
+                    {
+                      "type": "paragraph",
+                      "text": "Registro contable y revisión de comprobantes y retenciones."
+                    }
+                  ],
+                  [
+                    {
+                      "type": "paragraph",
+                      "text": "Conciliaciones y control de respaldos."
+                    }
+                  ],
+                  [
+                    {
+                      "type": "paragraph",
+                      "text": "Preparación y presentación de declaraciones y anexos aplicables."
+                    }
+                  ],
+                  [
+                    {
+                      "type": "paragraph",
+                      "text": "Estados financieros, cierres y obligaciones societarias o municipales contratadas."
+                    }
+                  ],
+                  [
+                    {
+                      "type": "paragraph",
+                      "text": "Planificación tributaria conforme a la actividad y situación real."
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "type": "disclosure",
+            "text": "Un frente definido para su personal.",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "02 / NÓMINA Y OBLIGACIONES LABORALES"
+              },
+              {
+                "type": "list",
+                "items": [
+                  [
+                    {
+                      "type": "paragraph",
+                      "text": "Roles de pago y beneficios de ley según el encargo."
+                    }
+                  ],
+                  [
+                    {
+                      "type": "paragraph",
+                      "text": "Gestiones y reportes ante el IESS y el Ministerio del Trabajo."
+                    }
+                  ],
+                  [
+                    {
+                      "type": "paragraph",
+                      "text": "Coordinación de novedades e información con el empleador."
+                    }
+                  ],
+                  [
+                    {
+                      "type": "paragraph",
+                      "text": "Apoyo jurídico laboral cuando se requiera y se contrate."
+                    }
+                  ]
+                ]
+              },
+              {
+                "type": "paragraph",
+                "text": "Se cotiza según personal y alcance. El empleador mantiene sus decisiones y debe entregar las novedades oportunamente."
+              }
+            ]
+          },
+          {
+            "type": "disclosure",
+            "text": "Si ya tiene contador, trabajamos con su equipo.",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "03 / SUPERVISIÓN Y COORDINACIÓN"
+              },
+              {
+                "type": "list",
+                "items": [
+                  [
+                    {
+                      "type": "paragraph",
+                      "text": "Revisión de información y pendientes dentro del alcance acordado."
+                    }
+                  ],
+                  [
+                    {
+                      "type": "paragraph",
+                      "text": "Seguimiento de obligaciones y observaciones."
+                    }
+                  ],
+                  [
+                    {
+                      "type": "paragraph",
+                      "text": "Coordinación entre contabilidad, administración y asesoría jurídica."
+                    }
+                  ]
+                ]
+              },
+              {
+                "type": "paragraph",
+                "text": "Supervisar es distinto de preparar o presentar. La propuesta identifica quién ejecuta cada tarea."
+              }
+            ]
+          },
+          {
+            "type": "disclosure",
+            "text": "Documentos y gestiones con seguimiento.",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "04 / SOPORTE ADMINISTRATIVO"
+              },
+              {
+                "type": "list",
+                "items": [
+                  [
+                    {
+                      "type": "paragraph",
+                      "text": "Organización del archivo digital y matrices de pendientes."
+                    }
+                  ],
+                  [
+                    {
+                      "type": "paragraph",
+                      "text": "Comunicaciones para respaldar aprobaciones y operaciones."
+                    }
+                  ],
+                  [
+                    {
+                      "type": "paragraph",
+                      "text": "Remisión de facturas y comprobantes según instrucciones."
+                    }
+                  ],
+                  [
+                    {
+                      "type": "paragraph",
+                      "text": "Coordinación documental de facturación entre compañías relacionadas cuando se acuerde."
+                    }
+                  ]
+                ]
+              },
+              {
+                "type": "paragraph",
+                "text": "El back office se define por tareas y autorizaciones; no implica administración ilimitada ni ejecución automática de pagos."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Registrar un pago no es ejecutarlo."
+          },
+          {
+            "type": "paragraph",
+            "text": "Su empresa conserva sus decisiones y autorizaciones. Tesorería, disposición de fondos y firma bancaria no se presumen incluidas en la contabilidad o el soporte administrativo."
+          }
+        ]
+      },
+      {
+        "id": "process",
+        "sourceId": "metodo",
+        "title": "Una transición clara. Un trabajo que continúa.",
+        "blocks": [
+          {
+            "type": "eyebrow",
+            "text": "CÓMO NOS INCORPORAMOS"
+          },
+          {
+            "type": "paragraph",
+            "text": "El punto de partida cambia entre una compañía nueva, una empresa en operación y una que necesita regularizar pendientes. El alcance se construye con esa información."
+          },
+          {
+            "type": "steps",
+            "items": [
+              [
+                {
+                  "type": "heading",
+                  "text": "Entendemos la situación."
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Actividad, volumen, personal, sistemas, estado contable y necesidades de su equipo."
+                }
+              ],
+              [
+                {
+                  "type": "heading",
+                  "text": "Definimos el encargo."
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Propuesta con tareas, responsables, honorarios, periodos y condiciones de entrega."
+                }
+              ],
+              [
+                {
+                  "type": "heading",
+                  "text": "Organizamos la información."
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Coordinamos documentos y accesos por el canal indicado; identificamos faltantes y la transición."
+                }
+              ],
+              [
+                {
+                  "type": "heading",
+                  "text": "Gestionamos y damos seguimiento."
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Procesamos el trabajo contratado y comunicamos información, observaciones y siguientes pasos."
+                }
+              ]
+            ]
+          },
+          {
+            "type": "eyebrow",
+            "text": "PARA QUE EL SERVICIO FUNCIONE"
+          },
+          {
+            "type": "heading",
+            "text": "Qué aporta su equipo. Qué recibe del nuestro."
+          },
+          {
+            "type": "paragraph",
+            "text": "Usted entrega: comprobantes, movimientos, novedades y decisiones dentro del calendario acordado."
+          },
+          {
+            "type": "paragraph",
+            "text": "Nosotros gestionamos: registros, revisiones y obligaciones contratadas, identificando información pendiente."
+          },
+          {
+            "type": "paragraph",
+            "text": "Usted recibe: los reportes, respaldos y seguimiento previstos en la propuesta, con una periodicidad definida."
+          }
+        ]
+      },
+      {
+        "id": "testimonials",
+        "sourceId": "testimonios",
+        "title": "Conocer su empresa. Dar continuidad al trabajo.",
+        "intro": [
+          "Testimonios sobre distintos servicios de la firma. Ana describe expresamente el apoyo contable a FLP Holding Ecuador; las demás referencias corresponden a distintos servicios de la firma."
+        ],
+        "reviews": [
+          {
+            "name": "Eleazar Becerra",
+            "paragraphs": [
+              "Cuando decidimos desarrollar nuestras actividades en Ecuador, necesitábamos mucho más que constituir una compañía. Había que organizar la estructura societaria, la representación local y los temas contables, tributarios y de cumplimiento.",
+              "TempoLegal nos ha acompañado en la estructuración de nuestras empresas y en esas necesidades, incluida la protección de datos personales. Para nosotros, que coordinamos negocios en distintos países, es una ventaja tener un equipo local que conoce nuestra operación y al que podemos acudir directamente.",
+              "Esa combinación de asesoría jurídica y apoyo práctico nos ha facilitado trabajar en Ecuador. Es el tipo de acompañamiento que recomendaría a otras empresas que quieren establecerse y operar en el país."
+            ]
+          },
+          {
+            "name": "Pablo Lucio Paredes",
+            "paragraphs": [
+              "Trabajar con Tempo Legal fue una decisión positiva para mi empresa y mis necesidades personales. He recibido una asesoría clara y cercana, el equipo entendió mis necesidades, me explicó los pasos del proceso y estuvo disponible para resolver mis inquietudes. Más allá del conocimiento jurídico, valoré especialmente su compromiso y la atención personalizada durante todo el proceso. Así pudimos avanzar con seguridad y enfocarnos en nuestras obligaciones, sabiendo que los aspectos legales estaban en buenas manos. Sin duda, recomendaría a Tempo Legal. De hecho trabajo y seguiré trabajando con ellos"
+            ]
+          },
+          {
+            "name": "Francisco Mosquera Aulestia",
+            "paragraphs": [
+              "En GMA tenemos varias empresas y una operación logística que no se detiene. Necesitamos una asesoría legal que entienda esa realidad y no se quede solo en lo teórico.",
+              "TempoLegal nos acompaña desde hace años en asuntos laborales, societarios, contractuales y de protección de datos personales. Conocen cómo funciona el grupo, así que cuando surge un problema podemos ir directamente a lo importante.",
+              "Lo que más valoro es que nos ayuden a prevenir riesgos y nos den alternativas claras para resolver situaciones concretas. Para un grupo empresarial como el nuestro, contar con abogados que conocen la operación y están presentes cuando se los necesita marca una diferencia."
+            ]
+          },
+          {
+            "name": "Ana Cecilia Andrade",
+            "paragraphs": [
+              "En FLP hay temas que requieren una respuesta inmediata y otros que necesitan seguimiento durante meses. Para mí hace una gran diferencia contar con un equipo que ya conoce nuestras empresas.",
+              "TempoLegal nos apoya en asuntos laborales, societarios y contractuales y, además, lleva la contabilidad de FLP Holding Ecuador. Poder coordinar la parte jurídica y contable con un mismo equipo nos facilita mucho el trabajo.",
+              "No tenemos que explicar desde cero la historia de cada compañía ni buscar a quién acudir según el problema. Sabemos con quién hablar y podemos dar continuidad a los asuntos pendientes. Eso, en el día a día de una empresa, vale mucho."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "team",
+        "sourceId": "equipo",
+        "title": "Su contabilidad, con un equipo detrás.",
+        "people": [
+          {
+            "name": "Gabriel Calvopiña",
+            "degree": "Ingeniero · Magíster",
+            "role": "Coordinador de Servicios Contables y Tributarios",
+            "contribution": "Coordinación contable y tributaria."
+          },
+          {
+            "name": "Rolando Valencia",
+            "degree": "Ingeniero",
+            "role": "Coordinador de Servicios Financieros",
+            "contribution": "Finanzas y coordinación administrativa."
+          },
+          {
+            "name": "Juan Alberto Gómez",
+            "degree": "Abogado · Socio fundador",
+            "role": "Derecho empresarial y societario",
+            "contribution": "Coordinación de asuntos societarios y jurídicos."
+          },
+          {
+            "name": "Daniela Barahona",
+            "degree": "Abogada · Magíster",
+            "role": "Abogada senior",
+            "contribution": "Asuntos corporativos y laborales de la operación."
+          },
+          {
+            "name": "Emillie Donoso",
+            "degree": "Abogada · Magíster",
+            "role": "Abogada senior",
+            "contribution": "Protección de datos y cumplimiento normativo."
+          }
+        ],
+        "intro": [
+          "Gabriel coordina el frente contable y tributario; Rolando, los servicios financieros y administrativos. El equipo jurídico acompaña las materias contratadas que lo requieren."
+        ],
+        "notes": [
+          "Las funciones e intervención de cada profesional dependen del encargo. La propuesta identifica quién coordina su cuenta."
+        ],
+        "extra": []
+      },
+      {
+        "id": "information-7",
+        "sourceId": null,
+        "title": "Contabilidad, presencia y organización empresarial.",
+        "blocks": [
+          {
+            "type": "eyebrow",
+            "text": "CONECTAR LO QUE SU EMPRESA NECESITA"
+          },
+          {
+            "type": "paragraph",
+            "text": "Puede contratar un servicio concreto o coordinar varios frentes con propuestas y responsabilidades propias."
+          },
+          {
+            "type": "link",
+            "text": "Constitución de SAS ↗",
+            "href": "../referencias_relacionadas/sas/maqueta/index.html"
+          },
+          {
+            "type": "link",
+            "text": "Representación legal y domicilio fiscal ↗",
+            "href": "../referencias_relacionadas/representacion/maqueta/index.html"
+          },
+          {
+            "type": "link",
+            "text": "Soft Landing en Ecuador ↗",
+            "href": "../referencias_relacionadas/softlanding/maqueta/index.html"
+          },
+          {
+            "type": "link",
+            "text": "Protección de datos personales ↗",
+            "href": "https://tempolegal.com/proteccion-de-datos-personales-ecuador/"
+          },
+          {
+            "type": "disclosure",
+            "text": "¿Su empresa tiene accionistas o un equipo en el exterior?",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Podemos coordinar la operación en Ecuador con su equipo. El mapa muestra procedencias de clientes de la firma en distintos servicios; no una red de oficinas propias."
+              },
+              {
+                "type": "eyebrow",
+                "text": "ORIGEN DE NUESTROS CLIENTES · COORDINACIÓN DESDE QUITO"
+              },
+              {
+                "type": "paragraph",
+                "text": "MéxicoCiudad de México; GuatemalaCiudad de Guatemala; Costa RicaSan José; EE. UU.Miami; ColombiaBogotá; PerúLima; ArgentinaBuenos Aires; EspañaMadrid; IsraelTel Aviv."
+              },
+              {
+                "type": "link",
+                "text": "Ver las conexiones desde Quito ↗",
+                "href": "https://tempolegal.com/#empresas-extranjeras"
+              },
+              {
+                "type": "paragraph",
+                "text": "Procedencia de clientes de TempoLegal en distintos servicios. La atención se coordina desde Quito, Ecuador; los puntos no representan oficinas en el exterior."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "questions",
+        "sourceId": "preguntas",
+        "title": "Antes de delegar su contabilidad.",
+        "faq": true,
+        "intro": [
+          "Alcance, precio, información y responsabilidades. Estas son las preguntas que conviene resolver antes de contratar."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Qué incluye el servicio de contabilidad mensual?",
+        "answer": "La propuesta identifica los registros contables, conciliaciones, declaraciones y anexos aplicables, reportes y seguimiento que necesita su operación. Definimos también cómo se entrega la información, quién la revisa y qué actividades realizará cada parte. Nómina, regularización de periodos anteriores, supervisión de un contador interno y soporte administrativo pueden tener un alcance propio. Antes de contratar recibe una propuesta concreta, no una promesa de administración ilimitada."
+      },
+      {
+        "question": "¿Cómo se define la propuesta de contabilidad y soporte administrativo?",
+        "answer": "Preparamos una propuesta según la estructura de la compañía, su actividad, volumen de operaciones, personal, sistemas, coordinación con la casa matriz y tareas que necesita delegar. Precisamos qué comprende la gestión contable, qué apoyo administrativo se requiere, qué reportes recibirá y quién autoriza y ejecuta cada actividad. Los periodos anteriores, la nómina, los cierres y otras gestiones se delimitan expresamente. Antes de contratar conoce los honorarios, los entregables y las responsabilidades de cada parte."
+      },
+      {
+        "question": "¿Pueden ayudarnos si ya tenemos contador o equipo administrativo?",
+        "answer": "Sí. Podemos llevar la contabilidad o acordar un servicio de revisión, supervisión y coordinación con su contador. Son encargos diferentes: supervisar no implica asumir automáticamente el registro, la preparación o la presentación de declaraciones. Definimos qué ejecuta cada equipo, qué revisamos, qué información recibimos y cómo se comunican las observaciones."
+      },
+      {
+        "question": "¿Pueden regularizar contabilidad atrasada o ayudarnos a cambiar de contador?",
+        "answer": "Sí. Primero revisamos periodos, declaraciones, registros, documentación disponible y accesos que deban transferirse. Con esa base proponemos una regularización o transición con alcance y honorarios propios. Los pendientes de meses o años anteriores no se incluyen automáticamente en la mensualidad corriente. Coordinamos la entrega de información para distinguir lo pendiente de las nuevas tareas."
+      },
+      {
+        "question": "¿Qué significa soporte administrativo o back office?",
+        "answer": "Son tareas acordadas para organizar y dar seguimiento a la documentación y coordinación de su empresa. Según la propuesta, puede incluir archivo digital, matrices de pendientes, comunicaciones para documentar aprobaciones, remisión de facturas y comprobantes, y coordinación de facturación entre compañías relacionadas. Definimos responsables, frecuencia y autorizaciones. No significa que asumamos todas las decisiones, compras, ventas, cobranzas o la administración diaria del negocio."
+      },
+      {
+        "question": "¿Ustedes ejecutan pagos o manejan nuestras cuentas bancarias?",
+        "answer": "El registro contable de un pago y la organización de su soporte no equivalen a ejecutar transferencias. La contabilidad o el soporte administrativo no incluyen por sí solos tesorería, disposición de fondos ni firma bancaria. La empresa conserva sus decisiones y autorizaciones. Si necesita una gestión que requiere representación o poderes específicos, se revisa de manera independiente; nunca se presume incluida en el servicio mensual."
+      },
+      {
+        "question": "¿Incluyen nómina, IESS y obligaciones laborales?",
+        "answer": "Podemos incluir en la propuesta la gestión de roles de pago, beneficios, reportes y gestiones ante el IESS y el Ministerio del Trabajo que correspondan. El alcance depende del número de trabajadores y de la información del empleador. El servicio de nómina se define expresamente en la propuesta. Contrataciones, desvinculaciones, controversias y asesoría laboral especializada se delimitan según el servicio acordado."
+      },
+      {
+        "question": "¿Qué información debo entregar y qué reportes recibiré?",
+        "answer": "Para la gestión contable se necesitan comprobantes, retenciones, movimientos y demás respaldos pertinentes. En la propuesta fijamos el canal y la fecha de entrega, los periodos a atender y los reportes que recibirá, como estados financieros, conciliaciones o seguimiento de obligaciones según el encargo. Si falta información, identificamos el pendiente y su efecto. No envíe extractos, nóminas, claves ni documentación contable por este formulario comercial."
+      },
+      {
+        "question": "¿Trabajan con su propio sistema? ¿Incluyen un facturador?",
+        "answer": "Podemos llevar los registros en nuestro sistema contable o coordinar con el sistema definido para su operación, conforme a la propuesta. No debe confundirse contabilidad con una licencia de facturación: la habilitación ante el SRI, el sistema de facturación y sus licencias se delimitan según el encargo. Antes de contratar aclaramos herramientas, licencias, accesos, respaldos y forma de entregar la información al finalizar el servicio."
+      },
+      {
+        "question": "¿Una compañía sin ventas todavía tiene obligaciones?",
+        "answer": "No haber facturado no elimina por sí solo las obligaciones de la compañía. Revisamos el RUC, el régimen tributario, las obligaciones registradas y la situación de la operación para identificar qué debe presentar y cuándo. No todas las declaraciones tienen la misma periodicidad ni se asignan de la misma forma a todas las compañías. También revisamos los deberes societarios y municipales que correspondan."
+      },
+      {
+        "question": "¿Los impuestos, tasas y procesos de control están incluidos en los honorarios?",
+        "answer": "Los honorarios pagan el trabajo profesional contratado; los impuestos y tasas de la compañía son valores distintos. Multas, intereses, devoluciones, requerimientos o procesos de control de autoridades no se presumen incluidos en una mensualidad ordinaria. Si se necesita un encargo adicional, se propone antes su alcance y precio. La planificación tributaria se ajusta a la actividad real y a los requisitos legales; no garantiza un ahorro ni la ausencia de sanciones."
+      },
+      {
+        "question": "¿Pueden llevar la contabilidad de una compañía con accionistas extranjeros?",
+        "answer": "Sí. Podemos definir la gestión contable y tributaria de la operación en Ecuador y su coordinación con el equipo o casa matriz. La participación extranjera requiere revisar la documentación y las obligaciones aplicables, sin convertir el servicio en auditoría o asesoría internacional ilimitada. No necesita ser ecuatoriano ni tener visa o residencia para ser socio o accionista de una compañía ecuatoriana; residir, trabajar o ejercer la representación legal se analiza por separado."
+      }
+    ],
+    "contact": {
+      "title": "Empecemos por lo que necesita.",
+      "intro": "Indíquenos si su compañía inicia, ya opera o tiene pendientes. Definiremos qué información hace falta para preparar una propuesta.",
+      "notes": [
+        "La consulta inicial no necesita estados de cuenta, nóminas, claves ni archivos de firma."
+      ]
+    }
+  },
+  "soft-landing": {
+    "source": "softlanding.html",
+    "target": "services/soft-landing/index.html",
+    "title": "Establezca y opere su empresa en Ecuador.",
+    "eyebrow": "SOFT LANDING · EMPRESAS E INVERSIONISTAS EXTRANJEROS",
+    "lead": "Su entrada al país necesita una estructura clara y un equipo que acompañe la operación.",
+    "description": "Constitución con capital extranjero, sucursales, representación, acompañamiento bancario y soporte legal, contable y administrativo, coordinados según su proyecto.",
+    "action": "Conversemos sobre su proyecto",
+    "sections": [
+      {
+        "id": "information-1",
+        "sourceId": null,
+        "title": "Experiencia de TempoLegal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Organizaciones que hemos acompañado en servicios de establecimiento y operación. El alcance de cada experiencia se detalla más abajo."
+          },
+          {
+            "type": "paragraph",
+            "text": "Epidata; INISEG; HireX · Grupo Conéctate; Cámara de Comercio Exterior; Grupo Tasker; UINMA · ámbito educativo vinculado a INISEG; EduLink · estructura vinculada a CCE; GestiaGlobal · estructura vinculada a CCE."
+          },
+          {
+            "type": "paragraph",
+            "text": "Las marcas y sociedades vinculadas se muestran con su contexto. No representan ocho grupos independientes ni acreditan el mismo servicio en todos los casos."
+          }
+        ]
+      },
+      {
+        "id": "context",
+        "sourceId": "situacion",
+        "title": "¿En qué momento está su proyecto?",
+        "blocks": [
+          {
+            "type": "eyebrow",
+            "text": "SU PUNTO DE PARTIDA"
+          },
+          {
+            "type": "paragraph",
+            "text": "Podemos acompañarle desde la decisión inicial o incorporarnos a una operación que ya existe."
+          },
+          {
+            "type": "disclosure",
+            "text": "Coordine la entrada con su casa matriz.",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "EXPANSIÓN Y ESTABLECIMIENTO"
+              },
+              {
+                "type": "paragraph",
+                "text": "Revisamos el vehículo, la participación extranjera, los poderes y la presencia local que necesita. Conectamos el establecimiento con la representación, la banca y el soporte de la operación."
+              },
+              {
+                "type": "link",
+                "text": "Explorar las alternativas ↓",
+                "href": "#estructura"
+              }
+            ]
+          },
+          {
+            "type": "disclosure",
+            "text": "Primero el proyecto. Después, la estructura.",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "FUNDADORES E INVERSIONISTAS"
+              },
+              {
+                "type": "paragraph",
+                "text": "No necesita tener una sociedad constituida en otro país. Revisamos su actividad, quiénes participarán y cómo quiere operar para definir la estructura y el acompañamiento adecuados."
+              },
+              {
+                "type": "link",
+                "text": "Definir por dónde empezar ↓",
+                "href": "#estructura"
+              }
+            ]
+          },
+          {
+            "type": "disclosure",
+            "text": "Un equipo local que se integre al suyo.",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "OPERACIÓN EN MARCHA"
+              },
+              {
+                "type": "paragraph",
+                "text": "Puede contratarnos para una necesidad concreta o para la continuidad: representación, contabilidad, asuntos jurídicos y tareas de administración definidas. Partimos de lo que ya tiene."
+              },
+              {
+                "type": "link",
+                "text": "Conocer el soporte continuo ↓",
+                "href": "#continuidad"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "scope",
+        "sourceId": "alcance",
+        "title": "Todo el recorrido. Un alcance a su medida.",
+        "blocks": [
+          {
+            "type": "eyebrow",
+            "text": "ESTRUCTURA · ESTABLECIMIENTO · CONTINUIDAD"
+          },
+          {
+            "type": "paragraph",
+            "text": "Soft landing significa acompañar su establecimiento en Ecuador y organizar el soporte para operar. Cada etapa tiene entregables, responsables y condiciones propios."
+          },
+          {
+            "type": "heading",
+            "text": "Definir la estructura."
+          },
+          {
+            "type": "paragraph",
+            "text": "Antes de iniciar trámites, entendemos cómo se relacionará la operación ecuatoriana con sus socios y su matriz."
+          },
+          {
+            "type": "list",
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "text": "Compañía local con personas o sociedades extranjeras como accionistas."
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "text": "Establecimiento de sucursal de una compañía extranjera, cuando sea la ruta adecuada."
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "text": "Estatutos, acuerdos de socios, facultades y mecanismos de autorización."
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "text": "Estructuras de grupo y holdings cuando respondan al proyecto empresarial."
+                }
+              ]
+            ]
+          },
+          {
+            "type": "disclosure",
+            "text": "¿Compañía local o sucursal?",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Son alternativas distintas en su estructura y relación con la empresa extranjera. Revisamos actividad, propiedad, control, documentos y necesidades operativas antes de recomendar una ruta. Una SAS es una posibilidad; no la asumimos como solución para todos los proyectos."
+              }
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Establecer y habilitar."
+          },
+          {
+            "type": "paragraph",
+            "text": "Convertimos la estructura acordada en un plan de puesta en marcha, con seguimiento de cada frente."
+          },
+          {
+            "type": "list",
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "text": "Constitución o domiciliación de sucursal, documentación y nombramientos."
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "text": "Representación legal y domicilio fiscal, según las necesidades de presencia local."
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "text": "RUC, firmas y habilitación para facturar, conforme al encargo."
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "text": "Carpeta y coordinación bancaria; permisos o gestiones sectoriales que se definan."
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Domiciliación de una sucursal y domicilio fiscal resuelven necesidades diferentes. La propuesta identifica las gestiones aplicables y los costos de terceros."
+          },
+          {
+            "type": "link",
+            "text": "Representación y domicilio fiscal ↗",
+            "href": "https://tempolegal.com/representacion-legal-fiscal-ecuador/"
+          },
+          {
+            "type": "link",
+            "text": "Constitución de SAS ↗",
+            "href": "https://tempolegal.com/constitucion-de-empresas-sas/"
+          },
+          {
+            "type": "heading",
+            "text": "Operar y dar continuidad."
+          },
+          {
+            "type": "paragraph",
+            "text": "La compañía necesita algo más que documentos de constitución. Definimos qué tareas asumimos y cómo coordinamos con su equipo."
+          },
+          {
+            "type": "list",
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "text": "Contabilidad, tributación y obligaciones societarias recurrentes."
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "text": "Soporte jurídico, contratos y asuntos laborales según el plan contratado."
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "text": "Back office administrativo y documental, seguimiento y coordinación intercompañías."
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "text": "Responsables, reportes y comunicación con los accionistas o la casa matriz."
+                }
+              ]
+            ]
+          },
+          {
+            "type": "link",
+            "text": "Contabilidad y tributación ↗",
+            "href": "https://tempolegal.com/servicios-contabilidad/"
+          },
+          {
+            "type": "link",
+            "text": "Protección de datos personales ↗",
+            "href": "https://tempolegal.com/proteccion-de-datos-personales-ecuador/"
+          },
+          {
+            "type": "link",
+            "text": "Consultar acompañamiento recurrente ↗",
+            "href": "#contacto"
+          }
+        ]
+      },
+      {
+        "id": "operations",
+        "sourceId": "operacion",
+        "title": "La cuenta empresarial también es parte del proceso.",
+        "blocks": [
+          {
+            "type": "eyebrow",
+            "text": "HABILITACIÓN BANCARIA"
+          },
+          {
+            "type": "paragraph",
+            "text": "Podemos preparar la carpeta, coordinar con el banco, atender observaciones y acompañar la habilitación de la cuenta, la banca electrónica y sus autorizaciones, cuando esté contratado."
+          },
+          {
+            "type": "paragraph",
+            "text": "Documentación"
+          },
+          {
+            "type": "paragraph",
+            "text": "→"
+          },
+          {
+            "type": "paragraph",
+            "text": "Revisión bancaria"
+          },
+          {
+            "type": "paragraph",
+            "text": "→"
+          },
+          {
+            "type": "paragraph",
+            "text": "Habilitación"
+          },
+          {
+            "type": "paragraph",
+            "text": "El banco determina los requisitos, la aprobación y sus tiempos. Los usuarios, las facultades y el control de los fondos se definen con la empresa."
+          },
+          {
+            "type": "eyebrow",
+            "text": "BACK OFFICE CORPORATIVO"
+          },
+          {
+            "type": "paragraph",
+            "text": "Back office es el trabajo administrativo y documental que sostiene la operación. Definimos tareas concretas y una coordinación que permita a la matriz concentrarse en el negocio."
+          },
+          {
+            "type": "paragraph",
+            "text": "Información organizada"
+          },
+          {
+            "type": "paragraph",
+            "text": "Archivo corporativo y soportes disponibles para los equipos que los necesitan."
+          },
+          {
+            "type": "paragraph",
+            "text": "Coordinación de tareas"
+          },
+          {
+            "type": "paragraph",
+            "text": "Seguimiento de aprobaciones, documentos y operaciones entre compañías relacionadas."
+          },
+          {
+            "type": "paragraph",
+            "text": "Visibilidad para decidir"
+          },
+          {
+            "type": "paragraph",
+            "text": "Responsables, matrices de seguimiento e informes según el servicio acordado."
+          },
+          {
+            "type": "paragraph",
+            "text": "La puesta en marcha y el soporte recurrente se cotizan con alcances propios. No todas las tareas están incluidas en cualquier contratación."
+          }
+        ]
+      },
+      {
+        "id": "experience",
+        "sourceId": "experiencia",
+        "title": "Establecimiento. Coordinación. Operación.",
+        "blocks": [
+          {
+            "type": "eyebrow",
+            "text": "EXPERIENCIA QUE CONECTA CON SU PROYECTO"
+          },
+          {
+            "type": "paragraph",
+            "text": "Hemos acompañado organizaciones con vínculos internacionales en distintos frentes. Estas experiencias muestran el alcance del trabajo realizado."
+          },
+          {
+            "type": "eyebrow",
+            "text": "ORIGEN DE NUESTROS CLIENTES · COORDINACIÓN DESDE QUITO"
+          },
+          {
+            "type": "paragraph",
+            "text": "MéxicoCiudad de México; GuatemalaCiudad de Guatemala; Costa RicaSan José; EE. UU.Miami; ColombiaBogotá; PerúLima; ArgentinaBuenos Aires; EspañaMadrid; IsraelTel Aviv."
+          },
+          {
+            "type": "link",
+            "text": "Ver las conexiones desde Quito ↗",
+            "href": "https://tempolegal.com/#empresas-extranjeras"
+          },
+          {
+            "type": "paragraph",
+            "text": "Procedencia de clientes de TempoLegal en distintos servicios. La atención se coordina desde Quito, Ecuador; los puntos no representan oficinas en el exterior. Los casos siguientes describen el alcance pertinente de nuestro trabajo."
+          },
+          {
+            "type": "disclosure",
+            "text": "Grupo Tasker",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "ESTRUCTURA EMPRESARIAL · PERÚ"
+              },
+              {
+                "type": "paragraph",
+                "text": "Acompañamos al grupo Tasker en la constitución de cuatro compañías ecuatorianas y en la coordinación de asuntos bancarios, contables, laborales y de propiedad intelectual."
+              },
+              {
+                "type": "paragraph",
+                "text": "Distintas líneas de negocio, con coordinación societaria y soporte posterior en Ecuador."
+              }
+            ]
+          },
+          {
+            "type": "disclosure",
+            "text": "Epidata",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "TECNOLOGÍA · ARGENTINA"
+              },
+              {
+                "type": "paragraph",
+                "text": "Constitución, representación legal, domicilio fiscal, contabilidad y tributación, coordinación bancaria e implementación de protección de datos para su operación en Ecuador."
+              },
+              {
+                "type": "paragraph",
+                "text": "Una estructura local para una operación tecnológica internacional."
+              }
+            ]
+          },
+          {
+            "type": "disclosure",
+            "text": "Cámara de Comercio Exterior",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "SERVICIOS Y EDUCACIÓN · VÍNCULO CON PERÚ"
+              },
+              {
+                "type": "paragraph",
+                "text": "Acompañamos la constitución de Cámara de Comercio Exterior, EduLink y GestiaGlobal, con representación legal, domicilio fiscal, contabilidad y trabajo en protección de datos."
+              },
+              {
+                "type": "paragraph",
+                "text": "Tres compañías vinculadas, con coordinación jurídica y contable en Ecuador."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Síntesis de experiencias de la firma. No implica que todos los clientes hayan contratado la totalidad del servicio ni que se garanticen resultados equivalentes."
+          }
+        ]
+      },
+      {
+        "id": "team",
+        "sourceId": "equipo",
+        "title": "Un equipo para establecerse y operar.",
+        "people": [
+          {
+            "name": "Juan Alberto Gómez",
+            "degree": "Abogado · Socio fundador",
+            "role": "Especialista en soft landing y empresas extranjeras",
+            "contribution": "Estructura y coordinación jurídica del proyecto."
+          },
+          {
+            "name": "Daniela Barahona",
+            "degree": "Abogada · Magíster",
+            "role": "Abogada senior",
+            "contribution": "Asuntos corporativos y laborales de la operación."
+          },
+          {
+            "name": "Emillie Donoso",
+            "degree": "Abogada · Magíster",
+            "role": "Abogada senior",
+            "contribution": "Protección de datos y cumplimiento normativo."
+          },
+          {
+            "name": "Rolando Valencia",
+            "degree": "Ingeniero",
+            "role": "Coordinador de Servicios Financieros",
+            "contribution": "Finanzas y administración de la operación."
+          },
+          {
+            "name": "Gabriel Calvopiña",
+            "degree": "Ingeniero · Magíster",
+            "role": "Coordinador de Servicios Contables y Tributarios",
+            "contribution": "Contabilidad y obligaciones tributarias."
+          }
+        ],
+        "intro": [
+          "Integramos la coordinación jurídica y contable para que sepa qué falta, quién lo lleva y qué requiere su decisión."
+        ],
+        "notes": [],
+        "extra": [
+          {
+            "type": "eyebrow",
+            "text": "CÓMO COORDINAMOS SU PROYECTO"
+          },
+          {
+            "type": "steps",
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "text": "Entendemos la operación."
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Actividad, accionistas, país de origen, etapa y equipo disponible."
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "text": "Acordamos el alcance."
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Propuesta con entregables, etapas, honorarios y servicios recurrentes."
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "text": "Coordinamos la ejecución."
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Responsables, documentación y seguimiento con usted y los terceros involucrados."
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Cada área aporta según el alcance acordado. La propuesta identifica los profesionales responsables y su participación."
+          },
+          {
+            "type": "link",
+            "text": "Conozca al equipo de TempoLegal ↗",
+            "href": "https://tempolegal.com/sobre-nosotros/"
+          }
+        ]
+      },
+      {
+        "id": "testimonials",
+        "sourceId": "testimonios",
+        "title": "El valor de trabajar con un equipo cercano.",
+        "intro": [
+          "Testimonios sobre distintos servicios de la firma. No se presentan como resultados específicos de soft landing."
+        ],
+        "reviews": [
+          {
+            "name": "Eleazar Becerra",
+            "paragraphs": [
+              "Cuando decidimos desarrollar nuestras actividades en Ecuador, necesitábamos mucho más que constituir una compañía. Había que organizar la estructura societaria, la representación local y los temas contables, tributarios y de cumplimiento.",
+              "TempoLegal nos ha acompañado en la estructuración de nuestras empresas y en esas necesidades, incluida la protección de datos personales. Para nosotros, que coordinamos negocios en distintos países, es una ventaja tener un equipo local que conoce nuestra operación y al que podemos acudir directamente.",
+              "Esa combinación de asesoría jurídica y apoyo práctico nos ha facilitado trabajar en Ecuador. Es el tipo de acompañamiento que recomendaría a otras empresas que quieren establecerse y operar en el país."
+            ]
+          },
+          {
+            "name": "Pablo Lucio Paredes",
+            "paragraphs": [
+              "Trabajar con Tempo Legal fue una decisión positiva para mi empresa y mis necesidades personales. He recibido una asesoría clara y cercana, el equipo entendió mis necesidades, me explicó los pasos del proceso y estuvo disponible para resolver mis inquietudes. Más allá del conocimiento jurídico, valoré especialmente su compromiso y la atención personalizada durante todo el proceso. Así pudimos avanzar con seguridad y enfocarnos en nuestras obligaciones, sabiendo que los aspectos legales estaban en buenas manos. Sin duda, recomendaría a Tempo Legal. De hecho trabajo y seguiré trabajando con ellos"
+            ]
+          },
+          {
+            "name": "Francisco Mosquera Aulestia",
+            "paragraphs": [
+              "En GMA tenemos varias empresas y una operación logística que no se detiene. Necesitamos una asesoría legal que entienda esa realidad y no se quede solo en lo teórico.",
+              "TempoLegal nos acompaña desde hace años en asuntos laborales, societarios, contractuales y de protección de datos personales. Conocen cómo funciona el grupo, así que cuando surge un problema podemos ir directamente a lo importante.",
+              "Lo que más valoro es que nos ayuden a prevenir riesgos y nos den alternativas claras para resolver situaciones concretas. Para un grupo empresarial como el nuestro, contar con abogados que conocen la operación y están presentes cuando se los necesita marca una diferencia."
+            ]
+          },
+          {
+            "name": "Ana Cecilia Andrade",
+            "paragraphs": [
+              "En FLP hay temas que requieren una respuesta inmediata y otros que necesitan seguimiento durante meses. Para mí hace una gran diferencia contar con un equipo que ya conoce nuestras empresas.",
+              "TempoLegal nos apoya en asuntos laborales, societarios y contractuales y, además, lleva la contabilidad de FLP Holding Ecuador. Poder coordinar la parte jurídica y contable con un mismo equipo nos facilita mucho el trabajo.",
+              "No tenemos que explicar desde cero la historia de cada compañía ni buscar a quién acudir según el problema. Sabemos con quién hablar y podemos dar continuidad a los asuntos pendientes. Eso, en el día a día de una empresa, vale mucho."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "questions",
+        "sourceId": "preguntas",
+        "title": "Antes de entrar a Ecuador.",
+        "faq": true,
+        "intro": [
+          "Las preguntas que conviene resolver antes de elegir una estructura o contratar la operación local."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Necesito ser ecuatoriano o tener visa para ser socio o accionista de una compañía en Ecuador?",
+        "answer": "No. No necesita ser ecuatoriano, ni tener visa o residencia en Ecuador, para ser socio o accionista de una compañía ecuatoriana. Puede participar como extranjero, incluso desde otro país, cumpliendo los requisitos de identificación, documentación y registro aplicables. Ser socio o accionista no le otorga automáticamente permiso para residir o trabajar en Ecuador. Si además desea trasladarse al país, trabajar o ejercer la representación legal, revisamos por separado los requisitos migratorios y societarios correspondientes. La vía de constitución, las firmas y los poderes se definen según su caso."
+      },
+      {
+        "question": "¿Qué incluye el servicio de soft landing en Ecuador?",
+        "answer": "Es un acompañamiento para definir cómo establecer su negocio, gestionar los pasos de puesta en marcha y organizar el soporte necesario para operar en Ecuador. Según el proyecto, puede comprender estructura societaria, constitución o establecimiento de sucursal, representación, domicilio fiscal, coordinación bancaria y servicios jurídicos, contables o administrativos. Antes de contratar, la propuesta identifica los entregables, responsables, etapas y servicios recurrentes incluidos."
+      },
+      {
+        "question": "¿Necesito una compañía nueva o una sucursal de mi empresa extranjera?",
+        "answer": "Depende de la actividad, la estructura de propiedad, los compromisos de la matriz y las necesidades de operación. Una compañía constituida en Ecuador y una sucursal de una compañía extranjera tienen diferencias que deben revisarse antes de elegir. Analizamos el proyecto para proponer la alternativa adecuada; una SAS no se asume como solución para todos los casos."
+      },
+      {
+        "question": "¿Pueden ayudarme si todavía no tengo una empresa constituida en otro país?",
+        "answer": "Sí. El acompañamiento también puede partir del proyecto de un fundador o inversionista que desea iniciar un negocio en Ecuador. Primero revisamos qué actividad realizará, quiénes participarán y qué soporte necesitará para operar. Los trámites personales de residencia o las cuentas personales requieren un análisis distinto y no se presumen incluidos en el servicio empresarial."
+      },
+      {
+        "question": "¿El acompañamiento incluye la apertura de una cuenta bancaria empresarial?",
+        "answer": "Podemos acompañar la preparación de la documentación y la coordinación del trámite bancario dentro del alcance acordado. Los requisitos, validaciones y la decisión de apertura corresponden a la entidad financiera. La propuesta debe precisar qué gestiones realizará TempoLegal y qué información o actuaciones se requieren de la empresa y sus representantes; no se garantiza aprobación ni un plazo universal."
+      },
+      {
+        "question": "¿Qué diferencia hay entre domicilio fiscal, representación y domiciliación de una sucursal?",
+        "answer": "Son necesidades distintas. El domicilio fiscal se relaciona con la dirección utilizada para los fines aplicables de la empresa; la representación comprende las facultades y responsabilidades de quien actúa por ella. El establecimiento o domiciliación de una sucursal de una compañía extranjera es un proceso diferente para organizar su presencia en Ecuador. Revisamos qué requiere su proyecto y delimitamos cada servicio en la propuesta."
+      },
+      {
+        "question": "¿Pueden acompañarnos después de constituir o establecer la empresa?",
+        "answer": "Sí. Podemos definir un servicio recurrente de apoyo jurídico, contable y administrativo según la operación y las tareas contratadas. El back office debe concretarse en actividades, responsables y coordinación con su equipo. La puesta en marcha y el acompañamiento posterior tienen alcances y condiciones propios; contratar la constitución no supone incluir automáticamente todos los servicios mensuales."
+      },
+      {
+        "question": "¿Cuánto cuesta y cuánto tarda establecer una operación en Ecuador?",
+        "answer": "El costo y el cronograma dependen de la estructura elegida, las entidades involucradas, la documentación disponible, las gestiones ante terceros y el apoyo posterior que se requiera. Después de revisar el proyecto, presentamos una propuesta con etapas, honorarios y costos externos identificados cuando corresponda. No aplicamos al servicio integral un precio o un plazo tomado de una constitución estándar."
+      },
+      {
+        "question": "¿Pueden ayudarnos si nuestra empresa ya está operando en Ecuador?",
+        "answer": "Sí. Podemos revisar una necesidad concreta o definir apoyo para la continuidad de la operación: organización societaria, representación, contratos, contabilidad y tareas administrativas dentro del alcance acordado. El punto de partida es entender qué funciona, qué equipo existe y qué necesita resolver. No es necesario volver a constituir una empresa para contratar acompañamiento."
+      }
+    ],
+    "contact": {
+      "title": "Su siguiente paso en Ecuador empieza aquí.",
+      "intro": "Cuéntenos qué actividad quiere desarrollar, desde dónde la coordina y en qué etapa se encuentra. Con esa información podremos orientar la conversación y definir una propuesta de servicios.",
+      "notes": []
+    }
+  },
+  "holding-structures": {
+    "source": "Holdings y estructuras.html",
+    "target": "services/holding-structures/index.html",
+    "title": "Holdings y estructuras empresariales en Ecuador.",
+    "eyebrow": "PROPIEDAD · GOBIERNO · RELACIONES ENTRE EMPRESAS",
+    "lead": "Varias compañías. Una estructura con sentido.",
+    "description": "Revisamos cómo se conectan sus empresas y diseñamos la organización societaria, los acuerdos y la coordinación jurídica y contable que su grupo necesita.",
+    "action": "Consultar la estructura de mi grupo",
+    "sections": [
+      {
+        "id": "overview",
+        "title": "Su proyecto y el alcance del servicio",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Cada entidad conserva sus obligaciones. Un organigrama no sustituye los acuerdos ni la documentación."
+          }
+        ]
+      },
+      {
+        "id": "information-1",
+        "sourceId": null,
+        "title": "Experiencia de TempoLegal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Clientes de la firma en distintos servicios empresariales. Cada encargo tiene su alcance; estas referencias no representan resultados idénticos."
+          },
+          {
+            "type": "paragraph",
+            "text": "Epidata; INISEG; HireX · Grupo Conéctate; Cámara de Comercio Exterior; Grupo Tasker; UINMA · ámbito educativo vinculado a INISEG; EduLink · estructura vinculada a CCE; GestiaGlobal · estructura vinculada a CCE."
+          },
+          {
+            "type": "paragraph",
+            "text": "Las marcas y sociedades vinculadas se muestran con su contexto. No representan ocho grupos independientes ni acreditan el mismo servicio en todos los casos."
+          }
+        ]
+      },
+      {
+        "id": "scope",
+        "sourceId": "alcance",
+        "title": "La propiedad es una parte. La operación también cuenta.",
+        "blocks": [
+          {
+            "type": "eyebrow",
+            "text": "QUÉ NECESITA ORGANIZAR"
+          },
+          {
+            "type": "paragraph",
+            "text": "El análisis parte de sus compañías, sus participantes y lo que quieren conseguir. Una holding es una alternativa, no una respuesta para todos."
+          },
+          {
+            "type": "disclosure",
+            "text": "La estructura que existe hoy.",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "01 / ENTENDER"
+              },
+              {
+                "type": "paragraph",
+                "text": "Participación, administración, activos y relaciones entre compañías. Identificamos qué funciona, qué necesita orden y qué información falta."
+              }
+            ]
+          },
+          {
+            "type": "disclosure",
+            "text": "Alternativas antes de actuar.",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "02 / EVALUAR"
+              },
+              {
+                "type": "paragraph",
+                "text": "Comparamos organización de propiedad, ajustes de documentos, acuerdos y vehículos que respondan al objetivo. Se consideran efectos jurídicos, contables y tributarios."
+              }
+            ]
+          },
+          {
+            "type": "disclosure",
+            "text": "Reglas y relaciones que se puedan aplicar.",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "03 / DOCUMENTAR"
+              },
+              {
+                "type": "paragraph",
+                "text": "Estatutos, decisiones, acuerdos y contratos del alcance contratado. Las facultades y mecanismos de autorización deben ser coherentes con cada compañía."
+              }
+            ]
+          },
+          {
+            "type": "disclosure",
+            "text": "Una ruta con responsables y etapas.",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "04 / IMPLEMENTAR"
+              },
+              {
+                "type": "paragraph",
+                "text": "Coordinamos los actos y gestiones acordados y la documentación de entrega. Los costos de terceros y servicios recurrentes se delimitan en la propuesta."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Una estructura adicional también tiene obligaciones."
+          },
+          {
+            "type": "paragraph",
+            "text": "El análisis debe justificar su propósito y considerar su funcionamiento. No prometemos ahorro tributario ni protección patrimonial absolutos."
+          }
+        ]
+      },
+      {
+        "id": "information-3",
+        "sourceId": null,
+        "title": "¿Qué quiere que su estructura permita?",
+        "blocks": [
+          {
+            "type": "eyebrow",
+            "text": "SITUACIONES QUE CONVIENE REVISAR"
+          },
+          {
+            "type": "paragraph",
+            "text": "El vehículo societario debe seguir a la decisión empresarial, no al revés."
+          },
+          {
+            "type": "disclosure",
+            "text": "Dar claridad a varias empresas.",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "ORGANIZACIÓN DEL GRUPO"
+              },
+              {
+                "type": "paragraph",
+                "text": "Revisar propiedad, administración y relaciones cuando las sociedades crecieron en momentos o líneas de negocio distintas."
+              }
+            ]
+          },
+          {
+            "type": "disclosure",
+            "text": "Preparar las decisiones que vienen.",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "SOCIOS Y CONTINUIDAD"
+              },
+              {
+                "type": "paragraph",
+                "text": "Evaluar participación de nuevos socios, reglas de aprobación y continuidad. Las cuestiones patrimoniales o sucesorias que aparezcan requieren un alcance específico."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "information-4",
+        "sourceId": null,
+        "title": "Del objetivo a una ruta documentada.",
+        "blocks": [
+          {
+            "type": "eyebrow",
+            "text": "CÓMO TRABAJAMOS"
+          },
+          {
+            "type": "paragraph",
+            "text": "La propuesta precisa el análisis, los instrumentos y las gestiones. No toda reorganización necesita los mismos pasos."
+          },
+          {
+            "type": "steps",
+            "items": [
+              [
+                {
+                  "type": "heading",
+                  "text": "Escuchar el objetivo."
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Qué quiere ordenar y cuáles son las entidades y participantes involucrados."
+                }
+              ],
+              [
+                {
+                  "type": "heading",
+                  "text": "Revisar antecedentes."
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Estatutos, propiedad, administración y la información pertinente al encargo."
+                }
+              ],
+              [
+                {
+                  "type": "heading",
+                  "text": "Proponer alternativas."
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Documentar la ruta recomendada, sus decisiones y las actuaciones contratadas."
+                }
+              ],
+              [
+                {
+                  "type": "heading",
+                  "text": "Coordinar la ejecución."
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Preparar documentos y gestiones, con seguimiento de los responsables."
+                }
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "information-5",
+        "sourceId": null,
+        "title": "Conocer cómo se conectan las empresas importa.",
+        "blocks": [
+          {
+            "type": "eyebrow",
+            "text": "EXPERIENCIA CON ESTRUCTURAS EMPRESARIALES"
+          },
+          {
+            "type": "paragraph",
+            "text": "Referencias de trabajo de la firma en organización societaria y coordinación entre compañías. No se presentan como resultados tributarios garantizados."
+          },
+          {
+            "type": "disclosure",
+            "text": "Una estructura con relaciones regionales.",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "CÁMARA DE COMERCIO EXTERIOR · EDULINK · GESTIAGLOBAL"
+              },
+              {
+                "type": "paragraph",
+                "text": "Acompañamiento en la organización societaria de compañías vinculadas y servicios de establecimiento, representación y coordinación contable y tributaria, según sus encargos."
+              },
+              {
+                "type": "paragraph",
+                "text": "Experiencia descrita en las referencias comerciales del estudio. No equivale a un servicio idéntico para toda entidad vinculada."
+              }
+            ]
+          },
+          {
+            "type": "disclosure",
+            "text": "Líneas de negocio y documentación conectadas.",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "GRUPO TASKER"
+              },
+              {
+                "type": "paragraph",
+                "text": "Experiencia de la firma con constitución y soporte de compañías vinculadas a distintas líneas de negocio. Esa organización plantea necesidades de trazabilidad entre compañías que evaluamos al definir el soporte administrativo."
+              },
+              {
+                "type": "paragraph",
+                "text": "Referencia de organización societaria; cada servicio posterior tiene alcance propio."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "team",
+        "sourceId": "equipo",
+        "title": "Decisiones conectadas. Un equipo que coordina.",
+        "people": [
+          {
+            "name": "Juan Alberto Gómez",
+            "degree": "Abogado · Socio fundador",
+            "role": "Derecho empresarial y societario",
+            "contribution": "Estructura y coordinación jurídica del encargo."
+          },
+          {
+            "name": "Daniela Barahona",
+            "degree": "Abogada · Magíster",
+            "role": "Abogada senior",
+            "contribution": "Asuntos corporativos y laborales de la operación."
+          },
+          {
+            "name": "Emillie Donoso",
+            "degree": "Abogada · Magíster",
+            "role": "Abogada senior",
+            "contribution": "Protección de datos y cumplimiento normativo."
+          },
+          {
+            "name": "Rolando Valencia",
+            "degree": "Ingeniero",
+            "role": "Coordinador de Servicios Financieros",
+            "contribution": "Finanzas y administración de la operación."
+          },
+          {
+            "name": "Gabriel Calvopiña",
+            "degree": "Ingeniero · Magíster",
+            "role": "Coordinador de Servicios Contables y Tributarios",
+            "contribution": "Contabilidad y obligaciones tributarias."
+          }
+        ],
+        "intro": [
+          "El área societaria coordina el encargo y el apoyo contable o financiero se incorpora cuando el análisis lo necesita y está previsto en la propuesta."
+        ],
+        "notes": [
+          "La intervención de cada profesional depende del servicio contratado; no todos participan en cada encargo."
+        ],
+        "extra": []
+      },
+      {
+        "id": "testimonials",
+        "sourceId": "testimonios",
+        "title": "El valor de trabajar con un equipo cercano.",
+        "intro": [
+          "Testimonios sobre distintos servicios de la firma. Se presentan como referencias de la firma; no todos corresponden a constitución de holdings o reformas estatutarias."
+        ],
+        "reviews": [
+          {
+            "name": "Eleazar Becerra",
+            "paragraphs": [
+              "Cuando decidimos desarrollar nuestras actividades en Ecuador, necesitábamos mucho más que constituir una compañía. Había que organizar la estructura societaria, la representación local y los temas contables, tributarios y de cumplimiento.",
+              "TempoLegal nos ha acompañado en la estructuración de nuestras empresas y en esas necesidades, incluida la protección de datos personales. Para nosotros, que coordinamos negocios en distintos países, es una ventaja tener un equipo local que conoce nuestra operación y al que podemos acudir directamente.",
+              "Esa combinación de asesoría jurídica y apoyo práctico nos ha facilitado trabajar en Ecuador. Es el tipo de acompañamiento que recomendaría a otras empresas que quieren establecerse y operar en el país."
+            ]
+          },
+          {
+            "name": "Pablo Lucio Paredes",
+            "paragraphs": [
+              "Trabajar con Tempo Legal fue una decisión positiva para mi empresa y mis necesidades personales. He recibido una asesoría clara y cercana, el equipo entendió mis necesidades, me explicó los pasos del proceso y estuvo disponible para resolver mis inquietudes. Más allá del conocimiento jurídico, valoré especialmente su compromiso y la atención personalizada durante todo el proceso. Así pudimos avanzar con seguridad y enfocarnos en nuestras obligaciones, sabiendo que los aspectos legales estaban en buenas manos. Sin duda, recomendaría a Tempo Legal. De hecho trabajo y seguiré trabajando con ellos"
+            ]
+          },
+          {
+            "name": "Francisco Mosquera Aulestia",
+            "paragraphs": [
+              "En GMA tenemos varias empresas y una operación logística que no se detiene. Necesitamos una asesoría legal que entienda esa realidad y no se quede solo en lo teórico.",
+              "TempoLegal nos acompaña desde hace años en asuntos laborales, societarios, contractuales y de protección de datos personales. Conocen cómo funciona el grupo, así que cuando surge un problema podemos ir directamente a lo importante.",
+              "Lo que más valoro es que nos ayuden a prevenir riesgos y nos den alternativas claras para resolver situaciones concretas. Para un grupo empresarial como el nuestro, contar con abogados que conocen la operación y están presentes cuando se los necesita marca una diferencia."
+            ]
+          },
+          {
+            "name": "Ana Cecilia Andrade",
+            "paragraphs": [
+              "En FLP hay temas que requieren una respuesta inmediata y otros que necesitan seguimiento durante meses. Para mí hace una gran diferencia contar con un equipo que ya conoce nuestras empresas.",
+              "TempoLegal nos apoya en asuntos laborales, societarios y contractuales y, además, lleva la contabilidad de FLP Holding Ecuador. Poder coordinar la parte jurídica y contable con un mismo equipo nos facilita mucho el trabajo.",
+              "No tenemos que explicar desde cero la historia de cada compañía ni buscar a quién acudir según el problema. Sabemos con quién hablar y podemos dar continuidad a los asuntos pendientes. Eso, en el día a día de una empresa, vale mucho."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "information-8",
+        "sourceId": null,
+        "title": "Servicios que se conectan.",
+        "blocks": [
+          {
+            "type": "eyebrow",
+            "text": "EL SIGUIENTE PASO DE SU EMPRESA"
+          },
+          {
+            "type": "link",
+            "text": "Derecho corporativo y societario ↗",
+            "href": "../referencias_relacionadas/Corporativo/maqueta/index.html"
+          },
+          {
+            "type": "link",
+            "text": "Asesoría legal mensual ↗",
+            "href": "../referencias_relacionadas/Asesoria_Mensual/maqueta/index.html"
+          },
+          {
+            "type": "link",
+            "text": "Reformas y cambios societarios ↗",
+            "href": "../referencias_relacionadas/Reformas/maqueta/index.html"
+          },
+          {
+            "type": "disclosure",
+            "text": "Experiencia con empresas y equipos de otros países",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "El mapa muestra procedencias de clientes de la firma en distintos servicios. No representa oficinas internacionales."
+              },
+              {
+                "type": "eyebrow",
+                "text": "ORIGEN DE NUESTROS CLIENTES · COORDINACIÓN DESDE QUITO"
+              },
+              {
+                "type": "paragraph",
+                "text": "MéxicoCiudad de México; GuatemalaCiudad de Guatemala; Costa RicaSan José; EE. UU.Miami; ColombiaBogotá; PerúLima; ArgentinaBuenos Aires; EspañaMadrid; IsraelTel Aviv."
+              },
+              {
+                "type": "link",
+                "text": "Ver las conexiones desde Quito ↗",
+                "href": "https://tempolegal.com/#empresas-extranjeras"
+              },
+              {
+                "type": "paragraph",
+                "text": "Procedencia de clientes de TempoLegal en distintos servicios. La atención se coordina desde Quito, Ecuador; los puntos no representan oficinas en el exterior."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "questions",
+        "sourceId": "preguntas",
+        "title": "Preguntas antes de empezar.",
+        "faq": true,
+        "intro": [
+          "La estructura, los documentos y la ruta se definen con su situación concreta."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Qué es una holding y para qué puede servir?",
+        "answer": "Es una compañía que mantiene participaciones en otras sociedades y puede formar parte de la organización de un grupo empresarial. Antes de crearla revisamos qué objetivo debe cumplir: ordenar propiedad, reglas de decisión o relaciones entre compañías. El nombre holding no resuelve por sí solo cómo administrará cada sociedad ni sustituye sus obligaciones."
+      },
+      {
+        "question": "¿Necesito una holding si ya tengo varias empresas?",
+        "answer": "No necesariamente. Primero revisamos quién participa en cada sociedad, qué activos y actividades tiene, cómo se relacionan y qué quiere cambiar. Puede ser suficiente ajustar documentos o acuerdos; en otros casos conviene evaluar una estructura distinta. La recomendación se construye con su operación, no con un organigrama estándar."
+      },
+      {
+        "question": "¿Pueden organizar un grupo que ya está funcionando?",
+        "answer": "Sí. El trabajo puede partir de sociedades existentes. Revisamos estatutos, propiedad, administración, contratos y situación contable para definir una ruta. La implementación puede requerir actos, acuerdos o transferencias específicos. No suponemos que todas las compañías deban crearse nuevamente."
+      },
+      {
+        "question": "¿Una holding garantiza pagar menos impuestos?",
+        "answer": "No. Los efectos tributarios dependen de la estructura, la actividad real, las operaciones y los requisitos aplicables. Coordinamos el análisis jurídico con el contable y tributario antes de recomendar actuaciones. Una compañía adicional también genera obligaciones y costos de mantenimiento que deben considerarse."
+      },
+      {
+        "question": "¿Una holding protege todo mi patrimonio frente a cualquier deuda?",
+        "answer": "No ofrece una protección absoluta ni elimina obligaciones, garantías, responsabilidades o derechos de terceros. La organización de la propiedad debe tener un propósito legítimo y documentación coherente. Si existen deudas, litigios o contingencias, deben revisarse expresamente antes de plantear cambios."
+      },
+      {
+        "question": "¿La holding debe ser una SAS?",
+        "answer": "No se asume una forma societaria única. Revisamos participantes, actividad, gobierno, operación y restricciones aplicables para elegir el vehículo adecuado. Si su necesidad es una constitución sencilla de SAS, puede revisar nuestra página específica; una estructura de grupo requiere una propuesta propia."
+      },
+      {
+        "question": "¿Qué revisan entre las compañías del grupo?",
+        "answer": "Propiedad y reglas de administración, funciones de cada entidad, acuerdos, autorizaciones y documentación de relaciones intercompañía. La revisión puede coordinar aspectos de facturación, contabilidad y respaldo documental dentro del alcance contratado. No se presume incluida una auditoría integral de todas las sociedades."
+      },
+      {
+        "question": "¿Incluyen acuerdos entre accionistas y reglas de decisión?",
+        "answer": "Podemos incluir la preparación o revisión de estatutos, acuerdos y mecanismos de aprobación que sean pertinentes. Definimos qué se documentará en cada instrumento y cómo se coordinará con la administración. Un protocolo interno no elimina responsabilidades legales ni sustituye las formalidades exigibles."
+      },
+      {
+        "question": "¿Pueden ayudarnos a preparar la entrada de nuevos socios o la continuidad del grupo?",
+        "answer": "Sí. Podemos revisar la estructura y los documentos que afectan la participación y las decisiones. Si el proyecto plantea continuidad familiar, se identifican las materias societarias, tributarias y patrimoniales que requieren análisis específico. No ofrecemos una solución sucesoria universal ni damos por incluida toda actuación patrimonial."
+      },
+      {
+        "question": "¿Necesito ser ecuatoriano o tener visa para ser socio o accionista?",
+        "answer": "No. No necesita ser ecuatoriano ni tener visa o residencia en Ecuador para ser socio o accionista de una compañía ecuatoriana, cumpliendo los requisitos de documentación y registro aplicables. Residir, trabajar o ejercer representación legal son situaciones distintas que se revisan por separado."
+      },
+      {
+        "question": "¿Qué entregables y plazo tiene el trabajo?",
+        "answer": "La propuesta identifica el análisis inicial, alternativas, documentos y gestiones que se contratan, responsables y etapas. Los plazos dependen de la información, decisiones de las compañías, documentos y actuaciones ante terceros. No existe un plazo universal para reorganizar un grupo."
+      },
+      {
+        "question": "¿Qué necesitan para preparar una propuesta?",
+        "answer": "En la primera conversación basta conocer el objetivo, cuántas entidades participan, los países relacionados y el problema que quiere ordenar. Los estatutos, cuadros de participación, contratos y antecedentes se solicitan después por el canal indicado. No envíe información patrimonial, claves ni documentos privados en el formulario público."
+      }
+    ],
+    "contact": {
+      "title": "Una propuesta para su operación.",
+      "intro": "Describa qué necesita organizar o cambiar. Le indicaremos los antecedentes necesarios para definir el alcance.",
+      "notes": [
+        "No envíe claves ni documentación patrimonial o privada por este formulario."
+      ]
+    }
+  },
+  "sas-incorporation": {
+    "source": "constitucion de SAS.html",
+    "target": "constitucion-de-empresas-sas/index.html",
+    "title": "Constitución de SAS en Ecuador.",
+    "eyebrow": "SU EMPRESA · TODO EL ECUADOR",
+    "lead": "Empiece con una compañía. Y con las decisiones bien tomadas.",
+    "description": "Abogados que revisan su negocio y gestionan su constitución, el RUC y la configuración del facturador electrónico del SRI.",
+    "action": "Quiero constituir mi SAS",
+    "sections": [
+      {
+        "id": "references",
+        "sourceId": "clientes",
+        "title": "Experiencia de TempoLegal",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Organizaciones acompañadas por la firma en distintos servicios. Estas referencias no implican que todas hayan contratado constitución de SAS."
+          },
+          {
+            "type": "paragraph",
+            "text": "Epidata; INISEG; HireX · Grupo Conéctate; Cámara de Comercio Exterior; Grupo Tasker; UINMA · ámbito educativo vinculado a INISEG; EduLink · estructura vinculada a CCE; GestiaGlobal · estructura vinculada a CCE."
+          },
+          {
+            "type": "paragraph",
+            "text": "Las marcas y sociedades vinculadas se muestran con su contexto. No representan ocho grupos independientes ni acreditan el mismo servicio en todos los casos."
+          }
+        ]
+      },
+      {
+        "id": "scope",
+        "sourceId": "incluye",
+        "title": "Su compañía inscrita. Su carpeta en orden.",
+        "blocks": [
+          {
+            "type": "eyebrow",
+            "text": "QUÉ COMPRA CON EL SERVICIO"
+          },
+          {
+            "type": "paragraph",
+            "text": "Una SAS es una sociedad por acciones simplificada. Puede empezar solo o con otros accionistas. Antes del trámite, revisamos cómo debe organizarse su negocio."
+          },
+          {
+            "type": "disclosure",
+            "text": "Primero, las decisiones.",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "01 / DEFINIR"
+              },
+              {
+                "type": "list",
+                "items": [
+                  [
+                    {
+                      "type": "paragraph",
+                      "text": "Asesoría sobre accionistas, capital, administración y decisiones."
+                    }
+                  ],
+                  [
+                    {
+                      "type": "paragraph",
+                      "text": "Reserva de nombre, objeto social y actividades conforme a su negocio real."
+                    }
+                  ],
+                  [
+                    {
+                      "type": "paragraph",
+                      "text": "Acto constitutivo, estatuto y nombramiento revisados por abogados."
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "type": "disclosure",
+            "text": "Después, la gestión.",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "02 / CONSTITUIR"
+              },
+              {
+                "type": "list",
+                "items": [
+                  [
+                    {
+                      "type": "paragraph",
+                      "text": "Presentación y seguimiento hasta la inscripción de compañía y nombramiento."
+                    }
+                  ],
+                  [
+                    {
+                      "type": "paragraph",
+                      "text": "Obtención del RUC y organización de accesos institucionales."
+                    }
+                  ],
+                  [
+                    {
+                      "type": "paragraph",
+                      "text": "Configuración del facturador electrónico gratuito del SRI."
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "type": "disclosure",
+            "text": "Y una base para continuar.",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "03 / ENTREGAR"
+              },
+              {
+                "type": "list",
+                "items": [
+                  [
+                    {
+                      "type": "paragraph",
+                      "text": "Carpeta societaria digital, títulos y libro de accionistas."
+                    }
+                  ],
+                  [
+                    {
+                      "type": "paragraph",
+                      "text": "Documentos para gestionar la cuenta bancaria."
+                    }
+                  ],
+                  [
+                    {
+                      "type": "paragraph",
+                      "text": "Certificado de cumplimiento y guía de obligaciones societarias, tributarias y municipales."
+                    }
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Observaciones y reingreso sin honorarios adicionales Dentro de la constitución contratada, hasta su inscripción."
+          },
+          {
+            "type": "paragraph",
+            "text": "35 % de descuento durante el primer año En honorarios de trámites societarios; no incluye tasas ni gastos de terceros."
+          },
+          {
+            "type": "paragraph",
+            "text": "Constituir no reemplaza permisos de su actividad ni garantiza la apertura de una cuenta bancaria. La contabilidad mensual y los servicios adicionales tienen una propuesta propia."
+          }
+        ]
+      },
+      {
+        "id": "pricing",
+        "sourceId": "precio",
+        "title": "¿Cuántos accionistas tendrá su SAS?",
+        "blocks": [
+          {
+            "type": "eyebrow",
+            "text": "PRECIO CLARO DESDE EL INICIO"
+          },
+          {
+            "type": "paragraph",
+            "text": "Consulte los honorarios de constitución según el número de accionistas. Los certificados de firma, si los necesita, se cotizan aparte."
+          },
+          {
+            "type": "list",
+            "items": [
+              [
+                {
+                  "type": "paragraph",
+                  "text": "1 accionista persona natural: USD 140 + IVA."
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "text": "2 accionistas personas naturales: USD 159,99 + IVA."
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "text": "3 accionistas personas naturales: USD 179,99 + IVA."
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "text": "4 accionistas personas naturales: USD 199,99 + IVA."
+                }
+              ],
+              [
+                {
+                  "type": "paragraph",
+                  "text": "5 o más accionistas, o participa una compañía: cotización específica."
+                }
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "La inscripción estándar ante la Superintendencia y el RUC no tienen una tasa oficial. Estos valores corresponden a nuestro servicio profesional."
+          },
+          {
+            "type": "disclosure",
+            "text": "¿Y la firma electrónica?",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Si ya tiene una firma válida para el proceso, la utilizamos. Si necesita tramitarla en Ecuador, por persona: USD 25 por 30 días, USD 35 por un año, USD 50 por dos años o USD 65 por tres años, más IVA. Para participantes en el exterior, desde USD 45 + IVA, sujeto a validación. Para facturar después deberá mantener vigente el certificado correspondiente."
+              }
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Pago por transferencia o tarjeta mediante enlace de pago. Tarifas de referencia vigentes hasta el 31 de diciembre de 2026; confirmamos su caso antes de contratar."
+          }
+        ]
+      },
+      {
+        "id": "process",
+        "sourceId": "proceso",
+        "title": "Usted decide. Nosotros coordinamos.",
+        "blocks": [
+          {
+            "type": "eyebrow",
+            "text": "ASÍ EMPEZAMOS"
+          },
+          {
+            "type": "paragraph",
+            "text": "Le explicamos qué necesitamos y qué sigue. El plazo de 24–48 horas hábiles empieza con la información y las firmas completas, sujeto a las autoridades."
+          },
+          {
+            "type": "steps",
+            "items": [
+              [
+                {
+                  "type": "heading",
+                  "text": "Nos cuenta su negocio."
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Actividad, accionistas y opciones de nombre. Confirmamos el alcance y le enviamos un formulario breve."
+                }
+              ],
+              [
+                {
+                  "type": "heading",
+                  "text": "Revisamos la estructura."
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Validamos nombre, actividades, capital y administración. Preparamos los documentos aplicables."
+                }
+              ],
+              [
+                {
+                  "type": "heading",
+                  "text": "Usted revisa y firma."
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Coordinamos la revisión y las firmas electrónicas. Gestionamos el trámite y sus observaciones."
+                }
+              ],
+              [
+                {
+                  "type": "heading",
+                  "text": "Recibe su compañía."
+                },
+                {
+                  "type": "paragraph",
+                  "text": "Inscripción, nombramiento y RUC. Organizamos su carpeta y la configuración del facturador del SRI."
+                }
+              ]
+            ]
+          },
+          {
+            "type": "heading",
+            "text": "Para una primera conversación basta con su proyecto."
+          },
+          {
+            "type": "paragraph",
+            "text": "El número de accionistas, la actividad y dos o tres opciones de nombre. La documentación personal y las firmas se coordinan después por el canal indicado, no en este formulario público."
+          },
+          {
+            "type": "link",
+            "text": "Cuéntenos qué quiere crear ↗",
+            "href": "#contacto"
+          }
+        ]
+      },
+      {
+        "id": "information-5",
+        "sourceId": null,
+        "title": "Hay decisiones que conviene tomar bien.",
+        "blocks": [
+          {
+            "type": "eyebrow",
+            "text": "EL VALOR ESTÁ ANTES DEL FORMULARIO"
+          },
+          {
+            "type": "paragraph",
+            "text": "La constitución es el inicio de su empresa. La revisión profesional ayuda a que la estructura refleje cómo trabajará."
+          },
+          {
+            "type": "disclosure",
+            "text": "¿Qué hará realmente la compañía?",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Definimos el objeto y registramos las actividades que realizará. Le explicamos las obligaciones y permisos que generan; la estructura debe reflejar su actividad real."
+              }
+            ]
+          },
+          {
+            "type": "disclosure",
+            "text": "¿Cómo decidirán los accionistas?",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Revisamos quién participa, quién administra y cómo se organizarán las decisiones en la estructura contratada. Los acuerdos entre accionistas o estructuras complejas se cotizan cuando el proyecto los requiere."
+              }
+            ]
+          },
+          {
+            "type": "disclosure",
+            "text": "¿Le conviene una SAS?",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Puede ser una alternativa flexible para emprender solo o con otros. No es adecuada para todas las actividades reguladas ni genera un ahorro tributario automático. Si necesita una limitada, una anónima o un holding, le ayudamos a evaluar esa estructura."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "testimonials",
+        "sourceId": "testimonios",
+        "title": "Empresas que empiezan. Relaciones que continúan.",
+        "intro": [
+          "Testimonios sobre distintos servicios de la firma. No todos corresponden a constituciones de SAS."
+        ],
+        "reviews": [
+          {
+            "name": "Eleazar Becerra",
+            "paragraphs": [
+              "Cuando decidimos desarrollar nuestras actividades en Ecuador, necesitábamos mucho más que constituir una compañía. Había que organizar la estructura societaria, la representación local y los temas contables, tributarios y de cumplimiento.",
+              "TempoLegal nos ha acompañado en la estructuración de nuestras empresas y en esas necesidades, incluida la protección de datos personales. Para nosotros, que coordinamos negocios en distintos países, es una ventaja tener un equipo local que conoce nuestra operación y al que podemos acudir directamente.",
+              "Esa combinación de asesoría jurídica y apoyo práctico nos ha facilitado trabajar en Ecuador. Es el tipo de acompañamiento que recomendaría a otras empresas que quieren establecerse y operar en el país."
+            ]
+          },
+          {
+            "name": "Pablo Lucio Paredes",
+            "paragraphs": [
+              "Trabajar con Tempo Legal fue una decisión positiva para mi empresa y mis necesidades personales. He recibido una asesoría clara y cercana, el equipo entendió mis necesidades, me explicó los pasos del proceso y estuvo disponible para resolver mis inquietudes. Más allá del conocimiento jurídico, valoré especialmente su compromiso y la atención personalizada durante todo el proceso. Así pudimos avanzar con seguridad y enfocarnos en nuestras obligaciones, sabiendo que los aspectos legales estaban en buenas manos. Sin duda, recomendaría a Tempo Legal. De hecho trabajo y seguiré trabajando con ellos"
+            ]
+          },
+          {
+            "name": "Francisco Mosquera Aulestia",
+            "paragraphs": [
+              "En GMA tenemos varias empresas y una operación logística que no se detiene. Necesitamos una asesoría legal que entienda esa realidad y no se quede solo en lo teórico.",
+              "TempoLegal nos acompaña desde hace años en asuntos laborales, societarios, contractuales y de protección de datos personales. Conocen cómo funciona el grupo, así que cuando surge un problema podemos ir directamente a lo importante.",
+              "Lo que más valoro es que nos ayuden a prevenir riesgos y nos den alternativas claras para resolver situaciones concretas. Para un grupo empresarial como el nuestro, contar con abogados que conocen la operación y están presentes cuando se los necesita marca una diferencia."
+            ]
+          },
+          {
+            "name": "Ana Cecilia Andrade",
+            "paragraphs": [
+              "En FLP hay temas que requieren una respuesta inmediata y otros que necesitan seguimiento durante meses. Para mí hace una gran diferencia contar con un equipo que ya conoce nuestras empresas.",
+              "TempoLegal nos apoya en asuntos laborales, societarios y contractuales y, además, lleva la contabilidad de FLP Holding Ecuador. Poder coordinar la parte jurídica y contable con un mismo equipo nos facilita mucho el trabajo.",
+              "No tenemos que explicar desde cero la historia de cada compañía ni buscar a quién acudir según el problema. Sabemos con quién hablar y podemos dar continuidad a los asuntos pendientes. Eso, en el día a día de una empresa, vale mucho."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "team",
+        "sourceId": "equipo",
+        "title": "Personas a quienes puede preguntar.",
+        "people": [
+          {
+            "name": "Juan Alberto Gómez",
+            "degree": "Abogado · Socio fundador",
+            "role": "Derecho empresarial y societario",
+            "contribution": "Estructura y coordinación jurídica del proyecto."
+          },
+          {
+            "name": "Daniela Barahona",
+            "degree": "Abogada · Magíster",
+            "role": "Abogada senior",
+            "contribution": "Asuntos corporativos y laborales de la operación."
+          },
+          {
+            "name": "Emillie Donoso",
+            "degree": "Abogada · Magíster",
+            "role": "Abogada senior",
+            "contribution": "Protección de datos y cumplimiento normativo."
+          },
+          {
+            "name": "Rolando Valencia",
+            "degree": "Ingeniero",
+            "role": "Coordinador de Servicios Financieros",
+            "contribution": "Finanzas y administración de la operación."
+          },
+          {
+            "name": "Gabriel Calvopiña",
+            "degree": "Ingeniero · Magíster",
+            "role": "Coordinador de Servicios Contables y Tributarios",
+            "contribution": "Contabilidad y obligaciones tributarias."
+          }
+        ],
+        "intro": [
+          "La constitución se coordina con el equipo del área. Los demás especialistas pueden acompañar necesidades posteriores, según el servicio que contrate."
+        ],
+        "notes": [
+          "La participación de cada profesional depende del alcance contratado; no todos intervienen en cada constitución."
+        ],
+        "extra": []
+      },
+      {
+        "id": "information-8",
+        "sourceId": null,
+        "title": "Su empresa empieza. El acompañamiento puede seguir.",
+        "blocks": [
+          {
+            "type": "eyebrow",
+            "text": "DESPUÉS DEL RUC"
+          },
+          {
+            "type": "paragraph",
+            "text": "Contabilidad, contratos, obligaciones y organización societaria. Si lo necesita, definimos un servicio posterior; usted decide si lo contrata."
+          },
+          {
+            "type": "link",
+            "text": "01Contabilidad y tributación↗",
+            "href": "https://tempolegal.com/servicios-contabilidad/"
+          },
+          {
+            "type": "link",
+            "text": "02Representación y domicilio fiscal↗",
+            "href": "../referencias_relacionadas/representacion/maqueta/index.html"
+          },
+          {
+            "type": "link",
+            "text": "03Soft Landing para establecerse en Ecuador↗",
+            "href": "../referencias_relacionadas/softlanding/maqueta/index.html"
+          },
+          {
+            "type": "link",
+            "text": "04Protección de datos personales↗",
+            "href": "https://tempolegal.com/proteccion-de-datos-personales-ecuador/"
+          },
+          {
+            "type": "disclosure",
+            "text": "¿Participa desde otro país? Conozca nuestra experiencia internacional",
+            "blocks": [
+              {
+                "type": "paragraph",
+                "text": "Puede ser accionista sin ser ecuatoriano y sin tener visa o residencia. Revisamos los requisitos de documentación, firma y representación que correspondan a su caso."
+              },
+              {
+                "type": "eyebrow",
+                "text": "ORIGEN DE NUESTROS CLIENTES · COORDINACIÓN DESDE QUITO"
+              },
+              {
+                "type": "paragraph",
+                "text": "MéxicoCiudad de México; GuatemalaCiudad de Guatemala; Costa RicaSan José; EE. UU.Miami; ColombiaBogotá; PerúLima; ArgentinaBuenos Aires; EspañaMadrid; IsraelTel Aviv."
+              },
+              {
+                "type": "link",
+                "text": "Ver las conexiones desde Quito ↗",
+                "href": "https://tempolegal.com/#empresas-extranjeras"
+              },
+              {
+                "type": "paragraph",
+                "text": "Procedencia de clientes de TempoLegal en distintos servicios. La atención se coordina desde Quito, Ecuador; los puntos no representan oficinas en el exterior."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "questions",
+        "sourceId": "preguntas",
+        "title": "Lo que necesita saber sobre su SAS.",
+        "faq": true,
+        "intro": [
+          "Precio, requisitos, accionistas extranjeros y siguientes pasos. Respuestas claras para empezar con criterio."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Qué incluye el servicio desde USD 140 + IVA?",
+        "answer": "El precio base corresponde a una SAS con un accionista persona natural. Incluye asesoría previa, definición de la estructura, documentos revisados por abogados, gestión de la inscripción y del nombramiento, RUC, configuración del facturador electrónico gratuito del SRI y carpeta societaria digital. También entregamos títulos y libro de accionistas, documentos para el banco y una guía de obligaciones. Las firmas electrónicas que falten se cobran aparte. Para cinco o más accionistas o accionistas que sean compañías, presentamos una cotización específica."
+      },
+      {
+        "question": "¿Qué debo pagar además de los honorarios de constitución?",
+        "answer": "Los valores publicados son más IVA. Si los participantes no tienen una firma electrónica válida para el proceso, se cotiza por separado: para personas en Ecuador, desde USD 25 + IVA por certificado de 30 días. Para participantes en el exterior, desde USD 45 + IVA, sujeto a validación. El capital pertenece a la compañía y no es un honorario de TempoLegal. Permisos, tasas municipales, contabilidad mensual y otros servicios no se presumen incluidos. Antes de contratar confirmamos el alcance y los valores aplicables."
+      },
+      {
+        "question": "¿Cuánto tarda constituir una SAS?",
+        "answer": "El plazo previsto en nuestra propuesta es de 24 a 48 horas hábiles hasta la inscripción y el RUC, contado desde que contamos con la documentación y las firmas completas. Está sujeto a los tiempos y disponibilidad de la Superintendencia de Compañías y del SRI. Documentos pendientes, validaciones de firmas, accionistas que sean compañías u otros supuestos pueden requerir una ruta y un cronograma distintos. Se lo explicamos antes de iniciar."
+      },
+      {
+        "question": "¿Qué requisitos necesito para empezar?",
+        "answer": "Para una primera revisión necesitamos saber cuántos accionistas participarán, la actividad real del negocio y dos o tres opciones de nombre. Para el trámite se solicitan identificación de cada participante —cédula y certificado de votación cuando corresponda, o pasaporte—, correo, teléfono, dirección y las firmas electrónicas aplicables. Confirmamos además capital, administración y representante legal. No envíe cédulas, certificados, archivos de firma ni contraseñas por este formulario público; coordinaremos la entrega por el canal indicado."
+      },
+      {
+        "question": "¿Puedo constituir una SAS con un solo accionista y cuánto capital necesito?",
+        "answer": "Sí. Una sociedad por acciones simplificada puede tener un solo accionista o varios. La SAS no tiene un capital mínimo legal obligatorio; la propuesta contempla estructuras desde USD 1. Eso no significa que USD 1 sea adecuado para todos los negocios: revisamos el proyecto para definir el capital y su forma de pago. El capital de la compañía es distinto del precio del servicio profesional."
+      },
+      {
+        "question": "¿Necesito ser ecuatoriano o tener visa para ser socio o accionista de una compañía en Ecuador?",
+        "answer": "No. No necesita ser ecuatoriano, ni tener visa o residencia en Ecuador, para ser socio o accionista de una compañía ecuatoriana. Puede participar como extranjero, incluso desde otro país, cumpliendo los requisitos de documentación y registro aplicables. Ser socio o accionista no le otorga automáticamente permiso para residir o trabajar en Ecuador. Si también ejercerá la representación legal o se trasladará al país, revisamos esos requisitos por separado."
+      },
+      {
+        "question": "¿Puedo hacer el proceso desde otra ciudad o desde el exterior?",
+        "answer": "Podemos coordinar la constitución a distancia mediante revisión de información, documentos y firmas electrónicas. No necesita acudir a nuestra oficina para el proceso electrónico estándar. Si está fuera de Ecuador, revisamos su identificación y la obtención o compatibilidad de la firma. Cuando participa una sociedad extranjera u otra situación que exige documentos adicionales, definimos la vía y el presupuesto específicos; no prometemos que todos los casos se resuelvan por el mismo formulario automático."
+      },
+      {
+        "question": "¿El trámite oficial de constitución de SAS es gratuito? ¿Por qué pagar asesoría?",
+        "answer": "La constitución de SAS ante la Superintendencia y la obtención del RUC no tienen una tasa oficial en el trámite estándar. Los valores de esta página corresponden al servicio profesional de TempoLegal: revisar su negocio, preparar y revisar documentos, gestionar el proceso y organizar la entrega. Usted puede optar por realizar el trámite por su cuenta. Si nos contrata, conoce de antemano los honorarios y los certificados o gestiones adicionales que requiera su caso."
+      },
+      {
+        "question": "¿La SAS queda lista para facturar y abrir una cuenta bancaria?",
+        "answer": "El servicio incluye el RUC y la configuración del facturador electrónico gratuito del SRI. Para emitir comprobantes deben mantenerse vigentes la firma correspondiente y las habilitaciones aplicables al negocio. Entregamos la carpeta de documentos para gestionar la cuenta de la compañía; el banco define los requisitos y decide la apertura. Los permisos municipales o sectoriales que necesite su actividad se revisan por separado: constituir no reemplaza esas autorizaciones."
+      },
+      {
+        "question": "¿Qué pasa si la Superintendencia hace una observación?",
+        "answer": "Damos seguimiento al trámite y subsanamos las observaciones de la Superintendencia relacionadas con la constitución contratada, con reingreso sin honorarios adicionales hasta la inscripción. Usted debe entregar información y firmas completas y colaborar con las correcciones que dependan de los accionistas. Si decide cambiar la estructura o incorporar un encargo distinto, explicamos su alcance y precio antes de realizarlo."
+      },
+      {
+        "question": "¿La contabilidad mensual está incluida? ¿Qué obligaciones tendré después?",
+        "answer": "La contabilidad mensual se contrata por separado. Entregamos una guía de obligaciones societarias, tributarias y municipales para que conozca los siguientes pasos. Podemos proponer apoyo contable y tributario, nómina y otros servicios según su operación, sin obligación de contratarlos junto con la constitución. Crear una SAS no determina por sí solo un régimen tributario ni garantiza pagar menos impuestos."
+      },
+      {
+        "question": "¿Y si necesito una compañía limitada, una sociedad anónima o una estructura más compleja?",
+        "answer": "También podemos asesorarle en otras estructuras, participación de compañías extranjeras, holdings y reorganizaciones. Primero revisamos actividad, accionistas, administración y objetivos. La SAS no sirve para todas las actividades reguladas. Si otra estructura es más adecuada, le explicamos la alternativa y presentamos una propuesta específica; el precio base de esta página no se aplica automáticamente a esos encargos."
+      }
+    ],
+    "contact": {
+      "title": "Cuéntenos qué quiere crear.",
+      "intro": "Le ayudamos a confirmar si una SAS encaja con su negocio y qué necesita para constituirla.",
+      "notes": [
+        "No envíe documentos de identidad, archivos de firma ni contraseñas en la consulta inicial."
+      ]
+    }
+  }
+}

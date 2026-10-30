@@ -1,0 +1,48 @@
+{
+  "status": "prepared_disabled",
+  "personal_data_parameters_allowed": false,
+  "events": [
+    {
+      "name": "page_view",
+      "implementation": "browser_after_consent",
+      "meaning": "One canonical page view per document after analytics permission.",
+      "is_sale": false
+    },
+    {
+      "name": "clic_whatsapp",
+      "implementation": "browser_after_consent",
+      "meaning": "Activation of a WhatsApp link, not a conversation.",
+      "deduplication": "Suppress activations for 1500 milliseconds.",
+      "parameters": {
+        "contact_source": [
+          "floating",
+          "footer",
+          "inquiry",
+          "content"
+        ]
+      },
+      "is_sale": false
+    },
+    {
+      "name": "formulario_aceptado",
+      "implementation": "browser_after_consent",
+      "meaning": "Valid SMTP acceptance response, not inbox delivery, appointment or qualified lead.",
+      "deduplication": "One event per local prepared request ID in the current document. The ID is not forwarded.",
+      "is_sale": false
+    },
+    {
+      "name": "conversacion_real",
+      "implementation": "manual_commercial_record_only",
+      "meaning": "A responsible person verifies an actual two-way exchange.",
+      "deduplication": "Internal lead ID, one verified transition.",
+      "is_sale": false
+    },
+    {
+      "name": "lead_calificado",
+      "implementation": "manual_commercial_record_only",
+      "meaning": "A responsible specialist confirms fit, need and agreed qualification criteria.",
+      "deduplication": "Internal lead ID, one qualification transition.",
+      "is_sale": false
+    }
+  ]
+}

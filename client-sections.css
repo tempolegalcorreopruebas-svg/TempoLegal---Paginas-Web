@@ -1,0 +1,191 @@
+/* Cobertura, equipo y testimonios del paquete de actualización. */
+.reference-eyebrow{display:flex;align-items:center;gap:12px;font:600 12px/1.5 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:#446b7b;margin:0 0 23px}
+.reference-eyebrow:before{content:'';width:28px;height:1px;background:currentColor}
+.reference-index{color:#94aab4;letter-spacing:.16em;margin-left:2px}
+
+.coverage-section{padding:83px 0 78px;background:#103e4c;color:#f5fafb;overflow:hidden}
+.coverage-layout{display:grid;grid-template-columns:minmax(0,.66fr) minmax(0,1.34fr);gap:4%;align-items:center;max-width:1320px}
+.coverage-copy{position:relative;z-index:1}
+.coverage-copy>.reference-eyebrow{color:#a7cfdf;margin-bottom:22px}
+.coverage-copy h2{font-family:var(--serif);font-size:clamp(31px,2.9vw,43px);font-weight:600;line-height:1.12;letter-spacing:-.025em}
+.coverage-description{font-size:16px;line-height:1.85;color:#bdd4de;margin-top:23px}
+.coverage-proof{display:grid;grid-template-columns:1fr 1fr;gap:35px;margin-top:33px}
+.coverage-proof strong{display:block;font:600 39px/1.2 var(--sans);color:#f1fafc;letter-spacing:-.025em}
+.coverage-proof p{font-size:12px;line-height:1.75;color:#b6d1dd;margin-top:7px;max-width:165px}
+.coverage-sectors{font-size:12px;line-height:2;color:#edf6fa;padding-top:21px;margin-top:31px;border-top:1px solid #90b6c34d}
+.coverage-sectors .reference-eyebrow{display:inline;font-size:12px;color:#a6cdda;margin-right:11px;letter-spacing:.17em}
+.coverage-sectors .reference-eyebrow:before{display:none}
+.coverage-map{width:100%;min-width:0;margin:0}
+.coverage-map-svg{width:100%;height:auto;aspect-ratio:765/360;overflow:visible;display:block}
+.coverage-routes path{stroke:#5b8aa5;stroke-width:1.2;stroke-dasharray:1;stroke-dashoffset:1;opacity:.9}
+.coverage-section.is-visible .coverage-routes path{animation:coverage-route 1.4s var(--ease) var(--route-delay) both}
+.coverage-place{opacity:0}
+.coverage-section.is-visible .coverage-place{animation:coverage-place .5s ease var(--place-delay) forwards}
+.coverage-place>circle{fill:none;stroke:#afcfdc;stroke-width:1;opacity:.8}
+.coverage-place .coverage-core{fill:#f2fbfe;stroke:none;opacity:1}
+.coverage-place text{font:600 17px var(--sans);text-transform:uppercase;letter-spacing:.3px;fill:#f4fafc;paint-order:stroke;stroke:#103e4c;stroke-width:4px;stroke-linejoin:round}
+.coverage-place .coverage-city{font:400 13px var(--sans);text-transform:none;letter-spacing:0;fill:#c4dfe9}
+.coverage-hub circle{fill:#f2fbff;filter:drop-shadow(0 0 5px #c3eeff)}
+.coverage-hub .coverage-pulse{fill:none;stroke:#8ab7cc;stroke-width:1.15;filter:none;opacity:0;transform-box:fill-box;transform-origin:center;animation:coverage-heartbeat 3.6s cubic-bezier(.25,.45,.35,1) infinite;animation-play-state:paused}
+.coverage-section.is-in-view .coverage-pulse{animation-play-state:running}
+html.motion-paused .coverage-section .coverage-pulse{animation-play-state:paused}
+@keyframes coverage-heartbeat{0%{transform:scale(.55);opacity:0}18%{opacity:.5}100%{transform:scale(2.8);opacity:0}}
+.coverage-label-line{stroke:#47748bc2;stroke-width:.8;vector-effect:non-scaling-stroke}
+.coverage-hub text{paint-order:stroke;stroke:#103e4c;stroke-width:4px;stroke-linejoin:round;font:400 22px var(--serif);fill:#f2fafc}
+.coverage-mobile-list{display:none}
+@keyframes coverage-route{to{stroke-dashoffset:0}}
+@keyframes coverage-place{to{opacity:1}}
+
+.team-reference{background:#fff;padding:78px 0 74px;color:#103e4c}
+.team-reference>.container{max-width:1320px}
+.team-reference .section-heading{display:grid;grid-template-columns:.8fr 1.2fr;gap:8%;align-items:end;margin-bottom:48px}
+.team-reference h2{font-family:var(--serif);font-weight:600;font-size:39px;line-height:1.15;letter-spacing:-.02em}
+.team-reference .section-intro{font-size:16px;color:#526f7d;line-height:1.8;max-width:630px;margin:0}
+.team-reference-grid{display:grid;grid-template-columns:1.25fr repeat(3,minmax(0,1fr));gap:32px;align-items:start}
+.team-person{min-width:0}
+.team-person:not(:first-child){padding-top:clamp(45px,6vw,80px)}
+.team-person-photo{width:100%;aspect-ratio:.75;overflow:hidden;background:#eef4f5;margin-bottom:17px}
+.team-person-photo img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.team-person h3{font:600 17px/1.4 var(--sans);letter-spacing:-.015em;color:#103e4c;margin:0 0 4px}
+.team-person-role,.team-person-specialty{font-size:12px;line-height:1.65;color:#587482;margin:0}
+.team-profile-link{margin-top:15px;outline-offset:5px;font:600 12px/1.6 var(--sans);color:#176278;display:inline-flex;gap:6px;border-bottom:1px solid #658b9a;padding-bottom:4px}
+
+
+.testimonials-reference{background:#f4f8f9;padding:72px 0 70px;color:#103e4c}
+.testimonials-reference>.container{max-width:1320px}
+.testimonials-heading{margin-bottom:57px}
+.testimonials-heading h2{font:400 clamp(36px,3.4vw,54px)/1.08 var(--serif);letter-spacing:-.03em;max-width:100%}
+.testimonials-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:46px 65px}
+#review-stage[data-testimonial-layout="paired-featured"]{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px;align-items:start}
+#review-stage[data-testimonial-layout="paired-featured"]>.quote-card:not(.quote-card-ana){display:block;grid-column:auto;min-width:0;max-width:none}
+#review-stage[data-testimonial-layout="paired-featured"]>.quote-card-ana{grid-column:1/-1;max-width:none}
+@media(max-width:760px){#review-stage[data-testimonial-layout="paired-featured"]{grid-template-columns:1fr}}
+.quote-card{display:flex;flex-direction:column;min-width:0;border-top:1px solid #305969;padding-top:32px;position:relative}
+.quote-card:before{content:'“';font:400 110px/1 var(--serif);color:#d7bd6d80;position:absolute;right:-2px;top:1px;pointer-events:none}
+.quote-text{position:relative;z-index:1;margin:0;padding:0}
+.quote-text p{font:400 14px/1.9 var(--sans);color:#526f7f;margin:0 0 16px}
+.quote-text p:first-child{font:400 clamp(21px,1.45vw,25px)/1.42 var(--serif);letter-spacing:-.012em;color:#123f4e;margin-bottom:19px;padding-right:10px}
+.quote-personal .quote-text p:first-child{font-size:20px;font-weight:400;line-height:1.6}
+.quote-author{display:grid;grid-template-columns:80px minmax(0,1fr) 90px;gap:13px;align-items:center;margin-top:auto;padding-top:20px;background:none}
+.quote-portrait{width:80px;height:100px;border-radius:3px;object-fit:contain;object-position:center}
+.quote-identity{min-width:0}
+.quote-identity h3{font:600 14px/1.5 var(--sans);color:#103e4c;letter-spacing:0;margin:0 0 4px}
+.quote-role,.quote-company{font:400 12px/1.7 var(--sans);color:#557385;margin:0}
+.quote-company{margin-top:2px}
+.quote-website{display:inline-block;font:400 12px/1.65 var(--sans);color:#678b9d;border-bottom:1px solid #bdced6;margin-top:5px;overflow-wrap:anywhere;max-width:100%}
+.quote-logo{width:90px;height:57px;object-fit:contain;align-self:end;justify-self:end}
+.quote-nophoto .quote-author{grid-template-columns:minmax(0,1fr) 90px}
+.quote-personal .quote-author{grid-template-columns:1fr}
+.quote-personal-note{font:400 12px/1.75 var(--sans);color:#6b8796;margin-top:7px}
+.quote-translation{font:400 12px/1.7 var(--sans);color:#6b8796;margin:0 0 8px}
+.quote-original{font-size:12px;margin:0 0 10px;color:#446e80}
+.quote-original>summary{cursor:pointer;line-height:1.8}
+.quote-original-text{margin:12px 0 0;padding:13px 16px;background:#eaf1f4;border-left:2px solid #a3bdca}
+.quote-original-text>p{font-size:12px;line-height:1.8;color:#4c6b7c;margin:0 0 12px}
+.quote-original-text>p:last-child{margin-bottom:0}
+.testimonials-source-note{font:400 12px/1.8 var(--sans);color:#748d9b;margin-top:28px}
+.client-experience{margin-top:30px;border-top:1px solid #bdced6;padding-top:21px;color:#173f50}
+.client-experience>summary{cursor:pointer;font:600 15px/1.6 var(--sans);padding-bottom:8px}
+.client-experience .quote-card{margin-top:20px;max-width:850px;border-top:0;padding-top:17px}
+.client-experience .quote-author{padding-top:14px}
+
+@media(max-width:1100px){
+ .coverage-layout{grid-template-columns:.95fr 1.05fr;gap:3%}.coverage-copy h2{font-size:34px}.coverage-description{font-size:14px}.coverage-proof{gap:20px}.coverage-proof strong{font-size:36px}
+ .team-reference-grid{gap:23px}.team-person h3{font-size:15px}.team-reference .section-intro{font-size:14px}.team-person-role,.team-person-specialty{font-size:12px}
+ .testimonials-grid{gap:40px}.quote-author{grid-template-columns:76px minmax(0,1fr);gap:12px}.quote-portrait{width:76px;height:95px}.quote-logo{grid-column:2;justify-self:start;width:85px;height:42px;margin-top:1px}.quote-nophoto .quote-author{grid-template-columns:1fr}.quote-nophoto .quote-logo{grid-column:1}
+}
+@media(max-width:900px){
+ .coverage-section{padding-block:62px 50px}.coverage-layout{grid-template-columns:1fr;gap:25px}.coverage-copy{max-width:680px}.coverage-copy h2{font-size:34px;max-width:610px}.coverage-description{font-size:15px}.coverage-proof{max-width:430px;margin-top:28px}.coverage-sectors{max-width:680px;margin-top:26px}.coverage-map{max-width:800px;margin-inline:auto}
+ .team-reference{padding-block:60px}.team-reference .section-heading{gap:30px;grid-template-columns:.8fr 1.2fr;margin-bottom:35px}.team-reference h2{font-size:35px}.team-reference-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:35px 25px}.team-person:not(:first-child){padding:0}.team-person-photo{aspect-ratio:.9}.team-person h3{font-size:18px}.team-person-role,.team-person-specialty{font-size:12px}
+ .testimonials-reference{padding-block:60px}.testimonials-grid{gap:35px 30px}.quote-text p:first-child{font-size:20px}.quote-text p{font-size:13px}.quote-author{grid-template-columns:76px minmax(0,1fr)}.quote-role,.quote-company{font-size:12px}.quote-logo{width:85px}.quote-identity h3{font-size:13px}
+}
+@media(max-width:640px){
+ .reference-eyebrow{font-size:12px;gap:10px;margin-bottom:19px}.reference-eyebrow:before{width:23px}
+ .coverage-section{padding-block:49px 38px}.coverage-layout{gap:26px}.coverage-copy h2{font-size:33px;line-height:1.14}.coverage-description{font-size:14px;line-height:1.85;margin-top:22px}.coverage-proof{gap:28px;max-width:100%;margin-top:27px}.coverage-proof strong{font-size:37px}.coverage-proof p{font-size:12px;max-width:150px}.coverage-sectors{font-size:12px;line-height:2;padding-top:18px;margin-top:24px}.coverage-sectors .reference-eyebrow{font-size:12px}
+ .coverage-map-svg{width:100%;max-width:100%;margin-left:0;overflow:visible}.coverage-place text,.coverage-label-line{display:none}.coverage-hub text{font-size:32px}.coverage-mobile-list{display:block;margin-top:22px;border-top:1px solid #759aaa55;padding-top:20px}.coverage-mobile-list>p{font:600 13px/1.6 var(--sans);color:#c5e1ec;margin:0}.coverage-mobile-list ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 20px;list-style:none;margin:20px 0 0;padding:0;color:#edf7fb}.coverage-mobile-list li{min-width:0;display:flex;flex-direction:column;gap:3px}.coverage-mobile-list strong{font:600 15px/1.4 var(--sans)}.coverage-mobile-list li>span{font:400 12px/1.5 var(--sans);color:#b9d6e2}
+ .team-reference{padding-block:49px}.team-reference .section-heading{display:block;margin-bottom:30px}.team-reference h2{font-size:34px}.team-reference .section-intro{font-size:14px;line-height:1.85;max-width:100%;margin-top:22px}.team-reference-grid{gap:28px 18px}.team-person-photo{aspect-ratio:.75;margin-bottom:13px}.team-person h3{font-size:15px;line-height:1.5}.team-person-role,.team-person-specialty{font-size:12px;line-height:1.75}.team-profile-link{margin-top:12px;font-size:12px}
+ .testimonials-reference{padding-block:48px}.testimonials-heading{margin-bottom:33px}.testimonials-heading h2{font-size:34px;line-height:1.15}.testimonials-grid{grid-template-columns:1fr;gap:34px}.quote-card{padding-top:27px}.quote-card:before{font-size:80px;top:0}.quote-text p:first-child{font-size:21px;line-height:1.45;padding-right:0;margin-bottom:18px}.quote-text p{font-size:14px;line-height:1.9;margin-bottom:15px}.quote-personal .quote-text p:first-child{font-size:20px;line-height:1.65}.quote-author{grid-template-columns:76px minmax(0,1fr);gap:12px;padding-top:13px}.quote-portrait{width:76px;height:95px}.quote-identity h3{font-size:14px}.quote-role,.quote-company{font-size:12px;line-height:1.75}.quote-website{font-size:12px}.quote-logo{grid-column:2;justify-self:start;width:100px;height:48px}.quote-translation{font-size:12px}.quote-personal-note{font-size:12px}.quote-original{font-size:12px}.client-experience{margin-top:25px}.client-experience .quote-card{padding-top:20px}.testimonials-source-note{font-size:12px;margin-top:24px}
+}
+@media(max-width:360px){.coverage-copy h2{font-size:30px}.team-reference-grid{gap:25px 15px}.team-person h3{font-size:14px}.team-person-role,.team-person-specialty{font-size:12px}.testimonials-heading h2{font-size:31px}}
+@media(prefers-reduced-motion:reduce){.coverage-hub .coverage-pulse{animation:none;opacity:.4;transform:none}.coverage-routes path{stroke-dashoffset:0}.coverage-place{opacity:1}.coverage-section.is-visible .coverage-routes path,.coverage-section.is-visible .coverage-place{animation:none}}
+@media print{.coverage-section,.team-reference,.testimonials-reference,.client-experience{display:none!important}}
+
+/* Point 13: team discovery link with a restrained hover effect. */
+.team-discover{display:flex;justify-content:center;margin-top:42px}
+.team-discover-link{position:relative;display:inline-flex;align-items:center;gap:24px;overflow:hidden;isolation:isolate;padding:18px 25px;border:1px solid #24565c;border-radius:999px;background:#fff;color:#16434c;font:600 15px/1.4 var(--sans);text-decoration:none;box-shadow:0 5px 18px #123f4e0a;transition:transform .25s ease,box-shadow .25s ease,color .25s ease}
+.team-discover-link:before{content:'';position:absolute;inset:0;z-index:-1;background:#16434c;transform:translateY(102%);transition:transform .3s ease}
+.team-discover-arrow{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#e5eeea;color:#16434c;transition:transform .25s ease}
+.team-discover-link:is(:hover,:focus-visible){color:#fff;transform:translateY(-3px);box-shadow:0 12px 25px #123f4e22}
+.team-discover-link:is(:hover,:focus-visible):before{transform:translateY(0)}
+.team-discover-link:is(:hover,:focus-visible) .team-discover-arrow{transform:rotate(45deg)}
+.team-discover-link:focus-visible{outline:3px solid #9a8035;outline-offset:5px}
+@media(max-width:640px){.team-discover{margin-top:30px}.team-discover-link{max-width:100%;padding:15px 20px;gap:16px;font-size:14px}}
+@media(prefers-reduced-motion:reduce){.team-discover-link,.team-discover-link:before,.team-discover-arrow{transition:none}.team-discover-link:is(:hover,:focus-visible),.team-discover-link:is(:hover,:focus-visible) .team-discover-arrow{transform:none}}
+
+/* Expanded coverage atlas: Ecuador and outbound Quito connections. */
+.coverage-section{position:relative;padding:64px 0;background:radial-gradient(ellipse at 72% 42%,#20535b 0%,#123b47 48%,#102f3c 100%)}
+.coverage-section:before{content:'';position:absolute;inset:0;background-image:linear-gradient(#98dcd505 1px,transparent 1px),linear-gradient(90deg,#98dcd505 1px,transparent 1px);background-size:48px 48px;pointer-events:none}
+.coverage-section .coverage-layout{position:relative;width:94%;max-width:1760px;grid-template-columns:minmax(270px,.68fr) minmax(0,1.72fr);gap:3%;align-items:stretch}
+.coverage-section .coverage-copy{padding-block:28px;align-self:center}
+.coverage-section .coverage-copy h2{font-size:clamp(33px,3vw,49px);line-height:1.12}
+.coverage-section .coverage-description{font-size:15px;line-height:1.8;margin-top:24px}
+.coverage-section .coverage-proof{margin-top:30px;gap:24px}
+.coverage-section .coverage-proof strong{font-size:42px}
+.coverage-map-premium{position:relative;display:flex;align-items:center;align-self:stretch;min-height:660px;border:1px solid #b4e5dc20;border-radius:28px;background:radial-gradient(ellipse at 31% 53%,#66d6bd0e,transparent 48%),linear-gradient(135deg,#ffffff04,#071e2b24);box-shadow:inset 0 1px 0 #ffffff08,0 30px 70px #061f291a;isolation:isolate}
+.coverage-map-premium .coverage-map-svg{width:100%;height:100%;min-height:660px;aspect-ratio:auto;overflow:visible;filter:drop-shadow(0 8px 24px #061c2520)}
+.coverage-map-premium .coverage-map-svg>image{opacity:.95}
+.coverage-map-premium .coverage-routes path{stroke:url(#coverage-route-light);stroke-width:1.25;opacity:.8;fill:none}
+.coverage-map-premium .coverage-place>circle{stroke:#99d7d0;stroke-width:1.2;opacity:.8}
+.coverage-map-premium .coverage-place .coverage-core{fill:#e1fff6;stroke:none}
+.coverage-map-premium .coverage-place text{font-size:15px;fill:#f0fcfa;stroke:#133c47;stroke-width:5px;letter-spacing:.55px}
+.coverage-map-premium .coverage-place .coverage-city{font-size:12px;fill:#b1d2d4;letter-spacing:0}
+.coverage-map-premium .coverage-ecuador{fill:#d6b76c;fill-opacity:.8;stroke:#ffe5a4;stroke-width:.8;filter:drop-shadow(0 0 6px #e4c57b80)}
+.coverage-map-premium .coverage-hub .coverage-origin-aura{fill:#f3d98a;opacity:.07;filter:none}
+.coverage-map-premium .coverage-hub .coverage-origin-ring{fill:none;stroke:#f2d48a;stroke-width:1;opacity:.75;filter:none}
+.coverage-map-premium .coverage-hub>circle:not(.coverage-pulse):not(.coverage-origin-aura):not(.coverage-origin-ring){fill:#fff4ca;filter:drop-shadow(0 0 6px #ffe9aa)}
+.coverage-map-premium .coverage-hub .coverage-pulse{stroke:#f1d58a}
+.coverage-map-premium .coverage-hub text{font-size:23px;fill:#ffe9b4;stroke:#123b47;stroke-width:6px}
+.coverage-flow{opacity:.95;filter:drop-shadow(0 0 3px #9af2e5)}
+.coverage-origin-card{position:absolute;right:24px;bottom:25px;width:205px;padding:18px 20px;border:1px solid #d9c0874d;border-radius:18px;background:linear-gradient(140deg,#183f49f5,#102e3af0);box-shadow:0 12px 28px #061b2830;backdrop-filter:blur(12px)}
+.coverage-origin-caption{display:block;color:#bed7d3;font:500 10px/1.5 var(--sans);letter-spacing:.08em;text-transform:uppercase}
+.coverage-origin-detail{display:flex;align-items:center;gap:12px;margin-top:12px}
+.coverage-origin-detail svg{width:72px;height:68px;flex:none;overflow:visible}
+.coverage-origin-detail svg path{fill:#d4b57233;stroke:#e9ca85;stroke-width:.55}
+.coverage-origin-detail svg circle{fill:#fff4ca;filter:drop-shadow(0 0 1px #ffe6a3)}
+.coverage-origin-detail strong{display:block;font:600 12px/1.5 var(--sans);letter-spacing:.12em;color:#edce8c}
+.coverage-origin-detail div>span{display:block;font:30px/1.2 var(--serif);color:#fff6df;margin-top:2px}
+.coverage-origin-card>p{font:11px/1.5 var(--sans);color:#adc9cc;border-top:1px solid #cfe4df1a;padding-top:10px;margin-top:10px}
+.coverage-map-legend{position:absolute;left:24px;bottom:25px;display:flex;align-items:center;gap:9px;font:11px/1.5 var(--sans);letter-spacing:.03em;color:#aecdcf}
+.coverage-map-legend>span{width:6px;height:6px;border-radius:50%;background:#e9c980;box-shadow:0 0 0 4px #e9c98012}
+@media(min-width:1600px){.coverage-map-premium,.coverage-map-premium .coverage-map-svg{min-height:740px}}
+@media(max-width:1100px){.coverage-section .coverage-layout{grid-template-columns:minmax(245px,.7fr) minmax(0,1.3fr);gap:2%}.coverage-section .coverage-copy h2{font-size:34px}.coverage-map-premium,.coverage-map-premium .coverage-map-svg{min-height:640px}.coverage-origin-card{right:18px;bottom:20px;width:180px;padding:14px}.coverage-origin-detail svg{width:58px;height:58px}.coverage-map-legend{left:18px;bottom:20px;max-width:110px}}
+@media(max-width:900px){.coverage-section .coverage-layout{grid-template-columns:1fr;gap:28px;width:90%}.coverage-section .coverage-copy{max-width:none;padding-block:0}.coverage-section .coverage-copy h2{max-width:620px}.coverage-section .coverage-description{max-width:720px}.coverage-section .coverage-proof{max-width:430px}.coverage-map-premium{max-width:none;min-height:570px}.coverage-map-premium .coverage-map-svg{min-height:570px}}
+@media(max-width:640px){.coverage-section{padding-block:44px}.coverage-section .coverage-layout{width:92%;gap:26px}.coverage-section .coverage-copy h2{font-size:34px}.coverage-section .coverage-description{font-size:14px}.coverage-map-premium{display:block;min-height:0;border-radius:20px;padding:16px 8px 0}.coverage-map-premium .coverage-map-svg{height:auto;min-height:0;aspect-ratio:790/440}.coverage-map-premium .coverage-hub text{font-size:25px}.coverage-origin-card{position:relative;right:auto;bottom:auto;width:auto;display:grid;grid-template-columns:1fr 1.2fr;align-items:center;gap:6px 16px;margin:12px 10px 18px;padding:15px 18px}.coverage-origin-caption{grid-column:1}.coverage-origin-detail{grid-column:2;grid-row:1 / span 2;margin-top:0}.coverage-origin-card>p{grid-column:1;margin:0;border:0;padding:0;font-size:10px}.coverage-origin-detail div>span{font-size:26px}.coverage-map-legend{position:relative;left:auto;bottom:auto;max-width:none;margin:0 16px 18px}.coverage-map-premium .coverage-mobile-list{padding:18px 10px 20px;margin-top:0}.coverage-flow{opacity:.8}}
+@media(prefers-reduced-motion:reduce){.coverage-flow{display:none}.coverage-map-premium .coverage-routes path{stroke-dashoffset:0;animation:none}.coverage-map-premium .coverage-place{opacity:1;animation:none}.coverage-map-premium .coverage-pulse{animation:none;opacity:.4}}
+
+/* Full world atlas with country borders and separated destination callouts. */
+.coverage-section .coverage-layout{grid-template-columns:1fr;max-width:1680px;gap:30px;width:92%}
+.coverage-section .coverage-copy{display:grid;grid-template-columns:.95fr 1.45fr;gap:16px 60px;max-width:none;padding-block:0}
+.coverage-copy>.reference-eyebrow{grid-column:1;margin:0}
+.coverage-section .coverage-copy h2{grid-column:1;grid-row:2;font-size:clamp(32px,3vw,46px);max-width:480px}
+.coverage-section .coverage-description{grid-column:2;grid-row:1 / span 2;margin:0;font-size:15px;max-width:850px}
+.coverage-section .coverage-proof{grid-column:1;grid-row:3;max-width:420px;margin:8px 0 0;gap:30px}
+.coverage-section .coverage-proof strong{font-size:34px}
+.coverage-section .coverage-sectors{grid-column:2;grid-row:3;align-self:center;margin:0;padding-top:16px}
+.coverage-map-premium{display:block;min-height:0;padding:12px;overflow:hidden}
+.coverage-map-premium .world-coverage-svg{width:100%;height:auto;min-height:0;aspect-ratio:1200/650;filter:none}
+.world-continent-label{font:500 10px var(--sans);letter-spacing:2px;fill:#a0c6c6;opacity:.5;pointer-events:none}
+.coverage-map-premium .coverage-routes path{stroke-width:1.25;opacity:.65}
+.world-country-label>path{fill:none;stroke:#a2d8cd;stroke-width:.8;stroke-opacity:.6}
+.world-country-label rect{fill:#123843;fill-opacity:.96;stroke:#80b7b5;stroke-opacity:.32;stroke-width:.7}
+.world-country-label text{font:600 13px var(--sans);letter-spacing:.5px;fill:#edf9f4;text-transform:uppercase}
+.world-country-label .world-city-label{font:400 10.5px var(--sans);letter-spacing:0;fill:#bad6d6;text-transform:none}
+.world-destination circle:first-child{fill:#153f49;stroke:#b5e3d6;stroke-width:1}
+.world-destination circle:last-child{fill:#e0f7ec;stroke:none}
+.world-quito .world-quito-leader{fill:none;stroke:#eed18c;stroke-width:1}
+.world-quito rect{fill:#183b42;stroke:#dbba70;stroke-width:.8}
+.coverage-map-premium .world-quito text{font:500 17px var(--serif);stroke:none;fill:#ffe8ac}
+.coverage-map-premium .coverage-origin-card{left:28px;right:auto;bottom:32px;width:190px;padding:14px 17px}
+.coverage-map-premium .coverage-map-legend{left:auto;right:30px;bottom:25px;max-width:none}
+@media(max-width:900px){.coverage-section .coverage-copy{gap:18px 28px}.coverage-section .coverage-description{font-size:14px}.coverage-section .coverage-copy h2{font-size:34px}.coverage-map-premium .coverage-origin-card{width:165px;left:20px;bottom:25px;padding:12px}.coverage-origin-detail svg{width:48px;height:48px}.coverage-origin-detail div>span{font-size:24px}.coverage-origin-caption{font-size:9px}.coverage-origin-card>p{font-size:10px}}
+@media(max-width:640px){.coverage-section .coverage-copy{display:block}.coverage-copy>.reference-eyebrow{margin-bottom:18px}.coverage-section .coverage-description{margin-top:22px}.coverage-section .coverage-proof{margin-top:24px}.coverage-section .coverage-sectors{margin-top:22px}.coverage-map-premium{padding:8px 0 0;overflow:hidden}.coverage-map-premium .world-coverage-svg{width:100%;height:auto;min-height:0;aspect-ratio:1200/650}.world-country-label{display:none}.world-continent-label{font-size:13px;letter-spacing:1px}.coverage-map-premium .world-quito text{font-size:22px}.coverage-map-premium .coverage-origin-card{position:relative;left:auto;right:auto;bottom:auto;width:auto;display:grid;margin:16px 14px;padding:15px}.coverage-origin-detail svg{width:60px;height:60px}.coverage-origin-caption{font-size:10px}.coverage-origin-card>p{font-size:11px}.coverage-map-premium .coverage-map-legend{position:relative;right:auto;left:auto;bottom:auto;margin:0 18px 18px}.coverage-map-premium .coverage-mobile-list{display:block}.coverage-mobile-list ul{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 20px}}

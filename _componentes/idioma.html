@@ -1,0 +1,12 @@
+<!-- =====================================================================
+     COMPONENTE · Selector de idioma (tarea 5.5)
+     Fuente única del selector de las landings de protección de datos y de
+     las herramientas LOPDP (la Home y las páginas de Anthony ya lo traen).
+     Editar aquí y ejecutar:  python _tools/build-header.py
+     Funciona con i18n.js (traducciones) y site-chrome.js (botón con bandera).
+     Si la página aún no tiene versión en ese idioma, se traducen el menú y el
+     pie y aparece un aviso (site-header.js).
+     ===================================================================== -->
+<div class="language-slot">
+<label class="language-control"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c5 5 5 13 0 18M12 3c-5 5-5 13 0 18"></path></svg><span class="sr-only" data-i18n="languageLabel">Idioma</span><select aria-label="Idioma" data-i18n-aria-label="languageLabel" disabled="" id="language-select"><option lang="es" selected="" value="es">Español</option><option lang="en" value="en">English</option><option lang="pt" value="pt">Português</option><option lang="fr" value="fr">Français</option></select></label><span aria-live="polite" class="sr-only" id="language-status" role="status"></span>
+</div>

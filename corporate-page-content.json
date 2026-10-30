@@ -1,0 +1,1062 @@
+{
+  "es": {
+    "heroEyebrow": "EL DERECHO AL SERVICIO DE SU EMPRESA",
+    "title": "Derecho corporativo y societario en Ecuador.",
+    "tagline": "Crear una compañía. Organizar sus decisiones. Acompañar lo que viene.",
+    "description": "Constitución y organización de compañías, acuerdos entre socios, contratos y asesoría legal continua. Ayudamos a empresas y grupos a tomar decisiones y llevarlas a documentos y actuaciones concretas.",
+    "routesTitle": "Una necesidad concreta. Una ruta jurídica.",
+    "routesIntro": "No necesita conocer el nombre del trámite. Identifique lo que quiere lograr y explore el servicio adecuado.",
+    "routes": [
+      {
+        "title": "Constituir una SAS.",
+        "description": "Crear una sociedad por acciones simplificada para iniciar su actividad, con requisitos y alcance propios.",
+        "action": "Conocer el servicio",
+        "key": "sas"
+      },
+      {
+        "title": "Organizar capital extranjero.",
+        "description": "Una compañía ecuatoriana con participantes del exterior y una estructura que responda al proyecto.",
+        "action": "Explorar esta ruta",
+        "key": "capital"
+      },
+      {
+        "title": "Ordenar un grupo.",
+        "description": "Propiedad, control, administración y relaciones entre varias compañías.",
+        "action": "Ver holdings y estructuras",
+        "key": "holdings"
+      },
+      {
+        "title": "Actualizar la compañía.",
+        "description": "Estatutos, capital y otros actos societarios con el procedimiento que corresponda a cada decisión.",
+        "action": "Ver reformas y cambios",
+        "key": "amendments"
+      },
+      {
+        "title": "Tener asesoría continua.",
+        "description": "Consultas, documentos y asuntos ordinarios coordinados con un equipo que conoce la operación.",
+        "action": "Conocer la asesoría mensual",
+        "key": "monthly"
+      },
+      {
+        "title": "Abrir una sucursal.",
+        "description": "La presencia en Ecuador de una compañía extranjera, distinta de crear una nueva sociedad local.",
+        "action": "Ver establecimiento de sucursales",
+        "key": "branches"
+      }
+    ],
+    "scopeTitle": "La estructura importa. Los acuerdos también.",
+    "scopeIntro": "Además del trámite, revisamos cómo se relacionan las decisiones societarias, los contratos y las responsabilidades de quienes administran.",
+    "scope": [
+      {
+        "label": "SOCIOS Y GOBIERNO CORPORATIVO",
+        "title": "Reglas para decidir.",
+        "items": [
+          "Estatutos, reglas de administración y facultades para decidir.",
+          "Acuerdos entre socios: participación, decisiones y reglas para relacionarse.",
+          "Juntas, actas, poderes y nombramientos según el acto requerido."
+        ]
+      },
+      {
+        "label": "CONTRATOS Y OPERACIÓN",
+        "title": "Acuerdos que reflejen el negocio.",
+        "items": [
+          "Revisión, elaboración y ajuste de contratos comerciales.",
+          "Análisis de obligaciones, responsabilidades y escenarios de salida.",
+          "Apoyo en la negociación de los contratos incluidos en el encargo."
+        ]
+      },
+      {
+        "label": "CAMBIOS Y CONTINUIDAD",
+        "title": "Una compañía que evoluciona.",
+        "items": [
+          "Proyectos de reorganización y cambios societarios.",
+          "Coordinación con contabilidad y otras áreas que intervengan.",
+          "Asesoría mensual para la operación o un proyecto puntual."
+        ]
+      }
+    ],
+    "conditions": "Cada actuación se delimita en su propuesta. La asesoría jurídica no incorpora automáticamente representación, contabilidad, DPD o patrocinio judicial.",
+    "processTitle": "Antes del documento, entendemos la decisión.",
+    "processIntro": "Partimos de su objetivo, la situación actual de la compañía y las personas que deben intervenir en la decisión.",
+    "process": [
+      {
+        "title": "Entender.",
+        "description": "Actividad, participantes, estructura actual y decisión que necesita tomar."
+      },
+      {
+        "title": "Revisar.",
+        "description": "Documentos pertinentes, condiciones y posibles conflictos de interés."
+      },
+      {
+        "title": "Proponer.",
+        "description": "Alternativas y un encargo con actuaciones, responsables, honorarios y condiciones."
+      },
+      {
+        "title": "Acompañar.",
+        "description": "Gestiones y documentos contratados, con seguimiento de los siguientes pasos."
+      }
+    ],
+    "faqTitle": "Respuestas antes de contratar.",
+    "faqIntro": "El alcance se define para su empresa y para la decisión que necesita tomar.",
+    "faqs": [
+      {
+        "question": "¿Qué comprende el derecho corporativo y societario?",
+        "answer": "Comprende la estructura y las decisiones jurídicas de la empresa: constitución, gobierno corporativo, acuerdos entre socios, juntas, actas, poderes, nombramientos, contratos y cambios societarios. Podemos acompañar una actuación puntual o la operación de forma recurrente. Antes de contratar definimos qué actuaciones necesita y qué materias requieren un servicio específico."
+      },
+      {
+        "question": "¿Debo constituir una SAS o elegir otra estructura?",
+        "answer": "La SAS es una alternativa, pero no se asume adecuada para todos los proyectos. Revisamos actividad, participantes, administración, inversión y necesidades operativas para valorar la estructura. Si busca una constitución estándar de SAS, puede consultar su página específica; una inversión extranjera o una estructura de grupo requiere una revisión propia."
+      },
+      {
+        "question": "¿Pueden ayudarnos si la empresa ya está constituida?",
+        "answer": "Sí. Podemos revisar una decisión concreta, actualizar documentación, acompañar un cambio societario o definir asesoría recurrente. El punto de partida es su situación actual: estatutos, nombramientos, accionistas, contratos y lo que necesita resolver. No es necesario crear otra compañía para ordenar la existente."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre una reforma y un cambio de accionistas?",
+        "answer": "No todos los cambios siguen el mismo procedimiento. Una reforma modifica el estatuto; una transferencia de acciones, un nombramiento o una actualización puede tener reglas y registros distintos. Revisamos el acto, el tipo de compañía, las decisiones necesarias y los documentos antes de proponer una ruta."
+      },
+      {
+        "question": "¿La asesoría mensual incluye todos los servicios de la firma?",
+        "answer": "No automáticamente. La propuesta recurrente identifica compañías, materias, actuaciones, dedicación y condiciones. Proyectos de estructuración, procesos judiciales, defensa administrativa, contabilidad, DPD u otras gestiones pueden contratarse con un alcance propio. No presentamos una mensualidad como cobertura ilimitada."
+      },
+      {
+        "question": "¿Revisan y elaboran contratos comerciales?",
+        "answer": "Podemos revisar, preparar o ajustar contratos y acompañar su negociación cuando se acuerde. Precisamos objetivo, partes, documentación, versiones y etapas. Revisar un contrato no equivale a asumir todas sus negociaciones ni cualquier conflicto posterior; esos frentes deben quedar delimitados."
+      },
+      {
+        "question": "¿Pueden ayudar a organizar varias compañías o un holding?",
+        "answer": "Sí. Primero entendemos propiedad, actividad de cada sociedad, relaciones, administración y objetivos del grupo. Una estructura holding o una reorganización debe responder a una necesidad real y considerar sus efectos societarios, contractuales y tributarios. No garantiza por sí sola ahorro fiscal ni protección patrimonial absoluta."
+      },
+      {
+        "question": "¿Necesito ser ecuatoriano o tener visa para ser socio o accionista?",
+        "answer": "No. No necesita ser ecuatoriano ni tener visa o residencia en Ecuador para ser socio o accionista de una compañía ecuatoriana. Puede participar desde el exterior, cumpliendo requisitos de documentación y registro. Residir, trabajar o ejercer la representación legal son situaciones distintas y se revisan por separado."
+      },
+      {
+        "question": "¿Pueden acompañar a una empresa extranjera que quiere operar en Ecuador?",
+        "answer": "Sí. Revisamos si necesita una sociedad ecuatoriana, una sucursal de la compañía extranjera u otra estructura adecuada. Conectamos esa decisión con representación, domicilio y soporte operativo contratados. Soft Landing tiene una página general que explica ese recorrido y conduce a cada servicio específico."
+      },
+      {
+        "question": "¿Qué información necesitan para una primera conversación?",
+        "answer": "Una descripción de la actividad, la decisión que quiere tomar, el estado de la compañía y si hay una fecha relevante. No necesita adjuntar expedientes ni claves en el formulario inicial. Después indicamos la documentación que corresponde y el canal para revisarla."
+      },
+      {
+        "question": "¿Cómo se fijan honorarios y plazos?",
+        "answer": "Dependen del acto o servicio, la estructura de la empresa, documentos disponibles, participantes, volumen de trabajo y actuaciones ante terceros. La propuesta identifica entregables, honorarios, gastos y condiciones de inicio. No trasladamos el plazo o precio de una SAS estándar a todos los proyectos corporativos."
+      },
+      {
+        "question": "¿La asesoría jurídica incluye contabilidad o representación legal?",
+        "answer": "Son servicios distintos que pueden coordinarse. El análisis jurídico de una obligación no implica llevar registros contables ni asumir un nombramiento como representante. Si necesita esos frentes, definimos alcance, responsabilidades y condiciones de cada servicio."
+      }
+    ],
+    "teamTitle": "Personas detrás de cada decisión.",
+    "teamIntro": "Juan y Daniela coordinan los asuntos empresariales y societarios. Los especialistas en contabilidad, finanzas y privacidad intervienen cuando el encargo lo requiere.",
+    "teamNote": "La propuesta identifica la coordinación y participación de cada área. No todos los profesionales intervienen en cada asunto.",
+    "people": [
+      {
+        "name": "Juan Alberto Gómez",
+        "degree": "Abogado · Socio fundador",
+        "role": "Derecho empresarial y societario",
+        "contribution": "Coordinación jurídica y estructura empresarial."
+      },
+      {
+        "name": "Daniela Barahona",
+        "degree": "Abogada · Magíster",
+        "role": "Abogada senior",
+        "contribution": "Asuntos corporativos y laborales de la operación."
+      },
+      {
+        "name": "Emillie Donoso",
+        "degree": "Abogada · Magíster",
+        "role": "Abogada senior",
+        "contribution": "Protección de datos y cumplimiento normativo."
+      },
+      {
+        "name": "Rolando Valencia",
+        "degree": "Ingeniero",
+        "role": "Coordinador de Servicios Financieros",
+        "contribution": "Finanzas y administración de la operación."
+      },
+      {
+        "name": "Gabriel Calvopiña",
+        "degree": "Ingeniero · Magíster",
+        "role": "Coordinador de Servicios Contables y Tributarios",
+        "contribution": "Contabilidad y obligaciones tributarias."
+      }
+    ],
+    "reviewsTitle": "Conocer la operación. Dar continuidad al criterio.",
+    "reviewsIntro": "Testimonios sobre distintos servicios de la firma. Las referencias conservan el contexto de cada experiencia; no implican que todos hayan contratado el mismo servicio.",
+    "reviews": [
+      {
+        "name": "Eleazar Becerra",
+        "paragraphs": [
+          "Cuando decidimos desarrollar nuestras actividades en Ecuador, necesitábamos mucho más que constituir una compañía. Había que organizar la estructura societaria, la representación local y los temas contables, tributarios y de cumplimiento.",
+          "TempoLegal nos ha acompañado en la estructuración de nuestras empresas y en esas necesidades, incluida la protección de datos personales. Para nosotros, que coordinamos negocios en distintos países, es una ventaja tener un equipo local que conoce nuestra operación y al que podemos acudir directamente.",
+          "Esa combinación de asesoría jurídica y apoyo práctico nos ha facilitado trabajar en Ecuador. Es el tipo de acompañamiento que recomendaría a otras empresas que quieren establecerse y operar en el país."
+        ],
+        "role": "Director general y accionista principal · Cámara de Comercio Exterior"
+      },
+      {
+        "name": "Pablo Lucio Paredes",
+        "paragraphs": [
+          "Trabajar con Tempo Legal fue una decisión positiva para mi empresa y mis necesidades personales. He recibido una asesoría clara y cercana, el equipo entendió mis necesidades, me explicó los pasos del proceso y estuvo disponible para resolver mis inquietudes. Más allá del conocimiento jurídico, valoré especialmente su compromiso y la atención personalizada durante todo el proceso. Así pudimos avanzar con seguridad y enfocarnos en nuestras obligaciones, sabiendo que los aspectos legales estaban en buenas manos. Sin duda, recomendaría a Tempo Legal. De hecho trabajo y seguiré trabajando con ellos"
+        ],
+        "role": "Economista · Director del Instituto de Economía de la USFQ"
+      },
+      {
+        "name": "Francisco Mosquera Aulestia",
+        "paragraphs": [
+          "En GMA tenemos varias empresas y una operación logística que no se detiene. Necesitamos una asesoría legal que entienda esa realidad y no se quede solo en lo teórico.",
+          "TempoLegal nos acompaña desde hace años en asuntos laborales, societarios, contractuales y de protección de datos personales. Conocen cómo funciona el grupo, así que cuando surge un problema podemos ir directamente a lo importante.",
+          "Lo que más valoro es que nos ayuden a prevenir riesgos y nos den alternativas claras para resolver situaciones concretas. Para un grupo empresarial como el nuestro, contar con abogados que conocen la operación y están presentes cuando se los necesita marca una diferencia."
+        ],
+        "role": "Presidente y accionista mayoritario · Grupo Mosquera Aulestia (GMA)"
+      },
+      {
+        "name": "Ana Cecilia Andrade",
+        "paragraphs": [
+          "En FLP hay temas que requieren una respuesta inmediata y otros que necesitan seguimiento durante meses. Para mí hace una gran diferencia contar con un equipo que ya conoce nuestras empresas.",
+          "TempoLegal nos apoya en asuntos laborales, societarios y contractuales y, además, lleva la contabilidad de FLP Holding Ecuador. Poder coordinar la parte jurídica y contable con un mismo equipo nos facilita mucho el trabajo.",
+          "No tenemos que explicar desde cero la historia de cada compañía ni buscar a quién acudir según el problema. Sabemos con quién hablar y podemos dar continuidad a los asuntos pendientes. Eso, en el día a día de una empresa, vale mucho."
+        ],
+        "role": "Gerente general de FL Procesados del Ecuador S.A. · Accionista única de FLP Holding Ecuador · Grupo FLP"
+      }
+    ],
+    "referencesTitle": "EXPERIENCIA DE TEMPOLEGAL",
+    "referencesIntro": "Organizaciones acompañadas por la firma en distintos servicios. Cada encargo tiene un alcance propio.",
+    "references": [
+      "Epidata",
+      "INISEG",
+      "HireX · Grupo Conéctate",
+      "Cámara de Comercio Exterior",
+      "Grupo Tasker",
+      "UINMA · ámbito educativo vinculado a INISEG",
+      "EduLink · estructura vinculada a CCE",
+      "GestiaGlobal · estructura vinculada a CCE"
+    ],
+    "referencesNote": "Las marcas y sociedades vinculadas se muestran con su contexto. No representan ocho grupos independientes ni acreditan el mismo servicio en todos los casos.",
+    "relatedTitle": "Encuentre la ruta que necesita.",
+    "relatedIntro": "Estas páginas se complementan. Cada servicio tiene un alcance y condiciones propios.",
+    "countriesIntro": "Podemos coordinar con participantes y equipos en el exterior. El mapa identifica procedencias de clientes de la firma en distintos servicios; no oficinas internacionales.",
+    "countriesNote": "Procedencia de clientes de TempoLegal en distintos servicios. La atención se coordina desde Quito, Ecuador; los puntos no representan oficinas en el exterior.",
+    "countries": [
+      "México · Ciudad de México",
+      "Guatemala · Ciudad de Guatemala",
+      "Costa Rica · San José",
+      "Estados Unidos · Miami",
+      "Colombia · Bogotá",
+      "Perú · Lima",
+      "Argentina · Buenos Aires",
+      "España · Madrid",
+      "Israel · Tel Aviv"
+    ],
+    "contactTitle": "Cuéntenos su prioridad.",
+    "contactIntro": "Explíquenos la decisión, la operación y si hay una fecha relevante. Le indicaremos qué información hace falta para definir el encargo.",
+    "contactNote": "No adjunte expedientes, datos de terceros ni claves en esta consulta inicial.",
+    "labels": [
+      "Alcance y condiciones",
+      "Servicios relacionados",
+      "Coordinación desde Quito",
+      "Conozca nuestro equipo",
+      "Ver perfil",
+      "Ver conexiones con Ecuador",
+      "Conversar sobre mi empresa",
+      "Información necesaria"
+    ],
+    "source": "Content adapted from the user-supplied corporate index.html; base develop styling and behavior retained."
+  },
+  "en": {
+    "heroEyebrow": "LAW AT THE SERVICE OF YOUR BUSINESS",
+    "title": "Corporate and company law in Ecuador.",
+    "tagline": "Create a company. Organize its decisions. Support what comes next.",
+    "description": "Company incorporation and organization, shareholder agreements, contracts and ongoing legal advice. We help companies and groups make decisions and translate them into concrete documents and actions.",
+    "routesTitle": "A concrete need. A legal route.",
+    "routesIntro": "You do not need to know the name of the procedure. Identify what you want to achieve and explore the appropriate service.",
+    "routes": [
+      {
+        "key": "sas",
+        "title": "Incorporate a SAS.",
+        "description": "Create a simplified joint-stock company to start your activity, with its own requirements and scope.",
+        "action": "Discover the service"
+      },
+      {
+        "key": "capital",
+        "title": "Organize foreign capital.",
+        "description": "An Ecuadorian company with participants from abroad and a structure suited to the project.",
+        "action": "Explore this route"
+      },
+      {
+        "key": "holdings",
+        "title": "Organize a group.",
+        "description": "Ownership, control, management and relationships between several companies.",
+        "action": "View holdings and structures"
+      },
+      {
+        "key": "amendments",
+        "title": "Update the company.",
+        "description": "Articles, capital and other corporate actions, following the procedure appropriate to each decision.",
+        "action": "View corporate amendments"
+      },
+      {
+        "key": "monthly",
+        "title": "Get ongoing advice.",
+        "description": "Enquiries, documents and ordinary matters coordinated with a team that knows the operation.",
+        "action": "Discover monthly legal advice"
+      },
+      {
+        "key": "branches",
+        "title": "Open a branch.",
+        "description": "The presence in Ecuador of a foreign company, distinct from creating a new local company.",
+        "action": "View branch establishment"
+      }
+    ],
+    "scopeTitle": "Structure matters. So do agreements.",
+    "scopeIntro": "Beyond the procedure, we examine how corporate decisions, contracts and the responsibilities of those managing the company relate to one another.",
+    "scope": [
+      {
+        "label": "SHAREHOLDERS AND CORPORATE GOVERNANCE",
+        "title": "Rules for making decisions.",
+        "items": [
+          "Articles, management rules and decision-making powers.",
+          "Shareholder agreements: participation, decisions and rules for working together.",
+          "Meetings, minutes, powers of attorney and appointments according to the required action."
+        ]
+      },
+      {
+        "label": "CONTRACTS AND OPERATIONS",
+        "title": "Agreements that reflect the business.",
+        "items": [
+          "Review, preparation and adjustment of commercial contracts.",
+          "Analysis of obligations, liabilities and exit scenarios.",
+          "Support in negotiating the contracts included in the engagement."
+        ]
+      },
+      {
+        "label": "CHANGE AND CONTINUITY",
+        "title": "A company that evolves.",
+        "items": [
+          "Reorganization projects and corporate changes.",
+          "Coordination with accounting and other areas involved.",
+          "Monthly advice for operations or a specific project."
+        ]
+      }
+    ],
+    "conditions": "Each action is defined in your proposal. Legal advice does not automatically include representation, accounting, DPO services or litigation.",
+    "processTitle": "Before the document, we understand the decision.",
+    "processIntro": "We start with your objective, the company’s current situation and the people who need to take part in the decision.",
+    "process": [
+      {
+        "title": "Understand.",
+        "description": "Activity, participants, current structure and the decision you need to make."
+      },
+      {
+        "title": "Review.",
+        "description": "Relevant documents, conditions and potential conflicts of interest."
+      },
+      {
+        "title": "Propose.",
+        "description": "Alternatives and an engagement specifying actions, responsibilities, fees and conditions."
+      },
+      {
+        "title": "Support.",
+        "description": "Contracted procedures and documents, with follow-up on the next steps."
+      }
+    ],
+    "faqTitle": "Answers before you engage us.",
+    "faqIntro": "The scope is defined for your company and the decision you need to make.",
+    "faqs": [
+      {
+        "question": "What does corporate and company law cover?",
+        "answer": "It covers the company’s structure and legal decisions: incorporation, corporate governance, shareholder agreements, meetings, minutes, powers of attorney, appointments, contracts and corporate changes. We can support a specific action or operations on a recurring basis. Before engagement, we define which actions you need and which matters require a specific service."
+      },
+      {
+        "question": "Should I incorporate a SAS or choose another structure?",
+        "answer": "A SAS is an alternative, but it is not assumed to suit every project. We review the activity, participants, management, investment and operational needs to assess the structure. If you are looking for a standard SAS incorporation, you can consult its dedicated page; foreign investment or a group structure requires its own review."
+      },
+      {
+        "question": "Can you help if the company is already incorporated?",
+        "answer": "Yes. We can review a specific decision, update documents, support a corporate change or define recurring advice. The starting point is your current situation: articles, appointments, shareholders, contracts and what you need to resolve. You do not need to create another company to organize the existing one."
+      },
+      {
+        "question": "What is the difference between an amendment and a change of shareholders?",
+        "answer": "Not all changes follow the same procedure. An amendment changes the articles; a share transfer, appointment or update may have different rules and registrations. We review the action, type of company, necessary decisions and documents before proposing a route."
+      },
+      {
+        "question": "Does monthly advice include all the firm’s services?",
+        "answer": "Not automatically. The recurring proposal identifies companies, matters, actions, time commitment and conditions. Structuring projects, court proceedings, administrative defence, accounting, DPO services or other procedures may be engaged with their own scope. We do not present a monthly fee as unlimited coverage."
+      },
+      {
+        "question": "Do you review and draft commercial contracts?",
+        "answer": "We can review, prepare or adjust contracts and support their negotiation when agreed. We specify the objective, parties, documents, versions and stages. Reviewing a contract does not mean taking on all negotiations or any later dispute; those aspects must be defined."
+      },
+      {
+        "question": "Can you help organize several companies or a holding company?",
+        "answer": "Yes. We first understand ownership, each company’s activity, relationships, management and the group’s objectives. A holding structure or reorganization must meet a real need and consider its corporate, contractual and tax effects. It does not in itself guarantee tax savings or absolute asset protection."
+      },
+      {
+        "question": "Do I need to be Ecuadorian or hold a visa to be a partner or shareholder?",
+        "answer": "No. You do not need to be Ecuadorian or hold a visa or residence in Ecuador to be a partner or shareholder in an Ecuadorian company. You may participate from abroad, meeting documentation and registration requirements. Residing, working or acting as legal representative are different situations and are reviewed separately."
+      },
+      {
+        "question": "Can you support a foreign company seeking to operate in Ecuador?",
+        "answer": "Yes. We review whether you need an Ecuadorian company, a branch of the foreign company or another appropriate structure. We connect that decision with the contracted representation, registered address and operational support. Soft Landing has a general page explaining that journey and linking to each specific service."
+      },
+      {
+        "question": "What information do you need for an initial conversation?",
+        "answer": "A description of the activity, the decision you want to make, the company’s status and whether there is a relevant date. You do not need to attach case files or credentials to the initial form. We will then indicate the appropriate documents and the channel for reviewing them."
+      },
+      {
+        "question": "How are fees and timeframes determined?",
+        "answer": "They depend on the action or service, company structure, available documents, participants, volume of work and procedures involving third parties. The proposal identifies deliverables, fees, expenses and starting conditions. We do not apply the timeframe or price of a standard SAS incorporation to every corporate project."
+      },
+      {
+        "question": "Does legal advice include accounting or legal representation?",
+        "answer": "These are separate services that can be coordinated. Legally analysing an obligation does not mean maintaining accounting records or accepting an appointment as representative. If you need those areas, we define the scope, responsibilities and conditions of each service."
+      }
+    ],
+    "teamTitle": "People behind every decision.",
+    "teamIntro": "Juan and Daniela coordinate business and company matters. Accounting, finance and privacy specialists participate when the engagement requires it.",
+    "teamNote": "The proposal identifies the coordination and participation of each area. Not every professional takes part in every matter.",
+    "people": [
+      {
+        "name": "Juan Alberto Gómez",
+        "degree": "Lawyer · Founding partner",
+        "role": "Business and company law",
+        "contribution": "Legal coordination and business structure."
+      },
+      {
+        "name": "Daniela Barahona",
+        "degree": "Lawyer · Master’s degree",
+        "role": "Senior lawyer",
+        "contribution": "Corporate and employment matters in the operation."
+      },
+      {
+        "name": "Emillie Donoso",
+        "degree": "Lawyer · Master’s degree",
+        "role": "Senior lawyer",
+        "contribution": "Data protection and regulatory compliance."
+      },
+      {
+        "name": "Rolando Valencia",
+        "degree": "Engineer",
+        "role": "Financial Services Coordinator",
+        "contribution": "Finance and business administration."
+      },
+      {
+        "name": "Gabriel Calvopiña",
+        "degree": "Engineer · Master’s degree",
+        "role": "Accounting and Tax Services Coordinator",
+        "contribution": "Accounting and tax obligations."
+      }
+    ],
+    "reviewsTitle": "Know the operation. Maintain continuity of advice.",
+    "reviewsIntro": "Testimonials about different services of the firm. References retain the context of each experience; they do not imply that everyone engaged the same service.",
+    "reviews": [
+      {
+        "name": "Eleazar Becerra",
+        "paragraphs": [
+          "When we decided to develop our activities in Ecuador, we needed much more than to incorporate a company. We had to organize the corporate structure, local representation and accounting, tax and compliance matters.",
+          "TempoLegal has supported us in structuring our companies and meeting those needs, including personal data protection. For us, coordinating business across different countries, it is an advantage to have a local team that knows our operation and that we can contact directly.",
+          "That combination of legal advice and practical support has made it easier for us to work in Ecuador. It is the kind of support I would recommend to other companies seeking to establish themselves and operate in the country."
+        ],
+        "role": "General director and principal shareholder · Cámara de Comercio Exterior"
+      },
+      {
+        "name": "Pablo Lucio Paredes",
+        "paragraphs": [
+          "Working with Tempo Legal was a positive decision for my company and my personal needs. I received clear and approachable advice; the team understood my needs, explained the steps in the process and was available to answer my questions. Beyond their legal knowledge, I particularly valued their commitment and personalized attention throughout the process. This allowed us to move forward with confidence and focus on our obligations, knowing that the legal aspects were in good hands. Without a doubt, I would recommend Tempo Legal. In fact, I work with them and will continue working with them"
+        ],
+        "role": "Economist · Director of the USFQ Institute of Economics"
+      },
+      {
+        "name": "Francisco Mosquera Aulestia",
+        "paragraphs": [
+          "At GMA we have several companies and a logistics operation that never stops. We need legal advice that understands that reality and goes beyond theory.",
+          "TempoLegal has supported us for years in employment, corporate, contractual and personal data protection matters. They know how the group operates, so when a problem arises we can get straight to what matters.",
+          "What I value most is that they help us prevent risks and give us clear alternatives for resolving specific situations. For a business group like ours, having lawyers who know the operation and are there when needed makes a difference."
+        ],
+        "role": "President and majority shareholder · Grupo Mosquera Aulestia (GMA)"
+      },
+      {
+        "name": "Ana Cecilia Andrade",
+        "paragraphs": [
+          "At FLP some matters require an immediate response and others need months of follow-up. For me, having a team that already knows our companies makes a big difference.",
+          "TempoLegal supports us in employment, corporate and contractual matters and also handles the accounting for FLP Holding Ecuador. Being able to coordinate legal and accounting matters with the same team makes our work much easier.",
+          "We do not have to explain each company’s history from scratch or look for someone different depending on the problem. We know who to speak to and can keep pending matters moving forward. In the day-to-day life of a business, that is worth a great deal."
+        ],
+        "role": "General manager of FL Procesados del Ecuador S.A. · Sole shareholder of FLP Holding Ecuador · Grupo FLP"
+      }
+    ],
+    "referencesTitle": "TEMPOLEGAL EXPERIENCE",
+    "referencesIntro": "Organizations supported by the firm across different services. Each engagement has its own scope.",
+    "references": [
+      "Epidata",
+      "INISEG",
+      "HireX · Grupo Conéctate",
+      "Cámara de Comercio Exterior",
+      "Grupo Tasker",
+      "UINMA · educational activity associated with INISEG",
+      "EduLink · structure associated with CCE",
+      "GestiaGlobal · structure associated with CCE"
+    ],
+    "referencesNote": "Related brands and companies are shown in context. They do not represent eight independent groups or establish that the same service was provided in every case.",
+    "relatedTitle": "Find the route you need.",
+    "relatedIntro": "These pages complement one another. Each service has its own scope and conditions.",
+    "countriesIntro": "We can coordinate with participants and teams abroad. The reference identifies the origins of the firm’s clients across different services, not international offices.",
+    "countriesNote": "Origins of TempoLegal clients across different services. Attention is coordinated from Quito, Ecuador; these locations do not represent offices abroad.",
+    "countries": [
+      "Mexico · Mexico City",
+      "Guatemala · Guatemala City",
+      "Costa Rica · San José",
+      "United States · Miami",
+      "Colombia · Bogotá",
+      "Peru · Lima",
+      "Argentina · Buenos Aires",
+      "Spain · Madrid",
+      "Israel · Tel Aviv"
+    ],
+    "contactTitle": "Tell us your priority.",
+    "contactIntro": "Explain the decision, the operation and whether there is a relevant date. We will indicate the information needed to define the engagement.",
+    "contactNote": "Do not attach case files, third-party data or credentials to this initial enquiry.",
+    "labels": [
+      "Scope and conditions",
+      "Related services",
+      "Coordination from Quito",
+      "Meet our team",
+      "View profile",
+      "View connections with Ecuador",
+      "Discuss my business",
+      "Information needed"
+    ],
+    "source": "Content adapted from the user-supplied corporate index.html; base develop styling and behavior retained."
+  },
+  "pt": {
+    "heroEyebrow": "O DIREITO A SERVIÇO DA SUA EMPRESA",
+    "title": "Direito corporativo e societário no Equador.",
+    "tagline": "Criar uma companhia. Organizar suas decisões. Acompanhar o que vem depois.",
+    "description": "Constituição e organização de companhias, acordos entre sócios, contratos e assessoria jurídica contínua. Ajudamos empresas e grupos a tomar decisões e concretizá-las em documentos e atuações.",
+    "routesTitle": "Uma necessidade concreta. Um caminho jurídico.",
+    "routesIntro": "Você não precisa conhecer o nome do procedimento. Identifique o que deseja alcançar e explore o serviço adequado.",
+    "routes": [
+      {
+        "key": "sas",
+        "title": "Constituir uma SAS.",
+        "description": "Criar uma sociedade por ações simplificada para iniciar sua atividade, com requisitos e escopo próprios.",
+        "action": "Conhecer o serviço"
+      },
+      {
+        "key": "capital",
+        "title": "Organizar capital estrangeiro.",
+        "description": "Uma companhia equatoriana com participantes do exterior e uma estrutura adequada ao projeto.",
+        "action": "Explorar este caminho"
+      },
+      {
+        "key": "holdings",
+        "title": "Organizar um grupo.",
+        "description": "Propriedade, controle, administração e relações entre várias companhias.",
+        "action": "Ver holdings e estruturas"
+      },
+      {
+        "key": "amendments",
+        "title": "Atualizar a companhia.",
+        "description": "Estatutos, capital e outros atos societários, com o procedimento adequado a cada decisão.",
+        "action": "Ver reformas e mudanças"
+      },
+      {
+        "key": "monthly",
+        "title": "Ter assessoria contínua.",
+        "description": "Consultas, documentos e assuntos ordinários coordenados com uma equipe que conhece a operação.",
+        "action": "Conhecer a assessoria mensal"
+      },
+      {
+        "key": "branches",
+        "title": "Abrir uma sucursal.",
+        "description": "A presença no Equador de uma companhia estrangeira, diferente de criar uma nova sociedade local.",
+        "action": "Ver estabelecimento de sucursais"
+      }
+    ],
+    "scopeTitle": "A estrutura importa. Os acordos também.",
+    "scopeIntro": "Além do procedimento, analisamos como se relacionam as decisões societárias, os contratos e as responsabilidades de quem administra.",
+    "scope": [
+      {
+        "label": "SÓCIOS E GOVERNANÇA CORPORATIVA",
+        "title": "Regras para decidir.",
+        "items": [
+          "Estatutos, regras de administração e poderes de decisão.",
+          "Acordos entre sócios: participação, decisões e regras de relacionamento.",
+          "Assembleias, atas, procurações e nomeações conforme o ato necessário."
+        ]
+      },
+      {
+        "label": "CONTRATOS E OPERAÇÃO",
+        "title": "Acordos que reflitam o negócio.",
+        "items": [
+          "Revisão, elaboração e ajuste de contratos comerciais.",
+          "Análise de obrigações, responsabilidades e cenários de saída.",
+          "Apoio na negociação dos contratos incluídos na contratação."
+        ]
+      },
+      {
+        "label": "MUDANÇAS E CONTINUIDADE",
+        "title": "Uma companhia que evolui.",
+        "items": [
+          "Projetos de reorganização e mudanças societárias.",
+          "Coordenação com a contabilidade e outras áreas envolvidas.",
+          "Assessoria mensal para a operação ou um projeto pontual."
+        ]
+      }
+    ],
+    "conditions": "Cada atuação é delimitada em sua proposta. A assessoria jurídica não inclui automaticamente representação, contabilidade, DPD ou patrocínio judicial.",
+    "processTitle": "Antes do documento, entendemos a decisão.",
+    "processIntro": "Partimos do seu objetivo, da situação atual da companhia e das pessoas que devem participar da decisão.",
+    "process": [
+      {
+        "title": "Entender.",
+        "description": "Atividade, participantes, estrutura atual e decisão que precisa tomar."
+      },
+      {
+        "title": "Revisar.",
+        "description": "Documentos pertinentes, condições e possíveis conflitos de interesses."
+      },
+      {
+        "title": "Propor.",
+        "description": "Alternativas e uma contratação com atuações, responsáveis, honorários e condições."
+      },
+      {
+        "title": "Acompanhar.",
+        "description": "Procedimentos e documentos contratados, com acompanhamento dos próximos passos."
+      }
+    ],
+    "faqTitle": "Respostas antes de contratar.",
+    "faqIntro": "O escopo é definido para sua empresa e para a decisão que precisa tomar.",
+    "faqs": [
+      {
+        "question": "O que abrange o direito corporativo e societário?",
+        "answer": "Abrange a estrutura e as decisões jurídicas da empresa: constituição, governança corporativa, acordos entre sócios, assembleias, atas, procurações, nomeações, contratos e mudanças societárias. Podemos acompanhar uma atuação pontual ou a operação de forma recorrente. Antes da contratação, definimos quais atuações são necessárias e quais matérias exigem um serviço específico."
+      },
+      {
+        "question": "Devo constituir uma SAS ou escolher outra estrutura?",
+        "answer": "A SAS é uma alternativa, mas não se presume adequada a todos os projetos. Analisamos atividade, participantes, administração, investimento e necessidades operacionais para avaliar a estrutura. Para uma constituição padrão de SAS, consulte a página específica; investimento estrangeiro ou uma estrutura de grupo exige análise própria."
+      },
+      {
+        "question": "Podem ajudar se a empresa já estiver constituída?",
+        "answer": "Sim. Podemos analisar uma decisão concreta, atualizar documentos, acompanhar uma mudança societária ou definir assessoria recorrente. O ponto de partida é sua situação atual: estatutos, nomeações, acionistas, contratos e o que precisa resolver. Não é necessário criar outra companhia para organizar a existente."
+      },
+      {
+        "question": "Qual é a diferença entre uma reforma e uma mudança de acionistas?",
+        "answer": "Nem todas as mudanças seguem o mesmo procedimento. Uma reforma modifica o estatuto; uma transferência de ações, nomeação ou atualização pode ter regras e registros distintos. Analisamos o ato, o tipo de companhia, as decisões necessárias e os documentos antes de propor um caminho."
+      },
+      {
+        "question": "A assessoria mensal inclui todos os serviços do escritório?",
+        "answer": "Não automaticamente. A proposta recorrente identifica companhias, matérias, atuações, dedicação e condições. Projetos de estruturação, processos judiciais, defesa administrativa, contabilidade, DPD ou outros procedimentos podem ser contratados com escopo próprio. Não apresentamos uma mensalidade como cobertura ilimitada."
+      },
+      {
+        "question": "Revisam e elaboram contratos comerciais?",
+        "answer": "Podemos revisar, preparar ou ajustar contratos e acompanhar sua negociação quando acordado. Especificamos objetivo, partes, documentação, versões e etapas. Revisar um contrato não equivale a assumir todas as negociações ou qualquer conflito posterior; essas frentes devem ser delimitadas."
+      },
+      {
+        "question": "Podem ajudar a organizar várias companhias ou uma holding?",
+        "answer": "Sim. Primeiro entendemos a propriedade, a atividade de cada sociedade, as relações, a administração e os objetivos do grupo. Uma estrutura holding ou reorganização deve responder a uma necessidade real e considerar seus efeitos societários, contratuais e tributários. Por si só, não garante economia fiscal nem proteção patrimonial absoluta."
+      },
+      {
+        "question": "Preciso ser equatoriano ou ter visto para ser sócio ou acionista?",
+        "answer": "Não. Você não precisa ser equatoriano nem ter visto ou residência no Equador para ser sócio ou acionista de uma companhia equatoriana. Pode participar do exterior, cumprindo requisitos documentais e de registro. Residir, trabalhar ou exercer a representação legal são situações diferentes, analisadas separadamente."
+      },
+      {
+        "question": "Podem acompanhar uma empresa estrangeira que deseja operar no Equador?",
+        "answer": "Sim. Analisamos se precisa de uma sociedade equatoriana, uma sucursal da companhia estrangeira ou outra estrutura adequada. Conectamos essa decisão à representação, ao domicílio e ao suporte operacional contratados. Soft Landing tem uma página geral que explica esse percurso e leva a cada serviço específico."
+      },
+      {
+        "question": "Quais informações são necessárias para uma primeira conversa?",
+        "answer": "Uma descrição da atividade, da decisão que deseja tomar, da situação da companhia e de eventual data relevante. Não precisa anexar processos ou credenciais ao formulário inicial. Depois indicamos os documentos adequados e o canal para analisá-los."
+      },
+      {
+        "question": "Como são definidos os honorários e os prazos?",
+        "answer": "Dependem do ato ou serviço, da estrutura da empresa, dos documentos disponíveis, dos participantes, do volume de trabalho e de atuações perante terceiros. A proposta identifica entregáveis, honorários, despesas e condições de início. Não aplicamos o prazo ou preço de uma SAS padrão a todos os projetos corporativos."
+      },
+      {
+        "question": "A assessoria jurídica inclui contabilidade ou representação legal?",
+        "answer": "São serviços distintos que podem ser coordenados. A análise jurídica de uma obrigação não implica manter registros contábeis nem aceitar uma nomeação como representante. Se precisar dessas frentes, definimos o escopo, as responsabilidades e as condições de cada serviço."
+      }
+    ],
+    "teamTitle": "Pessoas por trás de cada decisão.",
+    "teamIntro": "Juan e Daniela coordenam os assuntos empresariais e societários. Os especialistas em contabilidade, finanças e privacidade participam quando a contratação exige.",
+    "teamNote": "A proposta identifica a coordenação e a participação de cada área. Nem todos os profissionais participam de cada assunto.",
+    "people": [
+      {
+        "name": "Juan Alberto Gómez",
+        "degree": "Advogado · Sócio fundador",
+        "role": "Direito empresarial e societário",
+        "contribution": "Coordenação jurídica e estrutura empresarial."
+      },
+      {
+        "name": "Daniela Barahona",
+        "degree": "Advogada · Mestre",
+        "role": "Advogada sênior",
+        "contribution": "Assuntos corporativos e trabalhistas da operação."
+      },
+      {
+        "name": "Emillie Donoso",
+        "degree": "Advogada · Mestre",
+        "role": "Advogada sênior",
+        "contribution": "Proteção de dados e conformidade regulatória."
+      },
+      {
+        "name": "Rolando Valencia",
+        "degree": "Engenheiro",
+        "role": "Coordenador de Serviços Financeiros",
+        "contribution": "Finanças e administração da operação."
+      },
+      {
+        "name": "Gabriel Calvopiña",
+        "degree": "Engenheiro · Mestre",
+        "role": "Coordenador de Serviços Contábeis e Tributários",
+        "contribution": "Contabilidade e obrigações tributárias."
+      }
+    ],
+    "reviewsTitle": "Conhecer a operação. Dar continuidade ao aconselhamento.",
+    "reviewsIntro": "Depoimentos sobre diferentes serviços do escritório. As referências preservam o contexto de cada experiência; não significam que todos contrataram o mesmo serviço.",
+    "reviews": [
+      {
+        "name": "Eleazar Becerra",
+        "paragraphs": [
+          "Quando decidimos desenvolver nossas atividades no Equador, precisávamos de muito mais do que constituir uma companhia. Era necessário organizar a estrutura societária, a representação local e os assuntos contábeis, tributários e de conformidade.",
+          "A TempoLegal tem nos acompanhado na estruturação de nossas empresas e nessas necessidades, incluindo a proteção de dados pessoais. Para nós, que coordenamos negócios em diferentes países, é uma vantagem ter uma equipe local que conhece nossa operação e à qual podemos recorrer diretamente.",
+          "Essa combinação de assessoria jurídica e apoio prático tem facilitado nosso trabalho no Equador. É o tipo de acompanhamento que eu recomendaria a outras empresas que desejam se estabelecer e operar no país."
+        ],
+        "role": "Diretor-geral e acionista principal · Cámara de Comercio Exterior"
+      },
+      {
+        "name": "Pablo Lucio Paredes",
+        "paragraphs": [
+          "Trabalhar com a Tempo Legal foi uma decisão positiva para minha empresa e minhas necessidades pessoais. Recebi uma assessoria clara e próxima; a equipe entendeu minhas necessidades, explicou os passos do processo e esteve disponível para esclarecer minhas dúvidas. Além do conhecimento jurídico, valorizei especialmente seu compromisso e a atenção personalizada durante todo o processo. Assim pudemos avançar com segurança e nos concentrar em nossas obrigações, sabendo que os aspectos jurídicos estavam em boas mãos. Sem dúvida, recomendaria a Tempo Legal. De fato, trabalho e continuarei trabalhando com eles"
+        ],
+        "role": "Economista · Diretor do Instituto de Economia da USFQ"
+      },
+      {
+        "name": "Francisco Mosquera Aulestia",
+        "paragraphs": [
+          "Na GMA temos várias empresas e uma operação logística que não para. Precisamos de uma assessoria jurídica que entenda essa realidade e não se limite à teoria.",
+          "A TempoLegal nos acompanha há anos em questões trabalhistas, societárias, contratuais e de proteção de dados pessoais. Conhecem o funcionamento do grupo, por isso, quando surge um problema, podemos ir direto ao que importa.",
+          "O que mais valorizo é que nos ajudem a prevenir riscos e nos ofereçam alternativas claras para resolver situações concretas. Para um grupo empresarial como o nosso, contar com advogados que conhecem a operação e estão presentes quando precisamos faz a diferença."
+        ],
+        "role": "Presidente e acionista majoritário · Grupo Mosquera Aulestia (GMA)"
+      },
+      {
+        "name": "Ana Cecilia Andrade",
+        "paragraphs": [
+          "Na FLP há assuntos que exigem uma resposta imediata e outros que precisam de acompanhamento durante meses. Para mim, faz muita diferença contar com uma equipe que já conhece nossas empresas.",
+          "A TempoLegal nos apoia em questões trabalhistas, societárias e contratuais e, além disso, cuida da contabilidade da FLP Holding Ecuador. Poder coordenar a parte jurídica e contábil com a mesma equipe facilita muito nosso trabalho.",
+          "Não precisamos explicar do zero a história de cada companhia nem procurar a quem recorrer conforme o problema. Sabemos com quem falar e podemos dar continuidade aos assuntos pendentes. No dia a dia de uma empresa, isso vale muito."
+        ],
+        "role": "Gerente geral da FL Procesados del Ecuador S.A. · Acionista única da FLP Holding Ecuador · Grupo FLP"
+      }
+    ],
+    "referencesTitle": "EXPERIÊNCIA DA TEMPOLEGAL",
+    "referencesIntro": "Organizações acompanhadas pelo escritório em diferentes serviços. Cada contratação tem escopo próprio.",
+    "references": [
+      "Epidata",
+      "INISEG",
+      "HireX · Grupo Conéctate",
+      "Cámara de Comercio Exterior",
+      "Grupo Tasker",
+      "UINMA · âmbito educativo vinculado ao INISEG",
+      "EduLink · estrutura vinculada à CCE",
+      "GestiaGlobal · estrutura vinculada à CCE"
+    ],
+    "referencesNote": "As marcas e sociedades vinculadas são apresentadas em seu contexto. Não representam oito grupos independentes nem comprovam o mesmo serviço em todos os casos.",
+    "relatedTitle": "Encontre o caminho de que precisa.",
+    "relatedIntro": "Estas páginas se complementam. Cada serviço tem escopo e condições próprios.",
+    "countriesIntro": "Podemos coordenar com participantes e equipes no exterior. A referência identifica a procedência de clientes do escritório em diferentes serviços, não escritórios internacionais.",
+    "countriesNote": "Procedência de clientes da TempoLegal em diferentes serviços. O atendimento é coordenado de Quito, Equador; esses locais não representam escritórios no exterior.",
+    "countries": [
+      "México · Cidade do México",
+      "Guatemala · Cidade da Guatemala",
+      "Costa Rica · San José",
+      "Estados Unidos · Miami",
+      "Colômbia · Bogotá",
+      "Peru · Lima",
+      "Argentina · Buenos Aires",
+      "Espanha · Madri",
+      "Israel · Tel Aviv"
+    ],
+    "contactTitle": "Conte-nos sua prioridade.",
+    "contactIntro": "Explique a decisão, a operação e se há uma data relevante. Indicaremos as informações necessárias para definir a contratação.",
+    "contactNote": "Não anexe processos, dados de terceiros ou credenciais a esta consulta inicial.",
+    "labels": [
+      "Escopo e condições",
+      "Serviços relacionados",
+      "Coordenação de Quito",
+      "Conheça nossa equipe",
+      "Ver perfil",
+      "Ver conexões com o Equador",
+      "Conversar sobre minha empresa",
+      "Informações necessárias"
+    ],
+    "source": "Content adapted from the user-supplied corporate index.html; base develop styling and behavior retained."
+  },
+  "fr": {
+    "heroEyebrow": "LE DROIT AU SERVICE DE VOTRE ENTREPRISE",
+    "title": "Droit des affaires et des sociétés en Équateur.",
+    "tagline": "Créer une société. Organiser ses décisions. Accompagner la suite.",
+    "description": "Constitution et organisation de sociétés, accords entre associés, contrats et conseil juridique continu. Nous aidons les entreprises et les groupes à prendre des décisions et à les concrétiser dans des documents et des démarches.",
+    "routesTitle": "Un besoin concret. Une voie juridique.",
+    "routesIntro": "Vous n’avez pas besoin de connaître le nom de la démarche. Identifiez votre objectif et découvrez le service approprié.",
+    "routes": [
+      {
+        "key": "sas",
+        "title": "Constituer une SAS.",
+        "description": "Créer une société par actions simplifiée pour démarrer votre activité, avec ses propres exigences et son périmètre.",
+        "action": "Découvrir le service"
+      },
+      {
+        "key": "capital",
+        "title": "Organiser des capitaux étrangers.",
+        "description": "Une société équatorienne avec des participants étrangers et une structure adaptée au projet.",
+        "action": "Explorer cette voie"
+      },
+      {
+        "key": "holdings",
+        "title": "Organiser un groupe.",
+        "description": "Propriété, contrôle, gestion et relations entre plusieurs sociétés.",
+        "action": "Voir holdings et structures"
+      },
+      {
+        "key": "amendments",
+        "title": "Actualiser la société.",
+        "description": "Statuts, capital et autres actes sociétaires, selon la procédure adaptée à chaque décision.",
+        "action": "Voir modifications et changements"
+      },
+      {
+        "key": "monthly",
+        "title": "Bénéficier d’un conseil continu.",
+        "description": "Questions, documents et affaires courantes coordonnés avec une équipe qui connaît l’activité.",
+        "action": "Découvrir le conseil mensuel"
+      },
+      {
+        "key": "branches",
+        "title": "Ouvrir une succursale.",
+        "description": "La présence en Équateur d’une société étrangère, distincte de la création d’une nouvelle société locale.",
+        "action": "Voir l’établissement de succursales"
+      }
+    ],
+    "scopeTitle": "La structure compte. Les accords aussi.",
+    "scopeIntro": "Au-delà de la démarche, nous examinons les liens entre décisions sociétaires, contrats et responsabilités des dirigeants.",
+    "scope": [
+      {
+        "label": "ASSOCIÉS ET GOUVERNANCE",
+        "title": "Des règles pour décider.",
+        "items": [
+          "Statuts, règles de gestion et pouvoirs de décision.",
+          "Accords entre associés : participation, décisions et règles de collaboration.",
+          "Assemblées, procès-verbaux, procurations et nominations selon l’acte requis."
+        ]
+      },
+      {
+        "label": "CONTRATS ET ACTIVITÉ",
+        "title": "Des accords qui reflètent l’entreprise.",
+        "items": [
+          "Examen, rédaction et adaptation de contrats commerciaux.",
+          "Analyse des obligations, responsabilités et scénarios de sortie.",
+          "Appui à la négociation des contrats inclus dans la mission."
+        ]
+      },
+      {
+        "label": "CHANGEMENTS ET CONTINUITÉ",
+        "title": "Une société qui évolue.",
+        "items": [
+          "Projets de réorganisation et changements sociétaires.",
+          "Coordination avec la comptabilité et les autres domaines concernés.",
+          "Conseil mensuel pour l’activité ou un projet ponctuel."
+        ]
+      }
+    ],
+    "conditions": "Chaque intervention est définie dans votre proposition. Le conseil juridique n’inclut pas automatiquement la représentation, la comptabilité, les services de DPO ou la représentation en justice.",
+    "processTitle": "Avant le document, comprendre la décision.",
+    "processIntro": "Nous partons de votre objectif, de la situation actuelle de la société et des personnes devant participer à la décision.",
+    "process": [
+      {
+        "title": "Comprendre.",
+        "description": "Activité, participants, structure actuelle et décision à prendre."
+      },
+      {
+        "title": "Examiner.",
+        "description": "Documents pertinents, conditions et éventuels conflits d’intérêts."
+      },
+      {
+        "title": "Proposer.",
+        "description": "Solutions et mission précisant les interventions, responsables, honoraires et conditions."
+      },
+      {
+        "title": "Accompagner.",
+        "description": "Démarches et documents contractuels, avec suivi des prochaines étapes."
+      }
+    ],
+    "faqTitle": "Des réponses avant de vous engager.",
+    "faqIntro": "Le périmètre est défini pour votre entreprise et pour la décision à prendre.",
+    "faqs": [
+      {
+        "question": "Que couvre le droit des affaires et des sociétés ?",
+        "answer": "Il couvre la structure et les décisions juridiques de l’entreprise : constitution, gouvernance, accords entre associés, assemblées, procès-verbaux, procurations, nominations, contrats et changements sociétaires. Nous pouvons accompagner un acte ponctuel ou l’activité de manière récurrente. Avant l’engagement, nous définissons les interventions nécessaires et les questions relevant d’un service spécifique."
+      },
+      {
+        "question": "Faut-il constituer une SAS ou choisir une autre structure ?",
+        "answer": "La SAS est une possibilité, mais elle n’est pas présumée adaptée à tous les projets. Nous examinons l’activité, les participants, la gestion, l’investissement et les besoins opérationnels pour évaluer la structure. Pour une constitution standard de SAS, consultez sa page dédiée ; un investissement étranger ou une structure de groupe exige un examen propre."
+      },
+      {
+        "question": "Pouvez-vous aider une entreprise déjà constituée ?",
+        "answer": "Oui. Nous pouvons examiner une décision concrète, actualiser des documents, accompagner un changement sociétaire ou définir un conseil récurrent. Le point de départ est votre situation actuelle : statuts, nominations, actionnaires, contrats et problème à résoudre. Il n’est pas nécessaire de créer une autre société pour organiser celle qui existe."
+      },
+      {
+        "question": "Quelle différence entre une modification statutaire et un changement d’actionnaires ?",
+        "answer": "Tous les changements ne suivent pas la même procédure. Une modification statutaire change les statuts ; un transfert d’actions, une nomination ou une mise à jour peut relever de règles et d’inscriptions différentes. Nous examinons l’acte, le type de société, les décisions nécessaires et les documents avant de proposer une voie."
+      },
+      {
+        "question": "Le conseil mensuel inclut-il tous les services du cabinet ?",
+        "answer": "Pas automatiquement. La proposition récurrente précise les sociétés, matières, interventions, temps consacré et conditions. Les projets de structuration, procédures judiciaires, défense administrative, comptabilité, services de DPO ou autres démarches peuvent faire l’objet d’un périmètre propre. Un forfait mensuel n’est pas présenté comme une couverture illimitée."
+      },
+      {
+        "question": "Examinez-vous et rédigez-vous des contrats commerciaux ?",
+        "answer": "Nous pouvons examiner, préparer ou adapter des contrats et accompagner leur négociation lorsque cela est convenu. Nous précisons l’objectif, les parties, les documents, les versions et les étapes. Examiner un contrat ne signifie pas prendre en charge toutes les négociations ni tout litige ultérieur ; ces aspects doivent être délimités."
+      },
+      {
+        "question": "Pouvez-vous aider à organiser plusieurs sociétés ou une holding ?",
+        "answer": "Oui. Nous commençons par comprendre la propriété, l’activité de chaque société, les relations, la gestion et les objectifs du groupe. Une holding ou une réorganisation doit répondre à un besoin réel et tenir compte de ses effets sociétaires, contractuels et fiscaux. Elle ne garantit pas, à elle seule, une économie fiscale ni une protection patrimoniale absolue."
+      },
+      {
+        "question": "Faut-il être équatorien ou détenir un visa pour être associé ou actionnaire ?",
+        "answer": "Non. Il n’est pas nécessaire d’être équatorien ni de détenir un visa ou une résidence en Équateur pour être associé ou actionnaire d’une société équatorienne. Vous pouvez participer depuis l’étranger, sous réserve des exigences documentaires et d’inscription. Résider, travailler ou exercer la représentation légale sont des situations distinctes, examinées séparément."
+      },
+      {
+        "question": "Accompagnez-vous une entreprise étrangère souhaitant exercer en Équateur ?",
+        "answer": "Oui. Nous examinons si vous avez besoin d’une société équatorienne, d’une succursale de la société étrangère ou d’une autre structure appropriée. Nous relions cette décision aux services contractuels de représentation, domiciliation et appui opérationnel. Une page générale Soft Landing explique ce parcours et conduit à chaque service spécifique."
+      },
+      {
+        "question": "Quelles informations faut-il pour un premier échange ?",
+        "answer": "Une description de l’activité, de la décision envisagée, de la situation de la société et de toute date importante. Aucun dossier ni identifiant de connexion n’est nécessaire dans le formulaire initial. Nous indiquerons ensuite les documents appropriés et le canal pour les examiner."
+      },
+      {
+        "question": "Comment sont fixés les honoraires et les délais ?",
+        "answer": "Ils dépendent de l’acte ou du service, de la structure de l’entreprise, des documents disponibles, des participants, du volume de travail et des démarches auprès de tiers. La proposition précise les livrables, honoraires, frais et conditions de démarrage. Le délai ou le prix d’une SAS standard n’est pas appliqué à tous les projets sociétaires."
+      },
+      {
+        "question": "Le conseil juridique inclut-il la comptabilité ou la représentation légale ?",
+        "answer": "Ce sont des services distincts qui peuvent être coordonnés. L’analyse juridique d’une obligation n’implique pas la tenue comptable ni l’acceptation d’une nomination comme représentant. Si ces domaines sont nécessaires, nous définissons le périmètre, les responsabilités et les conditions de chaque service."
+      }
+    ],
+    "teamTitle": "Des personnes derrière chaque décision.",
+    "teamIntro": "Juan et Daniela coordonnent les affaires d’entreprise et de sociétés. Les spécialistes en comptabilité, finance et protection des données interviennent lorsque la mission le nécessite.",
+    "teamNote": "La proposition identifie la coordination et la participation de chaque domaine. Tous les professionnels ne participent pas à chaque dossier.",
+    "people": [
+      {
+        "name": "Juan Alberto Gómez",
+        "degree": "Avocat · Associé fondateur",
+        "role": "Droit des affaires et des sociétés",
+        "contribution": "Coordination juridique et structure d’entreprise."
+      },
+      {
+        "name": "Daniela Barahona",
+        "degree": "Avocate · Master",
+        "role": "Avocate senior",
+        "contribution": "Affaires sociétaires et questions sociales de l’activité."
+      },
+      {
+        "name": "Emillie Donoso",
+        "degree": "Avocate · Master",
+        "role": "Avocate senior",
+        "contribution": "Protection des données et conformité réglementaire."
+      },
+      {
+        "name": "Rolando Valencia",
+        "degree": "Ingénieur",
+        "role": "Coordinateur des services financiers",
+        "contribution": "Finance et administration de l’activité."
+      },
+      {
+        "name": "Gabriel Calvopiña",
+        "degree": "Ingénieur · Master",
+        "role": "Coordinateur des services comptables et fiscaux",
+        "contribution": "Comptabilité et obligations fiscales."
+      }
+    ],
+    "reviewsTitle": "Connaître l’activité. Assurer la continuité du conseil.",
+    "reviewsIntro": "Témoignages concernant différents services du cabinet. Les références conservent le contexte de chaque expérience et ne signifient pas que tous ont engagé le même service.",
+    "reviews": [
+      {
+        "name": "Eleazar Becerra",
+        "paragraphs": [
+          "Lorsque nous avons décidé de développer nos activités en Équateur, il nous fallait bien plus que constituer une société. Il fallait organiser la structure sociétaire, la représentation locale et les aspects comptables, fiscaux et de conformité.",
+          "TempoLegal nous a accompagnés dans la structuration de nos entreprises et dans ces besoins, y compris la protection des données personnelles. Pour nous, qui coordonnons des activités dans différents pays, disposer d’une équipe locale connaissant notre activité et à laquelle nous pouvons nous adresser directement est un avantage.",
+          "Cette combinaison de conseil juridique et d’appui pratique a facilité notre activité en Équateur. C’est le type d’accompagnement que je recommanderais à d’autres entreprises souhaitant s’établir et exercer dans le pays."
+        ],
+        "role": "Directeur général et actionnaire principal · Cámara de Comercio Exterior"
+      },
+      {
+        "name": "Pablo Lucio Paredes",
+        "paragraphs": [
+          "Travailler avec Tempo Legal a été une décision positive pour mon entreprise et mes besoins personnels. J’ai bénéficié de conseils clairs et d’un accompagnement de proximité ; l’équipe a compris mes besoins, m’a expliqué les étapes de la procédure et s’est tenue disponible pour répondre à mes questions. Au-delà de leurs connaissances juridiques, j’ai particulièrement apprécié leur engagement et leur attention personnalisée tout au long du processus. Nous avons ainsi pu avancer sereinement et nous concentrer sur nos obligations, sachant que les aspects juridiques étaient entre de bonnes mains. Sans aucun doute, je recommanderais Tempo Legal. D’ailleurs, je travaille avec eux et continuerai à le faire"
+        ],
+        "role": "Économiste · Directeur de l’Institut d’économie de l’USFQ"
+      },
+      {
+        "name": "Francisco Mosquera Aulestia",
+        "paragraphs": [
+          "Chez GMA, nous avons plusieurs entreprises et une activité logistique qui ne s’arrête jamais. Nous avons besoin d’un conseil juridique qui comprenne cette réalité et ne se limite pas à la théorie.",
+          "TempoLegal nous accompagne depuis des années en droit du travail, des sociétés, des contrats et de la protection des données personnelles. Ils connaissent le fonctionnement du groupe ; lorsqu’un problème survient, nous pouvons donc aller directement à l’essentiel.",
+          "Ce que j’apprécie le plus, c’est qu’ils nous aident à prévenir les risques et nous proposent des solutions claires pour résoudre des situations concrètes. Pour un groupe comme le nôtre, disposer d’avocats qui connaissent nos activités et sont présents quand nous en avons besoin fait la différence."
+        ],
+        "role": "Président et actionnaire majoritaire · Grupo Mosquera Aulestia (GMA)"
+      },
+      {
+        "name": "Ana Cecilia Andrade",
+        "paragraphs": [
+          "Chez FLP, certains sujets exigent une réponse immédiate et d’autres nécessitent un suivi pendant des mois. Pour moi, pouvoir compter sur une équipe qui connaît déjà nos entreprises fait une grande différence.",
+          "TempoLegal nous accompagne en droit du travail, des sociétés et des contrats et assure également la comptabilité de FLP Holding Ecuador. Pouvoir coordonner les aspects juridiques et comptables avec la même équipe nous facilite beaucoup le travail.",
+          "Nous n’avons pas à reprendre depuis le début l’histoire de chaque société ni à chercher un interlocuteur différent selon le problème. Nous savons à qui parler et pouvons assurer la continuité des dossiers en cours. Au quotidien dans une entreprise, cela compte énormément."
+        ],
+        "role": "Directrice générale de FL Procesados del Ecuador S.A. · Actionnaire unique de FLP Holding Ecuador · Grupo FLP"
+      }
+    ],
+    "referencesTitle": "EXPÉRIENCE DE TEMPOLEGAL",
+    "referencesIntro": "Organisations accompagnées par le cabinet dans différents services. Chaque mission possède son propre périmètre.",
+    "references": [
+      "Epidata",
+      "INISEG",
+      "HireX · Grupo Conéctate",
+      "Cámara de Comercio Exterior",
+      "Grupo Tasker",
+      "UINMA · activité éducative liée à INISEG",
+      "EduLink · structure liée à CCE",
+      "GestiaGlobal · structure liée à CCE"
+    ],
+    "referencesNote": "Les marques et sociétés liées sont présentées dans leur contexte. Elles ne représentent pas huit groupes indépendants et n’attestent pas du même service dans tous les cas.",
+    "relatedTitle": "Trouvez la voie adaptée à votre besoin.",
+    "relatedIntro": "Ces pages se complètent. Chaque service possède son périmètre et ses conditions propres.",
+    "countriesIntro": "Nous pouvons coordonner avec des participants et équipes à l’étranger. La référence indique l’origine des clients du cabinet dans différents services, et non des bureaux internationaux.",
+    "countriesNote": "Origines des clients de TempoLegal dans différents services. L’accompagnement est coordonné depuis Quito, en Équateur ; ces lieux ne représentent pas des bureaux à l’étranger.",
+    "countries": [
+      "Mexique · Mexico",
+      "Guatemala · Guatemala",
+      "Costa Rica · San José",
+      "États-Unis · Miami",
+      "Colombie · Bogotá",
+      "Pérou · Lima",
+      "Argentine · Buenos Aires",
+      "Espagne · Madrid",
+      "Israël · Tel Aviv"
+    ],
+    "contactTitle": "Parlez-nous de votre priorité.",
+    "contactIntro": "Expliquez la décision, l’activité et toute date importante. Nous indiquerons les informations nécessaires pour définir la mission.",
+    "contactNote": "Ne joignez ni dossiers, ni données de tiers, ni identifiants à cette demande initiale.",
+    "labels": [
+      "Périmètre et conditions",
+      "Services associés",
+      "Coordination depuis Quito",
+      "Découvrez notre équipe",
+      "Voir le profil",
+      "Voir les liens avec l’Équateur",
+      "Parler de mon entreprise",
+      "Informations nécessaires"
+    ],
+    "source": "Content adapted from the user-supplied corporate index.html; base develop styling and behavior retained."
+  }
+}
