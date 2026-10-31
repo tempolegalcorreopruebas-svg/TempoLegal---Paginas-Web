@@ -1,0 +1,22 @@
+/* Additional form states reuse the established typography and colors. */
+.contact-review{font:inherit;font-size:13px;line-height:1.8;white-space:pre-wrap;overflow-wrap:anywhere;max-height:240px;overflow:auto;padding:18px 20px;margin:16px 0 22px;background:#e9efed;border-left:2px solid #a99b61;color:var(--ink)}
+.contact-review-label{font-size:12px;color:var(--muted);margin-top:20px}
+.contact-consent{display:flex!important;flex-direction:row!important;gap:12px!important;align-items:flex-start!important;margin:20px 0;font-size:12px;line-height:1.8;color:var(--muted)}
+.contact-consent input[type=checkbox]{width:17px!important;min-width:17px;height:17px;margin-top:3px;accent-color:var(--teal)}
+.contact-consent>div{min-width:0}
+.contact-consent a{text-decoration:underline;text-underline-offset:3px}
+.contact-delivery-status{font-size:13px;line-height:1.8;margin:18px 0;padding:15px 18px;border:1px solid var(--line);overflow-wrap:anywhere}
+.contact-honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}
+.contact-page-form{padding-top:15px;padding-bottom:50px}
+.contact-page-form>h2{font-family:var(--serif);font-size:clamp(35px,3.5vw,54px);font-weight:400;line-height:1.1;margin-bottom:28px}
+.contact-page-form form,.contact-page-form #contact-result{max-width:820px}
+.contact-page-form label{display:flex;flex-direction:column;gap:9px;margin-bottom:19px;font-size:12px;color:var(--muted)}
+.contact-page-form input,.contact-page-form textarea,.contact-page-form select{font:inherit;font-size:15px;line-height:1.5;width:100%;border:1px solid #c8d7d1;border-radius:0;padding:13px 14px;background:#fbfcfa;color:var(--ink);box-sizing:border-box}
+.contact-page-form .form-row{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.contact-page-form .form-note,.contact-page-form .form-privacy{font-size:12px;line-height:1.8;margin:14px 0;color:var(--muted)}
+.contact-page-form .result-actions{display:flex;flex-wrap:wrap;gap:16px;margin:24px 0}
+.contact-page-form #contact-result h3{font-family:var(--serif);font-size:38px;font-weight:400;line-height:1.15;margin:16px 0}
+.contact-page-form #edit-request{font-size:12px;margin-top:12px}
+.contact-page-form :is(input,textarea,select,button,a):focus-visible{outline:2px solid var(--teal);outline-offset:4px}
+#contact-server-consent[hidden],#contact-send-server[hidden],#contact-delivery-status[hidden]{display:none!important}
+@media(max-width:600px){.contact-page-form .form-row{grid-template-columns:1fr;gap:0}.contact-review{padding:14px;font-size:12px}.contact-page-form .result-actions{align-items:stretch;flex-direction:column}.contact-page-form .result-actions .button{white-space:normal;text-align:center}}

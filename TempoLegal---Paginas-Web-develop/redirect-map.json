@@ -1,0 +1,127 @@
+[
+  {
+    "source": "/politica-de-privacidad.html",
+    "destination": "/politica-de-privacidad/",
+    "status": 301
+  },
+  {
+    "source": "/article-data-protection-officer.html",
+    "destination": "/dpd-obligatorio-ecuador-2026-criterios-spdp/",
+    "status": 301
+  },
+  {
+    "source": "/terminos-y-condiciones.html",
+    "destination": "/terminos-y-condiciones/",
+    "status": 301
+  },
+  {
+    "source": "/en/politica-de-privacidad.html",
+    "destination": "/en/politica-de-privacidad/",
+    "status": 301
+  },
+  {
+    "source": "/en/article-data-protection-officer.html",
+    "destination": "/en/dpd-obligatorio-ecuador-2026-criterios-spdp/",
+    "status": 301
+  },
+  {
+    "source": "/pt/politica-de-privacidad.html",
+    "destination": "/pt/politica-de-privacidad/",
+    "status": 301
+  },
+  {
+    "source": "/pt/article-data-protection-officer.html",
+    "destination": "/pt/dpd-obligatorio-ecuador-2026-criterios-spdp/",
+    "status": 301
+  },
+  {
+    "source": "/fr/politica-de-privacidad.html",
+    "destination": "/fr/politica-de-privacidad/",
+    "status": 301
+  },
+  {
+    "source": "/fr/article-data-protection-officer.html",
+    "destination": "/fr/dpd-obligatorio-ecuador-2026-criterios-spdp/",
+    "status": 301
+  },
+  {
+    "source": "/en/services/accounting-support/",
+    "destination": "/en/servicios-contabilidad/",
+    "status": 301
+  },
+  {
+    "source": "/en/services/legal-representation/",
+    "destination": "/en/representacion-legal-fiscal-ecuador/",
+    "status": 301
+  },
+  {
+    "source": "/en/services/sas-incorporation/",
+    "destination": "/en/constitucion-de-empresas-sas/",
+    "status": 301
+  },
+  {
+    "source": "/en/services/corporate-amendments/",
+    "destination": "/en/tramites-notariales-y-societarios/",
+    "status": 301
+  },
+  {
+    "source": "/services/accounting-support/",
+    "destination": "/servicios-contabilidad/",
+    "status": 301
+  },
+  {
+    "source": "/services/legal-representation/",
+    "destination": "/representacion-legal-fiscal-ecuador/",
+    "status": 301
+  },
+  {
+    "source": "/services/sas-incorporation/",
+    "destination": "/constitucion-de-empresas-sas/",
+    "status": 301
+  },
+  {
+    "source": "/services/corporate-amendments/",
+    "destination": "/tramites-notariales-y-societarios/",
+    "status": 301
+  },
+  {
+    "source": "/pt/services/accounting-support/",
+    "destination": "/pt/servicios-contabilidad/",
+    "status": 301
+  },
+  {
+    "source": "/pt/services/legal-representation/",
+    "destination": "/pt/representacion-legal-fiscal-ecuador/",
+    "status": 301
+  },
+  {
+    "source": "/pt/services/sas-incorporation/",
+    "destination": "/pt/constitucion-de-empresas-sas/",
+    "status": 301
+  },
+  {
+    "source": "/pt/services/corporate-amendments/",
+    "destination": "/pt/tramites-notariales-y-societarios/",
+    "status": 301
+  },
+  {
+    "source": "/fr/services/accounting-support/",
+    "destination": "/fr/servicios-contabilidad/",
+    "status": 301
+  },
+  {
+    "source": "/fr/services/legal-representation/",
+    "destination": "/fr/representacion-legal-fiscal-ecuador/",
+    "status": 301
+  },
+  {
+    "source": "/fr/services/sas-incorporation/",
+    "destination": "/fr/constitucion-de-empresas-sas/",
+    "status": 301
+  },
+  {
+    "source": "/fr/services/corporate-amendments/",
+    "destination": "/fr/tramites-notariales-y-societarios/",
+    "status": 301
+  }
+]
