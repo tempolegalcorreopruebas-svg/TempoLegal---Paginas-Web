@@ -1,0 +1,13 @@
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+Thumbs.db
+.DS_Store
+server/tempo-private/config.php
+server/tempo-private/state/
+.openai/
+qa-*.html
+*.bundle
+_traducciones/pendiente-*.json
