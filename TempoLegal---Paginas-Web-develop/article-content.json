@@ -1,0 +1,442 @@
+{
+  "biometrics": {
+    "es": [
+      [
+        "Antes de elegir el equipo",
+        "Controlar la asistencia no empieza por comprar un lector. Empieza por definir qué necesita comprobar la empresa, por qué necesita identificar a cada trabajador y qué información basta para hacerlo. La comodidad de un sistema no sustituye el análisis de su necesidad.",
+        "Compare tarjetas, códigos o registros supervisados con la huella o el reconocimiento facial. Documente las diferencias de seguridad, funcionamiento y afectación a las personas. Esa comparación permite tomar una decisión explicable y revisar después si el sistema sigue siendo adecuado."
+      ],
+      [
+        "La información que realmente se trata",
+        "Una plantilla biométrica sigue siendo información personal cuando permite identificar a alguien. El análisis debe abarcar la captura, la conversión de la muestra, las marcaciones, las copias de respaldo y la eliminación; no solamente el aparato instalado en recepción.",
+        "Dibuje el recorrido del dato: quién lo recoge, dónde queda almacenado, quién puede consultarlo y si sale de la empresa. Incluya al proveedor, sus accesos remotos y los servicios de alojamiento que intervienen."
+      ],
+      [
+        "Base jurídica, riesgos y alternativas",
+        "La biometría de identificación exige revisar el régimen de datos sensibles, la condición jurídica aplicable y la proporcionalidad. En una relación laboral, una firma de consentimiento no resuelve automáticamente si la decisión del trabajador es libre.",
+        "La regulación biométrica de la SPDP exige analizar riesgos y evaluar el impacto en los términos aplicables. Revise también las obligaciones de designación de DPD; la huella y el reconocimiento facial no deben tratarse como supuestos idénticos."
+      ],
+      [
+        "Proveedor y operación cotidiana",
+        "Pida respuestas verificables sobre almacenamiento, accesos, cifrado, conservación, soporte y respuesta a incidentes. Cuando el proveedor actúe como encargado, el contrato debe delimitar instrucciones y responsabilidades.",
+        "Asigne responsables internos para altas, bajas y cambios de permisos. El retiro de un trabajador debe activar la revisión de accesos y la conservación o eliminación que corresponda, sin dejar copias indefinidas por simple inercia."
+      ],
+      [
+        "Una revisión que deje evidencia",
+        "Organice un expediente con el inventario del sistema, la justificación, el análisis de riesgos, los avisos y contratos, y las medidas adoptadas. Identifique los ajustes pendientes, su responsable y su fecha prevista.",
+        "El régimen transitorio de adecuación debe incorporarse a ese plan; no supone una suspensión general de la LOPDP. Vuelva a revisar el expediente cuando cambie el proveedor, la tecnología o la finalidad del control."
+      ]
+    ],
+    "en": [
+      [
+        "Start with the purpose",
+        "Attendance monitoring begins with a business need, rather than a device purchase. Define what the company must establish, why individual identification is necessary and how much information is sufficient. Convenience alone does not demonstrate necessity.",
+        "Compare cards, access codes and supervised records with fingerprint or facial recognition systems. Record their operational, security and privacy differences so that the decision can be explained and reassessed."
+      ],
+      [
+        "Map the information lifecycle",
+        "A biometric template remains personal information when it identifies someone. Review capture, template creation, attendance records, backups and deletion, including the systems behind the reader.",
+        "Map who collects information, where it is stored, who can access it and whether it leaves the company. Include remote support, hosting services and any other supplier involved."
+      ],
+      [
+        "Assess legal grounds and impact",
+        "Biometric identification requires a review of sensitive-data rules, the applicable legal condition and proportionality. An employee’s signature does not automatically establish that consent was freely given.",
+        "The SPDP biometric regulation requires risk analysis and impact assessment under its applicable provisions. Review DPO designation requirements as well: fingerprints and facial recognition should not be assumed to fall into identical regulatory situations."
+      ],
+      [
+        "Define supplier responsibilities",
+        "Request verifiable details about storage, access, encryption, retention, support and incident response. If a supplier acts as a processor, its agreement must define instructions and responsibilities.",
+        "Assign internal responsibility for registration, departures and permission changes. When a worker leaves, review access and the appropriate retention or deletion process; avoid keeping copies indefinitely by default."
+      ],
+      [
+        "Keep an evidence file",
+        "Maintain an inventory, justification, risk assessment, notices, agreements and a record of implemented safeguards. Give every outstanding action an owner and a target date.",
+        "Include the transitional compliance arrangements in the plan. They do not generally suspend existing LOPDP duties. Reassess the file whenever the supplier, technology or monitoring purpose changes."
+      ]
+    ],
+    "pt": [
+      [
+        "Comece pela finalidade",
+        "O controle de frequência começa por uma necessidade da empresa. Defina o que precisa comprovar, por que a identificação individual é necessária e quais informações bastam. A conveniência do equipamento não demonstra, por si só, a necessidade do tratamento.",
+        "Compare cartões, códigos e registros supervisionados com leitores de impressão digital ou reconhecimento facial. Documente diferenças operacionais, de segurança e de impacto sobre as pessoas para justificar e reavaliar a escolha."
+      ],
+      [
+        "Mapeie o ciclo da informação",
+        "Uma representação biométrica continua sendo informação pessoal quando permite identificar alguém. A análise abrange captura, criação do modelo, registros de frequência, cópias de segurança e eliminação, incluindo os sistemas conectados ao leitor.",
+        "Identifique quem coleta os dados, onde ficam armazenados, quem pode consultá-los e se saem da empresa. Inclua suporte remoto, hospedagem e os fornecedores envolvidos."
+      ],
+      [
+        "Fundamento jurídico e impacto",
+        "A identificação biométrica exige revisar as regras sobre dados sensíveis, a condição jurídica aplicável e a proporcionalidade. A assinatura do trabalhador não resolve automaticamente se o consentimento foi livre.",
+        "A regulamentação biométrica da SPDP prevê análise de riscos e avaliação de impacto nos termos aplicáveis. Verifique também a necessidade de designar DPD: impressão digital e reconhecimento facial não devem ser tratados como situações regulatórias idênticas."
+      ],
+      [
+        "Responsabilidades do fornecedor",
+        "Solicite informações verificáveis sobre armazenamento, acessos, criptografia, conservação, suporte e resposta a incidentes. Se o fornecedor atuar como operador, o contrato deve delimitar instruções e responsabilidades.",
+        "Defina responsáveis internos pelos cadastros, desligamentos e permissões. A saída de um trabalhador deve provocar a revisão de acessos e da conservação ou eliminação correspondente, sem cópias mantidas indefinidamente por padrão."
+      ],
+      [
+        "Um processo com evidências",
+        "Organize inventário, justificativa, avaliação de riscos, avisos, contratos e registro das medidas adotadas. Cada ajuste pendente precisa de responsável e prazo previsto.",
+        "Inclua as disposições transitórias de adequação no plano; elas não suspendem de forma geral as obrigações existentes da LOPDP. Reavalie o processo quando mudarem fornecedor, tecnologia ou finalidade."
+      ]
+    ],
+    "fr": [
+      [
+        "Partir du besoin de l’entreprise",
+        "Le contrôle des présences commence par une finalité précise. Déterminez ce que l’entreprise doit vérifier, pourquoi une identification individuelle est nécessaire et quelles informations suffisent. La commodité du dispositif ne démontre pas, à elle seule, sa nécessité.",
+        "Comparez cartes, codes et registres supervisés avec les empreintes ou la reconnaissance faciale. Consignez les différences de fonctionnement, de sécurité et d’impact sur les personnes pour pouvoir expliquer puis réexaminer le choix."
+      ],
+      [
+        "Suivre le cycle des informations",
+        "Un modèle biométrique reste une donnée personnelle lorsqu’il permet d’identifier une personne. Examinez la capture, la création du modèle, les pointages, les sauvegardes et l’effacement, ainsi que les systèmes reliés au lecteur.",
+        "Identifiez les personnes qui collectent les données, leur lieu de stockage, les accès autorisés et les éventuels transferts hors de l’entreprise. Intégrez l’assistance à distance, l’hébergement et les prestataires concernés."
+      ],
+      [
+        "Fondement juridique et impact",
+        "L’identification biométrique exige d’examiner les règles relatives aux données sensibles, le fondement applicable et la proportionnalité. La signature d’un salarié ne prouve pas automatiquement que son consentement est libre.",
+        "La réglementation biométrique de la SPDP prévoit une analyse des risques et une évaluation d’impact selon ses dispositions applicables. Vérifiez aussi la désignation d’un DPD : empreintes et reconnaissance faciale ne relèvent pas nécessairement d’une situation réglementaire identique."
+      ],
+      [
+        "Encadrer le prestataire",
+        "Demandez des informations vérifiables sur le stockage, les accès, le chiffrement, la conservation, l’assistance et la gestion des incidents. Si le prestataire agit comme sous-traitant, le contrat doit préciser instructions et responsabilités.",
+        "Désignez les responsables des inscriptions, des départs et des changements de droits. Le départ d’un salarié doit déclencher une vérification des accès et des modalités de conservation ou d’effacement, sans copies indéfiniment conservées par défaut."
+      ],
+      [
+        "Conserver un dossier de suivi",
+        "Rassemblez inventaire, justification, évaluation des risques, notices, contrats et preuves des mesures prises. Affectez un responsable et une échéance à chaque action restante.",
+        "Intégrez les dispositions transitoires de mise en conformité au calendrier ; elles ne suspendent pas globalement les obligations existantes de la LOPDP. Réexaminez le dossier si le prestataire, la technologie ou la finalité change."
+      ]
+    ]
+  },
+  "dpd": {
+    "es": [
+      [
+        "La decisión va más allá del presupuesto",
+        "Elegir un DPD interno o externo implica decidir cómo se sostendrán la independencia, el conocimiento de la operación y la continuidad del trabajo. Antes de comparar honorarios, confirme si su organización debe designarlo y qué tratamientos requieren mayor atención.",
+        "Prepare un mapa de compañías, sedes, procesos, proveedores y categorías de datos. Ese contexto permite comparar propuestas con un alcance equivalente y evita contratar una función que solo existe en el nombramiento."
+      ],
+      [
+        "Qué función se está contratando",
+        "El DPD asesora, supervisa y coopera con la autoridad; la responsabilidad de decidir y ejecutar las medidas de la empresa no se traslada automáticamente al delegado. Separar esas funciones ayuda a evitar conflictos de interés.",
+        "Defina a quién informa el DPD, cómo accede a la documentación y qué canal utilizará para comunicar riesgos. Su trabajo necesita acceso a la operación y una interlocución efectiva con la dirección."
+      ],
+      [
+        "Dos modelos, condiciones distintas",
+        "Un perfil interno puede conocer de cerca los procesos y estar disponible diariamente. Hay que revisar su idoneidad, carga de trabajo, autonomía y posibles incompatibilidades con otros cargos.",
+        "Un servicio externo puede aportar especialización y continuidad contractual. Debe conocer la operación real y prever reuniones, acceso a información y reemplazos. Ningún modelo garantiza por sí solo una supervisión independiente o suficiente."
+      ],
+      [
+        "Compare alcance y entregables",
+        "Para valorar el costo, compare dedicación, número de sociedades, complejidad de los datos y actividades incluidas. Distinga supervisión, implementación, defensa y apoyo técnico: no siempre forman parte del mismo servicio.",
+        "Puede acordarse un plan con diagnóstico inicial, prioridades, reuniones periódicas e informes de seguimiento. Ese calendario es una herramienta operativa que debe adaptarse al caso, no un listado de obligaciones mensuales impuesto de manera uniforme por la ley."
+      ],
+      [
+        "Cómo evaluar la propuesta",
+        "Solicite una descripción del perfil designado, su independencia, los canales de atención, el manejo de información confidencial y la forma de documentar recomendaciones. Revise las condiciones de terminación y entrega de expedientes.",
+        "La pregunta final no es únicamente cuánto cuesta. Es si la organización podrá demostrar una función activa, con información suficiente, seguimiento de riesgos y acceso a la dirección cuando una decisión lo requiera."
+      ]
+    ],
+    "en": [
+      [
+        "Look beyond the budget",
+        "Choosing an internal or external DPO involves independence, operational knowledge and continuity. Before comparing fees, establish whether your organization must designate a DPO and which processing activities need the most attention.",
+        "Map the entities, locations, processes, suppliers and data categories involved. This context makes proposals comparable and helps avoid a function that exists only in an appointment document."
+      ],
+      [
+        "Define the function",
+        "The DPO advises, monitors and cooperates with the authority. Responsibility for business decisions and implementation does not automatically transfer to the officer. Distinguishing these roles helps prevent conflicts of interest.",
+        "Set out reporting lines, access to documentation and a route for escalating risks. The role requires access to operations and effective communication with senior management."
+      ],
+      [
+        "Two models to assess",
+        "An internal professional may know the business well and be available daily. Assess qualifications, workload, autonomy and possible incompatibilities with other positions.",
+        "An external service may provide specialist knowledge and contractual continuity. It still needs an understanding of actual operations, regular meetings, access to information and replacement arrangements. Neither model alone guarantees independent or sufficient oversight."
+      ],
+      [
+        "Compare scope and deliverables",
+        "Assess cost against time commitment, the number of entities, data complexity and included activities. Separate oversight, implementation, legal representation and technical support; these are not necessarily one service.",
+        "A practical plan can include an initial assessment, priorities, periodic meetings and progress reports. Such a calendar is an operational tool to adapt to the organization, rather than a uniform list of legally mandated monthly tasks."
+      ],
+      [
+        "Review the proposal",
+        "Ask about the designated professional, independence, availability, confidential information and how recommendations are documented. Review termination arrangements and the handover of records.",
+        "The final question is whether the organization can demonstrate an active function with adequate information, risk follow-up and access to management when a decision requires it."
+      ]
+    ],
+    "pt": [
+      [
+        "Além do orçamento",
+        "Escolher DPD interno ou externo envolve independência, conhecimento da operação e continuidade. Antes de comparar honorários, confirme se a organização deve designar um delegado e quais tratamentos exigem mais atenção.",
+        "Mapeie empresas, unidades, processos, fornecedores e categorias de dados. Esse contexto permite comparar propostas equivalentes e evita uma função que exista apenas no documento de nomeação."
+      ],
+      [
+        "Defina a função contratada",
+        "O DPD assessora, supervisiona e coopera com a autoridade. A responsabilidade por decisões e pela execução das medidas da empresa não passa automaticamente ao delegado. Distinguir essas funções ajuda a prevenir conflitos de interesse.",
+        "Defina a linha de reporte, o acesso aos documentos e o canal para comunicar riscos. O trabalho exige acesso à operação e interlocução efetiva com a direção."
+      ],
+      [
+        "Dois modelos para avaliar",
+        "Um profissional interno pode conhecer bem os processos e estar disponível diariamente. Verifique qualificação, carga de trabalho, autonomia e incompatibilidades com outros cargos.",
+        "Um serviço externo pode oferecer especialização e continuidade contratual. Ainda precisa conhecer a operação real e prever reuniões, acesso a informações e substituições. Nenhum modelo garante, sozinho, supervisão independente ou suficiente."
+      ],
+      [
+        "Compare escopo e entregas",
+        "Avalie o custo conforme dedicação, quantidade de sociedades, complexidade dos dados e atividades incluídas. Separe supervisão, implementação, representação jurídica e apoio técnico; nem sempre integram o mesmo serviço.",
+        "Um plano pode reunir diagnóstico inicial, prioridades, reuniões periódicas e relatórios. Esse calendário é uma ferramenta operacional adaptável, e não uma lista uniforme de tarefas mensais imposta por lei."
+      ],
+      [
+        "Analise a proposta",
+        "Peça a descrição do profissional designado, sua independência, disponibilidade, proteção de informações confidenciais e registro das recomendações. Examine o encerramento do contrato e a entrega dos documentos.",
+        "A questão final é saber se a organização conseguirá demonstrar uma função ativa, com informações suficientes, acompanhamento dos riscos e acesso à direção quando necessário."
+      ]
+    ],
+    "fr": [
+      [
+        "Au-delà du budget",
+        "Choisir un DPD interne ou externe engage son indépendance, sa connaissance des opérations et la continuité de sa mission. Avant de comparer les honoraires, vérifiez l’obligation de désignation et les traitements prioritaires.",
+        "Cartographiez sociétés, sites, processus, prestataires et catégories de données. Ce contexte permet de comparer des offres équivalentes et évite une fonction limitée au seul acte de nomination."
+      ],
+      [
+        "Définir la mission",
+        "Le DPD conseille, supervise et coopère avec l’autorité. La responsabilité des décisions et de la mise en œuvre ne lui est pas automatiquement transférée. Distinguer ces rôles contribue à prévenir les conflits d’intérêts.",
+        "Précisez le rattachement, l’accès aux documents et le canal d’alerte. La mission nécessite une connaissance concrète des activités et un dialogue effectif avec la direction."
+      ],
+      [
+        "Comparer les deux modèles",
+        "Un professionnel interne peut connaître les processus et être disponible au quotidien. Examinez ses qualifications, sa charge de travail, son autonomie et la compatibilité de ses autres fonctions.",
+        "Une prestation externe peut apporter expertise et continuité contractuelle. Elle exige néanmoins des réunions, l’accès aux informations et des modalités de remplacement. Aucun modèle ne garantit, à lui seul, une supervision indépendante et suffisante."
+      ],
+      [
+        "Périmètre et livrables",
+        "Évaluez le coût selon le temps consacré, le nombre de sociétés, la complexité des données et les activités incluses. Distinguez supervision, mise en œuvre, représentation juridique et assistance technique.",
+        "Un calendrier peut prévoir diagnostic, priorités, réunions et rapports de suivi. Il s’agit d’un outil opérationnel adaptable, et non d’une liste uniforme de tâches mensuelles imposées par la loi."
+      ],
+      [
+        "Évaluer la proposition",
+        "Demandez le profil du professionnel désigné, ses garanties d’indépendance, sa disponibilité et les modalités de confidentialité et de documentation des recommandations. Examinez la fin du contrat et la restitution des dossiers.",
+        "La question finale est de pouvoir démontrer une fonction active, disposant d’informations suffisantes, assurant le suivi des risques et accédant à la direction lorsque la situation l’exige."
+      ]
+    ]
+  },
+  "shareholders": {
+    "es": [
+      [
+        "Acordar antes de que exista el conflicto",
+        "Un proyecto compartido necesita reglas para las decisiones difíciles. La entrada de un inversionista, la salida de un fundador o una diferencia sobre dividendos puede revelar expectativas que nunca se dejaron por escrito.",
+        "El acuerdo de accionistas permite ordenar compromisos entre sus firmantes. Debe leerse junto con el estatuto y las normas aplicables al tipo de compañía; no reemplaza automáticamente las formalidades societarias."
+      ],
+      [
+        "Qué decisiones quiere proteger",
+        "Identifique las decisiones ordinarias y las que merecen una aprobación especial. Puede ser útil conversar sobre financiamiento, endeudamiento, administradores, nuevas inversiones y operaciones con personas vinculadas.",
+        "Especifique convocatorias, información previa y mecanismos de votación. Una lista de materias reservadas debe proteger intereses relevantes sin volver imposible la administración cotidiana."
+      ],
+      [
+        "Entrada, venta y salida",
+        "Defina cómo se ofrecerán las acciones, qué información recibirá el posible comprador y cómo se determinará el precio. Considere derechos de acompañamiento o arrastre cuando sean adecuados y jurídicamente viables para la estructura.",
+        "Distinga una venta voluntaria de situaciones como fallecimiento, incapacidad o incumplimiento. Las condiciones de salida deben ser comprensibles, ejecutables y coherentes con la ley y el estatuto."
+      ],
+      [
+        "La forma también importa",
+        "En una SAS, la regulación contempla el depósito del acuerdo en las oficinas de administración para que sea acatado por la compañía. También prevé una duración máxima de diez años, prorrogable por unanimidad de sus suscriptores.",
+        "No traslade esas reglas sin más a una compañía limitada o a una sociedad anónima. La eficacia frente a la sociedad y a terceros requiere un análisis según el tipo societario y el contenido del pacto."
+      ],
+      [
+        "Un procedimiento para los desacuerdos",
+        "Diseñe una ruta de negociación, escalamiento y solución de controversias. Determine qué ocurre mientras se resuelve un bloqueo y cómo se conserva la documentación de las decisiones.",
+        "Revise el acuerdo cuando cambien los accionistas, la inversión o el modelo de negocio. Un documento firmado hace años puede dejar de reflejar quién asume riesgos, aporta recursos o participa en el control."
+      ]
+    ],
+    "en": [
+      [
+        "Agree before a dispute arises",
+        "A shared business needs rules for difficult decisions. An investor’s arrival, a founder’s departure or a dividend disagreement may expose expectations that were never recorded.",
+        "A shareholder agreement organizes commitments between its signatories. Read it together with the articles of association and the law applicable to the company type; it does not automatically replace corporate formalities."
+      ],
+      [
+        "Identify protected decisions",
+        "Distinguish ordinary decisions from matters requiring special approval. Discuss financing, borrowing, directors, new investment and related-party transactions where relevant.",
+        "Specify notice, advance information and voting arrangements. Reserved matters should protect important interests without making everyday management unworkable."
+      ],
+      [
+        "Entry, transfers and exit",
+        "Define how shares are offered, what information buyers receive and how price is determined. Consider tag-along or drag-along arrangements where appropriate and legally suitable for the structure.",
+        "Distinguish voluntary sales from death, incapacity or breach. Exit conditions should be understandable, enforceable and consistent with the law and the company’s articles."
+      ],
+      [
+        "Formalities matter",
+        "For an Ecuadorian SAS, the rules provide for depositing the agreement at the administrative offices so that the company must observe it. They also establish a maximum ten-year duration, renewable by unanimous agreement of the signatories.",
+        "Do not automatically apply those rules to a limited liability company or a public limited company. Effects on the company and third parties require analysis of the company type and the particular agreement."
+      ],
+      [
+        "Plan for disagreement",
+        "Define negotiation, escalation and dispute-resolution steps. Decide what happens while a deadlock is being resolved and how decisions will be documented.",
+        "Review the agreement when shareholders, investment or the business model change. An older signed document may no longer reflect who contributes resources, takes risks or exercises control."
+      ]
+    ],
+    "pt": [
+      [
+        "Acordar antes do conflito",
+        "Um negócio compartilhado precisa de regras para decisões difíceis. A entrada de investidor, a saída de fundador ou uma divergência sobre dividendos pode revelar expectativas nunca registradas.",
+        "O acordo de acionistas organiza compromissos entre seus signatários. Deve ser lido com o estatuto e a legislação do tipo societário; não substitui automaticamente as formalidades da sociedade."
+      ],
+      [
+        "Identifique as decisões protegidas",
+        "Separe decisões ordinárias das matérias que exigem aprovação especial. Discuta financiamento, endividamento, administradores, novos investimentos e operações com partes relacionadas, conforme o caso.",
+        "Defina convocações, informações prévias e votação. As matérias reservadas devem proteger interesses relevantes sem inviabilizar a administração cotidiana."
+      ],
+      [
+        "Entrada, transferência e saída",
+        "Estabeleça como as ações serão oferecidas, quais informações o comprador receberá e como o preço será determinado. Considere acompanhamento ou arraste quando adequados e juridicamente compatíveis com a estrutura.",
+        "Diferencie venda voluntária de falecimento, incapacidade ou descumprimento. As condições de saída devem ser compreensíveis, executáveis e coerentes com a lei e o estatuto."
+      ],
+      [
+        "A forma também importa",
+        "Para uma SAS equatoriana, a regulamentação prevê o depósito do acordo nas instalações administrativas para que a sociedade o observe. Prevê ainda duração máxima de dez anos, renovável por unanimidade dos signatários.",
+        "Não aplique essas regras automaticamente a uma companhia limitada ou sociedade anônima. Os efeitos perante a companhia e terceiros dependem do tipo societário e do conteúdo do acordo."
+      ],
+      [
+        "Planeje as divergências",
+        "Defina negociação, escalonamento e solução de controvérsias. Estabeleça o que ocorre durante um impasse e como as decisões serão documentadas.",
+        "Reavalie o acordo quando mudarem acionistas, investimentos ou modelo de negócio. Um documento antigo pode deixar de refletir quem aporta recursos, assume riscos ou participa do controle."
+      ]
+    ],
+    "fr": [
+      [
+        "S’accorder avant le conflit",
+        "Un projet commun exige des règles pour les décisions difficiles. L’arrivée d’un investisseur, le départ d’un fondateur ou un différend sur les dividendes peut révéler des attentes jamais formalisées.",
+        "Le pacte d’actionnaires organise les engagements de ses signataires. Il doit être lu avec les statuts et le droit applicable à la forme sociale ; il ne remplace pas automatiquement les formalités sociétaires."
+      ],
+      [
+        "Définir les décisions protégées",
+        "Distinguez les décisions courantes des sujets nécessitant une approbation particulière. Examinez financement, endettement, dirigeants, investissements et opérations avec des parties liées selon les besoins.",
+        "Précisez convocations, informations préalables et modalités de vote. Les décisions réservées doivent protéger les intérêts importants sans bloquer la gestion quotidienne."
+      ],
+      [
+        "Entrée, cession et sortie",
+        "Définissez l’offre des actions, l’information des acquéreurs et la détermination du prix. Envisagez des mécanismes de sortie conjointe ou forcée lorsqu’ils sont pertinents et juridiquement adaptés.",
+        "Distinguez cession volontaire, décès, incapacité et manquement. Les conditions de sortie doivent être compréhensibles, applicables et compatibles avec la loi et les statuts."
+      ],
+      [
+        "Respecter les formalités",
+        "Pour une SAS équatorienne, la réglementation prévoit le dépôt du pacte dans les locaux administratifs afin que la société soit tenue de le respecter. Elle prévoit aussi une durée maximale de dix ans, renouvelable à l’unanimité des signataires.",
+        "N’appliquez pas automatiquement ces règles aux autres formes de société. Les effets à l’égard de la société et des tiers dépendent de la forme sociale et du contenu du pacte."
+      ],
+      [
+        "Organiser les désaccords",
+        "Définissez les étapes de négociation, d’escalade et de règlement des litiges. Précisez la gestion pendant un blocage et la conservation des décisions.",
+        "Réexaminez le pacte lorsque l’actionnariat, l’investissement ou le modèle économique évolue. Un document ancien peut ne plus refléter les contributions, les risques et le contrôle effectifs."
+      ]
+    ]
+  },
+  "breach": {
+    "es": [
+      [
+        "Reconocer el incidente",
+        "Una vulneración no se limita al robo de una base de datos. También puede afectar la integridad o disponibilidad de la información: un envío equivocado, una pérdida de acceso o la alteración de registros merece evaluación.",
+        "Registre cuándo se detectó, quién informó, qué sistemas intervienen y qué datos podrían estar comprometidos. Separe hechos confirmados, hipótesis y preguntas pendientes para evitar que una suposición se convierta en la versión oficial."
+      ],
+      [
+        "Contener sin perder evidencia",
+        "Coordine a tecnología, dirección y asesoría jurídica. Limite accesos comprometidos, preserve registros y acuerde qué cambios pueden realizarse sin destruir evidencia útil.",
+        "Si interviene un proveedor, pida su cronología, los sistemas afectados y las medidas adoptadas. No espere un informe perfecto para iniciar la evaluación interna; mantenga un registro de decisiones y responsables."
+      ],
+      [
+        "Evaluar el riesgo para las personas",
+        "Identifique las categorías de datos, las personas afectadas, el volumen, la posible exposición y las medidas de protección existentes. Valore consecuencias como fraude, suplantación o exposición de información sensible.",
+        "La evaluación debe justificar las decisiones sobre avisos y notificaciones. Las excepciones requieren análisis y documentación; no deben utilizarse como una decisión informal de guardar silencio."
+      ],
+      [
+        "Separar el cronograma de los términos legales",
+        "Las primeras 48 horas pueden utilizarse como una pauta operativa de respuesta. No sustituyen los términos de la LOPDP ni son un plazo único aplicable a todos los destinatarios.",
+        "La ley contempla, según el supuesto, aviso del encargado al responsable en un máximo de dos días; notificación del responsable a la SPDP y ARCOTEL en un máximo de cinco días, salvo riesgo improbable; y comunicación a titulares en un máximo de tres días cuando existe riesgo para sus derechos. Revise el inicio del cómputo y las excepciones aplicables."
+      ],
+      [
+        "Comunicar y cerrar con seguimiento",
+        "Prepare comunicaciones claras con la información conocida, las medidas adoptadas y un canal de contacto. Evite asegurar que no existe afectación si todavía se está investigando.",
+        "Una vez contenida la situación, documente causas, correcciones y verificaciones pendientes. Actualice contratos, permisos y protocolos cuando corresponda y compruebe que las medidas acordadas se implementaron. La recuperación técnica no sustituye el cierre jurídico y organizativo."
+      ]
+    ],
+    "en": [
+      [
+        "Recognize the incident",
+        "A personal data breach is not limited to database theft. Integrity or availability can also be affected: a misdirected message, lost access or altered records may require assessment.",
+        "Record detection time, who raised the alert, affected systems and potentially compromised information. Separate confirmed facts, hypotheses and unanswered questions so assumptions do not become the official account."
+      ],
+      [
+        "Contain and preserve evidence",
+        "Coordinate technology, management and legal support. Restrict compromised access, preserve logs and agree which changes can be made without destroying useful evidence.",
+        "Ask involved suppliers for their timeline, affected systems and response measures. Do not wait for a perfect report before starting the internal assessment. Keep a decision log with named owners."
+      ],
+      [
+        "Assess risks to people",
+        "Identify data categories, affected individuals, volume, possible exposure and existing safeguards. Consider fraud, impersonation and the disclosure of sensitive information.",
+        "Document the assessment underlying communication and notification decisions. Exceptions require analysis and evidence; they should not become an informal decision to remain silent."
+      ],
+      [
+        "Distinguish response targets from legal time limits",
+        "The first 48 hours can be an operational response framework. They do not replace LOPDP time limits or create one deadline for every recipient.",
+        "Depending on the situation, the law provides a maximum of two days for processor-to-controller notice; five days for controller notification to the SPDP and ARCOTEL unless risk is unlikely; and three days for communication to individuals where their rights are at risk. Review when the applicable period starts, its computation and relevant exceptions."
+      ],
+      [
+        "Communicate and follow through",
+        "Use clear communications describing known information, response measures and a contact channel. Do not assert that nobody was affected while the investigation remains open.",
+        "After containment, document causes, corrections and remaining checks. Update agreements, permissions and procedures where appropriate, then verify implementation. Technical recovery does not replace legal and organizational closure."
+      ]
+    ],
+    "pt": [
+      [
+        "Reconheça o incidente",
+        "Uma violação não se limita ao roubo de uma base. Integridade e disponibilidade também podem ser afetadas: envio ao destinatário errado, perda de acesso ou alteração de registros exigem avaliação.",
+        "Registre a detecção, quem informou, os sistemas envolvidos e os dados potencialmente comprometidos. Separe fatos confirmados, hipóteses e dúvidas para evitar que suposições se tornem a versão oficial."
+      ],
+      [
+        "Contenha e preserve evidências",
+        "Coordene tecnologia, direção e assessoria jurídica. Restrinja acessos comprometidos, preserve registros e defina mudanças que não destruam evidências úteis.",
+        "Solicite aos fornecedores envolvidos cronologia, sistemas afetados e medidas adotadas. Não espere um relatório perfeito para iniciar a avaliação interna. Mantenha registro das decisões e responsáveis."
+      ],
+      [
+        "Avalie o risco para as pessoas",
+        "Identifique categorias de dados, pessoas afetadas, volume, exposição possível e salvaguardas existentes. Considere fraude, falsidade de identidade e exposição de informações sensíveis.",
+        "Documente a avaliação que sustenta avisos e notificações. As exceções exigem análise e evidências; não devem justificar uma decisão informal de permanecer em silêncio."
+      ],
+      [
+        "Separe metas operacionais e prazos legais",
+        "As primeiras 48 horas podem orientar a resposta operacional. Não substituem os termos da LOPDP nem estabelecem prazo único para todos os destinatários.",
+        "Conforme o caso, a lei prevê até dois dias para aviso do operador ao responsável; cinco dias para notificação do responsável à SPDP e ARCOTEL, salvo risco improvável; e três dias para comunicação aos titulares quando houver risco aos seus direitos. Verifique início da contagem, forma de cômputo e exceções aplicáveis."
+      ],
+      [
+        "Comunique e acompanhe",
+        "Prepare comunicações claras com fatos conhecidos, medidas adotadas e canal de contato. Não afirme ausência de impacto enquanto a investigação estiver aberta.",
+        "Após a contenção, documente causas, correções e verificações pendentes. Atualize contratos, permissões e procedimentos quando necessário e confira a implementação. Recuperação técnica não substitui o encerramento jurídico e organizacional."
+      ]
+    ],
+    "fr": [
+      [
+        "Identifier l’incident",
+        "Une violation ne se limite pas au vol d’une base. L’intégrité ou la disponibilité des données peut aussi être touchée : message mal adressé, perte d’accès ou modification de dossiers doivent être évalués.",
+        "Consignez détection, auteur du signalement, systèmes concernés et données potentiellement compromises. Distinguez faits établis, hypothèses et questions ouvertes afin de ne pas officialiser une supposition."
+      ],
+      [
+        "Contenir et préserver les preuves",
+        "Coordonnez informatique, direction et conseil juridique. Restreignez les accès compromis, conservez les journaux et convenez des modifications possibles sans détruire les preuves utiles.",
+        "Demandez aux prestataires concernés chronologie, systèmes affectés et mesures prises. N’attendez pas un rapport parfait pour commencer l’évaluation interne. Conservez un registre des décisions et des responsables."
+      ],
+      [
+        "Évaluer le risque pour les personnes",
+        "Identifiez catégories de données, personnes touchées, volume, exposition possible et protections existantes. Examinez fraude, usurpation d’identité et divulgation d’informations sensibles.",
+        "Documentez l’analyse fondant les communications et notifications. Les exceptions nécessitent une justification ; elles ne doivent pas devenir une décision informelle de garder le silence."
+      ],
+      [
+        "Distinguer objectifs et délais légaux",
+        "Les premières 48 heures peuvent structurer la réponse opérationnelle. Elles ne remplacent pas les délais de la LOPDP et ne constituent pas un délai unique pour tous les destinataires.",
+        "Selon la situation, la loi prévoit au maximum deux jours pour l’avis du sous-traitant au responsable ; cinq jours pour la notification à la SPDP et à ARCOTEL, sauf risque improbable ; et trois jours pour informer les personnes lorsque leurs droits sont menacés. Vérifiez le point de départ, le calcul et les exceptions applicables."
+      ],
+      [
+        "Communiquer et assurer le suivi",
+        "Préparez des communications claires avec les faits connus, les mesures prises et un contact. N’affirmez pas une absence d’impact tant que l’enquête est en cours.",
+        "Après le confinement, documentez causes, corrections et vérifications restantes. Actualisez contrats, habilitations et procédures si nécessaire, puis vérifiez leur application. Le rétablissement technique ne remplace pas la clôture juridique et organisationnelle."
+      ]
+    ]
+  }
+}
