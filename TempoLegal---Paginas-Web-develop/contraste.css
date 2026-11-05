@@ -1,0 +1,26 @@
+/* =====================================================================
+   Tempo Legal · contraste.css · Tarea 5.2 (contraste AA 4,5:1)
+   Textos secundarios de artículos, casos, perfiles, documentos legales y
+   páginas de servicios que no llegaban al mínimo de contraste.
+   Se carga al final de cada página (lo añade _tools/build-header.py).
+   ===================================================================== */
+:root{--tl-muted-aa:#46626e;--tl-link-aa:#1f5f75}
+/* Artículos */
+.article-toc h2,.article-references h2,.article-references li,.article-related-category,.article-enquiry .container p{color:var(--tl-muted-aa)}
+.article-toc ol a,.article-end a{color:var(--tl-link-aa)}
+/* Casos */
+.project-sidebar dt,.project-story-section>p,.project-story-section>.eyebrow,.project-enquiry .container p{color:var(--tl-muted-aa)}
+.project-nav a,.section-heading .text-link{color:var(--tl-link-aa)}
+/* Perfiles */
+.profile-practice h3,.profile-story dt,.profile-facts dt,.profile-colleague span span,.profile-contact-section .container p{color:var(--tl-muted-aa)}
+.profile-return{color:var(--tl-link-aa)}
+dl>div>dt{color:var(--tl-muted-aa)}
+/* Política de privacidad y Términos */
+.privacy-version,.privacy-index>summary{color:var(--tl-muted-aa)}
+.privacy-sidebar ol a,.privacy-actions a,.privacy-actions button{color:var(--tl-link-aa)}
+/* Páginas de servicios */
+.service-scope li{color:var(--tl-muted-aa)}
+/* Reglas de las páginas con mayor especificidad */
+.project-story .project-story-section>p,.project-story .project-story-section>p.eyebrow{color:var(--tl-muted-aa)!important}
+.section-heading>a.text-link{color:var(--tl-link-aa)!important}
+.profile-page dl>div>dt,main dl>div>dt{color:var(--tl-muted-aa)!important}

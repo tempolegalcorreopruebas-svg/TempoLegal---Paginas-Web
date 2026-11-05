@@ -69,7 +69,7 @@
   const header = document.querySelector('[data-common-toggle]');
   if (!header) return;
   const toggle = header.querySelector('.menu-toggle');
-  const nav = header.querySelector('#main-nav');
+  const nav = header.querySelector('#main-nav, #navigation');
   if (!toggle || !nav) return;
   const label = toggle.querySelector('.sr-only');
   const items = () => [...nav.querySelectorAll('a[href], button:not([disabled])')].filter(el => el.offsetParent !== null);

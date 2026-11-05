@@ -1,0 +1,52 @@
+<!-- =====================================================================
+     COMPONENTE · Menú principal de la cabecera (tarea 1.2)
+     Fuente única del menú de TODAS las páginas en español.
+     Editar aquí y ejecutar:  python _tools/build-header.py
+     {root} = ruta hasta la raíz del sitio; {home} = "" en la Home, {root}index.html en el resto.
+     {cta} lo pone el script según la página (diálogo en la Home, #contacto
+     en las landings con formulario, Contacto en el resto).
+     Comportamiento (desplegable, teclado, Escape): site-header.js · estilos: cabecera.css
+     ===================================================================== -->
+<a class="nav-home" data-i18n="menuHome" href="{home}#inicio">Inicio</a>
+<div class="nav-menu" data-nav-menu>
+<button type="button" class="nav-menu-toggle" aria-expanded="false" aria-controls="menu-servicios"><span data-i18n="menuServices">Servicios</span><span class="nav-menu-caret" aria-hidden="true"></span></button>
+<div class="nav-menu-panel" id="menu-servicios" hidden>
+<div class="nav-menu-grid">
+<div class="nav-menu-col">
+<p class="nav-menu-title" data-i18n="menuCorporate">Derecho corporativo</p>
+<a href="{root}services/corporate-law/" data-i18n="menuCorpLaw">Corporativo y societario</a>
+<a href="{root}constitucion-de-empresas-sas/" data-i18n="menuSas">Constitución de SAS</a>
+<a href="{root}services/holding-structures/" data-i18n="menuHoldings">Holdings y estructuras</a>
+<a href="{root}tramites-notariales-y-societarios/" data-i18n="menuAmendments">Reformas y actos societarios</a>
+<a href="{root}services/monthly-legal-advice/" data-i18n="menuMonthly">Asesoría legal mensual</a>
+</div>
+<div class="nav-menu-col">
+<p class="nav-menu-title" data-i18n="menuDataTitle">Protección de datos</p>
+<a href="{root}proteccion-de-datos-personales-ecuador/" data-i18n="menuDataHub">Protección de datos personales</a>
+<a href="{root}proteccion-de-datos-personales-ecuador/delegado-proteccion-datos-externo-ecuador/" data-i18n="menuDpo">Delegado externo (DPD / DPO)</a>
+<a href="{root}proteccion-de-datos-personales-ecuador/implementacion-lopdp/" data-i18n="menuLopdp">Implementación LOPDP</a>
+<a href="{root}herramientas-lopdp/diagnostico/" data-i18n="menuDiagnostic">Diagnóstico gratuito</a>
+</div>
+<div class="nav-menu-col">
+<p class="nav-menu-title" data-i18n="menuForeign">Empresas extranjeras</p>
+<a href="{root}services/soft-landing/" data-i18n="menuSoftLanding">Soft Landing en Ecuador</a>
+<a href="{root}services/foreign-capital/" data-i18n="menuForeignCap">Compañías con capital extranjero</a>
+<a href="{root}services/foreign-branches/" data-i18n="menuBranches">Sucursales extranjeras</a>
+<a href="{root}representacion-legal-fiscal-ecuador/" data-i18n="menuRepresent">Representación y domicilio</a>
+<a href="{root}servicios-contabilidad/" data-i18n="menuAccounting">Contabilidad y soporte</a>
+</div>
+<div class="nav-menu-col">
+<p class="nav-menu-title" data-i18n="menuOther">Otras áreas</p>
+<a href="{home}#servicio-employment" data-i18n="menuEmployment">Derecho laboral empresarial</a>
+<a href="{home}#servicio-ip" data-i18n="menuIp">Marcas y propiedad intelectual</a>
+<a href="{home}#servicio-disputes" data-i18n="menuDisputes">Recuperación de cartera y litigios</a>
+<a href="{home}#servicios" class="nav-menu-all" data-i18n="menuAllServices">Ver todos los servicios →</a>
+</div>
+</div>
+</div>
+</div>
+<a href="{root}proteccion-de-datos-personales-ecuador/" data-i18n="menuDataTitle">Protección de datos</a>
+<a href="{root}sobre-nosotros/" data-i18n="menuAbout">Nosotros</a>
+<a href="{home}#recursos" data-i18n="menuPublications">Publicaciones</a>
+<a href="{root}contactanos/" data-i18n="menuContact">Contacto</a>
+{cta}

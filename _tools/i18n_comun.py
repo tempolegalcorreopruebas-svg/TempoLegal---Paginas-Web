@@ -52,7 +52,27 @@ def fill(template: str, page: str) -> str:
     lang, root, site, home = prefixes(page)
     text = template.replace('href="{root}', 'href="{site}')
     text = text.replace('{site}', site).replace('{root}', root).replace('{home}', home)
+    if lang != 'es':
+        text = fallback_to_spanish(text, lang, root, site)
     return translate_static(text, lang)
+
+
+def target_exists(rel: str) -> bool:
+    rel = rel.split('#', 1)[0].split('?', 1)[0]
+    path = ROOT / rel
+    return path.is_file() or (path / 'index.html').is_file()
+
+
+def fallback_to_spanish(html: str, lang: str, root: str, site: str) -> str:
+    """Si una página aún no existe en el idioma (p. ej. pt/proteccion-de-datos-…),
+    el enlace apunta a la versión en español en lugar de quedar roto."""
+    def fix(m: re.Match) -> str:
+        rest = m.group(1)
+        if target_exists(f'{lang}/{rest}') or not target_exists(rest):
+            return m.group(0)
+        return f'href="{root}{rest}"'
+
+    return re.sub(r'href="' + re.escape(site) + r'([^"#?][^"]*)"', fix, html)
 
 
 @lru_cache(maxsize=1)

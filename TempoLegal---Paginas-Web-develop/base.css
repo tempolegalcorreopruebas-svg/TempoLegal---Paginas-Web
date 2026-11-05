@@ -1,0 +1,116 @@
+/* =====================================================================
+   Tempo Legal · base.css · Sistema visual común (tarea 1.1)
+   Lo usan la Home, las 19 landings y el resto del sitio.
+   Se carga desde la primera línea de styles.css (@import).
+   Regla: los colores, tipografías, tamaños y espacios nuevos salen de
+   aquí. No escribir colores a mano en otros archivos.
+   ===================================================================== */
+
+/* ---------- Tipografías autorizadas ---------- */
+@font-face{font-family:Editorial;src:url('assets/fonts/editorial.woff') format('woff');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:TempoSans;src:url('assets/fonts/sans.woff') format('woff');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:TempoSans;src:url('assets/fonts/sans-medium.woff') format('woff');font-weight:600 800;font-style:normal;font-display:swap}
+
+:root{
+  /* ---------- Colores de marca ---------- */
+  --petroleo:#0e3d4a;        /* fondos oscuros, pie, bloques premium */
+  --petroleo-2:#103e4c;      /* variante del petróleo usada en la Home */
+  --teal:#006e8c;            /* turquesa principal: botones, enlaces, eyebrow */
+  --teal-hover:#07596e;      /* turquesa al pasar el ratón */
+  --teal-header:#3e7490;     /* cabecera */
+  --teal-pale:#9fd3df;       /* turquesa claro sobre fondo oscuro */
+
+  /* ---------- Neutros ---------- */
+  --ink:#17323c;             /* texto principal */
+  --muted:#566268;           /* texto secundario */
+  --paper:#f0f3f2;           /* fondo general */
+  --surface:#ffffff;         /* tarjetas y paneles */
+  --line:#dce1e1;            /* bordes y separadores */
+  --white:#ffffff;
+
+  /* ---------- Acentos (usar con moderación) ---------- */
+  --accent:#d7bd6d;          /* amarillo: solo acento sutil */
+  --accent-soft:#f5ecc9;     /* fondo amarillo muy suave */
+  --risk:#9b3038;            /* rojo sobrio: solo sanciones */
+  --risk-soft:#fcf4f2;       /* fondo de la franja de sanciones */
+
+  /* ---------- Tipografía ---------- */
+  --serif:Editorial,Georgia,serif;
+  --sans:TempoSans,Arial,sans-serif;
+
+  /* Escala de textos (mínimos de la tarea 1.6: etiquetas 12 px, notas 14 px) */
+  --fs-label:clamp(12px,.72vw,13px);   /* eyebrow, etiquetas, chips */
+  --fs-note:clamp(14px,.82vw,15px);    /* notas, pies de foto, ayudas */
+  --fs-body:clamp(15px,1.05vw,21px);   /* texto normal (igual que hoy) */
+  --fs-lead:clamp(18px,1.3vw,24px);    /* entradillas */
+  --fs-h3:clamp(27px,1.9vw,38px);      /* igual que hoy */
+  --fs-h2:clamp(40px,3.8vw,74px);      /* igual que hoy */
+  --fs-h1:clamp(44px,5vw,96px);
+
+  --lh-tight:1.06;
+  --lh-body:1.55;
+  --tracking-label:.2em;
+
+  /* ---------- Espacios ---------- */
+  --space-1:4px;
+  --space-2:8px;
+  --space-3:12px;
+  --space-4:16px;
+  --space-5:24px;
+  --space-6:32px;
+  --space-7:48px;
+  --space-8:72px;
+  --section-space:clamp(72px,6.2vw,120px);
+  --gutter:6.25vw;
+  --container-max:1680px;
+
+  /* ---------- Formas, sombras y movimiento ---------- */
+  --radius-sm:2px;
+  --radius:6px;
+  --radius-lg:14px;
+  --shadow-sm:0 2px 10px #17323c12;
+  --shadow-md:0 12px 32px #17323c1f;
+  --ease:cubic-bezier(.2,.65,.3,1);
+  --dur:.25s;
+  --focus-ring:0 0 0 3px #ffffff,0 0 0 5px var(--teal);
+}
+
+/* ---------- Medidas predecibles en todas las páginas ---------- */
+*,*::before,*::after{box-sizing:border-box}
+
+/* ---------- Foco visible con teclado (accesibilidad) ---------- */
+:where(a,button,input,select,textarea,summary,[tabindex]):focus-visible{
+  outline:2px solid var(--teal);
+  outline-offset:3px;
+}
+
+/* ---------- Botones comunes (nuevos componentes) ----------
+   Uso: <a class="btn btn-primary">…</a>
+   No sustituyen todavía a .button de styles.css; se irán migrando. */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:var(--space-3);
+  min-height:48px;padding:14px 28px;
+  font-family:var(--sans);font-size:clamp(14px,.84vw,17px);font-weight:600;letter-spacing:.015em;line-height:1.2;
+  border:1px solid transparent;border-radius:var(--radius-sm);
+  text-align:center;text-decoration:none;cursor:pointer;
+  transition:background var(--dur),color var(--dur),border-color var(--dur),transform var(--dur),box-shadow var(--dur);
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--teal);color:var(--white)}
+.btn-primary:hover{background:var(--teal-hover);box-shadow:0 8px 24px #006e8c24}
+.btn-outline{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-outline:hover{background:var(--ink);color:var(--white)}
+.btn-light{background:var(--white);color:var(--petroleo)}
+.btn-light:hover{background:var(--teal-pale)}
+.btn-accent{background:var(--accent);color:var(--petroleo)}
+.btn-accent:hover{background:#cbb05c}
+
+/* ---------- Utilidades de texto ---------- */
+.t-label{font-family:var(--sans);font-size:var(--fs-label);font-weight:600;letter-spacing:var(--tracking-label);text-transform:uppercase;line-height:1.5}
+.t-note{font-size:var(--fs-note);line-height:1.5;color:var(--muted)}
+.t-lead{font-size:var(--fs-lead);line-height:1.45}
+
+/* ---------- Menos movimiento si el sistema lo pide ---------- */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}
+}

@@ -1,0 +1,136 @@
+{
+  "es": {
+    "kicker": "TECNOLOGÍA AL SERVICIO DEL SEGUIMIENTO",
+    "title": "Sepa qué está pendiente, quién lo hace y dónde está el respaldo.",
+    "description": "CumpliDatos es la plataforma de TempoLegal para organizar las tareas de protección de datos y dar seguimiento al trabajo con su organización.",
+    "steps": [
+      [
+        "Organice el trabajo",
+        "Identifique tareas, responsables y fechas."
+      ],
+      [
+        "Dé seguimiento",
+        "Revise qué falta y coordine las acciones de cada área."
+      ],
+      [
+        "Reúna las evidencias",
+        "Mantenga juntos los registros y documentos que respaldan el trabajo."
+      ]
+    ],
+    "limit": "Apoya a su equipo y al DPD. No sustituye el criterio profesional ni las responsabilidades de su organización, y no garantiza por sí sola el cumplimiento de la ley.",
+    "dpdTitle": "DPD externo en Ecuador",
+    "dpdLead": "Asesoría y supervisión independiente para acompañar la gestión de sus obligaciones de protección de datos.",
+    "serviceTitle": "Contratar un DPD externo",
+    "serviceDescription": "Asesoría y supervisión independiente cuando corresponde designar un delegado. Su organización decide y aplica las medidas.",
+    "resourceTitle": "¿Necesita un DPD?",
+    "resourceEyebrow": "Delegado y gran escala",
+    "dpdResource": "DPD y gran escala",
+    "dpdResourceDescription": "Explore criterios de designación y tratamientos a gran escala.",
+    "faq": "CumpliDatos es la plataforma propia de TempoLegal para organizar tareas, dar seguimiento y reunir evidencias del trabajo. Está incluida sin costo adicional mientras mantenga el servicio de DPD con TempoLegal. Apoya el criterio profesional del DPD; no sustituye la implementación ni garantiza el cumplimiento.",
+    "areaHeading": "PROTECCIÓN DE DATOS EN TEMPOLEGAL",
+    "areaLinks": [
+      "Protección de datos",
+      "Implementación LOPDP",
+      "Colegios y educación",
+      "Salud y clínicas"
+    ],
+    "areaCurrent": "DPD externo",
+    "dpdResourceAction": "Explorar DPD y gran escala"
+  },
+  "en": {
+    "kicker": "TECHNOLOGY TO SUPPORT FOLLOW-UP",
+    "title": "Know what is pending, who is responsible and where the evidence is.",
+    "description": "CumpliDatos is TempoLegal’s platform for organizing data protection tasks and following up on work with your organization.",
+    "steps": [
+      [
+        "Organize the work",
+        "Identify tasks, responsible people and dates."
+      ],
+      [
+        "Track progress",
+        "Review what is missing and coordinate each area’s actions."
+      ],
+      [
+        "Gather evidence",
+        "Keep together the records and documents supporting the work."
+      ]
+    ],
+    "limit": "It supports your team and the DPO. It does not replace professional judgment or your organization’s responsibilities, and does not by itself guarantee legal compliance.",
+    "dpdTitle": "External DPO in Ecuador",
+    "dpdLead": "Independent advice and supervision to support the management of your data protection obligations.",
+    "serviceTitle": "Engage an external DPO",
+    "serviceDescription": "Independent advice and supervision when a Data Protection Officer must be appointed. Your organization decides on and implements the measures.",
+    "resourceTitle": "Do you need a DPO?",
+    "resourceEyebrow": "DPO and large-scale processing",
+    "dpdResource": "DPO and large-scale processing",
+    "dpdResourceDescription": "Explore appointment criteria and large-scale processing.",
+    "faq": "CumpliDatos is TempoLegal’s own platform for organizing tasks, tracking progress and gathering evidence of the work. It is included at no additional cost while you retain TempoLegal’s DPO service. It supports the DPO’s professional judgment; it does not replace implementation or guarantee compliance.",
+    "areaHeading": "DATA PROTECTION AT TEMPOLEGAL",
+    "areaLinks": [
+      "Data protection",
+      "LOPDP implementation",
+      "Schools and education",
+      "Healthcare and clinics"
+    ],
+    "areaCurrent": "External DPO",
+    "dpdResourceAction": "Explore DPO and large-scale processing"
+  },
+  "pt": {
+    "kicker": "TECNOLOGIA A SERVIÇO DO ACOMPANHAMENTO",
+    "title": "Saiba o que está pendente, quem é responsável e onde estão os comprovantes.",
+    "description": "CumpliDatos é a plataforma da TempoLegal para organizar as tarefas de proteção de dados e acompanhar o trabalho com a sua organização.",
+    "steps": [
+      [
+        "Organize o trabalho",
+        "Identifique tarefas, responsáveis e datas."
+      ],
+      [
+        "Acompanhe o progresso",
+        "Revise o que falta e coordene as ações de cada área."
+      ],
+      [
+        "Reúna as evidências",
+        "Mantenha juntos os registros e documentos que comprovam o trabalho."
+      ]
+    ],
+    "limit": "Apoia a sua equipe e o encarregado. Não substitui o critério profissional nem as responsabilidades da sua organização e, por si só, não garante o cumprimento da lei.",
+    "dpdTitle": "Encarregado externo de proteção de dados no Equador",
+    "dpdLead": "Assessoria e supervisão independentes para apoiar a gestão das suas obrigações de proteção de dados.",
+    "serviceTitle": "Contratar um encarregado externo",
+    "serviceDescription": "Assessoria e supervisão independentes quando é necessário designar um encarregado. A sua organização decide e aplica as medidas.",
+    "resourceTitle": "Precisa de um encarregado?",
+    "resourceEyebrow": "Encarregado e grande escala",
+    "dpdResource": "Encarregado e grande escala",
+    "dpdResourceDescription": "Explore critérios de designação e tratamentos em grande escala.",
+    "faq": "CumpliDatos é a plataforma própria da TempoLegal para organizar tarefas, acompanhar o progresso e reunir evidências do trabalho. Está incluída sem custo adicional enquanto mantiver o serviço de encarregado com a TempoLegal. Apoia o critério profissional do encarregado; não substitui a implementação nem garante a conformidade."
+  },
+  "fr": {
+    "kicker": "LA TECHNOLOGIE AU SERVICE DU SUIVI",
+    "title": "Sachez ce qui reste à faire, qui s’en charge et où se trouvent les justificatifs.",
+    "description": "CumpliDatos est la plateforme de TempoLegal pour organiser les tâches de protection des données et suivre le travail avec votre organisation.",
+    "steps": [
+      [
+        "Organisez le travail",
+        "Identifiez les tâches, les responsables et les dates."
+      ],
+      [
+        "Suivez l’avancement",
+        "Examinez ce qui manque et coordonnez les actions de chaque service."
+      ],
+      [
+        "Réunissez les preuves",
+        "Regroupez les registres et documents qui étayent le travail."
+      ]
+    ],
+    "limit": "Elle accompagne votre équipe et le DPO. Elle ne remplace ni le jugement professionnel ni les responsabilités de votre organisation et ne garantit pas, à elle seule, le respect de la loi.",
+    "dpdTitle": "DPO externe en Équateur",
+    "dpdLead": "Conseil et supervision indépendants pour accompagner la gestion de vos obligations de protection des données.",
+    "serviceTitle": "Faire appel à un DPO externe",
+    "serviceDescription": "Conseil et supervision indépendants lorsqu’un délégué doit être désigné. Votre organisation décide des mesures et les met en œuvre.",
+    "resourceTitle": "Avez-vous besoin d’un DPO ?",
+    "resourceEyebrow": "DPO et traitement à grande échelle",
+    "dpdResource": "DPO et traitement à grande échelle",
+    "dpdResourceDescription": "Explorez les critères de désignation et les traitements à grande échelle.",
+    "faq": "CumpliDatos est la plateforme propre à TempoLegal pour organiser les tâches, suivre l’avancement et réunir les preuves du travail. Elle est incluse sans frais supplémentaires tant que vous conservez le service de DPO de TempoLegal. Elle soutient le jugement professionnel du DPO ; elle ne remplace pas la mise en œuvre et ne garantit pas la conformité."
+  }
+}

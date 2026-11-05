@@ -1,0 +1,73 @@
+/* Spanish home integration draft. Original style files and photographs retained. */
+html[data-home-review] .more-services-wrapper{list-style:none}
+html[data-home-review] .more-services{border-top:1px solid #b9c9c8;margin-top:12px}
+html[data-home-review] .more-services>summary{cursor:pointer;display:flex;align-items:center;justify-content:space-between;padding:24px 10px;font:500 16px var(--sans);color:#16434c;list-style:none}
+html[data-home-review] .more-services>summary::-webkit-details-marker{display:none}
+html[data-home-review] .additional-services{list-style:none;margin:0;padding:0}
+html[data-home-review] .less-label{display:none}
+html[data-home-review] details[open]>summary .more-label{display:none}
+html[data-home-review] details[open]>summary .less-label{display:inline}
+html[data-home-review] .more-services[open] .more-services-symbol{transform:rotate(45deg)}
+html[data-home-review] .home-approach{background:#edf1ed}
+html[data-home-review] .approach-layout{display:grid;grid-template-columns:1fr 1fr;gap:8%}
+html[data-home-review] .home-approach h2{font-family:var(--serif);font-size:clamp(34px,3.7vw,57px);font-weight:400;line-height:1.13}
+html[data-home-review] .approach-copy .lead{font-size:20px;line-height:1.65}
+html[data-home-review] .approach-copy dl{margin-top:32px}
+html[data-home-review] .approach-copy dl>div{padding:20px 0;border-top:1px solid #c2d0ca}
+html[data-home-review] .approach-copy dt{font-weight:600;color:#16434c}
+html[data-home-review] .approach-copy dd{margin:8px 0 0;line-height:1.6}
+html[data-home-review] .team-reference-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:24px}
+html[data-home-review] .team-person h3{font-size:clamp(21px,1.8vw,27px)}
+html[data-home-review] .team-person-degree{font-size:13px;line-height:1.6;color:#34565c;margin:16px 0 5px}
+html[data-home-review] .team-photo-pending{aspect-ratio:3/4;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#e8efeb;color:#315d60;gap:12px}
+html[data-home-review] .team-photo-pending span{font:60px var(--serif)}
+html[data-home-review] .team-photo-pending small{font-size:12px}
+html[data-home-review] .home-team-group{max-width:760px;margin:54px auto 0}
+html[data-home-review] .home-team-group img{width:100%;height:auto;display:block;object-fit:contain}
+html[data-home-review] .home-team-group figcaption{font-size:13px;color:#486066;margin-top:12px}
+html[data-home-review] .testimonials-grid{align-items:start}
+html[data-home-review] .quote-full summary{cursor:pointer;padding:15px 0;font:500 13px var(--sans);color:#225c64;text-decoration:underline;text-underline-offset:5px}
+html[data-home-review] .quote-full p{margin-top:18px}
+html[data-home-review] .quote-author .quote-portrait,html[data-home-review] .quote-initials{width:56px;height:56px;min-width:56px;border-radius:50%;object-fit:cover}
+html[data-home-review] .quote-initials{display:grid;place-items:center;background:#e5eeea;color:#24565c;font:18px var(--sans)}
+html[data-home-review] .home-contact{background:#e8eeea}
+html[data-home-review] .home-contact>.container{display:grid;grid-template-columns:1.2fr .8fr;gap:10%;align-items:center}
+html[data-home-review] .home-contact h2{font:clamp(38px,4vw,64px)/1.1 var(--serif);margin:18px 0 24px}
+html[data-home-review] .home-contact-actions{display:flex;flex-direction:column;align-items:flex-start;gap:24px}
+html[data-home-review] .home-contact-actions p{font-size:13px;line-height:1.7;max-width:40ch}
+html[data-home-review] :is(summary,button,a):focus-visible{outline:3px solid #9a8035;outline-offset:5px}
+@media(max-width:1100px){html[data-home-review] .team-reference-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){html[data-home-review] .team-reference-grid{grid-template-columns:repeat(2,minmax(0,1fr))}html[data-home-review] .approach-layout,html[data-home-review] .home-contact>.container{grid-template-columns:1fr;gap:32px}}
+@media(max-width:400px){html[data-home-review] .team-reference-grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html[data-home-review] .more-services-symbol{transition:none}}
+
+html[data-home-review]:not(.has-js) .practice-detail[hidden]{display:block!important}
+html[data-home-review]:not(.has-js) :is(.service-filters,#practice-panel){display:none}
+
+/* Home V05: precios específicos y pie por familias */
+html[data-home-review] .practice-price{margin:14px 0 0;font:600 16px var(--sans);color:inherit}
+html[data-home-review] .practice-price-note{margin:4px 0 0;font-size:14px;color:inherit;opacity:.85}
+html[data-home-review] .practice-price+.practice-label,html[data-home-review] .practice-price-note+.practice-label{margin-top:22px}
+/* El pie por familias pasó a site-chrome.css (componente común, tarea 1.3). */
+/* Tarea 2.1 · Home: botón "Ver el servicio" visible sobre el panel oscuro */
+html[data-home-review] .practice-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+html[data-home-review] .practice-more{border-color:currentColor;color:inherit;background:transparent}
+html[data-home-review] #practice-panel .practice-more{border-color:#ffffff99;color:var(--white)}
+html[data-home-review] #practice-panel .practice-more:hover{background:var(--white);color:var(--petroleo)}
+/* Tarea 2.1 · Home: acabado de testimonios y equipo */
+html[data-home-review] .quote-text p:first-child{padding-right:clamp(56px,5vw,84px)}
+html[data-home-review] .quote-card:before{top:-6px}
+html[data-home-review] .quote-card-ana .quote-full summary,html[data-home-review] .quote-card-ana .quote-full summary *{color:#a9e1eb}
+html[data-home-review] .quote-card-ana .quote-text p{color:#e4f0f2}
+html[data-home-review] .team-person-photo{border-radius:var(--radius-lg)}
+html[data-home-review] .team-person-photo img{transition:transform .7s var(--ease)}
+html[data-home-review] .team-person:hover .team-person-photo img{transform:scale(1.035)}
+@media(prefers-reduced-motion:reduce){html[data-home-review] .team-person:hover .team-person-photo img{transform:none}}
+/* Tarea 5.2 · Home: textos secundarios con contraste AA (4.5:1) */
+html[data-home-review] :is(.section-intro,.case-summary,.insight-summary,.cases-bottom p,.testimonials-source-note){color:#4d6873}
+html[data-home-review] :is(.case-index,.case-sector,.case-tags li,.insight-meta span,.quote-website){color:#3e6576}
+html[data-home-review] .cases-grid .case-card:first-child :is(.case-index,.case-sector,.case-summary,.case-tags li),html[data-home-review] .insight-feature :is(.insight-meta span,.insight-summary){color:#c3dae0}
+
+/* Punto 11: fotos y logos de testimonios; Pablo conserva solo su identidad textual. */
+html[data-home-review] .quote-author{grid-template-columns:56px minmax(0,1fr);gap:13px}
+html[data-home-review] .quote-author .quote-logo{grid-column:2;justify-self:start;align-self:center;box-sizing:border-box;width:110px;max-width:100%;height:60px;object-fit:contain;background:#fff;padding:6px;border-radius:4px}

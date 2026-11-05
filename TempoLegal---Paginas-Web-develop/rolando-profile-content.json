@@ -1,0 +1,46 @@
+{
+  "es": {
+    "degree": "Ingeniero",
+    "role": "Coordinador de Servicios Financieros",
+    "specialty": "Finanzas · Administración",
+    "intro": "Gestión financiera, presupuestos y administración empresarial, con experiencia en contabilidad y coordinación de equipos.",
+    "bio": "Ingeniero en Administración de Empresas, con experiencia en gestión financiera, análisis de costos y procesos administrativos.",
+    "about": "Su trayectoria incluye responsabilidades financieras en Ferplaim, asesoría contable y tributaria en Helpcounting y gestión contable y administrativa en Rectificadora Pazmiño. Ha coordinado auditorías y elaborado informes para apoyar la toma de decisiones.",
+    "areas": ["Gestión financiera y presupuestaria", "Administración empresarial", "Análisis de costos y control contable"],
+    "facts": [["Formación", "Ingeniería en Administración de Empresas, mención Marketing · Universidad Cristiana Latinoamericana"], ["Experiencia", "Finanzas, contabilidad y coordinación administrativa"], ["En Tempo Legal", "Coordinador de Servicios Financieros"]],
+    "careerTitle": "Trayectoria y formación"
+  },
+  "en": {
+    "degree": "Engineer",
+    "role": "Financial Services Coordinator",
+    "specialty": "Finance · Administration",
+    "intro": "Financial management, budgets and business administration, with experience in accounting and team coordination.",
+    "bio": "He holds an engineering degree in Business Administration and has experience in financial management, cost analysis and administrative processes.",
+    "about": "His career includes finance responsibilities at Ferplaim, accounting and tax advice at Helpcounting, and accounting and administration at Rectificadora Pazmiño. He has coordinated audits and prepared reports to support business decisions.",
+    "areas": ["Financial and budget management", "Business administration", "Cost analysis and accounting control"],
+    "facts": [["Education", "Engineering degree in Business Administration, Marketing concentration · Universidad Cristiana Latinoamericana"], ["Experience", "Finance, accounting and administrative coordination"], ["At Tempo Legal", "Financial Services Coordinator"]],
+    "careerTitle": "Experience and education"
+  },
+  "pt": {
+    "degree": "Engenheiro",
+    "role": "Coordenador de Serviços Financeiros",
+    "specialty": "Finanças · Administração",
+    "intro": "Gestão financeira, orçamentos e administração empresarial, com experiência em contabilidade e coordenação de equipes.",
+    "bio": "Engenheiro em Administração de Empresas, com experiência em gestão financeira, análise de custos e processos administrativos.",
+    "about": "Sua trajetória inclui responsabilidades financeiras na Ferplaim, assessoria contábil e tributária na Helpcounting e gestão contábil e administrativa na Rectificadora Pazmiño. Coordenou auditorias e elaborou relatórios para apoiar a tomada de decisões.",
+    "areas": ["Gestão financeira e orçamentária", "Administração empresarial", "Análise de custos e controle contábil"],
+    "facts": [["Formação", "Engenharia em Administração de Empresas, ênfase em Marketing · Universidad Cristiana Latinoamericana"], ["Experiência", "Finanças, contabilidade e coordenação administrativa"], ["Na Tempo Legal", "Coordenador de Serviços Financeiros"]],
+    "careerTitle": "Experiência e formação"
+  },
+  "fr": {
+    "degree": "Ingénieur",
+    "role": "Coordinateur des services financiers",
+    "specialty": "Finance · Administration",
+    "intro": "Gestion financière, budgets et administration d’entreprise, avec une expérience en comptabilité et coordination d’équipes.",
+    "bio": "Titulaire d’un diplôme d’ingénieur en administration des entreprises, il possède une expérience en gestion financière, analyse des coûts et processus administratifs.",
+    "about": "Son parcours comprend des responsabilités financières chez Ferplaim, du conseil comptable et fiscal chez Helpcounting et de la gestion comptable et administrative chez Rectificadora Pazmiño. Il a coordonné des audits et préparé des rapports pour éclairer les décisions de l’entreprise.",
+    "areas": ["Gestion financière et budgétaire", "Administration d’entreprise", "Analyse des coûts et contrôle comptable"],
+    "facts": [["Formation", "Diplôme d’ingénieur en administration des entreprises, spécialisation Marketing · Universidad Cristiana Latinoamericana"], ["Expérience", "Finance, comptabilité et coordination administrative"], ["Chez Tempo Legal", "Coordinateur des services financiers"]],
+    "careerTitle": "Expérience et formation"
+  }
+}

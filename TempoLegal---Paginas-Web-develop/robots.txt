@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_tools/
+Disallow: /_herramientas/
+
+Sitemap: https://tempolegal.com/sitemap.xml

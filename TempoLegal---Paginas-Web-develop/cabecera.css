@@ -1,0 +1,126 @@
+/* =====================================================================
+   Tempo Legal · cabecera.css · Menú común con desplegable «Servicios» (tarea 1.2)
+   Marcado: _componentes/cabecera.html (insertado con _tools/build-header.py).
+   Funciona dentro de la cabecera de la Home y de las páginas secundarias
+   (.site-header #main-nav) y dentro de la cabecera de las landings (.tl-header).
+   ===================================================================== */
+
+/* ---------- Desplegable: escritorio ---------- */
+.nav-menu{position:relative;display:inline-flex;align-items:center}
+.nav-menu-toggle{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0;border:0;background:none;color:inherit;font:inherit;font-size:inherit;letter-spacing:inherit;cursor:pointer;white-space:nowrap}
+.nav-menu-caret{width:7px;height:7px;margin-top:-4px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);transition:transform .2s var(--ease)}
+.nav-menu.is-open .nav-menu-caret{transform:translateY(3px) rotate(225deg)}
+.nav-menu-panel{position:absolute;top:calc(100% + 14px);left:50%;z-index:80;width:min(920px,calc(100vw - 48px));padding:28px 32px 24px;transform:translateX(-38%);background:var(--surface);color:var(--ink);border-radius:var(--radius-lg);box-shadow:0 28px 60px -24px #0e3d4a66,0 0 0 1px #0e3d4a14;text-align:left}
+.nav-menu-panel[hidden]{display:none}
+.nav-menu-panel:before{content:'';position:absolute;top:-7px;left:38%;width:14px;height:14px;background:var(--surface);transform:rotate(45deg);box-shadow:-1px -1px 0 #0e3d4a14}
+.nav-menu-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px 28px}
+.nav-menu-title{margin:0 0 10px;font-family:var(--serif);font-size:19px;line-height:1.2;color:var(--petroleo)}
+.nav-menu-col{display:flex;flex-direction:column;gap:2px;min-width:0}
+.nav-menu-col a{display:block;padding:6px 0;color:var(--ink)!important;font-size:14px;line-height:1.4;white-space:normal;text-decoration:none}
+.nav-menu-col a:after{display:none!important}
+.nav-menu-col a:hover{color:var(--teal)!important}
+.nav-menu-col a.nav-menu-all{margin-top:6px;font-weight:600;color:var(--teal)!important}
+.nav-menu-panel :focus-visible{outline:2px solid var(--teal)!important;outline-offset:2px}
+
+/* ---------- Páginas secundarias: el menú ocupa el sitio del antiguo «Volver…» ---------- */
+.site-header[data-common-toggle] .header-inner{display:flex;align-items:center;justify-content:space-between;gap:clamp(12px,2vw,32px)}
+.site-header[data-common-toggle] #main-nav{display:flex;align-items:center;gap:clamp(13px,1.6vw,30px);margin-left:auto}
+.site-header[data-common-toggle] #main-nav>a,.site-header[data-common-toggle] .nav-menu-toggle{color:var(--white);font-size:clamp(12px,.8vw,16px)}
+.site-header[data-common-toggle] .header-tools{display:flex;align-items:center;gap:12px}
+.site-header[data-common-toggle] .menu-toggle{display:none}
+
+/* ---------- Menú móvil (hasta 1100 px): el desplegable pasa a acordeón ---------- */
+@media(max-width:1100px){
+.site-header[data-common-toggle] .menu-toggle{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:7px;width:44px;height:44px;min-width:44px}
+.site-header[data-common-toggle] .menu-toggle>span:not(.sr-only){display:block;width:24px;height:1px;background:#fff;transition:transform .25s}
+.site-header[data-common-toggle] .menu-toggle[aria-expanded=true]>span:first-child{transform:translateY(4px) rotate(45deg)}
+.site-header[data-common-toggle] .menu-toggle[aria-expanded=true]>span:nth-child(2){transform:translateY(-4px) rotate(-45deg)}
+.site-header[data-common-toggle] #main-nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:2px;max-height:calc(100dvh - var(--header-height,78px));overflow-y:auto;margin:0;padding:18px var(--gutter) 28px;background:#f5f7f6;box-shadow:0 24px 30px #16323c14}
+.site-header[data-common-toggle] #main-nav.is-open{display:flex}
+.site-header[data-common-toggle] #main-nav>a,.site-header[data-common-toggle] .nav-menu-toggle{color:var(--ink);font-size:16px;min-height:44px}
+.site-header[data-common-toggle] #main-nav .nav-cta{align-self:stretch;justify-content:center;margin-top:14px;background:var(--teal);color:var(--white);border-color:var(--teal);min-height:48px}
+body.menu-open{overflow:hidden}
+.nav-menu{display:block;width:100%}
+.nav-menu-toggle{width:100%;justify-content:space-between;text-align:left}
+.nav-menu-panel{position:static;width:auto;transform:none;margin:4px 0 10px;padding:6px 0 6px 14px;box-shadow:none;border-left:2px solid var(--teal-pale);border-radius:0;background:transparent}
+.nav-menu-panel:before{display:none}
+.nav-menu-grid{grid-template-columns:1fr;gap:14px}
+.nav-menu-title{font-size:16px;margin-bottom:4px}
+.nav-menu-col a{padding:8px 0;font-size:15px}
+}
+
+/* ---------- Landings: misma cabecera .tl-header ---------- */
+.tl-header .nav-menu-toggle{color:var(--white);font-family:var(--sans);font-size:clamp(13px,.86vw,15px)}
+@media(max-width:1100px){.tl-header .nav-menu-toggle{color:var(--ink);font-size:16px}}
+
+@media(prefers-reduced-motion:reduce){.nav-menu-caret{transition:none}}
+
+/* Botón de contacto y tamaño del «Servicios» en todas las cabeceras */
+.site-header #main-nav .nav-menu-toggle{font-size:inherit}
+@media(min-width:1101px){
+.site-header[data-common-toggle] #main-nav .nav-cta{display:inline-flex;align-items:center;min-height:44px;padding:10px 17px;background:#f4f7f8;color:var(--petroleo);border:1px solid #f4f7f8;font-size:clamp(12px,.8vw,16px)}
+.site-header[data-common-toggle] #main-nav .nav-cta:hover{background:var(--white)}
+}
+@media(max-width:1100px){
+.site-header #main-nav .nav-menu-toggle{color:var(--ink);font-size:16px;min-height:44px}
+.site-header #main-nav .nav-menu-panel{color:var(--ink)}
+}
+
+/* ---------- Selector de idioma en landings y herramientas (tarea 5.5) ---------- */
+.language-control.language-enhanced{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;margin:0;padding:0}
+.language-slot{display:flex;align-items:center;flex:none;position:relative}
+.language-slot .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
+.tl-header .language-slot{margin-left:clamp(10px,1.2vw,20px)}
+@media(max-width:1100px){.tl-header .language-slot{margin-left:auto;margin-right:8px}}
+.tool-header .wrap{align-items:center}
+.tool-header .tool-brand{display:inline-flex;line-height:0}
+.tool-header .language-slot{order:3}
+.tool-header .language-button{min-height:40px;padding:6px 10px;background:#fff;color:#17323c;border:1px solid #c7d4d5;border-radius:4px;font-size:13px}
+.tool-header .language-button:hover,.tool-header .language-menu.is-open .language-button{background:#eef5f6;border-color:#91a6ae}
+.tool-header .language-button:focus-visible{outline:3px solid #006e8c;outline-offset:2px}
+.tool-header .language-list li{font-weight:normal}
+@media(max-width:650px){.tool-header .wrap{flex-wrap:wrap;gap:10px 14px}.tool-header .wrap>a:not(.tool-brand){order:4;max-width:none;flex-basis:100%;text-align:left}}
+
+/* Aviso «esta página aún está solo en español» */
+.translation-notice{background:#fff7e0;color:#4a3b0a;border-bottom:1px solid #ecd9a3;font-size:14px;line-height:1.45}
+.translation-notice[hidden]{display:none}
+.translation-notice-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 18px;width:min(1240px,calc(100% - 32px));margin:auto;padding:10px 0}
+.translation-notice p{margin:0}
+.translation-notice button{min-height:36px;padding:6px 12px;border:1px solid #8a6d1d;border-radius:4px;background:transparent;color:#4a3b0a;font:inherit;font-size:13px;cursor:pointer}
+.translation-notice button:hover{background:#fbecc0}
+.translation-notice button:focus-visible{outline:2px solid #006e8c;outline-offset:2px}
+
+/* Stable common header: fixed dimensions across home, services and content pages. */
+html{scrollbar-gutter:stable;scroll-padding-top:90px}
+:root{--header-height:72px;--header-h:72px}
+.site-header,.site-header.article-header,.site-header.service-header,.tl-header,.tl-header.is-scrolled{position:sticky;top:0;z-index:70;height:72px;min-height:72px;max-height:72px;padding:0;margin:0;background:#3e7490;color:#fff;transform:none;transition:none;--header-h:72px;--header-height:72px}
+.site-header .header-inner,.site-header[data-common-toggle] .header-inner,.tl-header .tl-header-inner{width:min(1440px,calc(100% - 48px));max-width:1440px;height:72px;min-height:72px;margin-inline:auto;padding-block:0;gap:20px}
+.site-header .brand,.tl-header .tl-brand{flex:none;width:180px;min-width:180px;max-width:180px;height:42px;line-height:1}
+.site-header .brand img,.tl-header .tl-brand img{display:block;width:180px;height:38px;max-height:38px;object-fit:contain;object-position:left center;flex:none}
+.site-header .language-menu,.tl-header .language-menu{flex:none;width:130px;min-width:130px}
+.site-header .language-button,.tl-header .language-button{width:130px;height:40px;min-height:40px;justify-content:center;font-size:13px;box-sizing:border-box}
+.site-header .header-tools{min-width:130px;justify-content:flex-end}
+@media(min-width:1101px){
+.site-header .header-inner,.site-header[data-common-toggle] .header-inner,.tl-header .tl-header-inner{display:grid;grid-template-columns:180px minmax(0,1fr) 130px;align-items:center}
+.site-header #main-nav,.site-header[data-common-toggle] #main-nav,.tl-header #navigation.tl-nav{display:flex;position:static;flex-direction:row;align-items:center;justify-content:center;flex-wrap:nowrap;gap:16px;width:100%;min-width:0;height:44px;padding:0;margin:0;transform:none}
+.site-header #main-nav>a,.site-header[data-common-toggle] #main-nav>a,.site-header #main-nav .nav-menu-toggle,.tl-header #navigation>a,.tl-header .nav-menu-toggle{display:inline-flex;align-items:center;min-height:40px;font:400 13px/1.2 var(--sans);white-space:nowrap;transform:none;transition:color .2s ease,background .2s ease}
+.site-header #main-nav .nav-cta,.site-header[data-common-toggle] #main-nav .nav-cta,.tl-header #navigation .nav-cta,.tl-header #navigation .tl-nav-cta{height:40px;min-height:40px;padding:0 16px;font-size:13px;transform:none;box-sizing:border-box}
+.site-header .menu-toggle,.tl-header .tl-menu-toggle{display:none}
+}
+@media(min-width:1101px) and (max-width:1280px){
+.site-header .header-inner,.site-header[data-common-toggle] .header-inner,.tl-header .tl-header-inner{grid-template-columns:150px minmax(0,1fr) 112px;gap:12px;width:calc(100% - 32px)}
+.site-header .brand,.tl-header .tl-brand{width:150px;min-width:150px;max-width:150px}.site-header .brand img,.tl-header .tl-brand img{width:150px}
+.site-header #main-nav,.site-header[data-common-toggle] #main-nav,.tl-header #navigation.tl-nav{gap:10px}
+.site-header #main-nav>a,.site-header[data-common-toggle] #main-nav>a,.site-header #main-nav .nav-menu-toggle,.tl-header #navigation>a,.tl-header .nav-menu-toggle{font-size:12px}
+.site-header #main-nav .nav-cta,.site-header[data-common-toggle] #main-nav .nav-cta,.tl-header #navigation .nav-cta,.tl-header #navigation .tl-nav-cta{font-size:12px;padding-inline:11px}
+.site-header .language-menu,.tl-header .language-menu,.site-header .language-button,.tl-header .language-button{width:112px;min-width:112px}.site-header .header-tools{min-width:112px}
+}
+@media(max-width:1100px){
+.site-header,.site-header.article-header,.site-header.service-header,.tl-header,.tl-header.is-scrolled{height:68px;min-height:68px;max-height:68px;--header-h:68px;--header-height:68px}
+.site-header .header-inner,.site-header[data-common-toggle] .header-inner,.tl-header .tl-header-inner{display:flex;height:68px;min-height:68px;gap:12px;width:calc(100% - 32px)}
+.site-header .brand,.tl-header .tl-brand{width:160px;min-width:160px;max-width:160px}.site-header .brand img,.tl-header .tl-brand img{width:160px;height:36px}
+.site-header .header-tools{margin-left:auto;min-width:0}.tl-header .language-slot{margin-left:auto}
+.site-header .language-menu,.tl-header .language-menu,.site-header .language-button,.tl-header .language-button{width:120px;min-width:120px}
+}
+@media(max-width:760px){.site-header .language-menu,.tl-header .language-menu,.site-header .language-button,.tl-header .language-button{width:74px;min-width:74px}.site-header .header-inner,.site-header[data-common-toggle] .header-inner,.tl-header .tl-header-inner{gap:8px}}
+@media(max-width:380px){.site-header .brand,.tl-header .tl-brand{width:138px;min-width:138px;max-width:138px}.site-header .brand img,.tl-header .tl-brand img{width:138px}}
