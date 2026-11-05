@@ -6,7 +6,7 @@ window.TEMPO_CONTENT = {
     "navResources": "Publicaciones",
     "servicesEyebrow": "Servicios para empresas",
     "servicesHeading": "Asesoría para cada etapa\nde su empresa.",
-    "servicesIntro": "Asesoría para crear, operar y desarrollar su empresa, con apoyo jurídico, contable y de cumplimiento.",
+    "servicesIntro": "Servicios jurídicos, contables y de cumplimiento para crear, operar y desarrollar su empresa en Ecuador.",
     "filterAll": "Todas las áreas",
     "filterBusiness": "Empresa",
     "filterData": "Datos y tecnología",
@@ -19,7 +19,7 @@ window.TEMPO_CONTENT = {
     "servicesCount": "{count} áreas disponibles",
     "trustEyebrow": "Cifras actualizadas a octubre de 2026",
     "trustData": "proyectos e implementaciones de protección de datos",
-    "trustDpd": "empresas con nuestro servicio de Delegado de Protección de Datos",
+    "trustDpd": "delegaciones DPD vigentes",
     "trustOrganizations": "organizaciones asesoradas",
     "clientsTitle": "Empresas y organizaciones que han confiado en TempoLegal",
     "clientsNote": "Conozca nuestra experiencia en distintos sectores.",
@@ -41,7 +41,7 @@ window.TEMPO_CONTENT = {
     "mapLegend": "Conexiones regionales · Atención desde Quito",
     "teamEyebrow": "Equipo",
     "teamHeading": "Responsables de cada área",
-    "teamIntro": "Conozca a quienes coordinan las principales áreas de la firma. TempoLegal integra asesoría jurídica, contable y tecnológica.",
+    "teamIntro": "Conozca a quienes coordinan las principales áreas de la firma. TempoLegal integra asesoría jurídica, contable y tecnológica. Rolando Valencia, Ingeniero, es Coordinador de Servicios Financieros. Finanzas · Administración.",
     "profileMore": "Ver perfil",
     "testimonialsEyebrow": "Testimonios",
     "testimonialsHeading": "Lo que dicen nuestros clientes",
@@ -191,7 +191,7 @@ window.TEMPO_CONTENT = {
         "role": "Socio fundador",
         "bio": "Abogado · Socio fundador. Especialista en soft landing y empresas extranjeras. Derecho corporativo · Protección de datos",
         "specialty": "Especialista en soft landing y empresas extranjeras. Derecho corporativo · Protección de datos",
-        "photo": "assets/team/juan-alberto-gomez.webp",
+        "photo": "assets/team/2026-10-21-JUAN-ALBERTO-FONDO-HOME.jpg",
         "photoWidth": 900,
         "photoHeight": 900,
         "page": "team-juan-alberto-gomez.html",
@@ -203,7 +203,7 @@ window.TEMPO_CONTENT = {
         "role": "Abogada senior",
         "bio": "Abogada · Magíster · Abogada senior. Derecho corporativo · Laboral",
         "specialty": "Derecho corporativo · Laboral",
-        "photo": "assets/team/daniela-barahona.webp",
+        "photo": "assets/team/2026-10-24_Daniela_Barahona_TempoLegal_Fondo_Quito_RECREACION_HD.png",
         "photoWidth": 900,
         "photoHeight": 900,
         "page": "team-daniela-barahona.html",
@@ -215,7 +215,7 @@ window.TEMPO_CONTENT = {
         "role": "Abogada senior",
         "bio": "Abogada · Magíster · Abogada senior. Protección de datos · Cumplimiento normativo",
         "specialty": "Protección de datos · Cumplimiento normativo",
-        "photo": "assets/team/emillie-donoso.webp",
+        "photo": "assets/team/2026-10-24_Emillie_Donoso_TempoLegal_Fondo_Quito_RECREACION_HD.png",
         "photoWidth": 900,
         "photoHeight": 900,
         "page": "team-emilie-donoso.html",
@@ -227,10 +227,11 @@ window.TEMPO_CONTENT = {
         "degree": "Ingeniero",
         "role": "Coordinador de Servicios Financieros",
         "specialty": "Finanzas · Administración",
-        "photo": "assets/team/rolando-valencia.webp",
-        "page": null,
-        "photoWidth": 900,
-        "photoHeight": 900
+        "photo": "assets/team/2026-10-24_Rolando_TempoLegal_Fondo_Quito_RECREACION_HD.png",
+        "page": "team-rolando-valencia.html",
+        "bio": "Ingeniero en Administración de Empresas, con experiencia en gestión financiera, análisis de costos y procesos administrativos.",
+        "photoWidth": 1314,
+        "photoHeight": 1586
       },
       {
         "id": "gabriel-calvopina",
@@ -238,7 +239,7 @@ window.TEMPO_CONTENT = {
         "role": "Coordinador de Servicios Contables y Tributarios",
         "bio": "Ingeniero · Magíster · Coordinador de Servicios Contables y Tributarios. Contabilidad · Tributario",
         "specialty": "Contabilidad · Tributario",
-        "photo": "assets/team/gabriel-calvopina.webp",
+        "photo": "assets/team/gabriel.webp",
         "photoWidth": 900,
         "photoHeight": 900,
         "page": "team-gabriel-calvopina.html",
@@ -285,7 +286,7 @@ window.TEMPO_CONTENT = {
         "name": "Francisco Mosquera Aulestia",
         "company": "Grupo Mosquera Aulestia (GMA)",
         "image": "francisco-approved.webp",
-        "logo": "client-029.svg",
+        "logo": "gma.png",
         "website": "https://mosqueraulestia.com/",
         "id": "francisco",
         "role": "Presidente y accionista mayoritario",
@@ -301,10 +302,25 @@ window.TEMPO_CONTENT = {
         ]
       },
       {
+        "name": "Pablo Lucio Paredes",
+        "company": "",
+        "image": null,
+        "logo": null,
+        "website": "https://www.usfq.edu.ec/es/perfiles/pablo-lucio-paredes-fernandes",
+        "id": "pablo",
+        "role": "Economista · Director del Instituto de Economía de la USFQ",
+        "paragraphs": [
+          "Trabajar con Tempo Legal fue una decisión positiva para mi empresa y mis necesidades personales. He recibido una asesoría clara y cercana, el equipo entendió mis necesidades, me explicó los pasos del proceso y estuvo disponible para resolver mis inquietudes. Más allá del conocimiento jurídico, valoré especialmente su compromiso y la atención personalizada durante todo el proceso. Así pudimos avanzar con seguridad y enfocarnos en nuestras obligaciones, sabiendo que los aspectos legales estaban en buenas manos. Sin duda, recomendaría a Tempo Legal. De hecho trabajo y seguiré trabajando con ellos"
+        ],
+        "original": [
+          "Trabajar con Tempo Legal fue una decisión positiva para mi empresa y mis necesidades personales. He recibido una asesoría clara y cercana, el equipo entendió mis necesidades, me explicó los pasos del proceso y estuvo disponible para resolver mis inquietudes. Más allá del conocimiento jurídico, valoré especialmente su compromiso y la atención personalizada durante todo el proceso. Así pudimos avanzar con seguridad y enfocarnos en nuestras obligaciones, sabiendo que los aspectos legales estaban en buenas manos. Sin duda, recomendaría a Tempo Legal. De hecho trabajo y seguiré trabajando con ellos"
+        ]
+      },
+      {
         "name": "Ana Cecilia Andrade",
         "company": "Grupo FLP",
         "image": "ana-approved.webp",
-        "logo": "client-027.svg",
+        "logo": "flp.png",
         "website": "https://www.flp.co/",
         "id": "ana",
         "role": "Gerente general de FL Procesados del Ecuador S.A. · Accionista única de FLP Holding Ecuador",
@@ -323,7 +339,7 @@ window.TEMPO_CONTENT = {
         "name": "Eleazar Becerra",
         "company": "Cámara de Comercio Exterior",
         "image": "eleazar-approved.webp",
-        "logo": "client-004.png",
+        "logo": "cce.png",
         "website": "https://www.camaracomercioexterior.edu.pe/",
         "id": "eleazar",
         "role": "Director general y accionista principal",
@@ -344,7 +360,7 @@ window.TEMPO_CONTENT = {
         "name": "Juan Pazmiño",
         "company": "Rectificadora Pazmiño S.A.",
         "image": "juan-approved.webp",
-        "logo": "client-050.svg",
+        "logo": "pazmino.png",
         "website": "https://rpazmino.com/",
         "id": "juan",
         "role": "Presidente ejecutivo y accionista mayoritario",
@@ -357,21 +373,6 @@ window.TEMPO_CONTENT = {
           "En los negocios hay decisiones que no se pueden tomar a ciegas. Cuando consulto a un abogado, necesito que me explique bien cuáles son las opciones y los riesgos.",
           "Con Juan Alberto Gómez y el equipo de TempoLegal hemos trabajado en contratos y asuntos societarios. Lo que aprecio es poder plantear un problema con confianza y recibir una opinión clara, pensada para lo que realmente necesita la empresa.",
           "Esa relación se construye con el tiempo y con el trabajo, no con discursos. Por eso valoro contar con Juan Alberto y su equipo cuando necesito respaldo jurídico."
-        ]
-      },
-      {
-        "name": "Pablo Lucio Paredes",
-        "company": "",
-        "image": null,
-        "logo": null,
-        "website": "https://www.usfq.edu.ec/es/perfiles/pablo-lucio-paredes-fernandes",
-        "id": "pablo",
-        "role": "Economista · Director del Instituto de Economía de la USFQ",
-        "paragraphs": [
-          "Trabajar con Tempo Legal fue una decisión positiva para mi empresa y mis necesidades personales. He recibido una asesoría clara y cercana, el equipo entendió mis necesidades, me explicó los pasos del proceso y estuvo disponible para resolver mis inquietudes. Más allá del conocimiento jurídico, valoré especialmente su compromiso y la atención personalizada durante todo el proceso. Así pudimos avanzar con seguridad y enfocarnos en nuestras obligaciones, sabiendo que los aspectos legales estaban en buenas manos. Sin duda, recomendaría a Tempo Legal. De hecho trabajo y seguiré trabajando con ellos"
-        ],
-        "original": [
-          "Trabajar con Tempo Legal fue una decisión positiva para mi empresa y mis necesidades personales. He recibido una asesoría clara y cercana, el equipo entendió mis necesidades, me explicó los pasos del proceso y estuvo disponible para resolver mis inquietudes. Más allá del conocimiento jurídico, valoré especialmente su compromiso y la atención personalizada durante todo el proceso. Así pudimos avanzar con seguridad y enfocarnos en nuestras obligaciones, sabiendo que los aspectos legales estaban en buenas manos. Sin duda, recomendaría a Tempo Legal. De hecho trabajo y seguiré trabajando con ellos"
         ]
       }
     ],
@@ -419,12 +420,12 @@ window.TEMPO_CONTENT = {
         "answer": "Después de entender su situación, definimos una ruta de trabajo con alcance, plazos, honorarios y próximos pasos."
       }
     ],
-    "serviceLabel_data": "Protección de datos y DPD externo",
+    "serviceLabel_data": "Protección de datos personales",
     "serviceLabel_corporate": "Derecho corporativo y societario",
-    "serviceLabel_incorporation": "Constitución de empresas SAS",
+    "serviceLabel_incorporation": "Constitución de compañías",
     "serviceLabel_foreign": "Empresas extranjeras en Ecuador",
     "serviceLabel_employment": "Derecho laboral empresarial",
-    "serviceLabel_accounting": "Soporte contable y tributario",
+    "serviceLabel_accounting": "Contabilidad y tributario",
     "serviceLabel_ip": "Marcas y propiedad intelectual",
     "serviceLabel_disputes": "Recuperación de cartera y litigios",
     "serviceLabel_notarial": "Trámites notariales y societarios",
@@ -596,7 +597,7 @@ window.TEMPO_CONTENT = {
     "internationalTitle": "Su equipo local,\ndesde Quito.",
     "internationalDescription": "Constituir una compañía es el inicio. Coordinamos representación legal, domicilio, contabilidad, contratación y cumplimiento para acompañar su operación en Ecuador.\nEste acompañamiento se conoce como soft landing. El alcance se acuerda según su estructura y sus necesidades; los trámites bancarios y otras autorizaciones dependen de las entidades competentes.",
     "coverageOrigins": "países de origen de nuestros clientes",
-    "foreignCount": "compañías con capital extranjero constituidas",
+    "foreignCount": "empresas extranjeras constituidas",
     "coverageSectorsLabel": "Sectores",
     "coverageSectors": "Salud · Educación · Tecnología · Comercio y retail · Grupos empresariales · Empresas extranjeras",
     "mapTitle": "Desde Quito, conexiones con nueve países",
@@ -622,7 +623,7 @@ window.TEMPO_CONTENT = {
       "name": "Eleazar Becerra",
       "company": "Cámara de Comercio Exterior",
       "image": "eleazar-approved.webp",
-      "logo": "client-004.png",
+      "logo": "cce.png",
       "website": "https://www.camaracomercioexterior.edu.pe/",
       "id": "eleazar",
       "role": "Director general y accionista principal",
@@ -691,19 +692,19 @@ window.TEMPO_CONTENT = {
     "privacyClose": "Cerrar",
     "privacyChoiceNote": "La elección se guarda en este navegador. El mapa solo se carga si lo permite.",
     "heroEyebrow": "Firma jurídica empresarial · Quito · Ecuador",
-    "heroDescription": "Asesoramos a empresas nacionales y extranjeras en derecho corporativo, protección de datos personales y establecimiento en Ecuador, con un equipo jurídico, contable y tecnológico.",
-    "bookLong": "Solicitar un diagnóstico inicial",
+    "heroDescription": "Asesoramos a empresas nacionales y extranjeras en derecho corporativo, protección de datos y establecimiento y operación en Ecuador, con apoyo jurídico, contable y tecnológico.",
+    "bookLong": "Solicitar orientación inicial",
     "proofOrganizations": "empresas y organizaciones asesoradas",
     "proofData": "implementaciones de la LOPDP",
-    "proofForeign": "compañías con capital extranjero constituidas",
+    "proofForeign": "empresas extranjeras constituidas",
     "methodTitle": "Una ruta clara\ndesde el inicio.",
     "methodDescription": "Primero entendemos la necesidad. Después definimos qué trabajo se requiere y cómo lo ejecutaremos.",
-    "step1Description": "Nos cuenta el contexto de su empresa. Respondemos el mismo día hábil y coordinamos la información necesaria para orientar el siguiente paso.",
+    "step1Description": "Nos cuenta el contexto de su empresa y orientamos el siguiente paso.",
     "step2Description": "Acordamos alcance, entregables, tiempos y honorarios.",
     "step3Description": "Desarrollamos el servicio y coordinamos con su equipo la información necesaria.",
     "step4Description": "Mantenemos seguimiento y soporte cuando el servicio lo requiere.",
     "footerDescription": "Abogados para empresas en Ecuador. Oficina en Quito · Atención en todo el país.",
-    "contactDescription": "Comparta el contexto y el servicio que le interesa. Le respondemos el mismo día hábil para conocer su necesidad y coordinar el siguiente paso.",
+    "contactDescription": "Comparta el contexto y el servicio que le interesa. Un abogado del equipo podrá orientar el siguiente paso.",
     "company": "Empresa o proyecto",
     "pageTitle": "Abogados para empresas en Ecuador | TempoLegal",
     "pageDescription": "Asesoramos a empresas nacionales y extranjeras en derecho corporativo, protección de datos y establecimiento y operación en Ecuador, con apoyo jurídico, contable y tecnológico.",
@@ -862,14 +863,14 @@ window.TEMPO_CONTENT = {
     "companyAbout": "Nosotros",
     "companyContact": "Contacto",
     "phoneField": "Teléfono o WhatsApp",
-    "book": "Contáctenos"
+    "book": "Solicitar orientación"
   },
   "en": {
     "navTeam": "Our team",
     "navResources": "Publications",
     "servicesEyebrow": "Services for businesses",
     "servicesHeading": "Advice for every stage\nof your business.",
-    "servicesIntro": "Advice to create, run and grow your company, with legal, accounting and compliance support.",
+    "servicesIntro": "Legal, accounting and compliance services to establish, operate and develop your business in Ecuador.",
     "filterAll": "All practice areas",
     "filterBusiness": "Business",
     "filterData": "Data & technology",
@@ -882,7 +883,7 @@ window.TEMPO_CONTENT = {
     "servicesCount": "{count} practice areas available",
     "trustEyebrow": "Figures updated in October 2026",
     "trustData": "data protection projects and implementations",
-    "trustDpd": "companies using our Data Protection Officer service",
+    "trustDpd": "current DPO appointments",
     "trustOrganizations": "organizations advised",
     "clientsTitle": "Businesses and organizations that have trusted TempoLegal",
     "clientsNote": "Explore our experience across different sectors.",
@@ -904,7 +905,7 @@ window.TEMPO_CONTENT = {
     "mapLegend": "Regional connections · Support from Quito",
     "teamEyebrow": "Team",
     "teamHeading": "Heads of each practice area",
-    "teamIntro": "Meet the people who coordinate the firm’s main practice areas. TempoLegal brings together legal, accounting and technology advice.",
+    "teamIntro": "Meet the people who coordinate the firm’s main practice areas. TempoLegal brings together legal, accounting and technology advice. Rolando Valencia, Engineer, is Financial Services Coordinator. Finance · Administration.",
     "profileMore": "View profile",
     "testimonialsEyebrow": "Testimonials",
     "testimonialsHeading": "What our clients say",
@@ -1051,21 +1052,10 @@ window.TEMPO_CONTENT = {
         "role": "Lawyer · Founding partner",
         "bio": "Corporate law, foreign companies and data protection. Has served as counsel in debt recovery proceedings involving over USD 15 million.",
         "specialty": "Specialist in soft landing and foreign companies. Corporate law · Data protection",
-        "photo": "assets/team/juan-alberto-gomez.webp",
+        "photo": "assets/team/2026-10-21-JUAN-ALBERTO-FONDO-HOME.jpg",
         "photoWidth": 900,
         "photoHeight": 900,
         "page": "team-juan-alberto-gomez.html"
-      },
-      {
-        "id": "daniela-barahona",
-        "name": "Daniela Barahona",
-        "role": "Lawyer · Master’s degree · Senior lawyer",
-        "bio": "Master’s in Procedural Law. Commercial contracts, corporate restructuring and legal risk management.",
-        "specialty": "Corporate law · Employment law",
-        "photo": "assets/team/daniela-barahona.webp",
-        "photoWidth": 900,
-        "photoHeight": 900,
-        "page": "team-daniela-barahona.html"
       },
       {
         "id": "emilie-donoso",
@@ -1073,21 +1063,33 @@ window.TEMPO_CONTENT = {
         "role": "Lawyer · Master’s degree · Senior lawyer",
         "bio": "Master’s in Compliance and Data Protection. Contracts, document management and prevention.",
         "specialty": "Data protection · Compliance",
-        "photo": "assets/team/emillie-donoso.webp",
+        "photo": "assets/team/2026-10-24_Emillie_Donoso_TempoLegal_Fondo_Quito_RECREACION_HD.png",
         "photoWidth": 900,
         "photoHeight": 900,
         "page": "team-emilie-donoso.html"
       },
       {
+        "id": "daniela-barahona",
+        "name": "Daniela Barahona",
+        "role": "Lawyer · Master’s degree · Senior lawyer",
+        "bio": "Master’s in Procedural Law. Commercial contracts, corporate restructuring and legal risk management.",
+        "specialty": "Corporate law · Employment law",
+        "photo": "assets/team/2026-10-24_Daniela_Barahona_TempoLegal_Fondo_Quito_RECREACION_HD.png",
+        "photoWidth": 900,
+        "photoHeight": 900,
+        "page": "team-daniela-barahona.html"
+      },
+      {
         "id": "rolando-valencia",
         "name": "Rolando Valencia",
         "degree": "Engineer",
-        "role": "Financial Services Coordinator",
+        "role": "Engineer · Financial Services Coordinator",
         "specialty": "Finance · Administration",
-        "photo": "assets/team/rolando-valencia.webp",
-        "page": null,
-        "photoWidth": 900,
-        "photoHeight": 900
+        "bio": "He holds an engineering degree in Business Administration and has experience in financial management, cost analysis and administrative processes.",
+        "photo": "assets/team/2026-10-24_Rolando_TempoLegal_Fondo_Quito_RECREACION_HD.png",
+        "photoWidth": 1314,
+        "photoHeight": 1586,
+        "page": "team-rolando-valencia.html"
       },
       {
         "id": "gabriel-calvopina",
@@ -1095,7 +1097,7 @@ window.TEMPO_CONTENT = {
         "role": "Engineer · Master’s degree · Accounting and Tax Services Coordinator",
         "bio": "20 years of experience in financial, accounting and tax management for businesses of different sizes.",
         "specialty": "Accounting · Tax",
-        "photo": "assets/team/gabriel-calvopina.webp",
+        "photo": "assets/team/gabriel.webp",
         "photoWidth": 900,
         "photoHeight": 900,
         "page": "team-gabriel-calvopina.html"
@@ -1141,7 +1143,7 @@ window.TEMPO_CONTENT = {
         "name": "Francisco Mosquera Aulestia",
         "company": "Grupo Mosquera Aulestia (GMA)",
         "image": "francisco-approved.webp",
-        "logo": "client-029.svg",
+        "logo": "gma.png",
         "website": "https://mosqueraulestia.com/",
         "id": "francisco",
         "role": "President and majority shareholder",
@@ -1154,25 +1156,6 @@ window.TEMPO_CONTENT = {
           "En GMA tenemos varias empresas y una operación logística que no se detiene. Necesitamos una asesoría legal que entienda esa realidad y no se quede solo en lo teórico.",
           "TempoLegal nos acompaña desde hace años en asuntos laborales, societarios, contractuales y de protección de datos personales. Conocen cómo funciona el grupo, así que cuando surge un problema podemos ir directamente a lo importante.",
           "Lo que más valoro es que nos ayuden a prevenir riesgos y nos den alternativas claras para resolver situaciones concretas. Para un grupo empresarial como el nuestro, contar con abogados que conocen la operación y están presentes cuando se los necesita marca una diferencia."
-        ]
-      },
-      {
-        "name": "Juan Pazmiño",
-        "company": "Rectificadora Pazmiño S.A.",
-        "image": "juan-approved.webp",
-        "logo": "client-050.svg",
-        "website": "https://rpazmino.com/",
-        "id": "juan",
-        "role": "Executive president and majority shareholder",
-        "paragraphs": [
-          "In business there are decisions that cannot be made blindly. When I consult a lawyer, I need a clear explanation of the options and the risks.",
-          "We have worked with Juan Alberto Gómez and the TempoLegal team on contracts and corporate matters. What I appreciate is being able to raise a problem with confidence and receive a clear opinion, tailored to what the company really needs.",
-          "That relationship is built over time and through work, not speeches. That is why I value having Juan Alberto and his team when I need legal support."
-        ],
-        "original": [
-          "En los negocios hay decisiones que no se pueden tomar a ciegas. Cuando consulto a un abogado, necesito que me explique bien cuáles son las opciones y los riesgos.",
-          "Con Juan Alberto Gómez y el equipo de TempoLegal hemos trabajado en contratos y asuntos societarios. Lo que aprecio es poder plantear un problema con confianza y recibir una opinión clara, pensada para lo que realmente necesita la empresa.",
-          "Esa relación se construye con el tiempo y con el trabajo, no con discursos. Por eso valoro contar con Juan Alberto y su equipo cuando necesito respaldo jurídico."
         ]
       },
       {
@@ -1194,7 +1177,7 @@ window.TEMPO_CONTENT = {
         "name": "Ana Cecilia Andrade",
         "company": "Grupo FLP",
         "image": "ana-approved.webp",
-        "logo": "client-027.svg",
+        "logo": "flp.png",
         "website": "https://www.flp.co/",
         "id": "ana",
         "role": "General manager of FL Procesados del Ecuador S.A. · Sole shareholder of FLP Holding Ecuador",
@@ -1207,6 +1190,46 @@ window.TEMPO_CONTENT = {
           "En FLP hay temas que requieren una respuesta inmediata y otros que necesitan seguimiento durante meses. Para mí hace una gran diferencia contar con un equipo que ya conoce nuestras empresas.",
           "TempoLegal nos apoya en asuntos laborales, societarios y contractuales y, además, lleva la contabilidad de FLP Holding Ecuador. Poder coordinar la parte jurídica y contable con un mismo equipo nos facilita mucho el trabajo.",
           "No tenemos que explicar desde cero la historia de cada compañía ni buscar a quién acudir según el problema. Sabemos con quién hablar y podemos dar continuidad a los asuntos pendientes. Eso, en el día a día de una empresa, vale mucho."
+        ]
+      },
+      {
+        "name": "Eleazar Becerra",
+        "company": "Cámara de Comercio Exterior",
+        "image": "eleazar-approved.webp",
+        "logo": "cce.png",
+        "website": "https://www.camaracomercioexterior.edu.pe/",
+        "id": "eleazar",
+        "role": "Chief executive and majority shareholder",
+        "paragraphs": [
+          "When we decided to develop our activities in Ecuador, we needed much more than to incorporate a company. We had to organize the corporate structure, local representation and accounting, tax and compliance matters.",
+          "TempoLegal has supported us in structuring our companies and meeting those needs, including personal data protection. For us, coordinating business across different countries, it is an advantage to have a local team that knows our operation and that we can contact directly.",
+          "In particular, we have trusted Juan Alberto Gómez to serve as the legal representative of companies in our group in Ecuador. For me, that responsibility is only delegated when there is complete trust.",
+          "That combination of legal advice and practical support has made it easier for us to work in Ecuador. It is the kind of support I would recommend to other companies seeking to establish themselves and operate in the country."
+        ],
+        "original": [
+          "Cuando decidimos desarrollar nuestras actividades en Ecuador, necesitábamos mucho más que constituir una compañía. Había que organizar la estructura societaria, la representación local y los temas contables, tributarios y de cumplimiento.",
+          "TempoLegal nos ha acompañado en la estructuración de nuestras empresas y en esas necesidades, incluida la protección de datos personales. Para nosotros, que coordinamos negocios en distintos países, es una ventaja tener un equipo local que conoce nuestra operación y al que podemos acudir directamente.",
+          "En particular, hemos confiado en Juan Alberto Gómez para asumir la representación legal de compañías de nuestro grupo en Ecuador. Para mí, esa responsabilidad solo se delega cuando existe plena confianza.",
+          "Esa combinación de asesoría jurídica y apoyo práctico nos ha facilitado trabajar en Ecuador. Es el tipo de acompañamiento que recomendaría a otras empresas que quieren establecerse y operar en el país."
+        ]
+      },
+      {
+        "name": "Juan Pazmiño",
+        "company": "Rectificadora Pazmiño S.A.",
+        "image": "juan-approved.webp",
+        "logo": "pazmino.png",
+        "website": "https://rpazmino.com/",
+        "id": "juan",
+        "role": "Executive president and majority shareholder",
+        "paragraphs": [
+          "In business there are decisions that cannot be made blindly. When I consult a lawyer, I need a clear explanation of the options and the risks.",
+          "We have worked with Juan Alberto Gómez and the TempoLegal team on contracts and corporate matters. What I appreciate is being able to raise a problem with confidence and receive a clear opinion, tailored to what the company really needs.",
+          "That relationship is built over time and through work, not speeches. That is why I value having Juan Alberto and his team when I need legal support."
+        ],
+        "original": [
+          "En los negocios hay decisiones que no se pueden tomar a ciegas. Cuando consulto a un abogado, necesito que me explique bien cuáles son las opciones y los riesgos.",
+          "Con Juan Alberto Gómez y el equipo de TempoLegal hemos trabajado en contratos y asuntos societarios. Lo que aprecio es poder plantear un problema con confianza y recibir una opinión clara, pensada para lo que realmente necesita la empresa.",
+          "Esa relación se construye con el tiempo y con el trabajo, no con discursos. Por eso valoro contar con Juan Alberto y su equipo cuando necesito respaldo jurídico."
         ]
       }
     ],
@@ -1439,7 +1462,7 @@ window.TEMPO_CONTENT = {
     "internationalTitle": "Your local team,\nfrom Quito.",
     "internationalDescription": "Incorporating a company is the beginning. We coordinate legal representation, registered address, accounting, employment and compliance to support your operation in Ecuador.\nThis support is known as soft landing. The scope is agreed according to your structure and needs; banking procedures and other authorizations depend on the competent institutions.",
     "coverageOrigins": "countries our clients come from",
-    "foreignCount": "foreign-owned companies incorporated",
+    "foreignCount": "foreign companies incorporated",
     "coverageSectorsLabel": "Sectors",
     "coverageSectors": "Healthcare · Education · Technology · Trade and retail · Business groups · Foreign companies",
     "mapTitle": "From Quito, connections with nine countries",
@@ -1465,7 +1488,7 @@ window.TEMPO_CONTENT = {
       "name": "Eleazar Becerra",
       "company": "Cámara de Comercio Exterior",
       "image": "eleazar-approved.webp",
-      "logo": "client-004.png",
+      "logo": "cce.png",
       "website": "https://www.camaracomercioexterior.edu.pe/",
       "id": "eleazar",
       "role": "General director and principal shareholder",
@@ -1532,19 +1555,19 @@ window.TEMPO_CONTENT = {
     "privacyClose": "Close",
     "privacyChoiceNote": "Your choice is saved in this browser. The map loads only if you allow it.",
     "heroEyebrow": "Business law firm · Quito · Ecuador",
-    "heroDescription": "We advise domestic and foreign companies on corporate law, personal data protection and establishment in Ecuador, with a legal, accounting and technology team.",
-    "bookLong": "Request an initial assessment",
+    "heroDescription": "We advise Ecuadorian and foreign companies on corporate law, data protection, and establishing and operating a business in Ecuador, with legal, accounting and technology support.",
+    "bookLong": "Request initial guidance",
     "proofOrganizations": "businesses and organizations advised",
     "proofData": "LOPDP implementations",
-    "proofForeign": "foreign-owned companies incorporated",
+    "proofForeign": "foreign companies incorporated",
     "methodTitle": "A clear path\nfrom the start.",
     "methodDescription": "First we understand the need. Then we define the work required and how we will carry it out.",
-    "step1Description": "You tell us about your company. We respond the same business day and coordinate the information needed to guide the next step.",
+    "step1Description": "Tell us about your business so we can guide the next step.",
     "step2Description": "We agree scope, deliverables, timelines and fees.",
     "step3Description": "We carry out the service and coordinate the necessary information with your team.",
     "step4Description": "We provide follow-up and support when the service requires it.",
     "footerDescription": "Lawyers for businesses in Ecuador. Office in Quito · Serving the whole country.",
-    "contactDescription": "Share the context and the service you are interested in. We respond the same business day to understand your needs and arrange the next step.",
+    "contactDescription": "Share your context and the service you are interested in. A lawyer from our team can guide the next step.",
     "company": "Company or project",
     "pageTitle": "Lawyers for businesses in Ecuador | TempoLegal",
     "pageDescription": "We advise Ecuadorian and foreign companies on corporate law, data protection, and establishing and operating a business in Ecuador, with legal, accounting and technology support.",
@@ -1709,7 +1732,7 @@ window.TEMPO_CONTENT = {
     "navResources": "Publicações",
     "servicesEyebrow": "Serviços para empresas",
     "servicesHeading": "Assessoria para cada etapa\nda sua empresa.",
-    "servicesIntro": "Assessoria para criar, operar e desenvolver sua empresa, com apoio jurídico, contábil e de conformidade.",
+    "servicesIntro": "Serviços jurídicos, contábeis e de conformidade para criar, operar e desenvolver sua empresa no Equador.",
     "filterAll": "Todas as áreas",
     "filterBusiness": "Empresas",
     "filterData": "Dados e tecnologia",
@@ -1722,7 +1745,7 @@ window.TEMPO_CONTENT = {
     "servicesCount": "{count} áreas disponíveis",
     "trustEyebrow": "Dados atualizados em outubro de 2026",
     "trustData": "projetos e implementações de proteção de dados",
-    "trustDpd": "empresas com nosso serviço de Encarregado de Proteção de Dados",
+    "trustDpd": "designações de DPD vigentes",
     "trustOrganizations": "organizações assessoradas",
     "clientsTitle": "Empresas e organizações que confiaram na TempoLegal",
     "clientsNote": "Conheça nossa experiência em diferentes setores.",
@@ -1744,7 +1767,7 @@ window.TEMPO_CONTENT = {
     "mapLegend": "Conexões regionais · Atendimento a partir de Quito",
     "teamEyebrow": "Equipe",
     "teamHeading": "Responsáveis por cada área",
-    "teamIntro": "Conheça quem coordena as principais áreas do escritório. A TempoLegal integra assessoria jurídica, contábil e tecnológica.",
+    "teamIntro": "Conheça quem coordena as principais áreas do escritório. A TempoLegal integra assessoria jurídica, contábil e tecnológica. Rolando Valencia, Engenheiro, é Coordenador de Serviços Financeiros. Finanças · Administração.",
     "profileMore": "Ver perfil",
     "testimonialsEyebrow": "Depoimentos",
     "testimonialsHeading": "O que dizem nossos clientes",
@@ -1891,21 +1914,10 @@ window.TEMPO_CONTENT = {
         "role": "Advogado · Sócio fundador",
         "bio": "Direito societário, empresas estrangeiras e proteção de dados. Atuou como procurador judicial em processos de recuperação de créditos envolvendo mais de USD 15 milhões.",
         "specialty": "Especialista em soft landing e empresas estrangeiras. Direito empresarial · Proteção de dados",
-        "photo": "assets/team/juan-alberto-gomez.webp",
+        "photo": "assets/team/2026-10-21-JUAN-ALBERTO-FONDO-HOME.jpg",
         "photoWidth": 900,
         "photoHeight": 900,
         "page": "team-juan-alberto-gomez.html"
-      },
-      {
-        "id": "daniela-barahona",
-        "name": "Daniela Barahona",
-        "role": "Advogada · Mestre · Advogada sênior",
-        "bio": "Mestre em Direito Processual. Contratos comerciais, reorganização societária e gestão de riscos jurídicos.",
-        "specialty": "Direito empresarial · Trabalhista",
-        "photo": "assets/team/daniela-barahona.webp",
-        "photoWidth": 900,
-        "photoHeight": 900,
-        "page": "team-daniela-barahona.html"
       },
       {
         "id": "emilie-donoso",
@@ -1913,21 +1925,33 @@ window.TEMPO_CONTENT = {
         "role": "Advogada · Mestre · Advogada sênior",
         "bio": "Mestrado em Conformidade e Proteção de Dados. Contratos, gestão documental e prevenção.",
         "specialty": "Proteção de dados · Conformidade",
-        "photo": "assets/team/emillie-donoso.webp",
+        "photo": "assets/team/2026-10-24_Emillie_Donoso_TempoLegal_Fondo_Quito_RECREACION_HD.png",
         "photoWidth": 900,
         "photoHeight": 900,
         "page": "team-emilie-donoso.html"
       },
       {
+        "id": "daniela-barahona",
+        "name": "Daniela Barahona",
+        "role": "Advogada · Mestre · Advogada sênior",
+        "bio": "Mestre em Direito Processual. Contratos comerciais, reorganização societária e gestão de riscos jurídicos.",
+        "specialty": "Direito empresarial · Trabalhista",
+        "photo": "assets/team/2026-10-24_Daniela_Barahona_TempoLegal_Fondo_Quito_RECREACION_HD.png",
+        "photoWidth": 900,
+        "photoHeight": 900,
+        "page": "team-daniela-barahona.html"
+      },
+      {
         "id": "rolando-valencia",
         "name": "Rolando Valencia",
         "degree": "Engenheiro",
-        "role": "Coordenador de Serviços Financeiros",
+        "role": "Engenheiro · Coordenador de Serviços Financeiros",
         "specialty": "Finanças · Administração",
-        "photo": "assets/team/rolando-valencia.webp",
-        "page": null,
-        "photoWidth": 900,
-        "photoHeight": 900
+        "bio": "Engenheiro em Administração de Empresas, com experiência em gestão financeira, análise de custos e processos administrativos.",
+        "photo": "assets/team/2026-10-24_Rolando_TempoLegal_Fondo_Quito_RECREACION_HD.png",
+        "photoWidth": 1314,
+        "photoHeight": 1586,
+        "page": "team-rolando-valencia.html"
       },
       {
         "id": "gabriel-calvopina",
@@ -1935,7 +1959,7 @@ window.TEMPO_CONTENT = {
         "role": "Engenheiro · Mestre · Coordenador de Serviços Contábeis e Tributários",
         "bio": "20 anos de experiência em gestão financeira, contábil e tributária para empresas de diferentes portes.",
         "specialty": "Contabilidade · Tributos",
-        "photo": "assets/team/gabriel-calvopina.webp",
+        "photo": "assets/team/gabriel.webp",
         "photoWidth": 900,
         "photoHeight": 900,
         "page": "team-gabriel-calvopina.html"
@@ -1981,7 +2005,7 @@ window.TEMPO_CONTENT = {
         "name": "Francisco Mosquera Aulestia",
         "company": "Grupo Mosquera Aulestia (GMA)",
         "image": "francisco-approved.webp",
-        "logo": "client-029.svg",
+        "logo": "gma.png",
         "website": "https://mosqueraulestia.com/",
         "id": "francisco",
         "role": "Presidente e acionista majoritário",
@@ -1994,25 +2018,6 @@ window.TEMPO_CONTENT = {
           "En GMA tenemos varias empresas y una operación logística que no se detiene. Necesitamos una asesoría legal que entienda esa realidad y no se quede solo en lo teórico.",
           "TempoLegal nos acompaña desde hace años en asuntos laborales, societarios, contractuales y de protección de datos personales. Conocen cómo funciona el grupo, así que cuando surge un problema podemos ir directamente a lo importante.",
           "Lo que más valoro es que nos ayuden a prevenir riesgos y nos den alternativas claras para resolver situaciones concretas. Para un grupo empresarial como el nuestro, contar con abogados que conocen la operación y están presentes cuando se los necesita marca una diferencia."
-        ]
-      },
-      {
-        "name": "Juan Pazmiño",
-        "company": "Rectificadora Pazmiño S.A.",
-        "image": "juan-approved.webp",
-        "logo": "client-050.svg",
-        "website": "https://rpazmino.com/",
-        "id": "juan",
-        "role": "Presidente executivo e acionista majoritário",
-        "paragraphs": [
-          "Nos negócios há decisões que não podem ser tomadas às cegas. Quando consulto um advogado, preciso que ele me explique bem quais são as opções e os riscos.",
-          "Temos trabalhado com Juan Alberto Gómez e a equipe da TempoLegal em contratos e questões societárias. O que aprecio é poder apresentar um problema com confiança e receber uma opinião clara, pensada para o que a empresa realmente precisa.",
-          "Essa relação se constrói com o tempo e com o trabalho, não com discursos. Por isso valorizo contar com Juan Alberto e sua equipe quando preciso de apoio jurídico."
-        ],
-        "original": [
-          "En los negocios hay decisiones que no se pueden tomar a ciegas. Cuando consulto a un abogado, necesito que me explique bien cuáles son las opciones y los riesgos.",
-          "Con Juan Alberto Gómez y el equipo de TempoLegal hemos trabajado en contratos y asuntos societarios. Lo que aprecio es poder plantear un problema con confianza y recibir una opinión clara, pensada para lo que realmente necesita la empresa.",
-          "Esa relación se construye con el tiempo y con el trabajo, no con discursos. Por eso valoro contar con Juan Alberto y su equipo cuando necesito respaldo jurídico."
         ]
       },
       {
@@ -2034,7 +2039,7 @@ window.TEMPO_CONTENT = {
         "name": "Ana Cecilia Andrade",
         "company": "Grupo FLP",
         "image": "ana-approved.webp",
-        "logo": "client-027.svg",
+        "logo": "flp.png",
         "website": "https://www.flp.co/",
         "id": "ana",
         "role": "Gerente geral da FL Procesados del Ecuador S.A. · Acionista única da FLP Holding Ecuador",
@@ -2047,6 +2052,46 @@ window.TEMPO_CONTENT = {
           "En FLP hay temas que requieren una respuesta inmediata y otros que necesitan seguimiento durante meses. Para mí hace una gran diferencia contar con un equipo que ya conoce nuestras empresas.",
           "TempoLegal nos apoya en asuntos laborales, societarios y contractuales y, además, lleva la contabilidad de FLP Holding Ecuador. Poder coordinar la parte jurídica y contable con un mismo equipo nos facilita mucho el trabajo.",
           "No tenemos que explicar desde cero la historia de cada compañía ni buscar a quién acudir según el problema. Sabemos con quién hablar y podemos dar continuidad a los asuntos pendientes. Eso, en el día a día de una empresa, vale mucho."
+        ]
+      },
+      {
+        "name": "Eleazar Becerra",
+        "company": "Cámara de Comercio Exterior",
+        "image": "eleazar-approved.webp",
+        "logo": "cce.png",
+        "website": "https://www.camaracomercioexterior.edu.pe/",
+        "id": "eleazar",
+        "role": "Diretor-geral e acionista principal",
+        "paragraphs": [
+          "Quando decidimos desenvolver nossas atividades no Equador, precisávamos de muito mais do que constituir uma companhia. Era necessário organizar a estrutura societária, a representação local e os assuntos contábeis, tributários e de conformidade.",
+          "A TempoLegal tem nos acompanhado na estruturação de nossas empresas e nessas necessidades, incluindo a proteção de dados pessoais. Para nós, que coordenamos negócios em diferentes países, é uma vantagem ter uma equipe local que conhece nossa operação e à qual podemos recorrer diretamente.",
+          "Em particular, confiamos em Juan Alberto Gómez para assumir a representação legal de empresas do nosso grupo no Equador. Para mim, essa responsabilidade só é delegada quando existe plena confiança.",
+          "Essa combinação de assessoria jurídica e apoio prático tem facilitado nosso trabalho no Equador. É o tipo de acompanhamento que eu recomendaria a outras empresas que desejam se estabelecer e operar no país."
+        ],
+        "original": [
+          "Cuando decidimos desarrollar nuestras actividades en Ecuador, necesitábamos mucho más que constituir una compañía. Había que organizar la estructura societaria, la representación local y los temas contables, tributarios y de cumplimiento.",
+          "TempoLegal nos ha acompañado en la estructuración de nuestras empresas y en esas necesidades, incluida la protección de datos personales. Para nosotros, que coordinamos negocios en distintos países, es una ventaja tener un equipo local que conoce nuestra operación y al que podemos acudir directamente.",
+          "En particular, hemos confiado en Juan Alberto Gómez para asumir la representación legal de compañías de nuestro grupo en Ecuador. Para mí, esa responsabilidad solo se delega cuando existe plena confianza.",
+          "Esa combinación de asesoría jurídica y apoyo práctico nos ha facilitado trabajar en Ecuador. Es el tipo de acompañamiento que recomendaría a otras empresas que quieren establecerse y operar en el país."
+        ]
+      },
+      {
+        "name": "Juan Pazmiño",
+        "company": "Rectificadora Pazmiño S.A.",
+        "image": "juan-approved.webp",
+        "logo": "pazmino.png",
+        "website": "https://rpazmino.com/",
+        "id": "juan",
+        "role": "Presidente executivo e acionista majoritário",
+        "paragraphs": [
+          "Nos negócios há decisões que não podem ser tomadas às cegas. Quando consulto um advogado, preciso que ele me explique bem quais são as opções e os riscos.",
+          "Temos trabalhado com Juan Alberto Gómez e a equipe da TempoLegal em contratos e questões societárias. O que aprecio é poder apresentar um problema com confiança e receber uma opinião clara, pensada para o que a empresa realmente precisa.",
+          "Essa relação se constrói com o tempo e com o trabalho, não com discursos. Por isso valorizo contar com Juan Alberto e sua equipe quando preciso de apoio jurídico."
+        ],
+        "original": [
+          "En los negocios hay decisiones que no se pueden tomar a ciegas. Cuando consulto a un abogado, necesito que me explique bien cuáles son las opciones y los riesgos.",
+          "Con Juan Alberto Gómez y el equipo de TempoLegal hemos trabajado en contratos y asuntos societarios. Lo que aprecio es poder plantear un problema con confianza y recibir una opinión clara, pensada para lo que realmente necesita la empresa.",
+          "Esa relación se construye con el tiempo y con el trabajo, no con discursos. Por eso valoro contar con Juan Alberto y su equipo cuando necesito respaldo jurídico."
         ]
       }
     ],
@@ -2279,7 +2324,7 @@ window.TEMPO_CONTENT = {
     "internationalTitle": "Sua equipe local,\na partir de Quito.",
     "internationalDescription": "Constituir uma empresa é o início. Coordenamos representação legal, domicílio, contabilidade, contratação e conformidade para acompanhar sua operação no Equador.\nEsse acompanhamento é conhecido como soft landing. O escopo é acordado conforme sua estrutura e suas necessidades; os procedimentos bancários e outras autorizações dependem das entidades competentes.",
     "coverageOrigins": "países de origem de nossos clientes",
-    "foreignCount": "empresas com capital estrangeiro constituídas",
+    "foreignCount": "empresas estrangeiras constituídas",
     "coverageSectorsLabel": "Setores",
     "coverageSectors": "Saúde · Educação · Tecnologia · Comércio e varejo · Grupos empresariais · Empresas estrangeiras",
     "mapTitle": "De Quito, conexões com nove países",
@@ -2305,7 +2350,7 @@ window.TEMPO_CONTENT = {
       "name": "Eleazar Becerra",
       "company": "Cámara de Comercio Exterior",
       "image": "eleazar-approved.webp",
-      "logo": "client-004.png",
+      "logo": "cce.png",
       "website": "https://www.camaracomercioexterior.edu.pe/",
       "id": "eleazar",
       "role": "Diretor geral e acionista principal",
@@ -2372,19 +2417,19 @@ window.TEMPO_CONTENT = {
     "privacyClose": "Fechar",
     "privacyChoiceNote": "A escolha é salva neste navegador. O mapa só é carregado se você permitir.",
     "heroEyebrow": "Escritório jurídico empresarial · Quito · Equador",
-    "heroDescription": "Assessoramos empresas nacionais e estrangeiras em direito societário, proteção de dados pessoais e estabelecimento no Equador, com uma equipe jurídica, contábil e tecnológica.",
-    "bookLong": "Solicitar um diagnóstico inicial",
+    "heroDescription": "Assessoramos empresas nacionais e estrangeiras em direito societário, proteção de dados e estabelecimento e operação no Equador, com apoio jurídico, contábil e tecnológico.",
+    "bookLong": "Solicitar orientação inicial",
     "proofOrganizations": "empresas e organizações assessoradas",
     "proofData": "implementações da LOPDP",
-    "proofForeign": "empresas com capital estrangeiro constituídas",
+    "proofForeign": "empresas estrangeiras constituídas",
     "methodTitle": "Um caminho claro\ndesde o início.",
     "methodDescription": "Primeiro entendemos a necessidade. Depois definimos o trabalho necessário e como o executaremos.",
-    "step1Description": "Você nos conta o contexto da sua empresa. Respondemos no mesmo dia útil e coordenamos as informações necessárias para orientar o próximo passo.",
+    "step1Description": "Conte-nos o contexto da sua empresa para orientarmos o próximo passo.",
     "step2Description": "Acordamos escopo, entregas, prazos e honorários.",
     "step3Description": "Desenvolvemos o serviço e coordenamos as informações necessárias com sua equipe.",
     "step4Description": "Mantemos acompanhamento e suporte quando o serviço exigir.",
     "footerDescription": "Advogados para empresas no Equador. Escritório em Quito · Atendimento em todo o país.",
-    "contactDescription": "Compartilhe o contexto e o serviço de seu interesse. Respondemos no mesmo dia útil para entender sua necessidade e coordenar o próximo passo.",
+    "contactDescription": "Compartilhe o contexto e o serviço de interesse. Um advogado da equipe poderá orientar o próximo passo.",
     "company": "Empresa ou projeto",
     "pageTitle": "Advogados para empresas no Equador | TempoLegal",
     "pageDescription": "Assessoramos empresas nacionais e estrangeiras em direito societário, proteção de dados e estabelecimento e operação no Equador, com apoio jurídico, contábil e tecnológico.",
@@ -2549,7 +2594,7 @@ window.TEMPO_CONTENT = {
     "navResources": "Publications",
     "servicesEyebrow": "Services aux entreprises",
     "servicesHeading": "Un conseil à chaque étape\nde votre entreprise.",
-    "servicesIntro": "Des conseils pour créer, exploiter et développer votre entreprise, avec un accompagnement juridique, comptable et de conformité.",
+    "servicesIntro": "Services juridiques, comptables et de conformité pour créer, exploiter et développer votre entreprise en Équateur.",
     "filterAll": "Tous les domaines",
     "filterBusiness": "Entreprise",
     "filterData": "Données et technologie",
@@ -2562,7 +2607,7 @@ window.TEMPO_CONTENT = {
     "servicesCount": "{count} domaines disponibles",
     "trustEyebrow": "Chiffres mis à jour en octobre 2026",
     "trustData": "projets et mises en conformité en protection des données",
-    "trustDpd": "entreprises utilisant notre service de Délégué à la protection des données",
+    "trustDpd": "mandats de DPD en cours",
     "trustOrganizations": "organisations conseillées",
     "clientsTitle": "Entreprises et organisations qui ont fait confiance à TempoLegal",
     "clientsNote": "Découvrez notre expérience dans différents secteurs.",
@@ -2584,7 +2629,7 @@ window.TEMPO_CONTENT = {
     "mapLegend": "Connexions régionales · Accompagnement depuis Quito",
     "teamEyebrow": "Équipe",
     "teamHeading": "Responsables de chaque domaine",
-    "teamIntro": "Découvrez les personnes qui coordonnent les principaux domaines du cabinet. TempoLegal réunit conseil juridique, comptable et technologique.",
+    "teamIntro": "Découvrez les personnes qui coordonnent les principaux domaines du cabinet. TempoLegal réunit conseil juridique, comptable et technologique. Rolando Valencia, Ingénieur, est Coordinateur des services financiers. Finance · Administration.",
     "profileMore": "Voir le profil",
     "testimonialsEyebrow": "Témoignages",
     "testimonialsHeading": "Ce que disent nos clients",
@@ -2731,21 +2776,10 @@ window.TEMPO_CONTENT = {
         "role": "Avocat · Associé fondateur",
         "bio": "Droit des sociétés, entreprises étrangères et protection des données. A représenté des clients dans des procédures de recouvrement portant sur plus de 15 millions USD.",
         "specialty": "Spécialiste du soft landing et des entreprises étrangères. Droit des sociétés · Protection des données",
-        "photo": "assets/team/juan-alberto-gomez.webp",
+        "photo": "assets/team/2026-10-21-JUAN-ALBERTO-FONDO-HOME.jpg",
         "photoWidth": 900,
         "photoHeight": 900,
         "page": "team-juan-alberto-gomez.html"
-      },
-      {
-        "id": "daniela-barahona",
-        "name": "Daniela Barahona",
-        "role": "Avocate · Titulaire d’un master · Avocate senior",
-        "bio": "Master en droit processuel. Contrats commerciaux, restructuration sociétaire et gestion des risques juridiques.",
-        "specialty": "Droit des sociétés · Droit du travail",
-        "photo": "assets/team/daniela-barahona.webp",
-        "photoWidth": 900,
-        "photoHeight": 900,
-        "page": "team-daniela-barahona.html"
       },
       {
         "id": "emilie-donoso",
@@ -2753,21 +2787,33 @@ window.TEMPO_CONTENT = {
         "role": "Avocate · Titulaire d’un master · Avocate senior",
         "bio": "Master en conformité et protection des données. Contrats, gestion documentaire et prévention.",
         "specialty": "Protection des données · Conformité",
-        "photo": "assets/team/emillie-donoso.webp",
+        "photo": "assets/team/2026-10-24_Emillie_Donoso_TempoLegal_Fondo_Quito_RECREACION_HD.png",
         "photoWidth": 900,
         "photoHeight": 900,
         "page": "team-emilie-donoso.html"
       },
       {
+        "id": "daniela-barahona",
+        "name": "Daniela Barahona",
+        "role": "Avocate · Titulaire d’un master · Avocate senior",
+        "bio": "Master en droit processuel. Contrats commerciaux, restructuration sociétaire et gestion des risques juridiques.",
+        "specialty": "Droit des sociétés · Droit du travail",
+        "photo": "assets/team/2026-10-24_Daniela_Barahona_TempoLegal_Fondo_Quito_RECREACION_HD.png",
+        "photoWidth": 900,
+        "photoHeight": 900,
+        "page": "team-daniela-barahona.html"
+      },
+      {
         "id": "rolando-valencia",
         "name": "Rolando Valencia",
         "degree": "Ingénieur",
-        "role": "Coordinateur des services financiers",
+        "role": "Ingénieur · Coordinateur des services financiers",
         "specialty": "Finance · Administration",
-        "photo": "assets/team/rolando-valencia.webp",
-        "page": null,
-        "photoWidth": 900,
-        "photoHeight": 900
+        "bio": "Titulaire d’un diplôme d’ingénieur en administration des entreprises, il possède une expérience en gestion financière, analyse des coûts et processus administratifs.",
+        "photo": "assets/team/2026-10-24_Rolando_TempoLegal_Fondo_Quito_RECREACION_HD.png",
+        "photoWidth": 1314,
+        "photoHeight": 1586,
+        "page": "team-rolando-valencia.html"
       },
       {
         "id": "gabriel-calvopina",
@@ -2775,7 +2821,7 @@ window.TEMPO_CONTENT = {
         "role": "Ingénieur · Titulaire d’un master · Coordinateur des services comptables et fiscaux",
         "bio": "20 ans d’expérience en gestion financière, comptable et fiscale pour des entreprises de différentes tailles.",
         "specialty": "Comptabilité · Fiscalité",
-        "photo": "assets/team/gabriel-calvopina.webp",
+        "photo": "assets/team/gabriel.webp",
         "photoWidth": 900,
         "photoHeight": 900,
         "page": "team-gabriel-calvopina.html"
@@ -2821,7 +2867,7 @@ window.TEMPO_CONTENT = {
         "name": "Francisco Mosquera Aulestia",
         "company": "Grupo Mosquera Aulestia (GMA)",
         "image": "francisco-approved.webp",
-        "logo": "client-029.svg",
+        "logo": "gma.png",
         "website": "https://mosqueraulestia.com/",
         "id": "francisco",
         "role": "Président et actionnaire majoritaire",
@@ -2834,25 +2880,6 @@ window.TEMPO_CONTENT = {
           "En GMA tenemos varias empresas y una operación logística que no se detiene. Necesitamos una asesoría legal que entienda esa realidad y no se quede solo en lo teórico.",
           "TempoLegal nos acompaña desde hace años en asuntos laborales, societarios, contractuales y de protección de datos personales. Conocen cómo funciona el grupo, así que cuando surge un problema podemos ir directamente a lo importante.",
           "Lo que más valoro es que nos ayuden a prevenir riesgos y nos den alternativas claras para resolver situaciones concretas. Para un grupo empresarial como el nuestro, contar con abogados que conocen la operación y están presentes cuando se los necesita marca una diferencia."
-        ]
-      },
-      {
-        "name": "Juan Pazmiño",
-        "company": "Rectificadora Pazmiño S.A.",
-        "image": "juan-approved.webp",
-        "logo": "client-050.svg",
-        "website": "https://rpazmino.com/",
-        "id": "juan",
-        "role": "Président exécutif et actionnaire majoritaire",
-        "paragraphs": [
-          "Dans les affaires, certaines décisions ne peuvent pas être prises à l’aveugle. Lorsque je consulte un avocat, j’ai besoin qu’il m’explique clairement les options et les risques.",
-          "Nous avons travaillé avec Juan Alberto Gómez et l’équipe de TempoLegal sur des contrats et des questions de droit des sociétés. J’apprécie de pouvoir exposer un problème en confiance et recevoir un avis clair, adapté aux besoins réels de l’entreprise.",
-          "Cette relation se construit avec le temps et le travail, pas avec des discours. C’est pourquoi j’apprécie de pouvoir compter sur Juan Alberto et son équipe lorsque j’ai besoin d’un soutien juridique."
-        ],
-        "original": [
-          "En los negocios hay decisiones que no se pueden tomar a ciegas. Cuando consulto a un abogado, necesito que me explique bien cuáles son las opciones y los riesgos.",
-          "Con Juan Alberto Gómez y el equipo de TempoLegal hemos trabajado en contratos y asuntos societarios. Lo que aprecio es poder plantear un problema con confianza y recibir una opinión clara, pensada para lo que realmente necesita la empresa.",
-          "Esa relación se construye con el tiempo y con el trabajo, no con discursos. Por eso valoro contar con Juan Alberto y su equipo cuando necesito respaldo jurídico."
         ]
       },
       {
@@ -2874,7 +2901,7 @@ window.TEMPO_CONTENT = {
         "name": "Ana Cecilia Andrade",
         "company": "Grupo FLP",
         "image": "ana-approved.webp",
-        "logo": "client-027.svg",
+        "logo": "flp.png",
         "website": "https://www.flp.co/",
         "id": "ana",
         "role": "Directrice générale de FL Procesados del Ecuador S.A. · Actionnaire unique de FLP Holding Ecuador",
@@ -2887,6 +2914,46 @@ window.TEMPO_CONTENT = {
           "En FLP hay temas que requieren una respuesta inmediata y otros que necesitan seguimiento durante meses. Para mí hace una gran diferencia contar con un equipo que ya conoce nuestras empresas.",
           "TempoLegal nos apoya en asuntos laborales, societarios y contractuales y, además, lleva la contabilidad de FLP Holding Ecuador. Poder coordinar la parte jurídica y contable con un mismo equipo nos facilita mucho el trabajo.",
           "No tenemos que explicar desde cero la historia de cada compañía ni buscar a quién acudir según el problema. Sabemos con quién hablar y podemos dar continuidad a los asuntos pendientes. Eso, en el día a día de una empresa, vale mucho."
+        ]
+      },
+      {
+        "name": "Eleazar Becerra",
+        "company": "Cámara de Comercio Exterior",
+        "image": "eleazar-approved.webp",
+        "logo": "cce.png",
+        "website": "https://www.camaracomercioexterior.edu.pe/",
+        "id": "eleazar",
+        "role": "Directeur général et actionnaire principal",
+        "paragraphs": [
+          "Lorsque nous avons décidé de développer nos activités en Équateur, il nous fallait bien plus que constituer une société. Il fallait organiser la structure sociétaire, la représentation locale et les aspects comptables, fiscaux et de conformité.",
+          "TempoLegal nous a accompagnés dans la structuration de nos entreprises et dans ces besoins, y compris la protection des données personnelles. Pour nous, qui coordonnons des activités dans différents pays, disposer d’une équipe locale connaissant notre activité et à laquelle nous pouvons nous adresser directement est un avantage.",
+          "Nous avons notamment fait confiance à Juan Alberto Gómez pour assurer la représentation légale de sociétés de notre groupe en Équateur. Pour moi, cette responsabilité ne se délègue que dans une relation de pleine confiance.",
+          "Cette combinaison de conseil juridique et d’appui pratique a facilité notre activité en Équateur. C’est le type d’accompagnement que je recommanderais à d’autres entreprises souhaitant s’établir et exercer dans le pays."
+        ],
+        "original": [
+          "Cuando decidimos desarrollar nuestras actividades en Ecuador, necesitábamos mucho más que constituir una compañía. Había que organizar la estructura societaria, la representación local y los temas contables, tributarios y de cumplimiento.",
+          "TempoLegal nos ha acompañado en la estructuración de nuestras empresas y en esas necesidades, incluida la protección de datos personales. Para nosotros, que coordinamos negocios en distintos países, es una ventaja tener un equipo local que conoce nuestra operación y al que podemos acudir directamente.",
+          "En particular, hemos confiado en Juan Alberto Gómez para asumir la representación legal de compañías de nuestro grupo en Ecuador. Para mí, esa responsabilidad solo se delega cuando existe plena confianza.",
+          "Esa combinación de asesoría jurídica y apoyo práctico nos ha facilitado trabajar en Ecuador. Es el tipo de acompañamiento que recomendaría a otras empresas que quieren establecerse y operar en el país."
+        ]
+      },
+      {
+        "name": "Juan Pazmiño",
+        "company": "Rectificadora Pazmiño S.A.",
+        "image": "juan-approved.webp",
+        "logo": "pazmino.png",
+        "website": "https://rpazmino.com/",
+        "id": "juan",
+        "role": "Président exécutif et actionnaire majoritaire",
+        "paragraphs": [
+          "Dans les affaires, certaines décisions ne peuvent pas être prises à l’aveugle. Lorsque je consulte un avocat, j’ai besoin qu’il m’explique clairement les options et les risques.",
+          "Nous avons travaillé avec Juan Alberto Gómez et l’équipe de TempoLegal sur des contrats et des questions de droit des sociétés. J’apprécie de pouvoir exposer un problème en confiance et recevoir un avis clair, adapté aux besoins réels de l’entreprise.",
+          "Cette relation se construit avec le temps et le travail, pas avec des discours. C’est pourquoi j’apprécie de pouvoir compter sur Juan Alberto et son équipe lorsque j’ai besoin d’un soutien juridique."
+        ],
+        "original": [
+          "En los negocios hay decisiones que no se pueden tomar a ciegas. Cuando consulto a un abogado, necesito que me explique bien cuáles son las opciones y los riesgos.",
+          "Con Juan Alberto Gómez y el equipo de TempoLegal hemos trabajado en contratos y asuntos societarios. Lo que aprecio es poder plantear un problema con confianza y recibir una opinión clara, pensada para lo que realmente necesita la empresa.",
+          "Esa relación se construye con el tiempo y con el trabajo, no con discursos. Por eso valoro contar con Juan Alberto y su equipo cuando necesito respaldo jurídico."
         ]
       }
     ],
@@ -3119,7 +3186,7 @@ window.TEMPO_CONTENT = {
     "internationalTitle": "Votre équipe locale,\ndepuis Quito.",
     "internationalDescription": "Constituer une société est le point de départ. Nous coordonnons représentation légale, domiciliation, comptabilité, recrutement et conformité pour accompagner votre activité en Équateur.\nCet accompagnement est appelé soft landing. Le périmètre est convenu selon votre structure et vos besoins ; les démarches bancaires et autres autorisations dépendent des organismes compétents.",
     "coverageOrigins": "pays d’origine de nos clients",
-    "foreignCount": "sociétés à capitaux étrangers constituées",
+    "foreignCount": "entreprises étrangères constituées",
     "coverageSectorsLabel": "Secteurs",
     "coverageSectors": "Santé · Éducation · Technologie · Commerce et distribution · Groupes d’entreprises · Sociétés étrangères",
     "mapTitle": "Depuis Quito, des connexions avec neuf pays",
@@ -3145,7 +3212,7 @@ window.TEMPO_CONTENT = {
       "name": "Eleazar Becerra",
       "company": "Cámara de Comercio Exterior",
       "image": "eleazar-approved.webp",
-      "logo": "client-004.png",
+      "logo": "cce.png",
       "website": "https://www.camaracomercioexterior.edu.pe/",
       "id": "eleazar",
       "role": "Directeur général et actionnaire principal",
@@ -3212,19 +3279,19 @@ window.TEMPO_CONTENT = {
     "privacyClose": "Fermer",
     "privacyChoiceNote": "Votre choix est enregistré dans ce navigateur. La carte ne se charge que si vous l’autorisez.",
     "heroEyebrow": "Cabinet juridique pour entreprises · Quito · Équateur",
-    "heroDescription": "Nous conseillons des entreprises nationales et étrangères en droit des sociétés, protection des données personnelles et implantation en Équateur, avec une équipe juridique, comptable et technologique.",
-    "bookLong": "Demander un diagnostic initial",
+    "heroDescription": "Nous conseillons les entreprises équatoriennes et étrangères en droit des sociétés, protection des données et implantation et activité en Équateur, avec un appui juridique, comptable et technologique.",
+    "bookLong": "Demander une première orientation",
     "proofOrganizations": "entreprises et organisations conseillées",
     "proofData": "mises en œuvre de la LOPDP",
-    "proofForeign": "sociétés à capitaux étrangers constituées",
+    "proofForeign": "entreprises étrangères constituées",
     "methodTitle": "Un parcours clair\ndès le départ.",
     "methodDescription": "Nous commençons par comprendre le besoin, puis définissons le travail nécessaire et sa mise en œuvre.",
-    "step1Description": "Vous nous présentez le contexte de votre entreprise. Nous répondons le jour ouvrable même et coordonnons les informations nécessaires pour orienter la prochaine étape.",
+    "step1Description": "Présentez le contexte de votre entreprise pour orienter la prochaine étape.",
     "step2Description": "Nous convenons du périmètre, des livrables, des délais et des honoraires.",
     "step3Description": "Nous réalisons la mission et coordonnons les informations nécessaires avec votre équipe.",
     "step4Description": "Nous assurons le suivi et le soutien lorsque la mission le nécessite.",
     "footerDescription": "Avocats pour les entreprises en Équateur. Bureau à Quito · Accompagnement dans tout le pays.",
-    "contactDescription": "Présentez le contexte et le service qui vous intéresse. Nous répondons le jour ouvrable même pour comprendre votre besoin et organiser la prochaine étape.",
+    "contactDescription": "Présentez votre contexte et le service qui vous intéresse. Un avocat de l’équipe pourra orienter la prochaine étape.",
     "company": "Entreprise ou projet",
     "pageTitle": "Avocats pour les entreprises en Équateur | TempoLegal",
     "pageDescription": "Nous conseillons les entreprises équatoriennes et étrangères en droit des sociétés, protection des données et implantation et activité en Équateur, avec un appui juridique, comptable et technologique.",

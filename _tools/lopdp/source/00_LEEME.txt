@@ -1,0 +1,24 @@
+HERRAMIENTAS LOPDP · TEMPOLEGAL.COM
+Actualizado: 30 de octubre de 2026 · Versiones aprobadas por el panel de revisión (arte, textos, conversión Meta y QA)
+
+VERSIONES VIGENTES (estas son las que se publican)
+  2026-10-30-CALCULADORA-MULTAS-LOPDP-V22.html     -> tempolegal.com/herramientas/calculadora-multas-lopdp/
+  2026-10-30-CALCULADORA-DELEGADO-LOPDP-V3.html    -> tempolegal.com/herramientas/calculadora-delegado-lopdp/
+  2026-10-30-DIAGNOSTICO-LOPDP-TEMPOLEGAL-V3.html  -> tempolegal.com/herramientas/diagnostico-lopdp/
+
+DOCUMENTOS
+  2026-10-30-INFORME-PANEL-REVISION.md                  -> qué encontró el panel y qué se corrigió (leer antes de publicar)
+  2026-10-30-GUIA-PUBLICACION-HERRAMIENTAS-LOPDP-V2.md  -> para Sistemas: cómo subirlas, el evento tl_lead para Meta y la captura de datos
+  2026-10-29-CAPTURA-LEADS-APPS-SCRIPT-V1.gs            -> guarda cada contacto en una hoja de Google y avisa a info@tempolegal.com
+  2026-10-30-ESTANDAR-HERRAMIENTAS-LOPDP-V3.md          -> cifras, precios, colores y textos que comparten las tres
+
+VERIFICACIÓN (30/10/2026, sobre estas versiones)
+  Panel de 4 revisores independientes: 48 hallazgos, los que bloqueaban e importaban están corregidos.
+  Simulación exhaustiva: Multas 1.537.200 casos · Delegado 14.696.640 · Diagnóstico 1.425.408 (todas sus combinaciones).
+  Más de 170.000 pantallas de resultado revisadas automáticamente. Cero errores.
+
+PARA LA PAUTA DE META
+  Destinos de anuncios: la calculadora de MULTAS (principal) y el DIAGNÓSTICO. La de Delegado recibe tráfico desde las otras dos.
+  Evento de conversión único en GTM: tl_lead -> píxel de Meta, evento Lead.
+
+ANTERIORES/  -> versiones reemplazadas. No publicar.

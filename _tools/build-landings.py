@@ -3,7 +3,7 @@
 
 Este script generó la primera versión de las 8 landings de protección de datos
 a partir de las maquetas (27/10/2026). Desde la integración con el trabajo de
-Antony, las landings se mantienen editando su HTML; volver a generarlas borraría
+Anthony, las landings se mantienen editando su HTML; volver a generarlas borraría
 local-navigation.js, el consentimiento de privacidad y otros ajustes integrados.
 Para cabecera y pie usar _tools/build-header.py y _tools/build-footer.py.
 Solo se ejecuta con --forzar.
@@ -200,7 +200,7 @@ def transform(html: str, page_dir: str, built: set[str], css_map: dict[str, str]
         path = url[len(SITE):]
         target = path.split('#')[0]
         if target and not (ROOT / target / 'index.html').exists():
-            # Página aún no construida (p. ej. las de Antony): se abre ese servicio en la Home.
+            # Página aún no construida (p. ej. las de Anthony): se abre ese servicio en la Home.
             anchor = PENDING_TARGETS.get(target.strip('/'), 'servicios')
             new = (p or '') + 'index.html#' + anchor
         else:

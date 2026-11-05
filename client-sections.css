@@ -56,6 +56,10 @@ html.motion-paused .coverage-section .coverage-pulse{animation-play-state:paused
 .testimonials-heading{margin-bottom:57px}
 .testimonials-heading h2{font:400 clamp(36px,3.4vw,54px)/1.08 var(--serif);letter-spacing:-.03em;max-width:100%}
 .testimonials-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:46px 65px}
+#review-stage[data-testimonial-layout="paired-featured"]{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px;align-items:start}
+#review-stage[data-testimonial-layout="paired-featured"]>.quote-card:not(.quote-card-ana){display:block;grid-column:auto;min-width:0;max-width:none}
+#review-stage[data-testimonial-layout="paired-featured"]>.quote-card-ana{grid-column:1/-1;max-width:none}
+@media(max-width:760px){#review-stage[data-testimonial-layout="paired-featured"]{grid-template-columns:1fr}}
 .quote-card{display:flex;flex-direction:column;min-width:0;border-top:1px solid #305969;padding-top:32px;position:relative}
 .quote-card:before{content:'“';font:400 110px/1 var(--serif);color:#d7bd6d80;position:absolute;right:-2px;top:1px;pointer-events:none}
 .quote-text{position:relative;z-index:1;margin:0;padding:0}

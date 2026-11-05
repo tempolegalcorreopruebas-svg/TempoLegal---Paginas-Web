@@ -123,5 +123,35 @@
     "source": "/fr/services/corporate-amendments/",
     "destination": "/fr/tramites-notariales-y-societarios/",
     "status": 301
+  },
+  {
+    "source": "/herramientas-lopdp/multas/",
+    "destination": "/herramientas/calculadora-multas-lopdp/",
+    "status": 301
+  },
+  {
+    "source": "/en/herramientas-lopdp/multas/",
+    "destination": "/herramientas/calculadora-multas-lopdp/",
+    "status": 301
+  },
+  {
+    "source": "/herramientas-lopdp/dpd/",
+    "destination": "/herramientas/calculadora-delegado-lopdp/",
+    "status": 301
+  },
+  {
+    "source": "/en/herramientas-lopdp/dpd/",
+    "destination": "/herramientas/calculadora-delegado-lopdp/",
+    "status": 301
+  },
+  {
+    "source": "/herramientas-lopdp/diagnostico/",
+    "destination": "/herramientas/diagnostico-lopdp/",
+    "status": 301
+  },
+  {
+    "source": "/en/herramientas-lopdp/diagnostico/",
+    "destination": "/herramientas/diagnostico-lopdp/",
+    "status": 301
   }
 ]

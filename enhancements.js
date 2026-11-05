@@ -150,7 +150,7 @@ const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccio
     const list=$('#services-grid');retire(list);list.replaceChildren();
     const total=services().length;
     services().forEach((service,index)=>{
-      const item=node('li','practice-item reveal');item.dataset.category=service.category;item.dataset.serviceId=service.id;item.id='servicio-'+service.id;
+      const item=node('li','practice-item reveal');item.dataset.category=service.category;item.dataset.serviceId=service.id;
       item.style.setProperty('--reveal-delay',Math.min(index,8)*45+'ms');
       const row=node('button','practice-row',null,{type:'button',id:'practice-row-'+service.id});
       const num=node('span','practice-index',pad(index+1),{'aria-hidden':'true'});
@@ -274,17 +274,17 @@ const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccio
       grid.append(card);
     });reveal(grid);
   }
-  function reviewCard(item) {
-    const card=node('article','quote-card quote-card-'+item.id+(!item.image?' quote-nophoto':'')+(item.id==='pablo'?' quote-personal':''),null,{id:'testimonio-'+item.id,'aria-labelledby':'autor-'+item.id});
+  function reviewCard(item, suffix='') {
+    const card=node('article','quote-card quote-card-'+item.id+(!item.image?' quote-nophoto':'')+(item.id==='pablo'?' quote-personal':''),null,{id:'testimonio-'+item.id+suffix,'aria-labelledby':'autor-'+item.id+suffix});
     const quote=node('blockquote','quote-text');item.paragraphs.forEach(text=>quote.append(node('p','',text)));card.append(quote);
     if(I.language!=='es') {
       card.append(node('p','quote-translation',t('reviewTranslation')));
-      const original=node('details','quote-original'),summary=node('summary','',t('reviewOriginal'));original.dataset.reviewOriginal=item.id;original.append(summary);
+      const original=node('details','quote-original'),summary=node('summary','',t('reviewOriginal'));original.dataset.reviewOriginal=item.id+suffix;original.append(summary);
       const body=node('blockquote','quote-original-text',null,{lang:'es'});item.original.forEach(text=>body.append(node('p','',text)));original.append(body);card.append(original);
     }
     const author=node('footer','quote-author');
     if(item.image)author.append(node('img','quote-portrait',null,{src:BASE+'assets/testimonials/'+item.image,alt:'',width:'1200',height:'1500',loading:'lazy',decoding:'async'}));
-    const identity=node('div','quote-identity');identity.append(node('h3','',item.name,{id:'autor-'+item.id}),node('p','quote-role',item.role));
+    const identity=node('div','quote-identity');identity.append(node('h3','',item.name,{id:'autor-'+item.id+suffix}),node('p','quote-role',item.role));
     if(item.company)identity.append(node('p','quote-company',item.company));
     const caption=item.id==='pablo'?t('reviewProfile'):new URL(item.website).hostname;
     identity.append(node('a','quote-website',caption,{href:item.website,target:'_blank',rel:'noopener noreferrer'}));
@@ -312,8 +312,8 @@ const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccio
     if(HOME_REVIEW){$('#review-stage').replaceChildren(...I.get('reviewItems').map(homeReviewCard));return;}
 
     const open=new Set($$('.quote-original[open]').map(el=>el.dataset.reviewOriginal));
-    $('#review-stage').replaceChildren(...I.get('reviewItems').map(reviewCard));
-    $('#client-review').replaceChildren(reviewCard(I.get('clientReview')));
+    $('#review-stage').replaceChildren(...I.get('reviewItems').map(item=>reviewCard(item)));
+    $('#client-review').replaceChildren(reviewCard(I.get('clientReview'),'-client'));
     $$('.quote-original').forEach(el=>{el.open=open.has(el.dataset.reviewOriginal);});
   }
   function renderArticles() {
@@ -334,7 +334,7 @@ const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccio
       if(featured)card.append(node('p','insight-edition',t('insightCollection')));
       grid.append(card);
     });
-    // Como en la versión de Antony: acceso a una página independiente de publicaciones.
+    // Como en la versión de Anthony: acceso a una página independiente de publicaciones.
     const archiveLabels={es:'Ver todas las publicaciones',en:'View all publications',pt:'Ver todas as publicações',fr:'Voir toutes les publications'};
     const old=$('#all-publications');if(old)old.remove();
     const all=node('div','all-publications',null,{id:'all-publications'});

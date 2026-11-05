@@ -1,0 +1,17 @@
+/* Visual asset parity: the Spanish home is the reference for all locales. */
+/* The original files, brand marks and portraits remain unchanged. */
+#clientes .clients-marquee-set { align-items: center; }
+#clientes .client-logo { display: flex; align-items: center; justify-content: center; min-width: 0; }
+#clientes .client-logo img { display: block; max-width: 100%; object-fit: contain; object-position: center; flex-shrink: 0; }
+#equipo .team-reference-grid { align-items: start; }
+#equipo .team-person { min-width: 0; }
+#equipo .team-person-photo { overflow: hidden; }
+#equipo .team-person-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+#testimonios #review-stage { align-items: stretch; }
+#testimonios #review-stage .quote-card { min-width: 0; }
+#testimonios #review-stage .quote-portrait { object-fit: contain; object-position: center; }
+#testimonios #review-stage .quote-logo { display: block; max-width: 100%; object-fit: contain; object-position: center; }
+@media (max-width: 760px) {
+  #equipo .team-reference-grid { align-items: start; }
+  #testimonios #review-stage { grid-template-columns: 1fr; }
+}

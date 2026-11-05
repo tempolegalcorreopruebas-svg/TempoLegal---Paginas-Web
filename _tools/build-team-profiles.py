@@ -13,7 +13,8 @@ pages = {
     'juan-gomez': 'team-juan-alberto-gomez.html',
     'emilie-donoso': 'team-emilie-donoso.html',
     'daniela-barahona': 'team-daniela-barahona.html',
-    'gabriel-calvopina': 'team-gabriel-calvopina.html'
+    'gabriel-calvopina': 'team-gabriel-calvopina.html',
+    'rolando-valencia': 'team-rolando-valencia.html'
 }
 labels = {
     'es': {'profileBack': 'Volver al equipo', 'profileEyebrow': 'Nuestro equipo', 'profileAbout': 'Semblanza profesional', 'profileCareer': 'Trayectoria y formación', 'profilePractice': 'Áreas de práctica', 'profileOthers': 'Conozca al resto del equipo', 'profileContactTitle': 'El respaldo de un equipo.', 'profileContactBody': 'Conversemos sobre lo que su empresa necesita y la especialidad que puede acompañarle.', 'profileContact': 'Contactar a Tempo Legal', 'profileOpenLabel': 'Ver el perfil de {name} (se abre en una pestaña nueva)'},

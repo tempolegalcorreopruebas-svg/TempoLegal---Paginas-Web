@@ -1,0 +1,38 @@
+{
+  "sourceDate": "2026-10-30",
+  "language": "es",
+  "standalone": true,
+  "publicationStatus": "staging",
+  "tools": [
+    {
+      "sourceFile": "2026-10-30-CALCULADORA-MULTAS-LOPDP-V22.html",
+      "version": "V22",
+      "file": "herramientas/calculadora-multas-lopdp/index.html",
+      "canonical": "https://tempolegal.com/herramientas/calculadora-multas-lopdp/",
+      "legacyRoutes": [
+        "/herramientas-lopdp/multas/",
+        "/en/herramientas-lopdp/multas/"
+      ]
+    },
+    {
+      "sourceFile": "2026-10-30-CALCULADORA-DELEGADO-LOPDP-V3.html",
+      "version": "V3",
+      "file": "herramientas/calculadora-delegado-lopdp/index.html",
+      "canonical": "https://tempolegal.com/herramientas/calculadora-delegado-lopdp/",
+      "legacyRoutes": [
+        "/herramientas-lopdp/dpd/",
+        "/en/herramientas-lopdp/dpd/"
+      ]
+    },
+    {
+      "sourceFile": "2026-10-30-DIAGNOSTICO-LOPDP-TEMPOLEGAL-V3.html",
+      "version": "V3",
+      "file": "herramientas/diagnostico-lopdp/index.html",
+      "canonical": "https://tempolegal.com/herramientas/diagnostico-lopdp/",
+      "legacyRoutes": [
+        "/herramientas-lopdp/diagnostico/",
+        "/en/herramientas-lopdp/diagnostico/"
+      ]
+    }
+  ]
+}

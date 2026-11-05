@@ -1,6 +1,6 @@
 # Current integration
 
-Read `MERGE-REVIEW.md` for the current combined delivery and validation. This working tree preserves Ruben's latest visual base and integrates Antony's additions. No remote branch or production site has been changed. Private server sources are under `server/tempo-private/`; install them outside the public document root as described there.
+Read `MERGE-REVIEW.md` for the current combined delivery and validation. This working tree preserves Ruben's latest visual base and integrates Anthony's additions. No remote branch or production site has been changed. Private server sources are under `server/tempo-private/`; install them outside the public document root as described there.
 
 # TempoLegal website
 

@@ -22,6 +22,8 @@ from __future__ import annotations
 
 import re
 import sys
+import posixpath
+from urllib.parse import urlsplit
 
 from i18n_comun import ROOT, all_pages, fill, prefixes, translate_static
 
@@ -44,7 +46,48 @@ def strip_comment(path) -> str:
 
 
 def menu_block(page: str, cta: str) -> str:
-    return START + '\n' + fill(strip_comment(COMPONENT), page).replace('{cta}', cta) + '\n' + END
+    body = fill(strip_comment(COMPONENT), page).replace('{cta}', cta)
+    return START + '\n' + resolve_menu_routes(body, page) + '\n' + END
+
+
+def resolve_menu_routes(markup: str, page: str) -> str:
+    """Use an existing Spanish destination when a translated landing is absent."""
+    language = prefixes(page)[0]
+    if language == 'es':
+        return markup
+    parent = (ROOT / page).parent
+    messages = {'en': 'Available in Spanish', 'pt': 'Disponível em espanhol', 'fr': 'Disponible en espagnol'}
+    def resolve(match):
+        tag = match.group(0)
+        href = re.search(r'href="([^"]+)"', tag)
+        if not href:
+            return tag
+        url = urlsplit(href.group(1))
+        if url.scheme or url.netloc or not url.path:
+            return tag
+        destination = (parent / url.path).resolve()
+        if not destination.suffix:
+            destination /= 'index.html'
+        if destination.is_file():
+            return tag
+        try:
+            parts = destination.relative_to(ROOT.resolve()).parts
+        except ValueError:
+            return tag
+        if not parts or parts[0] != language:
+            return tag
+        fallback = ROOT.joinpath(*parts[1:])
+        if not fallback.is_file():
+            return tag
+        target = posixpath.relpath(fallback, parent)
+        if url.query: target += '?' + url.query
+        if url.fragment: target += '#' + url.fragment
+        tag = tag.replace(href.group(0), 'href="' + target + '"', 1)
+        extra = '' if 'hreflang=' in tag else ' hreflang="es"'
+        if 'title=' not in tag:
+            extra += ' title="' + messages[language] + '"'
+        return tag[:-1] + extra + '>'
+    return re.sub(r'<a\b[^>]*>', resolve, markup)
 
 
 def language_block(page: str) -> str:
@@ -109,6 +152,9 @@ def ensure_assets(html: str, root: str) -> str:
 
 
 def build(page: str) -> str:
+    # Approved tools are standalone documents; legacy routes are redirect-only.
+    if '/herramientas/' in '/' + page or '/herramientas-lopdp/' in '/' + page:
+        return f'  standalone  {page}'
     path = ROOT / page
     raw = path.read_bytes().decode('utf-8')
     newline = '\r\n' if '\r\n' in raw else '\n'

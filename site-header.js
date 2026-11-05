@@ -6,6 +6,35 @@
 (() => {
   const menus = [...document.querySelectorAll('[data-nav-menu]')];
 
+  // Normalize file previews, hosted directory URLs and retained service aliases.
+  function servicePath(value) {
+    const url = new URL(value, document.baseURI);
+    let path = decodeURIComponent(url.pathname).replace(/\/index\.html$/, '').replace(/\/$/, '');
+    path = path.replace(/\/services\/legal-representation$/, '/representacion-legal-fiscal-ecuador');
+    path = path.replace(/\/services\/corporate-amendments$/, '/tramites-notariales-y-societarios');
+    path = path.replace(/\/services\/accounting-support$/, '/servicios-contabilidad');
+    path = path.replace(/\/services\/sas-incorporation$/, '/constitucion-de-empresas-sas');
+    return { path, origin: url.origin, hash: url.hash };
+  }
+
+  function markCurrentService() {
+    const current = servicePath(location.href);
+    menus.forEach(menu => {
+      let hasCurrent = false;
+      menu.querySelectorAll('.nav-menu-panel a[href]').forEach(link => {
+        const target = servicePath(link.href);
+        const active = !target.hash && target.path === current.path && target.origin === current.origin;
+        link.classList.toggle('is-current-service', active);
+        if (active) { link.setAttribute('aria-current', 'page'); hasCurrent = true; }
+        else if (link.getAttribute('aria-current') === 'page') link.removeAttribute('aria-current');
+      });
+      menu.querySelector('.nav-menu-toggle')?.classList.toggle('has-current-service', hasCurrent);
+    });
+  }
+  markCurrentService();
+  document.addEventListener('DOMContentLoaded', markCurrentService);
+  document.addEventListener('tempo:languagechange', () => requestAnimationFrame(markCurrentService));
+
   function setMenu(menu, open, focusButton) {
     const button = menu.querySelector('.nav-menu-toggle');
     const panel = menu.querySelector('.nav-menu-panel');
@@ -65,11 +94,11 @@
     updateNotice();
   }
 
-  // Menú móvil en páginas secundarias (servicios de Antony, artículos, casos, perfiles y legales).
+  // Menú móvil en páginas secundarias (servicios de Anthony, artículos, casos, perfiles y legales).
   const header = document.querySelector('[data-common-toggle]');
   if (!header) return;
   const toggle = header.querySelector('.menu-toggle');
-  const nav = header.querySelector('#main-nav, #navigation');
+  const nav = header.querySelector('#main-nav');
   if (!toggle || !nav) return;
   const label = toggle.querySelector('.sr-only');
   const items = () => [...nav.querySelectorAll('a[href], button:not([disabled])')].filter(el => el.offsetParent !== null);

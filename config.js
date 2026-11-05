@@ -4,6 +4,6 @@ window.TEMPO_CONFIG = Object.freeze({
   whatsapp: '593978887392',
   bookingUrl: '',
   technicalTeamPhoto: '',
-  technicalTeamNames: 'Cristian Coque · Rubén Nacimba · Antony Uribe',
+  technicalTeamNames: 'Cristian Coque · Rubén Nacimba · Anthony Uribe',
   defaultLanguage: 'es'
 });

@@ -70,4 +70,4 @@ html[data-home-review] .cases-grid .case-card:first-child :is(.case-index,.case-
 
 /* Punto 11: fotos y logos de testimonios; Pablo conserva solo su identidad textual. */
 html[data-home-review] .quote-author{grid-template-columns:56px minmax(0,1fr);gap:13px}
-html[data-home-review] .quote-author .quote-logo{grid-column:2;justify-self:start;align-self:center;box-sizing:border-box;width:110px;max-width:100%;height:60px;object-fit:contain;background:#fff;padding:6px;border-radius:4px}
+html[data-home-review] .quote-author .quote-logo{grid-column:2;justify-self:start;align-self:center;box-sizing:border-box;width:110px;max-width:100%;height:60px;object-fit:contain;background:transparent;padding:0;border-radius:4px}

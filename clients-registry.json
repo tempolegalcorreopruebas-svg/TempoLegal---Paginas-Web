@@ -46,7 +46,7 @@
   },
   {
     "id": "client-010",
-    "name": "Colegio Miguel Ángel Buonarroti",
+    "name": "Colegio Miguel Ángel Buonarroti (escudo)",
     "src": "assets/clients-premium/client-010.svg"
   },
   {
@@ -126,7 +126,7 @@
   },
   {
     "id": "client-026",
-    "name": "FLP FL Procesados del Ecuador",
+    "name": "FLP FL Procesados del Ecuador (horizontal con lema)",
     "src": "assets/clients-premium/client-026.svg"
   },
   {
@@ -156,12 +156,12 @@
   },
   {
     "id": "client-032",
-    "name": "Hermanas Franciscanas Misioneras de la Inmaculada",
+    "name": "Hermanas Franciscanas Misioneras de la Inmaculada (escudo)",
     "src": "assets/clients-premium/client-032.png"
   },
   {
     "id": "client-033",
-    "name": "Hermanas Franciscanas Misioneras de la Inmaculada",
+    "name": "Hermanas Franciscanas Misioneras de la Inmaculada (horizontal)",
     "src": "assets/clients-premium/client-033.png"
   },
   {
@@ -316,17 +316,17 @@
   },
   {
     "id": "client-064",
-    "name": "UE San José Milagro",
+    "name": "UE San José Milagro (escudo)",
     "src": "assets/clients-premium/client-064.png"
   },
   {
     "id": "client-065",
-    "name": "UE San José Milagro",
+    "name": "UE San José Milagro (horizontal)",
     "src": "assets/clients-premium/client-065.png"
   },
   {
     "id": "client-066",
-    "name": "UE Santa María de los Ángeles",
+    "name": "UE Santa María de los Ángeles (escudo)",
     "src": "assets/clients-premium/client-066.png"
   },
   {
@@ -336,7 +336,7 @@
   },
   {
     "id": "client-068",
-    "name": "UE Santa Teresita La Libertad",
+    "name": "UE Santa Teresita La Libertad (escudo oficial 2026)",
     "src": "assets/clients-premium/client-068.png"
   },
   {

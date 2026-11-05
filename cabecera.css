@@ -19,6 +19,8 @@
 .nav-menu-col a{display:block;padding:6px 0;color:var(--ink)!important;font-size:14px;line-height:1.4;white-space:normal;text-decoration:none}
 .nav-menu-col a:after{display:none!important}
 .nav-menu-col a:hover{color:var(--teal)!important}
+.nav-menu-col a.is-current-service{background:#e5efec;color:#075d70!important;border-left:2px solid #b69b50;border-radius:0 12px 12px 0;padding-left:10px;padding-right:10px;font-weight:600}
+.nav-menu-toggle.has-current-service{box-shadow:inset 0 -2px 0 #d7bd6d}
 .nav-menu-col a.nav-menu-all{margin-top:6px;font-weight:600;color:var(--teal)!important}
 .nav-menu-panel :focus-visible{outline:2px solid var(--teal)!important;outline-offset:2px}
 
