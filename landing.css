@@ -1,0 +1,171 @@
+/* =====================================================================
+   Tempo Legal · landing.css · Capa visual común de las landings
+   Se carga DESPUÉS del CSS propio de cada maqueta. Unifica cabecera,
+   tipografía, colores, botones y bloques reutilizables (tarea 1.4) para
+   que las 8 páginas de datos pertenezcan a la misma familia visual,
+   sin cambiar los textos. Variables en base.css.
+   ===================================================================== */
+
+/* ---------- 0. Base ---------- */
+body.landing{background:var(--paper);color:var(--ink);font-family:var(--sans)}
+body.landing.menu-open{overflow:hidden}
+body.landing h1,body.landing h2,body.landing h3{font-family:var(--serif);font-weight:400}
+body.landing .eyebrow{font-family:var(--sans);font-size:var(--fs-label);font-weight:600;letter-spacing:.2em;text-transform:uppercase}
+body.landing .fine,body.landing small{font-size:max(var(--fs-note),14px)}
+.tl-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* ---------- 1. Cabecera común ---------- */
+.tl-header{position:sticky;top:0;z-index:60;height:var(--header-h,76px);background:var(--teal-header);color:var(--white);border-bottom:1px solid #ffffff1a;transition:height .25s var(--ease),box-shadow .25s,background .25s;padding:0;margin:0}
+.tl-header.is-scrolled{--header-h:64px;background:#2f6680;box-shadow:0 10px 30px -18px #0e3d4a99}
+.tl-header-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;width:min(1320px,calc(100% - 2*var(--gutter)));height:100%;margin:0 auto}
+.tl-brand{display:flex;align-items:center;flex:none}
+.tl-brand img{width:172px;height:auto;max-height:40px;filter:brightness(0) invert(1)}
+.tl-header #navigation.tl-nav{position:static;display:flex;flex-direction:row;align-items:center;gap:clamp(14px,1.8vw,30px);width:auto;height:auto;padding:0;margin:0;background:none;box-shadow:none;border:0;transform:none;opacity:1;visibility:visible}
+.tl-header .tl-nav a{position:relative;display:inline-flex;align-items:center;min-height:44px;padding:0;color:var(--white);font-family:var(--sans);font-size:clamp(13px,.86vw,15px);font-weight:400;letter-spacing:.01em;text-decoration:none;white-space:nowrap;background:none;border:0}
+.tl-header .tl-nav a:not(.tl-nav-cta):after{content:'';position:absolute;left:0;right:0;bottom:8px;height:1px;background:var(--teal-pale);transform:scaleX(0);transform-origin:left;transition:transform .25s var(--ease)}
+.tl-header .tl-nav a:not(.tl-nav-cta):hover:after,.tl-header .tl-nav a[aria-current="page"]:after{transform:scaleX(1)}
+.tl-header .tl-nav .tl-nav-cta{padding:0 20px;min-height:44px;background:#f4f7f8;color:var(--petroleo);font-weight:600;border-radius:var(--radius-sm);transition:background .2s,transform .2s}
+.tl-header .tl-nav .tl-nav-cta:hover{background:var(--white);transform:translateY(-1px)}
+.tl-header :focus-visible{outline:2px solid var(--white);outline-offset:3px}
+.tl-header .tl-menu-toggle{display:none;position:relative;flex-direction:column;justify-content:center;align-items:center;gap:7px;width:44px;height:44px;min-width:44px;padding:0;margin:0;background:none;border:0;color:var(--white);font-size:0;cursor:pointer}
+.tl-header .tl-menu-toggle>span:not(.tl-sr){display:block;width:24px;height:1.5px;background:currentColor;transition:transform .25s}
+.tl-header .tl-menu-toggle[aria-expanded="true"]>span:first-child{transform:translateY(4.25px) rotate(45deg)}
+.tl-header .tl-menu-toggle[aria-expanded="true"]>span:nth-child(2){transform:translateY(-4.25px) rotate(-45deg)}
+@media(max-width:1100px){
+.tl-header .tl-menu-toggle{display:flex}
+.tl-header #navigation.tl-nav{position:absolute;top:100%;left:0;right:0;display:none;flex-direction:column;align-items:stretch;gap:2px;max-height:calc(100dvh - var(--header-h,76px));overflow-y:auto;padding:18px var(--gutter) 28px;background:#f5f7f6;box-shadow:0 24px 30px #16323c14}
+.tl-header #navigation.tl-nav.is-open,.tl-header #navigation.tl-nav.open{display:flex}
+.tl-header .tl-nav a{color:var(--ink);font-size:16px}
+.tl-header .tl-nav a:not(.tl-nav-cta):after{background:var(--teal);bottom:6px}
+.tl-header .tl-nav .tl-nav-cta{justify-content:center;margin-top:14px;background:var(--teal);color:var(--white);min-height:48px}
+.tl-header .tl-nav .tl-nav-cta:hover{background:var(--teal-hover)}
+.tl-header .tl-nav :focus-visible{outline-color:var(--teal)}
+}
+@media(max-width:640px){.tl-brand img{width:146px}}
+
+/* ---------- 2. Equipo de informática: espacio preparado para la foto (tarea 0.1) ---------- */
+.it-team-photo{margin:0;min-width:0}
+.it-team-photo-frame{display:grid;place-items:center;aspect-ratio:16/10;width:100%;border-radius:var(--radius-lg);overflow:hidden;background:linear-gradient(140deg,#e3eef0,#f4f8f8 55%,#e9f1f2);border:1px dashed #b7cdd3;color:#7ea3ad}
+.it-team-photo.has-photo .it-team-photo-frame{border:0;background:#dfe9eb}
+.it-team-photo-frame img{width:100%;height:100%;object-fit:cover}
+.it-team-names{margin-top:12px;font-size:var(--fs-note);color:var(--muted)}
+
+/* ---------- 3. Pie común dentro de las landings ---------- */
+.landing .site-footer .container{width:calc(100% - 2*var(--gutter));max-width:1240px;margin-inline:auto}
+.landing .site-footer .footer-bottom .container{max-width:1240px}
+.landing .site-footer h2,.landing .site-footer .footer-layout h2{font-family:var(--sans);font-size:var(--fs-label);font-weight:600;letter-spacing:.16em;text-transform:uppercase;line-height:1.5;color:var(--teal-pale)}
+.landing .site-footer h3{font-family:var(--serif)}
+.landing .site-footer p{margin:0}
+.landing .site-footer ul{margin:0}
+.landing .footer-map-consent{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:16px;height:100%;padding:24px;color:#d3e3e6;font-size:var(--fs-note);line-height:1.6}
+.landing .footer-map-consent button{min-height:44px;padding:10px 18px;border:1px solid #ffffff8c;background:transparent;color:var(--white);font:600 14px var(--sans);cursor:pointer;border-radius:var(--radius-sm)}
+.landing .footer-map-consent button:hover{background:#ffffff1a}
+.landing .privacy-preferences-row{display:none}
+.landing .footer-bottom p+p{margin-top:5px}
+
+/* ---------- 4. Primer pantallazo: hero oscuro premium ---------- */
+.landing main>section:first-of-type{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(120% 90% at 85% 0%,#1b5b6f 0%,transparent 60%),linear-gradient(160deg,var(--petroleo) 0%,#0b3240 70%,#0a2c38 100%);color:#eef6f7}
+.landing main>section:first-of-type:before{content:'';position:absolute;inset:0;z-index:-1;background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:56px 56px;mask-image:linear-gradient(180deg,#000,transparent 85%)}
+.landing main>section:first-of-type:after{content:'';position:absolute;right:-8%;top:-30%;z-index:-1;width:52vw;height:52vw;max-width:760px;max-height:760px;border:1px solid #9fd3df26;transform:rotate(45deg);pointer-events:none}
+.landing main>section:first-of-type h1{color:var(--white);font-size:clamp(44px,5vw,84px);line-height:1.02;letter-spacing:-.03em}
+.landing main>section:first-of-type .eyebrow,.landing main>section:first-of-type .breadcrumb,.landing main>section:first-of-type .breadcrumb a{color:var(--teal-pale)}
+.landing main>section:first-of-type .lead,.landing main>section:first-of-type>.wrap>p,.landing main>section:first-of-type .hero-copy>p{color:#d5e6ea}
+.landing main>section:first-of-type .fine,.landing main>section:first-of-type .response-promise{color:#b9d3d9}
+.landing main>section:first-of-type .text-link,.landing main>section:first-of-type .textlink{color:var(--white);border-color:#ffffff73}
+.landing main>section:first-of-type .yellow-line{background:var(--accent)}
+.landing main>section:first-of-type .button.primary,.landing main>section:first-of-type .button:not(.light){background:var(--white);color:var(--petroleo);border-color:var(--white)}
+.landing main>section:first-of-type .button.primary:hover{background:var(--teal-pale)}
+.landing main>section:first-of-type .hub-signpost{border-color:#ffffff2e}
+.landing main>section:first-of-type .hub-signpost a{color:var(--white)}
+/* Palabras destacadas del titular y enlaces dentro de textos */
+.landing main>section:first-of-type h1 em,.landing main>section:first-of-type h1 span{color:var(--teal-pale);font-style:italic}
+.landing main>section:first-of-type p a,.landing main>section:first-of-type p strong{color:var(--white)}
+/* Las tarjetas laterales del hero conservan su diseño claro; solo ganan profundidad */
+.landing main>section:first-of-type aside{box-shadow:0 30px 60px -30px #00000080}
+/* DPD: el hero viene dentro de .wrap; se extiende el fondo a todo el ancho */
+.landing main>section.hero.wrap:first-of-type{overflow:visible;box-shadow:0 0 0 100vmax #0c3644;clip-path:inset(0 -100vmax)}
+.landing main>section.hero.wrap:first-of-type:after{display:none}
+.landing main>section:first-of-type .fine,.landing main>section:first-of-type small,.landing main>section:first-of-type .note{color:#b9d3d9}
+@media(prefers-reduced-motion:no-preference){
+.landing main>section:first-of-type h1,.landing main>section:first-of-type .lead{animation:tl-rise .8s var(--ease) both}
+.landing main>section:first-of-type .lead{animation-delay:.12s}
+@keyframes tl-rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+}
+
+/* ---------- 5. Botones ---------- */
+.landing .button{border-radius:var(--radius-sm);font-family:var(--sans);font-weight:600;letter-spacing:.01em;transition:background .2s,color .2s,transform .2s,box-shadow .2s}
+.landing .button.primary{background:var(--teal);border-color:var(--teal);color:var(--white)}
+.landing .button.primary:hover{background:var(--teal-hover);transform:translateY(-2px);box-shadow:0 10px 24px -12px #006e8c99}
+
+/* ---------- 6. Franja de sanciones (rojo sobrio) ---------- */
+.landing .sanctions-proof{background:linear-gradient(90deg,var(--risk-soft),#fff8f6);border-block:1px solid #ecd3d0}
+.landing .sanctions-proof h2{font-size:clamp(22px,1.8vw,28px);color:var(--ink)}
+.landing .sanctions-proof strong{display:inline-block;margin-bottom:2px;font-family:var(--serif);font-size:clamp(22px,1.7vw,28px);font-weight:400;color:var(--risk);letter-spacing:-.01em}
+.landing .sanctions-proof .sanctions-source{font-size:var(--fs-note)}
+.landing .sanctions-proof a{color:var(--risk)}
+
+/* ---------- 7. Servicios y sectores relacionados (chips) ---------- */
+.landing .revision-related{background:var(--surface);border-bottom:1px solid var(--line)}
+.landing .revision-related p{font-family:var(--sans);font-size:var(--fs-label);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.landing .revision-links{gap:10px}
+.landing .revision-links a{display:inline-flex;align-items:center;min-height:40px;padding:8px 16px;border:1px solid #cfdfe2;border-radius:999px;background:#f6fafa;color:var(--petroleo);font-size:14px;text-decoration:none;transition:background .2s,border-color .2s,color .2s}
+.landing .revision-links a:hover{background:var(--petroleo);border-color:var(--petroleo);color:var(--white)}
+
+/* ---------- 8. Logos de clientes: más presencia, sin deformar ---------- */
+.landing .firm-logos{gap:16px}
+.landing .firm-logo{background:var(--surface);border:1px solid #dfe9ec;border-radius:var(--radius-lg);box-shadow:0 14px 30px -26px #0e3d4a80;transition:transform .3s var(--ease),box-shadow .3s,border-color .3s}
+.landing .firm-logo:hover{transform:translateY(-3px);border-color:var(--teal-pale);box-shadow:0 22px 40px -26px #0e3d4a99}
+.landing .firm-logo img{object-fit:contain}
+.landing .firm-logo figcaption{font-size:var(--fs-label);color:var(--muted)}
+
+/* ---------- 9. Testimonios con protagonismo ---------- */
+.landing .trust-testimonials{background:linear-gradient(180deg,var(--surface),#f4f8f8)}
+.landing .trust-card{position:relative;background:var(--surface);border:1px solid #dfe9ec;border-top:3px solid var(--teal);border-radius:var(--radius-lg);box-shadow:0 24px 50px -36px #0e3d4a73;transition:transform .3s var(--ease),box-shadow .3s}
+.landing .trust-card:hover{transform:translateY(-4px);box-shadow:0 30px 60px -34px #0e3d4a8c}
+.landing .trust-card:before{content:'“';position:absolute;right:18px;top:6px;font:400 88px/1 var(--serif);color:#d7bd6d66;pointer-events:none}
+.landing .trust-card blockquote p:first-child{font-family:var(--serif);font-size:clamp(19px,1.35vw,22px);line-height:1.45;color:var(--petroleo)}
+.landing .quote-identity h3{font-family:var(--sans);font-size:15px;font-weight:600;color:var(--petroleo)}
+.landing .quote-role,.landing .quote-company,.landing .quote-personal-note{font-size:max(13px,var(--fs-label));line-height:1.6}
+.landing .quote-portrait{border-radius:50%;object-fit:cover}
+.landing .quote-logo{object-fit:contain}
+
+/* ---------- 10. Equipo ---------- */
+.landing .portrait-frame{border-radius:var(--radius-lg);overflow:hidden;background:#dde7e9}
+.landing .portrait-frame img{transition:transform .6s var(--ease)}
+.landing .people article:hover .portrait-frame img{transform:scale(1.03)}
+.landing .technical-group{align-items:center}
+
+/* ---------- 11. Preguntas frecuentes ---------- */
+.landing .faq-list details,.landing .faq details{border-bottom:1px solid #cfdcdf}
+.landing .faq-list summary,.landing .faq summary{position:relative;display:flex;align-items:center;min-height:64px;padding:18px 48px 18px 0;cursor:pointer;list-style:none;font-family:var(--serif);font-size:clamp(19px,1.4vw,23px);line-height:1.35;color:var(--petroleo)}
+.landing .faq-list summary::-webkit-details-marker,.landing .faq summary::-webkit-details-marker{display:none}
+.landing .faq-list summary:after,.landing .faq summary:after{content:'+';position:absolute;right:6px;top:50%;width:32px;height:32px;margin-top:-16px;display:grid;place-items:center;border:1px solid #b9ced3;border-radius:50%;font:400 20px/1 var(--sans);color:var(--teal);transition:transform .25s var(--ease),background .25s}
+.landing .faq-list details[open] summary:after,.landing .faq details[open] summary:after{transform:rotate(45deg);background:#e6f2f4}
+.landing .faq-answer{padding:0 48px 22px 0;color:var(--muted)}
+
+/* ---------- 12. CumpliDatos y bloques oscuros ---------- */
+.landing .cd-banner{background:linear-gradient(135deg,#e6f0f1,#f3f7f7)}
+
+/* ---------- 13. Herramientas ---------- */
+.tool-page{font-family:var(--sans)}
+
+
+/* Tarjetas claras dentro del hero oscuro (las marca landing.js según su fondo) */
+.landing main>section:first-of-type .tl-light-card{color:var(--ink)}
+.landing main>section:first-of-type .tl-light-card.tl-was-transparent{background:var(--surface);border-radius:var(--radius-lg);padding:clamp(20px,2vw,32px)}
+.landing main>section:first-of-type .tl-light-card :is(h2,h3,strong){color:var(--ink)}
+.landing main>section:first-of-type .tl-light-card :is(p,li,small,.fine,.note){color:var(--muted)}
+.landing main>section:first-of-type .tl-light-card a,.landing main>section:first-of-type .tl-light-card p a{color:var(--teal)}
+.landing main>section:first-of-type .tl-light-card .eyebrow{color:var(--teal)}
+.landing main>section:first-of-type .tl-light-card .button.primary{background:var(--teal);color:var(--white);border-color:var(--teal)}
+.landing main>section:first-of-type .first-step{color:#b9d3d9;font-size:var(--fs-note)}
+.landing main>section:first-of-type .first-step strong{background:none;color:var(--accent)}
+.landing main>section:first-of-type .dpd-dpo-definition,.landing main>section:first-of-type .dpd-dpo-note{color:#b9d3d9}
+
+/* ---------- 15. Contraste (tarea 5.2) ---------- */
+.landing .tool-number{color:#4f6364}
+.landing .site-footer .footer-bottom{color:var(--white)}
+.landing .site-footer .footer-bottom :is(p,span,a){color:#e3f1f4}
+.landing .footer-map-consent p{color:#d3e3e6}
+/* Pestañas de situaciones: la pestaña activa se veía blanco sobre blanco en la maqueta */
+.landing .journey .stage-tabs button[aria-selected=true]{background:var(--petroleo);color:var(--white);box-shadow:inset 3px 0 0 var(--accent)}

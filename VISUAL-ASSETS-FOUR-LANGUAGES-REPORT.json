@@ -1,0 +1,11 @@
+{
+  "source": "Spanish pages are the canonical visual resource references",
+  "home_section_images": {
+    "clientes": 36,
+    "equipo": 4,
+    "testimonios": 8
+  },
+  "localized_pages_audited": 159,
+  "image_order_mismatches": [],
+  "notes": "No client logos, team photos or testimonial company logos were replaced. Consistent layout CSS was added to the four homepages. Dynamic viewport behavior is not browser-tested."
+}

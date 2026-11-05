@@ -1,0 +1,1352 @@
+[
+  {
+    "page": "article-biometrics.html",
+    "lang": "en",
+    "matched_text_nodes": 167,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 167,
+    "prior_translation": true
+  },
+  {
+    "page": "article-data-breach.html",
+    "lang": "en",
+    "matched_text_nodes": 168,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 168,
+    "prior_translation": true
+  },
+  {
+    "page": "article-data-protection-officer.html",
+    "lang": "en",
+    "matched_text_nodes": 168,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 168,
+    "prior_translation": true
+  },
+  {
+    "page": "article-shareholder-agreements.html",
+    "lang": "en",
+    "matched_text_nodes": 159,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 159,
+    "prior_translation": true
+  },
+  {
+    "page": "caso-asistanet.html",
+    "lang": "en",
+    "matched_text_nodes": 141,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 141,
+    "prior_translation": true
+  },
+  {
+    "page": "caso-camara-comercio-exterior.html",
+    "lang": "en",
+    "matched_text_nodes": 141,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 141,
+    "prior_translation": true
+  },
+  {
+    "page": "caso-gma.html",
+    "lang": "en",
+    "matched_text_nodes": 141,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 141,
+    "prior_translation": true
+  },
+  {
+    "page": "caso-pazmino-narvaez.html",
+    "lang": "en",
+    "matched_text_nodes": 143,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 143,
+    "prior_translation": true
+  },
+  {
+    "page": "caso-solca.html",
+    "lang": "en",
+    "matched_text_nodes": 141,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 141,
+    "prior_translation": true
+  },
+  {
+    "page": "constitucion-de-empresas-sas/index.html",
+    "lang": "en",
+    "matched_text_nodes": 247,
+    "memory_text_nodes": 3,
+    "unmatched_text_nodes": 45,
+    "total_text_nodes": 295,
+    "prior_translation": true
+  },
+  {
+    "page": "contactanos/index.html",
+    "lang": "en",
+    "matched_text_nodes": 152,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 152,
+    "prior_translation": true
+  },
+  {
+    "page": "dpd-obligatorio-ecuador-2026-criterios-spdp/index.html",
+    "lang": "en",
+    "matched_text_nodes": 165,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 165,
+    "prior_translation": true
+  },
+  {
+    "page": "empresa-extranjera-ecuador-primeros-90-dias/index.html",
+    "lang": "en",
+    "matched_text_nodes": 133,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 133,
+    "prior_translation": true
+  },
+  {
+    "page": "herramientas/calculadora-delegado-lopdp/index.html",
+    "lang": "en",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 2,
+    "unmatched_text_nodes": 43,
+    "total_text_nodes": 45,
+    "prior_translation": false
+  },
+  {
+    "page": "herramientas/calculadora-multas-lopdp/index.html",
+    "lang": "en",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 4,
+    "unmatched_text_nodes": 73,
+    "total_text_nodes": 77,
+    "prior_translation": false
+  },
+  {
+    "page": "herramientas/diagnostico-lopdp/index.html",
+    "lang": "en",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 3,
+    "unmatched_text_nodes": 38,
+    "total_text_nodes": 41,
+    "prior_translation": false
+  },
+  {
+    "page": "holding-familiar-ecuador-estructura-sucesion/index.html",
+    "lang": "en",
+    "matched_text_nodes": 132,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 132,
+    "prior_translation": true
+  },
+  {
+    "page": "index.html",
+    "lang": "en",
+    "matched_text_nodes": 223,
+    "memory_text_nodes": 167,
+    "unmatched_text_nodes": 220,
+    "total_text_nodes": 610,
+    "prior_translation": true
+  },
+  {
+    "page": "politica-de-privacidad.html",
+    "lang": "en",
+    "matched_text_nodes": 304,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 304,
+    "prior_translation": true
+  },
+  {
+    "page": "politica-de-privacidad/index.html",
+    "lang": "en",
+    "matched_text_nodes": 304,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 304,
+    "prior_translation": true
+  },
+  {
+    "page": "proteccion-de-datos-personales-ecuador/delegado-proteccion-datos-externo-ecuador/index.html",
+    "lang": "en",
+    "matched_text_nodes": 482,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 482,
+    "prior_translation": true
+  },
+  {
+    "page": "proteccion-de-datos-personales-ecuador/implementacion-lopdp/index.html",
+    "lang": "en",
+    "matched_text_nodes": 525,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 525,
+    "prior_translation": true
+  },
+  {
+    "page": "proteccion-de-datos-personales-ecuador/index.html",
+    "lang": "en",
+    "matched_text_nodes": 426,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 426,
+    "prior_translation": true
+  },
+  {
+    "page": "proteccion-de-datos-personales-ecuador/proteccion-datos-clinicas-salud-ecuador/index.html",
+    "lang": "en",
+    "matched_text_nodes": 502,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 502,
+    "prior_translation": true
+  },
+  {
+    "page": "proteccion-de-datos-personales-ecuador/proteccion-datos-colegios-instituciones-educativas-ecuador/index.html",
+    "lang": "en",
+    "matched_text_nodes": 494,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 494,
+    "prior_translation": true
+  },
+  {
+    "page": "proteccion-de-datos-personales-ecuador/proteccion-datos-empresas-software-apps-ecuador/index.html",
+    "lang": "en",
+    "matched_text_nodes": 399,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 399,
+    "prior_translation": true
+  },
+  {
+    "page": "proteccion-de-datos-personales-ecuador/proteccion-datos-logistica-transporte-comercio-exterior-ecuador/index.html",
+    "lang": "en",
+    "matched_text_nodes": 400,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 400,
+    "prior_translation": true
+  },
+  {
+    "page": "proteccion-de-datos-personales-ecuador/proteccion-datos-sector-financiero-seguros-ecuador/index.html",
+    "lang": "en",
+    "matched_text_nodes": 391,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 391,
+    "prior_translation": true
+  },
+  {
+    "page": "publicaciones/index.html",
+    "lang": "en",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 32,
+    "unmatched_text_nodes": 25,
+    "total_text_nodes": 57,
+    "prior_translation": false
+  },
+  {
+    "page": "representacion-legal-fiscal-ecuador/index.html",
+    "lang": "en",
+    "matched_text_nodes": 101,
+    "memory_text_nodes": 81,
+    "unmatched_text_nodes": 206,
+    "total_text_nodes": 388,
+    "prior_translation": true
+  },
+  {
+    "page": "services/accounting-support/index.html",
+    "lang": "en",
+    "matched_text_nodes": 168,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 168,
+    "prior_translation": true
+  },
+  {
+    "page": "services/corporate-amendments/index.html",
+    "lang": "en",
+    "matched_text_nodes": 96,
+    "memory_text_nodes": 94,
+    "unmatched_text_nodes": 221,
+    "total_text_nodes": 411,
+    "prior_translation": true
+  },
+  {
+    "page": "services/corporate-law/index.html",
+    "lang": "en",
+    "matched_text_nodes": 288,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 288,
+    "prior_translation": true
+  },
+  {
+    "page": "services/foreign-branches/index.html",
+    "lang": "en",
+    "matched_text_nodes": 99,
+    "memory_text_nodes": 83,
+    "unmatched_text_nodes": 199,
+    "total_text_nodes": 381,
+    "prior_translation": true
+  },
+  {
+    "page": "services/foreign-capital/index.html",
+    "lang": "en",
+    "matched_text_nodes": 99,
+    "memory_text_nodes": 84,
+    "unmatched_text_nodes": 211,
+    "total_text_nodes": 394,
+    "prior_translation": true
+  },
+  {
+    "page": "services/holding-structures/index.html",
+    "lang": "en",
+    "matched_text_nodes": 244,
+    "memory_text_nodes": 3,
+    "unmatched_text_nodes": 41,
+    "total_text_nodes": 288,
+    "prior_translation": true
+  },
+  {
+    "page": "services/legal-representation/index.html",
+    "lang": "en",
+    "matched_text_nodes": 101,
+    "memory_text_nodes": 81,
+    "unmatched_text_nodes": 206,
+    "total_text_nodes": 388,
+    "prior_translation": true
+  },
+  {
+    "page": "services/monthly-legal-advice/index.html",
+    "lang": "en",
+    "matched_text_nodes": 96,
+    "memory_text_nodes": 95,
+    "unmatched_text_nodes": 199,
+    "total_text_nodes": 390,
+    "prior_translation": true
+  },
+  {
+    "page": "services/sas-incorporation/index.html",
+    "lang": "en",
+    "matched_text_nodes": 168,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 168,
+    "prior_translation": true
+  },
+  {
+    "page": "services/soft-landing/index.html",
+    "lang": "en",
+    "matched_text_nodes": 237,
+    "memory_text_nodes": 1,
+    "unmatched_text_nodes": 74,
+    "total_text_nodes": 312,
+    "prior_translation": true
+  },
+  {
+    "page": "servicios-contabilidad/index.html",
+    "lang": "en",
+    "matched_text_nodes": 98,
+    "memory_text_nodes": 84,
+    "unmatched_text_nodes": 243,
+    "total_text_nodes": 425,
+    "prior_translation": true
+  },
+  {
+    "page": "sobre-nosotros/index.html",
+    "lang": "en",
+    "matched_text_nodes": 154,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 154,
+    "prior_translation": true
+  },
+  {
+    "page": "team-daniela-barahona.html",
+    "lang": "en",
+    "matched_text_nodes": 145,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 145,
+    "prior_translation": true
+  },
+  {
+    "page": "team-emilie-donoso.html",
+    "lang": "en",
+    "matched_text_nodes": 145,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 145,
+    "prior_translation": true
+  },
+  {
+    "page": "team-gabriel-calvopina.html",
+    "lang": "en",
+    "matched_text_nodes": 144,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 144,
+    "prior_translation": true
+  },
+  {
+    "page": "team-juan-alberto-gomez.html",
+    "lang": "en",
+    "matched_text_nodes": 145,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 145,
+    "prior_translation": true
+  },
+  {
+    "page": "team-rolando-valencia.html",
+    "lang": "en",
+    "matched_text_nodes": 144,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 144,
+    "prior_translation": true
+  },
+  {
+    "page": "terminos-y-condiciones.html",
+    "lang": "en",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 130,
+    "unmatched_text_nodes": 11,
+    "total_text_nodes": 141,
+    "prior_translation": false
+  },
+  {
+    "page": "terminos-y-condiciones/index.html",
+    "lang": "en",
+    "matched_text_nodes": 145,
+    "memory_text_nodes": 0,
+    "unmatched_text_nodes": 0,
+    "total_text_nodes": 145,
+    "prior_translation": true
+  },
+  {
+    "page": "tramites-notariales-y-societarios/index.html",
+    "lang": "en",
+    "matched_text_nodes": 96,
+    "memory_text_nodes": 94,
+    "unmatched_text_nodes": 221,
+    "total_text_nodes": 411,
+    "prior_translation": true
+  },
+  {
+    "page": "article-biometrics.html",
+    "lang": "pt",
+    "matched_text_nodes": 96,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 167,
+    "prior_translation": true
+  },
+  {
+    "page": "article-data-breach.html",
+    "lang": "pt",
+    "matched_text_nodes": 97,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 168,
+    "prior_translation": true
+  },
+  {
+    "page": "article-data-protection-officer.html",
+    "lang": "pt",
+    "matched_text_nodes": 97,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 168,
+    "prior_translation": true
+  },
+  {
+    "page": "article-shareholder-agreements.html",
+    "lang": "pt",
+    "matched_text_nodes": 88,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 159,
+    "prior_translation": true
+  },
+  {
+    "page": "caso-asistanet.html",
+    "lang": "pt",
+    "matched_text_nodes": 70,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 141,
+    "prior_translation": true
+  },
+  {
+    "page": "caso-camara-comercio-exterior.html",
+    "lang": "pt",
+    "matched_text_nodes": 70,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 141,
+    "prior_translation": true
+  },
+  {
+    "page": "caso-gma.html",
+    "lang": "pt",
+    "matched_text_nodes": 70,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 141,
+    "prior_translation": true
+  },
+  {
+    "page": "caso-pazmino-narvaez.html",
+    "lang": "pt",
+    "matched_text_nodes": 72,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 143,
+    "prior_translation": true
+  },
+  {
+    "page": "caso-solca.html",
+    "lang": "pt",
+    "matched_text_nodes": 70,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 141,
+    "prior_translation": true
+  },
+  {
+    "page": "constitucion-de-empresas-sas/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 210,
+    "memory_text_nodes": 38,
+    "unmatched_text_nodes": 47,
+    "total_text_nodes": 295,
+    "prior_translation": true
+  },
+  {
+    "page": "contactanos/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 83,
+    "memory_text_nodes": 65,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 152,
+    "prior_translation": true
+  },
+  {
+    "page": "dpd-obligatorio-ecuador-2026-criterios-spdp/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 94,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 165,
+    "prior_translation": true
+  },
+  {
+    "page": "empresa-extranjera-ecuador-primeros-90-dias/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 62,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 133,
+    "prior_translation": true
+  },
+  {
+    "page": "herramientas/calculadora-delegado-lopdp/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 2,
+    "unmatched_text_nodes": 43,
+    "total_text_nodes": 45,
+    "prior_translation": false
+  },
+  {
+    "page": "herramientas/calculadora-multas-lopdp/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 2,
+    "unmatched_text_nodes": 75,
+    "total_text_nodes": 77,
+    "prior_translation": false
+  },
+  {
+    "page": "herramientas/diagnostico-lopdp/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 2,
+    "unmatched_text_nodes": 39,
+    "total_text_nodes": 41,
+    "prior_translation": false
+  },
+  {
+    "page": "holding-familiar-ecuador-estructura-sucesion/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 61,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 132,
+    "prior_translation": true
+  },
+  {
+    "page": "index.html",
+    "lang": "pt",
+    "matched_text_nodes": 189,
+    "memory_text_nodes": 139,
+    "unmatched_text_nodes": 282,
+    "total_text_nodes": 610,
+    "prior_translation": true
+  },
+  {
+    "page": "politica-de-privacidad.html",
+    "lang": "pt",
+    "matched_text_nodes": 233,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 304,
+    "prior_translation": true
+  },
+  {
+    "page": "politica-de-privacidad/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 233,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 304,
+    "prior_translation": true
+  },
+  {
+    "page": "proteccion-de-datos-personales-ecuador/delegado-proteccion-datos-externo-ecuador/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 99,
+    "unmatched_text_nodes": 383,
+    "total_text_nodes": 482,
+    "prior_translation": false
+  },
+  {
+    "page": "proteccion-de-datos-personales-ecuador/implementacion-lopdp/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 99,
+    "unmatched_text_nodes": 426,
+    "total_text_nodes": 525,
+    "prior_translation": false
+  },
+  {
+    "page": "proteccion-de-datos-personales-ecuador/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 98,
+    "unmatched_text_nodes": 328,
+    "total_text_nodes": 426,
+    "prior_translation": false
+  },
+  {
+    "page": "proteccion-de-datos-personales-ecuador/proteccion-datos-clinicas-salud-ecuador/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 100,
+    "unmatched_text_nodes": 402,
+    "total_text_nodes": 502,
+    "prior_translation": false
+  },
+  {
+    "page": "proteccion-de-datos-personales-ecuador/proteccion-datos-colegios-instituciones-educativas-ecuador/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 98,
+    "unmatched_text_nodes": 396,
+    "total_text_nodes": 494,
+    "prior_translation": false
+  },
+  {
+    "page": "proteccion-de-datos-personales-ecuador/proteccion-datos-empresas-software-apps-ecuador/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 97,
+    "unmatched_text_nodes": 302,
+    "total_text_nodes": 399,
+    "prior_translation": false
+  },
+  {
+    "page": "proteccion-de-datos-personales-ecuador/proteccion-datos-logistica-transporte-comercio-exterior-ecuador/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 98,
+    "unmatched_text_nodes": 302,
+    "total_text_nodes": 400,
+    "prior_translation": false
+  },
+  {
+    "page": "proteccion-de-datos-personales-ecuador/proteccion-datos-sector-financiero-seguros-ecuador/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 98,
+    "unmatched_text_nodes": 293,
+    "total_text_nodes": 391,
+    "prior_translation": false
+  },
+  {
+    "page": "publicaciones/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 31,
+    "unmatched_text_nodes": 26,
+    "total_text_nodes": 57,
+    "prior_translation": false
+  },
+  {
+    "page": "representacion-legal-fiscal-ecuador/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 64,
+    "memory_text_nodes": 97,
+    "unmatched_text_nodes": 227,
+    "total_text_nodes": 388,
+    "prior_translation": true
+  },
+  {
+    "page": "services/accounting-support/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 131,
+    "memory_text_nodes": 35,
+    "unmatched_text_nodes": 2,
+    "total_text_nodes": 168,
+    "prior_translation": true
+  },
+  {
+    "page": "services/corporate-amendments/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 59,
+    "memory_text_nodes": 109,
+    "unmatched_text_nodes": 243,
+    "total_text_nodes": 411,
+    "prior_translation": true
+  },
+  {
+    "page": "services/corporate-law/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 251,
+    "memory_text_nodes": 35,
+    "unmatched_text_nodes": 2,
+    "total_text_nodes": 288,
+    "prior_translation": true
+  },
+  {
+    "page": "services/foreign-branches/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 62,
+    "memory_text_nodes": 101,
+    "unmatched_text_nodes": 218,
+    "total_text_nodes": 381,
+    "prior_translation": true
+  },
+  {
+    "page": "services/foreign-capital/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 62,
+    "memory_text_nodes": 101,
+    "unmatched_text_nodes": 231,
+    "total_text_nodes": 394,
+    "prior_translation": true
+  },
+  {
+    "page": "services/holding-structures/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 207,
+    "memory_text_nodes": 38,
+    "unmatched_text_nodes": 43,
+    "total_text_nodes": 288,
+    "prior_translation": true
+  },
+  {
+    "page": "services/legal-representation/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 64,
+    "memory_text_nodes": 97,
+    "unmatched_text_nodes": 227,
+    "total_text_nodes": 388,
+    "prior_translation": true
+  },
+  {
+    "page": "services/monthly-legal-advice/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 59,
+    "memory_text_nodes": 112,
+    "unmatched_text_nodes": 219,
+    "total_text_nodes": 390,
+    "prior_translation": true
+  },
+  {
+    "page": "services/sas-incorporation/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 131,
+    "memory_text_nodes": 35,
+    "unmatched_text_nodes": 2,
+    "total_text_nodes": 168,
+    "prior_translation": true
+  },
+  {
+    "page": "services/soft-landing/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 200,
+    "memory_text_nodes": 35,
+    "unmatched_text_nodes": 77,
+    "total_text_nodes": 312,
+    "prior_translation": true
+  },
+  {
+    "page": "servicios-contabilidad/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 61,
+    "memory_text_nodes": 100,
+    "unmatched_text_nodes": 264,
+    "total_text_nodes": 425,
+    "prior_translation": true
+  },
+  {
+    "page": "sobre-nosotros/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 85,
+    "memory_text_nodes": 65,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 154,
+    "prior_translation": true
+  },
+  {
+    "page": "team-daniela-barahona.html",
+    "lang": "pt",
+    "matched_text_nodes": 74,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 145,
+    "prior_translation": true
+  },
+  {
+    "page": "team-emilie-donoso.html",
+    "lang": "pt",
+    "matched_text_nodes": 74,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 145,
+    "prior_translation": true
+  },
+  {
+    "page": "team-gabriel-calvopina.html",
+    "lang": "pt",
+    "matched_text_nodes": 73,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 144,
+    "prior_translation": true
+  },
+  {
+    "page": "team-juan-alberto-gomez.html",
+    "lang": "pt",
+    "matched_text_nodes": 74,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 145,
+    "prior_translation": true
+  },
+  {
+    "page": "team-rolando-valencia.html",
+    "lang": "pt",
+    "matched_text_nodes": 73,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 144,
+    "prior_translation": true
+  },
+  {
+    "page": "terminos-y-condiciones.html",
+    "lang": "pt",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 126,
+    "unmatched_text_nodes": 15,
+    "total_text_nodes": 141,
+    "prior_translation": false
+  },
+  {
+    "page": "terminos-y-condiciones/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 74,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 145,
+    "prior_translation": true
+  },
+  {
+    "page": "tramites-notariales-y-societarios/index.html",
+    "lang": "pt",
+    "matched_text_nodes": 59,
+    "memory_text_nodes": 109,
+    "unmatched_text_nodes": 243,
+    "total_text_nodes": 411,
+    "prior_translation": true
+  },
+  {
+    "page": "article-biometrics.html",
+    "lang": "fr",
+    "matched_text_nodes": 96,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 167,
+    "prior_translation": true
+  },
+  {
+    "page": "article-data-breach.html",
+    "lang": "fr",
+    "matched_text_nodes": 97,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 168,
+    "prior_translation": true
+  },
+  {
+    "page": "article-data-protection-officer.html",
+    "lang": "fr",
+    "matched_text_nodes": 97,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 168,
+    "prior_translation": true
+  },
+  {
+    "page": "article-shareholder-agreements.html",
+    "lang": "fr",
+    "matched_text_nodes": 88,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 159,
+    "prior_translation": true
+  },
+  {
+    "page": "caso-asistanet.html",
+    "lang": "fr",
+    "matched_text_nodes": 70,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 141,
+    "prior_translation": true
+  },
+  {
+    "page": "caso-camara-comercio-exterior.html",
+    "lang": "fr",
+    "matched_text_nodes": 70,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 141,
+    "prior_translation": true
+  },
+  {
+    "page": "caso-gma.html",
+    "lang": "fr",
+    "matched_text_nodes": 70,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 141,
+    "prior_translation": true
+  },
+  {
+    "page": "caso-pazmino-narvaez.html",
+    "lang": "fr",
+    "matched_text_nodes": 72,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 143,
+    "prior_translation": true
+  },
+  {
+    "page": "caso-solca.html",
+    "lang": "fr",
+    "matched_text_nodes": 70,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 141,
+    "prior_translation": true
+  },
+  {
+    "page": "constitucion-de-empresas-sas/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 210,
+    "memory_text_nodes": 38,
+    "unmatched_text_nodes": 47,
+    "total_text_nodes": 295,
+    "prior_translation": true
+  },
+  {
+    "page": "contactanos/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 83,
+    "memory_text_nodes": 65,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 152,
+    "prior_translation": true
+  },
+  {
+    "page": "dpd-obligatorio-ecuador-2026-criterios-spdp/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 94,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 165,
+    "prior_translation": true
+  },
+  {
+    "page": "empresa-extranjera-ecuador-primeros-90-dias/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 62,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 133,
+    "prior_translation": true
+  },
+  {
+    "page": "herramientas/calculadora-delegado-lopdp/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 2,
+    "unmatched_text_nodes": 43,
+    "total_text_nodes": 45,
+    "prior_translation": false
+  },
+  {
+    "page": "herramientas/calculadora-multas-lopdp/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 2,
+    "unmatched_text_nodes": 75,
+    "total_text_nodes": 77,
+    "prior_translation": false
+  },
+  {
+    "page": "herramientas/diagnostico-lopdp/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 2,
+    "unmatched_text_nodes": 39,
+    "total_text_nodes": 41,
+    "prior_translation": false
+  },
+  {
+    "page": "holding-familiar-ecuador-estructura-sucesion/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 61,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 132,
+    "prior_translation": true
+  },
+  {
+    "page": "index.html",
+    "lang": "fr",
+    "matched_text_nodes": 189,
+    "memory_text_nodes": 152,
+    "unmatched_text_nodes": 269,
+    "total_text_nodes": 610,
+    "prior_translation": true
+  },
+  {
+    "page": "politica-de-privacidad.html",
+    "lang": "fr",
+    "matched_text_nodes": 233,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 304,
+    "prior_translation": true
+  },
+  {
+    "page": "politica-de-privacidad/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 233,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 304,
+    "prior_translation": true
+  },
+  {
+    "page": "proteccion-de-datos-personales-ecuador/delegado-proteccion-datos-externo-ecuador/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 101,
+    "unmatched_text_nodes": 381,
+    "total_text_nodes": 482,
+    "prior_translation": false
+  },
+  {
+    "page": "proteccion-de-datos-personales-ecuador/implementacion-lopdp/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 101,
+    "unmatched_text_nodes": 424,
+    "total_text_nodes": 525,
+    "prior_translation": false
+  },
+  {
+    "page": "proteccion-de-datos-personales-ecuador/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 100,
+    "unmatched_text_nodes": 326,
+    "total_text_nodes": 426,
+    "prior_translation": false
+  },
+  {
+    "page": "proteccion-de-datos-personales-ecuador/proteccion-datos-clinicas-salud-ecuador/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 102,
+    "unmatched_text_nodes": 400,
+    "total_text_nodes": 502,
+    "prior_translation": false
+  },
+  {
+    "page": "proteccion-de-datos-personales-ecuador/proteccion-datos-colegios-instituciones-educativas-ecuador/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 100,
+    "unmatched_text_nodes": 394,
+    "total_text_nodes": 494,
+    "prior_translation": false
+  },
+  {
+    "page": "proteccion-de-datos-personales-ecuador/proteccion-datos-empresas-software-apps-ecuador/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 99,
+    "unmatched_text_nodes": 300,
+    "total_text_nodes": 399,
+    "prior_translation": false
+  },
+  {
+    "page": "proteccion-de-datos-personales-ecuador/proteccion-datos-logistica-transporte-comercio-exterior-ecuador/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 100,
+    "unmatched_text_nodes": 300,
+    "total_text_nodes": 400,
+    "prior_translation": false
+  },
+  {
+    "page": "proteccion-de-datos-personales-ecuador/proteccion-datos-sector-financiero-seguros-ecuador/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 100,
+    "unmatched_text_nodes": 291,
+    "total_text_nodes": 391,
+    "prior_translation": false
+  },
+  {
+    "page": "publicaciones/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 32,
+    "unmatched_text_nodes": 25,
+    "total_text_nodes": 57,
+    "prior_translation": false
+  },
+  {
+    "page": "representacion-legal-fiscal-ecuador/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 64,
+    "memory_text_nodes": 106,
+    "unmatched_text_nodes": 218,
+    "total_text_nodes": 388,
+    "prior_translation": true
+  },
+  {
+    "page": "services/accounting-support/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 131,
+    "memory_text_nodes": 35,
+    "unmatched_text_nodes": 2,
+    "total_text_nodes": 168,
+    "prior_translation": true
+  },
+  {
+    "page": "services/corporate-amendments/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 59,
+    "memory_text_nodes": 119,
+    "unmatched_text_nodes": 233,
+    "total_text_nodes": 411,
+    "prior_translation": true
+  },
+  {
+    "page": "services/corporate-law/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 251,
+    "memory_text_nodes": 35,
+    "unmatched_text_nodes": 2,
+    "total_text_nodes": 288,
+    "prior_translation": true
+  },
+  {
+    "page": "services/foreign-branches/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 62,
+    "memory_text_nodes": 110,
+    "unmatched_text_nodes": 209,
+    "total_text_nodes": 381,
+    "prior_translation": true
+  },
+  {
+    "page": "services/foreign-capital/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 62,
+    "memory_text_nodes": 110,
+    "unmatched_text_nodes": 222,
+    "total_text_nodes": 394,
+    "prior_translation": true
+  },
+  {
+    "page": "services/holding-structures/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 207,
+    "memory_text_nodes": 38,
+    "unmatched_text_nodes": 43,
+    "total_text_nodes": 288,
+    "prior_translation": true
+  },
+  {
+    "page": "services/legal-representation/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 64,
+    "memory_text_nodes": 106,
+    "unmatched_text_nodes": 218,
+    "total_text_nodes": 388,
+    "prior_translation": true
+  },
+  {
+    "page": "services/monthly-legal-advice/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 59,
+    "memory_text_nodes": 121,
+    "unmatched_text_nodes": 210,
+    "total_text_nodes": 390,
+    "prior_translation": true
+  },
+  {
+    "page": "services/sas-incorporation/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 131,
+    "memory_text_nodes": 35,
+    "unmatched_text_nodes": 2,
+    "total_text_nodes": 168,
+    "prior_translation": true
+  },
+  {
+    "page": "services/soft-landing/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 200,
+    "memory_text_nodes": 35,
+    "unmatched_text_nodes": 77,
+    "total_text_nodes": 312,
+    "prior_translation": true
+  },
+  {
+    "page": "servicios-contabilidad/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 61,
+    "memory_text_nodes": 111,
+    "unmatched_text_nodes": 253,
+    "total_text_nodes": 425,
+    "prior_translation": true
+  },
+  {
+    "page": "sobre-nosotros/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 85,
+    "memory_text_nodes": 65,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 154,
+    "prior_translation": true
+  },
+  {
+    "page": "team-daniela-barahona.html",
+    "lang": "fr",
+    "matched_text_nodes": 74,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 145,
+    "prior_translation": true
+  },
+  {
+    "page": "team-emilie-donoso.html",
+    "lang": "fr",
+    "matched_text_nodes": 74,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 145,
+    "prior_translation": true
+  },
+  {
+    "page": "team-gabriel-calvopina.html",
+    "lang": "fr",
+    "matched_text_nodes": 73,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 144,
+    "prior_translation": true
+  },
+  {
+    "page": "team-juan-alberto-gomez.html",
+    "lang": "fr",
+    "matched_text_nodes": 74,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 145,
+    "prior_translation": true
+  },
+  {
+    "page": "team-rolando-valencia.html",
+    "lang": "fr",
+    "matched_text_nodes": 73,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 144,
+    "prior_translation": true
+  },
+  {
+    "page": "terminos-y-condiciones.html",
+    "lang": "fr",
+    "matched_text_nodes": 0,
+    "memory_text_nodes": 129,
+    "unmatched_text_nodes": 12,
+    "total_text_nodes": 141,
+    "prior_translation": false
+  },
+  {
+    "page": "terminos-y-condiciones/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 74,
+    "memory_text_nodes": 67,
+    "unmatched_text_nodes": 4,
+    "total_text_nodes": 145,
+    "prior_translation": true
+  },
+  {
+    "page": "tramites-notariales-y-societarios/index.html",
+    "lang": "fr",
+    "matched_text_nodes": 59,
+    "memory_text_nodes": 119,
+    "unmatched_text_nodes": 233,
+    "total_text_nodes": 411,
+    "prior_translation": true
+  }
+]

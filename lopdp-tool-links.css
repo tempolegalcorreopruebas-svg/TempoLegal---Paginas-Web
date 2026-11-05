@@ -1,0 +1,12 @@
+/* Scoped article links reuse the site's existing palette and typography. */
+.lopdp-tool-links{padding:clamp(40px,5vw,72px) var(--gutter,6.25vw);color:var(--ink,#17343e);background:var(--paper,#f0f3f2)}
+.lopdp-tool-links-inner{max-width:1240px;margin-inline:auto}
+.lopdp-tool-links h2{max-width:30ch;margin:0 0 24px;font-family:var(--serif,Editorial,Georgia,serif);font-size:clamp(28px,3vw,44px);line-height:1.15;text-wrap:balance}
+.lopdp-tool-links ul{display:flex;flex-wrap:wrap;gap:12px 32px;margin:0;padding:0;list-style:none}
+.lopdp-tool-links li{min-width:0;flex:1 1 240px}
+.lopdp-tool-links a{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:48px;padding-block:12px;color:var(--teal,#006e8c);font:600 16px/1.5 var(--sans,TempoSans,Arial,sans-serif);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:6px;overflow-wrap:anywhere;transition:color 180ms ease-out}
+.lopdp-tool-links a:hover{color:var(--petroleo,#0e3d4a)}
+.lopdp-tool-links a:focus-visible{outline:2px solid var(--teal,#006e8c);outline-offset:5px;border-radius:3px}
+.lopdp-tool-links p{margin:20px 0 0;font:14px/1.6 var(--sans,TempoSans,Arial,sans-serif);color:var(--muted,#52656d)}
+@media(max-width:600px){.lopdp-tool-links ul{display:block}.lopdp-tool-links h2{max-width:20ch}.lopdp-tool-links a{padding-block:15px}}
+@media(prefers-reduced-motion:reduce){.lopdp-tool-links a{transition:none}}

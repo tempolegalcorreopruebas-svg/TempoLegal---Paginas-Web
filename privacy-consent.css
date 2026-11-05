@@ -1,0 +1,26 @@
+/* Scoped additions; existing layouts, fonts and animations stay in their original stylesheets. */
+.consent-dialog:not([open]),.consent-banner[hidden],.consent-dialog [hidden]{display:none!important}
+.consent-dialog{width:min(640px,calc(100% - 32px));margin:auto}
+.consent-dialog #privacy-preferences-intro{font:400 14px/1.7 var(--sans);margin-bottom:20px}
+.consent-category{border-top:1px solid #cadadd;padding:16px 0}
+.consent-category h3{margin:0 0 4px;font:600 14px/1.6 var(--sans)}
+.consent-category p{font:400 12px/1.7 var(--sans);color:#476976;margin-top:5px}
+.consent-category input:disabled{opacity:.5}
+.consent-dialog [data-consent-policy],.consent-banner a{font:500 12px/1.6 var(--sans);text-decoration:underline;text-underline-offset:3px}
+.consent-dialog .privacy-preferences-actions{margin-top:20px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.consent-dialog .privacy-preferences-actions button,.consent-banner-actions button{min-height:46px;padding:10px;border:1px solid #60818f;background:#103e4c;color:#fff;font:500 12px/1.5 var(--sans);border-radius:3px}
+.consent-dialog .privacy-preferences-actions button:hover,.consent-banner-actions button:hover{background:#285d70}
+.consent-dialog button:focus-visible,.consent-banner button:focus-visible{outline:3px solid #b79d54;outline-offset:3px}
+.consent-storage-status{font:400 12px/1.7 var(--sans);color:#6d4c00}
+.consent-banner{position:fixed;z-index:1000;left:18px;right:100px;bottom:18px;max-width:1080px;padding:24px;display:flex;align-items:center;gap:28px;background:#f6f9f8;color:#103e4c;border:1px solid #bdd2d9;border-radius:6px;box-shadow:0 10px 55px #06253238}
+.consent-banner h2{font:400 26px/1.2 var(--serif);margin-bottom:9px}
+.consent-banner p{font:400 13px/1.7 var(--sans);max-width:540px;margin-bottom:7px}
+.consent-banner-actions{display:grid;gap:8px;min-width:160px}
+.technology-inventory{border-top:1px solid #d7e3e7;margin-top:35px;padding-top:28px;font:400 13px/1.8 var(--sans);color:#4e6976}
+.technology-inventory h2{font:600 17px/1.5 var(--sans);margin-bottom:12px;color:#204e64}
+.technology-inventory button{font:500 13px/1.5 var(--sans);border-bottom:1px solid currentColor;margin-top:16px;min-height:44px}
+.legal-translation-note{font:400 12px/1.8 var(--sans);color:#4e6976;margin-top:15px;max-width:850px}
+.privacy-preferences-row [data-privacy-withdraw]{margin-left:24px}
+@media(max-width:760px){.consent-banner{left:12px;right:12px;bottom:82px;display:block;padding:20px;max-height:70svh;overflow:auto}.consent-banner-actions{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:15px;min-width:0}.consent-dialog .privacy-preferences-actions{grid-template-columns:1fr}.privacy-preferences-row [data-privacy-withdraw]{margin-left:0;display:block;margin-top:10px}}
+@media(prefers-color-scheme:dark){html[data-theme=dark] .consent-dialog,html[data-theme=dark] .consent-banner{background:#102d37;color:#e5f0f3}html[data-theme=dark] .consent-category p{color:#bcd1da}}
+@media print{.consent-dialog,.consent-banner,.technology-inventory,.privacy-preferences-row{display:none!important}}
