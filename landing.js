@@ -28,6 +28,88 @@
     onScroll();
   }
 
+  const form = document.querySelector('#contacto form#consulta');
+  const consultationTriggers = document.querySelectorAll('a[href="#contacto"], a[href="#consulta"], [data-consultation-dialog]');
+  if (form && consultationTriggers.length && typeof HTMLDialogElement !== 'undefined' &&
+      typeof HTMLDialogElement.prototype.showModal === 'function') {
+    const dialog = document.createElement('dialog');
+    dialog.id = 'consultation-dialog';
+    dialog.className = 'consultation-dialog';
+    dialog.setAttribute('aria-labelledby', 'consultation-dialog-title');
+
+    const heading = document.createElement('h2');
+    heading.id = 'consultation-dialog-title';
+
+    const close = document.createElement('button');
+    close.type = 'button';
+    close.className = 'consultation-dialog-close';
+    close.autofocus = true;
+    close.textContent = '×';
+    const closeLabels = { es: 'Cerrar formulario', en: 'Close form', pt: 'Fechar formulário', fr: 'Fermer le formulaire' };
+    close.setAttribute('aria-label', closeLabels[document.documentElement.dataset.pageLang || document.documentElement.lang.split('-')[0]] || closeLabels.es);
+    close.addEventListener('click', () => dialog.close());
+
+    dialog.append(heading, close);
+    document.body.append(dialog);
+    const formPanel = form.closest('.formbox') || form;
+    const placeholder = document.createElement('div');
+    placeholder.setAttribute('aria-hidden', 'true');
+    let activeTrigger;
+    consultationTriggers.forEach(trigger => {
+      trigger.setAttribute('aria-haspopup', 'dialog');
+      trigger.setAttribute('aria-controls', dialog.id);
+      trigger.addEventListener('click', event => {
+        if (event.defaultPrevented || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        if (activeTrigger) return;
+        activeTrigger = trigger;
+        heading.textContent = trigger.textContent.trim().replace(/\s*[↗→↓]$/, '');
+        placeholder.style.minHeight = formPanel.getBoundingClientRect().height + 'px';
+        formPanel.replaceWith(placeholder);
+        dialog.append(formPanel);
+        dialog.showModal();
+      });
+    });
+    dialog.addEventListener('close', () => {
+      placeholder.replaceWith(formPanel);
+      activeTrigger.focus({ preventScroll: true });
+      activeTrigger = null;
+    });
+  }
+
+  const whatsappTrigger = document.querySelector('[data-whatsapp-consultation]');
+  const whatsappDialog = document.getElementById('whatsapp-consultation');
+  if (whatsappTrigger && typeof whatsappDialog?.showModal === 'function') {
+    const messageForm = whatsappDialog.querySelector('form');
+    const message = messageForm.elements.text;
+    const topics = [...whatsappDialog.querySelectorAll('[data-chat-topic]')];
+    let selectedTopic;
+    whatsappTrigger.hidden = false;
+    topics.forEach(topic => topic.addEventListener('click', () => {
+      selectedTopic = selectedTopic === topic ? null : topic;
+      topics.forEach(option => option.setAttribute('aria-pressed', String(option === selectedTopic)));
+    }));
+    messageForm.addEventListener('formdata', event => {
+      if (selectedTopic) {
+        event.formData.set('text', whatsappDialog.dataset.topicLabel + ': ' + selectedTopic.textContent + '\n\n' + message.value);
+      }
+    });
+    whatsappTrigger.setAttribute('aria-haspopup', 'dialog');
+    whatsappTrigger.setAttribute('aria-controls', whatsappDialog.id);
+    whatsappTrigger.addEventListener('click', event => {
+      if (event.defaultPrevented) return;
+      const phone = String(config.whatsapp || '').replace(/\D/g, '');
+      if (phone) messageForm.action = 'https://wa.me/' + phone;
+      whatsappDialog.showModal();
+    });
+    whatsappDialog.querySelector('[data-close-whatsapp-consultation]').addEventListener('click', () => whatsappDialog.close());
+    whatsappDialog.addEventListener('close', () => whatsappTrigger.focus({ preventScroll: true }));
+    messageForm.addEventListener('submit', event => {
+      message.value = message.value.trim();
+      if (!message.reportValidity()) event.preventDefault();
+    });
+  }
+
   // Hero oscuro: las tarjetas laterales claras (o sin fondo) recuperan texto oscuro.
   const hero = document.querySelector('main > section');
   if (hero) hero.querySelectorAll('aside').forEach(card => {

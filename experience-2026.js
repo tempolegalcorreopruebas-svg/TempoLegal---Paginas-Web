@@ -13,7 +13,7 @@ if(home && !reduce && document.visibilityState!=='hidden'){
  if(document.readyState==='complete')finish();else addEventListener('load',finish,{once:true});
  setTimeout(finish,1800);
 }
-if(!reduce && 'IntersectionObserver' in window){
+if(!reduce && 'IntersectionObserver' in window && !document.querySelector('.landing form#consulta')){
  const elements=[...document.querySelectorAll('main section, main article')].slice(0,24);
  const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){entry.target.classList.add('tl-visible');observer.unobserve(entry.target)}}},{rootMargin:'0px 0px 75px 0px',threshold:0.04});
  for(const element of elements){if(element.getBoundingClientRect().top<innerHeight*1.1)continue;element.classList.add('tl-entrance');observer.observe(element)}

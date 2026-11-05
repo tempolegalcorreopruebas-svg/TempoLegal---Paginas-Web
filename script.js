@@ -127,7 +127,7 @@
     hero.style.setProperty('--diamond-shift',motion.diamond.toFixed(2)+'px');
     hero.style.setProperty('--diamond-x',motion.pointer.toFixed(2)+'px');
     method.style.setProperty('--progress',motion.progress.toFixed(4));
-    steps.forEach((step,i)=>step.style.setProperty('--step-progress',clamp(motion.progress * steps.length - i).toFixed(4)));
+    // interactive-motion.js owns per-segment progress, with damped scroll interpolation.
     // Step visibility is handled by the viewport observer.
     if(settling&&!document.hidden)scrollFrame=requestAnimationFrame(updateScroll);else lastFrame=0;
   }

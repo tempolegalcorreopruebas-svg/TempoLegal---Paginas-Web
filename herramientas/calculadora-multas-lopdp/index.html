@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="es-EC" data-brand="tempolegal">
+
+<html data-brand="tempolegal" data-tl-lang="es" lang="es">
 <head>
 <!-- TempoLegal · Calculadora de multas LOPDP · V22 · 2026-10-30 · estándar común de herramientas LOPDP -->
-<meta name="tl-version" content="Calculadora de multas LOPDP V22 2026-10-30">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Calculadora de multas LOPDP · TempoLegal</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjEzOS4wMzA2IDQ3LjQ4MDYgMjU1LjMzODkgMjk4Ljg5ODkiIHdpZHRoPSIyNTUuMzQiIGhlaWdodD0iMjk4LjkwIj48cGF0aCBmaWxsPSIjMDIzNTQ2IiBzdHJva2U9IiMwMjM1NDYiIHN0cm9rZS13aWR0aD0iNC4wIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbGluZWNhcD0icm91bmQiIGQ9Ik0gMjEzLjI1OCAyMzEuMzY1IEwgMjY2LjcgMjg0LjgwNyBMIDM3Ni4zNTcgMTc1LjE1IEwgMjY2LjcgNjUuNDkzIEwgMTU3LjA0MyAxNzUuMTUgTCAxNzcuNDA5IDE5NS41MTYgTCAxODMuMDY2IDE4OS44NTkgTCAxNjguMzU3IDE3NS4xNSBMIDI2Ni43IDc2LjgwNyBMIDM2NS4wNDMgMTc1LjE1IEwgMjY2LjcgMjczLjQ5MyBMIDIxOC45MTUgMjI1LjcwOCBBIDQgNCAwIDAgMCAyMTMuMjU4IDIzMS4zNjUgWiIvPjxwYXRoIGZpbGw9IiMwNjc1OTAiIHN0cm9rZT0iIzA2NzU5MCIgc3Ryb2tlLXdpZHRoPSI0LjAiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZD0iTSAzMjAuMTQyIDE2Mi40OTUgTCAyNjYuNyAxMDkuMDUzIEwgMTU3LjA0MyAyMTguNzEgTCAyNjYuNyAzMjguMzY3IEwgMzc2LjM1NyAyMTguNzEgTCAzNTUuOTkxIDE5OC4zNDQgTCAzNTAuMzM0IDIwNC4wMDEgTCAzNjUuMDQzIDIxOC43MSBMIDI2Ni43IDMxNy4wNTMgTCAxNjguMzU3IDIxOC43MSBMIDI2Ni43IDEyMC4zNjcgTCAzMTQuNDg1IDE2OC4xNTIgQSA0IDQgMCAwIDAgMzIwLjE0MiAxNjIuNDk1IFoiLz48L3N2Zz4=">
+<meta content="Calculadora de multas LOPDP V22 2026-10-30" name="tl-version"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Calculadora de multas LOPDP | TempoLegal</title>
+<link href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjEzOS4wMzA2IDQ3LjQ4MDYgMjU1LjMzODkgMjk4Ljg5ODkiIHdpZHRoPSIyNTUuMzQiIGhlaWdodD0iMjk4LjkwIj48cGF0aCBmaWxsPSIjMDIzNTQ2IiBzdHJva2U9IiMwMjM1NDYiIHN0cm9rZS13aWR0aD0iNC4wIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbGluZWNhcD0icm91bmQiIGQ9Ik0gMjEzLjI1OCAyMzEuMzY1IEwgMjY2LjcgMjg0LjgwNyBMIDM3Ni4zNTcgMTc1LjE1IEwgMjY2LjcgNjUuNDkzIEwgMTU3LjA0MyAxNzUuMTUgTCAxNzcuNDA5IDE5NS41MTYgTCAxODMuMDY2IDE4OS44NTkgTCAxNjguMzU3IDE3NS4xNSBMIDI2Ni43IDc2LjgwNyBMIDM2NS4wNDMgMTc1LjE1IEwgMjY2LjcgMjczLjQ5MyBMIDIxOC45MTUgMjI1LjcwOCBBIDQgNCAwIDAgMCAyMTMuMjU4IDIzMS4zNjUgWiIvPjxwYXRoIGZpbGw9IiMwNjc1OTAiIHN0cm9rZT0iIzA2NzU5MCIgc3Ryb2tlLXdpZHRoPSI0LjAiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgZD0iTSAzMjAuMTQyIDE2Mi40OTUgTCAyNjYuNyAxMDkuMDUzIEwgMTU3LjA0MyAyMTguNzEgTCAyNjYuNyAzMjguMzY3IEwgMzc2LjM1NyAyMTguNzEgTCAzNTUuOTkxIDE5OC4zNDQgTCAzNTAuMzM0IDIwNC4wMDEgTCAzNjUuMDQzIDIxOC43MSBMIDI2Ni43IDMxNy4wNTMgTCAxNjguMzU3IDIxOC43MSBMIDI2Ni43IDEyMC4zNjcgTCAzMTQuNDg1IDE2OC4xNTIgQSA0IDQgMCAwIDAgMzIwLjE0MiAxNjIuNDk1IFoiLz48L3N2Zz4=" rel="icon" type="image/svg+xml"/>
 <style>
 :root{
   color-scheme:light;
@@ -548,128 +549,174 @@ html{background:var(--page)}
 #restart{visibility:hidden}
 .sdot{min-height:26px;padding:10px 2px;background-clip:content-box}
 </style>
+<link href="https://tempolegal.com/herramientas/calculadora-multas-lopdp/" rel="canonical"/>
+<meta content="noindex,follow,max-image-preview:large" name="robots"/>
+<meta content="Estime su exposición a multas LOPDP mediante las preguntas y los criterios de esta herramienta de orientación." name="description"/>
+<link href="../../lopdp-premium.css" rel="stylesheet"/>
+<script defer="" src="../../lopdp-premium.js"></script>
+<link href="../../lopdp-unified.css" rel="stylesheet"/><script data-lang="es" defer="defer" src="../../lopdp-unified.js"></script><link href="../../lopdp-redesign-2026.css" rel="stylesheet"/><link href="../../lopdp-footer-parity.css" rel="stylesheet"/></head>
+<body class="tl-tool-page tl-tool-calculadora-multas-lopdp"><header class="tl-shared-header site-header">
+<div class="container header-inner">
+<a aria-label="Tempo Legal, inicio" class="brand" data-i18n-aria-label="home" href="../../index.html#inicio"><img alt="Tempo Legal" height="42" src="../../assets/site/tempo-legal-teal.svg" width="190"/></a>
+<nav aria-label="Navegación principal" data-i18n-aria-label="mainNav" id="main-nav"><a class="nav-home" data-i18n="menuHome" href="../../index.html#inicio">Inicio</a>
 
-<link rel="canonical" href="https://tempolegal.com/herramientas/calculadora-multas-lopdp/">
-<meta name="robots" content="noindex,follow,max-image-preview:large">
-<meta name="description" content="Estime su exposición a multas LOPDP mediante las preguntas y los criterios de esta herramienta de orientación.">
-</head>
-<body>
-
-<header class="tl-top"><div class="tl-top-in">
-  <img class="logotop" id="logotop" alt="TempoLegal">
-  <div class="tl-topright"><span class="tl-toplabel">Calculadora de multas LOPDP</span>
-  <button class="tl-reset" id="restart">Reiniciar</button></div>
+<div class="nav-menu" data-nav-menu="">
+<button aria-controls="menu-servicios" aria-expanded="false" class="nav-menu-toggle" type="button"><span data-i18n="menuServices">Servicios</span><span aria-hidden="true" class="nav-menu-caret"></span></button>
+<div class="nav-menu-panel" hidden="" id="menu-servicios">
+<div class="nav-menu-grid">
+<div class="nav-menu-col">
+<p class="nav-menu-title" data-i18n="menuCorporate">Derecho corporativo</p>
+<a data-i18n="menuCorpLaw" href="../../services/corporate-law/index.html">Corporativo y societario</a>
+<a data-i18n="menuSas" href="../../constitucion-de-empresas-sas/index.html">Constitución de SAS</a>
+<a data-i18n="menuHoldings" href="../../services/holding-structures/index.html">Holdings y estructuras</a>
+<a data-i18n="menuAmendments" href="../../tramites-notariales-y-societarios/index.html">Reformas y actos societarios</a>
+<a data-i18n="menuMonthly" href="../../services/monthly-legal-advice/index.html">Asesoría legal mensual</a>
+</div>
+<div class="nav-menu-col">
+<p class="nav-menu-title" data-i18n="menuDataTitle">Protección de datos</p>
+<a data-i18n="menuDataHub" href="../../proteccion-de-datos-personales-ecuador/index.html">Protección de datos personales</a>
+<a data-i18n="menuDpo" href="../../proteccion-de-datos-personales-ecuador/delegado-proteccion-datos-externo-ecuador/index.html">Delegado externo (DPD / DPO)</a>
+<a data-i18n="menuLopdp" href="../../proteccion-de-datos-personales-ecuador/implementacion-lopdp/index.html">Implementación LOPDP</a>
+<a data-i18n="menuFineCalculator" href="index.html" hreflang="es">Calculadora de multas</a>
+<a data-i18n="menuDpoCalculator" href="../calculadora-delegado-lopdp/index.html" hreflang="es">Calculadora de Delegado</a>
+<a data-i18n="menuDiagnostic" href="../diagnostico-lopdp/index.html" hreflang="es">Diagnóstico gratuito</a>
+</div>
+<div class="nav-menu-col">
+<p class="nav-menu-title" data-i18n="menuForeign">Empresas extranjeras</p>
+<a data-i18n="menuSoftLanding" href="../../services/soft-landing/index.html">Soft Landing en Ecuador</a>
+<a data-i18n="menuForeignCap" href="../../services/foreign-capital/index.html">Compañías con capital extranjero</a>
+<a data-i18n="menuBranches" href="../../services/foreign-branches/index.html">Sucursales extranjeras</a>
+<a data-i18n="menuRepresent" href="../../representacion-legal-fiscal-ecuador/index.html">Representación y domicilio</a>
+<a data-i18n="menuAccounting" href="../../servicios-contabilidad/index.html">Contabilidad y soporte</a>
+</div>
+<div class="nav-menu-col">
+<p class="nav-menu-title" data-i18n="menuOther">Otras áreas</p>
+<a data-i18n="menuEmployment" href="../../index.html#servicio-employment">Derecho laboral empresarial</a>
+<a data-i18n="menuIp" href="../../index.html#servicio-ip">Marcas y propiedad intelectual</a>
+<a data-i18n="menuDisputes" href="../../index.html#servicio-disputes">Recuperación de cartera y litigios</a>
+<a class="nav-menu-all" data-i18n="menuAllServices" href="../../index.html#servicios">Ver todos los servicios →</a>
+</div>
+</div>
+</div>
+</div>
+<a data-i18n="menuDataTitle" href="../../proteccion-de-datos-personales-ecuador/index.html">Protección de datos</a>
+<a data-i18n="menuAbout" href="../../sobre-nosotros/index.html">Nosotros</a>
+<a data-i18n="menuPublications" href="../../index.html#recursos">Publicaciones</a>
+<a data-i18n="menuContact" href="../../contactanos/index.html">Contacto</a>
+<a class="button button-outline nav-cta" data-i18n="book" href="../../contactanos/index.html">Agendar consulta</a>
+</nav>
+<div class="header-tools"><label class="language-control"><svg aria-hidden="true" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="9"></circle>
+<path d="M3 12h18M12 3c5 5 5 13 0 18M12 3c-5 5-5 13 0 18"></path>
+</svg><span class="sr-only" data-i18n="languageLabel">Idioma</span><select aria-label="Idioma" data-i18n-aria-label="languageLabel" id="language-select">
+<option lang="es" selected="selected" value="index.html">Español</option>
+<option lang="en" value="../../en/herramientas/calculadora-multas-lopdp/index.html">English</option>
+<option lang="pt" value="../../pt/herramientas/calculadora-multas-lopdp/index.html">Português</option>
+<option lang="fr" value="../../fr/herramientas/calculadora-multas-lopdp/index.html">Français</option>
+</select></label><span aria-live="polite" class="sr-only" id="language-status" role="status"></span><button aria-controls="main-nav" aria-expanded="false" class="menu-toggle"><span></span><span></span><span class="sr-only" data-i18n="menuOpen">Abrir menú</span></button>
+</div>
+</div>
+<div aria-hidden="true" class="reading-progress"><span></span></div>
+</header><div aria-label="Herramientas LOPDP" class="tl-calculator-context"><p class="tl-tool-eyebrow">Herramientas LOPDP</p><p class="tl-tool-intro">Responda a su ritmo. El cálculo se mantiene intacto.</p></div>
+<header class="tl-top tl-tool-legacy-header"><div class="tl-top-in">
+<img alt="TempoLegal" class="logotop" id="logotop"/>
+<div class="tl-topright"><span class="tl-toplabel">Calculadora de multas LOPDP</span>
+<button class="tl-reset" id="restart">Reiniciar</button></div>
 </div></header>
-
 <!-- El rescate es un diálogo fijo: vive en el HTML estático para existir desde
      el primer milisegundo. Tenerlo dentro de la plantilla del resultado hacía que
      el script muriera al cargar y que el logo nunca se pintara. -->
-<div class="rescate hidden" id="rescate" role="dialog" aria-modal="true" aria-labelledby="resTit">
-  <div class="rfondo" id="resFondo"></div>
-  <div class="rcaja" id="resCaja">
-    <div class="rt" id="resTit">¿Se va sin ver su cifra?</div>
-    <p class="rd">Déjenos por dónde ubicarlo y le mandamos el resultado completo apenas termine, junto con la lista de lo que le falta.</p>
-    <label class="sr" for="resDato">Su WhatsApp o su correo</label>
-    <input id="resDato" type="text" inputmode="text" placeholder="Su WhatsApp o su correo" autocomplete="tel">
-    <div class="rbtns">
-      <button class="btn sm" id="resSi" type="button">Enviármelo</button>
-      <button class="btn ghost sm" id="resNo" type="button">No, gracias</button>
-    </div>
-    <p class="rlegal">Responsable: <b id="resResp">TempoLegal</b>, Quito. Lo usamos solo para enviarle ese documento y conversar sobre su caso, con su consentimiento. Puede pedir su eliminación escribiendo a <b id="resMail">info@tempolegal.com</b>, salvo que debamos conservarlo por una obligación legal.</p>
-  </div>
+<div aria-labelledby="resTit" aria-modal="true" class="rescate hidden" id="rescate" role="dialog">
+<div class="rfondo" id="resFondo"></div>
+<div class="rcaja" id="resCaja">
+<div class="rt" id="resTit">¿Se va sin ver su cifra?</div>
+<p class="rd">Déjenos por dónde ubicarlo y le mandamos el resultado completo apenas termine, junto con la lista de lo que le falta.</p>
+<label class="sr" for="resDato">Su WhatsApp o su correo</label>
+<input autocomplete="tel" id="resDato" inputmode="text" placeholder="Su WhatsApp o su correo" type="text"/>
+<div class="rbtns">
+<button class="btn sm" id="resSi" type="button">Enviármelo</button>
+<button class="btn ghost sm" id="resNo" type="button">No, gracias</button>
 </div>
-
-<div class="sticky" id="sticky" hidden>
-  <span class="sx" id="sxt"></span>
-  <a class="btn sm wa" id="swa" href="https://wa.me/593978887392" target="_blank" rel="noopener">WhatsApp</a>
-  <button class="btn sm ghost" id="sxb">Quiero el informe</button>
+<p class="rlegal">Responsable: <b id="resResp">TempoLegal</b>, Quito. Lo usamos solo para enviarle ese documento y conversar sobre su caso, con su consentimiento. Puede pedir su eliminación escribiendo a <b id="resMail">info@tempolegal.com</b>, salvo que debamos conservarlo por una obligación legal.</p>
 </div>
-
+</div>
+<div class="sticky" hidden="" id="sticky">
+<span class="sx" id="sxt"></span>
+<a class="btn sm wa" href="https://wa.me/593978887392" id="swa" rel="noopener" target="_blank">WhatsApp</a>
+<button class="btn sm ghost" id="sxb">Quiero el informe</button>
+</div>
 <div class="wrap">
-  <section class="hero" id="hero">
-    <span class="tl-kicker">Ley Orgánica de Protección de Datos Personales · Ecuador</span>
-    <h1 id="h1">¿Cuánto le pueden multar por <em>no proteger los datos</em> que usted guarda?</h1>
-    <p class="sub" id="sub">Si guarda nombres, cédulas, correos o teléfonos de clientes, trabajadores o proveedores, la ley le obliga a protegerlos. Cuatro preguntas, menos de un minuto.</p>
+<section class="hero" id="hero">
+<span class="tl-kicker">Ley Orgánica de Protección de Datos Personales · Ecuador</span>
+<h1 id="h1">¿Cuánto le pueden multar por <em>no proteger los datos</em> que usted guarda?</h1>
+<p class="sub" id="sub">Si guarda nombres, cédulas, correos o teléfonos de clientes, trabajadores o proveedores, la ley le obliga a protegerlos. Cuatro preguntas, menos de un minuto.</p>
 <div class="tl-chips">
-      <span class="tl-chip v">Gratis</span>
-      <span class="tl-chip a">Cuatro preguntas · menos de un minuto</span>
-      <span class="tl-chip">Sin dejar datos para empezar</span>
-    </div>
-    <div style="display:flex;gap:10px;flex-wrap:wrap">
-      <button class="btn" id="start">Calcular mis multas</button>
-    </div>
-    <p class="micro">El resultado lo ve completo en pantalla, sin registrarse.</p>
-    <div class="tl-marcas" aria-label="Experiencia de TempoLegal">
-      <div class="tl-marca"><b>130</b><span>sistemas de protección de datos implementados</span></div>
-      <div class="tl-marca"><b>+60</b><span>organizaciones con TempoLegal como Delegado</span></div>
-      <div class="tl-marca"><b>+250</b><span>organizaciones asesoradas</span></div>
-    </div>
-    <p class="tl-corte">Cifras del estudio con fecha de corte a octubre de 2026.</p>
-
-    <div class="tarifa">
-      <div class="tband">
-        <div class="tb" style="--bc:var(--critical);--bt:var(--critical-ink)">
-          <div class="tbk">Multas ya impuestas en Ecuador</div>
-          <div class="tbv" style="color:var(--critical)">USD 744.473</div>
-          <div class="tbd">en cuatro resoluciones sancionatorias de la Superintendencia, contra LigaPro y la Federación Ecuatoriana de Fútbol, por un mismo caso. Cifras de las resoluciones públicas, a octubre de 2026</div>
-        </div>
-        <div class="tb" style="--bc:var(--tl-ambar);--bt:var(--tl-ambar-i)">
-          <div class="tbk">Cuánto es cada multa</div>
-          <div class="tbv">0,1 % a 1 %</div>
-          <div class="tbd">de lo que usted facturó el año pasado. Sube al tramo alto cuando la falta es grave</div>
-        </div>
-        <div class="tb" style="--bc:var(--brand);--bt:var(--brand-ink)">
-          <div class="tbk">Cómo empieza</div>
-          <div class="tbv">Por una denuncia</div>
-          <div class="tbd">de un cliente, un extrabajador o un competidor. La Superintendencia tiene el trámite abierto en línea</div>
-        </div>
-      </div>
-      <div class="tsum">En los expedientes publicados hasta hoy, la Superintendencia llegó porque alguien la llamó: pidió papeles, ordenó corregir con plazo, y recién después multó. <b>Son hasta quince cosas las que puede pedirle acreditar, y cada una que le falte puede sancionarse por separado.</b></div>
-    </div>
-
-    <div class="howit">
-      <div class="hstep" style="--hc:var(--c1)"><span class="hn">1</span><b>A qué se dedica</b><span>Un clic sobre su actividad</span></div>
-      <div class="hstep" style="--hc:var(--c3)"><span class="hn">2</span><b>Cuántas personas</b><span>Trabajadores y clientes por separado, que casi nunca son lo mismo</span></div>
-      <div class="hstep" style="--hc:var(--c4)"><span class="hn">3</span><b>Cuánto factura al año</b><span>Un rango basta, y de ahí sale el porcentaje</span></div>
-      <div class="hstep" style="--hc:var(--c2)"><span class="hn">4</span><b>Qué tiene hoy</b><span>Aunque la respuesta sea «nada» o «no sé»</span></div>
-    </div>
-
-    <p class="micro" id="social" style="margin-top:22px;font-size:13.5px;color:var(--ink-2)"></p>
-
-    <details class="ejemplos">
-      <summary>¿Prefiere ver primero un ejemplo ya calculado?</summary>
-      <p>Diez casos tipo. Un clic y aparece el resultado completo de ese perfil.</p>
-      <div class="pgrid" id="pgrid"></div>
-      <p class="emini">¿Quiere el detalle obligación por obligación en lugar del cálculo rápido? <a href="#" id="startDet">Hacer el cálculo detallado, obligación por obligación</a></p>
-    </details>
-  </section>
-
-  <section class="card hidden" id="flow">
-    <div class="live" id="live">
-      <div class="lk">Lo que le pueden multar</div>
-      <div class="lv" id="liveV">USD 0</div>
-      <div class="ld" id="liveD">Empiece por la primera pregunta</div>
-      <div class="lbar" id="liveB"></div>
-      <div class="lleg" id="liveL"></div>
-    </div>
-    <div class="steps" id="steps"></div>
-    <div class="step" id="step"></div>
-    <div class="nav">
-      <button class="btn ghost sm" id="back">← Volver</button>
-      <span class="hint" id="hint"></span>
-      <button class="btn sm" id="next">Continuar →</button>
-    </div>
-  </section>
-
-  <section class="card hidden" id="result"></section>
-  <footer class="tl-pie">
-    <img id="logofin" alt="TempoLegal">
-    <p><b>Estimación referencial</b>, calculada solo con las respuestas que usted marcó y sin revisar documentos. Es un orden de magnitud, no una predicción de lo que resolvería la autoridad. <b>No es asesoría legal ni opinión profesional, y su uso no crea relación abogado-cliente con TempoLegal.</b> Lo que le corresponde de verdad se confirma revisando su caso.</p>
-    <p>TempoLegal · Av. de los Shyris y Eloy Alfaro, Edificio Parque Central, norte de Quito · <a href="https://wa.me/593978887392" target="_blank" rel="noopener">WhatsApp +593 97 888 7392</a> · <a href="mailto:info@tempolegal.com">info@tempolegal.com</a> · <a href="../../politica-de-privacidad/" target="_blank" rel="noopener">Política de privacidad</a></p>
-    <p class="tl-tools"><b>Otras herramientas gratuitas de TempoLegal:</b> <a href="../calculadora-delegado-lopdp/">Calculadora de Delegado de Protección de Datos</a> <a href="../diagnostico-lopdp/">Diagnóstico LOPDP</a></p>
-  </footer>
+<span class="tl-chip v">Gratis</span>
+<span class="tl-chip a">Cuatro preguntas · menos de un minuto</span>
+<span class="tl-chip">Sin dejar datos para empezar</span>
 </div>
-
+<div style="display:flex;gap:10px;flex-wrap:wrap">
+<button class="btn" id="start">Calcular mis multas</button>
+</div>
+<p class="micro">El resultado lo ve completo en pantalla, sin registrarse.</p>
+<div aria-label="Experiencia de TempoLegal" class="tl-marcas">
+<div class="tl-marca"><b>130</b><span>sistemas de protección de datos implementados</span></div>
+<div class="tl-marca"><b>+60</b><span>organizaciones con TempoLegal como Delegado</span></div>
+<div class="tl-marca"><b>+250</b><span>organizaciones asesoradas</span></div>
+</div>
+<p class="tl-corte">Cifras del estudio con fecha de corte a octubre de 2026.</p>
+<div class="tarifa">
+<div class="tband">
+<div class="tb" style="--bc:var(--critical);--bt:var(--critical-ink)">
+<div class="tbk">Multas ya impuestas en Ecuador</div>
+<div class="tbv" style="color:var(--critical)">USD 744.473</div>
+<div class="tbd">en cuatro resoluciones sancionatorias de la Superintendencia, contra LigaPro y la Federación Ecuatoriana de Fútbol, por un mismo caso. Cifras de las resoluciones públicas, a octubre de 2026</div>
+</div>
+<div class="tb" style="--bc:var(--tl-ambar);--bt:var(--tl-ambar-i)">
+<div class="tbk">Cuánto es cada multa</div>
+<div class="tbv">0,1 % a 1 %</div>
+<div class="tbd">de lo que usted facturó el año pasado. Sube al tramo alto cuando la falta es grave</div>
+</div>
+<div class="tb" style="--bc:var(--brand);--bt:var(--brand-ink)">
+<div class="tbk">Cómo empieza</div>
+<div class="tbv">Por una denuncia</div>
+<div class="tbd">de un cliente, un extrabajador o un competidor. La Superintendencia tiene el trámite abierto en línea</div>
+</div>
+</div>
+<div class="tsum">En los expedientes publicados hasta hoy, la Superintendencia llegó porque alguien la llamó: pidió papeles, ordenó corregir con plazo, y recién después multó. <b>Son hasta quince cosas las que puede pedirle acreditar, y cada una que le falte puede sancionarse por separado.</b></div>
+</div>
+<div class="howit">
+<div class="hstep" style="--hc:var(--c1)"><span class="hn">1</span><b>A qué se dedica</b><span>Un clic sobre su actividad</span></div>
+<div class="hstep" style="--hc:var(--c3)"><span class="hn">2</span><b>Cuántas personas</b><span>Trabajadores y clientes por separado, que casi nunca son lo mismo</span></div>
+<div class="hstep" style="--hc:var(--c4)"><span class="hn">3</span><b>Cuánto factura al año</b><span>Un rango basta, y de ahí sale el porcentaje</span></div>
+<div class="hstep" style="--hc:var(--c2)"><span class="hn">4</span><b>Qué tiene hoy</b><span>Aunque la respuesta sea «nada» o «no sé»</span></div>
+</div>
+<p class="micro" id="social" style="margin-top:22px;font-size:13.5px;color:var(--ink-2)"></p>
+<details class="ejemplos">
+<summary>¿Prefiere ver primero un ejemplo ya calculado?</summary>
+<p>Diez casos tipo. Un clic y aparece el resultado completo de ese perfil.</p>
+<div class="pgrid" id="pgrid"></div>
+<p class="emini">¿Quiere el detalle obligación por obligación en lugar del cálculo rápido? <a href="#" id="startDet">Hacer el cálculo detallado, obligación por obligación</a></p>
+</details>
+</section>
+<section class="card hidden" id="flow">
+<div class="live" id="live">
+<div class="lk">Lo que le pueden multar</div>
+<div class="lv" id="liveV">USD 0</div>
+<div class="ld" id="liveD">Empiece por la primera pregunta</div>
+<div class="lbar" id="liveB"></div>
+<div class="lleg" id="liveL"></div>
+</div>
+<div class="steps" id="steps"></div>
+<div class="step" id="step"></div>
+<div class="nav">
+<button class="btn ghost sm" id="back">← Volver</button>
+<span class="hint" id="hint"></span>
+<button class="btn sm" id="next">Continuar →</button>
+</div>
+</section>
+<section class="card hidden" id="result"></section>
+</div>
 <script>
 "use strict";
 /* ── Medición ──────────────────────────────────────────────────────
@@ -1799,5 +1846,89 @@ paintBrand();
   }, true);
 })();
 </script>
-</body>
+<aside class="tl-legal-disclaimer" role="note"><p><b>Estimación referencial</b>, calculada solo con las respuestas que usted marcó y sin revisar documentos. Es un orden de magnitud, no una predicción de lo que resolvería la autoridad. <b>No es asesoría legal ni opinión profesional, y su uso no crea relación abogado-cliente con TempoLegal.</b> Lo que le corresponde de verdad se confirma revisando su caso.</p></aside><footer class="site-footer tl-shared-footer">
+<div class="container footer-layout">
+<div class="footer-identity">
+<a aria-label="Tempo Legal" class="brand" data-footer-route="" href="../../index.html#inicio"><img alt="Tempo Legal" height="54" loading="lazy" src="../../assets/site/tempo-legal-teal.svg" width="245"/></a>
+<p data-i18n="footerDescription">Abogados para empresas en Ecuador. Oficina en Quito · Atención en todo el país.</p>
+<div class="footer-channels">
+<a aria-label="Contactar a Tempo Legal por WhatsApp (se abre en una pestaña nueva)" data-company-whatsapp="" data-i18n-aria-label="whatsappLabel" href="https://wa.me/593978887392?text=Hola%2C%20Tempo%20Legal.%20Estoy%20interesado%20en%20sus%20servicios%20de%20asesor%C3%ADa%20legal%20para%20mi%20empresa.%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20y%20coordinar%20una%20consulta." rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" fill="currentColor" viewbox="0 0 24 24"><path d="M20.5 3.5a11.8 11.8 0 0 0-18.6 14L.3 23.7l6.4-1.6a11.8 11.8 0 0 0 13.8-18.6Zm-8.4 18a9.7 9.7 0 0 1-4.9-1.3l-.4-.2-3.8 1 1-3.7-.2-.4a9.8 9.8 0 1 1 8.3 4.6Zm5.4-7.3c-.3-.2-1.7-.9-2-.9s-.5-.2-.7.2l-1 1.2c-.2.2-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.6.3-.5c.1-.2 0-.4 0-.6l-.9-2c-.2-.5-.4-.5-.7-.5H8c-.2 0-.5.1-.8.4A3.3 3.3 0 0 0 6.2 9c0 1.3 1 2.7 1.2 2.9s2 3.1 5 4.4l1.7.6c.7.2 1.4.2 1.9.1.6-.1 1.7-.7 1.9-1.4s.2-1.3.1-1.4c-.1-.1-.3-.2-.5-.3Z"></path></svg></a>
+<a aria-label="Llamar a Tempo Legal" data-company-phone="" data-i18n-aria-label="footerCallLabel" href="tel:+593978887392"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24"><path d="m5 3 4 1 1 5-2 2a15 15 0 0 0 5 5l2-2 5 1 1 4c-1 5-9 2-13-2S1 4 5 3Z"></path></svg></a>
+<a aria-label="Escribir a Tempo Legal" data-company-email="" data-i18n-aria-label="footerEmailLabel" href="mailto:info@tempolegal.com"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24"><rect height="16" rx="1" width="20" x="2" y="4"></rect><path d="m2 5 10 8L22 5M2 20l7-9m13 9-7-9"></path></svg></a>
+</div>
+</div>
+<nav aria-labelledby="footer-services-heading" class="footer-services">
+<h2 data-i18n="footServicesHeading" id="footer-services-heading">Servicios por área</h2>
+<div class="footer-families">
+<div class="footer-family"><h3 data-i18n="menuCorporate">Derecho corporativo</h3><ul class="footer-menu">
+<li><a data-footer-route="" data-i18n="menuCorpLaw" data-url-publicacion="https://tempolegal.com/derecho-corporativo-societario-ecuador/" href="../../services/corporate-law/index.html">Corporativo y societario</a></li>
+<li><a data-footer-route="" data-i18n="menuSas" data-url-publicacion="https://tempolegal.com/constitucion-de-empresas-sas/" href="../../constitucion-de-empresas-sas/index.html">Constitución de SAS</a></li>
+<li><a data-footer-route="" data-i18n="menuHoldings" data-url-publicacion="https://tempolegal.com/holdings-estructuras-empresariales-ecuador/" href="../../services/holding-structures/index.html">Holdings y estructuras</a></li>
+<li><a data-footer-route="" data-i18n="footAmendments" data-url-publicacion="https://tempolegal.com/reformas-estatutos-cambios-societarios-ecuador/" href="../../tramites-notariales-y-societarios/index.html">Reformas societarias</a></li>
+<li><a data-footer-route="" data-i18n="menuMonthly" data-url-publicacion="https://tempolegal.com/asesoria-legal-mensual-empresas-ecuador/" href="../../services/monthly-legal-advice/index.html">Asesoría legal mensual</a></li>
+</ul></div>
+<div class="footer-family"><h3 data-i18n="menuDataTitle">Protección de datos</h3><ul class="footer-menu">
+<li><a data-footer-route="" data-i18n="menuDataHub" data-url-publicacion="https://tempolegal.com/proteccion-de-datos-personales-ecuador/" href="../../proteccion-de-datos-personales-ecuador/index.html">Protección de datos personales</a></li>
+<li><a data-footer-route="" data-i18n="menuDpo" data-url-publicacion="https://tempolegal.com/proteccion-de-datos-personales-ecuador/delegado-proteccion-datos-externo-ecuador/" href="../../proteccion-de-datos-personales-ecuador/delegado-proteccion-datos-externo-ecuador/index.html">Delegado externo (DPD / DPO)</a></li>
+<li><a data-footer-route="" data-i18n="menuLopdp" data-url-publicacion="https://tempolegal.com/proteccion-de-datos-personales-ecuador/implementacion-lopdp/" href="../../proteccion-de-datos-personales-ecuador/implementacion-lopdp/index.html">Implementación LOPDP</a></li>
+</ul>
+<details class="footer-sectors"><summary data-i18n="footSectors">Ver sectores</summary><ul class="footer-menu">
+<li><a data-footer-route="" data-i18n="footHealth" data-url-publicacion="https://tempolegal.com/proteccion-de-datos-personales-ecuador/proteccion-datos-clinicas-salud-ecuador/" href="../../proteccion-de-datos-personales-ecuador/proteccion-datos-clinicas-salud-ecuador/index.html">Salud</a></li>
+<li><a data-footer-route="" data-i18n="footEducation" data-url-publicacion="https://tempolegal.com/proteccion-de-datos-personales-ecuador/proteccion-datos-colegios-instituciones-educativas-ecuador/" href="../../proteccion-de-datos-personales-ecuador/proteccion-datos-colegios-instituciones-educativas-ecuador/index.html">Colegios y educación</a></li>
+<li><a data-footer-route="" data-i18n="footLogistics" data-url-publicacion="https://tempolegal.com/proteccion-de-datos-personales-ecuador/proteccion-datos-logistica-transporte-comercio-exterior-ecuador/" href="../../proteccion-de-datos-personales-ecuador/proteccion-datos-logistica-transporte-comercio-exterior-ecuador/index.html">Logística y comercio exterior</a></li>
+<li><a data-footer-route="" data-i18n="footFinance" data-url-publicacion="https://tempolegal.com/proteccion-de-datos-personales-ecuador/proteccion-datos-sector-financiero-seguros-ecuador/" href="../../proteccion-de-datos-personales-ecuador/proteccion-datos-sector-financiero-seguros-ecuador/index.html">Financiero y seguros</a></li>
+<li><a data-footer-route="" data-i18n="footSoftware" data-url-publicacion="https://tempolegal.com/proteccion-de-datos-personales-ecuador/proteccion-datos-empresas-software-apps-ecuador/" href="../../proteccion-de-datos-personales-ecuador/proteccion-datos-empresas-software-apps-ecuador/index.html">Software y tecnología</a></li>
+</ul></details></div>
+<div class="footer-family"><h3 data-i18n="menuForeign">Empresas extranjeras</h3><ul class="footer-menu">
+<li><a data-footer-route="" data-i18n="menuSoftLanding" data-url-publicacion="https://tempolegal.com/soft-landing-ecuador/" href="../../services/soft-landing/index.html">Soft Landing en Ecuador</a></li>
+<li><a data-footer-route="" data-i18n="menuForeignCap" data-url-publicacion="https://tempolegal.com/constituir-empresa-capital-extranjero-ecuador/" href="../../services/foreign-capital/index.html">Compañías con capital extranjero</a></li>
+<li><a data-footer-route="" data-i18n="menuBranches" data-url-publicacion="https://tempolegal.com/sucursal-compania-extranjera-ecuador/" href="../../services/foreign-branches/index.html">Sucursales extranjeras</a></li>
+<li><a data-footer-route="" data-i18n="menuRepresent" data-url-publicacion="https://tempolegal.com/representacion-legal-fiscal-ecuador/" href="../../representacion-legal-fiscal-ecuador/index.html">Representación y domicilio</a></li>
+<li><a data-footer-route="" data-i18n="menuAccounting" data-url-publicacion="https://tempolegal.com/servicios-contabilidad/" href="../../servicios-contabilidad/index.html">Contabilidad y soporte</a></li>
+</ul></div>
+<div class="footer-family"><h3 data-i18n="menuOther">Otras áreas</h3><ul class="footer-menu">
+<li><a data-footer-route="" data-i18n="menuEmployment" data-url-publicacion="https://tempolegal.com/derecho-laboral-ecuador/" href="../../index.html#servicio-employment">Derecho laboral empresarial</a></li>
+<li><a data-footer-route="" data-i18n="menuIp" data-url-publicacion="https://tempolegal.com/registro-de-marcas/" href="../../index.html#servicio-ip">Marcas y propiedad intelectual</a></li>
+<li><a data-footer-route="" data-i18n="menuDisputes" href="../../index.html#servicio-disputes">Recuperación de cartera y litigios</a></li>
+<li><a data-footer-route="" data-i18n="footNotary" data-url-publicacion="https://tempolegal.com/tramites-notariales-y-societarios/" href="../../tramites-notariales-y-societarios/index.html">Trámites notariales</a></li>
+</ul></div>
+</div>
+</nav>
+<nav aria-labelledby="footer-firm-heading" class="footer-firm">
+<h2 data-i18n="footFirmHeading" id="footer-firm-heading">Conozca la firma</h2>
+<ul class="footer-menu">
+<li><a data-footer-route="" data-i18n="footAboutUs" data-url-publicacion="https://tempolegal.com/sobre-nosotros/" href="../../sobre-nosotros/index.html">Sobre nosotros</a></li>
+<li><a data-footer-route="" data-i18n="footTeam" href="../../index.html#equipo">Equipo</a></li>
+<li><a data-footer-route="" data-i18n="footCases" href="../../index.html#casos">Casos de éxito</a></li>
+<li><a data-footer-route="" data-i18n="footTestimonials" href="../../index.html#testimonios">Testimonios</a></li>
+<li><a data-footer-route="" data-i18n="menuPublications" href="../../index.html#recursos">Publicaciones</a></li>
+<li><a data-footer-route="" data-i18n="menuContact" data-url-publicacion="https://tempolegal.com/contactanos/" href="../../contactanos/index.html">Contacto</a></li>
+</ul>
+</nav>
+<div class="footer-contact" id="contacto-ubicacion">
+<h2 data-i18n="contact">Contacto</h2>
+<address>
+<a class="footer-contact-row" href="https://www.google.com/maps?cid=16124965664884056717" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg><span>Av. de los Shyris N32-218 y Eloy Alfaro<br/>Edificio Parque Central, Oficina 508<br/>Quito · Ecuador</span></a>
+<a class="footer-contact-row" data-company-phone="" href="tel:+593978887392"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24"><path d="m5 3 4 1 1 5-2 2a15 15 0 0 0 5 5l2-2 5 1 1 4c-1 5-9 2-13-2S1 4 5 3Z"></path></svg><span>+593 97 888 7392</span></a>
+<a class="footer-contact-row" data-company-email="" href="mailto:info@tempolegal.com"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24"><rect height="16" rx="1" width="20" x="2" y="4"></rect><path d="m2 5 10 8L22 5M2 20l7-9m13 9-7-9"></path></svg><span>info@tempolegal.com</span></a>
+</address>
+<h2 class="footer-subheading" data-i18n="footLegalDocs">Documentos legales</h2>
+<ul class="footer-menu footer-policies">
+<li><a data-footer-route="" data-i18n="privacyLink" href="../../politica-de-privacidad/index.html">Privacidad</a></li>
+<li><a data-i18n="termsLink" href="../../terminos-y-condiciones/index.html" rel="noopener noreferrer" target="_blank">Términos y Aviso Legal</a></li>
+</ul>
+</div>
+<div class="footer-location">
+<h2 data-i18n="footerLocationHeading">Ubicación</h2>
+<div class="footer-map">
+<div class="footer-map-consent"><p data-i18n="mapConsentDescription">Para mostrar Google Maps necesitamos su autorización para cargar contenido externo.</p><button data-i18n="mapConsentAllow" data-map-consent="" disabled="" type="button">Mostrar mapa</button></div><iframe data-i18n-title="footerMapTitle" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.796718425598!2d-78.4852866250354!3d-0.18854169980960012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59bc02c05c44b:0xdfc762d6a6c8e28d!2sTempo+Legal!5e0!3m2!1sen!2sec!4v1739214749665!5m2!1sen!2sec" height="350" hidden="" loading="lazy" referrerpolicy="no-referrer" title="Ubicación de la oficina de Tempo Legal en Quito" width="300"></iframe>
+</div>
+<a class="footer-map-link" href="https://www.google.com/maps?cid=16124965664884056717" rel="noopener noreferrer" target="_blank"><span data-i18n="footerOpenMap">Abrir en Google Maps</span></a>
+</div>
+</div>
+<div class="privacy-preferences-row"><button data-i18n="privacyPreferences" data-privacy-preferences="" hidden="" type="button">Preferencias de privacidad</button><button data-privacy-withdraw="" hidden="" type="button">Retirar permisos opcionales</button></div><div class="footer-bottom"><div class="container">
+<p>© Tempo Legal 2026. <span data-i18n="rights">Todos los derechos reservados.</span></p>
+<p data-i18n="footerStatement">LEGALTEMPO S.A.S., RUC 1793241972001, opera este sitio y presta los servicios ofrecidos bajo la marca TempoLegal.</p>
+</div></div>
+</footer></body>
 </html>

@@ -88,6 +88,7 @@ body.landing .fine,body.landing small{font-size:max(var(--fs-note),14px)}
 .landing main>section:first-of-type .fine,.landing main>section:first-of-type small,.landing main>section:first-of-type .note{color:#b9d3d9}
 @media(prefers-reduced-motion:no-preference){
 .landing main>section:first-of-type h1,.landing main>section:first-of-type .lead{animation:tl-rise .8s var(--ease) both}
+.landing:has(form#consulta) main>section:first-of-type :is(h1,.lead){animation:none}
 .landing main>section:first-of-type .lead{animation-delay:.12s}
 @keyframes tl-rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
 }
@@ -169,3 +170,228 @@ body.landing .fine,body.landing small{font-size:max(var(--fs-note),14px)}
 .landing .footer-map-consent p{color:#d3e3e6}
 /* Pestañas de situaciones: la pestaña activa se veía blanco sobre blanco en la maqueta */
 .landing .journey .stage-tabs button[aria-selected=true]{background:var(--petroleo);color:var(--white);box-shadow:inset 3px 0 0 var(--accent)}
+
+.consultation-dialog {
+  box-sizing: border-box;
+  width: min(44rem, calc(100% - 2rem));
+  max-height: calc(100dvh - 2rem);
+  margin: auto;
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  overflow: auto;
+  overscroll-behavior: contain;
+  border: 1px solid #6e8c95;
+  background: #0e3d4a;
+  color: #fff;
+}
+.consultation-dialog::backdrop { background: rgb(8 25 32 / 72%); }
+html:has(.consultation-dialog[open]) { overflow: hidden; scrollbar-gutter: stable; }
+.consultation-dialog h2 {
+  padding-inline-end: 3rem;
+  margin-bottom: 1.25rem;
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  color: inherit;
+}
+.consultation-dialog-close {
+  position: absolute;
+  inset-block-start: 0.75rem;
+  inset-inline-end: 0.75rem;
+  min-width: 44px;
+  min-height: 44px;
+  border: 1px solid #6e8c95;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.consultation-dialog-close:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+.consultation-dialog .privacy { color: #d5e5e8; }
+.consultation-dialog :is(.privacy-note, .form-hint, #form-status) { color: #d5e5e8; }
+
+/* Enlaces de acción de protección de datos. */
+:where(.landing-proteccion-datos, .landing-dpd-externo, .landing-implementacion,
+  .landing-salud, .landing-educacion, .landing-logistica, .landing-financiero,
+  .landing-tecnologia) main a:is(.text-link, .textlink, .cd-link):not(.button) {
+  min-height: 44px;
+  border-bottom: 0;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 1px;
+  text-underline-offset: .3em;
+}
+:where(.landing-proteccion-datos, .landing-dpd-externo, .landing-implementacion,
+  .landing-salud, .landing-educacion, .landing-logistica, .landing-financiero,
+  .landing-tecnologia) main a:is(.text-link, .textlink, .cd-link):not(.button):hover {
+  text-decoration-thickness: 2px;
+}
+:where(.landing-proteccion-datos, .landing-dpd-externo, .landing-implementacion,
+  .landing-salud, .landing-educacion, .landing-logistica, .landing-financiero,
+  .landing-tecnologia) main a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+.landing-proteccion-datos .sector-grid {
+  gap: clamp(.9rem, 2.1vw, 1.6rem);
+}
+.landing-proteccion-datos a.sector {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .7rem;
+  padding: clamp(1rem, 2vw, 1.5rem);
+  border: 1px solid #cbd9dd;
+  border-top: 3px solid #416e7c;
+  border-radius: 4px;
+  background: #fbfdfd;
+  box-shadow: 0 5px 16px #173d480a;
+}
+.landing-proteccion-datos .sector p {
+  margin: 0 0 .4rem;
+}
+.landing-proteccion-datos .sector .text-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  margin-top: auto;
+  padding: .25rem .6rem;
+  border: 1px solid #c4d7db;
+  border-radius: 3px;
+  background: #eaf2f4;
+  color: #204c5b;
+  font-size: .88rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+.landing-proteccion-datos a.sector:is(:hover, :focus-visible) {
+  border-color: #416e7c;
+  background: #f3f9fa;
+}
+.landing-proteccion-datos a.sector:is(:hover, :focus-visible) .text-link {
+  background: #234955;
+  border-color: #234955;
+  color: #fff;
+}
+
+/* Keep the DPD confirmation and its form together when presented as a dialog. */
+.consultation-dialog .formbox { padding: 0; margin: 0; border: 0; }
+.consultation-dialog .formbox :is(.demo, .fine, #resultado) { color: #d5e5e8; }
+
+.whatsapp-launchers {
+  position: fixed;
+  z-index: 30;
+  inset: auto max(28px, env(safe-area-inset-right)) max(28px, env(safe-area-inset-bottom)) auto;
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+.landing-proteccion-datos .whatsapp-launchers .whatsapp-float {
+  position: relative;
+  inset: auto;
+}
+.whatsapp-chat-launcher {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 1px solid #527383;
+  background: #193c4c;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 8px 22px #173d4833;
+}
+.whatsapp-chat-launcher[hidden] { display: none; }
+.whatsapp-chat-launcher svg, .whatsapp-chat-header svg { width: 24px; height: 24px; }
+.whatsapp-chat-launcher:hover { background: #26556a; }
+.consultation-dialog.whatsapp-consultation {
+  inset: auto max(1rem, env(safe-area-inset-right)) max(1rem, env(safe-area-inset-bottom)) auto;
+  width: min(27rem, calc(100% - 2rem));
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #193842;
+  border-radius: 10px;
+  border-color: #b7cdd3;
+  box-shadow: 0 18px 60px #09273455;
+}
+.whatsapp-consultation::backdrop { background: #102d3a33; }
+.whatsapp-chat-header {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+  padding: 1rem;
+  background: #193c4c;
+  color: #fff;
+}
+.whatsapp-chat-header svg { flex: none; color: #e4cb88; }
+.whatsapp-chat-header h2 { margin: 0; padding: 0; font-size: 1.22rem; }
+.whatsapp-chat-header .consultation-dialog-close {
+  position: static;
+  flex: none;
+  margin-inline-start: auto;
+  border-color: #ffffff66;
+  border-radius: 4px;
+}
+.whatsapp-chat-intro { padding: 1rem 1rem 0; }
+.whatsapp-chat-intro > p {
+  margin: 0 0 .75rem;
+  padding: .7rem .8rem;
+  background: #edf4f5;
+  border-radius: 0 8px 8px 8px;
+  line-height: 1.45;
+}
+.whatsapp-chat-options { display: flex; flex-wrap: wrap; gap: .4rem; }
+.whatsapp-chat-options button {
+  min-height: 44px;
+  padding: .4rem .6rem;
+  border: 1px solid #a8bec5;
+  border-radius: 5px;
+  background: #fff;
+  color: #204c5b;
+  font-size: .84rem;
+  cursor: pointer;
+}
+.whatsapp-chat-options button:hover { background: #edf4f5; }
+.whatsapp-chat-options button[aria-pressed="true"] { background: #193c4c; color: #fff; }
+.whatsapp-consultation form { padding: .9rem 1rem 1rem; }
+.whatsapp-consultation label { margin: 0 0 .25rem; font-weight: 600; }
+.whatsapp-consultation form p {
+  margin: 0 0 .5rem;
+  color: #415d67;
+  font-size: .82rem;
+  line-height: 1.4;
+}
+.whatsapp-consultation textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 0 .6rem;
+  padding: .6rem;
+  border: 1px solid #a8bec5;
+  border-radius: 5px;
+  background: #f6fafb;
+  color: #193842;
+  resize: vertical;
+}
+.whatsapp-consultation .button.primary {
+  width: 100%;
+  justify-content: center;
+  background: #193c4c;
+  color: #fff;
+  border-color: #193c4c;
+}
+.whatsapp-consultation .button.primary:hover { background: #26556a; }
+@media (max-width: 600px) {
+  .whatsapp-launchers {
+    inset: auto max(16px, env(safe-area-inset-right)) calc(72px + env(safe-area-inset-bottom)) auto;
+  }
+  .whatsapp-launchers .whatsapp-caption { display: none; }
+  .landing-proteccion-datos .whatsapp-launchers .whatsapp-float {
+    width: 48px;
+    padding: 0;
+    justify-content: center;
+  }
+  .whatsapp-chat-launcher { width: 48px; height: 48px; }
+}
+@media print { .whatsapp-launchers { display: none; } }

@@ -6,3 +6,28 @@
 @media(max-width:360px){.case-page #project-title{font-size:39px}.project-sidebar{grid-template-columns:1fr;gap:22px}.project-sidebar>.eyebrow{margin-bottom:0}.project-sidebar dl{display:grid;grid-template-columns:1fr 1fr;gap:18px}.project-sidebar dl>div{padding:0}.project-nav ul{display:flex;flex-wrap:wrap;gap:6px 15px}.project-nav a{font-size:12px;padding-block:5px}.project-graphic{padding-inline:20px;column-gap:17px;grid-template-columns:60px minmax(0,1fr)}.project-graphic>svg{width:60px;height:80px}.project-graphic>p{font-size:22px}.project-graphic>span{font-size:12px}.project-story-section h2{font-size:31px}.project-outcome{padding:25px 22px}.project-outcome h2{font-size:30px}.project-enquiry h2{font-size:33px}}
 @media(prefers-reduced-motion:reduce){.case-page #project-title{animation:none}.project-motion .project-reveal{opacity:1!important;transform:none!important;transition:none!important}.project-nav a,.project-related-card{transition:none}}
 @media print{.case-page{background:white}.project-header,.project-breadcrumb,.project-graphic,.project-sidebar,.project-enquiry,.project-related,.project-footer{display:none!important}.project-hero{padding:0 0 25px;background:white;border:0}.project-hero>.container,.project-layout{width:100%;display:block;padding:0}.project-hero-grid{display:block}.case-page #project-title{font-size:30px;animation:none}.project-hero-copy>.eyebrow{font-size:12px;margin-bottom:12px}.project-lead{font-size:12px}.project-tags{font-size:12px;margin-top:15px;padding-top:15px}.project-layout{padding-top:30px}.project-reveal{opacity:1!important;transform:none!important}.project-story-section{padding-bottom:20px;margin-bottom:20px}.project-story-section h2{font-size:24px}.project-story-section>p:not(.eyebrow){font-size:12px;line-height:1.7;color:#222}.project-outcome{background:#f0f3f2;border-color:#ddd;padding:20px}.project-outcome h2{color:#17323c}.project-outcome:after{display:none}.project-source{font-size:12px}.project-source a{font-size:12px}@page{margin:18mm}}
+
+.project-client-logo {
+  box-sizing: border-box;
+  width: min(100%, 15rem);
+  margin: 0 0 1.6rem;
+  padding: .65rem;
+  border: 1px solid #c5d8dc;
+  border-radius: 4px;
+  background: #f6f9f8;
+}
+.project-client-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 700px) {
+  .project-graphic:has(> .project-client-logo) {
+    grid-template-columns: minmax(90px, 32%) minmax(0, 1fr);
+  }
+  .project-client-logo {
+    grid-row: 1 / 3;
+    margin: 0;
+    padding: .25rem;
+  }
+}

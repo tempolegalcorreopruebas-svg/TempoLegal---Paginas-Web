@@ -1,0 +1,38 @@
+/* TempoLegal: shared 2026 design for the three original LOPDP tools. */
+@font-face{font-family:TempoEditorial;src:url('assets/fonts/editorial.woff') format('woff');font-display:swap}
+body.tl-tool-page{--tl-ink:#17323c;--tl-blue:#006e8c;--tl-paper:#f0f3f2;--tl-line:#dce1e1;background:linear-gradient(145deg,#f3f7f5 0%,#fff 56%,#ecf3f2 100%)!important;color:var(--tl-ink);overflow-x:hidden}
+body.tl-tool-page :is(.tl-shared-header,.tl-shared-footer){font-family:system-ui,-apple-system,Arial,sans-serif}
+body.tl-tool-page .tl-shared-header{background:#3c7390!important;z-index:9999;box-shadow:0 1px 16px #10323b12}
+body.tl-tool-page .tl-shared-header nav{gap:15px}
+body.tl-tool-page .tl-shared-header .reading-progress{pointer-events:none}
+body.tl-tool-page .tl-shared-header .language-control svg{display:none}
+body.tl-tool-page .tl-calculator-context{width:min(1200px,calc(100% - 48px));max-width:1200px;padding:32px 0 12px;margin:32px auto 0;border-bottom:1px solid #bed1d2;position:relative}
+body.tl-tool-page .tl-tool-eyebrow{font-size:11px!important;letter-spacing:.22em!important;color:#006e8c!important;margin:0 0 10px!important}
+body.tl-tool-page .tl-tool-intro{font-size:15px!important;max-width:760px;color:#566268!important;line-height:1.7!important}
+body.tl-tool-page .tl-calculator-context:after{content:'';display:block;position:absolute;right:4px;top:36px;width:68px;height:68px;border:1px solid #b0d5d5;transform:rotate(45deg);border-radius:15px;opacity:.7;pointer-events:none}
+body.tl-tool-page .wrap{max-width:1160px!important}
+body.tl-tool-page :is(.hero h1,.hero h2,#h1,.preg-t,.res h2,.card h2,.tl-shared-footer h2,.tl-shared-footer h3){font-family:TempoEditorial,Georgia,serif!important;letter-spacing:-.025em!important}
+body.tl-tool-page :is(.hero h1,#h1){font-size:clamp(38px,5.1vw,70px)!important;line-height:1.12!important;color:#17323c!important;max-width:850px!important}
+body.tl-tool-page :is(.hero,.pantalla.on>.wrap,.wrap>.hero){position:relative}
+body.tl-tool-page :is(.hero,.pantalla.on>.wrap):before{content:'';position:absolute;z-index:-1;inset:-15px -25px auto auto;width:210px;height:210px;border-radius:50%;background:radial-gradient(circle,#bce7e37a,transparent 70%);pointer-events:none}
+body.tl-tool-page :is(.card,.tarifa,.tb,.rcaja,.stage,.rescue-box,.preg,.res,.ops>*,.tl-marca){border-radius:18px!important;transition:transform .32s cubic-bezier(.2,.7,.2,1),box-shadow .32s ease,border-color .32s ease!important}
+body.tl-tool-page :is(.card,.tarifa,.tb,.stage,.preg,.res){box-shadow:0 12px 36px #1239430a!important;border-color:#d0dddd!important}
+@media(hover:hover){body.tl-tool-page :is(.tarifa,.tb,.ops>*,.tl-marca):hover{transform:translateY(-4px);box-shadow:0 18px 36px #164b5520!important}}
+body.tl-tool-page :is(button,.btn,[role=button]){transition:transform .22s ease,box-shadow .25s ease,background .25s ease,border-color .25s ease!important}
+body.tl-tool-page :is(button,.btn,[role=button]):not(:disabled):hover{transform:translateY(-2px);box-shadow:0 8px 24px #006e8c25}
+body.tl-tool-page :is(button,.btn,[role=button]):focus-visible{outline:3px solid #27a6c5!important;outline-offset:3px!important}
+body.tl-tool-page :is(input,select,textarea):focus-visible{outline:2px solid #008bab!important;outline-offset:2px!important}
+body.tl-tool-page .tl-legal-disclaimer{max-width:1140px;margin:36px auto 0;padding:22px 28px;background:#e8f1f0;border:1px solid #c9dbdc;border-left:4px solid #006e8c;border-radius:10px;font-size:13px;line-height:1.7;color:#3e565a}
+body.tl-tool-page .tl-legal-disclaimer p{margin:0}
+body.tl-tool-page .tl-shared-footer{padding:68px max(25px,calc((100vw - 1320px)/2)) 22px!important;margin-top:40px!important;background:#103944!important;color:#e3eeee!important}
+body.tl-tool-page .tl-shared-footer .footer-layout{display:grid!important;grid-template-columns:minmax(180px,.9fr) minmax(0,2.3fr) minmax(180px,.9fr)!important;gap:35px!important}
+body.tl-tool-page .tl-shared-footer .footer-identity .brand img{width:220px!important}
+body.tl-tool-page .tl-shared-footer .footer-bottom{margin-top:36px;padding:20px 0 0}
+body.tl-tool-page .tl-shared-footer a{transition:color .2s ease}
+body.tl-tool-page .tl-shared-footer a:hover{color:#a5e6e6!important}
+body.tl-tool-page .tl-shared-footer .footer-columns{display:grid;gap:22px}
+body.tl-tool-page .tl-shared-footer :is(.footer-columns,.footer-services){min-width:0}
+body.tl-tool-page .tl-shared-footer img{object-fit:contain}
+@media(max-width:980px){body.tl-tool-page .tl-shared-footer .footer-layout{grid-template-columns:1fr 1fr!important}body.tl-tool-page .tl-calculator-context:after{display:none}}
+@media(max-width:650px){body.tl-tool-page .tl-shared-footer .footer-layout{grid-template-columns:1fr!important}body.tl-tool-page .tl-calculator-context{width:calc(100% - 38px);margin-top:22px}body.tl-tool-page .tl-legal-disclaimer{margin:26px 18px 0;padding:18px}body.tl-tool-page .tl-shared-header nav{gap:10px}}
+@media(prefers-reduced-motion:reduce){body.tl-tool-page *,body.tl-tool-page *:before,body.tl-tool-page *:after{transition:none!important;animation:none!important}}

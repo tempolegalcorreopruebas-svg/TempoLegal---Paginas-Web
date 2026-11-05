@@ -3,7 +3,7 @@
 const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccion-de-datos-personales-ecuador/index.html'};
 (() => {
   // Prefijo de rutas para las páginas de otros idiomas (carpetas en/, pt/, fr/).
-  const BASE=document.documentElement.dataset.base||'';
+  const BASE=document.documentElement.dataset.base||document.querySelector('script[src$="enhancements.js"]')?.getAttribute('src')?.replace(/enhancements\.js$/, '')||'';
   const HOME_REVIEW=document.documentElement.hasAttribute('data-home-review');
   const $ = (q, parent=document) => parent.querySelector(q);
   const $$ = (q, parent=document) => [...parent.querySelectorAll(q)];

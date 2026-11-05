@@ -1,0 +1,22 @@
+{
+  "modifications": {
+    "duplicate_home_links_removed": 69,
+    "pages_changed": 152,
+    "extra_home_blog_cards_removed": 4,
+    "home_blog_sections_updated": 4,
+    "duplicate_primary_navs_removed": 80,
+    "duplicate_mobile_toggles_removed": 80,
+    "additional_duplicate_home_links_removed": 16
+  },
+  "remaining_duplicate_header_cases": [],
+  "missing_relative_img_refs": [
+    [
+      "_tools/lopdp/source/2026-10-30-CALCULADORA-DELEGADO-LOPDP-V3.html",
+      ""
+    ],
+    [
+      "_tools/lopdp/source/2026-10-30-DIAGNOSTICO-LOPDP-TEMPOLEGAL-V3.html",
+      ""
+    ]
+  ]
+}

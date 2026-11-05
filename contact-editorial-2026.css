@@ -1,0 +1,44 @@
+/* TempoLegal · unified editorial contact experience 2026 */
+html body section.home-contact#contacto {position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(128deg,#e8f0ec 0%,#f4f6f3 52%,#dceae8 100%);padding:clamp(72px,9vw,136px) 0!important}
+html body section.home-contact#contacto::before {content:"";position:absolute;inset:-40% auto auto -16%;width:60vw;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(20,137,160,.095),transparent 65%);pointer-events:none;z-index:-1}
+html body section.home-contact#contacto::after {content:"";position:absolute;right:-110px;bottom:-190px;width:420px;height:420px;border:1px solid rgba(0,110,140,.16);border-radius:50%;box-shadow:0 0 0 48px rgba(0,110,140,.025),0 0 0 105px rgba(0,110,140,.018);pointer-events:none;z-index:-1}
+html[data-home-review] section.home-contact#contacto > .container {display:grid;grid-template-columns:minmax(0,1.12fr) minmax(320px,.88fr);gap:clamp(30px,6vw,104px);align-items:center;max-width:1320px}
+section.home-contact#contacto .tl-contact-copy {position:relative;max-width:650px;padding:15px 0 20px}
+section.home-contact#contacto .tl-contact-copy::before {content:"";display:block;width:62px;height:2px;background:linear-gradient(90deg,#c6a756,#007e9a);margin-bottom:32px}
+section.home-contact#contacto .tl-contact-copy .eyebrow{letter-spacing:.22em;color:#006e8c;font-weight:700}
+html[data-home-review] section.home-contact#contacto .tl-contact-copy h2 {font:400 clamp(52px,5.7vw,93px)/1.04 var(--serif,Georgia,serif);letter-spacing:-.035em;color:#17323c;max-width:12ch;margin:24px 0 28px}
+section.home-contact#contacto .tl-contact-copy .section-intro {font-size:clamp(18px,1.5vw,22px);line-height:1.55;color:#31535e;max-width:37ch;margin:0 0 26px}
+section.home-contact#contacto .tl-contact-copy > p:last-child {color:#577079;font-size:15px;line-height:1.75;max-width:53ch}
+html[data-home-review] section.home-contact#contacto .home-contact-actions.tl-contact-panel {position:relative;overflow:hidden;isolation:isolate;align-items:stretch;gap:0;border:1px solid rgba(5,91,112,.15);border-radius:34px 9px 34px 9px;padding:clamp(28px,4vw,56px);background:linear-gradient(150deg,#fff 2%,#f4f9f7 100%);box-shadow:0 26px 80px rgba(7,51,62,.09),inset 0 1px rgba(255,255,255,.9);transition:transform .6s cubic-bezier(.16,1,.3,1),box-shadow .6s ease}
+section.home-contact#contacto .tl-contact-panel::before {content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(330px circle at var(--tl-glow-x,75%) var(--tl-glow-y,0%),rgba(14,159,181,.13),transparent 75%)}
+section.home-contact#contacto .tl-contact-panel::after {content:"";position:absolute;right:-60px;top:-85px;width:180px;height:180px;border:1px solid rgba(0,110,140,.12);transform:rotate(45deg);border-radius:22px;pointer-events:none}
+section.home-contact#contacto .tl-panel-overline{font:700 12px/1.5 var(--sans,Arial,sans-serif);letter-spacing:.2em;text-transform:uppercase;color:#006e8c;margin:0 0 28px;max-width:30ch}
+section.home-contact#contacto .tl-contact-panel .button {display:inline-flex;justify-content:space-between;align-items:center;gap:18px;align-self:stretch;min-height:62px;padding:16px 24px;border-radius:5px 17px 5px 17px;background:#006e8c;color:white;text-decoration:none;font-weight:600;box-shadow:0 12px 26px rgba(0,110,140,.13)}
+section.home-contact#contacto .tl-contact-panel .button:hover{background:#005b76;transform:translateY(-3px)}
+section.home-contact#contacto .tl-contact-panel .text-link{align-self:flex-start;margin-top:23px;padding-bottom:9px;color:#17323c;text-decoration:none;border-bottom:1px solid #90aab0;font-weight:600}
+section.home-contact#contacto .tl-contact-panel .text-link:hover{color:#006e8c;border-color:#006e8c}
+html[data-home-review] section.home-contact#contacto .tl-contact-panel > p:last-child {max-width:47ch;margin:27px 0 0;padding-top:23px;border-top:1px solid #d7e3e2;color:#5b747a;font-size:13px;line-height:1.7}
+@media(hover:hover) and (pointer:fine) {section.home-contact#contacto .tl-contact-panel:hover {transform:translateY(-5px);box-shadow:0 38px 92px rgba(7,51,62,.15)}}
+/* Site-wide compatible refinement for inner service contact sections and forms. */
+body section.contact#contacto {position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(135deg,#e8f0ed,#f5f8f6)!important;padding-block:clamp(58px,7vw,110px)}
+body section.contact#contacto::before {content:"";position:absolute;z-index:-1;pointer-events:none;right:-10%;top:-55%;width:55%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(0,110,140,.09),transparent 68%)}
+body section.contact#contacto .contact-layout {gap:clamp(30px,5vw,84px);align-items:start}
+body section.contact#contacto .contact-layout>div:first-child {padding-block:clamp(8px,2vw,30px)}
+body section.contact#contacto .contact-layout h2 {letter-spacing:-.025em;line-height:1.12}
+body section.contact#contacto form {background:rgba(255,255,255,.93);border:1px solid rgba(0,110,140,.14);border-radius:30px 8px 30px 8px;padding:clamp(20px,3vw,42px);box-shadow:0 24px 65px rgba(12,51,61,.075)}
+body section.contact#contacto form :is(input,select,textarea) {border-radius:10px;transition:border-color .2s,box-shadow .2s}
+body section.contact#contacto form :is(input,select,textarea):focus {border-color:#006e8c;box-shadow:0 0 0 3px rgba(0,110,140,.1)}
+body section.contact#contacto .button {transition:transform .3s,box-shadow .3s}
+body section.contact#contacto .button:hover {transform:translateY(-3px);box-shadow:0 12px 26px rgba(0,110,140,.14)}
+@media(max-width:800px){html[data-home-review] section.home-contact#contacto > .container{grid-template-columns:1fr;gap:34px} html[data-home-review] section.home-contact#contacto .tl-contact-copy h2{font-size:clamp(45px,11vw,70px)}html body section.home-contact#contacto{padding:65px 0!important}html[data-home-review] section.home-contact#contacto .home-contact-actions.tl-contact-panel{padding:30px 25px}}
+@media(prefers-reduced-motion:reduce){section.home-contact#contacto .tl-contact-panel,section.home-contact#contacto .tl-contact-panel .button {transition:none!important;transform:none!important}}
+
+/* Service contact copy and helper text need dark ink on the editorial light panel. */
+body.landing section.contact#contacto,
+body.landing section.contact#contacto .contact-layout > div > p:not(.eyebrow),
+body.landing section.contact#contacto :is(.demo-note, .form-help, .privacy, .privacy-note, .form-hint, #form-status, label > small) {
+  color: #415d67;
+}
+body.landing section.contact#contacto :is(h2, label) { color: #193842; }
+body.landing section.contact#contacto .eyebrow { color: #24576a; }
+body.landing section.contact#contacto label > span { color: #795c29; }

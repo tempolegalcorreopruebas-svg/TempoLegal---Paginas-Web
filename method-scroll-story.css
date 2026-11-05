@@ -1,0 +1,9 @@
+
+/* Hold the 4-step story in view while scrolling downward; non-blocking native scrolling. */
+@media(min-width:641px) and (min-height:640px){
+ .method{height:285svh!important;min-height:0!important;position:relative!important;}
+ .method>.method-sticky{position:sticky!important;top:74px!important;height:calc(100svh - 74px)!important;min-height:0!important;display:flex!important;align-items:center!important;overflow:visible!important;}
+ .method .step-copy{transition:transform .42s cubic-bezier(.2,.8,.2,1),opacity .42s ease}
+ .method .step:after{transition:transform .08s linear!important}
+}
+@media(prefers-reduced-motion:reduce){.method{height:auto!important}.method>.method-sticky{position:relative!important;height:auto!important;top:auto!important}}
