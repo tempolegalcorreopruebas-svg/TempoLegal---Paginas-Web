@@ -4,6 +4,7 @@ DirectoryIndex index.html
 ErrorDocument 404 /404.html
 <IfModule mod_rewrite.c>
 RewriteEngine On
+<<<<<<< HEAD
 # BEGIN approved LOPDP tool routes
 RewriteRule ^herramientas\-lopdp/multas/(?:index\.html)?$ /herramientas/calculadora-multas-lopdp/ [R=301,L,NE]
 RewriteRule ^en/herramientas\-lopdp/multas/(?:index\.html)?$ /herramientas/calculadora-multas-lopdp/ [R=301,L,NE]
@@ -12,6 +13,8 @@ RewriteRule ^en/herramientas\-lopdp/dpd/(?:index\.html)?$ /herramientas/calculad
 RewriteRule ^herramientas\-lopdp/diagnostico/(?:index\.html)?$ /herramientas/diagnostico-lopdp/ [R=301,L,NE]
 RewriteRule ^en/herramientas\-lopdp/diagnostico/(?:index\.html)?$ /herramientas/diagnostico-lopdp/ [R=301,L,NE]
 # END approved LOPDP tool routes
+=======
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
 RewriteRule ^(?:_tools|_herramientas|tempo-private|server)(?:/|$) - [F,L]
 RewriteCond %{HTTP_HOST} ^www\.tempolegal\.com$ [NC]
 RewriteRule ^ https://tempolegal.com%{REQUEST_URI} [R=301,L,NE]

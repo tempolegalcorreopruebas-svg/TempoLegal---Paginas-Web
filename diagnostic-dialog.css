@@ -1,0 +1,10 @@
+/* Diagnostic contact modal; brand values remain owned by base.css. */
+body.diagnostic-dialog-open{overflow:hidden}
+.diagnostic-dialog{position:fixed;inset:0;margin:auto;width:min(960px,calc(100% - 32px));max-width:none;max-height:calc(100dvh - 32px);padding:0 28px 28px;border:0;border-radius:var(--radius-lg,12px);background:var(--paper);color:var(--ink);font-family:var(--sans);overscroll-behavior:contain;overflow:auto}
+.diagnostic-dialog::backdrop{background:rgb(14 61 74 / 65%)}
+.diagnostic-dialog .diagnostic-dialog-close{position:sticky;top:0;display:flex;align-items:center;justify-content:center;margin-left:auto;z-index:1;width:44px;height:44px;padding:0;border:0;background:var(--paper);color:var(--ink);font:32px/1 var(--sans);cursor:pointer}
+.diagnostic-dialog #contacto{width:100%;margin:0;padding:8px 0 0;display:grid;grid-template-columns:1fr 1.15fr;gap:28px;background:var(--paper);color:var(--ink)}
+.diagnostic-dialog #contacto h2{font-size:clamp(28px,3vw,38px)}
+.diagnostic-dialog #contacto .formbox{min-width:0}
+.diagnostic-dialog :focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+@media(max-width:700px){.diagnostic-dialog{padding:0 20px 24px;max-height:calc(100dvh - 24px);width:calc(100% - 24px)}.diagnostic-dialog #contacto{grid-template-columns:1fr;gap:24px}}

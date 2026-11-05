@@ -38,8 +38,11 @@
     "menuDpo": "Delegado externo (DPD / DPO)",
     "menuLopdp": "Implementación LOPDP",
     "menuDiagnostic": "Diagnóstico gratuito",
+<<<<<<< HEAD
     "menuFineCalculator": "Calculadora de multas",
     "menuDpoCalculator": "Calculadora de Delegado",
+=======
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "menuForeign": "Empresas extranjeras",
     "menuSoftLanding": "Soft Landing en Ecuador",
     "menuForeignCap": "Compañías con capital extranjero",
@@ -66,12 +69,17 @@
     "data": "Protección de datos",
     "about": "Nosotros",
     "contact": "Contacto",
+<<<<<<< HEAD
     "book": "Agendar consulta",
+=======
+    "book": "Contáctenos",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "menuOpen": "Abrir menú",
     "menuClose": "Cerrar menú",
     "heroEyebrow": "Firma jurídica · Quito · Todo el Ecuador",
     "heroTitle": "Abogados para\nempresas en Ecuador",
     "heroDescription": "Corporativo, protección de datos y empresas extranjeras.\nCriterio de socio en cada asunto y respuesta el mismo día.",
+<<<<<<< HEAD
     "bookLong": "Agendar una consulta",
     "exploreServices": "Conocer servicios",
     "commitment": "Compromiso",
@@ -82,6 +90,18 @@
     "internationalTitle": "Su operación en\nEcuador, desde el\nprimer día.",
     "internationalDescription": "Acompañamos a empresas extranjeras en su establecimiento y operación en Ecuador: constitución, representación legal, contabilidad y cumplimiento.",
     "foreignCount": "empresas con capital\nextranjero constituidas",
+=======
+    "bookLong": "Solicitar un diagnóstico inicial",
+    "exploreServices": "Conocer servicios",
+    "commitment": "Compromiso",
+    "sameDay": "Respuesta el mismo día hábil",
+    "proofOrganizations": "organizaciones asesoradas",
+    "proofData": "proyectos de protección de datos",
+    "proofForeign": "compañías con capital extranjero constituidas",
+    "internationalTitle": "Su operación en\nEcuador, desde el\nprimer día.",
+    "internationalDescription": "Acompañamos a empresas extranjeras en su establecimiento y operación en Ecuador: constitución, representación legal, contabilidad y cumplimiento.",
+    "foreignCount": "compañías con capital extranjero constituidas",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "responseTime": "respuesta máxima, casi\nsiempre el mismo día",
     "mapTitle": "Conexiones con Ecuador",
     "mapDescription": "Mapa de América Latina con Quito como punto de encuentro y conexiones con Guatemala, Colombia, Perú y Argentina.",
@@ -281,9 +301,13 @@
     "menuDataHub": "Personal data protection",
     "menuDpo": "External DPO",
     "menuLopdp": "LOPDP implementation",
+<<<<<<< HEAD
     "menuDiagnostic": "Free assessment (Spanish)",
     "menuFineCalculator": "Fine calculator (Spanish)",
     "menuDpoCalculator": "DPO calculator (Spanish)",
+=======
+    "menuDiagnostic": "Free assessment",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "menuForeign": "Foreign companies",
     "menuSoftLanding": "Soft landing in Ecuador",
     "menuForeignCap": "Foreign-owned companies",
@@ -310,12 +334,17 @@
     "data": "Data protection",
     "about": "About us",
     "contact": "Contact",
+<<<<<<< HEAD
     "book": "Book a consultation",
+=======
+    "book": "Contact us",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "menuOpen": "Open menu",
     "menuClose": "Close menu",
     "heroEyebrow": "Law firm · Quito · Across Ecuador",
     "heroTitle": "Lawyers for\nbusinesses in\nEcuador",
     "heroDescription": "Corporate law, data protection and foreign companies.\nPartner-level attention to every matter. Same-day response.",
+<<<<<<< HEAD
     "bookLong": "Book a consultation",
     "exploreServices": "Explore services",
     "commitment": "Our commitment",
@@ -326,6 +355,18 @@
     "internationalTitle": "Your business in\nEcuador, from\nday one.",
     "internationalDescription": "We support foreign companies as they establish and operate in Ecuador: incorporation, legal representation, accounting and compliance.",
     "foreignCount": "companies with foreign\ncapital incorporated",
+=======
+    "bookLong": "Request an initial assessment",
+    "exploreServices": "Explore services",
+    "commitment": "Our commitment",
+    "sameDay": "Response within the same business day",
+    "proofOrganizations": "organizations advised",
+    "proofData": "data protection projects",
+    "proofForeign": "foreign-owned companies incorporated",
+    "internationalTitle": "Your business in\nEcuador, from\nday one.",
+    "internationalDescription": "We support foreign companies as they establish and operate in Ecuador: incorporation, legal representation, accounting and compliance.",
+    "foreignCount": "foreign-owned companies incorporated",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "responseTime": "maximum response time,\nusually the same day",
     "mapTitle": "Connections with Ecuador",
     "mapDescription": "Map of Latin America with Quito as a hub, connected to Guatemala, Colombia, Peru and Argentina.",
@@ -525,9 +566,13 @@
     "menuDataHub": "Proteção de dados pessoais",
     "menuDpo": "Encarregado externo (DPO)",
     "menuLopdp": "Implementação da LOPDP",
+<<<<<<< HEAD
     "menuDiagnostic": "Diagnóstico gratuito (espanhol)",
     "menuFineCalculator": "Calculadora de multas (espanhol)",
     "menuDpoCalculator": "Calculadora de DPD (espanhol)",
+=======
+    "menuDiagnostic": "Diagnóstico gratuito",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "menuForeign": "Empresas estrangeiras",
     "menuSoftLanding": "Soft landing no Equador",
     "menuForeignCap": "Empresas com capital estrangeiro",
@@ -554,12 +599,17 @@
     "data": "Proteção de dados",
     "about": "Sobre nós",
     "contact": "Contato",
+<<<<<<< HEAD
     "book": "Agendar consulta",
+=======
+    "book": "Fale conosco",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "menuOpen": "Abrir menu",
     "menuClose": "Fechar menu",
     "heroEyebrow": "Escritório de advocacia · Quito · Todo o Equador",
     "heroTitle": "Advogados para\nempresas no\nEquador",
     "heroDescription": "Direito societário, proteção de dados e empresas estrangeiras.\nAtenção de sócio em cada questão e resposta no mesmo dia.",
+<<<<<<< HEAD
     "bookLong": "Agendar uma consulta",
     "exploreServices": "Conhecer os serviços",
     "commitment": "Compromisso",
@@ -570,6 +620,18 @@
     "internationalTitle": "Sua operação no\nEquador, desde o\nprimeiro dia.",
     "internationalDescription": "Apoiamos empresas estrangeiras na sua instalação e operação no Equador: constituição, representação legal, contabilidade e conformidade.",
     "foreignCount": "empresas com capital\nestrangeiro constituídas",
+=======
+    "bookLong": "Solicitar um diagnóstico inicial",
+    "exploreServices": "Conhecer os serviços",
+    "commitment": "Compromisso",
+    "sameDay": "Resposta no mesmo dia útil",
+    "proofOrganizations": "organizações assessoradas",
+    "proofData": "projetos de proteção de dados",
+    "proofForeign": "empresas com capital estrangeiro constituídas",
+    "internationalTitle": "Sua operação no\nEquador, desde o\nprimeiro dia.",
+    "internationalDescription": "Apoiamos empresas estrangeiras na sua instalação e operação no Equador: constituição, representação legal, contabilidade e conformidade.",
+    "foreignCount": "empresas com capital estrangeiro constituídas",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "responseTime": "prazo máximo de resposta,\nquase sempre no mesmo dia",
     "mapTitle": "Conexões com o Equador",
     "mapDescription": "Mapa da América Latina com Quito como ponto de encontro e conexões com Guatemala, Colômbia, Peru e Argentina.",
@@ -769,9 +831,13 @@
     "menuDataHub": "Protection des données personnelles",
     "menuDpo": "DPO externe",
     "menuLopdp": "Mise en œuvre de la LOPDP",
+<<<<<<< HEAD
     "menuDiagnostic": "Diagnostic gratuit (espagnol)",
     "menuFineCalculator": "Calculateur des amendes (espagnol)",
     "menuDpoCalculator": "Calculateur DPD (espagnol)",
+=======
+    "menuDiagnostic": "Diagnostic gratuit",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "menuForeign": "Entreprises étrangères",
     "menuSoftLanding": "Soft landing en Équateur",
     "menuForeignCap": "Sociétés à capital étranger",
@@ -798,12 +864,17 @@
     "data": "Protection des données",
     "about": "À propos",
     "contact": "Contact",
+<<<<<<< HEAD
     "book": "Prendre rendez-vous",
+=======
+    "book": "Contactez-nous",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "menuOpen": "Ouvrir le menu",
     "menuClose": "Fermer le menu",
     "heroEyebrow": "Cabinet juridique · Quito · Tout l’Équateur",
     "heroTitle": "Avocats pour\nles entreprises en\nÉquateur",
     "heroDescription": "Droit des sociétés, protection des données et entreprises étrangères.\nL’expertise d’un associé pour chaque dossier. Réponse le jour même.",
+<<<<<<< HEAD
     "bookLong": "Prendre rendez-vous",
     "exploreServices": "Découvrir nos services",
     "commitment": "Notre engagement",
@@ -814,6 +885,18 @@
     "internationalTitle": "Votre activité en\nÉquateur, dès le\npremier jour.",
     "internationalDescription": "Nous accompagnons les entreprises étrangères dans leur implantation et leurs activités en Équateur : constitution, représentation légale, comptabilité et conformité.",
     "foreignCount": "entreprises à capitaux\nétrangers constituées",
+=======
+    "bookLong": "Demander un diagnostic initial",
+    "exploreServices": "Découvrir nos services",
+    "commitment": "Notre engagement",
+    "sameDay": "Réponse le même jour ouvré",
+    "proofOrganizations": "organisations conseillées",
+    "proofData": "projets de protection des données",
+    "proofForeign": "sociétés à capitaux étrangers constituées",
+    "internationalTitle": "Votre activité en\nÉquateur, dès le\npremier jour.",
+    "internationalDescription": "Nous accompagnons les entreprises étrangères dans leur implantation et leurs activités en Équateur : constitution, représentation légale, comptabilité et conformité.",
+    "foreignCount": "sociétés à capitaux étrangers constituées",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "responseTime": "délai de réponse maximal,\ngénéralement le jour même",
     "mapTitle": "Connexions avec l’Équateur",
     "mapDescription": "Carte de l’Amérique latine avec Quito comme point de rencontre et des connexions avec le Guatemala, la Colombie, le Pérou et l’Argentine.",

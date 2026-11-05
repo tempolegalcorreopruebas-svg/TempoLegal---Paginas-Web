@@ -381,8 +381,13 @@
     "file": "tramites-notariales-y-societarios/index.html",
     "language": "es",
     "canonical": "https://tempolegal.com/tramites-notariales-y-societarios/",
+<<<<<<< HEAD
     "title": "Reformas de estatutos y cambios societarios en Ecuador | TempoLegal",
     "description": "Revise el cambio que necesita su compañía: objeto, nombre, domicilio, capital o administración. Documentos y gestiones con alcance definido.",
+=======
+    "title": "Reformas y actos societarios | TempoLegal",
+    "description": "Poderes, documentación y coordinación de los actos y registros que necesita su empresa.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,follow,max-image-preview:large",
     "alternates": {
       "es": "tramites-notariales-y-societarios/index.html",
@@ -406,8 +411,13 @@
     "file": "representacion-legal-fiscal-ecuador/index.html",
     "language": "es",
     "canonical": "https://tempolegal.com/representacion-legal-fiscal-ecuador/",
+<<<<<<< HEAD
     "title": "Representación legal y domicilio fiscal en Ecuador | TempoLegal",
     "description": "Representación legal y domicilio fiscal para compañías en Ecuador. Contrate cada servicio por separado o coordinado, con funciones y alcance definidos.",
+=======
+    "title": "Representación y domicilio fiscal en Ecuador | TempoLegal",
+    "description": "Una contraparte local para coordinar la representación de su empresa, su domicilio y la documentación de su operación en Ecuador.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,follow,max-image-preview:large",
     "alternates": {
       "es": "representacion-legal-fiscal-ecuador/index.html",
@@ -501,8 +511,13 @@
     "file": "servicios-contabilidad/index.html",
     "language": "es",
     "canonical": "https://tempolegal.com/servicios-contabilidad/",
+<<<<<<< HEAD
     "title": "Contabilidad para empresas en Ecuador | TempoLegal",
     "description": "Contabilidad y soporte administrativo para su operación en Ecuador. Coordinación con su empresa y casa matriz, con alcance y propuesta personalizados.",
+=======
+    "title": "Contabilidad y soporte administrativo | TempoLegal",
+    "description": "Contabilidad, estados financieros y obligaciones societarias y tributarias coordinadas con el criterio jurídico.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,follow,max-image-preview:large",
     "alternates": {
       "es": "servicios-contabilidad/index.html",
@@ -550,7 +565,11 @@
     "language": "es",
     "canonical": "https://tempolegal.com/constitucion-de-empresas-sas/",
     "title": "Constitución de SAS en Ecuador | TempoLegal",
+<<<<<<< HEAD
     "description": "Abogados que revisan su negocio y gestionan su constitución, el RUC y la configuración del facturador electrónico del SRI.",
+=======
+    "description": "Estructura societaria, estatutos, nombramientos y registros para iniciar su actividad.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,follow,max-image-preview:large",
     "alternates": {
       "es": "constitucion-de-empresas-sas/index.html",
@@ -1663,8 +1682,13 @@
     "file": "en/servicios-contabilidad/index.html",
     "language": "en",
     "canonical": "https://tempolegal.com/en/servicios-contabilidad/",
+<<<<<<< HEAD
     "title": "Accounting and administrative support in Ecuador | TempoLegal",
     "description": "We support your Ecuador operation with accounting, tax coordination and defined administrative tasks, working with your team and head office.",
+=======
+    "title": "Accounting and administrative support | TempoLegal",
+    "description": "Accounting, financial statements and corporate and tax obligations coordinated with legal advice.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,follow,max-image-preview:large",
     "alternates": {
       "es": "servicios-contabilidad/index.html",
@@ -1711,8 +1735,13 @@
     "file": "en/constitucion-de-empresas-sas/index.html",
     "language": "en",
     "canonical": "https://tempolegal.com/en/constitucion-de-empresas-sas/",
+<<<<<<< HEAD
     "title": "SAS incorporation in Ecuador | TempoLegal",
     "description": "Lawyers review your business and manage incorporation, the RUC and configuration of the SRI electronic invoicing system.",
+=======
+    "title": "SAS company incorporation in Ecuador | TempoLegal",
+    "description": "Corporate structure, articles of association, appointments and registrations to start your business.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,follow,max-image-preview:large",
     "alternates": {
       "es": "constitucion-de-empresas-sas/index.html",
@@ -1811,8 +1840,13 @@
     "file": "en/services/soft-landing/index.html",
     "language": "en",
     "canonical": "https://tempolegal.com/en/services/soft-landing/",
+<<<<<<< HEAD
     "title": "Establish and operate your business in Ecuador | TempoLegal",
     "description": "Foreign-capital incorporation, branches, representation, banking support and legal, accounting and administrative services coordinated around your project.",
+=======
+    "title": "Soft landing in Ecuador | TempoLegal",
+    "description": "Incorporating a company is the beginning. We coordinate legal representation, business address, accounting, hiring and compliance to support your operations in Ecuador.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,follow,max-image-preview:large",
     "alternates": {
       "es": "services/soft-landing/index.html",
@@ -1836,8 +1870,13 @@
     "file": "en/services/corporate-law/index.html",
     "language": "en",
     "canonical": "https://tempolegal.com/en/services/corporate-law/",
+<<<<<<< HEAD
     "title": "Corporate and company law in Ecuador | TempoLegal",
     "description": "Company incorporation and organization, shareholder agreements, contracts and ongoing legal advice. We help companies and groups make decisions and translate them into concrete documents and actions.",
+=======
+    "title": "Corporate and company law | TempoLegal",
+    "description": "Advice for business decisions and operations: contracts, corporate governance, reorganizations and ongoing support.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,follow,max-image-preview:large",
     "alternates": {
       "es": "services/corporate-law/index.html",
@@ -1861,8 +1900,13 @@
     "file": "en/services/holding-structures/index.html",
     "language": "en",
     "canonical": "https://tempolegal.com/en/services/holding-structures/",
+<<<<<<< HEAD
     "title": "Holdings and business structures in Ecuador | TempoLegal",
     "description": "We review how your companies connect and design the corporate organization, agreements and legal-accounting coordination your group needs.",
+=======
+    "title": "Holding companies and business structures | TempoLegal",
+    "description": "Legal advice and accounting coordination to organize control, ownership and activities within a business group.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,follow,max-image-preview:large",
     "alternates": {
       "es": "services/holding-structures/index.html",
@@ -1886,8 +1930,13 @@
     "file": "services/foreign-branches/index.html",
     "language": "es",
     "canonical": "https://tempolegal.com/services/foreign-branches/",
+<<<<<<< HEAD
     "title": "Sucursales de compañías extranjeras en Ecuador | TempoLegal",
     "description": "Establezca la sucursal de su compañía extranjera en Ecuador. Coordinamos documentación, representación y trámite con la matriz. Propuesta según su operación.",
+=======
+    "title": "Sucursales extranjeras en Ecuador | TempoLegal",
+    "description": "Acompañamiento para analizar el establecimiento de una sucursal y coordinar sus necesidades jurídicas, contables y administrativas en Ecuador.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,follow,max-image-preview:large",
     "alternates": {
       "es": "services/foreign-branches/index.html",
@@ -1911,8 +1960,13 @@
     "file": "services/foreign-capital/index.html",
     "language": "es",
     "canonical": "https://tempolegal.com/services/foreign-capital/",
+<<<<<<< HEAD
     "title": "Constitución con capital extranjero en Ecuador | TempoLegal",
     "description": "Constituya una compañía ecuatoriana con participantes del exterior. Estructura, control, documentos y puesta en marcha con una propuesta personalizada.",
+=======
+    "title": "Capital extranjero en Ecuador | TempoLegal",
+    "description": "Asesoría para coordinar la participación de accionistas extranjeros con la estructura societaria y la operación de su empresa en Ecuador.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,follow,max-image-preview:large",
     "alternates": {
       "es": "services/foreign-capital/index.html",
@@ -1936,8 +1990,13 @@
     "file": "services/monthly-legal-advice/index.html",
     "language": "es",
     "canonical": "https://tempolegal.com/services/monthly-legal-advice/",
+<<<<<<< HEAD
     "title": "Asesoría legal mensual para empresas en Ecuador | TempoLegal",
     "description": "Acompañamiento jurídico recurrente para empresas en Ecuador. Consultas, contratos y asuntos societarios con alcance y coordinación definidos.",
+=======
+    "title": "Asesoría legal mensual para empresas | TempoLegal",
+    "description": "Acompañamiento jurídico recurrente para dar continuidad a los asuntos de su empresa y coordinar decisiones con un equipo que conoce su operación.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,follow,max-image-preview:large",
     "alternates": {
       "es": "services/monthly-legal-advice/index.html",
@@ -1961,8 +2020,13 @@
     "file": "services/soft-landing/index.html",
     "language": "es",
     "canonical": "https://tempolegal.com/services/soft-landing/",
+<<<<<<< HEAD
     "title": "Establezca y opere su empresa en Ecuador | TempoLegal",
     "description": "Constitución con capital extranjero, sucursales, representación, acompañamiento bancario y soporte legal, contable y administrativo, coordinados según su proyecto.",
+=======
+    "title": "Soft Landing en Ecuador | TempoLegal",
+    "description": "Constituir una compañía es el inicio. Coordinamos representación legal, domicilio, contabilidad, contratación y cumplimiento para acompañar su operación en Ecuador.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,follow,max-image-preview:large",
     "alternates": {
       "es": "services/soft-landing/index.html",
@@ -1986,8 +2050,13 @@
     "file": "services/corporate-law/index.html",
     "language": "es",
     "canonical": "https://tempolegal.com/services/corporate-law/",
+<<<<<<< HEAD
     "title": "Derecho corporativo y societario en Ecuador | TempoLegal",
     "description": "Constitución y organización de compañías, acuerdos entre socios, contratos y asesoría legal continua. Ayudamos a empresas y grupos a tomar decisiones y llevarlas a documentos y actuaciones concretas.",
+=======
+    "title": "Derecho corporativo y societario | TempoLegal",
+    "description": "Asesoría para las decisiones y la operación de su empresa: contratos, gobierno societario, reorganizaciones y acompañamiento recurrente.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,follow,max-image-preview:large",
     "alternates": {
       "es": "services/corporate-law/index.html",
@@ -2011,8 +2080,13 @@
     "file": "services/holding-structures/index.html",
     "language": "es",
     "canonical": "https://tempolegal.com/services/holding-structures/",
+<<<<<<< HEAD
     "title": "Holdings y estructuras empresariales en Ecuador | TempoLegal",
     "description": "Revisamos cómo se conectan sus empresas y diseñamos la organización societaria, los acuerdos y la coordinación jurídica y contable que su grupo necesita.",
+=======
+    "title": "Holdings y estructuras empresariales | TempoLegal",
+    "description": "Criterio jurídico y coordinación contable para organizar el control, las participaciones y las actividades de un grupo empresarial.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,follow,max-image-preview:large",
     "alternates": {
       "es": "services/holding-structures/index.html",
@@ -2204,8 +2278,13 @@
     "file": "pt/servicios-contabilidad/index.html",
     "language": "pt",
     "canonical": "https://tempolegal.com/pt/servicios-contabilidad/",
+<<<<<<< HEAD
     "title": "Contabilidade e suporte administrativo no Equador | TempoLegal",
     "description": "Apoiamos sua operação no Equador com contabilidade, coordenação tributária e tarefas administrativas definidas, em conjunto com sua equipe e matriz.",
+=======
+    "title": "Contabilidade e suporte administrativo | TempoLegal",
+    "description": "Contabilidade, demonstrações financeiras e obrigações societárias e tributárias coordenadas com o critério jurídico.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,follow,max-image-preview:large",
     "alternates": {
       "es": "servicios-contabilidad/index.html",
@@ -2253,7 +2332,11 @@
     "language": "pt",
     "canonical": "https://tempolegal.com/pt/constitucion-de-empresas-sas/",
     "title": "Constituição de SAS no Equador | TempoLegal",
+<<<<<<< HEAD
     "description": "Advogados revisam seu negócio e gerem a constituição, o RUC e a configuração do emissor eletrônico do SRI.",
+=======
+    "description": "Estrutura societária, estatutos, nomeações e registros para iniciar sua atividade.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,follow,max-image-preview:large",
     "alternates": {
       "es": "constitucion-de-empresas-sas/index.html",
@@ -2352,8 +2435,13 @@
     "file": "pt/services/soft-landing/index.html",
     "language": "pt",
     "canonical": "https://tempolegal.com/pt/services/soft-landing/",
+<<<<<<< HEAD
     "title": "Estabeleça e opere sua empresa no Equador | TempoLegal",
     "description": "Constituição com capital estrangeiro, sucursais, representação, apoio bancário e suporte jurídico, contábil e administrativo coordenados conforme seu projeto.",
+=======
+    "title": "Soft landing no Equador | TempoLegal",
+    "description": "Constituir uma empresa é o início. Coordenamos representação legal, domicílio, contabilidade, contratação e conformidade para acompanhar sua operação no Equador.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,follow,max-image-preview:large",
     "alternates": {
       "es": "services/soft-landing/index.html",
@@ -2377,8 +2465,13 @@
     "file": "pt/services/corporate-law/index.html",
     "language": "pt",
     "canonical": "https://tempolegal.com/pt/services/corporate-law/",
+<<<<<<< HEAD
     "title": "Direito corporativo e societário no Equador | TempoLegal",
     "description": "Constituição e organização de companhias, acordos entre sócios, contratos e assessoria jurídica contínua. Ajudamos empresas e grupos a tomar decisões e concretizá-las em documentos e atuações.",
+=======
+    "title": "Direito corporativo e societário | TempoLegal",
+    "description": "Assessoria para as decisões e a operação da empresa: contratos, governança societária, reorganizações e acompanhamento recorrente.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,follow,max-image-preview:large",
     "alternates": {
       "es": "services/corporate-law/index.html",
@@ -2402,8 +2495,13 @@
     "file": "pt/services/holding-structures/index.html",
     "language": "pt",
     "canonical": "https://tempolegal.com/pt/services/holding-structures/",
+<<<<<<< HEAD
     "title": "Holdings e estruturas empresariais no Equador | TempoLegal",
     "description": "Revisamos como suas empresas se conectam e definimos a organização societária, os acordos e a coordenação jurídica e contábil de que seu grupo precisa.",
+=======
+    "title": "Holdings e estruturas empresariais | TempoLegal",
+    "description": "Critério jurídico e coordenação contábil para organizar o controle, as participações e as atividades de um grupo empresarial.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,follow,max-image-preview:large",
     "alternates": {
       "es": "services/holding-structures/index.html",
@@ -2595,8 +2693,13 @@
     "file": "fr/servicios-contabilidad/index.html",
     "language": "fr",
     "canonical": "https://tempolegal.com/fr/servicios-contabilidad/",
+<<<<<<< HEAD
     "title": "Comptabilité et soutien administratif en Équateur | TempoLegal",
     "description": "Nous accompagnons votre activité en Équateur par la comptabilité, la coordination fiscale et des tâches administratives définies, avec votre équipe et votre siège.",
+=======
+    "title": "Comptabilité et soutien administratif | TempoLegal",
+    "description": "Comptabilité, états financiers et obligations sociétaires et fiscales coordonnés avec le conseil juridique.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,follow,max-image-preview:large",
     "alternates": {
       "es": "servicios-contabilidad/index.html",
@@ -2643,8 +2746,13 @@
     "file": "fr/constitucion-de-empresas-sas/index.html",
     "language": "fr",
     "canonical": "https://tempolegal.com/fr/constitucion-de-empresas-sas/",
+<<<<<<< HEAD
     "title": "Constitution de SAS en Équateur | TempoLegal",
     "description": "Des avocats examinent votre activité et gèrent la constitution, le RUC et la configuration de la facturation électronique du SRI.",
+=======
+    "title": "Constitution d’une SAS en Équateur | TempoLegal",
+    "description": "Structure sociétaire, statuts, nominations et inscriptions pour démarrer votre activité.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,follow,max-image-preview:large",
     "alternates": {
       "es": "constitucion-de-empresas-sas/index.html",
@@ -2743,8 +2851,13 @@
     "file": "fr/services/soft-landing/index.html",
     "language": "fr",
     "canonical": "https://tempolegal.com/fr/services/soft-landing/",
+<<<<<<< HEAD
     "title": "Établissez et exploitez votre entreprise en Équateur | TempoLegal",
     "description": "Constitution avec capitaux étrangers, succursales, représentation, accompagnement bancaire et soutien juridique, comptable et administratif coordonnés selon votre projet.",
+=======
+    "title": "Soft landing en Équateur | TempoLegal",
+    "description": "Constituer une société est un début. Nous coordonnons représentation légale, domiciliation, comptabilité, recrutement et conformité pour accompagner votre activité en Équateur.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,follow,max-image-preview:large",
     "alternates": {
       "es": "services/soft-landing/index.html",
@@ -2768,8 +2881,13 @@
     "file": "fr/services/corporate-law/index.html",
     "language": "fr",
     "canonical": "https://tempolegal.com/fr/services/corporate-law/",
+<<<<<<< HEAD
     "title": "Droit des affaires et des sociétés en Équateur | TempoLegal",
     "description": "Constitution et organisation de sociétés, accords entre associés, contrats et conseil juridique continu. Nous aidons les entreprises et les groupes à prendre des décisions et à les concrétiser dans des documents et des démarches.",
+=======
+    "title": "Droit des affaires et des sociétés | TempoLegal",
+    "description": "Un conseil pour les décisions et l’activité de votre entreprise : contrats, gouvernance, réorganisations et accompagnement récurrent.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,follow,max-image-preview:large",
     "alternates": {
       "es": "services/corporate-law/index.html",
@@ -2793,8 +2911,13 @@
     "file": "fr/services/holding-structures/index.html",
     "language": "fr",
     "canonical": "https://tempolegal.com/fr/services/holding-structures/",
+<<<<<<< HEAD
     "title": "Holdings et structures d’entreprise en Équateur | TempoLegal",
     "description": "Nous examinons les liens entre vos sociétés et concevons l’organisation sociale, les accords et la coordination juridique et comptable nécessaires au groupe.",
+=======
+    "title": "Holdings et structures d’entreprise | TempoLegal",
+    "description": "Un conseil juridique et une coordination comptable pour organiser le contrôle, les participations et les activités d’un groupe.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,follow,max-image-preview:large",
     "alternates": {
       "es": "services/holding-structures/index.html",
@@ -2887,8 +3010,13 @@
     "file": "proteccion-de-datos-personales-ecuador/index.html",
     "language": "es",
     "canonical": "https://tempolegal.com/proteccion-de-datos-personales-ecuador/",
+<<<<<<< HEAD
     "title": "Protección de datos personales para su organización. | TempoLegal",
     "description": "Implementación de la LOPDP, delegado externo y revisión de su programa. Identifiquemos qué necesita y por dónde conviene empezar.",
+=======
+    "title": "Protección de datos personales en Ecuador | TempoLegal",
+    "description": "Implementación LOPDP, DPD externo y revisión de programas de protección de datos en Ecuador. Encuentre el servicio adecuado para su organización.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,nofollow",
     "alternates": {
       "es": "proteccion-de-datos-personales-ecuador/index.html"
@@ -2911,8 +3039,13 @@
     "file": "proteccion-de-datos-personales-ecuador/delegado-proteccion-datos-externo-ecuador/index.html",
     "language": "es",
     "canonical": "https://tempolegal.com/proteccion-de-datos-personales-ecuador/delegado-proteccion-datos-externo-ecuador/",
+<<<<<<< HEAD
     "title": "DPD externo en Ecuador | TempoLegal",
     "description": "Asesoría y supervisión independiente para acompañar la gestión de sus obligaciones de protección de datos.",
+=======
+    "title": "DPD / DPO externo en Ecuador | TempoLegal",
+    "description": "Delegado de Protección de Datos externo (DPD / DPO) en Ecuador desde USD 95 + IVA al mes. Asesoría, supervisión y seguimiento según su organización.",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "robots": "noindex,nofollow",
     "alternates": {
       "es": "proteccion-de-datos-personales-ecuador/delegado-proteccion-datos-externo-ecuador/index.html"
@@ -2980,6 +3113,7 @@
     "types": []
   },
   {
+<<<<<<< HEAD
     "file": "team-rolando-valencia.html",
     "language": "es",
     "canonical": "https://tempolegal.com/team-rolando-valencia.html",
@@ -3103,6 +3237,41 @@
     "description": "Un diagnóstico breve para saber qué le exige la Ley Orgánica de Protección de Datos Personales y a cuánto asciende su exposición.",
     "robots": "noindex,follow,max-image-preview:large",
     "alternates": {},
+=======
+    "file": "herramientas-lopdp/dpd/index.html",
+    "language": "es",
+    "canonical": "https://tempolegal.com/herramientas-lopdp/dpd/",
+    "title": "DPD / DPO y gran escala | TempoLegal",
+    "description": "Dos cuestiones relacionadas, con resultados separados. Revise señales de designación y calcule las seis variables de un tratamiento.",
+    "robots": "noindex,nofollow",
+    "alternates": {
+      "es": "herramientas-lopdp/dpd/index.html"
+    },
+    "types": []
+  },
+  {
+    "file": "herramientas-lopdp/diagnostico/index.html",
+    "language": "es",
+    "canonical": "https://tempolegal.com/herramientas-lopdp/diagnostico/",
+    "title": "¿Por dónde empezar con la protección de datos? | TempoLegal",
+    "description": "Identifique qué conviene revisar en su organización y lleve una lista concreta a su equipo.",
+    "robots": "noindex,nofollow",
+    "alternates": {
+      "es": "herramientas-lopdp/diagnostico/index.html"
+    },
+    "types": []
+  },
+  {
+    "file": "herramientas-lopdp/multas/index.html",
+    "language": "es",
+    "canonical": "https://tempolegal.com/herramientas-lopdp/multas/",
+    "title": "Simulador de rangos de multas LOPDP | TempoLegal",
+    "description": "Explore los límites porcentuales de una infracción hipotética, con una base económica elegida por usted.",
+    "robots": "noindex,nofollow",
+    "alternates": {
+      "es": "herramientas-lopdp/multas/index.html"
+    },
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "types": []
   }
 ]

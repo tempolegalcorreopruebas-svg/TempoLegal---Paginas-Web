@@ -58,7 +58,11 @@ Inspect the complete request payload, not just the dataLayer. Confirm that remot
 
 `conversacion_real` and `lead_calificado` are commercial records, not browser events in this delivery. A person confirms an actual two-way exchange; a responsible specialist qualifies a lead using agreed fit/need/scope criteria. Assign one internal lead ID, record each transition once and retain evidence in the authorised CRM. Do not put personal records in the public project or automatically send them to Google. No CRM destination or offline conversion import has been configured.
 
+<<<<<<< HEAD
 Juan Mera is named in the supplied master as the measurement coordinator with Rubén and Anthony. Ownership, access and qualification criteria still need operational confirmation; no message has been sent to any of them. Report event totals and commercial counts separately, with period, source and exclusions. Consent rejection, blockers, returning visitors, duplicates between channels and unattributed traffic prevent treating a simple click-to-lead ratio as a verified conversion rate.
+=======
+Juan Mera is named in the supplied master as the measurement coordinator with Rubén and Antony. Ownership, access and qualification criteria still need operational confirmation; no message has been sent to any of them. Report event totals and commercial counts separately, with period, source and exclusions. Consent rejection, blockers, returning visitors, duplicates between channels and unattributed traffic prevent treating a simple click-to-lead ratio as a verified conversion rate.
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
 
 ## References
 

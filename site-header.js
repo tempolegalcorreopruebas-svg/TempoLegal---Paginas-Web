@@ -6,6 +6,7 @@
 (() => {
   const menus = [...document.querySelectorAll('[data-nav-menu]')];
 
+<<<<<<< HEAD
   // Normalize file previews, hosted directory URLs and retained service aliases.
   function servicePath(value) {
     const url = new URL(value, document.baseURI);
@@ -35,6 +36,8 @@
   document.addEventListener('DOMContentLoaded', markCurrentService);
   document.addEventListener('tempo:languagechange', () => requestAnimationFrame(markCurrentService));
 
+=======
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
   function setMenu(menu, open, focusButton) {
     const button = menu.querySelector('.nav-menu-toggle');
     const panel = menu.querySelector('.nav-menu-panel');
@@ -94,11 +97,19 @@
     updateNotice();
   }
 
+<<<<<<< HEAD
   // Menú móvil en páginas secundarias (servicios de Anthony, artículos, casos, perfiles y legales).
   const header = document.querySelector('[data-common-toggle]');
   if (!header) return;
   const toggle = header.querySelector('.menu-toggle');
   const nav = header.querySelector('#main-nav');
+=======
+  // Menú móvil en páginas secundarias (servicios de Antony, artículos, casos, perfiles y legales).
+  const header = document.querySelector('[data-common-toggle]');
+  if (!header) return;
+  const toggle = header.querySelector('.menu-toggle');
+  const nav = header.querySelector('#main-nav, #navigation');
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
   if (!toggle || !nav) return;
   const label = toggle.querySelector('.sr-only');
   const items = () => [...nav.querySelectorAll('a[href], button:not([disabled])')].filter(el => el.offsetParent !== null);

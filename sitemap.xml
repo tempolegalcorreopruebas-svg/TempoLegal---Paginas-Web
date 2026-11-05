@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?xml version='1.0' encoding='utf-8'?>
+=======
+<?xml version='1.0' encoding='UTF-8'?>
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://tempolegal.com/</loc>
@@ -585,6 +589,27 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tempolegal.com/tramites-notariales-y-societarios/"/>
   </url>
   <url>
+<<<<<<< HEAD
+=======
+    <loc>https://tempolegal.com/herramientas-lopdp/diagnostico/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tempolegal.com/herramientas-lopdp/diagnostico/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tempolegal.com/en/herramientas-lopdp/diagnostico/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tempolegal.com/herramientas-lopdp/diagnostico/"/>
+  </url>
+  <url>
+    <loc>https://tempolegal.com/herramientas-lopdp/dpd/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tempolegal.com/herramientas-lopdp/dpd/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tempolegal.com/en/herramientas-lopdp/dpd/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tempolegal.com/herramientas-lopdp/dpd/"/>
+  </url>
+  <url>
+    <loc>https://tempolegal.com/herramientas-lopdp/multas/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tempolegal.com/herramientas-lopdp/multas/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tempolegal.com/en/herramientas-lopdp/multas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tempolegal.com/herramientas-lopdp/multas/"/>
+  </url>
+  <url>
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     <loc>https://tempolegal.com/holding-familiar-ecuador-estructura-sucesion/</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://tempolegal.com/holding-familiar-ecuador-estructura-sucesion/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://tempolegal.com/en/holding-familiar-ecuador-estructura-sucesion/"/>
@@ -1056,6 +1081,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://tempolegal.com/en/proteccion-de-datos-personales-ecuador/proteccion-datos-empresas-software-apps-ecuador/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://tempolegal.com/proteccion-de-datos-personales-ecuador/proteccion-datos-empresas-software-apps-ecuador/"/>
   </url>
+<<<<<<< HEAD
 <url>
     <loc>https://tempolegal.com/team-rolando-valencia.html</loc>
     <xhtml:link rel="alternate" hreflang="es" href="https://tempolegal.com/team-rolando-valencia.html"/>
@@ -1092,3 +1118,24 @@
   <url><loc>https://tempolegal.com/herramientas/calculadora-delegado-lopdp/</loc></url>
   <url><loc>https://tempolegal.com/herramientas/diagnostico-lopdp/</loc></url>
 </urlset>
+=======
+  <url>
+    <loc>https://tempolegal.com/en/herramientas-lopdp/diagnostico/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tempolegal.com/herramientas-lopdp/diagnostico/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tempolegal.com/en/herramientas-lopdp/diagnostico/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tempolegal.com/herramientas-lopdp/diagnostico/"/>
+  </url>
+  <url>
+    <loc>https://tempolegal.com/en/herramientas-lopdp/dpd/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tempolegal.com/herramientas-lopdp/dpd/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tempolegal.com/en/herramientas-lopdp/dpd/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tempolegal.com/herramientas-lopdp/dpd/"/>
+  </url>
+  <url>
+    <loc>https://tempolegal.com/en/herramientas-lopdp/multas/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tempolegal.com/herramientas-lopdp/multas/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tempolegal.com/en/herramientas-lopdp/multas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://tempolegal.com/herramientas-lopdp/multas/"/>
+  </url>
+</urlset>
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3

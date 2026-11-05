@@ -22,8 +22,11 @@ from __future__ import annotations
 
 import re
 import sys
+<<<<<<< HEAD
 import posixpath
 from urllib.parse import urlsplit
+=======
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
 
 from i18n_comun import ROOT, all_pages, fill, prefixes, translate_static
 
@@ -46,6 +49,7 @@ def strip_comment(path) -> str:
 
 
 def menu_block(page: str, cta: str) -> str:
+<<<<<<< HEAD
     body = fill(strip_comment(COMPONENT), page).replace('{cta}', cta)
     return START + '\n' + resolve_menu_routes(body, page) + '\n' + END
 
@@ -88,6 +92,9 @@ def resolve_menu_routes(markup: str, page: str) -> str:
             extra += ' title="' + messages[language] + '"'
         return tag[:-1] + extra + '>'
     return re.sub(r'<a\b[^>]*>', resolve, markup)
+=======
+    return START + '\n' + fill(strip_comment(COMPONENT), page).replace('{cta}', cta) + '\n' + END
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
 
 
 def language_block(page: str) -> str:
@@ -152,9 +159,12 @@ def ensure_assets(html: str, root: str) -> str:
 
 
 def build(page: str) -> str:
+<<<<<<< HEAD
     # Approved tools are standalone documents; legacy routes are redirect-only.
     if '/herramientas/' in '/' + page or '/herramientas-lopdp/' in '/' + page:
         return f'  standalone  {page}'
+=======
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     path = ROOT / page
     raw = path.read_bytes().decode('utf-8')
     newline = '\r\n' if '\r\n' in raw else '\n'

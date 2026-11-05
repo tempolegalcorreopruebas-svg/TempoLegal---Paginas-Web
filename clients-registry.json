@@ -46,7 +46,11 @@
   },
   {
     "id": "client-010",
+<<<<<<< HEAD
     "name": "Colegio Miguel Ángel Buonarroti (escudo)",
+=======
+    "name": "Colegio Miguel Ángel Buonarroti",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "src": "assets/clients-premium/client-010.svg"
   },
   {
@@ -126,7 +130,11 @@
   },
   {
     "id": "client-026",
+<<<<<<< HEAD
     "name": "FLP FL Procesados del Ecuador (horizontal con lema)",
+=======
+    "name": "FLP FL Procesados del Ecuador",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "src": "assets/clients-premium/client-026.svg"
   },
   {
@@ -156,12 +164,20 @@
   },
   {
     "id": "client-032",
+<<<<<<< HEAD
     "name": "Hermanas Franciscanas Misioneras de la Inmaculada (escudo)",
+=======
+    "name": "Hermanas Franciscanas Misioneras de la Inmaculada",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "src": "assets/clients-premium/client-032.png"
   },
   {
     "id": "client-033",
+<<<<<<< HEAD
     "name": "Hermanas Franciscanas Misioneras de la Inmaculada (horizontal)",
+=======
+    "name": "Hermanas Franciscanas Misioneras de la Inmaculada",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "src": "assets/clients-premium/client-033.png"
   },
   {
@@ -316,17 +332,29 @@
   },
   {
     "id": "client-064",
+<<<<<<< HEAD
     "name": "UE San José Milagro (escudo)",
+=======
+    "name": "UE San José Milagro",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "src": "assets/clients-premium/client-064.png"
   },
   {
     "id": "client-065",
+<<<<<<< HEAD
     "name": "UE San José Milagro (horizontal)",
+=======
+    "name": "UE San José Milagro",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "src": "assets/clients-premium/client-065.png"
   },
   {
     "id": "client-066",
+<<<<<<< HEAD
     "name": "UE Santa María de los Ángeles (escudo)",
+=======
+    "name": "UE Santa María de los Ángeles",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "src": "assets/clients-premium/client-066.png"
   },
   {
@@ -336,7 +364,11 @@
   },
   {
     "id": "client-068",
+<<<<<<< HEAD
     "name": "UE Santa Teresita La Libertad (escudo oficial 2026)",
+=======
+    "name": "UE Santa Teresita La Libertad",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "src": "assets/clients-premium/client-068.png"
   },
   {

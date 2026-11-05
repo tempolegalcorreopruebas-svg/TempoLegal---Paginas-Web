@@ -134,7 +134,11 @@
   {
     "position": "2-05",
     "company": "FLP FL Procesados del Ecuador",
+<<<<<<< HEAD
     "source": "2-05 FLP FL Procesados del Ecuador (horizontal con lema).png",
+=======
+    "source": "2-05 FLP FL Procesados del Ecuador.png",
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     "asset": "assets/clients-home/2-05.webp"
   },
   {

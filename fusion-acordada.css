@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /* Fusion acordada: puntos 1-5, 9 y 10 de Anthony; resto de Ruben. */
+=======
+/* Fusion acordada: puntos 1-5, 9 y 10 de Antony; resto de Ruben. */
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
 html[data-home-review] .clients-heading h2{font:500 clamp(25px,2.5vw,38px)/1.2 var(--serif);max-width:38ch}
 html[data-home-review] .cases-section{padding-block:52px}
 html[data-home-review] .cases-section .section-heading{margin-bottom:26px;align-items:center}
@@ -26,7 +30,11 @@ html[data-home-review] .quote-card:before{font-size:70px;right:12px;top:8px}
 html[data-home-review] .quote-text p:first-child{font-size:21px;line-height:1.45;padding-right:34px;margin-bottom:12px}
 html[data-home-review] .quote-full summary{padding:10px 0}
 html[data-home-review] .quote-author{grid-template-columns:56px minmax(0,1fr) 70px;gap:12px;padding-top:15px}
+<<<<<<< HEAD
 html[data-home-review] .quote-logo{grid-column:auto;width:70px;height:44px;object-fit:contain;justify-self:end;align-self:center;margin:0;background:transparent;border-radius:3px;padding:4px}
+=======
+html[data-home-review] .quote-logo{grid-column:auto;width:70px;height:44px;object-fit:contain;justify-self:end;align-self:center;margin:0;background:#fff;border-radius:3px;padding:4px}
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
 html[data-home-review] .quote-card-pablo .quote-author{grid-template-columns:56px minmax(0,1fr)}
 html[data-home-review] .testimonials-source-note{text-align:center;margin-top:24px}
 @media(max-width:1100px){html[data-home-review] .case-card-link,html[data-home-review] .case-card:nth-child(2) .case-card-link{flex-direction:column;align-items:flex-start;gap:14px;min-height:205px}html[data-home-review] .case-art{width:100%;flex-basis:60px}html[data-home-review] .case-brand{max-width:110px}html[data-home-review] .case-card:first-child .case-brand{max-width:110px}}
@@ -64,7 +72,11 @@ html[data-home-review] .quote-card-ana .quote-logo{
   html[data-home-review] .quote-card-ana .quote-text p:first-child{padding-right:8px}
 }
 
+<<<<<<< HEAD
 /* Publicaciones: enlace a la página de listado, como en la versión de Anthony. */
+=======
+/* Publicaciones: enlace a la página de listado, como en la versión de Antony. */
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
 #recursos .all-publications{margin:32px auto 0;text-align:center}
 #recursos .all-publications-toggle{
   display:inline-flex;align-items:center;justify-content:center;

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Integración de Anthony sobre Rubén
+=======
+# Integración de Antony sobre Rubén
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
 
 Preparada el 27 de octubre de 2026. Esta es una copia de revisión; no se ha publicado la web ni se han modificado ramas remotas de GitHub.
 
@@ -6,7 +10,11 @@ Preparada el 27 de octubre de 2026. Esta es una copia de revisión; no se ha pub
 
 - Repositorio: `tempolegalcorreopruebas-svg/TempoLegal---Paginas-Web`.
 - Base de Rubén: `97212361a701f37fbef66c141eddd955741daaa6`.
+<<<<<<< HEAD
 - Cambios de Anthony: `47feb9ae62ab4c9e3b27b30b4623dde085c74a46`.
+=======
+- Cambios de Antony: `47feb9ae62ab4c9e3b27b30b4623dde085c74a46`.
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
 - Ancestro común: `62704b3a5079b320f235c21fe6db19930524cbcc`.
 - Rama local de integración: `integration/antony-on-ruben`.
 - El ZIP entregado por el usuario coincide con la base de Rubén en contenido. Hay 112 archivos con diferencias únicamente de finales de línea de Windows. No se importó la carpeta `.git` del ZIP.
@@ -20,19 +28,31 @@ Preparada el 27 de octubre de 2026. Esta es una copia de revisión; no se ha pub
 - Sus textos, precios y presentación de servicios en español, enlazándolos con las páginas de detalle incorporadas.
 - Su menú móvil y los controles y animaciones existentes.
 
+<<<<<<< HEAD
 ## Incorporado de Anthony
+=======
+## Incorporado de Antony
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
 
 - Diez páginas de servicios, Nosotros y Contacto y sus versiones en cuatro idiomas.
 - Artículos internos y navegación hacia los documentos diseñados.
 - Recepción PHP/SMTP preparada, revisión de la solicitud, validación, prevención de abuso y duplicados y mensajes de resultado. Se conserva el teléfono opcional de Rubén y se incorpora a la revisión, WhatsApp, correo y validación del servidor.
+<<<<<<< HEAD
 - SEO técnico, canonical, idiomas, datos estructurados, 25 redirecciones y sitemap. El inventario conjunto incluye 131 páginas canónicas: las 120 de Anthony y las 11 páginas/herramientas españolas de Rubén. No se inventaron traducciones de estas últimas.
+=======
+- SEO técnico, canonical, idiomas, datos estructurados, 25 redirecciones y sitemap. El inventario conjunto incluye 131 páginas canónicas: las 120 de Antony y las 11 páginas/herramientas españolas de Rubén. No se inventaron traducciones de estas últimas.
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
 - Originales legales íntegros y traducciones de Términos identificadas para revisión jurídica.
 - Consentimiento independiente para mapas y analítica, retirada de permisos y medición preparada pero desactivada.
 - Navegación desde archivos locales que abre cada documento directamente.
 
 ## Cómo se resolvieron los conflictos
 
+<<<<<<< HEAD
 La fusión produjo 19 archivos con conflictos: portada, configuración, contenido, mejoras de interfaz, artículos, casos, perfiles y documentos legales compartidos. Se conservaron los cuerpos y la estructura de Rubén y se adaptaron las adiciones funcionales y de navegación de Anthony; no se eligió una rama completa sobre la otra.
+=======
+La fusión produjo 19 archivos con conflictos: portada, configuración, contenido, mejoras de interfaz, artículos, casos, perfiles y documentos legales compartidos. Se conservaron los cuerpos y la estructura de Rubén y se adaptaron las adiciones funcionales y de navegación de Antony; no se eligió una rama completa sobre la otra.
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
 
 Se corrigieron referencias a elementos del radar y sectores que ya no están en la portada de Rubén. Las herramientas y sus archivos reutilizables se conservan. También se repararon 12 acciones de Contacto que apuntaban a una sección inexistente y se conectaron las lecturas locales. Se unificó el control del mapa para que la retirada de permiso funcione también en las páginas de protección de datos.
 
@@ -40,7 +60,11 @@ Los archivos compartidos HTML y JavaScript sí cambian para integrar funciones y
 
 ## Formulario: ubicación privada
 
+<<<<<<< HEAD
 La rama Anthony contenía el endpoint público, pero no su implementación privada. La fuente necesaria se añade en `server/tempo-private/`, con acceso web denegado en `.htaccess` y sin credenciales reales. Al instalar en Hostinger, copiar esa carpeta a una ubicación hermana de `public_html`, llamada `tempo-private`, fuera de la raíz pública, como espera `api/contact.php`. El directorio `server/` es material de instalación; no debe publicarse como contenido del sitio.
+=======
+La rama Antony contenía el endpoint público, pero no su implementación privada. La fuente necesaria se añade en `server/tempo-private/`, con acceso web denegado en `.htaccess` y sin credenciales reales. Al instalar en Hostinger, copiar esa carpeta a una ubicación hermana de `public_html`, llamada `tempo-private`, fuera de la raíz pública, como espera `api/contact.php`. El directorio `server/` es material de instalación; no debe publicarse como contenido del sitio.
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
 
 No se activó SMTP ni se enviaron correos externos. El formulario sigue informando que el envío directo no está disponible mientras el servidor no se configure.
 

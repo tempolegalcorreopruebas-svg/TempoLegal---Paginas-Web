@@ -1,6 +1,7 @@
 {
   "soft-landing": {
     "es": [
+<<<<<<< HEAD
       "Establezca y opere su empresa en Ecuador",
       "Constitución con capital extranjero, sucursales, representación, acompañamiento bancario y soporte legal, contable y administrativo, coordinados según su proyecto.",
       "Su entrada al país necesita una estructura clara y un equipo que acompañe la operación.",
@@ -10,10 +11,21 @@
         "Todo el recorrido. Un alcance a su medida.",
         "La cuenta empresarial también es parte del proceso.",
         "Establecimiento. Coordinación. Operación."
+=======
+      "Soft Landing en Ecuador",
+      "Constituir una compañía es el inicio. Coordinamos representación legal, domicilio, contabilidad, contratación y cumplimiento para acompañar su operación en Ecuador.",
+      "Para empresas extranjeras que necesitan una contraparte local y una ruta de trabajo conectada con su estructura, actividad y país de origen.",
+      [
+        "Definición de la estructura y coordinación societaria",
+        "Representación legal y domicilio según el encargo",
+        "Contabilidad, contratación y cumplimiento",
+        "Coordinación jurídica y administrativa de la operación"
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
       ],
       "El alcance se acuerda según su estructura y sus necesidades; los trámites bancarios y otras autorizaciones dependen de las entidades competentes."
     ],
     "en": [
+<<<<<<< HEAD
       "Establish and operate your business in Ecuador",
       "Foreign-capital incorporation, branches, representation, banking support and legal, accounting and administrative services coordinated around your project.",
       "Entering Ecuador requires a clear structure and a team to support the operation.",
@@ -51,6 +63,42 @@
         "Établissement. Coordination. Exploitation."
       ],
       "Une proposition avec étapes, livrables et responsables adaptés à votre activité."
+=======
+      "Soft landing in Ecuador",
+      "Incorporating a company is the beginning. We coordinate legal representation, business address, accounting, hiring and compliance to support your operations in Ecuador.",
+      "For foreign businesses that need a local counterpart and a coordinated approach suited to their structure, activities and country of origin.",
+      [
+        "Business structure and corporate coordination",
+        "Legal representation and address within the agreed engagement",
+        "Accounting, hiring and compliance",
+        "Legal and administrative coordination of operations"
+      ],
+      "Scope is agreed according to your structure and needs. Banking procedures and other authorizations depend on the competent institutions."
+    ],
+    "pt": [
+      "Soft landing no Equador",
+      "Constituir uma empresa é o início. Coordenamos representação legal, domicílio, contabilidade, contratação e conformidade para acompanhar sua operação no Equador.",
+      "Para empresas estrangeiras que precisam de uma contraparte local e de um trabalho coordenado conforme sua estrutura, atividade e país de origem.",
+      [
+        "Definição da estrutura e coordenação societária",
+        "Representação legal e domicílio conforme o contrato",
+        "Contabilidade, contratação e conformidade",
+        "Coordenação jurídica e administrativa da operação"
+      ],
+      "O escopo é acordado conforme sua estrutura e suas necessidades; procedimentos bancários e outras autorizações dependem das entidades competentes."
+    ],
+    "fr": [
+      "Soft landing en Équateur",
+      "Constituer une société est un début. Nous coordonnons représentation légale, domiciliation, comptabilité, recrutement et conformité pour accompagner votre activité en Équateur.",
+      "Pour les entreprises étrangères ayant besoin d’un interlocuteur local et d’un accompagnement adapté à leur structure, leur activité et leur pays d’origine.",
+      [
+        "Définition de la structure et coordination sociétaire",
+        "Représentation légale et domiciliation selon la mission",
+        "Comptabilité, recrutement et conformité",
+        "Coordination juridique et administrative de l’activité"
+      ],
+      "Le périmètre est convenu selon votre structure et vos besoins ; les démarches bancaires et les autres autorisations dépendent des organismes compétents."
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     ]
   },
   "legal-representation": {
@@ -105,6 +153,7 @@
   },
   "accounting-support": {
     "es": [
+<<<<<<< HEAD
       "Contabilidad y soporte administrativo en Ecuador",
       "Acompañamos la operación de su empresa en Ecuador con contabilidad, coordinación tributaria y soporte administrativo definido, en conexión con su equipo y su casa matriz.",
       "Cuentas claras. Un equipo con quien coordinar.",
@@ -115,10 +164,21 @@
         "Contabilidad como base. Apoyo según su operación.",
         "Una transición clara. Un trabajo que continúa.",
         "Contabilidad, presencia y organización empresarial."
+=======
+      "Contabilidad y soporte administrativo",
+      "Contabilidad, estados financieros y obligaciones societarias y tributarias coordinadas con el criterio jurídico.",
+      "Para empresas que necesitan dar continuidad a su información contable y coordinar los documentos y tareas administrativas relacionados con su operación.",
+      [
+        "Organización de información y registros contables",
+        "Preparación de estados financieros según el encargo",
+        "Coordinación de obligaciones societarias y tributarias",
+        "Apoyo documental y coordinación administrativa"
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
       ],
       "Antes de comenzar definimos periodicidad, información necesaria, responsables y entregables. Los servicios administrativos adicionales se delimitan en la propuesta."
     ],
     "en": [
+<<<<<<< HEAD
       "Accounting and administrative support in Ecuador",
       "We support your Ecuador operation with accounting, tax coordination and defined administrative tasks, working with your team and head office.",
       "Clear accounts. A team you can coordinate with.",
@@ -159,6 +219,42 @@
         "Comptabilité, présence et organisation de l’entreprise."
       ],
       "Activités, livrables, fréquence et responsabilités définis dans la proposition."
+=======
+      "Accounting and administrative support",
+      "Accounting, financial statements and corporate and tax obligations coordinated with legal advice.",
+      "For businesses that need continuity in their accounting information and coordination of the documents and administrative tasks supporting their operations.",
+      [
+        "Organization of accounting information and records",
+        "Preparation of financial statements within the engagement",
+        "Coordination of corporate and tax obligations",
+        "Documentary support and administrative coordination"
+      ],
+      "Before starting, we define frequency, required information, responsibilities and deliverables. Additional administrative services are specified in the proposal."
+    ],
+    "pt": [
+      "Contabilidade e suporte administrativo",
+      "Contabilidade, demonstrações financeiras e obrigações societárias e tributárias coordenadas com o critério jurídico.",
+      "Para empresas que precisam dar continuidade à informação contábil e coordenar documentos e tarefas administrativas da operação.",
+      [
+        "Organização de informações e registros contábeis",
+        "Preparação de demonstrações financeiras conforme o contrato",
+        "Coordenação de obrigações societárias e tributárias",
+        "Apoio documental e coordenação administrativa"
+      ],
+      "Antes de começar, definimos periodicidade, informações necessárias, responsáveis e entregas. Os serviços administrativos adicionais são delimitados na proposta."
+    ],
+    "fr": [
+      "Comptabilité et soutien administratif",
+      "Comptabilité, états financiers et obligations sociétaires et fiscales coordonnés avec le conseil juridique.",
+      "Pour les entreprises qui souhaitent assurer la continuité de leur information comptable et coordonner les documents et tâches administratives liés à leur activité.",
+      [
+        "Organisation des informations et écritures comptables",
+        "Préparation des états financiers selon la mission",
+        "Coordination des obligations sociétaires et fiscales",
+        "Soutien documentaire et coordination administrative"
+      ],
+      "Avant de commencer, nous définissons la périodicité, les informations nécessaires, les responsabilités et les livrables. Les services administratifs supplémentaires sont précisés dans la proposition."
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     ]
   },
   "foreign-branches": {
@@ -264,6 +360,7 @@
   "sas-incorporation": {
     "es": [
       "Constitución de SAS en Ecuador",
+<<<<<<< HEAD
       "Abogados que revisan su negocio y gestionan su constitución, el RUC y la configuración del facturador electrónico del SRI.",
       "Empiece con una compañía. Y con las decisiones bien tomadas.",
       [
@@ -273,10 +370,20 @@
         "Usted decide. Nosotros coordinamos.",
         "Hay decisiones que conviene tomar bien.",
         "Su empresa empieza. El acompañamiento puede seguir."
+=======
+      "Estructura societaria, estatutos, nombramientos y registros para iniciar su actividad.",
+      "Para emprendedores, socios y empresas que quieren constituir una sociedad por acciones simplificada y coordinar su puesta en marcha con una visión empresarial.",
+      [
+        "Revisión de la actividad y de la estructura de socios",
+        "Preparación y coordinación de estatutos",
+        "Nombramientos y documentación societaria",
+        "Coordinación de registros y siguientes pasos"
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
       ],
       "Revisamos si la SAS es adecuada para su actividad y composición de socios. Los requisitos, gastos y tiempos se precisan según el caso; la constitución no sustituye las autorizaciones de operación aplicables."
     ],
     "en": [
+<<<<<<< HEAD
       "SAS incorporation in Ecuador",
       "Lawyers review your business and manage incorporation, the RUC and configuration of the SRI electronic invoicing system.",
       "Start with a company. And well-considered decisions.",
@@ -317,10 +424,47 @@
         "Votre entreprise commence. Le soutien peut continuer."
       ],
       "Dès 140 USD + TVA pour un actionnaire personne physique. Certificats de signature électronique séparés si nécessaires."
+=======
+      "SAS company incorporation in Ecuador",
+      "Corporate structure, articles of association, appointments and registrations to start your business.",
+      "For founders, shareholders and businesses establishing a simplified stock company and coordinating its launch with a business-focused approach.",
+      [
+        "Review of activities and ownership structure",
+        "Preparation and coordination of articles of association",
+        "Appointments and corporate documentation",
+        "Coordination of registrations and next steps"
+      ],
+      "We assess whether a SAS is suitable for your activities and ownership. Requirements, expenses and timing are specified for each case; incorporation does not replace applicable operating authorizations."
+    ],
+    "pt": [
+      "Constituição de SAS no Equador",
+      "Estrutura societária, estatutos, nomeações e registros para iniciar sua atividade.",
+      "Para empreendedores, sócios e empresas que desejam constituir uma sociedade por ações simplificada e coordenar o início da operação com visão empresarial.",
+      [
+        "Revisão da atividade e da composição societária",
+        "Preparação e coordenação dos estatutos",
+        "Nomeações e documentação societária",
+        "Coordenação de registros e próximos passos"
+      ],
+      "Avaliamos se a SAS é adequada à atividade e aos sócios. Requisitos, despesas e prazos são definidos conforme o caso; a constituição não substitui as autorizações de operação aplicáveis."
+    ],
+    "fr": [
+      "Constitution d’une SAS en Équateur",
+      "Structure sociétaire, statuts, nominations et inscriptions pour démarrer votre activité.",
+      "Pour les entrepreneurs, associés et entreprises qui constituent une société par actions simplifiée et souhaitent coordonner son démarrage dans une perspective opérationnelle.",
+      [
+        "Examen de l’activité et de la répartition du capital",
+        "Préparation et coordination des statuts",
+        "Nominations et documents sociétaires",
+        "Coordination des inscriptions et des étapes suivantes"
+      ],
+      "Nous examinons si la SAS convient à l’activité et aux associés. Les exigences, frais et délais sont définis selon le cas ; la constitution ne remplace pas les autorisations d’exploitation applicables."
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     ]
   },
   "corporate-law": {
     "es": [
+<<<<<<< HEAD
       "Derecho corporativo y societario en Ecuador",
       "Constitución y organización de compañías, acuerdos entre socios, contratos y asesoría legal continua. Ayudamos a empresas y grupos a tomar decisiones y llevarlas a documentos y actuaciones concretas.",
       "No necesita conocer el nombre del trámite. Identifique lo que quiere lograr y explore el servicio adecuado.",
@@ -363,10 +507,59 @@
         "Une société qui évolue"
       ],
       "Chaque intervention est définie dans votre proposition. Le conseil juridique n’inclut pas automatiquement la représentation, la comptabilité, les services de DPO ou la représentation en justice."
+=======
+      "Derecho corporativo y societario",
+      "Asesoría para las decisiones y la operación de su empresa: contratos, gobierno societario, reorganizaciones y acompañamiento recurrente.",
+      "Para compañías que necesitan conectar sus decisiones de negocio con su documentación, sus relaciones entre socios y el funcionamiento de sus órganos societarios.",
+      [
+        "Contratos y acuerdos entre socios",
+        "Estatutos, actas y decisiones societarias",
+        "Gobierno corporativo y organización del grupo",
+        "Reorganizaciones y acompañamiento recurrente"
+      ],
+      "Cada encargo parte de la estructura y documentación de la empresa. Definimos prioridades y alcance antes de preparar documentos o ejecutar trámites."
+    ],
+    "en": [
+      "Corporate and company law",
+      "Advice for business decisions and operations: contracts, corporate governance, reorganizations and ongoing support.",
+      "For companies connecting their business decisions with documentation, shareholder relationships and the functioning of their corporate bodies.",
+      [
+        "Contracts and shareholder agreements",
+        "Articles, minutes and corporate decisions",
+        "Corporate governance and group organization",
+        "Reorganizations and ongoing advice"
+      ],
+      "Each engagement starts with the company’s structure and documentation. We agree priorities and scope before preparing documents or carrying out procedures."
+    ],
+    "pt": [
+      "Direito corporativo e societário",
+      "Assessoria para as decisões e a operação da empresa: contratos, governança societária, reorganizações e acompanhamento recorrente.",
+      "Para empresas que precisam conectar decisões de negócio à documentação, às relações entre sócios e ao funcionamento dos órgãos societários.",
+      [
+        "Contratos e acordos entre sócios",
+        "Estatutos, atas e decisões societárias",
+        "Governança corporativa e organização do grupo",
+        "Reorganizações e assessoria recorrente"
+      ],
+      "Cada trabalho começa pela estrutura e pela documentação da empresa. Definimos prioridades e escopo antes de preparar documentos ou executar procedimentos."
+    ],
+    "fr": [
+      "Droit des affaires et des sociétés",
+      "Un conseil pour les décisions et l’activité de votre entreprise : contrats, gouvernance, réorganisations et accompagnement récurrent.",
+      "Pour les sociétés qui souhaitent relier leurs décisions commerciales à leurs documents, aux relations entre associés et au fonctionnement de leurs organes sociaux.",
+      [
+        "Contrats et accords entre associés",
+        "Statuts, procès-verbaux et décisions sociétaires",
+        "Gouvernance et organisation du groupe",
+        "Réorganisations et conseil récurrent"
+      ],
+      "Chaque mission part de la structure et des documents de l’entreprise. Nous définissons les priorités et le périmètre avant de préparer les documents ou d’effectuer les démarches."
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     ]
   },
   "holding-structures": {
     "es": [
+<<<<<<< HEAD
       "Holdings y estructuras empresariales en Ecuador",
       "Revisamos cómo se conectan sus empresas y diseñamos la organización societaria, los acuerdos y la coordinación jurídica y contable que su grupo necesita.",
       "Varias compañías. Una estructura con sentido.",
@@ -378,10 +571,21 @@
         "Del objetivo a una ruta documentada.",
         "Conocer cómo se conectan las empresas importa.",
         "Servicios que se conectan."
+=======
+      "Holdings y estructuras empresariales",
+      "Criterio jurídico y coordinación contable para organizar el control, las participaciones y las actividades de un grupo empresarial.",
+      "Para familias empresarias y grupos que necesitan revisar cómo se relacionan sus compañías, quién toma las decisiones y cómo documentar una estructura coherente con sus objetivos.",
+      [
+        "Revisión del grupo y sus participaciones",
+        "Definición de objetivos de control y organización",
+        "Coordinación de acuerdos y documentación societaria",
+        "Análisis conectado con contabilidad y planificación"
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
       ],
       "Una holding no es una solución automática ni garantiza ahorros tributarios. La estructura se analiza según los objetivos, las actividades y la situación de cada grupo."
     ],
     "en": [
+<<<<<<< HEAD
       "Holdings and business structures in Ecuador",
       "We review how your companies connect and design the corporate organization, agreements and legal-accounting coordination your group needs.",
       "Several companies. A structure with a purpose.",
@@ -425,6 +629,42 @@
         "Des services complémentaires."
       ],
       "Une holding est une alternative. Nous examinons d’abord vos sociétés et l’objectif de la structure."
+=======
+      "Holding companies and business structures",
+      "Legal advice and accounting coordination to organize control, ownership and activities within a business group.",
+      "For business-owning families and groups reviewing how their companies relate, who makes decisions and how to document a structure aligned with their objectives.",
+      [
+        "Review of the group and its ownership",
+        "Definition of control and organizational objectives",
+        "Coordination of agreements and corporate documents",
+        "Analysis connected with accounting and planning"
+      ],
+      "A holding company is not an automatic solution and does not guarantee tax savings. The structure is assessed against the objectives, activities and circumstances of each group."
+    ],
+    "pt": [
+      "Holdings e estruturas empresariais",
+      "Critério jurídico e coordenação contábil para organizar o controle, as participações e as atividades de um grupo empresarial.",
+      "Para famílias empresárias e grupos que precisam revisar as relações entre suas empresas, quem decide e como documentar uma estrutura alinhada aos seus objetivos.",
+      [
+        "Revisão do grupo e das participações",
+        "Definição dos objetivos de controle e organização",
+        "Coordenação de acordos e documentos societários",
+        "Análise conectada à contabilidade e ao planejamento"
+      ],
+      "Uma holding não é uma solução automática nem garante economia tributária. A estrutura depende dos objetivos, das atividades e da situação de cada grupo."
+    ],
+    "fr": [
+      "Holdings et structures d’entreprise",
+      "Un conseil juridique et une coordination comptable pour organiser le contrôle, les participations et les activités d’un groupe.",
+      "Pour les familles d’entrepreneurs et les groupes qui examinent les liens entre leurs sociétés, la prise de décision et la documentation d’une structure conforme à leurs objectifs.",
+      [
+        "Examen du groupe et des participations",
+        "Définition des objectifs de contrôle et d’organisation",
+        "Coordination des accords et documents sociétaires",
+        "Analyse liée à la comptabilité et à la planification"
+      ],
+      "Une holding n’est pas une solution automatique et ne garantit pas d’économie fiscale. La structure dépend des objectifs, des activités et de la situation de chaque groupe."
+>>>>>>> 299edc752d3918a989c4f91e3743250229d1b9d3
     ]
   },
   "monthly-legal-advice": {
