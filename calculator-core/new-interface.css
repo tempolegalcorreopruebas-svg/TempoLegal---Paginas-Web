@@ -1,0 +1,40 @@
+/* TempoLegal calculator presentation. Engines reside in pure/*.mjs. */
+body.tl-new-calculator{background:#f0f4f3;color:#17323c;font-family:var(--sans,system-ui,sans-serif);margin:0;overflow-x:hidden}
+.tl-calc-shell{max-width:1240px;margin:0 auto;padding:clamp(2rem,5vw,5.6rem) clamp(1rem,4vw,3rem) 5rem;min-height:65vh;scroll-margin-top:100px}
+.tl-calc-hero{position:relative;isolation:isolate;padding:clamp(2rem,5vw,4.5rem);color:#edf9fa;background:linear-gradient(120deg,#113b48,#0b5569 80%);border-radius:34px 8px 34px 8px;overflow:hidden;box-shadow:0 26px 80px #17323c14}
+.tl-calc-hero:after{content:"";position:absolute;right:-7rem;top:-10rem;width:26rem;height:26rem;border:1px solid #c5faff38;border-radius:45%;transform:rotate(45deg);z-index:-1;box-shadow:0 0 0 65px #a7ecf508}
+.tl-kicker{font-size:.75rem;font-weight:750;letter-spacing:.19em;text-transform:uppercase;color:#90dce8;margin:0 0 1.1rem}
+.tl-calc-hero h1{font-family:var(--serif,Georgia,serif);font-size:clamp(2.5rem,5.1vw,5rem);font-weight:400;line-height:1.06;max-width:830px;letter-spacing:-.035em;margin:0 0 1.5rem;color:#fff}
+.tl-calc-lead{max-width:620px;line-height:1.65;color:#c7e1e6;font-size:clamp(1rem,1.35vw,1.2rem)}
+.tl-calc-panel{background:#fff;border-radius:12px 30px 12px 30px;margin:-1.6rem clamp(.5rem,4vw,4.5rem) 0;position:relative;padding:clamp(1.4rem,4.2vw,3.6rem);box-shadow:0 26px 66px #103b4922;border:1px solid #d6e5e8;scroll-margin-top:108px}
+.tl-progress-row{display:flex;align-items:center;justify-content:space-between;gap:1rem;color:#4e6b75;font-size:.84rem;font-weight:650;margin-bottom:.7rem}
+.tl-progress-row strong{color:#006e8c;font-variant-numeric:tabular-nums}
+.tl-progress-track{height:6px;background:#dfebed;overflow:hidden;border-radius:20px}
+.tl-progress-fill{height:100%;background:linear-gradient(90deg,#006e8c,#55c7d5);display:block;border-radius:20px;transition:width .4s ease}
+.tl-step-title,.tl-result-title{font:400 clamp(1.7rem,3vw,2.7rem)/1.15 var(--serif,Georgia,serif);color:#17323c;margin:2rem 0 1.2rem}
+.tl-form{display:grid;gap:1.5rem;animation:tl-show .4s both}
+@keyframes tl-show{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.tl-question{min-width:0;border:0;border-bottom:1px solid #e3eaeb;padding:0 0 1.6rem;margin:0}
+.tl-question legend,.tl-input-group label{font-size:1.04rem;line-height:1.45;font-weight:700;color:#17323c;margin-bottom:1rem;display:block}
+.tl-question-hint{font-size:.85rem;color:#6b8289;margin:-.4rem 0 1rem;max-width:720px}
+.tl-choice-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem}
+.tl-choice{display:flex;align-items:flex-start;gap:.8rem;border:1px solid #cddfe3;border-radius:14px 4px 14px 4px;background:#f8fbfb;color:#17323c;padding:1.1rem 1.2rem;text-align:left;font:inherit;line-height:1.42;cursor:pointer;transition:transform .2s,box-shadow .2s,border-color .2s,background .2s;min-height:64px}
+.tl-choice:hover{transform:translateY(-2px);border-color:#5cb8cb;box-shadow:0 14px 28px #006e8c10;background:#edf9fa}
+.tl-choice.is-picked{border-color:#006e8c;background:#e1f4f7;box-shadow:inset 3px 0 #006e8c,0 5px 18px #006e8c10}
+.tl-choice-check{flex:none;width:20px;height:20px;border-radius:50%;border:1.5px solid #8baeb7;display:grid;place-items:center;font-size:.72rem;font-weight:750;margin-top:.12rem;color:#fff}
+.tl-choice.is-picked .tl-choice-check{background:#006e8c;border-color:#006e8c}
+.tl-choice-content{display:block;min-width:0}.tl-choice-content strong{font-weight:600;font-size:.92rem;overflow-wrap:anywhere}.tl-choice-content small{display:block;color:#6d8085;margin-top:.4rem}
+.tl-select,.tl-input{width:100%;min-height:52px;box-sizing:border-box;border:1px solid #cddfe3;border-radius:12px;padding:.85rem 1rem;background:#f9fcfc;color:#17323c;font:inherit}
+.tl-input-group{max-width:770px}.tl-select:focus,.tl-input:focus,.tl-choice:focus-visible,.tl-button:focus-visible{outline:3px solid #6fd7eb;outline-offset:3px}
+.tl-actions{display:flex;justify-content:flex-end;align-items:center;gap:1rem;margin-top:2rem;flex-wrap:wrap}
+.tl-button{border:1px solid transparent;min-height:50px;border-radius:14px 3px 14px 3px;padding:.85rem 1.7rem;font:700 .95rem/1.4 var(--sans,system-ui);cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s}
+.tl-button:hover{transform:translateY(-2px)}.tl-button-primary{background:#006e8c;color:white;box-shadow:0 10px 22px #006e8c25}.tl-button-primary:hover{background:#055771;box-shadow:0 14px 26px #006e8c30}.tl-button-secondary{border-color:#b8d3d9;background:white;color:#225463}
+.tl-error{padding:1rem;border-radius:12px;background:#fff4ef;color:#a43a28;font-size:.92rem;margin:1.5rem 0 0}
+.tl-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:2rem 0}.tl-stat{padding:1.5rem;min-width:0;background:#ebf5f5;border:1px solid #d8e9eb;border-radius:16px 5px 16px 5px}.tl-stat small{display:block;color:#57747b;font-size:.8rem;margin-bottom:.55rem}.tl-stat strong{font:500 clamp(1.25rem,2.5vw,2.1rem)/1.2 var(--serif,Georgia,serif);color:#134b5e;overflow-wrap:anywhere}
+.tl-result-summary{background:#f2f8f9;padding:1.3rem 1.6rem;line-height:1.7;color:#3d606a;border-left:3px solid #006e8c;margin:1.5rem 0 2rem}
+.tl-money-range{font-weight:700;color:#176479}.tl-section-title{font:400 1.7rem var(--serif,Georgia,serif);margin:2rem 0 1rem}
+.tl-findings{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.9rem;margin-bottom:2rem}.tl-finding{background:#fff;border:1px solid #d9e7e8;padding:1.3rem;border-radius:18px 4px 18px 4px}.tl-finding h3{font:700 1rem/1.4 var(--sans,system-ui);margin:0 0 .6rem;color:#17323c}.tl-finding p{font-size:.9rem;color:#55737a;line-height:1.65;margin:0}.tl-finding-category{text-transform:uppercase;letter-spacing:.12em;font-size:.68rem;color:#007b99;display:block;margin-bottom:.6rem}
+.tl-calc-disclaimer{max-width:1130px;margin:0 auto 4rem;padding:1.2rem 2rem;color:#5e777c;background:#e3edef;border-left:3px solid #006e8c;line-height:1.65;font-size:.83rem}
+body.tl-new-calculator .site-footer{margin-top:0}
+@media(max-width:740px){.tl-choice-grid,.tl-findings,.tl-stats{grid-template-columns:1fr}.tl-calc-shell{padding:1rem .8rem 3rem}.tl-calc-hero{padding:2rem 1.5rem}.tl-calc-panel{margin:-.55rem .1rem 0;padding:1.6rem 1.2rem}.tl-actions .tl-button-primary{flex:1}.tl-calc-disclaimer{margin:0 1rem 2rem}}
+@media(prefers-reduced-motion:reduce){.tl-form{animation:none}.tl-choice,.tl-button,.tl-progress-fill{transition:none}}

@@ -162,3 +162,24 @@
 .site-footer .footer-map-link:is(:hover,:focus-visible)>span:after{transform:scaleX(1);opacity:.85}
 .site-footer .footer-map-link:focus-visible{outline:2px solid #9fcac8;outline-offset:5px;border-radius:3px}
 @media(prefers-reduced-motion:reduce){.site-footer .footer-map-link>span:after{transition:none}}
+
+/* Higher contrast interactive footer links, all languages and all pages. */
+.site-footer a:not(.brand):not(.footer-channels a),
+.site-footer .footer-sectors>summary {
+  transition: color .22s ease, text-shadow .22s ease, border-color .22s ease;
+}
+.site-footer a:not(.brand):not(.footer-channels a):is(:hover,:focus-visible),
+.site-footer .footer-sectors>summary:is(:hover,:focus-visible) {
+  color:#fff !important;
+  text-shadow:0 0 9px rgba(196,249,255,.58),0 0 20px rgba(129,223,238,.32);
+}
+.site-footer .footer-menu a:is(:hover,:focus-visible)::before {
+  border-left-color:#e8fcff;
+  filter:drop-shadow(0 0 5px rgba(188,245,255,.9));
+  opacity:1;
+}
+.site-footer .footer-contact-row:is(:hover,:focus-within) svg {color:#f1feff;filter:drop-shadow(0 0 4px #b7edf5)}
+@media(prefers-reduced-motion:reduce){.site-footer a,.site-footer .footer-sectors>summary{transition:none}}
+
+/* Preserve an open, editorial services heading across languages. */
+#servicios.services-section>.container>.section-heading{border-bottom:none!important;}

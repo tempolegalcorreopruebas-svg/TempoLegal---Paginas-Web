@@ -1,0 +1,25 @@
+{
+  "base": "TempoLegal---Paginas-Web-ruben (1).zip",
+  "footers_technical_lines_removed": 184,
+  "html_files_cleaned": 184,
+  "home_pages": {
+    "es": {
+      "articles": 3,
+      "more_links": 1
+    },
+    "en": {
+      "articles": 3,
+      "more_links": 1
+    },
+    "pt": {
+      "articles": 3,
+      "more_links": 1
+    },
+    "fr": {
+      "articles": 3,
+      "more_links": 1
+    }
+  },
+  "remaining_visible_generator_markers": [],
+  "orphan_footer_separators_removed": 41
+}

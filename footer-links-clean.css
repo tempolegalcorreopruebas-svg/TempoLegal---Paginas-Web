@@ -1,0 +1,15 @@
+/* TempoLegal footer: distinct luminous hover without underlines / selection bars. */
+.site-footer a:hover,.site-footer a:focus-visible,
+footer a:hover,footer a:focus-visible,
+.site-footer a[aria-current="page"],footer a[aria-current="page"]{
+ color:#fff!important; text-decoration:none!important;
+ text-decoration-line:none!important; border-bottom-color:transparent!important;
+ background-image:none!important;box-shadow:none!important;
+ text-shadow:0 0 10px rgba(200,247,255,.7)!important;
+}
+.site-footer a:hover::after,.site-footer a:focus-visible::after,
+footer a:hover::after,footer a:focus-visible::after{
+ text-decoration:none!important;border-bottom:0!important;
+ background:none!important;box-shadow:none!important;
+}
+.site-footer a, footer a{text-underline-offset:0!important}

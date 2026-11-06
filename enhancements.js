@@ -334,12 +334,10 @@ const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccio
       if(featured)card.append(node('p','insight-edition',t('insightCollection')));
       grid.append(card);
     });
-    // Como en la versión de Anthony: acceso a una página independiente de publicaciones.
-    const archiveLabels={es:'Ver todas las publicaciones',en:'View all publications',pt:'Ver todas as publicações',fr:'Voir toutes les publications'};
-    const old=$('#all-publications');if(old)old.remove();
-    const all=node('div','all-publications',null,{id:'all-publications'});
-    all.append(node('a','all-publications-toggle',archiveLabels[I.language]||archiveLabels.es,{href:BASE+'publicaciones/'}));
-    grid.after(all);
+    // The static editorial section contains the single publications archive link.
+    // Do not inject an additional button or link during rendering.
+    const duplicateArchive=$('#all-publications');
+    if(duplicateArchive) duplicateArchive.remove();
     reveal(grid);
   }
   function renderFaq() {

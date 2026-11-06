@@ -1,0 +1,341 @@
+{
+  "en": {
+    "multa_actions": [
+      "Appoint a Data Protection Officer in writing and register the appointment with the authority.",
+      "Register your DPO with the Ecuadorian data authority; appointment alone is insufficient.",
+      "Verify the DPO’s required university degree and professional experience.",
+      "Ensure the DPO is independent of management, IT, ownership and close family relationships.",
+      "Protect electronic records with passwords, secure physical files and document access rights.",
+      "Document what data you keep, from whom, why and for how long.",
+      "Update consent forms to explain processing purposes and retain consent evidence.",
+      "Document a breach response procedure, notification responsibilities and legal deadlines.",
+      "Carry out a data protection impact assessment before sensitive processing.",
+      "Record potential data risks and preventive measures.",
+      "Sign data processing agreements with every supplier that handles personal data.",
+      "Assign responsibility and deadlines for access, correction and deletion requests.",
+      "Collect only information needed for the stated purpose.",
+      "Publish a clear, up-to-date privacy notice.",
+      "Review external processors’ safeguards and contractual commitments."
+    ],
+    "dpo_actions": [
+      [
+        "Keep the processing activities register current",
+        "Update your inventory whenever systems, providers or cameras change."
+      ],
+      [
+        "Conduct periodic audits and retain evidence",
+        "Review compliance regularly and retain audit reports for the legally required period."
+      ],
+      [
+        "Respond to data subject requests on time",
+        "Designate a channel and meet the applicable legal deadlines for access, correction and deletion."
+      ],
+      [
+        "Review contracts with service providers",
+        "Ensure external accountants, cloud providers and service providers have written processing terms."
+      ],
+      [
+        "Confirm whether a data protection impact assessment is needed",
+        "Check the specific processing activities that require a documented assessment."
+      ],
+      [
+        "Confirm consent for processing minors’ information",
+        "Check the legal representative’s authorization requirements."
+      ],
+      [
+        "Confirm CCTV notices and retention periods",
+        "Display the required notices and document how long recordings are kept."
+      ],
+      [
+        "Confirm safeguards for international data transfers",
+        "Review the legal basis and written safeguards for data sent abroad."
+      ],
+      [
+        "Appoint and register a Data Protection Officer",
+        "Complete the formal appointment and registration with the competent authority."
+      ],
+      [
+        "Choose an independent, qualified DPO",
+        "Verify qualifications, independence and potential conflicts of interest."
+      ],
+      [
+        "Conduct a data protection impact assessment",
+        "Document risks, impacts and mitigations for processing that requires an assessment."
+      ],
+      [
+        "Check whether an impact assessment is mandatory",
+        "Review the specific circumstances with qualified legal counsel."
+      ],
+      [
+        "Confirm DPO and impact assessment obligations",
+        "The answers are not conclusive; obtain a targeted legal assessment."
+      ],
+      [
+        "Prepare a record of processing activities",
+        "Inventory data, locations, access permissions and retention periods."
+      ],
+      [
+        "Register the relevant databases",
+        "Check the national registration requirements and applicable deadlines."
+      ],
+      [
+        "Describe large-scale processing in the privacy notice",
+        "Explain the scope and purposes of the processing clearly."
+      ],
+      [
+        "Obtain authorization for minors’ data",
+        "Verify parental or legal representative consent where required."
+      ],
+      [
+        "Install CCTV notices and define retention periods",
+        "Explain who records, why, contact details and retention periods."
+      ],
+      [
+        "Document international data transfers",
+        "Confirm the legal basis and agreements for overseas recipients."
+      ]
+    ],
+    "dia_risk": [
+      "Very high risk: several critical issues require prompt review.",
+      "High risk: several practices lack documented safeguards.",
+      "Medium-high risk: strengthen evidence, controls and procedures.",
+      "Moderate risk: address the specific findings to improve compliance.",
+      "Controlled risk in the areas reviewed; this is not proof of legal compliance."
+    ],
+    "dpo_summary": "The screening indicates whether a DPO may be required under the criteria selected. Review the specific legal requirements before appointing or ruling out a DPO.",
+    "dia_gaps": [
+      "Sensitive data need stronger safeguards and access restrictions.",
+      "Cameras, biometrics and tracking require documented purposes, retention rules and safeguards.",
+      "External processors should be governed by data processing agreements.",
+      "Establish a procedure for data subject requests and applicable deadlines.",
+      "Check whether a DPO must be appointed and registered.",
+      "Establish an internal policy and safeguards for the use of artificial intelligence."
+    ]
+  },
+  "pt": {
+    "multa_actions": [
+      "Nomeie formalmente um Encarregado de Proteção de Dados e registre-o na autoridade.",
+      "Registre o Encarregado na autoridade equatoriana; a nomeação isolada não basta.",
+      "Verifique a formação universitária e a experiência profissional exigidas.",
+      "Garanta a independência do Encarregado em relação à direção, TI, sócios e familiares.",
+      "Proteja arquivos digitais com senhas, documentos físicos e permissões de acesso.",
+      "Registre quais dados conserva, de quem são, para quê e por quanto tempo.",
+      "Atualize os termos de consentimento com finalidades claras e guarde provas.",
+      "Documente a resposta a incidentes, os responsáveis e os prazos de notificação.",
+      "Realize avaliação de impacto antes de tratar dados sensíveis.",
+      "Registre riscos e medidas preventivas para os dados mantidos.",
+      "Assine acordos de tratamento com todos os fornecedores que tenham acesso a dados.",
+      "Defina responsáveis e prazos para pedidos de acesso, correção e eliminação.",
+      "Colete somente os dados necessários para cada finalidade.",
+      "Publique aviso de privacidade claro e atualizado.",
+      "Avalie as salvaguardas e contratos dos operadores externos."
+    ],
+    "dpo_actions": [
+      [
+        "Manter atualizado o registro de atividades",
+        "Atualize o inventário quando houver novos sistemas, fornecedores ou câmeras."
+      ],
+      [
+        "Fazer auditorias periódicas e guardar evidências",
+        "Revise a conformidade regularmente e conserve os relatórios exigidos."
+      ],
+      [
+        "Responder aos pedidos dos titulares no prazo",
+        "Defina um canal e cumpra os prazos legais de acesso, retificação e exclusão."
+      ],
+      [
+        "Revisar contratos com fornecedores",
+        "Garanta acordos escritos com contadores, nuvem e prestadores de serviço."
+      ],
+      [
+        "Confirmar a necessidade de avaliação de impacto",
+        "Verifique os tratamentos que exigem análise documentada."
+      ],
+      [
+        "Confirmar autorização para dados de menores",
+        "Verifique os requisitos de consentimento do representante legal."
+      ],
+      [
+        "Confirmar avisos de câmeras e prazo de conservação",
+        "Exiba os avisos exigidos e documente a retenção das gravações."
+      ],
+      [
+        "Confirmar garantias para transferências internacionais",
+        "Revise a base jurídica e as garantias escritas dos dados enviados ao exterior."
+      ],
+      [
+        "Nomear e registrar um Encarregado",
+        "Formalize a nomeação e o registro perante a autoridade competente."
+      ],
+      [
+        "Escolher um Encarregado independente e qualificado",
+        "Verifique formação, independência e conflitos de interesse."
+      ],
+      [
+        "Fazer avaliação de impacto",
+        "Documente riscos e medidas preventivas quando a avaliação for obrigatória."
+      ],
+      [
+        "Verificar se a avaliação de impacto é obrigatória",
+        "Revise o caso específico com assessoria jurídica qualificada."
+      ],
+      [
+        "Confirmar obrigações de Encarregado e avaliação de impacto",
+        "As respostas não são conclusivas; procure uma análise jurídica."
+      ],
+      [
+        "Preparar registro das atividades de tratamento",
+        "Inventarie os dados, local, acesso e prazos de conservação."
+      ],
+      [
+        "Registrar os bancos de dados pertinentes",
+        "Verifique as obrigações nacionais de registro e os prazos."
+      ],
+      [
+        "Descrever o tratamento em grande escala no aviso de privacidade",
+        "Explique claramente o alcance e as finalidades."
+      ],
+      [
+        "Obter autorização para dados de menores",
+        "Verifique a autorização dos responsáveis quando exigida."
+      ],
+      [
+        "Instalar avisos de câmeras e definir prazos",
+        "Informe responsável, finalidade, contato e tempo de retenção."
+      ],
+      [
+        "Documentar transferências internacionais",
+        "Confirme a base jurídica e os acordos com destinatários externos."
+      ]
+    ],
+    "dia_risk": [
+      "Risco muito alto: diversas questões críticas exigem revisão urgente.",
+      "Risco alto: várias práticas carecem de controles documentados.",
+      "Risco médio-alto: fortaleça registros, controles e procedimentos.",
+      "Risco moderado: corrija os achados para melhorar a conformidade.",
+      "Risco controlado nas áreas examinadas; não comprova conformidade legal."
+    ],
+    "dpo_summary": "A avaliação indica se a nomeação de um Encarregado pode ser obrigatória conforme os critérios escolhidos. Revise os requisitos legais específicos antes de decidir.",
+    "dia_gaps": [
+      "Dados sensíveis exigem proteções reforçadas e controles de acesso.",
+      "Câmeras, biometria e rastreamento exigem finalidade, retenção e medidas documentadas.",
+      "Operadores externos devem ter acordos de tratamento de dados.",
+      "Defina procedimento para pedidos dos titulares e prazos aplicáveis.",
+      "Verifique a necessidade de nomear e registrar um Encarregado.",
+      "Estabeleça política interna e garantias para o uso de inteligência artificial."
+    ]
+  },
+  "fr": {
+    "multa_actions": [
+      "Désignez par écrit un Délégué à la protection des données et enregistrez-le auprès de l’autorité.",
+      "Enregistrez le Délégué auprès de l’autorité équatorienne ; sa seule désignation ne suffit pas.",
+      "Vérifiez les diplômes et l’expérience professionnelle requis.",
+      "Assurez l’indépendance du Délégué vis-à-vis de la direction, de l’informatique et de la famille.",
+      "Sécurisez les fichiers numériques, les documents physiques et les droits d’accès.",
+      "Documentez les données conservées, les personnes concernées, les finalités et la durée.",
+      "Mettez à jour le consentement en précisant les finalités et conservez les preuves.",
+      "Documentez la réponse aux incidents, les responsables et les délais de notification.",
+      "Réalisez une analyse d’impact avant tout traitement sensible qui l’exige.",
+      "Documentez les risques et les mesures préventives.",
+      "Signez des accords de traitement avec les fournisseurs ayant accès aux données.",
+      "Désignez un responsable et des délais pour les demandes d’accès, rectification et suppression.",
+      "Ne collectez que les données nécessaires à la finalité déclarée.",
+      "Publiez une notice de confidentialité claire et à jour.",
+      "Vérifiez les garanties et les engagements contractuels des sous-traitants."
+    ],
+    "dpo_actions": [
+      [
+        "Maintenir le registre des traitements à jour",
+        "Actualisez l’inventaire lors de l’ajout de systèmes, prestataires ou caméras."
+      ],
+      [
+        "Effectuer des audits périodiques et conserver les preuves",
+        "Contrôlez régulièrement la conformité et conservez les rapports exigés."
+      ],
+      [
+        "Répondre aux demandes des personnes dans les délais",
+        "Prévoyez un canal et respectez les délais légaux d’accès, rectification et suppression."
+      ],
+      [
+        "Réviser les contrats avec les prestataires",
+        "Veillez à disposer d’accords écrits avec les comptables, le cloud et les fournisseurs."
+      ],
+      [
+        "Vérifier l’obligation de réaliser une analyse d’impact",
+        "Examinez les traitements nécessitant une évaluation documentée."
+      ],
+      [
+        "Vérifier le consentement pour les données de mineurs",
+        "Contrôlez les conditions d’autorisation des représentants légaux."
+      ],
+      [
+        "Vérifier l’affichage des caméras et les durées de conservation",
+        "Affichez les avis requis et documentez la durée de conservation des images."
+      ],
+      [
+        "Vérifier les garanties des transferts internationaux",
+        "Examinez la base légale et les garanties écrites pour les données envoyées à l’étranger."
+      ],
+      [
+        "Désigner et enregistrer un Délégué",
+        "Finalisez la désignation et l’enregistrement auprès de l’autorité compétente."
+      ],
+      [
+        "Choisir un Délégué indépendant et qualifié",
+        "Vérifiez diplômes, indépendance et conflits d’intérêts."
+      ],
+      [
+        "Réaliser une analyse d’impact",
+        "Documentez les risques et les mesures de réduction pour les traitements concernés."
+      ],
+      [
+        "Vérifier si l’analyse d’impact est obligatoire",
+        "Examinez les circonstances avec un conseil juridique qualifié."
+      ],
+      [
+        "Vérifier les obligations de Délégué et d’analyse d’impact",
+        "Les réponses ne permettent pas de conclure : demandez une analyse juridique ciblée."
+      ],
+      [
+        "Préparer le registre des activités de traitement",
+        "Inventoriez les données, leurs lieux, les accès et les durées de conservation."
+      ],
+      [
+        "Enregistrer les bases de données concernées",
+        "Vérifiez les obligations nationales d’enregistrement et les délais."
+      ],
+      [
+        "Décrire les traitements à grande échelle dans la notice",
+        "Expliquez clairement le périmètre et les finalités des traitements."
+      ],
+      [
+        "Obtenir l’autorisation pour les données de mineurs",
+        "Vérifiez le consentement du représentant légal si nécessaire."
+      ],
+      [
+        "Afficher les avis de vidéosurveillance et fixer les délais",
+        "Indiquez le responsable, la finalité, les contacts et la conservation."
+      ],
+      [
+        "Documenter les transferts internationaux",
+        "Vérifiez la base légale et les accords avec les destinataires à l’étranger."
+      ]
+    ],
+    "dia_risk": [
+      "Risque très élevé : plusieurs problèmes critiques nécessitent un examen rapide.",
+      "Risque élevé : plusieurs pratiques manquent de garanties écrites.",
+      "Risque moyen à élevé : renforcez les preuves, contrôles et procédures.",
+      "Risque modéré : corrigez les anomalies pour améliorer la conformité.",
+      "Risque maîtrisé dans les domaines examinés ; cela ne prouve pas la conformité légale."
+    ],
+    "dpo_summary": "L’évaluation indique si la désignation d’un Délégué peut être obligatoire selon les critères sélectionnés. Vérifiez les exigences légales avant de conclure.",
+    "dia_gaps": [
+      "Les données sensibles nécessitent des protections et des contrôles d’accès renforcés.",
+      "La vidéosurveillance, la biométrie et le suivi exigent des finalités et règles de conservation documentées.",
+      "Les sous-traitants doivent être encadrés par des accords de traitement.",
+      "Prévoyez une procédure pour les demandes des personnes et les délais applicables.",
+      "Vérifiez si un Délégué doit être désigné et enregistré.",
+      "Établissez une politique interne et des garanties pour l’usage de l’intelligence artificielle."
+    ]
+  }
+}

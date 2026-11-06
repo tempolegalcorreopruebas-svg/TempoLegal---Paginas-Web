@@ -1,0 +1,51 @@
+/* TempoLegal · LOPDP tool design system v2, presentation only.
+   Original calculation and assessment scripts remain untouched. */
+body.tl-tool-page{--tl-ink:#17323c;--tl-accent:#006e8c;--tl-paper:#f0f5f4;
+ background:radial-gradient(ellipse at 92% 16%,rgba(66,179,199,.11),transparent 39%),
+ linear-gradient(180deg,#f6f9f8,#eaf2f1)!important;color:var(--tl-ink)!important;
+}
+body.tl-tool-page .tl-calculator-context{
+ border:1px solid rgba(0,110,140,.1)!important;
+ background:linear-gradient(110deg,rgba(232,247,248,.97),rgba(255,255,255,.9))!important;
+ border-radius:0 0 26px 26px!important;
+ box-shadow:0 10px 32px rgba(15,64,74,.06)!important;
+}
+body.tl-tool-page .wrap{max-width:1080px!important;}
+body.tl-tool-page :is(.hero,#hero,.pantalla.on){position:relative;isolation:isolate}
+body.tl-tool-page .hero h1,body.tl-tool-page #hero h1{
+ font-family:Editorial,Georgia,'Times New Roman',serif!important;font-weight:400!important;
+ line-height:1.12!important;letter-spacing:-.04em!important;
+ font-size:clamp(2.75rem,5.4vw,5.25rem)!important;color:#17323c!important;
+ text-wrap:balance;
+}
+body.tl-tool-page :is(.hero,.wrap.hero){padding-block:clamp(26px,5vw,68px)!important;}
+body.tl-tool-page :is(.card,.tarifa .tb,.panel,.res-box,.result-box,.opt,.opcion,.pregunta){
+ border-radius:clamp(14px,2vw,24px)!important;
+ border-color:rgba(47,121,138,.19)!important;
+}
+body.tl-tool-page :is(.card,.tarifa .tb,.panel,.res-box,.result-box){
+ background:rgba(255,255,255,.95)!important;
+ box-shadow:0 14px 42px rgba(25,80,89,.08)!important;
+}
+body.tl-tool-page :is(.opt,.opcion,.tarifa .tb){
+ transition:border-color .24s ease,box-shadow .24s ease,transform .24s ease,background .24s ease!important;
+}
+@media(hover:hover){body.tl-tool-page :is(.opt,.opcion,.tarifa .tb):hover{
+ transform:translateY(-3px)!important;
+ border-color:rgba(0,110,140,.52)!important;
+ box-shadow:0 12px 30px rgba(0,89,113,.12)!important;
+}}
+body.tl-tool-page :is(button.btn,a.btn,button.primary,.boton-principal,.btn-principal){
+ border-radius:999px!important;
+ background:linear-gradient(120deg,#006e8c,#0b536b)!important;
+ color:white!important;box-shadow:0 9px 23px rgba(0,110,140,.19)!important;
+ transition:transform .25s ease,box-shadow .25s ease,filter .25s ease!important;
+}
+@media(hover:hover){body.tl-tool-page :is(button.btn,a.btn,button.primary,.boton-principal,.btn-principal):hover{
+ transform:translateY(-2px)!important;filter:brightness(1.1)!important;
+ box-shadow:0 14px 30px rgba(0,110,140,.28)!important;}}
+body.tl-tool-page :is(input,select,textarea){border-radius:12px!important;accent-color:#006e8c}
+body.tl-tool-page :is(input,select,textarea):focus-visible{outline:2px solid #19a1bc!important;outline-offset:2px!important}
+body.tl-tool-page :is(.card,#result,.pantalla,.resultado){scroll-margin-top:100px}
+@media(max-width:700px){body.tl-tool-page .wrap{padding-inline:18px!important}}
+@media(prefers-reduced-motion:reduce){body.tl-tool-page :is(.opt,.opcion,.btn,.tarifa .tb){transition:none!important;transform:none!important}}

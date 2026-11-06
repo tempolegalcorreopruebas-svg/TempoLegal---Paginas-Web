@@ -1,0 +1,14 @@
+/* TempoLegal · brand illumination (never darken on hover) */
+.site-header a.brand img,.tl-header a.tl-brand img,
+.site-header .brand img,.tl-header .tl-brand img{
+ filter:brightness(0) invert(1)!important;
+ opacity:1!important;
+ transition:filter .3s ease, transform .3s ease, opacity .3s ease!important;
+}
+.site-header a.brand:hover img,.tl-header a.tl-brand:hover img,
+.site-header a.brand:focus-visible img,.tl-header a.tl-brand:focus-visible img,
+.site-header .brand:hover img,.tl-header .tl-brand:hover img{
+ filter:brightness(0) invert(1) drop-shadow(0 0 5px rgba(218,254,255,.92)) drop-shadow(0 0 13px rgba(92,223,246,.7))!important;
+ opacity:1!important;transform:translateY(-1px) scale(1.025)!important;
+}
+@media (prefers-reduced-motion:reduce){.site-header .brand img,.tl-header .tl-brand img{transition:none!important;transform:none!important}}

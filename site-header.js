@@ -35,13 +35,47 @@
   document.addEventListener('DOMContentLoaded', markCurrentService);
   document.addEventListener('tempo:languagechange', () => requestAnimationFrame(markCurrentService));
 
+  // Bubble-like menu reveal shared by all languages. Keep focus and hidden state
+  // synchronized; cancel an outgoing animation if the user reopens immediately.
+  const animations = new WeakMap();
   function setMenu(menu, open, focusButton) {
     const button = menu.querySelector('.nav-menu-toggle');
     const panel = menu.querySelector('.nav-menu-panel');
     if (!button || !panel) return;
+    const wasOpen = button.getAttribute('aria-expanded') === 'true';
+    if (wasOpen === open) return;
+    animations.get(panel)?.cancel();
+    animations.delete(panel);
     button.setAttribute('aria-expanded', String(open));
-    panel.hidden = !open;
     menu.classList.toggle('is-open', open);
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (open) panel.hidden = false;
+    if (!reduceMotion && typeof panel.animate === 'function') {
+      // Animate the independent translate/scale properties, NOT transform:
+      // CSS transform:translateX(-38%) is responsible for horizontal centering.
+      // Overriding it in Web Animations caused the panel to jump in from the right.
+      const frames = open ? [
+        { opacity: 0, translate: '0 -12px', scale: '.97', filter: 'blur(5px)' },
+        { opacity: 1, translate: '0 0', scale: '1', filter: 'blur(0)' }
+      ] : [
+        { opacity: 1, translate: '0 0', scale: '1', filter: 'blur(0)' },
+        { opacity: 0, translate: '0 -8px', scale: '.985', filter: 'blur(3px)' }
+      ];
+      const animation = panel.animate(frames, {
+        duration: open ? 390 : 220,
+        easing: open ? 'cubic-bezier(.16,1,.3,1)' : 'cubic-bezier(.4,0,.8,1)',
+        fill: 'both'
+      });
+      animations.set(panel, animation);
+      animation.finished.then(() => {
+        if (animations.get(panel) !== animation) return;
+        animations.delete(panel);
+        if (!open) panel.hidden = true;
+        animation.cancel();
+      }).catch(() => {});
+    } else if (!open) {
+      panel.hidden = true;
+    }
     if (!open && focusButton) button.focus();
   }
   const closeAll = except => menus.forEach(menu => { if (menu !== except) setMenu(menu, false); });
@@ -54,7 +88,8 @@
       const open = button.getAttribute('aria-expanded') !== 'true';
       closeAll(menu);
       setMenu(menu, open);
-      if (open) menu.querySelector('.nav-menu-panel a')?.focus({ preventScroll: true });
+      // Only move focus when opened from the keyboard. Mouse clicks leave focus on the toggle.
+      if (open && event.detail === 0) menu.querySelector('.nav-menu-panel a')?.focus({ preventScroll: true });
     });
     menu.addEventListener('keydown', event => {
       if (event.key === 'Escape' && menu.classList.contains('is-open')) {

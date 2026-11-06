@@ -1,0 +1,11 @@
+/* TempoLegal: local-team text entrances and customer-case pointer light, shared by 4 home languages. */
+#empresas-extranjeras .coverage-copy .tl-coverage-enter {transition: opacity .85s cubic-bezier(.2,.8,.2,1), transform .85s cubic-bezier(.2,.8,.2,1), filter .85s ease;transition-delay:var(--tl-delay,0ms)}
+html.tl-motion-ready #empresas-extranjeras .coverage-copy .tl-coverage-enter:not(.tl-enter-visible){opacity:0;transform:translate3d(0,30px,0);filter:blur(5px)}
+html.tl-motion-ready #empresas-extranjeras .coverage-copy .tl-coverage-enter.tl-enter-visible{opacity:1;transform:translate3d(0,0,0);filter:blur(0)}
+#casos .cases-grid .case-card{position:relative;isolation:isolate;overflow:hidden;--tl-pointer-x:50%;--tl-pointer-y:50%;transition:transform .38s cubic-bezier(.2,.8,.2,1),box-shadow .38s ease,border-color .38s ease}
+#casos .cases-grid .case-card::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;opacity:0;background:radial-gradient(260px circle at var(--tl-pointer-x) var(--tl-pointer-y),rgba(48,184,219,.23),rgba(48,184,219,.08) 36%,transparent 78%);transition:opacity .28s ease}
+#casos .cases-grid .case-card:hover::after,#casos .cases-grid .case-card:focus-within::after{opacity:1}
+#casos .cases-grid .case-card:hover,#casos .cases-grid .case-card:focus-within{transform:translateY(-5px);box-shadow:0 18px 40px rgba(0,77,99,.12)}
+#casos .cases-grid .case-card a{position:relative;z-index:2}
+@media(hover:none){#casos .cases-grid .case-card::after{display:none}}
+@media(prefers-reduced-motion:reduce){#empresas-extranjeras .coverage-copy .tl-coverage-enter,#casos .cases-grid .case-card{transition:none!important;transform:none!important;opacity:1!important;filter:none!important}}

@@ -1,0 +1,11 @@
+{
+  "html_brand_added": 201,
+  "tool_pages_styled": 12,
+  "sector_script_modified": true,
+  "calculator_logic": "preserved unchanged; extraction into isolated engines requires regression fixtures",
+  "components": [
+    "multas V22",
+    "delegado V3",
+    "diagnostico V3"
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "tool_pages": [
+    {
+      "language": "es",
+      "tool": "multas",
+      "runtime_count": 1,
+      "path": "herramientas/calculadora-multas-lopdp/index.html"
+    },
+    {
+      "language": "en",
+      "tool": "multas",
+      "runtime_count": 1,
+      "path": "en/herramientas/calculadora-multas-lopdp/index.html"
+    },
+    {
+      "language": "pt",
+      "tool": "multas",
+      "runtime_count": 1,
+      "path": "pt/herramientas/calculadora-multas-lopdp/index.html"
+    },
+    {
+      "language": "fr",
+      "tool": "multas",
+      "runtime_count": 1,
+      "path": "fr/herramientas/calculadora-multas-lopdp/index.html"
+    },
+    {
+      "language": "es",
+      "tool": "delegado",
+      "runtime_count": 2,
+      "path": "herramientas/calculadora-delegado-lopdp/index.html"
+    },
+    {
+      "language": "en",
+      "tool": "delegado",
+      "runtime_count": 2,
+      "path": "en/herramientas/calculadora-delegado-lopdp/index.html"
+    },
+    {
+      "language": "pt",
+      "tool": "delegado",
+      "runtime_count": 2,
+      "path": "pt/herramientas/calculadora-delegado-lopdp/index.html"
+    },
+    {
+      "language": "fr",
+      "tool": "delegado",
+      "runtime_count": 2,
+      "path": "fr/herramientas/calculadora-delegado-lopdp/index.html"
+    },
+    {
+      "language": "es",
+      "tool": "diagnostico",
+      "runtime_count": 1,
+      "path": "herramientas/diagnostico-lopdp/index.html"
+    },
+    {
+      "language": "en",
+      "tool": "diagnostico",
+      "runtime_count": 1,
+      "path": "en/herramientas/diagnostico-lopdp/index.html"
+    },
+    {
+      "language": "pt",
+      "tool": "diagnostico",
+      "runtime_count": 1,
+      "path": "pt/herramientas/diagnostico-lopdp/index.html"
+    },
+    {
+      "language": "fr",
+      "tool": "diagnostico",
+      "runtime_count": 1,
+      "path": "fr/herramientas/diagnostico-lopdp/index.html"
+    }
+  ],
+  "runtime_files": [
+    {
+      "file": "calculator-core/multas-runtime-1.js",
+      "bytes": 94111,
+      "sha256": "308bef425b1de4a2bfe030fc0061ad37e140b9f0563f207e0eca809c54395d01"
+    },
+    {
+      "file": "calculator-core/delegado-runtime-1.js",
+      "bytes": 41591,
+      "sha256": "78ba7dbde3dad50dc9ae3b8ba429a6de8696aaff6a2f05bafea36057058558f2"
+    },
+    {
+      "file": "calculator-core/delegado-runtime-2.js",
+      "bytes": 21853,
+      "sha256": "66e1bbc0786511f29a17acb0a68c74358add2c42f2a20a9213c2dd222b917bf3"
+    },
+    {
+      "file": "calculator-core/diagnostico-runtime-1.js",
+      "bytes": 71113,
+      "sha256": "45941a28ae9ed59f716b15e52efc4977f67af16056fe48bed45d864c40281ef9"
+    }
+  ],
+  "script_check": [
+    {
+      "file": "multas-runtime-1.js",
+      "pass": true,
+      "error": ""
+    },
+    {
+      "file": "delegado-runtime-1.js",
+      "pass": true,
+      "error": ""
+    },
+    {
+      "file": "delegado-runtime-2.js",
+      "pass": true,
+      "error": ""
+    },
+    {
+      "file": "diagnostico-runtime-1.js",
+      "pass": true,
+      "error": ""
+    }
+  ],
+  "functional_equivalence": "Original runtime text preserved byte-for-byte per extracted inline script; full browser result equivalence not validated."
+}

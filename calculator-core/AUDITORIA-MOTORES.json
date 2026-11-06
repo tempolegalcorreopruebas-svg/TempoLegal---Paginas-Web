@@ -1,0 +1,117 @@
+{
+  "fecha": "2026-11-06",
+  "estado": "extraccion de motores puros; runtime anterior permanece como respaldo",
+  "motores": {
+    "multas": {
+      "origen": "calculator-core/multas-runtime-1.js",
+      "motor": "calculator-core/pure/multas-engine.mjs",
+      "funcion": "calcularMultas(entradas, {modo})",
+      "parametros": [
+        "RATES",
+        "PERFIL_SECTOR",
+        "TRAB",
+        "CLI",
+        "DUTIES",
+        "MTGE",
+        "SERVICIOS"
+      ],
+      "salidas": [
+        "mt",
+        "duties",
+        "gaps",
+        "done",
+        "score",
+        "pdi",
+        "sev",
+        "fines",
+        "graves",
+        "total"
+      ],
+      "reglas": [
+        "mtgeScore",
+        "severity",
+        "fineFor",
+        "applicable",
+        "compute"
+      ],
+      "observaciones": [
+        "La evaluación depende de sector, volumen, categorías, facturación, persona jurídica/natural y obligaciones declaradas",
+        "Los importes son estimaciones: requieren validación legal externa"
+      ]
+    },
+    "delegado": {
+      "origen": "calculator-core/delegado-runtime-1.js",
+      "motor": "calculator-core/pure/delegado-engine.mjs",
+      "funcion": "calcularDelegado(entradas)",
+      "parametros": [
+        "CONFIG.P",
+        "SEC",
+        "DIR",
+        "CAM",
+        "DIM",
+        "FAC",
+        "YA",
+        "N"
+      ],
+      "salidas": [
+        "evaluacion",
+        "multa",
+        "inversion",
+        "comparacion",
+        "obligaciones"
+      ],
+      "reglas": [
+        "puntaje",
+        "evaluar",
+        "multa",
+        "inversion",
+        "comparacion",
+        "obligaciones"
+      ],
+      "observaciones": [
+        "El umbral de 6 puntos es una regla modelada por la calculadora, no debe presentarse como juicio legal automático",
+        "Contiene criterios sectoriales y supuestos sobre actividades especiales"
+      ]
+    },
+    "diagnostico": {
+      "origen": "calculator-core/diagnostico-runtime-1.js",
+      "motor": "calculator-core/pure/diagnostico-engine.mjs",
+      "funcion": "calcularDiagnostico(entradas)",
+      "parametros": [
+        "QUESTIONS",
+        "GAPS",
+        "CATALOGO",
+        "CONFIG.P",
+        "N"
+      ],
+      "salidas": [
+        "puntaje",
+        "nivel",
+        "matriz",
+        "infracciones",
+        "montos",
+        "gaps",
+        "tags",
+        "perfil"
+      ],
+      "reglas": [
+        "recompute",
+        "matriz",
+        "nivel",
+        "infracciones",
+        "montos"
+      ],
+      "observaciones": [
+        "La pregunta sobre DPD solo se activa al declarar biometría",
+        "No emitir dictamen para respuestas incompletas",
+        "La estimación usa facturación, etiquetas de datos, incumplimientos declarados y gravedad inferida"
+      ]
+    }
+  },
+  "no_incluye": [
+    "Reemplazo del frontend de producción",
+    "Verificación jurídica independiente de referencias o plazos",
+    "Pruebas de navegador completas"
+  ],
+  "fuente_de_verdad": "Los cuatro runtime existentes se mantienen intactos; los nuevos módulos trabajan sin DOM."
+}

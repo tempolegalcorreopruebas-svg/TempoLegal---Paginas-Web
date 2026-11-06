@@ -179,3 +179,6 @@
 }
 @media(max-width:960px){.practice-detail:not([hidden]){padding:6px 18px 24px 82px}.practice-detail .practice-summary{font-size:14px;line-height:1.55;margin-bottom:14px}.practice-detail .practice-scope{gap:8px;margin-bottom:17px}.practice-detail .practice-scope li{font-size:14px}.practice-detail .practice-note{font-size:12px;margin-top:12px}}
 @media(max-width:480px){.practice-detail:not([hidden]){padding-left:20px;padding-right:16px}.practice-detail .practice-actions{gap:10px}.practice-detail .practice-actions .button{font-size:13px;padding:11px 14px}}
+
+/* Service section: no horizontal divider under the main heading. */
+#servicios.services-section .section-heading{border-bottom:0!important;}

@@ -85,6 +85,7 @@ body.landing .fine,body.landing small{font-size:max(var(--fs-note),14px)}
 /* DPD: el hero viene dentro de .wrap; se extiende el fondo a todo el ancho */
 .landing main>section.hero.wrap:first-of-type{overflow:visible;box-shadow:0 0 0 100vmax #0c3644;clip-path:inset(0 -100vmax)}
 .landing main>section.hero.wrap:first-of-type:after{display:none}
+.landing-dpd-externo main>.dpd-hero::before{mask-image:linear-gradient(#000,#0006)}
 .landing main>section:first-of-type .fine,.landing main>section:first-of-type small,.landing main>section:first-of-type .note{color:#b9d3d9}
 @media(prefers-reduced-motion:no-preference){
 .landing main>section:first-of-type h1,.landing main>section:first-of-type .lead{animation:tl-rise .8s var(--ease) both}
@@ -285,7 +286,7 @@ html:has(.consultation-dialog[open]) { overflow: hidden; scrollbar-gutter: stabl
   align-items: center;
   gap: .75rem;
 }
-.landing-proteccion-datos .whatsapp-launchers .whatsapp-float {
+:is(.landing-proteccion-datos, .landing-dpd-externo, .landing-implementacion, .landing-salud) .whatsapp-launchers .whatsapp-float {
   position: relative;
   inset: auto;
 }
@@ -387,7 +388,7 @@ html:has(.consultation-dialog[open]) { overflow: hidden; scrollbar-gutter: stabl
     inset: auto max(16px, env(safe-area-inset-right)) calc(72px + env(safe-area-inset-bottom)) auto;
   }
   .whatsapp-launchers .whatsapp-caption { display: none; }
-  .landing-proteccion-datos .whatsapp-launchers .whatsapp-float {
+  :is(.landing-proteccion-datos, .landing-dpd-externo, .landing-implementacion, .landing-salud) .whatsapp-launchers .whatsapp-float {
     width: 48px;
     padding: 0;
     justify-content: center;
@@ -395,3 +396,171 @@ html:has(.consultation-dialog[open]) { overflow: hidden; scrollbar-gutter: stabl
   .whatsapp-chat-launcher { width: 48px; height: 48px; }
 }
 @media print { .whatsapp-launchers { display: none; } }
+
+.dpd-chat-invite {
+  position: absolute;
+  inset: auto 0 calc(100% + .8rem) auto;
+  box-sizing: border-box;
+  width: min(19rem, calc(100vw - 2rem));
+  padding: 2rem 2.6rem .9rem 1.1rem;
+  border: 1px solid #c4d6db;
+  border-radius: 12px;
+  background: #fff;
+  color: #193842;
+  box-shadow: 0 10px 30px #173d482b;
+}
+:is(.landing-implementacion, .landing-proteccion-datos, .landing-salud) .dpd-chat-invite {
+  width: min(15.5rem, calc(100vw - 2rem));
+  padding: 1.55rem 2rem .55rem .85rem;
+}
+:is(.landing-implementacion, .landing-proteccion-datos, .landing-salud) .dpd-chat-invite .dpd-chat-portrait {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+:is(.landing-implementacion, .landing-proteccion-datos, .landing-salud) .dpd-chat-invite [data-chat-invite] {
+  display: block;
+  color: #193842;
+  font-size: .93rem;
+  font-weight: 400;
+  line-height: 1.35;
+  text-align: start;
+}
+:is(.landing-implementacion, .landing-proteccion-datos, .landing-salud) .dpd-chat-invite [data-chat-invite] strong { color: #24576a; }
+.dpd-chat-invite[hidden] { display: none; }
+.dpd-chat-portrait {
+  flex: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 20%;
+}
+.dpd-chat-invite .dpd-chat-portrait {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 50%;
+  transform: translate(-50%, -50%);
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid #fff;
+  background: #e4ecee;
+}
+.dpd-chat-invite p { margin: 0; font-size: 1.05rem; line-height: 1.4; }
+.dpd-chat-invite button { border: 0; background: transparent; color: #24576a; cursor: pointer; }
+.dpd-chat-invite [data-chat-dismiss] {
+  position: absolute;
+  inset: .2rem .2rem auto auto;
+  width: 44px;
+  height: 44px;
+  font-size: 1.3rem;
+}
+.dpd-chat-invite [data-chat-invite] {
+  min-height: 44px;
+  padding: 0;
+  font: inherit;
+  font-size: .9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+:is(.landing-dpd-externo, .landing-implementacion, .landing-proteccion-datos, .landing-salud) .whatsapp-launchers .whatsapp-float:is(:link, :visited, :hover, :focus-visible, :active) {
+  text-decoration: none;
+}
+@media (max-width: 600px) {
+  :is(.landing-dpd-externo, .landing-salud) .whatsapp-launchers {
+    inset-block-end: max(18px, env(safe-area-inset-bottom));
+  }
+}
+
+.hub-directory {
+  padding-block: clamp(1rem, 2.6svh, 1.5rem);
+  background: #eaf2f4;
+  color: #193842;
+}
+body.landing .hub-directory h2 {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  margin: 0 0 .85rem;
+  font-family: var(--serif);
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+  line-height: 1.15;
+  color: inherit;
+}
+.hub-directory h2::before {
+  content: "";
+  flex: 0 0 1.4rem;
+  height: 2px;
+  background: #a9853f;
+}
+.hub-directory-groups {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 5fr);
+  gap: 1rem clamp(1rem, 2.5vw, 2.25rem);
+}
+body.landing .hub-directory-group h3 {
+  margin: 0 0 .45rem;
+  color: #24576a;
+  font: 600 .75rem/1.4 var(--sans);
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.hub-directory-group ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 7.8rem), 1fr));
+  gap: .4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.hub-directory-group li {
+  display: flex;
+  min-width: 0;
+}
+.hub-directory-group li > :is(a, [aria-current="page"]) {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  gap: .45rem;
+  min-height: 44px;
+  padding: .5rem .65rem;
+  border: 1px solid #bbcdd2;
+  border-radius: 7px 17px 7px 17px;
+  background: #f9fcfc;
+  color: inherit;
+  font-size: .9rem;
+  line-height: 1.35;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.hub-directory-group:first-child li > a {
+  border-color: #234955;
+  background: #234955;
+  color: #fff;
+  font-weight: 600;
+}
+.hub-directory-group li > [aria-current="page"] {
+  border-color: #a9853f;
+  background: #173742;
+  color: #fff; font-weight: 600;
+  box-shadow: inset 0 0 0 1px #a9853f;
+}
+.hub-directory-group a:hover {
+  border-color: #24576a;
+  background: #dcebee;
+}
+.hub-directory-group:first-child li > a:hover {
+  background: #2e5b68;
+}
+.hub-directory-group li > a:is(:link, :visited, :hover, :focus-visible, :active) {
+  text-decoration: none;
+}
+.hub-directory-group a:focus-visible {
+  outline: 2px solid #24576a;
+  outline-offset: 2px;
+}
+@media (max-width: 760px) {
+  .hub-directory-groups {
+    grid-template-columns: 1fr;
+  }
+}

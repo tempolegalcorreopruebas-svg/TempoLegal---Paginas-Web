@@ -96,12 +96,25 @@
     });
     whatsappTrigger.setAttribute('aria-haspopup', 'dialog');
     whatsappTrigger.setAttribute('aria-controls', whatsappDialog.id);
-    whatsappTrigger.addEventListener('click', event => {
+    const openChat = event => {
       if (event.defaultPrevented) return;
       const phone = String(config.whatsapp || '').replace(/\D/g, '');
       if (phone) messageForm.action = 'https://wa.me/' + phone;
       whatsappDialog.showModal();
-    });
+    };
+    whatsappTrigger.addEventListener('click', openChat);
+    const invitation = document.querySelector('.dpd-chat-invite');
+    if (invitation) {
+      const quote = invitation.querySelector('[data-chat-invite]');
+      quote.setAttribute('aria-haspopup', 'dialog');
+      quote.setAttribute('aria-controls', whatsappDialog.id);
+      quote.addEventListener('click', openChat);
+      invitation.querySelector('[data-chat-dismiss]').addEventListener('click', () => {
+        invitation.hidden = true;
+        whatsappTrigger.focus({ preventScroll: true });
+      });
+      invitation.hidden = false;
+    }
     whatsappDialog.querySelector('[data-close-whatsapp-consultation]').addEventListener('click', () => whatsappDialog.close());
     whatsappDialog.addEventListener('close', () => whatsappTrigger.focus({ preventScroll: true }));
     messageForm.addEventListener('submit', event => {

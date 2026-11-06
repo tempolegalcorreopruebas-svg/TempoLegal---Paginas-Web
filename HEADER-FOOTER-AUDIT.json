@@ -1,0 +1,17 @@
+{
+  "updated": [
+    "herramientas/calculadora-multas-lopdp/index.html",
+    "herramientas/calculadora-delegado-lopdp/index.html",
+    "herramientas/diagnostico-lopdp/index.html",
+    "en/herramientas/calculadora-multas-lopdp/index.html",
+    "en/herramientas/calculadora-delegado-lopdp/index.html",
+    "en/herramientas/diagnostico-lopdp/index.html",
+    "pt/herramientas/calculadora-multas-lopdp/index.html",
+    "pt/herramientas/calculadora-delegado-lopdp/index.html",
+    "pt/herramientas/diagnostico-lopdp/index.html",
+    "fr/herramientas/calculadora-multas-lopdp/index.html",
+    "fr/herramientas/calculadora-delegado-lopdp/index.html",
+    "fr/herramientas/diagnostico-lopdp/index.html"
+  ],
+  "broken_references": []
+}

@@ -128,3 +128,180 @@
 
 /* Revisión 26 octubre 2026: riesgo breve y CumpliDatos confirmado. */
 .response-promise{display:flex;align-items:center;gap:.55rem;font-size:.9rem;line-height:1.5;margin:1rem 0;color:inherit}.response-promise:before{content:"";width:.45rem;height:.45rem;flex:0 0 .45rem;border-radius:50%;background:#d7bd6d}.sanctions-proof{background:#fff8f7;border-top:1px solid #ead8d4;border-bottom:1px solid #ead8d4;color:#263f47;padding:1.25rem 0}.sanctions-proof .sanctions-inner{width:min(1180px,calc(100% - 40px));margin:auto;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:1rem 2rem;align-items:center}.sanctions-proof h2{font-size:1.1rem;line-height:1.3;margin:0 0 .25rem;font-family:inherit;letter-spacing:normal}.sanctions-proof p{margin:0;font-size:.88rem;line-height:1.5}.sanctions-proof strong{color:#8b3e35}.sanctions-proof .sanctions-source{grid-column:1/-1;font-size:.8rem;line-height:1.5}.sanctions-proof a{color:#71342e;text-decoration:underline;text-underline-offset:3px}.cd-future{font-size:.85rem;line-height:1.6;margin-top:1rem}.cd-future strong{display:block;color:inherit}.cd-steps .cd-future strong{font-size:.85rem;margin:0}.cd-steps .cd-future{padding-top:.8rem;border-top:1px solid #ffffff35}@media(max-width:700px){.sanctions-proof .sanctions-inner{grid-template-columns:1fr 1fr;gap:1rem}.sanctions-proof .sanctions-intro{grid-column:1/-1}.sanctions-proof .sanctions-source{font-size:.8rem}.sanctions-proof h2{font-size:1rem}}
+
+/* Implementation hero with a single continuous surface. */
+body.landing-implementacion .impl-hero {
+  padding-block: clamp(1.5rem, 5svh, 3rem);
+}
+.landing-implementacion .impl-layout {
+  gap: clamp(1.25rem, 4vw, 3.25rem);
+}
+body.landing-implementacion .impl-hero h1 {
+  margin: .6rem 0 .75rem;
+  font-size: clamp(2.2rem, 4.15vw, 3.8rem);
+  line-height: 1.06;
+  text-wrap: balance;
+}
+.landing-implementacion .impl-layout .lead {
+  font-size: clamp(1rem, 1.45vw, 1.2rem);
+  line-height: 1.5;
+}
+.landing-implementacion .impl-hero .actions { margin-top: .85rem; }
+.landing-implementacion .impl-hero .button {
+  min-height: 48px;
+  padding: .75rem 1rem;
+  border-radius: 7px 17px 7px 17px;
+}
+.landing-implementacion .impl-hero .response-promise,
+.landing-implementacion .impl-hero .fine { margin-block: .55rem 0; }
+.landing-implementacion .impl-hero .impl-receipt {
+  position: relative;
+  inset-block-start: calc(-.75rem - clamp(.65rem, 2.4svh, 1.25rem));
+  min-width: 0;
+  margin: 0;
+  padding: 0 0 0 clamp(1.25rem, 3vw, 2.5rem);
+  border: 0;
+  border-inline-start: 1px solid #b9d3d955;
+  border-image: linear-gradient(#c6a864, #b9d3d933) 1;
+  background: transparent;
+  box-shadow: none;
+  color: #eef6f7;
+}
+.landing-implementacion .impl-receipt .eyebrow { margin-bottom: .55rem; }
+.landing-implementacion .impl-receipt h2 {
+  margin: 0 0 .55rem;
+  color: #fff;
+  font-size: clamp(1.4rem, 2.4vw, 2rem);
+  line-height: 1.15;
+}
+.landing-implementacion .impl-receipt ul { margin: 0; }
+.landing-implementacion .impl-receipt li {
+  padding-block: .45rem;
+  border-color: #b9d3d940;
+  font-size: .95rem;
+  line-height: 1.45;
+}
+@media (max-width: 760px) {
+  .landing-implementacion .impl-hero .impl-receipt {
+    inset-block-start: calc(-1 * clamp(.65rem, 2.4svh, 1.25rem));
+    padding: .9rem 0 0;
+    border-inline-start: 0;
+    border-top: 1px solid #b9d3d955;
+  }
+}
+
+/* Implementation sections follow the external DPD visual system. */
+.landing-implementacion :is(#alcance, #experiencia, #metodo, #equipo, #testimonio, #preguntas, #recursos, #contacto) {
+  padding-block: clamp(2.25rem, 5vw, 4.5rem);
+}
+.landing-implementacion :is(#alcance, #experiencia, #metodo, #equipo, #preguntas, #recursos) h2 {
+  margin-block: .35rem .65rem;
+  font-size: clamp(1.9rem, 3.4vw, 3rem);
+  line-height: 1.12;
+  text-wrap: balance;
+}
+.landing-implementacion :is(#alcance, #preguntas) { background: #eaf2f4; }
+.landing-implementacion :is(.delivery-explorer, .case-grid, .implementation-steps, .tool-line) {
+  margin-block-start: clamp(.8rem, 2vw, 1.4rem);
+}
+.landing-implementacion .delivery-explorer {
+  margin-inline: 0;
+  overflow: hidden;
+  border-radius: 8px 22px 8px 22px;
+  box-shadow: 0 8px 26px #173d4810;
+}
+.landing-implementacion .delivery-explorer .delivery-panel {
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+}
+.landing-implementacion :is(.case-grid, .implementation-steps) { gap: clamp(.75rem, 2vw, 1.2rem); }
+.landing-implementacion :is(.case-grid > article, .implementation-steps > li, .tool-primary) {
+  min-width: 0;
+  padding: clamp(.9rem, 2.5vw, 1.4rem);
+  border: 1px solid #c5d8dc;
+  border-radius: 8px 20px 8px 20px;
+  background: #fcfefe;
+}
+.landing-implementacion #recursos .tool-primary {
+  border-inline-start: 3px solid #c6a864;
+  background: #eaf2f4;
+}
+.landing-implementacion #equipo .portrait-frame {
+  overflow: hidden;
+  border-radius: 10px 28px 10px 28px;
+}
+.landing-implementacion #preguntas details {
+  margin: 0;
+  border: 0;
+  border-bottom: 1px solid #c5d8dc;
+  border-radius: 0;
+  background: transparent;
+}
+.landing-implementacion #preguntas summary { min-height: 44px; padding-block: .65rem; }
+.landing-implementacion main .button,
+.landing-implementacion .consultation-dialog .button,
+.landing-implementacion .whatsapp-chat-options button {
+  border-radius: 7px 17px 7px 17px;
+}
+
+/* Scope: keep the project map and starting paths on the content grid. */
+.landing-implementacion #alcance .scope-layout {
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  gap: clamp(1.25rem, 3vw, 2.4rem) clamp(1.25rem, 4vw, 3.5rem);
+  align-items: start;
+}
+.landing-implementacion #alcance .scope-layout > :is(.special-needs, .project-start) {
+  grid-column: 1 / -1;
+  min-width: 0;
+  margin: 0;
+}
+.landing-implementacion #alcance .special-needs {
+  padding: .6rem 1rem;
+  border: 1px solid #b7ced5;
+  border-radius: 8px 20px 8px 20px;
+  background: #f6fafb;
+}
+.landing-implementacion #alcance .special-needs summary {
+  min-height: 44px;
+  padding-block: .55rem;
+}
+.landing-implementacion #alcance .instrument-map { padding: .3rem 0 .55rem; }
+.landing-implementacion #punto-partida {
+  padding: clamp(1rem, 3vw, 1.85rem);
+  border: 1px solid #c5d8dc;
+  border-radius: 10px 26px 10px 26px;
+  background: #f7faf9;
+}
+.landing-implementacion #punto-partida > .eyebrow {
+  margin: 0 0 .45rem;
+  color: #285a6d;
+}
+.landing-implementacion #punto-partida > h3 {
+  margin: 0 0 .85rem;
+  color: #193842;
+  font-size: clamp(1.65rem, 3vw, 2.4rem);
+  line-height: 1.12;
+}
+.landing-implementacion #punto-partida .start-columns { gap: .75rem; }
+.landing-implementacion #punto-partida article {
+  min-width: 0;
+  padding: clamp(.9rem, 2.5vw, 1.25rem);
+  border: 1px solid #c5d8dc;
+  border-inline-start: 3px solid #47778a;
+  border-radius: 7px 18px 7px 18px;
+  background: #fff;
+}
+.landing-implementacion #punto-partida article + article { border-inline-start-color: #a9853f; }
+.landing-implementacion #punto-partida h4 {
+  margin: 0 0 .4rem;
+  color: #193842;
+  font-size: clamp(1.05rem, 1.8vw, 1.28rem);
+  line-height: 1.25;
+}
+.landing-implementacion #punto-partida article p { margin: 0; line-height: 1.55; }
+.landing-implementacion #punto-partida > .fine {
+  margin: .85rem 0 0;
+  color: #415d67;
+}
+@media (max-width: 850px) {
+  .landing-implementacion #alcance .scope-layout { grid-template-columns: minmax(0, 1fr); }
+}

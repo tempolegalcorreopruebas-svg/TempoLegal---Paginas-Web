@@ -163,102 +163,6 @@ body.landing .hub-hero h1 {
   }
 }
 
-.hub-directory {
-  padding-block: clamp(1rem, 2.6svh, 1.5rem);
-  background: #eaf2f4;
-  color: #193842;
-}
-body.landing .hub-directory h2 {
-  display: flex;
-  align-items: center;
-  gap: .7rem;
-  margin: 0 0 .85rem;
-  font-family: var(--serif);
-  font-size: clamp(1.35rem, 2vw, 1.8rem);
-  line-height: 1.15;
-  color: inherit;
-}
-.hub-directory h2::before {
-  content: "";
-  flex: 0 0 1.4rem;
-  height: 2px;
-  background: #a9853f;
-}
-.hub-directory-groups {
-  display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(0, 5fr);
-  gap: 1rem clamp(1rem, 2.5vw, 2.25rem);
-}
-body.landing .hub-directory-group h3 {
-  margin: 0 0 .45rem;
-  color: #24576a;
-  font: 600 .75rem/1.4 var(--sans);
-  letter-spacing: .16em;
-  text-transform: uppercase;
-}
-.hub-directory-group ul {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 7.8rem), 1fr));
-  gap: .4rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.hub-directory-group li {
-  display: flex;
-  min-width: 0;
-}
-.hub-directory-group a {
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
-  align-items: center;
-  gap: .45rem;
-  min-height: 44px;
-  padding: .5rem .65rem;
-  border: 1px solid #bbcdd2;
-  border-radius: 3px;
-  background: #f9fcfc;
-  color: inherit;
-  font-size: .9rem;
-  line-height: 1.35;
-  text-decoration: none;
-  overflow-wrap: anywhere;
-}
-.hub-directory-group a span[aria-hidden] {
-  flex: none;
-  color: #24576a;
-}
-.hub-directory-group:first-child a {
-  border-color: #234955;
-  background: #234955;
-  color: #fff;
-  font-weight: 600;
-}
-.hub-directory-group:first-child a span[aria-hidden] {
-  color: #f3d58f;
-}
-.hub-directory-group a:hover {
-  border-color: #24576a;
-  background: #dcebee;
-}
-.hub-directory-group:first-child a:hover {
-  background: #173742;
-}
-.hub-directory-group a:hover span:first-child {
-  text-decoration: underline;
-  text-underline-offset: .2em;
-}
-.hub-directory-group a:focus-visible {
-  outline: 2px solid #24576a;
-  outline-offset: 2px;
-}
-@media (max-width: 760px) {
-  .hub-directory-groups {
-    grid-template-columns: 1fr;
-  }
-}
-
 .landing-proteccion-datos #servicios {
   padding-block: clamp(1.75rem, 4vw, 3.25rem);
 }
@@ -398,4 +302,38 @@ body.landing .hub-directory-group h3 {
 .landing-proteccion-datos #contacto :is(input, select, textarea) {
   background: #f6fafb;
   border-color: #a8bec5;
+}
+
+/* Data protection overview: same curves and rhythm as its service pages. */
+.landing-proteccion-datos :is(#servicios, #clientes, #experiencia, #sectores, #metodo, #equipo, #testimonio, #preguntas, #recursos) {
+  padding-block: clamp(2.25rem, 5vw, 4.5rem);
+}
+.landing-proteccion-datos :is(#experiencia, #sectores, #metodo, #equipo, #preguntas, #recursos) h2 {
+  font-size: clamp(1.9rem, 3.4vw, 3rem);
+  line-height: 1.12;
+  text-wrap: balance;
+}
+.landing-proteccion-datos :is(#servicios .route a, main .button, .consultation-dialog .button, .whatsapp-chat-options button) {
+  border-radius: 7px 17px 7px 17px;
+}
+.landing-proteccion-datos :is(#servicios .route, #experiencia .case-grid > article, #sectores a.sector, #recursos .resource-grid > article) {
+  border-radius: 8px 22px 8px 22px;
+}
+.landing-proteccion-datos #equipo .portrait-frame {
+  overflow: hidden;
+  border-radius: 10px 28px 10px 28px;
+}
+.landing-proteccion-datos #preguntas details {
+  margin: 0;
+  border: 0;
+  border-bottom: 1px solid #c5d8dc;
+  border-radius: 0;
+  background: transparent;
+}
+.landing-proteccion-datos #preguntas summary {
+  min-height: 44px;
+  padding-block: .65rem;
+}
+.landing-proteccion-datos #contacto #consulta {
+  border-radius: 8px 22px 8px 22px;
 }

@@ -36,7 +36,7 @@ html{scroll-padding-top:calc(var(--header-height) + 22px)}
 /* Servicios: retratos editoriales del equipo, composición fotográfica y navegación conservada. */
 .services-section{position:relative;overflow:hidden;background:#F5F8F7;border-top:1px solid #D7E3E5}
 .services-section>.container{position:relative}
-.services-section .section-heading{align-items:end;gap:clamp(50px,9vw,180px);margin-bottom:37px;padding-bottom:41px;border-bottom:1px solid #C8DADD}
+.services-section .section-heading{align-items:end;gap:clamp(50px,9vw,180px);margin-bottom:37px;padding-bottom:24px;border-bottom:0}
 .services-section .section-heading .eyebrow{color:#3E7490;font-size:12px;letter-spacing:.2em;margin-bottom:25px}
 .services-section .section-heading h2{font-size:clamp(48px,4.65vw,85px);line-height:1.01;letter-spacing:-.046em;max-width:910px;color:#193B45}
 .services-section .section-intro{max-width:405px;color:#5A717A;font-size:clamp(15px,1vw,19px);line-height:1.72;padding-bottom:8px}

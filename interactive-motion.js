@@ -3,12 +3,28 @@
 const reduce=window.matchMedia('(prefers-reduced-motion: reduce)');
 function start(){
  // Light follows pointer without inserting any obstructing element.
- document.querySelectorAll(':is(#casos .case-card, .landing-proteccion-datos :is(.nav-menu-panel a, .hub-directory-group a, .route, .sector, .case-grid > article))').forEach(card=>{
+ document.querySelectorAll(':is(#casos .case-card, .landing-salud :is(.case-grid > article, .method-steps > li), .landing-implementacion :is(.case-grid > article, .implementation-steps > li, .tool-primary, .start-columns > article), .landing-dpd-externo :is(#necesidad .services > article, #alcance .functions > article, #entregables .scope-grid > article, #proceso .steps > article, #experiencia .documented-cases > article, #recursos .tool-primary), .landing-proteccion-datos :is(.nav-menu-panel a, .hub-directory-group a, .route, .sector, .case-grid > article))').forEach(card=>{
   card.addEventListener('pointermove',e=>{if(e.pointerType==='touch')return;const r=card.getBoundingClientRect();card.style.setProperty('--tl-x',`${e.clientX-r.left}px`);card.style.setProperty('--tl-y',`${e.clientY-r.top}px`)},{passive:true});
  });
  const dataProtection=document.body.classList.contains('landing-proteccion-datos');
+ const externalDpd=document.body.classList.contains('landing-dpd-externo');
+ const implementation=document.body.classList.contains('landing-implementacion');
+ const healthcare=document.body.classList.contains('landing-salud');
+ const serviceLanding=dataProtection||externalDpd||implementation||healthcare;
  const cascading=[];
- const selectors=dataProtection?[
+ const selectors=healthcare?[
+  ['#clientes h2,#clientes .firm-logo:not(details .firm-logo)',35],
+  ['#experiencia .case-grid > article,#metodo .method-steps > li',60],
+  ['#situaciones h2,#alcance h2,#experiencia h2,#testimonio h2,#metodo h2,#cumplidatos h2,#equipo h2,#preguntas h2,#contacto h2',0]
+ ]:implementation?[
+  ['#clientes h2,#clientes .firm-logo:not(details .firm-logo)',35],
+  ['#experiencia .case-grid > article,#metodo .implementation-steps > li,#punto-partida .start-columns > article',60],
+  ['#alcance h2,#experiencia h2,#metodo h2,#cumplidatos h2,#equipo h2,#testimonio h2,#continuidad h2,#preguntas h2,#recursos h2,#contacto h2',0]
+ ]:externalDpd?[
+  ['#clientes h2,#clientes .firm-logo:not(details .firm-logo)',35],
+  ['#necesidad .services > article,#alcance .functions > article,#entregables .scope-grid > article,#proceso .steps > article,#experiencia .documented-cases > article',60],
+  ['#necesidad h2,#alcance h2,#entregables h2,#sanciones h2,#cumplidatos h2,#equipo h2,#proceso h2,#experiencia h2,#testimonio h2,#recursos h2,#preguntas h2,#contacto h2',0]
+ ]:dataProtection?[
   ['#servicios h2,#servicios .route',65],
   ['#clientes h2,#clientes .firm-logo:not(details .firm-logo)',35],
   ['#experiencia h2,#experiencia .case-grid > article',65],
@@ -22,13 +38,13 @@ function start(){
  ];
  selectors.forEach(([sel,interval])=>{
   const els=[...document.querySelectorAll(sel)];
-  els.forEach((el,i)=>{if(dataProtection&&el.getBoundingClientRect().top<=window.innerHeight)return;el.classList.add('tl-cascade');const caseIndex=el.closest('#casos')&&el.matches('.case-card')?[...el.parentElement.querySelectorAll('.case-card')].indexOf(el):null;el.style.setProperty('--tl-delay',`${caseIndex!==null?caseIndex*160:Math.min(i*interval,dataProtection?220:660)}ms`);cascading.push(el)});
+  els.forEach((el,i)=>{if(serviceLanding&&el.getBoundingClientRect().top<=window.innerHeight)return;el.classList.add('tl-cascade');const caseIndex=el.closest('#casos')&&el.matches('.case-card')?[...el.parentElement.querySelectorAll('.case-card')].indexOf(el):null;el.style.setProperty('--tl-delay',`${caseIndex!==null?caseIndex*160:Math.min(i*interval,serviceLanding?220:660)}ms`);cascading.push(el)});
  });
  if(!reduce.matches&&'IntersectionObserver' in window){
   const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('tl-seen');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.08});
   cascading.forEach(el=>io.observe(el));document.documentElement.classList.add('motion-ready');
  }else cascading.forEach(el=>el.classList.add('tl-seen'));
- if(dataProtection)return;
+ if(serviceLanding)return;
  // Pair the selected country label with its destination marker in SVG order.
  document.querySelectorAll('.world-coverage-svg').forEach(svg=>{
   const labels=[...svg.querySelectorAll('.world-country-label')],markers=[...svg.querySelectorAll('.world-destination')];
