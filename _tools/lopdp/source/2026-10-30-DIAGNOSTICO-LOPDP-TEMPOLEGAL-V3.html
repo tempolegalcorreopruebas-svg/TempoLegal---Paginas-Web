@@ -1379,7 +1379,10 @@ function bajar(){
   const css=document.querySelector("style").innerHTML;
   const c=$("res").cloneNode(true);
   ["muro","cierre","reiniciar","fact"].forEach(id=>{const e=c.querySelector("#"+id); if(e) e.remove();});
-  const doc=`<!DOCTYPE html><html lang="es-EC"><head><meta charset="utf-8"><title>Diagnóstico LOPDP · TempoLegal</title><style>${css}</style></head><body><div class="wrap res">${c.innerHTML}</div></body></html>`;
+  const doc=`<!DOCTYPE html><html lang="es-EC"><head><meta charset="utf-8"><title>Diagnóstico LOPDP · TempoLegal</title><style>${css}</style>
+<link rel="stylesheet" href="../../../tempo-global-cursor.css" data-tempo-global-cursor="1">
+<script defer src="../../../tempo-global-cursor.js" data-tempo-global-cursor="1"></script>
+</head><body><div class="wrap res">${c.innerHTML}</div></body></html>`;
   const url=URL.createObjectURL(new Blob([doc],{type:"text/html"}));
   const a=document.createElement("a"); a.href=url; a.download=`Diagnostico-LOPDP-${expediente()}.html`;
   document.body.appendChild(a); a.click(); a.remove();

@@ -8,6 +8,13 @@ const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccio
   const $ = (q, parent=document) => parent.querySelector(q);
   const $$ = (q, parent=document) => [...parent.querySelectorAll(q)];
   const I = window.TempoI18n, t = I.t;
+  const localizedUi = {
+    es: {more:'Ver más servicios',less:'Ver menos servicios',read:'Leer testimonio completo',collapse:'Mostrar menos'},
+    en: {more:'View more services',less:'View fewer services',read:'Read full testimonial',collapse:'Show less'},
+    pt: {more:'Ver mais serviços',less:'Ver menos serviços',read:'Ler depoimento completo',collapse:'Mostrar menos'},
+    fr: {more:'Voir plus de services',less:'Voir moins de services',read:'Lire le témoignage complet',collapse:'Afficher moins'}
+  };
+  const ui = key => (localizedUi[I.language] || localizedUi.es)[key];
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const finePointer = matchMedia('(hover:hover) and (pointer:fine)');
   const node = (tag, className, text, attrs={}) => {
@@ -171,7 +178,7 @@ const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccio
     if(HOME_REVIEW){
       const wrapper=node('li','more-services-wrapper');
       const disclosure=node('details','more-services',null,{id:'more-services'});
-      const summary=node('summary','');summary.append(node('span','more-label','Ver más servicios'),node('span','less-label','Ver menos servicios'),node('span','more-services-symbol','+',{'aria-hidden':'true'}));
+      const summary=node('summary','');summary.append(node('span','more-label',ui('more')),node('span','less-label',ui('less')),node('span','more-services-symbol','+',{'aria-hidden':'true'}));
       const extra=node('ol','additional-services',null,{start:'5','aria-label':'Servicios adicionales'});
       [...list.children].slice(4).forEach(item=>extra.append(item));
       disclosure.append(summary,extra);wrapper.append(disclosure);list.append(wrapper);
@@ -298,7 +305,7 @@ const SERVICE_PAGES=/\/(en|pt|fr)\//.test(location.pathname)?{}:{data:'proteccio
     const quote=node('blockquote','quote-text');let beginning=item.paragraphs[0],remaining=item.paragraphs.slice(1);
     if(item.id==='pablo'){const end=beginning.indexOf('. ',beginning.indexOf('. ')+2);if(end>=0){remaining=[beginning.slice(end+2),...remaining];beginning=beginning.slice(0,end+1);}}
     quote.append(node('p','',beginning));
-    if(remaining.length){const details=node('details','quote-full');const summary=node('summary','');summary.append(node('span','more-label','Leer testimonio completo'),node('span','less-label','Mostrar menos'));details.append(summary);remaining.forEach(p=>details.append(node('p','',p)));quote.append(details);}
+    if(remaining.length){const details=node('details','quote-full');const summary=node('summary','');summary.append(node('span','more-label',ui('read')),node('span','less-label',ui('collapse')));details.append(summary);remaining.forEach(p=>details.append(node('p','',p)));quote.append(details);}
     const author=node('footer','quote-author');
     if(item.image)author.append(node('img','quote-portrait',null,{src:BASE+'assets/testimonials/'+item.image,alt:'',width:'56',height:'56',loading:'lazy',decoding:'async'}));
     else author.append(node('span','quote-initials',item.id==='pablo'?'PLP':'EB',{'aria-hidden':'true'}));

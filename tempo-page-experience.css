@@ -1,0 +1,105 @@
+/* TempoLegal page experience | shared across ES/EN/PT/FR.
+   Visual styling only. No legal text or form data is changed. */
+/* Suppress legacy decorative hover underlines in every header. */
+.site-header nav > a::after,
+.site-header nav .nav-menu > a::after,
+.site-header nav .nav-menu-toggle::after,
+.site-header #main-nav > a::after,
+.tl-header .tl-nav > a::after,
+.tl-header .tl-nav .nav-menu-toggle::after,
+.tl-header #navigation > a::after,
+.tool-header nav > a::after,
+.tl-shared-header nav > a::after,
+.site-header :is(.nav-home,.nav-link)::after,
+.tl-header :is(.nav-home,.nav-link)::after {content:none!important;display:none!important;transform:none!important;border:0!important;box-shadow:none!important}
+.site-header nav > a:hover,.tl-header nav > a:hover,.tool-header nav > a:hover,
+.site-header nav .nav-menu-toggle:hover,.tl-header nav .nav-menu-toggle:hover {text-decoration:none!important}
+/* Keep visible keyboard focus, without decorative hover lines. */
+.site-header :is(a,button):focus-visible,.tl-header :is(a,button):focus-visible{outline:2px solid #a6f0fc!important;outline-offset:3px}
+
+/* All four localized data-protection hub pages. */
+.landing-proteccion-datos :is(.hub-hero-contact,.sanctions-proof .sanctions-inner > p:not(.sanctions-source),.route,.case-grid > article,.sector,.trust-card,.sanctions article,.resources article,.firm-logo,.faq details,.contact form){
+  border-radius:clamp(17px,2.2vw,29px)!important;
+  transition:transform .38s cubic-bezier(.2,.8,.2,1),box-shadow .38s ease,border-color .38s ease,background-color .38s ease;
+}
+.landing-proteccion-datos :is(.hub-hero-contact,.route,.case-grid > article,.sector,.trust-card,.sanctions article,.resources article,.firm-logo,.faq details):is(:hover,:focus-within){
+  transform:translateY(-5px);box-shadow:0 20px 44px rgba(6,64,83,.13),0 0 0 1px rgba(58,164,192,.18);
+}
+.landing-proteccion-datos .hub-hero-contact{box-shadow:0 18px 48px rgba(7,67,84,.1)}
+.landing-proteccion-datos .route-grid,.landing-proteccion-datos .sector-grid,.landing-proteccion-datos .case-grid{align-items:stretch}
+.landing-proteccion-datos :is(.route,.sector,.case-grid > article,.trust-card,.resources article){position:relative;isolation:isolate;overflow:hidden}
+.landing-proteccion-datos :is(.route,.sector,.case-grid > article,.trust-card,.resources article)::before{
+  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:0;
+  background:radial-gradient(330px circle at var(--tl-ux-x,50%) var(--tl-ux-y,50%),rgba(75,189,212,.2),transparent 75%);
+  transition:opacity .3s ease;
+}
+.landing-proteccion-datos :is(.route,.sector,.case-grid > article,.trust-card,.resources article):hover::before{opacity:1}
+.landing-proteccion-datos :is(.route,.sector,.case-grid > article,.trust-card,.resources article) > *{position:relative;z-index:1}
+.landing-proteccion-datos .sanctions-proof strong{display:inline-block;transition:filter .45s ease,text-shadow .45s ease}
+.landing-proteccion-datos .sanctions-proof strong:hover{filter:brightness(1.13);text-shadow:0 0 16px rgba(7,113,151,.14)}
+.landing-proteccion-datos :is(.button,a.button){border-radius:999px!important;transition:transform .26s ease,box-shadow .26s ease}
+.landing-proteccion-datos :is(.button,a.button):hover{transform:translateY(-2px);box-shadow:0 12px 27px rgba(7,87,104,.17)}
+
+/* Contact page: editorial cards, soft rounded form fields and tactile actions. */
+body.service-page:has(.contact-page-form) .service-hero-wide{
+  overflow:hidden;isolation:isolate;background:linear-gradient(125deg,#eaf3f1 0%,#f7faf9 57%,#e1f1f3 100%);
+}
+body.service-page:has(.contact-page-form) .service-hero-wide::before{
+  content:"";position:absolute;width:min(38vw,470px);aspect-ratio:1;top:-45%;right:-6%;
+  background:radial-gradient(circle,rgba(63,167,194,.15),transparent 68%);pointer-events:none;
+}
+body.service-page:has(.contact-page-form) .service-hero-wide .container{position:relative;z-index:1}
+body.service-page:has(.contact-page-form) .service-section.service-reveal{padding:clamp(28px,4vw,56px) clamp(20px,4vw,54px);border-radius:30px;
+  background:linear-gradient(150deg,#f4faf9,#e9f3f4);border:1px solid rgba(48,125,148,.13);
+  box-shadow:0 15px 42px rgba(9,54,70,.055);}
+body.service-page:has(.contact-page-form) .service-actions .button,
+body.service-page:has(.contact-page-form) .service-actions .text-link{
+  border-radius:999px!important;padding:15px 24px;display:inline-flex;align-items:center;gap:12px;
+  transition:transform .27s ease,box-shadow .27s ease,background-color .27s ease;
+}
+body.service-page:has(.contact-page-form) .service-actions .text-link{border:1px solid rgba(0,110,140,.24);background:rgba(255,255,255,.62);text-decoration:none}
+body.service-page:has(.contact-page-form) .service-actions :is(.button,.text-link):hover{transform:translateY(-3px);box-shadow:0 12px 27px rgba(14,83,102,.14)}
+body.service-page:has(.contact-page-form) .contact-details{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(13px,2vw,26px);
+  align-items:stretch;padding-block:clamp(28px,4vw,56px);
+}
+body.service-page:has(.contact-page-form) .contact-channel{
+  position:relative;min-width:0;margin:0!important;padding:clamp(21px,2.6vw,35px)!important;
+  border:1px solid rgba(38,130,153,.16)!important;border-radius:24px!important;
+  background:linear-gradient(160deg,#fff,#f1f8f8);box-shadow:0 12px 32px rgba(14,60,72,.06);
+  overflow:hidden;isolation:isolate;transition:transform .38s ease,box-shadow .38s ease,border-color .38s ease;
+}
+body.service-page:has(.contact-page-form) .contact-channel::before,
+body.service-page:has(.contact-page-form) .contact-page-form form::before{
+  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:0;
+  background:radial-gradient(320px circle at var(--tl-ux-x,50%) var(--tl-ux-y,50%),rgba(55,153,183,.17),transparent 72%);transition:opacity .3s ease;
+}
+body.service-page:has(.contact-page-form) .contact-channel:hover::before,
+body.service-page:has(.contact-page-form) .contact-page-form form:hover::before{opacity:1}
+body.service-page:has(.contact-page-form) .contact-channel > *,
+body.service-page:has(.contact-page-form) .contact-page-form form > *{position:relative;z-index:1}
+body.service-page:has(.contact-page-form) .contact-channel:is(:hover,:focus-within){transform:translateY(-5px);box-shadow:0 22px 48px rgba(6,66,80,.13);border-color:rgba(5,131,161,.32)!important}
+body.service-page:has(.contact-page-form) .contact-channel > a{font-size:clamp(20px,2.2vw,30px)!important;overflow-wrap:anywhere}
+body.service-page:has(.contact-page-form) .contact-page-form{padding-top:clamp(28px,4vw,58px);padding-bottom:clamp(55px,7vw,98px)}
+body.service-page:has(.contact-page-form) .contact-page-form form{
+  position:relative;isolation:isolate;max-width:900px;padding:clamp(20px,4vw,50px);
+  background:linear-gradient(140deg,#fff,#f7fbfa);border:1px solid rgba(0,110,140,.16);
+  border-radius:30px;box-shadow:0 18px 50px rgba(6,62,79,.09);overflow:hidden;
+}
+body.service-page:has(.contact-page-form) .contact-page-form :is(input,select,textarea){
+  border-radius:13px!important;border:1px solid #c7dcde!important;background:#fff!important;
+  padding:14px 16px!important;transition:border-color .23s,box-shadow .23s,background-color .23s;
+}
+body.service-page:has(.contact-page-form) .contact-page-form :is(input,select,textarea):focus{
+  border-color:#007b9c!important;box-shadow:0 0 0 4px rgba(0,124,158,.11);outline:none;
+}
+body.service-page:has(.contact-page-form) .contact-page-form :is(button,.button){border-radius:999px!important;transition:transform .24s,box-shadow .24s}
+body.service-page:has(.contact-page-form) .contact-page-form :is(button,.button):hover{transform:translateY(-2px);box-shadow:0 12px 27px rgba(6,65,85,.14)}
+
+/* Motion runs only after JS initializes; content remains visible without JS. */
+html.tl-ux-ready .tl-ux-reveal:not(.tl-ux-visible){opacity:0;transform:translate3d(0,22px,0);filter:blur(3px)}
+html.tl-ux-ready .tl-ux-reveal{transition:opacity .78s ease,transform .78s cubic-bezier(.16,1,.3,1),filter .78s ease;transition-delay:var(--tl-ux-delay,0ms)}
+html.tl-ux-ready .tl-ux-reveal.tl-ux-visible{opacity:1;transform:translate3d(0,0,0);filter:blur(0)}
+@media(max-width:850px){body.service-page:has(.contact-page-form) .contact-details{grid-template-columns:1fr}body.service-page:has(.contact-page-form) .contact-channel{padding:24px!important}}
+@media(max-width:600px){body.service-page:has(.contact-page-form) .service-section.service-reveal{border-radius:22px;padding:25px 20px}body.service-page:has(.contact-page-form) .contact-page-form form{border-radius:23px;padding:22px 18px}}
+@media(prefers-reduced-motion:reduce){html.tl-ux-ready .tl-ux-reveal{opacity:1!important;transform:none!important;filter:none!important;transition:none!important}:is(.landing-proteccion-datos,body.service-page:has(.contact-page-form)) *{scroll-behavior:auto!important}}

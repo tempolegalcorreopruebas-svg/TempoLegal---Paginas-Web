@@ -210,25 +210,42 @@ html:has(.consultation-dialog[open]) { overflow: hidden; scrollbar-gutter: stabl
 .consultation-dialog :is(.privacy-note, .form-hint, #form-status) { color: #d5e5e8; }
 
 /* Enlaces de acción de protección de datos. */
-:where(.landing-proteccion-datos, .landing-dpd-externo, .landing-implementacion,
+:is(.landing-proteccion-datos, .landing-dpd-externo, .landing-implementacion,
   .landing-salud, .landing-educacion, .landing-logistica, .landing-financiero,
-  .landing-tecnologia) main a:is(.text-link, .textlink, .cd-link):not(.button) {
-  min-height: 44px;
-  border-bottom: 0;
+  .landing-tecnologia) :is(main, .consultation-dialog) a:any-link {
+  text-decoration: none;
+}
+:is(.landing-proteccion-datos, .landing-dpd-externo, .landing-implementacion,
+  .landing-salud, .landing-educacion, .landing-logistica, .landing-financiero,
+  .landing-tecnologia) :is(main, .consultation-dialog) p a:any-link:not(.button) {
   font-weight: 600;
-  text-decoration: underline;
-  text-decoration-color: currentColor;
-  text-decoration-thickness: 1px;
-  text-underline-offset: .3em;
 }
-:where(.landing-proteccion-datos, .landing-dpd-externo, .landing-implementacion,
+:is(.landing-proteccion-datos, .landing-dpd-externo, .landing-implementacion,
   .landing-salud, .landing-educacion, .landing-logistica, .landing-financiero,
-  .landing-tecnologia) main a:is(.text-link, .textlink, .cd-link):not(.button):hover {
-  text-decoration-thickness: 2px;
+  .landing-tecnologia) :is(main, .consultation-dialog) p a:hover:not(.button) {
+  background: color-mix(in srgb, currentColor 10%, transparent);
+  border-radius: 3px;
 }
-:where(.landing-proteccion-datos, .landing-dpd-externo, .landing-implementacion,
+:is(.landing-proteccion-datos, .landing-dpd-externo, .landing-implementacion,
   .landing-salud, .landing-educacion, .landing-logistica, .landing-financiero,
-  .landing-tecnologia) main a:focus-visible {
+  .landing-tecnologia) :is(main, .consultation-dialog) a:is(.text-link, .textlink, .cd-link):not(.button) {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: .4rem .7rem;
+  border: 0;
+  border-radius: 6px 14px 6px 14px;
+  background: color-mix(in srgb, currentColor 8%, transparent);
+  font-weight: 600;
+}
+:is(.landing-proteccion-datos, .landing-dpd-externo, .landing-implementacion,
+  .landing-salud, .landing-educacion, .landing-logistica, .landing-financiero,
+  .landing-tecnologia) :is(main, .consultation-dialog) a:is(.text-link, .textlink, .cd-link):not(.button):hover {
+  background: color-mix(in srgb, currentColor 15%, transparent);
+}
+:is(.landing-proteccion-datos, .landing-dpd-externo, .landing-implementacion,
+  .landing-salud, .landing-educacion, .landing-logistica, .landing-financiero,
+  .landing-tecnologia) :is(main, .consultation-dialog) a:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 4px;
 }
@@ -286,7 +303,7 @@ html:has(.consultation-dialog[open]) { overflow: hidden; scrollbar-gutter: stabl
   align-items: center;
   gap: .75rem;
 }
-:is(.landing-proteccion-datos, .landing-dpd-externo, .landing-implementacion, .landing-salud) .whatsapp-launchers .whatsapp-float {
+:is(.landing-proteccion-datos, .landing-dpd-externo, .landing-implementacion, .landing-salud, .landing-educacion, .landing-sector) .whatsapp-launchers .whatsapp-float {
   position: relative;
   inset: auto;
 }
@@ -388,7 +405,7 @@ html:has(.consultation-dialog[open]) { overflow: hidden; scrollbar-gutter: stabl
     inset: auto max(16px, env(safe-area-inset-right)) calc(72px + env(safe-area-inset-bottom)) auto;
   }
   .whatsapp-launchers .whatsapp-caption { display: none; }
-  :is(.landing-proteccion-datos, .landing-dpd-externo, .landing-implementacion, .landing-salud) .whatsapp-launchers .whatsapp-float {
+  :is(.landing-proteccion-datos, .landing-dpd-externo, .landing-implementacion, .landing-salud, .landing-educacion, .landing-sector) .whatsapp-launchers .whatsapp-float {
     width: 48px;
     padding: 0;
     justify-content: center;
@@ -409,15 +426,15 @@ html:has(.consultation-dialog[open]) { overflow: hidden; scrollbar-gutter: stabl
   color: #193842;
   box-shadow: 0 10px 30px #173d482b;
 }
-:is(.landing-implementacion, .landing-proteccion-datos, .landing-salud) .dpd-chat-invite {
+:is(.landing-implementacion, .landing-proteccion-datos, .landing-salud, .landing-educacion, .landing-sector) .dpd-chat-invite {
   width: min(15.5rem, calc(100vw - 2rem));
   padding: 1.55rem 2rem .55rem .85rem;
 }
-:is(.landing-implementacion, .landing-proteccion-datos, .landing-salud) .dpd-chat-invite .dpd-chat-portrait {
+:is(.landing-implementacion, .landing-proteccion-datos, .landing-salud, .landing-educacion, .landing-sector) .dpd-chat-invite .dpd-chat-portrait {
   width: 2.5rem;
   height: 2.5rem;
 }
-:is(.landing-implementacion, .landing-proteccion-datos, .landing-salud) .dpd-chat-invite [data-chat-invite] {
+:is(.landing-implementacion, .landing-proteccion-datos, .landing-salud, .landing-educacion, .landing-sector) .dpd-chat-invite [data-chat-invite] {
   display: block;
   color: #193842;
   font-size: .93rem;
@@ -425,7 +442,7 @@ html:has(.consultation-dialog[open]) { overflow: hidden; scrollbar-gutter: stabl
   line-height: 1.35;
   text-align: start;
 }
-:is(.landing-implementacion, .landing-proteccion-datos, .landing-salud) .dpd-chat-invite [data-chat-invite] strong { color: #24576a; }
+:is(.landing-implementacion, .landing-proteccion-datos, .landing-salud, .landing-educacion, .landing-sector) .dpd-chat-invite [data-chat-invite] strong { color: #24576a; }
 .dpd-chat-invite[hidden] { display: none; }
 .dpd-chat-portrait {
   flex: none;
@@ -462,7 +479,7 @@ html:has(.consultation-dialog[open]) { overflow: hidden; scrollbar-gutter: stabl
   font-weight: 600;
   text-decoration: none;
 }
-:is(.landing-dpd-externo, .landing-implementacion, .landing-proteccion-datos, .landing-salud) .whatsapp-launchers .whatsapp-float:is(:link, :visited, :hover, :focus-visible, :active) {
+:is(.landing-dpd-externo, .landing-implementacion, .landing-proteccion-datos, .landing-salud, .landing-educacion, .landing-sector) .whatsapp-launchers .whatsapp-float:is(:link, :visited, :hover, :focus-visible, :active) {
   text-decoration: none;
 }
 @media (max-width: 600px) {
@@ -563,4 +580,137 @@ body.landing .hub-directory-group h3 {
   .hub-directory-groups {
     grid-template-columns: 1fr;
   }
+}
+
+:is(.landing-salud, .landing-educacion, .landing-sector) :is(#clientes, #situaciones, #alcance, #experiencia, #testimonio, #metodo, #cumplidatos, #equipo, #preguntas, #contacto) {
+  padding-block: clamp(2.25rem, 5vw, 4.5rem);
+}
+:is(.landing-salud, .landing-educacion, .landing-sector) :is(#situaciones, #alcance, #experiencia, #metodo, #equipo, #preguntas) h2 {
+  margin-block: .35rem .65rem;
+  font-size: clamp(1.9rem, 3.4vw, 3rem);
+  line-height: 1.12;
+  text-wrap: balance;
+}
+:is(.landing-salud, .landing-educacion, .landing-sector) :is(#situaciones, #preguntas) { background: #eaf2f4; }
+:is(.landing-salud, .landing-educacion, .landing-sector) :is(.case-grid, .method-steps) { gap: clamp(.75rem, 2vw, 1.2rem); }
+:is(.landing-salud, .landing-educacion, .landing-sector) :is(.case-grid > article, .method-steps > li) {
+  min-width: 0;
+  padding: clamp(.9rem, 2.5vw, 1.4rem);
+  border: 1px solid #c5d8dc;
+  border-radius: 8px 20px 8px 20px;
+  background: #fcfefe;
+}
+:is(.landing-salud, .landing-educacion, .landing-sector) #equipo .portrait-frame {
+  overflow: hidden;
+  border-radius: 10px 28px 10px 28px;
+}
+:is(.landing-salud, .landing-educacion, .landing-sector) #preguntas details {
+  margin: 0;
+  border: 0;
+  border-bottom: 1px solid #c5d8dc;
+  border-radius: 0;
+  background: transparent;
+}
+:is(.landing-salud, .landing-educacion, .landing-sector) #preguntas summary { min-height: 44px; padding-block: .65rem; }
+:is(.landing-salud, .landing-educacion, .landing-sector) main .button,
+:is(.landing-salud, .landing-educacion, .landing-sector) .consultation-dialog .button { border-radius: 7px 17px 7px 17px; }
+
+/* Cabecera compacta para logistica, finanzas y tecnologia. */
+body.landing-sector main > section.hero {
+  padding-bottom: clamp(.85rem, 2.5vh, 1.4rem);
+}
+.landing-sector .hero .hero-layout {
+  gap: clamp(1.1rem, 4vw, 3.5rem);
+  padding-block: clamp(1.25rem, 4vh, 2.4rem) clamp(.9rem, 3vh, 1.55rem);
+  align-items: center;
+}
+body.landing-sector main > section.hero h1 {
+  margin-block: .45rem .6rem;
+  font-size: clamp(2.15rem, 3.65vw, 4.2rem);
+  line-height: 1.06;
+  text-wrap: balance;
+}
+.landing-sector .hero .hero-copy > .eyebrow { margin-block: 0 .5rem; }
+.landing-sector .hero .hero-lead {
+  margin-block: .5rem;
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+  line-height: 1.45;
+}
+.landing-sector .hero .actions { gap: .45rem .65rem; margin-block: .75rem 0; }
+.landing-sector .hero .actions .button { padding: .75rem 1rem; }
+.landing-sector .hero :is(.response-promise, .first-step) { margin-block: .5rem 0; }
+.landing-sector .hero aside {
+  min-width: 0;
+  padding: clamp(1rem, 2vw, 1.65rem);
+  border: 1px solid #b9d3d940;
+  border-radius: 42px 8px 42px 8px;
+  background: #203e4b;
+  color: #f5f9fa;
+}
+.landing-sector .hero aside .eyebrow { margin: 0; color: #e4cb88; }
+.landing-sector .hero aside :is(.route-title, .map-title) {
+  margin-block: .5rem .8rem;
+  font-size: clamp(1.55rem, 2.3vw, 2.15rem);
+  line-height: 1.12;
+}
+.landing-sector .hero .route-stop,
+.landing-sector .hero .fin-index > a {
+  padding-block: .5rem;
+  border-color: #b9d3d940;
+}
+.landing-sector .hero .fin-index > a { color: #f5f9fa; }
+.landing-sector .hero .fin-index > a:hover { color: #e4cb88; }
+.landing-sector .hero .fin-index strong { font-size: clamp(1.15rem, 1.65vw, 1.5rem); }
+.landing-sector .hero .fin-index span span,
+.landing-sector .hero .route-stop small { margin-top: .15rem; color: #c8dee4; }
+.landing-sector .hero :is(.route-stop > span, .fin-index small) { color: #e4cb88; }
+.landing-sector .hero aside :is(.route-note, .illustration-note) {
+  margin: .65rem 0 0;
+  color: #c8dee4;
+  line-height: 1.4;
+}
+.landing-sector .hero .map-node { padding: .4rem .75rem; gap: .1rem; line-height: 1.3; }
+.landing-sector .hero .map-connector { padding: .2rem .75rem; line-height: 1.35; }
+.landing-sector .hero .hero-benefits {
+  margin-top: 0;
+  gap: .65rem 1.2rem;
+  padding-top: .65rem;
+}
+.landing-sector .hero .hero-benefits span { margin-top: .2rem; color: #c8dee4; line-height: 1.4; }
+@media (max-width: 700px) {
+  .landing-sector .hero aside { margin-top: 1rem; }
+}
+
+/* Tarjetas de contenido de las paginas de proteccion de datos. */
+.landing { --pd-card-radius: var(--tempo-card-radius, 16px 30px 16px 30px); }
+:is(.landing-proteccion-datos, .landing-dpd-externo, .landing-implementacion, .landing-salud, .landing-educacion, .landing-sector) main :is(
+  .route-grid > .route,
+  .sector-grid > a.sector,
+  .tech-routes > article,
+  .school-split > article,
+  .case-grid > article,
+  .documented-cases > article,
+  .start-columns > article,
+  .scope-grid > article,
+  .functions > article,
+  .services > article,
+  .steps > article,
+  .method-steps > li,
+  .implementation-steps > li,
+  .school-case,
+  .named-case
+) {
+  border: 1px solid #c9dadd;
+  border-radius: var(--pd-card-radius);
+  padding: clamp(1.1rem, 2.6vw, 2rem);
+  background: #f8fbfb;
+  box-shadow: 0 14px 30px -26px #163b4a66;
+}
+
+:is(.landing-sector, .landing-educacion) main :is(.tech-routes, .school-split) > article {
+  border-block-start: 2px solid #c9b574;
+}
+
+:is(.landing-sector, .landing-educacion) main :is(.tech-routes, .school-split) > article > h3 {
+  margin-block-end: .5rem;
 }

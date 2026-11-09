@@ -1310,7 +1310,7 @@ window.TEMPO_CONTENT = {
     "caseItems": [
       {
         "id": "gma",
-        "name": "Grupo Mosquera Aulestia",
+        "name": "Mosquera Aulestia Group",
         "icon": "data",
         "sector": "Business group",
         "summary": "Ongoing advice for a logistics and foreign trade group with several companies.",
@@ -1356,7 +1356,7 @@ window.TEMPO_CONTENT = {
       },
       {
         "id": "cce",
-        "name": "Cámara de Comercio Exterior",
+        "name": "Foreign Trade Chamber",
         "icon": "data",
         "sector": "Establishing a business in Ecuador",
         "summary": "A Peruvian organization needed to establish its companies and coordinate their local operations.",
@@ -2218,7 +2218,7 @@ window.TEMPO_CONTENT = {
       },
       {
         "id": "cce",
-        "name": "Cámara de Comercio Exterior",
+        "name": "Câmara de Comércio Exterior",
         "icon": "data",
         "sector": "Estabelecimento no Equador",
         "summary": "Uma organização de origem peruana precisava estabelecer suas empresas e coordenar sua operação local.",
@@ -3034,7 +3034,7 @@ window.TEMPO_CONTENT = {
     "caseItems": [
       {
         "id": "gma",
-        "name": "Grupo Mosquera Aulestia",
+        "name": "Groupe Mosquera Aulestia",
         "icon": "data",
         "sector": "Groupe d’entreprises",
         "summary": "Conseil récurrent pour un groupe de logistique et de commerce extérieur comprenant plusieurs sociétés.",
@@ -3080,7 +3080,7 @@ window.TEMPO_CONTENT = {
       },
       {
         "id": "cce",
-        "name": "Cámara de Comercio Exterior",
+        "name": "Chambre du commerce extérieur",
         "icon": "data",
         "sector": "Implantation en Équateur",
         "summary": "Une organisation d’origine péruvienne devait établir ses sociétés et coordonner leur activité locale.",

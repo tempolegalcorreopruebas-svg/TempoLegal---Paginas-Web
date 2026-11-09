@@ -11,11 +11,6 @@
 .site-header .nav-menu-panel .nav-menu-col a.is-current-service:hover {background:#00536d!important;color:#fff!important}
 .site-header .nav-menu-toggle.has-current-service {background:rgba(101,216,235,.17)!important;color:#fff!important;box-shadow:none!important}
 .site-header .nav-menu-panel .nav-menu-col a:not(.is-current-service):focus-visible {outline:2px solid #006e8c!important;outline-offset:2px}
-/* Data protection sector shortcuts */
-.nav-menu-col .tl-sector-menu{border-top:1px solid #c8dfe3;margin-top:12px;padding-top:11px;display:grid;gap:3px}
-.nav-menu-col .tl-sector-menu-title{color:#006e8c;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;padding:0 8px 6px}
-.nav-menu-col .tl-sector-menu a{font-size:12px!important;line-height:1.35!important;padding:6px 9px!important;white-space:normal!important;min-height:0!important}
-.nav-menu-col .tl-sector-menu .tl-sector-more{color:#006e8c!important;font-weight:700!important;margin-top:3px}
 .nav-menu-panel{max-height:min(79vh,730px);overflow-y:auto;overscroll-behavior:contain}
 /* Footer details: reveal sector choices smoothly with accessible native details. */
 .footer-sectors>summary{border-radius:12px;padding:5px 8px;transition:color .2s,background .2s,transform .2s!important}
@@ -86,7 +81,6 @@
 /* Definitive active-service contrast. Restrict top-level header button styles
    so they cannot override links inside the mega menu. */
 .site-header #main-nav .nav-menu-panel .nav-menu-col > a:is(.is-current-service,[aria-current="page"]),
-.site-header #main-nav .nav-menu-panel .nav-menu-col .tl-sector-menu > a:is(.is-current-service,[aria-current="page"]),
 .tl-header .nav-menu-panel .nav-menu-col > a:is(.is-current-service,[aria-current="page"]) {
   background:#006e8c!important;
   background-image:none!important;
@@ -108,159 +102,4 @@
 }
 .site-header #main-nav .nav-menu-panel .nav-menu-col > a:is(.is-current-service,[aria-current="page"])::before {
   opacity:0!important;pointer-events:none!important;
-}
-
-
-/* 2026-11-06: Collapsible sector shortcuts inside Services mega menu. */
-.nav-menu-col .tl-sector-menu{display:block!important}
-.nav-menu-col .tl-sector-disclosure{display:block;min-width:0}
-.nav-menu-col .tl-sector-disclosure-toggle{
-  display:flex;align-items:center;justify-content:space-between;gap:12px;
-  margin:0;cursor:pointer;border-radius:12px;padding:9px 11px;
-  background:rgba(0,110,140,.065);border:1px solid rgba(0,110,140,.15);
-  color:#065d75;list-style:none;user-select:none;
-  transition:background .22s ease,border-color .22s ease,box-shadow .22s ease;
-}
-.nav-menu-col .tl-sector-disclosure-toggle::-webkit-details-marker{display:none}
-.nav-menu-col .tl-sector-disclosure-toggle::marker{content:""}
-.nav-menu-col .tl-sector-disclosure-toggle:hover,
-.nav-menu-col .tl-sector-disclosure-toggle:focus-visible{
-  background:rgba(0,110,140,.12);border-color:rgba(0,110,140,.42);
-  box-shadow:0 4px 16px rgba(0,70,92,.085);
-}
-.nav-menu-col .tl-sector-disclosure-toggle:focus-visible{outline:2px solid #0b839d;outline-offset:3px}
-.nav-menu-col .tl-sector-disclosure-toggle .tl-sector-menu-title{
-  padding:0!important;margin:0!important;letter-spacing:.13em;
-  color:#065d75!important;line-height:1.5;
-}
-.nav-menu-col .tl-sector-disclosure-icon{
-  position:relative;display:block;flex:0 0 23px;width:23px;height:23px;
-  border-radius:50%;background:#006e8c;transition:background .2s,transform .25s;
-}
-.nav-menu-col .tl-sector-disclosure-icon::before,
-.nav-menu-col .tl-sector-disclosure-icon::after{
-  content:"";position:absolute;left:50%;top:50%;background:#fff;
-  transform:translate(-50%,-50%);border-radius:2px;
-}
-.nav-menu-col .tl-sector-disclosure-icon::before{width:10px;height:2px}
-.nav-menu-col .tl-sector-disclosure-icon::after{width:2px;height:10px;transition:opacity .18s}
-.nav-menu-col .tl-sector-disclosure[open] .tl-sector-disclosure-icon{transform:rotate(180deg)}
-.nav-menu-col .tl-sector-disclosure[open] .tl-sector-disclosure-icon::after{opacity:0}
-.nav-menu-col .tl-sector-disclosure-body{
-  display:grid;gap:3px;padding:8px 0 0;
-  animation:tempoSectorsExpand .3s cubic-bezier(.2,.85,.3,1) both;
-  transform-origin:top center;
-}
-@keyframes tempoSectorsExpand{
-  from{opacity:0;transform:translateY(-7px) scaleY(.96)}
-  to{opacity:1;transform:translateY(0) scaleY(1)}
-}
-@media(prefers-reduced-motion:reduce){
-  .nav-menu-col .tl-sector-disclosure-body{animation:none!important}
-  .nav-menu-col .tl-sector-disclosure-toggle,.nav-menu-col .tl-sector-disclosure-icon{transition:none!important}
-}
-
-
-/* 2026-11-06 · Sector options fly out into an adjacent column on wide screens. */
-@media (min-width: 1180px) {
-  .site-header .nav-menu-panel:has(.tl-sector-disclosure[open]),
-  .tl-header .nav-menu-panel:has(.tl-sector-disclosure[open]) {
-    width: min(1180px, calc(100vw - 32px)) !important;
-    max-width: calc(100vw - 32px) !important;
-    overflow-x: visible !important;
-  }
-  .nav-menu-panel .nav-menu-grid:has(.tl-sector-disclosure[open]) {
-    grid-template-columns: repeat(5,minmax(0,1fr)) !important;
-    gap: 16px !important;
-  }
-  .nav-menu-panel .nav-menu-grid:has(.tl-sector-disclosure[open]) > .nav-menu-col:nth-child(2) {
-    position: relative;
-  }
-  .nav-menu-panel .nav-menu-grid:has(.tl-sector-disclosure[open]) > .nav-menu-col:nth-child(3) {
-    grid-column: 4;
-  }
-  .nav-menu-panel .nav-menu-grid:has(.tl-sector-disclosure[open]) > .nav-menu-col:nth-child(4) {
-    grid-column: 5;
-  }
-  .nav-menu-panel .tl-sector-disclosure[open] .tl-sector-disclosure-body {
-    position: absolute !important;
-    top: 0 !important;
-    left: calc(100% + 16px) !important;
-    width: 100% !important;
-    z-index: 2;
-    box-sizing: border-box;
-    padding: 12px 9px !important;
-    background: #e7f6f8;
-    border: 1px solid #c1e2e9;
-    border-radius: 15px;
-    box-shadow: 0 9px 22px rgba(7,75,96,.08);
-    animation: tempoSectorsSide .28s cubic-bezier(.2,.85,.3,1) both;
-  }
-  .nav-menu-panel .tl-sector-disclosure[open] .tl-sector-disclosure-body a {
-    color: #17323c;
-    display: block;
-  }
-  @keyframes tempoSectorsSide {
-    from {opacity:0; transform:translateX(-8px); filter:blur(2px)}
-    to {opacity:1; transform:translateX(0); filter:blur(0)}
-  }
-}
-@media (prefers-reduced-motion:reduce) {
-  .nav-menu-panel .tl-sector-disclosure[open] .tl-sector-disclosure-body {animation:none !important;}
-}
-
-/* 2026-11-06 · Softer sector flyout, shared across ES/EN/PT/FR.
-   Animate only the flyout itself, not the mega-menu positioning. */
-@media (min-width: 1180px) and (prefers-reduced-motion: no-preference) {
-  .site-header .nav-menu-panel .tl-sector-disclosure[open] .tl-sector-disclosure-body,
-  .tl-header .nav-menu-panel .tl-sector-disclosure[open] .tl-sector-disclosure-body {
-    animation: tempoSectorsFloatIn .48s cubic-bezier(.16,1,.3,1) both !important;
-    transform-origin: left center;
-    will-change: opacity, transform, filter;
-  }
-  .site-header .nav-menu-panel .tl-sector-disclosure[open] .tl-sector-disclosure-body > a,
-  .tl-header .nav-menu-panel .tl-sector-disclosure[open] .tl-sector-disclosure-body > a {
-    animation: tempoSectorsLinkIn .36s cubic-bezier(.2,.8,.25,1) both;
-    animation-delay: calc(85ms + (var(--sector-item-index, 0) * 48ms));
-  }
-  .tl-sector-disclosure-body > a:nth-child(1) { --sector-item-index: 0; }
-  .tl-sector-disclosure-body > a:nth-child(2) { --sector-item-index: 1; }
-  .tl-sector-disclosure-body > a:nth-child(3) { --sector-item-index: 2; }
-  .tl-sector-disclosure-body > a:nth-child(4) { --sector-item-index: 3; }
-  .tl-sector-disclosure-body > a:nth-child(5) { --sector-item-index: 4; }
-  .tl-sector-disclosure-body > a:nth-child(6) { --sector-item-index: 5; }
-}
-@keyframes tempoSectorsFloatIn {
-  0% { opacity: 0; transform: translate3d(-13px, 5px, 0) scale(.975); filter: blur(5px); }
-  65% { opacity: 1; filter: blur(0); }
-  100% { opacity: 1; transform: translate3d(0,0,0) scale(1); filter: blur(0); }
-}
-@keyframes tempoSectorsLinkIn {
-  from { opacity:0; transform:translate3d(-7px,4px,0); }
-  to { opacity:1; transform:translate3d(0,0,0); }
-}
-@media (max-width: 1179px) and (prefers-reduced-motion: no-preference) {
-  .nav-menu-col .tl-sector-disclosure[open] .tl-sector-disclosure-body {
-    animation: tempoSectorsMobileIn .42s cubic-bezier(.16,1,.3,1) both !important;
-  }
-}
-@keyframes tempoSectorsMobileIn {
-  from { opacity:0; transform:translateY(-6px); filter:blur(3px); }
-  to { opacity:1; transform:translateY(0); filter:blur(0); }
-}
-@media (prefers-reduced-motion: reduce) {
-  .nav-menu-panel .tl-sector-disclosure-body,
-  .nav-menu-panel .tl-sector-disclosure-body > a { animation:none !important; transition:none !important; }
-}
-
-/* Consistent, repeatable sector flyout entry and exit (desktop + mobile).
-   The native details stays open during exit so its panel can finish animating. */
-.nav-menu-panel .tl-sector-disclosure.tl-sector-is-closing .tl-sector-disclosure-body,
-.nav-menu-panel .tl-sector-disclosure.tl-sector-is-closing .tl-sector-disclosure-body > a {
-  animation: none !important;
-}
-@media (prefers-reduced-motion: reduce) {
-  .nav-menu-panel .tl-sector-disclosure .tl-sector-disclosure-body {
-    animation: none !important;
-  }
 }

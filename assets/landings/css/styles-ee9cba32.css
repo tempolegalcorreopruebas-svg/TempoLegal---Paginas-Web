@@ -55,7 +55,7 @@
 @media(max-width:900px){.logo-wall{grid-template-columns:repeat(4,minmax(0,1fr))}.advantage-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.team-layout{grid-template-columns:1fr}.sector-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.hero-service h1{font-size:44px}.delivery{padding:26px;box-shadow:7px 7px 0 #d8e5e2}.delivery-number{font-size:76px}.delivery-unit{font-size:16px;margin-left:12px}.logo-wall{grid-template-columns:repeat(3,minmax(0,1fr))}.logo-wall>div{padding:13px 9px;min-height:80px}.logo-wall img{height:50px}.client-strip h2{font-size:30px}.advantage-grid{grid-template-columns:1fr;gap:28px}.advantage-grid h3{margin-top:14px}.technical-heading{display:block}.technical-heading p{margin-top:16px}.technical-people{grid-template-columns:1fr;gap:30px}.portrait-pending{aspect-ratio:4/2}.technical-people h3{font-size:25px}.sector-grid{grid-template-columns:1fr}.case-grid article{padding:25px}.people h3{font-size:24px}.hub-shortcuts strong{width:100%}.hub-shortcuts a{font-size:12px}.client-strip .text-link{font-size:14px}.technical-team{margin-top:35px}}
 
-.portrait-frame{aspect-ratio:3/4;overflow:hidden;background:#e0e8e5}.people .portrait-frame img{height:100%;width:100%;aspect-ratio:auto;object-fit:cover}.people .portrait-frame .juan-photo{transform:scale(1.2);transform-origin:50% 16%}
+.portrait-frame{aspect-ratio:3/4;overflow:hidden;background:#e0e8e5}.people .portrait-frame img{height:100%;width:100%;aspect-ratio:auto;object-fit:cover}.people .portrait-frame .juan-photo,.landing-proteccion-datos .people .portrait-frame .emillie-photo{transform:scale(1.2);transform-origin:50% 16%}
 
 /* V4: client recognition with faithful excerpts and progressive disclosure. */
 .trust-testimonials{background:#fff}.trust-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px}.trust-card{border-top:3px solid var(--teal);padding:30px;background:#f5f8f6;display:flex;flex-direction:column;min-width:0}.trust-card>.eyebrow{margin-bottom:18px}.trust-card blockquote{font:19px/1.6 var(--sans);color:var(--ink);margin:0 0 30px}.trust-card .quote-author{display:flex;align-items:center;flex-wrap:wrap;gap:17px;margin-top:auto}.trust-card .quote-portrait{width:64px;height:64px;border-radius:50%;object-fit:cover;object-position:center 25%}.trust-card .quote-identity{flex:1;min-width:170px}.trust-card .quote-identity h3{font:26px/1.15 var(--serif);margin:0 0 8px}.trust-card .quote-role,.trust-card .quote-company{font-size:13px;line-height:1.5;margin:4px 0;color:var(--muted)}.trust-card .quote-personal-note{font-size:12px;line-height:1.6;color:var(--muted);margin-top:12px}.trust-card .quote-logo{width:100px;height:48px;object-fit:contain;mix-blend-mode:multiply}.trust-card .quote-website{font-size:13px;text-decoration:underline}.more-testimonials{margin-top:30px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.more-testimonials>summary{justify-content:center;gap:22px;padding:22px;color:var(--teal);font-weight:600}.more-testimonials .more-open{display:none}.more-testimonials[open] .more-open{display:inline}.more-testimonials[open] .more-closed{display:none}.expanded-trust{padding:10px 0 35px}.expanded-trust>h3{font-size:30px;margin:10px 0 25px}.trust-full blockquote{font-size:17px;line-height:1.65}.trust-full{background:#fff;border:1px solid var(--line);padding:28px}.proof-testimonials{font-size:13px;margin-top:10px}
@@ -191,7 +191,6 @@ body.landing .hub-hero h1 {
   background: #fcfefe;
   border: 1px solid #cfdddf;
   border-top: 3px solid #3f7081;
-  border-radius: 4px;
   box-shadow: 0 6px 18px #173d4809;
 }
 #servicios .route .num {
@@ -316,7 +315,7 @@ body.landing .hub-hero h1 {
 .landing-proteccion-datos :is(#servicios .route a, main .button, .consultation-dialog .button, .whatsapp-chat-options button) {
   border-radius: 7px 17px 7px 17px;
 }
-.landing-proteccion-datos :is(#servicios .route, #experiencia .case-grid > article, #sectores a.sector, #recursos .resource-grid > article) {
+.landing-proteccion-datos #recursos .resource-grid > article {
   border-radius: 8px 22px 8px 22px;
 }
 .landing-proteccion-datos #equipo .portrait-frame {

@@ -287,7 +287,7 @@ body.landing-implementacion .impl-hero h1 {
   padding: clamp(.9rem, 2.5vw, 1.25rem);
   border: 1px solid #c5d8dc;
   border-inline-start: 3px solid #47778a;
-  border-radius: 7px 18px 7px 18px;
+  border-radius: var(--pd-card-radius);
   background: #fff;
 }
 .landing-implementacion #punto-partida article + article { border-inline-start-color: #a9853f; }

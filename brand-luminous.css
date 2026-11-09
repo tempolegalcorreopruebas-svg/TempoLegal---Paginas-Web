@@ -12,3 +12,48 @@
  opacity:1!important;transform:translateY(-1px) scale(1.025)!important;
 }
 @media (prefers-reduced-motion:reduce){.site-header .brand img,.tl-header .tl-brand img{transition:none!important;transform:none!important}}
+
+/* Curvatura compartida de las superficies del sitio. */
+:root {
+  --tempo-card-radius: 16px 30px 16px 30px;
+  --tempo-control-radius: 9px 17px 9px 17px;
+}
+
+body main :is(
+  .tl-post-card, .practice-panel, .coverage-origin-card,
+  .contact-page-form, .contact-review, .contact-delivery-status,
+  .profile-photo, .profile-career, .about-member > img,
+  .project-graphic, .project-related-card,
+  .tl-calc-panel, .tl-stat, .tl-finding
+),
+body.service-page main :is(.service-overview, .service-conditions, .about-financial, .technical-person),
+body main.approved-service :is(
+  .international-proof, .change-preview, .agenda, .concept, .cycle,
+  .service-paper, .node, .scope-note-own, .scope-note-new,
+  .responsibility-note, .working-agreement, .change-panel, .route-panels,
+  .representation-map, .contact-page-form, .cases > article
+),
+body #recursos .tl-posts-three > .tl-post-card {
+  border-radius: var(--tempo-card-radius);
+}
+
+body main :is(.publication-entry, .article-related-link, .profile-colleague, .privacy-index) {
+  min-width: 0;
+  padding: clamp(1rem, 2.4vw, 1.65rem);
+  border: 1px solid #d6e4e6;
+  border-radius: var(--tempo-card-radius);
+  background: #f8fbfb;
+}
+
+body main :is(.publication-entry, .article-related-link, .profile-colleague) + :is(.publication-entry, .article-related-link, .profile-colleague) {
+  margin-block-start: .75rem;
+}
+
+body main :is(.button, .tl-button, .tl-choice),
+body main .contact-page-form :is(input, textarea, select) {
+  border-radius: var(--tempo-control-radius);
+}
+
+@media (max-width: 760px) {
+  body main .privacy-table tr { border-radius: var(--tempo-control-radius); }
+}

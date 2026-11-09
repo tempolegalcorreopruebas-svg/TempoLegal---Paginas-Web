@@ -1,0 +1,66 @@
+{
+  "changes": [
+    [
+      "es",
+      "team-cristian-coque.html",
+      "../team-cristian-coque.html"
+    ],
+    [
+      "es",
+      "team-ruben-nacimba.html",
+      "../team-ruben-nacimba.html"
+    ],
+    [
+      "es",
+      "team-anthony-uribe.html",
+      "../team-anthony-uribe.html"
+    ],
+    [
+      "en",
+      "../team-cristian-coque.html",
+      "../../team-cristian-coque.html"
+    ],
+    [
+      "en",
+      "../team-ruben-nacimba.html",
+      "../../team-ruben-nacimba.html"
+    ],
+    [
+      "en",
+      "../team-anthony-uribe.html",
+      "../../team-anthony-uribe.html"
+    ],
+    [
+      "pt",
+      "../team-cristian-coque.html",
+      "../../team-cristian-coque.html"
+    ],
+    [
+      "pt",
+      "../team-ruben-nacimba.html",
+      "../../team-ruben-nacimba.html"
+    ],
+    [
+      "pt",
+      "../team-anthony-uribe.html",
+      "../../team-anthony-uribe.html"
+    ],
+    [
+      "fr",
+      "../team-cristian-coque.html",
+      "../../team-cristian-coque.html"
+    ],
+    [
+      "fr",
+      "../team-ruben-nacimba.html",
+      "../../team-ruben-nacimba.html"
+    ],
+    [
+      "fr",
+      "../team-anthony-uribe.html",
+      "../../team-anthony-uribe.html"
+    ]
+  ],
+  "unresolved": [],
+  "profile_links_audited": 404
+}

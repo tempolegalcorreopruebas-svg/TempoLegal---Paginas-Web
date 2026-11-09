@@ -1,0 +1,51 @@
+/* TempoLegal global cursor glow | independent, non-interactive visual overlay */
+#tempo-global-cursor-glow {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 172px;
+  height: 172px;
+  z-index: 2147480000;
+  pointer-events: none !important;
+  user-select: none;
+  contain: layout style paint;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate3d(-220px, -220px, 0);
+  will-change: transform, opacity;
+  transition: opacity 180ms ease;
+  mix-blend-mode: normal;
+}
+#tempo-global-cursor-glow.is-visible { opacity: .92; }
+#tempo-global-cursor-glow::before,
+#tempo-global-cursor-glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  transition: opacity 200ms ease;
+}
+/* Dark surfaces: cool, pearly luminous blue. */
+#tempo-global-cursor-glow::before {
+  background: radial-gradient(circle,
+    rgba(214, 251, 255, .42) 0%,
+    rgba(92, 215, 243, .24) 11%,
+    rgba(42, 173, 209, .10) 32%,
+    rgba(42, 173, 209, 0) 69%);
+  opacity: 1;
+}
+/* Light surfaces: translucent deep blue — no heavy disk. */
+#tempo-global-cursor-glow::after {
+  background: radial-gradient(circle,
+    rgba(2, 75, 111, .24) 0%,
+    rgba(0, 101, 143, .13) 12%,
+    rgba(0, 99, 137, .055) 34%,
+    rgba(0, 99, 137, 0) 70%);
+  opacity: 0;
+}
+#tempo-global-cursor-glow.is-on-light::before { opacity: 0; }
+#tempo-global-cursor-glow.is-on-light::after { opacity: 1; }
+@media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
+  #tempo-global-cursor-glow { display: none !important; }
+}
+@media print { #tempo-global-cursor-glow { display: none !important; } }

@@ -29,3 +29,76 @@
 
 /* Revisión 26 octubre 2026: riesgo breve y CumpliDatos confirmado. */
 .response-promise{display:flex;align-items:center;gap:.55rem;font-size:.9rem;line-height:1.5;margin:1rem 0;color:inherit}.response-promise:before{content:"";width:.45rem;height:.45rem;flex:0 0 .45rem;border-radius:50%;background:#d7bd6d}.sanctions-proof{background:#fff8f7;border-top:1px solid #ead8d4;border-bottom:1px solid #ead8d4;color:#263f47;padding:1.25rem 0}.sanctions-proof .sanctions-inner{width:min(1180px,calc(100% - 40px));margin:auto;display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:1rem 2rem;align-items:center}.sanctions-proof h2{font-size:1.1rem;line-height:1.3;margin:0 0 .25rem;font-family:inherit;letter-spacing:normal}.sanctions-proof p{margin:0;font-size:.88rem;line-height:1.5}.sanctions-proof strong{color:#8b3e35}.sanctions-proof .sanctions-source{grid-column:1/-1;font-size:.8rem;line-height:1.5}.sanctions-proof a{color:#71342e;text-decoration:underline;text-underline-offset:3px}.cd-future{font-size:.85rem;line-height:1.6;margin-top:1rem}.cd-future strong{display:block;color:inherit}.cd-steps .cd-future strong{font-size:.85rem;margin:0}.cd-steps .cd-future{padding-top:.8rem;border-top:1px solid #ffffff35}@media(max-width:700px){.sanctions-proof .sanctions-inner{grid-template-columns:1fr 1fr;gap:1rem}.sanctions-proof .sanctions-intro{grid-column:1/-1}.sanctions-proof .sanctions-source{font-size:.8rem}.sanctions-proof h2{font-size:1rem}}
+
+/* Compact education opening, including the notebook and the benefits strip. */
+.landing-educacion .education-hero { padding-bottom: .75rem; }
+.landing-educacion .education-hero .breadcrumb { padding-block: .6rem; }
+.landing-educacion .education-hero .hero-layout {
+  gap: clamp(1rem, 4vw, 3rem);
+  padding-block: .65rem 1rem;
+}
+body.landing-educacion main > section.education-hero h1 {
+  margin: .5rem 0 .6rem;
+  font-size: clamp(2.15rem, 3.65vw, 3.45rem);
+  line-height: 1.04;
+  text-wrap: balance;
+}
+.landing-educacion .education-hero .hero-copy > .eyebrow { margin: 0 0 .5rem; }
+.landing-educacion .education-hero .hero-lead {
+  margin: 0;
+  font-size: clamp(1rem, 1.45vw, 1.16rem);
+  line-height: 1.45;
+}
+.landing-educacion .education-hero .actions { gap: .4rem .6rem; margin-top: .65rem; }
+.landing-educacion .education-hero .actions .button {
+  min-height: 46px;
+  padding: .55rem .85rem;
+  border-radius: 7px 17px 7px 17px;
+}
+.landing-educacion .education-hero :is(.response-promise, .first-step) {
+  margin-block: .45rem 0;
+  line-height: 1.4;
+}
+.landing-educacion .education-hero .education-notebook {
+  margin: 0;
+  padding: clamp(.85rem, 2.5svh, 1.35rem);
+  border: 1px solid #b9d3d940;
+  border-radius: 44px 6px 44px 6px;
+  background: #203e4b;
+  color: #eef6f7;
+  box-shadow: 0 12px 28px #0e263544;
+  transform: none;
+}
+.landing-educacion .education-notebook .notebook-title {
+  margin: .6rem 0;
+  color: #fff;
+  font-size: clamp(1.55rem, 2.6vw, 2.15rem);
+  line-height: 1.1;
+  text-wrap: balance;
+}
+.landing-educacion .education-notebook .notebook-index { margin-top: .65rem; }
+.landing-educacion .education-notebook .notebook-index > div { gap: .65rem; padding-block: .4rem; }
+.landing-educacion .education-notebook .notebook-index > div > span { font-size: 1.25rem; }
+.landing-educacion .education-notebook .notebook-index p { margin: 0; }
+.landing-educacion .education-notebook > a {
+  align-items: center;
+  min-height: 44px;
+  margin-top: .2rem;
+  color: #f0d899;
+}
+.landing-educacion .education-notebook .illustration-note { margin: .15rem 0 0; color: #c8dee4; }
+.landing-educacion .education-hero .hero-benefits { gap: .65rem 1.2rem; padding-top: .65rem; }
+.landing-educacion .education-hero .hero-benefits span { margin-top: .2rem; color: #c8dee4; line-height: 1.4; }
+@media (max-width: 700px) {
+  .landing-educacion .education-hero .education-notebook { margin-top: 1rem; }
+}
+.landing-educacion .education-notebook :is(.notebook-index, .notebook-index > div) { border-color: #b9d3d940; }
+.landing-educacion .education-notebook .notebook-index > div > span { color: #e4cb88; }
+.landing-educacion .education-notebook .notebook-index small { color: #c8dee4; }
+@media (min-width: 1100px) {
+  .landing-educacion .education-notebook .notebook-index {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: .85rem;
+  }
+}

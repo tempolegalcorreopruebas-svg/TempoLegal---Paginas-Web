@@ -14,9 +14,14 @@
 .nav-menu-panel[hidden]{display:none}
 .nav-menu-panel:before{content:'';position:absolute;top:-7px;left:38%;width:14px;height:14px;background:var(--surface);transform:rotate(45deg);box-shadow:-1px -1px 0 #0e3d4a14}
 .nav-menu-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px 28px}
+@media(min-width:1101px){
+.nav-menu-panel:has(.nav-menu-sectors){width:min(1020px,calc(100vw - 160px))}
+.nav-menu-grid:has(>.nav-menu-sectors){grid-template-columns:repeat(5,minmax(0,1fr));column-gap:clamp(12px,1.5vw,24px)}
+}
 .nav-menu-title{margin:0 0 10px;font-family:var(--serif);font-size:19px;line-height:1.2;color:var(--petroleo)}
 .nav-menu-col{display:flex;flex-direction:column;gap:2px;min-width:0}
 .nav-menu-col a{display:block;padding:6px 0;color:var(--ink)!important;font-size:14px;line-height:1.4;white-space:normal;text-decoration:none}
+.tl-header .tl-nav .nav-menu-col > a{display:block;padding-block:8px;white-space:normal;overflow-wrap:anywhere}
 .nav-menu-col a:after{display:none!important}
 .nav-menu-col a:hover{color:var(--teal)!important}
 .nav-menu-col a.is-current-service{background:#e5efec;color:#075d70!important;border-left:2px solid #b69b50;border-radius:0 12px 12px 0;padding-left:10px;padding-right:10px;font-weight:600}
