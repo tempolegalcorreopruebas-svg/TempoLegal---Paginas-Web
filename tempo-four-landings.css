@@ -1,0 +1,49 @@
+/* Shared visual enhancements for the four reviewed service landings. */
+.tl-refined-service {--tl-ink:#17323c;--tl-teal:#006e8c;--tl-soft:#edf4f4;--tl-stroke:rgba(0,110,140,.17)}
+.tl-refined-service .service-hero .button,.tl-refined-service .service-actions .button,
+.tl-refined-service .reform-hero .button,.tl-refined-service .tl-approved-hero a{
+ border-radius:999px!important;transition:transform .34s cubic-bezier(.2,.8,.2,1),box-shadow .34s,background .34s!important;
+}
+.tl-refined-service .service-hero .button:hover,.tl-refined-service .service-actions .button:hover,
+.tl-refined-service .reform-hero .button:hover,.tl-refined-service .tl-approved-hero a:hover{
+ transform:translateY(-3px);box-shadow:0 15px 32px rgba(0,110,140,.19)
+}
+.tl-refined-service .service-overview {border-radius:16px 36px 28px 36px;box-shadow:0 24px 60px rgba(12,53,67,.15)}
+.tl-refined-service .service-section{border-radius:18px 36px 24px 30px;}
+.tl-refined-service .service-related-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 24px!important;align-items:stretch;margin-top:25px}
+.tl-refined-service .service-related-links a{
+ display:flex;min-height:120px;align-items:center;justify-content:space-between;gap:20px;
+ padding:26px 30px!important;border:1px solid var(--tl-stroke)!important;
+ border-radius:16px 32px 22px 28px!important;box-shadow:0 14px 36px rgba(12,53,67,.065);
+ background:linear-gradient(145deg,#fff 30%,#eff5f5 100%)!important;
+ transition:transform .4s cubic-bezier(.2,.8,.2,1),background .35s,color .35s,box-shadow .4s,border-color .35s!important;
+}
+.tl-refined-service .service-related-links a:hover,.tl-refined-service .service-related-links a:focus-visible{
+ transform:translateY(-6px)!important;background:linear-gradient(130deg,#17323c,#006e8c)!important;
+ color:white!important;border-color:transparent!important;box-shadow:0 24px 40px rgba(12,53,67,.20);outline-offset:3px
+}
+.tl-refined-service .service-related-links a:hover *, .tl-refined-service .service-related-links a:focus-visible *{color:inherit!important}
+.tl-refined-service .service-related-links a .tl-link-arrow{display:inline-block;flex:none;transition:transform .3s ease;color:inherit}
+.tl-refined-service .service-related-links a:hover .tl-link-arrow{transform:translate(3px,-3px)}
+.tl-refined-service .service-question{border-radius:12px 26px 16px 22px;transition:box-shadow .3s,transform .3s,border-color .3s}
+.tl-refined-service .service-question:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(12,53,67,.075)}
+.tl-refined-service .tl-approved-card{border-radius:18px 32px 20px 28px;transition:transform .32s,box-shadow .32s,border-color .32s}
+.tl-refined-service .tl-approved-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(12,53,67,.12)}
+.tl-refined-service .related a{border-radius:16px 30px 20px 26px;transition:transform .35s,box-shadow .35s,background .35s}
+.tl-refined-service .related a:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(12,53,67,.11)}
+.tl-refined-service .service-process li{border-radius:14px 28px 18px 24px;transition:transform .3s,box-shadow .3s}
+.tl-refined-service .service-process li:hover{transform:translateY(-3px)}
+.tl-refined-service.tl-animate-ready .tl-scroll-appear:not(.tl-appeared){opacity:0;transform:translate3d(0,22px,0)}
+.tl-refined-service .tl-scroll-appear{transition:opacity .75s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1);transition-delay:var(--tl-delay,0ms)}
+.tl-refined-service.tl-animate-ready .tl-scroll-appear.tl-appeared{opacity:1;transform:none}
+.tl-refined-service .tl-hero-appear{opacity:0;transform:translate3d(0,25px,0);transition:opacity .72s ease,transform .85s cubic-bezier(.22,1,.36,1);transition-delay:var(--tl-delay,0ms)}
+.tl-refined-service.tl-hero-entered .tl-hero-appear{opacity:1;transform:none}
+/* Distinct rounded rectangles, not bubbles, for reforms and tax cards. */
+.tl-refined-service .tl-approved-card [class*="num"],.tl-refined-service .tl-approved-card > span:first-child[data-tl-number]{display:none}
+@media(min-width:1000px){
+ .tl-refined-service .service-hero:has(.service-overview){overflow:visible}
+ .tl-refined-service .service-hero-grid{align-items:start}
+ .tl-refined-service .service-overview{position:sticky;top:112px;align-self:start;max-height:calc(100vh - 130px);overflow:auto}
+}
+@media(max-width:820px){.tl-refined-service .service-related-links{grid-template-columns:1fr;gap:14px!important}.tl-refined-service .service-related-links a{min-height:92px;padding:20px 23px!important}}
+@media(prefers-reduced-motion:reduce){.tl-refined-service .tl-hero-appear,.tl-refined-service .tl-scroll-appear{opacity:1!important;transform:none!important;transition:none!important}}

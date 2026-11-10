@@ -1,0 +1,51 @@
+/* Corporate & Societario parity across the approved four service landings. */
+.tl-corporate-parity{--parity-ink:#17323c;--parity-teal:#006e8c;--parity-border:rgba(0,110,140,.16);--parity-shadow:0 18px 42px rgba(19,57,68,.09)}
+.tl-corporate-parity .service-hero-copy>*,.tl-corporate-parity .reform-hero .hero-grid-own>div:first-child>*,.tl-corporate-parity .tl-approved-hero .tl-container>*{transition:transform .78s cubic-bezier(.22,1,.36,1),opacity .78s ease;transition-delay:var(--parity-delay,0ms)}
+.tl-corporate-parity.parity-loading .service-hero-copy>*,.tl-corporate-parity.parity-loading .reform-hero .hero-grid-own>div:first-child>*,.tl-corporate-parity.parity-loading .tl-approved-hero .tl-container>*{opacity:0;transform:translateY(22px)}
+.tl-corporate-parity .service-section,.tl-corporate-parity .service-section.service-reveal{border-radius:24px 38px 30px 34px!important;padding:clamp(25px,3vw,42px);box-shadow:var(--parity-shadow);border:1px solid rgba(0,110,140,.07);background:rgba(255,255,255,.79)}
+.tl-corporate-parity .service-section>.service-process{margin-top:28px}
+.tl-corporate-parity .service-sidebar nav{border-radius:24px 34px 28px 30px;background:rgba(255,255,255,.86);border:1px solid rgba(0,110,140,.08);box-shadow:var(--parity-shadow);padding:22px}
+.tl-corporate-parity .service-hero .service-actions .button,.tl-corporate-parity .reform-hero .button,.tl-corporate-parity .tl-approved-actions a{border-radius:999px!important;transition:transform .28s ease,box-shadow .28s ease!important;box-shadow:0 13px 28px rgba(0,110,140,.14)}
+.tl-corporate-parity .service-hero .service-actions .button:hover,.tl-corporate-parity .reform-hero .button:hover,.tl-corporate-parity .tl-approved-actions a:hover{transform:translateY(-3px);box-shadow:0 20px 34px rgba(0,110,140,.2)}
+.tl-corporate-parity .service-hero .service-actions .text-link{display:inline-flex;border:1px solid rgba(0,110,140,.15);border-radius:999px;padding:13px 20px;text-decoration:none;background:rgba(255,255,255,.72);transition:transform .3s,background .3s,box-shadow .3s}
+.tl-corporate-parity .service-hero .service-actions .text-link:hover{transform:translateY(-3px);background:white;box-shadow:var(--parity-shadow)}
+.tl-corporate-parity .service-question,.tl-corporate-parity details.service-question{border-radius:14px 30px 20px 26px!important;margin-block:14px!important;background:linear-gradient(160deg,#fff,#f2f7f7);border:1px solid var(--parity-border);box-shadow:0 8px 20px rgba(19,57,68,.04)}
+.tl-corporate-parity .service-question summary{padding:21px 25px;cursor:pointer;transition:color .25s,padding-left .25s}
+.tl-corporate-parity .service-question summary:hover{color:var(--parity-teal);padding-left:31px}
+.tl-corporate-parity .service-related-links{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 26px!important;padding-top:12px}
+.tl-corporate-parity .service-related-links a{border-radius:18px 34px 24px 30px!important;min-height:116px!important;margin:0!important;padding:25px 27px!important;box-shadow:var(--parity-shadow);display:flex;justify-content:space-between;align-items:center}
+.tl-corporate-parity .service-related-links a:hover{transform:translateY(-5px)!important}
+/* Create the corporate landing's title-to-detail composition from existing step text. */
+.tl-corporate-parity .parity-explorer{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(22px,3vw,38px);margin-top:28px;align-items:start}
+.tl-corporate-parity .parity-titles{display:grid;gap:15px}
+.tl-corporate-parity .parity-title{appearance:none;display:flex;align-items:center;justify-content:space-between;text-align:left;gap:22px;width:100%;font-family:inherit;font-size:inherit;color:var(--parity-ink);background:linear-gradient(155deg,#fff,#f4f8f8);padding:24px 27px;border:1px solid var(--parity-border);border-radius:21px 33px 23px 29px;cursor:pointer;box-shadow:0 12px 28px rgba(19,57,68,.055);transition:transform .32s,box-shadow .32s,border-color .32s,background .32s}
+.tl-corporate-parity .parity-title-label{font-family:Editorial,Georgia,serif;font-size:clamp(1.3rem,2.2vw,2rem);line-height:1.2}
+.tl-corporate-parity .parity-title-arrow{color:var(--parity-teal);font-size:1.15rem;transition:transform .3s}
+.tl-corporate-parity .parity-title:hover,.tl-corporate-parity .parity-title:focus-visible,.tl-corporate-parity .parity-title[aria-selected=true]{transform:translateY(-3px);border-color:rgba(0,110,140,.35);box-shadow:var(--parity-shadow);background:linear-gradient(155deg,#fff,#ecf5f6)}
+.tl-corporate-parity .parity-title:hover .parity-title-arrow,.tl-corporate-parity .parity-title[aria-selected=true] .parity-title-arrow{transform:translate(4px,-3px)}
+.tl-corporate-parity .parity-panels{position:relative;min-height:315px;align-self:stretch}
+.tl-corporate-parity .parity-panel{display:none;position:relative;background:linear-gradient(135deg,#fdfefe,#eaf3f5);border:1px solid var(--parity-border);border-radius:24px 42px 32px 38px;box-shadow:var(--parity-shadow);padding:35px 32px;min-height:275px}
+.tl-corporate-parity .parity-panel::before{content:'';display:block;width:64px;height:2px;margin-bottom:22px;background:linear-gradient(90deg,#006e8c,transparent)}
+.tl-corporate-parity .parity-panel[data-active=true]{display:block;animation:parity-detail-in .43s cubic-bezier(.22,1,.36,1) both}
+.tl-corporate-parity .parity-panel h3{font-family:Editorial,Georgia,serif;font-weight:400;font-size:clamp(1.7rem,3vw,2.7rem);line-height:1.1;margin:0 0 20px}
+.tl-corporate-parity .parity-panel p{line-height:1.75;color:#566268;font-size:1rem}
+.tl-corporate-parity .parity-panel a{color:var(--parity-teal)}
+.tl-corporate-parity .parity-explorer .service-process{display:none}
+@keyframes parity-detail-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+/* The right panel is confined to its own content section rather than following into the footer. */
+@media(min-width:981px){.tl-corporate-parity .parity-panels{position:sticky;top:112px}.tl-corporate-parity .service-hero:has(.service-overview){overflow:visible}.tl-corporate-parity .service-overview{position:sticky;top:108px;max-height:calc(100vh - 128px);overflow:auto}}
+/* Restrained and clear layouts on the two custom-built service landings. */
+.tl-corporate-parity .tl-approved-card-grid{gap:22px!important}
+.tl-corporate-parity .tl-approved-card{border-radius:21px 34px 24px 30px!important;min-height:130px;box-shadow:0 14px 32px rgba(19,57,68,.065);padding:29px!important}
+.tl-corporate-parity .tl-approved-card>span:first-child{display:none}
+.tl-corporate-parity .tl-approved-detail article{border-radius:20px 32px 23px 28px;box-shadow:0 15px 34px rgba(19,57,68,.055);border:1px solid var(--parity-border);background:rgba(255,255,255,.82);padding:26px 28px;transition:transform .3s,box-shadow .3s}
+.tl-corporate-parity .tl-approved-detail article:hover{transform:translateY(-3px);box-shadow:var(--parity-shadow)}
+.tl-corporate-parity .reform-hero .hero-grid-own{gap:clamp(30px,5vw,72px)}
+.tl-corporate-parity .reform-hero .hero-grid-own>div:last-child{border-radius:23px 38px 30px 34px;box-shadow:var(--parity-shadow)}
+.tl-corporate-parity .section .card,.tl-corporate-parity .section .tile,.tl-corporate-parity .related a{border-radius:20px 32px 24px 28px!important;transition:transform .3s,box-shadow .3s}
+.tl-corporate-parity .section .card:hover,.tl-corporate-parity .section .tile:hover,.tl-corporate-parity .related a:hover{transform:translateY(-3px);box-shadow:var(--parity-shadow)}
+@media(max-width:900px){.tl-corporate-parity .parity-explorer{grid-template-columns:1fr}.tl-corporate-parity .parity-panels{min-height:0}.tl-corporate-parity .service-related-links{grid-template-columns:1fr!important}}
+@media(max-width:600px){.tl-corporate-parity .parity-title{padding:18px 20px}.tl-corporate-parity .parity-panel{padding:24px 22px;min-height:unset}.tl-corporate-parity .service-section{padding:24px 20px!important}}
+@media(prefers-reduced-motion:reduce){.tl-corporate-parity .parity-panel[data-active=true]{animation:none}.tl-corporate-parity.parity-loading .service-hero-copy>*,.tl-corporate-parity.parity-loading .reform-hero .hero-grid-own>div:first-child>*,.tl-corporate-parity.parity-loading .tl-approved-hero .tl-container>*{opacity:1;transform:none}}
+.tl-corporate-parity .service-process[hidden]{display:none!important}
+.tl-corporate-parity .parity-panel[hidden]{display:none!important}

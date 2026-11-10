@@ -1,0 +1,88 @@
+{
+  "source_packages": {
+    "contratos-empresariales": {
+      "source_zip": "25_CONTRATOS_EMPRESARIALES.zip",
+      "approved_source_sections_es": 3,
+      "pages": [
+        "services/contratos-empresariales/index.html",
+        "en/services/contratos-empresariales/index.html",
+        "pt/services/contratos-empresariales/index.html",
+        "fr/services/contratos-empresariales/index.html"
+      ]
+    },
+    "laboral-empresas": {
+      "source_zip": "20_LABORAL_EMPRESAS.zip",
+      "approved_source_sections_es": 5,
+      "pages": [
+        "services/laboral-empresas/index.html",
+        "en/services/laboral-empresas/index.html",
+        "pt/services/laboral-empresas/index.html",
+        "fr/services/laboral-empresas/index.html"
+      ]
+    },
+    "reglamento-interno": {
+      "source_zip": "26_REGLAMENTO_INTERNO.zip",
+      "approved_source_sections_es": 7,
+      "pages": [
+        "services/reglamento-interno/index.html",
+        "en/services/reglamento-interno/index.html",
+        "pt/services/reglamento-interno/index.html",
+        "fr/services/reglamento-interno/index.html"
+      ]
+    },
+    "vistos-buenos-empleadores": {
+      "source_zip": "27_VISTOS_BUENOS_EMPLEADORES.zip",
+      "approved_source_sections_es": 7,
+      "pages": [
+        "services/vistos-buenos-empleadores/index.html",
+        "en/services/vistos-buenos-empleadores/index.html",
+        "pt/services/vistos-buenos-empleadores/index.html",
+        "fr/services/vistos-buenos-empleadores/index.html"
+      ]
+    },
+    "registro-marcas": {
+      "source_zip": "22_REGISTRO_MARCAS.zip",
+      "approved_source_sections_es": 6,
+      "pages": [
+        "services/registro-marcas/index.html",
+        "en/services/registro-marcas/index.html",
+        "pt/services/registro-marcas/index.html",
+        "fr/services/registro-marcas/index.html"
+      ]
+    },
+    "recuperacion-cartera": {
+      "source_zip": "23_RECUPERACION_CARTERA.zip",
+      "approved_source_sections_es": 5,
+      "pages": [
+        "services/recuperacion-cartera/index.html",
+        "en/services/recuperacion-cartera/index.html",
+        "pt/services/recuperacion-cartera/index.html",
+        "fr/services/recuperacion-cartera/index.html"
+      ]
+    },
+    "asesoria-tributaria": {
+      "source_zip": "24_ASESORIA_TRIBUTARIA.zip",
+      "approved_source_sections_es": 7,
+      "pages": [
+        "services/asesoria-tributaria/index.html",
+        "en/services/asesoria-tributaria/index.html",
+        "pt/services/asesoria-tributaria/index.html",
+        "fr/services/asesoria-tributaria/index.html"
+      ]
+    },
+    "contabilidad-soft-landing": {
+      "source_zip": "13_CONTABILIDAD_SOFT_LANDING.zip",
+      "approved_source_sections_es": 7,
+      "pages": [
+        "services/contabilidad-soft-landing/index.html",
+        "en/services/contabilidad-soft-landing/index.html",
+        "pt/services/contabilidad-soft-landing/index.html",
+        "fr/services/contabilidad-soft-landing/index.html"
+      ]
+    }
+  },
+  "updated_pages": 32,
+  "status": "review_pending_noindex",
+  "translations": "faithful source-based summaries; full source paragraphs ES retained for editorial review",
+  "other_content_changed": false
+}
