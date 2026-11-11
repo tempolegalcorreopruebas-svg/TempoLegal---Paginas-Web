@@ -4,6 +4,40 @@
    - Menú móvil (hasta 1100 px): en la Home lo gestiona script.js y en las landings su page.js;
      aquí solo se activa en las páginas que llevan [data-common-toggle]. */
 (() => {
+  // Reuse the localized links from Servicios in a dedicated dropdown.
+  document.querySelectorAll('[data-nav-menu]').forEach(services => {
+    const title = services.querySelector('.nav-menu-title[data-i18n="menuDataTitle"]');
+    const serviceToggle = services.querySelector('.nav-menu-toggle');
+    const links = ['menuDataHub', 'menuDpo', 'menuLopdp'].map(key =>
+      services.querySelector('a[data-i18n="' + key + '"][href]')
+    );
+    if (!title || !serviceToggle || links.some(link => !link)) return;
+
+    const menu = document.createElement('div');
+    menu.className = 'nav-menu nav-menu-data';
+    menu.setAttribute('data-nav-menu', '');
+
+    const toggle = serviceToggle.cloneNode(true);
+    const label = toggle.querySelector('[data-i18n]');
+    if (!label) return;
+    label.dataset.i18n = title.dataset.i18n;
+    label.textContent = title.textContent;
+    toggle.setAttribute('aria-expanded', 'false');
+
+    const panel = document.createElement('div');
+    panel.id = serviceToggle.getAttribute('aria-controls') + '-data-protection';
+    panel.className = 'nav-menu-panel';
+    panel.hidden = true;
+    toggle.setAttribute('aria-controls', panel.id);
+
+    const column = document.createElement('div');
+    column.className = 'nav-menu-col';
+    column.append(title.cloneNode(true), ...links.map(link => link.cloneNode(true)));
+    panel.append(column);
+    menu.append(toggle, panel);
+    services.after(menu);
+  });
+
   const menus = [...document.querySelectorAll('[data-nav-menu]')];
 
   // Normalize file previews, hosted directory URLs and retained service aliases.

@@ -1,0 +1,96 @@
+/* Shared section navigation – follows the approved Holdings and Structures layout.
+   Applies only to landings that have no pre-existing service-sidebar. */
+.tl-index-enabled main { overflow:visible!important; overflow-x:clip!important; }
+.tl-index-enabled .tl-index-layout {
+  width:min(1320px,calc(100% - 40px)); max-width:1320px;
+  margin:clamp(35px,5vw,72px) auto clamp(45px,6vw,90px);
+  display:grid!important;grid-template-columns:230px minmax(0,1fr)!important;
+  align-items:start;gap:clamp(32px,5vw,78px);
+  position:relative;isolation:isolate;
+}
+.tl-index-enabled .tl-index-story { width:100%;min-width:0;max-width:100%;display:flex;flex-direction:column;gap:clamp(22px,3vw,38px); }
+.tl-index-enabled .tl-index-story > :is(section,div) {box-sizing:border-box;min-width:0;max-width:100%;}
+/* Some landing templates impose page-wide section widths/margins: normalize inside story. */
+.tl-index-enabled .tl-index-story > :is(section,.tl-approved-body) {
+  width:100%!important;max-width:100%!important;margin:0!important;
+}
+.tl-index-enabled .tl-index-story :is(.container,.wrap,.tl-container) {
+  width:100%;max-width:100%;box-sizing:border-box;
+}
+.tl-index-enabled .tl-index-story :is(section[id],div[id]){scroll-margin-top:calc(var(--header-height,80px) + 34px)}
+.tl-index-enabled .tl-index-story > .tl-approved-body {padding:0 0 28px;}
+.tl-index-enabled .tl-index-story > .tl-approved-body > .tl-container {width:100%;padding-inline:0;}
+.tl-index-enabled .tl-index-story > .tl-approved-body > .tl-container > :is(section,div) {
+  width:100%;max-width:100%;box-sizing:border-box;
+}
+/* Match the sidebar of Holdings without borrowing global header nav styles. */
+.tl-index-enabled aside.tl-service-index {
+  position:sticky!important;top:calc(var(--header-height,80px) + 32px)!important;
+  z-index:3;align-self:start;width:100%;min-width:0;max-width:230px;
+  padding:0;margin:0;border:0;border-radius:0;background:none;box-shadow:none;
+  overflow:visible;max-height:none;
+  font-size:12px;line-height:1.7;
+}
+.tl-index-enabled aside.tl-service-index > nav {
+  display:block!important;position:static!important;
+  width:100%!important;min-width:0!important;max-width:100%!important;
+  height:auto!important;float:none!important;grid-template-columns:none!important;
+  padding:22px!important;margin:0!important;
+  background:rgba(255,255,255,.88)!important;
+  border:1px solid rgba(0,110,140,.08)!important;
+  border-radius:25px 34px 28px 30px!important;
+  box-shadow:0 18px 46px rgba(10,62,75,.08)!important;
+  transform:none!important;opacity:1!important;
+  overflow:visible!important;box-sizing:border-box!important;
+}
+.tl-index-enabled aside.tl-service-index .tl-index-kicker {
+  display:block!important;position:static!important;
+  font:700 10px/1.8 system-ui,-apple-system,sans-serif!important;
+  color:#08718f!important;letter-spacing:.15em;text-transform:uppercase;
+  padding:0!important;margin:0 0 18px!important;max-width:100%;
+}
+.tl-index-enabled aside.tl-service-index ol {
+  display:block!important;position:static!important;width:100%!important;max-width:100%!important;
+  margin:0!important;padding:0!important;list-style:none!important;
+  overflow:visible!important;transform:none!important;grid-template-columns:none!important;
+}
+.tl-index-enabled aside.tl-service-index li {
+  display:block!important;position:static!important;width:100%!important;max-width:100%!important;
+  padding:0!important;margin:0!important;float:none!important;
+  border:0!important;border-top:1px solid #dce5e5!important;
+}
+.tl-index-enabled aside.tl-service-index li:first-child{border-top:0!important}
+.tl-index-enabled aside.tl-service-index a {
+  display:block!important;position:static!important;width:100%!important;max-width:100%!important;
+  float:none!important;box-sizing:border-box!important;white-space:normal!important;
+  padding:12px 0!important;margin:0!important;
+  background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;
+  color:#586a70!important;text-align:left!important;
+  font:400 12px/1.65 system-ui,-apple-system,sans-serif!important;
+  letter-spacing:normal!important;overflow-wrap:break-word!important;
+  text-decoration:none!important;transform:none;
+  transition:color .25s ease,translate .25s ease;
+}
+.tl-index-enabled aside.tl-service-index a:hover,
+.tl-index-enabled aside.tl-service-index a[aria-current="location"]{color:#007a98!important;translate:4px 0}
+.tl-index-enabled aside.tl-service-index a:focus-visible{outline:2px solid #007a98;outline-offset:3px}
+/* Make the index usable on shorter desktop windows without losing sticky position. */
+@media(min-width:1001px) and (max-height:730px){
+  .tl-index-enabled aside.tl-service-index > nav{max-height:calc(100dvh - var(--header-height,80px) - 55px);overflow-y:auto!important;scrollbar-width:thin;}
+}
+/* Exactly the single-column behavior of the approved service layout on mobile. */
+@media(max-width:1000px){
+  .tl-index-enabled .tl-index-layout{display:block!important;width:min(1180px,calc(100% - 32px));margin:30px auto 55px}
+  .tl-index-enabled aside.tl-service-index{position:relative!important;top:auto!important;max-width:100%;margin:0 0 32px;}
+  .tl-index-enabled aside.tl-service-index > nav{padding:19px 21px!important;}
+  .tl-index-enabled aside.tl-service-index ol{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:0 22px!important}
+  .tl-index-enabled aside.tl-service-index li{border-top:1px solid #dce5e5!important}
+  .tl-index-enabled aside.tl-service-index li:nth-child(-n+2){border-top:0!important}
+  .tl-index-enabled .tl-index-story{gap:22px}
+}
+@media(max-width:570px){
+  .tl-index-enabled aside.tl-service-index ol{grid-template-columns:1fr!important}
+  .tl-index-enabled aside.tl-service-index li:nth-child(2){border-top:1px solid #dce5e5!important}
+  .tl-index-enabled .tl-index-layout{width:calc(100% - 26px)}
+}
+@media(prefers-reduced-motion:reduce){.tl-index-enabled aside.tl-service-index a{transition:none}}

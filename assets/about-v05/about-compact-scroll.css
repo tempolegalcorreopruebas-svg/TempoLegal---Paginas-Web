@@ -1,0 +1,63 @@
+/* TempoLegal V05: compact editorial intro + scroll reveals. Shared ES/EN/PT/FR. */
+main.about-v05:not(.perfil-page) > section.intro.wrap {
+  width: min(calc(100% - 48px), 1190px);
+  max-width: 1190px;
+  margin: clamp(28px,3.4vw,48px) auto clamp(36px,4vw,64px);
+  padding: clamp(26px,3vw,42px) clamp(26px,4vw,58px);
+  display: grid;
+  grid-template-columns: minmax(145px,.35fr) minmax(0,1fr);
+  gap: clamp(20px,3.2vw,55px);
+  align-items: start;
+  background: linear-gradient(130deg,#fff 5%,#f9fcfb 68%,#edf5f4 100%);
+  border: 1px solid #d7e7e8;
+  border-radius: 24px 56px 24px 24px;
+  box-shadow: 0 17px 40px rgba(23,50,60,.06);
+  overflow: hidden;
+}
+main.about-v05:not(.perfil-page) > section.intro.wrap > .eyebrow {
+  margin: 4px 0 0; padding: 0 0 0 15px;
+  border-left: 3px solid #007a99;
+  color: #006e8c; font-size: 11px; line-height: 1.7;
+}
+main.about-v05:not(.perfil-page) > section.intro.wrap > div {max-width: 780px;min-width:0;}
+main.about-v05:not(.perfil-page) > section.intro.wrap h2 {
+  max-width: 770px; margin:0 0 13px;
+  font-size: clamp(29px,3vw,43px);line-height:1.12;
+  text-wrap:balance;letter-spacing:-.03em;
+}
+main.about-v05:not(.perfil-page) > section.intro.wrap p:not(.eyebrow) {
+  margin: 0 0 11px;max-width: 760px;
+  font-size: clamp(14px,1.15vw,16px);line-height: 1.65;
+  color:#506772;
+}
+main.about-v05:not(.perfil-page) > section.intro.wrap p:last-child{margin-bottom:0;}
+main.about-v05:not(.perfil-page) > section.team-section > .wrap{padding-top:clamp(40px,5vw,64px);}
+/* Progressive reveals are enabled only when supported by JS; never hide content for no-JS users. */
+@media (prefers-reduced-motion: no-preference) {
+  main.about-v05.about-scroll-enabled [data-about-scroll].about-awaiting {
+    opacity:0;
+    transform:translate3d(0,20px,0);
+    filter:blur(3px);
+  }
+  main.about-v05.about-scroll-enabled [data-about-scroll] {
+    transition: opacity 720ms cubic-bezier(.22,.8,.24,1),
+                transform 720ms cubic-bezier(.22,.8,.24,1),
+                filter 680ms ease;
+    transition-delay:var(--about-delay,0ms);
+  }
+  main.about-v05.about-scroll-enabled [data-about-scroll].about-shown{
+    opacity:1;transform:translate3d(0,0,0);filter:blur(0);
+  }
+}
+@media (max-width:740px) {
+  main.about-v05:not(.perfil-page) > section.intro.wrap{
+    width:calc(100% - 32px);margin:23px auto 34px;
+    grid-template-columns:1fr;gap:18px;padding:25px 22px 28px;
+    border-radius:20px 34px 20px 20px;
+  }
+  main.about-v05:not(.perfil-page) > section.intro.wrap h2{font-size:clamp(29px,7vw,37px);}
+  main.about-v05:not(.perfil-page) > section.intro.wrap p:not(.eyebrow){font-size:14px;}
+}
+@media (prefers-reduced-motion:reduce){
+ main.about-v05 [data-about-scroll]{opacity:1!important;transform:none!important;filter:none!important;transition:none!important;}
+}

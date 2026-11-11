@@ -1,0 +1,68 @@
+/* TempoLegal — Corporate amendments editorial redesign, 2026-11-11.
+   Layout/interaction only; approved copy remains unchanged. */
+body.tl-reform-refined{--reform-ink:#163641;--reform-blue:#007c9b;--reform-line:rgba(33,107,123,.15)}
+body.tl-reform-refined :is(.tl-index-story,.tl-index-story>section,main){overflow:visible!important}
+body.tl-reform-refined .tl-index-layout{align-items:start}
+body.tl-reform-refined .tl-index-story{gap:clamp(22px,3vw,38px)}
+body.tl-reform-refined .tl-index-story>section{scroll-margin-top:112px}
+body.tl-reform-refined .tl-index-story :is(.wrap,.container){width:100%!important;max-width:none!important}
+body.tl-reform-refined .tl-index-story > :is(.proof,.section,.contact){padding:clamp(28px,4.4vw,62px)!important;border-radius:clamp(24px,3vw,38px)!important}
+body.tl-reform-refined .section-head{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(220px,.8fr);column-gap:clamp(18px,3vw,44px);row-gap:12px;align-items:end;margin-bottom:clamp(22px,3vw,36px)}
+body.tl-reform-refined .section-head :is(h2,p){margin-block:0}
+body.tl-reform-refined .section-head h2{font-size:clamp(2rem,3.8vw,3.55rem);line-height:1.12;letter-spacing:-.025em}
+body.tl-reform-refined .section-head>p{max-width:44ch;line-height:1.75}
+body.tl-reform-refined .reform-hero{border-radius:36px;box-shadow:0 22px 48px rgba(14,60,73,.065)}
+body.tl-reform-refined .hero-grid-own{align-items:center}
+body.tl-reform-refined .hero-signals{gap:16px}
+body.tl-reform-refined .hero-signals p{border-radius:24px!important}
+body.tl-reform-refined .change-selector{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(18px,3vw,34px);align-items:stretch}
+body.tl-reform-refined .change-buttons{display:flex;flex-direction:column;gap:10px}
+body.tl-reform-refined .change-buttons button{display:flex;gap:18px;align-items:center;justify-content:space-between;min-height:70px;width:100%;padding:17px 24px;border:1px solid var(--reform-line);border-radius:19px;text-align:left;font-family:Editorial,Georgia,serif;font-size:clamp(1.15rem,1.75vw,1.55rem);line-height:1.2;color:var(--reform-ink);background:rgba(255,255,255,.75);cursor:pointer;box-shadow:0 8px 22px rgba(12,67,78,.03);transition:transform .3s ease,background .3s ease,border-color .3s ease,box-shadow .3s ease,color .3s ease}
+body.tl-reform-refined .change-buttons button span{flex-shrink:0;font-family:Arial,sans-serif;font-size:1.2rem;transition:transform .3s ease}
+body.tl-reform-refined .change-buttons button:hover{transform:translateX(5px);background:#ecf7f8;border-color:#94ccd6;box-shadow:0 12px 25px rgba(14,86,106,.08)}
+body.tl-reform-refined .change-buttons button:hover span{transform:translate(3px,-3px)}
+body.tl-reform-refined .change-buttons button[aria-pressed="true"]{color:#fff;background:linear-gradient(120deg,#103b48,#086e87);border-color:#0c758f;box-shadow:0 15px 30px rgba(0,95,124,.15)}
+body.tl-reform-refined .change-panel{display:grid;align-content:center;min-height:330px;padding:clamp(25px,4vw,46px);border:1px solid rgba(42,130,150,.16);border-radius:28px;background:linear-gradient(145deg,#e7f4f5,#f6faf9);box-shadow:0 16px 40px rgba(15,75,91,.055)}
+body.tl-reform-refined .change-panel article{grid-area:1/1;align-self:center;min-width:0;animation:reformSlideIn .38s both}
+body.tl-reform-refined .change-panel h3{margin:.15em 0 .45em;font-family:Editorial,Georgia,serif;font-size:clamp(1.9rem,3.3vw,3rem);line-height:1.14;font-weight:400;color:var(--reform-ink)}
+body.tl-reform-refined .change-panel p{line-height:1.78}
+body.tl-reform-refined .change-panel .fine{margin-top:1.2rem;color:#67838a;font-size:.85rem}
+@keyframes reformSlideIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+body.tl-reform-refined .editorial-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+body.tl-reform-refined .editorial-grid article{padding:clamp(23px,3vw,36px);border-radius:26px;background:linear-gradient(160deg,#f5fafa,#fff);border:1px solid var(--reform-line);transition:transform .35s,box-shadow .35s}
+body.tl-reform-refined .editorial-grid article:hover{transform:translateY(-5px);box-shadow:0 22px 38px rgba(15,74,87,.1)}
+body.tl-reform-refined .editorial-grid article>span{font-family:TempoSans,Arial,sans-serif!important;font-size:.75rem!important;letter-spacing:.12em;color:#0c7990;font-weight:650}
+body.tl-reform-refined .editorial-grid article h3{font-family:Editorial,Georgia,serif;font-size:clamp(1.45rem,2.3vw,2.2rem);line-height:1.22;font-weight:400;margin:12px 0}
+body.tl-reform-refined .document-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;list-style:none;padding:0;margin:0}
+body.tl-reform-refined .document-list li{display:flex;align-items:center;min-height:90px;gap:14px;padding:22px 25px;border:1px solid var(--reform-line);border-radius:20px;background:#f5faf9;line-height:1.5;transition:transform .3s,background .3s}
+body.tl-reform-refined .document-list li:hover{background:#eaf7f8;transform:translateY(-3px)}
+body.tl-reform-refined .document-list li::before{content:'↗';color:#0a829c;font-size:1.2em}
+body.tl-reform-refined .process-own{display:grid;gap:16px}
+body.tl-reform-refined .process-own>article{border-radius:24px;border:1px solid var(--reform-line);padding:clamp(22px,3vw,32px);background:#f7fbfb;transition:transform .3s,box-shadow .3s}
+body.tl-reform-refined .process-own>article:hover{transform:translateY(-4px);box-shadow:0 14px 28px rgba(8,68,80,.08)}
+body.tl-reform-refined .process-own .step-tag{font-family:TempoSans,Arial,sans-serif;font-size:.8rem;letter-spacing:.09em;color:#0b7289}
+body.tl-reform-refined .people{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px!important;align-items:stretch}
+body.tl-reform-refined .people article{min-width:0!important;display:flex;flex-direction:column;align-items:stretch;gap:0;padding:14px 14px 22px!important;border:1px solid rgba(38,112,130,.13);border-radius:25px;background:linear-gradient(180deg,#fff,#f6faf9);box-shadow:0 10px 28px rgba(16,63,75,.045);transition:transform .34s ease,box-shadow .34s ease,border-color .34s ease}
+body.tl-reform-refined .people article:hover{transform:translateY(-7px);border-color:#8fc3ce;box-shadow:0 25px 46px rgba(10,69,87,.12)}
+body.tl-reform-refined .people article img{display:block;width:100%!important;height:auto!important;aspect-ratio:360/440;object-fit:cover;object-position:center center;max-width:none!important;border-radius:16px!important;margin:0 0 18px;transition:filter .35s ease}
+body.tl-reform-refined .people article:hover img{filter:saturate(1.06)}
+body.tl-reform-refined .people article h3{font-family:Editorial,Georgia,serif;font-weight:400;font-size:clamp(1.4rem,2vw,1.95rem);line-height:1.18;margin:0 9px 10px}
+body.tl-reform-refined .people article :is(.team-credential,.team-role,.team-contribution){margin:0 9px 8px!important;line-height:1.55!important}
+body.tl-reform-refined .people article .team-credential{font-size:.82rem!important;color:#617b80}
+body.tl-reform-refined .people article .team-role{font-size:.9rem!important;font-weight:650;color:#164957}
+body.tl-reform-refined .people article .team-contribution{font-size:.9rem!important;flex:1}
+body.tl-reform-refined .people article a{align-self:flex-start;margin:13px 9px 0!important;color:#0a748d!important;font-weight:650}
+body.tl-reform-refined .quote-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+body.tl-reform-refined .quote-grid>article{padding:24px;border-radius:22px;border:1px solid var(--reform-line);background:#f9fcfc}
+body.tl-reform-refined .related-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+body.tl-reform-refined .related-links a{min-height:92px;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:21px 26px!important;border:1px solid var(--reform-line)!important;border-radius:22px!important;background:#f6fbfb!important;transition:transform .3s,box-shadow .3s}
+body.tl-reform-refined .related-links a:hover{transform:translateY(-4px);box-shadow:0 15px 29px rgba(8,74,90,.09)}
+body.tl-reform-refined .faq-list details{border-radius:18px;border:1px solid var(--reform-line);background:#f9fcfc;margin-bottom:12px;padding:4px 19px}
+body.tl-reform-refined .faq-list summary{cursor:pointer}
+/* Staggered reveals use observer only after JavaScript initialization. */
+body.tl-reform-refined.tl-reform-motion :is(.reform-entrance){opacity:0;transform:translateY(23px);transition:opacity .62s cubic-bezier(.2,.7,.3,1),transform .62s cubic-bezier(.2,.7,.3,1);transition-delay:var(--reform-delay,0ms)}
+body.tl-reform-refined.tl-reform-motion :is(.reform-entrance).reform-visible{opacity:1;transform:translateY(0)}
+@media(max-width:1050px){body.tl-reform-refined .people{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){body.tl-reform-refined .section-head{grid-template-columns:1fr}body.tl-reform-refined :is(.change-selector,.editorial-grid,.document-list,.quote-grid,.related-links){grid-template-columns:1fr}body.tl-reform-refined .people{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px!important}body.tl-reform-refined .people article{padding:9px!important;border-radius:18px}body.tl-reform-refined .people article h3{font-size:1.35rem;margin-inline:6px}body.tl-reform-refined .people article :is(.team-credential,.team-role,.team-contribution){margin-inline:6px!important}body.tl-reform-refined .change-panel{min-height:0}body.tl-reform-refined .tl-index-story > :is(.proof,.section,.contact){padding:25px 20px!important}}
+@media(max-width:440px){body.tl-reform-refined .people{grid-template-columns:1fr}body.tl-reform-refined .people article img{max-height:430px;object-fit:contain;background:#edf4f4}}
+@media(prefers-reduced-motion:reduce){body.tl-reform-refined.tl-reform-motion .reform-entrance{opacity:1!important;transform:none!important;transition:none!important}body.tl-reform-refined *{animation:none!important}}

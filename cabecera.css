@@ -147,3 +147,16 @@ html{scrollbar-gutter:stable;scroll-padding-top:90px}
   font-size: 13px;
 }
 .tl-header .language-control:not(.language-enhanced) select option { color: #17323c; background: #fff; }
+
+@media (min-width: 1101px) {
+  .nav-menu-data > .nav-menu-panel {
+    width: 20rem;
+    padding: 1.25rem;
+    transform: translateX(-50%);
+    transform-origin: 50% top;
+  }
+
+  .nav-menu-data > .nav-menu-panel::before {
+    left: calc(50% - 7px);
+  }
+}

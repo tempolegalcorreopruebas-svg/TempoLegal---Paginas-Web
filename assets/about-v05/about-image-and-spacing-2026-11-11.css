@@ -1,0 +1,21 @@
+/* TempoLegal 2026-11-11 — editorial spacing and approved image alignment */
+main.about-v05:not(.perfil-page) > section.hero.wrap {border-bottom:0!important;padding-bottom:0!important;margin-bottom:0!important;}
+main.about-v05:not(.perfil-page) .group-photo{margin-bottom:0!important;}
+main.about-v05:not(.perfil-page) .group-photo figcaption{border-top:0!important;border-bottom:0!important;padding-block:10px!important;}
+main.about-v05:not(.perfil-page) > section.intro.wrap{
+  margin-top:clamp(10px,1.8vw,24px)!important;
+  margin-bottom:clamp(16px,2.2vw,30px)!important;
+  padding:clamp(22px,2.6vw,34px) clamp(23px,3vw,42px)!important;
+  grid-template-columns:minmax(125px,.27fr) minmax(0,1fr)!important;
+  column-gap:clamp(20px,2.5vw,39px)!important;
+  border-radius:20px 34px 20px 20px!important;
+}
+main.about-v05:not(.perfil-page) > section.intro.wrap h2{font-size:clamp(29px,3.05vw,43px)!important;max-width:760px;}
+main.about-v05:not(.perfil-page) > section.intro.wrap p:not(.eyebrow){line-height:1.53!important;}
+main.about-v05:not(.perfil-page) > section.team-section{padding-top:clamp(12px,2vw,28px)!important;}
+main.about-v05:not(.perfil-page) .team-grid article.profile{display:flex;flex-direction:column;gap:0;}
+main.about-v05:not(.perfil-page) .team-grid article.profile > img{display:block;object-fit:contain!important;object-position:center!important;}
+main.about-v05:not(.perfil-page) .team-grid article.profile .profile-copy{display:flex;flex-direction:column;flex:1;justify-content:flex-start;}
+main.about-v05:not(.perfil-page) .team-grid article.profile .profile-link{margin-top:auto;padding-top:12px;}
+main.about-v05:not(.perfil-page) .team-grid article.profile .card-text{margin-bottom:12px;}
+@media(max-width:740px){main.about-v05:not(.perfil-page)>section.intro.wrap{grid-template-columns:1fr!important;row-gap:12px!important}}
