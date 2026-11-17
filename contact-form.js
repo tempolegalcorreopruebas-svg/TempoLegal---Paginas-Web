@@ -18,6 +18,13 @@
     fr: { send: 'Envoyer la demande par courriel', sending: 'Envoi en cours...', consent: 'J’ai lu la', policy: 'Politique de confidentialité', review: 'Vérifiez les informations de votre demande', accepted: 'Le serveur de messagerie a accepté la demande. Référence : {reference}.', unavailable: 'L’envoi direct est indisponible. Vous pouvez utiliser WhatsApp ou votre messagerie.', invalid: 'Vérifiez les informations de votre demande et réessayez.', privacy: 'Confirmez avoir lu les informations de confidentialité avant l’envoi.', limited: 'Vous avez effectué plusieurs demandes. Patientez quelques minutes ou utilisez un autre moyen de contact.', uncertain: 'Nous n’avons pas pu confirmer l’envoi. Évitez de renvoyer la même demande et utilisez un autre canal.', token: 'Votre session d’envoi a expiré et a été renouvelée. Cliquez à nouveau sur Envoyer.', prepared: 'Demande préparée', success: 'Demande envoyée', required: 'Remplissez ce champ.', name: 'Nom', email: 'Courriel', company: 'Entreprise', service: 'Service', message: 'Demande', edit: 'Modifier la demande', reviewButton: 'Vérifier la demande' }
   };
   let prepared = null;
+  const localPreviewCopy = {
+    es: 'El envío directo requiere abrir el sitio publicado con HTTPS. Desde este archivo local puede continuar por WhatsApp o abrir su aplicación de correo.',
+    en: 'Direct submission requires the published HTTPS site. From this local file, you can continue on WhatsApp or open your email app.',
+    pt: 'O envio direto exige o site publicado com HTTPS. Neste arquivo local, você pode continuar pelo WhatsApp ou abrir seu aplicativo de e-mail.',
+    fr: 'L’envoi direct nécessite le site publié en HTTPS. Depuis ce fichier local, vous pouvez continuer sur WhatsApp ou ouvrir votre application de messagerie.'
+  };
+  const serviceNotice = () => location.protocol === 'file:' ? 'localPreview' : 'unavailable';
   let token = '';
   let available = false;
   let busy = false;
@@ -155,15 +162,17 @@
 
   function showStatus(key) {
     statusKey = key;
-    status.textContent = key ? text(key).replace('{reference}', reference) : '';
+    status.dataset.state = key;
+    status.textContent = key === 'localPreview' ? localPreviewCopy[language()] || localPreviewCopy.es
+      : key ? text(key).replace('{reference}', reference) : '';
     status.hidden = !key;
   }
 
   function render() {
-    sendButton.hidden = !available;
+    sendButton.hidden = !prepared || sent;
     sendButton.disabled = busy || sent;
     sendButton.textContent = text(busy ? 'sending' : 'send');
-    consentBlock.hidden = !available || sent;
+    consentBlock.hidden = !prepared || sent;
     consentBlock.querySelector('span').textContent = text('consent');
     consentBlock.querySelector('a').textContent = text('policy');
     document.getElementById('contact-review-label').textContent = text('review');
@@ -175,7 +184,7 @@
   async function refreshToken() {
     if (!endpoint || location.protocol === 'file:') return false;
     try {
-      const response = await fetch(endpoint, { credentials: 'same-origin', headers: { Accept: 'application/json' }, cache: 'no-store' });
+      const response = await fetch(endpoint, { credentials: 'same-origin', headers: { Accept: 'application/json' }, cache: 'no-store', signal: AbortSignal.timeout(8000) });
       if (!(response.headers.get('Content-Type') || '').includes('application/json')) {
         available = false;
         token = '';
@@ -204,7 +213,7 @@
     const phoneLine = prepared.phone ? '\n' + (form.elements.telefono?.labels?.[0]?.querySelector('span')?.textContent || window.TempoI18n.t('phoneField')) + ': ' + prepared.phone : '';
     const completePreview = preview + (phoneLine && !preview.includes(prepared.phone) ? phoneLine : '');
     review.textContent = completePreview;
-    showStatus(available ? '' : 'unavailable');
+    showStatus(available ? '' : serviceNotice());
     render();
     refreshToken().then(ready => { if (ready && !sent && statusKey === 'unavailable') showStatus(''); });
     if (form.dataset.directInquiry !== undefined) {
@@ -228,13 +237,17 @@
   sendButton.addEventListener('click', async () => {
     if (!prepared || busy || sent) return;
     if (!consent.checked) { showStatus('privacy'); consent.focus(); return; }
-    if (!available || !token) { showStatus('unavailable'); return; }
+    if (location.protocol === 'file:') { showStatus('localPreview'); return; }
     busy = true;
     showStatus('');
     render();
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 30000);
     try {
+      if ((!available || !token) && !await refreshToken()) {
+        showStatus(serviceNotice());
+        return;
+      }
       const response = await fetch(endpoint, {
         method: 'POST', credentials: 'same-origin', signal: controller.signal,
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },

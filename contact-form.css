@@ -163,3 +163,69 @@ html.contact-embedded body > :not(.contact-embedded-panel),
   border-color: var(--teal, #006e8c);
   color: var(--white, #fff);
 }
+
+
+/* Shared form surface, including the version embedded from other sections. */
+:is(dialog.contact-popout, .contact-embedded-panel) {
+  --form-paper: var(--paper, #f0f3f2);
+  --form-petrol: var(--petroleo, #0e3d4a);
+  --form-teal: var(--teal, #006e8c);
+  --form-white: var(--white, #fff);
+}
+dialog.contact-popout {
+  box-shadow: 0 24px 70px rgb(8 38 48 / 28%);
+}
+dialog.contact-popout > h2 {
+  background: linear-gradient(110deg, var(--form-petrol), var(--form-teal));
+}
+:is(dialog.contact-popout, .contact-embedded-panel) #contact-form label {
+  color: var(--ink, #17323c);
+  font-size: 13px;
+  font-weight: 600;
+}
+:is(dialog.contact-popout, .contact-embedded-panel) #contact-form :is(input, select, textarea) {
+  min-height: 44px;
+  border: 1px solid #66838c;
+  background: var(--form-paper);
+  color: var(--ink, #17323c);
+  border-radius: 12px;
+}
+:is(dialog.contact-popout, .contact-embedded-panel) #contact-form textarea {
+  min-height: 108px;
+}
+:is(dialog.contact-popout, .contact-embedded-panel) #contact-form :is(input, select, textarea):focus {
+  border-color: var(--form-teal);
+  background: var(--form-white);
+}
+:is(dialog.contact-popout, .contact-embedded-panel) .contact-review {
+  border: 1px solid var(--line, #dce1e1);
+  border-inline-start: 3px solid var(--accent, #d7bd6d);
+  border-radius: 12px;
+  background: var(--form-paper);
+}
+:is(dialog.contact-popout, .contact-embedded-panel) .contact-consent:not([hidden]) {
+  padding: 14px;
+  background: var(--form-paper);
+  border-radius: 12px;
+}
+:is(dialog.contact-popout, .contact-embedded-panel) #contact-delivery-status {
+  border-radius: 12px;
+  color: var(--ink, #17323c);
+  background: var(--accent-soft, #f5ecc9);
+}
+:is(dialog.contact-popout, .contact-embedded-panel) #contact-delivery-status[data-state="accepted"] {
+  background: var(--form-paper);
+  border-color: var(--form-teal);
+}
+:is(dialog.contact-popout, .contact-embedded-panel) .result-actions #contact-send-server {
+  flex-basis: 100%;
+  min-height: 46px;
+  border-radius: 12px;
+  font-weight: 700;
+}
+:is(dialog.contact-popout, .contact-embedded-panel) .result-actions :is(#contact-send, #contact-send-email) {
+  background: var(--form-white);
+  color: var(--form-teal);
+  border: 1px solid var(--form-teal);
+  border-radius: 12px;
+}
