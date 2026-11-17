@@ -166,6 +166,21 @@
 .approved-service :is(a,button,summary,input,select,textarea):focus-visible{outline:3px solid #ad934c;outline-offset:5px}
 .approved-service .contact :is(a,button):focus-visible{outline-color:#f5ecc9}
 .approved-service .contact-page-form :is(a,button,input,select,textarea):focus-visible{outline-color:#006e8c}
+
+/* The section index places this contact block on the light page surface. */
+.reference-legal-representation .tl-index-story > .contact .contact-grid > div:first-child p {
+  color: var(--reference-muted);
+}
+.reference-legal-representation .tl-index-story > .contact .contact-grid > div:first-child .eyebrow,
+.reference-legal-representation .tl-index-story > .contact .contact-data a {
+  color: #24576a;
+}
+.reference-legal-representation .tl-index-story > .contact .contact-data {
+  margin-top: 16px;
+}
+.reference-legal-representation .tl-index-story > .contact .contact-grid > div:first-child a:focus-visible {
+  outline-color: #006e8c;
+}
 @keyframes approved-answer{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
 @keyframes approved-pulse{0%{opacity:.65;transform:scale(.5)}90%,100%{opacity:0;transform:scale(2.8)}}
 @keyframes approved-routes{0%{stroke-dashoffset:1;opacity:.25}45%,75%{stroke-dashoffset:0;opacity:.7}100%{stroke-dashoffset:0;opacity:.25}}

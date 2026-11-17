@@ -20,3 +20,146 @@
 .contact-page-form :is(input,textarea,select,button,a):focus-visible{outline:2px solid var(--teal);outline-offset:4px}
 #contact-server-consent[hidden],#contact-send-server[hidden],#contact-delivery-status[hidden]{display:none!important}
 @media(max-width:600px){.contact-page-form .form-row{grid-template-columns:1fr;gap:0}.contact-review{padding:14px;font-size:12px}.contact-page-form .result-actions{align-items:stretch;flex-direction:column}.contact-page-form .result-actions .button{white-space:normal;text-align:center}}
+
+#solicitar-orientacion { scroll-margin-top: calc(var(--header-height, 80px) + 24px); }
+
+/* The contact panel has the same dimensions and form styles in each landing. */
+dialog.contact-popout {
+  --contact-padding: clamp(20px, 4vw, 36px);
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: min(680px, calc(100% - 28px));
+  max-height: calc(100dvh - 28px);
+  box-sizing: border-box;
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: var(--contact-padding);
+  border: 1px solid var(--line, #dce1e1);
+  border-block-start: 4px solid var(--accent, #d7bd6d);
+  border-radius: var(--tempo-card-radius, 16px 30px 16px 30px);
+  background: var(--surface, #fff);
+  color: var(--ink, #17343d);
+}
+dialog.contact-popout::backdrop {
+  background: color-mix(in srgb, var(--petroleo, #0e3d4a) 75%, transparent);
+}
+html:has(dialog.contact-popout[open]) { overflow: hidden; scrollbar-gutter: stable; }
+dialog.contact-popout > h2 {
+  margin: calc(-1 * var(--contact-padding)) calc(-1 * var(--contact-padding)) 22px;
+  padding: 18px calc(var(--contact-padding) + 44px) 18px var(--contact-padding);
+  background: var(--petroleo, #0e3d4a);
+  color: var(--white, #fff);
+  font-size: clamp(26px, 4vw, 38px);
+  letter-spacing: -.025em;
+}
+dialog.contact-popout > .close-dialog {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  inset: 12px 12px auto auto;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--teal-pale, #9fd3df);
+  border-radius: var(--tempo-control-radius, 9px 17px 9px 17px);
+  background: var(--teal, #006e8c);
+  color: var(--white, #fff);
+  font: 400 26px/1 var(--sans, Arial, sans-serif);
+  cursor: pointer;
+}
+dialog.contact-popout > :is(#contact-form, #contact-result) {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  box-shadow: none;
+}
+dialog.contact-popout > .close-dialog:hover { background: var(--teal-hover, #07596e); }
+dialog.contact-popout > .close-dialog:focus-visible { outline-color: var(--accent, #d7bd6d); }
+dialog.contact-popout #contact-form label {
+  gap: 6px;
+  margin-bottom: 13px;
+  font-weight: 600;
+}
+dialog.contact-popout #contact-form label,
+dialog.contact-popout #contact-form label > :is(span, small) {
+  color: var(--ink, #17323c);
+}
+dialog.contact-popout #contact-result h3 { font-size: clamp(25px, 4vw, 36px); }
+dialog.contact-popout :is(input, textarea, select) {
+  min-width: 0;
+  margin-top: 0;
+  border-color: #66838c;
+  background: var(--paper, #f0f3f2);
+  color: var(--ink, #17323c);
+  border-radius: var(--tempo-control-radius, 9px 17px 9px 17px);
+}
+dialog.contact-popout .form-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+dialog.contact-popout :is(.form-note, .form-privacy),
+dialog.contact-popout :is(input, textarea)::placeholder { color: var(--muted, #566268); }
+dialog.contact-popout :is(.eyebrow, #edit-request, .form-privacy a, .contact-consent a) { color: var(--teal, #006e8c); }
+dialog.contact-popout :is(#contact-submit, #contact-send-server) {
+  background: var(--teal, #006e8c);
+  border-color: var(--teal, #006e8c);
+  color: var(--white, #fff);
+}
+dialog.contact-popout :is(#contact-submit, #contact-send-server):hover:not(:disabled) {
+  background: var(--teal-hover, #07596e);
+  border-color: var(--teal-hover, #07596e);
+}
+dialog.contact-popout :is(#contact-send, #contact-send-email) {
+  background: var(--surface, #fff);
+  border: 1px solid var(--teal, #006e8c);
+  color: var(--teal, #006e8c);
+}
+dialog.contact-popout .contact-review {
+  background: var(--paper, #f0f3f2);
+  border-color: var(--accent, #d7bd6d);
+}
+@media (max-width: 600px) {
+  dialog.contact-popout .form-row { grid-template-columns: minmax(0, 1fr); }
+}
+@media (prefers-reduced-motion: reduce) {
+  dialog.contact-popout { animation: none; }
+}
+
+
+dialog.contact-frame-dialog { padding: 0; overflow: hidden; }
+dialog.contact-frame-dialog > h2 {
+  margin: 0;
+  padding: 18px 64px 18px 22px;
+  font-family: var(--serif, Georgia, serif);
+}
+.contact-frame-dialog iframe {
+  display: block;
+  width: 100%;
+  height: min(630px, calc(100dvh - 150px));
+  border: 0;
+  background: var(--surface, #fff);
+}
+html.contact-embedded,
+html.contact-embedded body {
+  margin: 0;
+  padding: 0;
+  background: var(--surface, #fff);
+  color: var(--ink, #17323c);
+}
+html.contact-embedded body > :not(.contact-embedded-panel),
+.contact-embedded-panel > #direct-contact-title { display: none !important; }
+.contact-embedded-panel.contact-page-form {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: clamp(18px, 4vw, 32px);
+}
+.contact-embedded-panel #contact-form label > span { color: var(--ink, #17323c); }
+.contact-embedded-panel :is(#contact-submit, #contact-send-server) {
+  background: var(--teal, #006e8c);
+  border-color: var(--teal, #006e8c);
+  color: var(--white, #fff);
+}

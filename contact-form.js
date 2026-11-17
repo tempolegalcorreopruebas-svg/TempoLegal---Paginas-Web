@@ -28,6 +28,122 @@
   const text = key => (translations[language()] || translations.es)[key];
   const originalServices = () => window.TempoI18n?.get('serviceItems') || [];
 
+  const dataServices = [
+    { id: 'data', label: 'menuDataHub' },
+    { id: 'data-dpo', label: 'menuDpo', route: 'delegado-proteccion-datos-externo-ecuador' },
+    { id: 'data-lopdp', label: 'menuLopdp', route: 'implementacion-lopdp' }
+  ];
+  if (form.dataset.serviceContext === 'data') {
+    const select = form.elements.servicio;
+    const preferred = dataServices.find(service => service.route && location.pathname.split('/').includes(service.route)) || dataServices[0];
+    const ordered = [preferred, ...dataServices.filter(service => service !== preferred)];
+    function localizeDataOptions() {
+      const selected = dataServices.some(service => service.id === select.value) ? select.value : preferred.id;
+      select.replaceChildren(...ordered.map(service => {
+        const option = document.createElement('option');
+        option.value = service.id;
+        option.textContent = window.TempoI18n.t(service.label);
+        return option;
+      }));
+      select.value = selected;
+    }
+    localizeDataOptions();
+    document.addEventListener('tempo:languagechange', localizeDataOptions);
+  }
+
+  const dialogLabels = {
+    es: ['Solicitar orientación', 'Cerrar consulta'],
+    en: ['Request guidance', 'Close enquiry'],
+    pt: ['Solicitar orientação', 'Fechar consulta'],
+    fr: ['Demander conseil', 'Fermer la demande']
+  };
+  const existingDialog = form.closest('dialog');
+  if (existingDialog) existingDialog.classList.add('contact-popout', 'contact-page-form');
+
+  function installPopout() {
+    if (existingDialog || typeof HTMLDialogElement === 'undefined' ||
+        typeof HTMLDialogElement.prototype.showModal !== 'function') return;
+
+    const [title, closeLabel] = dialogLabels[language()] || dialogLabels.es;
+    const anchors = new Set(['#contact-form', '#contacto', '#consulta', '#contact', '#solicitar-orientacion', '#direct-contact-title']);
+    const inlineTrigger = document.createElement('button');
+    inlineTrigger.type = 'button';
+    inlineTrigger.className = 'button button-primary';
+    inlineTrigger.textContent = title;
+
+    const dialog = document.createElement('dialog');
+    dialog.id = 'contact-dialog';
+    dialog.className = 'site-dialog contact-popout contact-page-form';
+    dialog.setAttribute('aria-labelledby', 'contact-popout-title');
+    const heading = document.createElement('h2');
+    heading.id = 'contact-popout-title';
+    heading.textContent = title;
+    const close = document.createElement('button');
+    close.type = 'button';
+    close.className = 'close-dialog';
+    close.setAttribute('aria-label', closeLabel);
+    close.textContent = '×';
+    close.autofocus = true;
+    close.addEventListener('click', () => dialog.close());
+
+    function opensForm(link) {
+      if (!link) return false;
+      const target = new URL(link.href, document.baseURI);
+      if (target.origin === location.origin && target.pathname === location.pathname && anchors.has(target.hash)) {
+        // Section-index links still navigate between sections on the page.
+        return !link.closest('.tl-service-index');
+      }
+      return link.matches('[data-i18n="menuCta"]') &&
+        target.origin === location.origin && /\/contactanos\/(?:index\.html)?$/.test(target.pathname);
+    }
+
+    let opener;
+    function open(trigger) {
+      if (dialog.open) return;
+      opener = trigger;
+      dialog.showModal();
+      dialog.scrollTop = 0;
+    }
+
+    inlineTrigger.setAttribute('aria-haspopup', 'dialog');
+    inlineTrigger.setAttribute('aria-controls', dialog.id);
+    inlineTrigger.addEventListener('click', () => open(inlineTrigger));
+    document.querySelectorAll('a[href]').forEach(link => {
+      if (!opensForm(link)) return;
+      link.setAttribute('aria-haspopup', 'dialog');
+      link.setAttribute('aria-controls', dialog.id);
+    });
+    document.addEventListener('click', event => {
+      if (event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.altKey || event.shiftKey) return;
+      const trigger = event.target.closest?.('a[href]');
+      if (!opensForm(trigger)) return;
+      event.preventDefault();
+      open(trigger);
+    });
+    dialog.addEventListener('close', () => opener?.focus({ preventScroll: true }));
+    form.replaceWith(inlineTrigger);
+    dialog.append(heading, close, form, result);
+    document.body.append(dialog);
+  }
+
+  const embedded = window.parent !== window && new URLSearchParams(location.search).get('formulario') === 'modal';
+  if (embedded) {
+    const panel = form.closest('#solicitar-orientacion');
+    if (panel) {
+      panel.classList.add('contact-embedded-panel');
+      document.body.append(panel);
+      document.documentElement.classList.add('contact-embedded');
+      document.addEventListener('keydown', event => {
+        if (event.key === 'Escape') {
+          window.parent.postMessage('tempo:close-contact', location.protocol === 'file:' ? '*' : location.origin);
+        }
+      });
+    }
+  } else {
+    installPopout();
+  }
+
+
   function requestId() {
     if (typeof crypto.randomUUID === 'function') return crypto.randomUUID();
     const bytes = crypto.getRandomValues(new Uint8Array(16));
@@ -79,13 +195,13 @@
     const selectedOption = [...form.elements.servicio.options].find(option => option.value === data.servicio);
     prepared = {
       name: data.nombre.trim(), email: data.correo.trim(), company: (data.empresa || '').trim(),
-      phone: (data.telefono || '').trim(), message: data.mensaje.trim(), language: language(), service: selected?.id || (data.servicio === 'Radar legal empresarial' ? 'radar' : 'general'),
+      phone: (data.telefono || '').trim(), message: data.mensaje.trim(), language: language(), service: (form.dataset.serviceContext === 'data' && dataServices.find(service => service.id === data.servicio)?.id) || selected?.id || (data.servicio === 'Radar legal empresarial' ? 'radar' : form.dataset.serviceContext === 'data' ? 'data' : 'general'),
       requestId: requestId(), website: form.elements.website?.value || '', assessment
     };
     sent = false;
     consent.checked = false;
     const preview = summary || [text('name') + ': ' + prepared.name, text('email') + ': ' + prepared.email, text('company') + ': ' + prepared.company, text('service') + ': ' + (selectedOption?.textContent || ''), '', prepared.message].join('\n');
-    const phoneLine = prepared.phone ? '\n' + window.TempoI18n.t('phoneField') + ': ' + prepared.phone : '';
+    const phoneLine = prepared.phone ? '\n' + (form.elements.telefono?.labels?.[0]?.querySelector('span')?.textContent || window.TempoI18n.t('phoneField')) + ': ' + prepared.phone : '';
     const completePreview = preview + (phoneLine && !preview.includes(prepared.phone) ? phoneLine : '');
     review.textContent = completePreview;
     showStatus(available ? '' : 'unavailable');
@@ -97,13 +213,14 @@
       whatsapp.textContent = window.TempoI18n.t('continueWhatsapp');
       whatsapp.hidden = false;
       const emailLink = document.getElementById('contact-send-email');
-      emailLink.href = 'mailto:info@tempolegal.com?subject=' + encodeURIComponent('TempoLegal enquiry') + '&body=' + encodeURIComponent(completePreview);
+      emailLink.href = 'mailto:info@tempolegal.com,jag@tempolegal.com?subject=' + encodeURIComponent('TempoLegal enquiry') + '&body=' + encodeURIComponent(completePreview);
       emailLink.textContent = window.TempoI18n.t('openEmail');
       emailLink.hidden = false;
       form.hidden = true;
       result.hidden = false;
       result.querySelector('h3').tabIndex = -1;
       result.querySelector('h3').focus({ preventScroll: true });
+      result.closest('dialog')?.scrollTo(0, 0);
     }
   }
 
@@ -151,7 +268,8 @@
       prepare(data);
     });
     document.getElementById('edit-request').addEventListener('click', () => {
-      result.hidden = true; form.hidden = false; form.elements.nombre.focus();
+      result.hidden = true; form.hidden = false; form.elements.nombre.focus({ preventScroll: true });
+      form.closest('dialog')?.scrollTo(0, 0);
     });
     document.getElementById('download-request').hidden = true;
   }

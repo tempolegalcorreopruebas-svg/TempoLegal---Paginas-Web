@@ -16,7 +16,7 @@ final class ContactError extends RuntimeException
 final class ContactService
 {
     private const SERVICES = [
-        'general', 'data', 'corporate', 'incorporation', 'foreign', 'employment',
+        'general', 'data', 'data-dpo', 'data-lopdp', 'corporate', 'incorporation', 'foreign', 'employment',
         'accounting', 'ip', 'disputes', 'notarial', 'radar',
     ];
 
@@ -26,14 +26,13 @@ final class ContactService
 
     public function isConfigured(): bool
     {
-        foreach (['recipient', 'sender_email', 'smtp_username', 'smtp_password', 'smtp_host', 'app_secret'] as $key) {
+        foreach (['sender_email', 'smtp_username', 'smtp_password', 'smtp_host', 'app_secret'] as $key) {
             if (!is_string($this->config[$key] ?? null) || $this->config[$key] === '') {
                 return false;
             }
         }
         return ($this->config['enabled'] ?? false) === true
             && strlen($this->config['app_secret']) >= 32
-            && filter_var($this->config['recipient'], FILTER_VALIDATE_EMAIL) !== false
             && filter_var($this->config['sender_email'], FILTER_VALIDATE_EMAIL) !== false
             && in_array($this->config['smtp_encryption'] ?? '', ['smtps', 'starttls'], true)
             && in_array((int) ($this->config['smtp_port'] ?? 0), [465, 587], true);

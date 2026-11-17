@@ -5,19 +5,6 @@ const navigation=document.getElementById('navigation');
 menuButton.addEventListener('click',()=>{const open=menuButton.getAttribute('aria-expanded')==='true';menuButton.setAttribute('aria-expanded',String(!open));navigation.classList.toggle('is-open',!open);});
 navigation.addEventListener('click',e=>{if(e.target.closest('a')){navigation.classList.remove('is-open');menuButton.setAttribute('aria-expanded','false');}});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&navigation.classList.contains('is-open')){navigation.classList.remove('is-open');menuButton.setAttribute('aria-expanded','false');menuButton.focus();}});
-const form=document.getElementById('consulta');
-const status=document.getElementById('form-status');
-form.addEventListener('submit',e=>{
- e.preventDefault();
- const fields=[...form.querySelectorAll('input,select,textarea')];
- let firstInvalid=null;
- for(const field of fields){const valid=field.checkValidity()&&(!field.required||field.value.trim().length>0);field.setAttribute('aria-invalid',String(!valid));if(!valid&&!firstInvalid)firstInvalid=field;}
- if(firstInvalid){status.textContent='Revise los campos obligatorios e introduzca un correo válido.';firstInvalid.focus();return;}
- status.textContent='La consulta cumple la validación de esta maqueta. No se ha enviado ni almacenado información. Para contactar con TempoLegal utilice WhatsApp, correo o teléfono.';
-});
-form.querySelector('button[type=submit]').disabled=false;
-form.addEventListener('input',e=>{if(e.target.matches('input,select,textarea'))e.target.removeAttribute('aria-invalid');status.textContent='';});
-document.querySelectorAll('[data-need]').forEach(a=>a.addEventListener('click',()=>{form.elements.necesidad.value=a.dataset.need;}));
 
 // Explorador de entrega: navegación manual, teclado y lectura sin JavaScript.
 const deliveryTabs=[...document.querySelectorAll('[data-delivery]')];

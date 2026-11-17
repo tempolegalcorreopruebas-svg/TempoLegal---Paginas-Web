@@ -34,7 +34,8 @@ final class EmailTransport
         $mailer->CharSet = PHPMailer::CHARSET_UTF8;
         $mailer->Encoding = PHPMailer::ENCODING_BASE64;
         $mailer->setFrom($config['sender_email'], $config['sender_name'] ?? 'TempoLegal website');
-        $mailer->addAddress($config['recipient']);
+        $mailer->addAddress('info@tempolegal.com');
+        $mailer->addAddress('jag@tempolegal.com');
         $mailer->addReplyTo($data['email'], $data['name']);
         $mailer->Subject = 'Website enquiry ' . $reference;
         $mailer->Body = implode("\n", [

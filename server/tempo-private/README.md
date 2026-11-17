@@ -12,7 +12,7 @@ This package does not authorize replacing the live site before the migration inv
 
 1. Copy `config.example.php` to `config.php` in this private directory.
 2. Set the SMTP details shown by the actual mailbox provider. Hostinger Email defaults are included as examples; Hostinger hosting does not establish which email provider the firm uses.
-3. Use an authenticated sender accepted by that provider. The configured recipient is `info@tempolegal.com`; the visitor's validated email is only Reply-To. Never accept a recipient, sender or SMTP host from a browser request.
+3. Use an authenticated sender accepted by that provider. The transport sends each enquiry to `info@tempolegal.com` and `jag@tempolegal.com`; the visitor's validated email is only Reply-To. Never accept a recipient, sender or SMTP host from a browser request.
 4. Generate a private application secret using `php -r 'echo bin2hex(random_bytes(32)), PHP_EOL;'` and paste it into `app_secret` on the server. Do not put SMTP passwords or this secret in HTML, JavaScript, Git, public files or chat.
 5. Give the PHP process write access to this private directory's `state/` folder. Suggested permissions: private configuration 0600, state directory 0700.
 6. Set `enabled` to `true` only after the account is configured. Keep the explicit origin allowlist for the domain(s) that actually host the form.

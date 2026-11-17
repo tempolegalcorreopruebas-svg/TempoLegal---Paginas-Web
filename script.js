@@ -346,12 +346,12 @@
     let sendKey = 'continue', noteKey = 'unconfiguredNote';
     if (booking) { destination = booking;sendKey = 'selectTime';noteKey = 'bookingNote'; }
     else if (validPhone) { destination = `https://wa.me/${phone}?text=${encodeURIComponent(requestText)}`;sendKey = 'continueWhatsapp';noteKey = 'whatsappNote'; }
-    else if (email) { destination = `mailto:${email}?subject=${encodeURIComponent(t('enquiryLabel') + ' — ' + serviceName)}&body=${encodeURIComponent(requestText)}`;sendKey = 'openEmail';noteKey = 'emailNote'; }
+    else if (email) { destination = `mailto:info@tempolegal.com,jag@tempolegal.com?subject=${encodeURIComponent(t('enquiryLabel') + ' — ' + serviceName)}&body=${encodeURIComponent(requestText)}`;sendKey = 'openEmail';noteKey = 'emailNote'; }
     send.textContent = t(sendKey);$('#contact-result-note').textContent = t(noteKey);
     const emailAlternative = $('#contact-send-email');
     emailAlternative.hidden = !email || (!validPhone && !booking);
     emailAlternative.textContent = t('openEmail');
-    if(email){emailAlternative.href = `mailto:${email}?subject=${encodeURIComponent(t('enquiryLabel') + ' — ' + serviceName)}&body=${encodeURIComponent(requestText)}`;emailAlternative.target='_blank';emailAlternative.rel='noopener noreferrer';}
+    if(email){emailAlternative.href = `mailto:info@tempolegal.com,jag@tempolegal.com?subject=${encodeURIComponent(t('enquiryLabel') + ' — ' + serviceName)}&body=${encodeURIComponent(requestText)}`;emailAlternative.target='_blank';emailAlternative.rel='noopener noreferrer';}
     send.hidden = !destination;
     if (destination) { send.href = destination;send.target = '_blank';send.rel = 'noopener noreferrer'; }
     else send.removeAttribute('href');

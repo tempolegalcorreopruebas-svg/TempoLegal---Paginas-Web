@@ -161,6 +161,8 @@ def build(page: str) -> str:
     html = raw.replace('\r\n', '\n')
     lang, root, site, home = prefixes(page)
     contact = f'{site}contactanos/'
+    if page.removeprefix(f'{lang}/') == 'contactanos/index.html':
+        contact = '#solicitar-orientacion'
 
     if '/herramientas-lopdp/' in '/' + page:
         html = tool_page(html, page)

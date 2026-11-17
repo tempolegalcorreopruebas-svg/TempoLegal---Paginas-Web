@@ -13,7 +13,21 @@
     link.href = 'mailto:' + email;
   });
 
+  const facebookLinks = [...document.querySelectorAll(".site-footer .footer-channels")].map(channels => {
+    const existing = channels.querySelector("[data-footer-facebook]");
+    if (existing) return existing;
+    const link = document.createElement("a");
+    link.dataset.footerFacebook = "";
+    link.href = "https://www.facebook.com/tempolegalec/?locale=es_LA";
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.innerHTML = "<svg aria-hidden=\"true\" focusable=\"false\" fill=\"currentColor\" viewBox=\"0 0 24 24\"><path d=\"M14 21v-8h2.8l.4-3H14V8.2c0-.9.3-1.5 1.6-1.5h1.7V4.1A19 19 0 0 0 15 4c-2.5 0-4.2 1.5-4.2 4.1V10H8v3h2.8v8z\"></path></svg>";
+    channels.append(link);
+    return link;
+  });
+
   function updateFooter() {
+    facebookLinks.forEach(link => link.setAttribute("aria-label", language.t("footerFacebookLabel")));
     const whatsappLink = 'https://wa.me/' + whatsapp + '?text=' + encodeURIComponent(language.t('whatsappGreeting'));
     document.querySelectorAll('[data-company-whatsapp]').forEach(link => {
       link.href = whatsappLink;
@@ -143,4 +157,68 @@
   document.addEventListener('click', event => { if (!wrap.contains(event.target)) close(); });
   document.addEventListener('tempo:languagechange', render);
   render();
+})();
+
+
+// Pages without a local enquiry form open the shared Contact form in place.
+(() => {
+  const script = document.currentScript;
+  if (!script?.src || document.getElementById('contact-form') ||
+      typeof HTMLDialogElement === 'undefined' || !HTMLDialogElement.prototype.showModal) return;
+  const selector = 'a[data-i18n="menuCta"][href]';
+  const triggers = document.querySelectorAll(selector);
+  if (!triggers.length) return;
+
+  const root = new URL('./', script.src);
+  const style = document.createElement('link');
+  style.rel = 'stylesheet';
+  style.href = new URL('contact-form.css', root).href;
+  document.head.append(style);
+
+  const dialog = document.createElement('dialog');
+  dialog.id = 'shared-contact-dialog';
+  dialog.className = 'contact-popout contact-frame-dialog';
+  dialog.setAttribute('aria-labelledby', 'shared-contact-title');
+
+  const title = document.createElement('h2');
+  title.id = 'shared-contact-title';
+  const close = document.createElement('button');
+  close.type = 'button';
+  close.className = 'close-dialog';
+  close.autofocus = true;
+  close.textContent = '×';
+  close.addEventListener('click', () => dialog.close());
+
+  const frame = document.createElement('iframe');
+  dialog.append(title, close, frame);
+  document.body.append(dialog);
+  triggers.forEach(trigger => {
+    trigger.setAttribute('aria-haspopup', 'dialog');
+    trigger.setAttribute('aria-controls', dialog.id);
+  });
+
+  let opener;
+  document.addEventListener('click', event => {
+    if (event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.altKey || event.shiftKey) return;
+    const trigger = event.target.closest?.(selector);
+    if (!trigger || dialog.open) return;
+    event.preventDefault();
+
+    const lang = window.TempoI18n?.language || document.documentElement.lang;
+    const locale = ['en', 'pt', 'fr'].includes(lang) ? lang + '/' : '';
+    const target = new URL(locale + 'contactanos/index.html', root);
+    target.searchParams.set('formulario', 'modal');
+    const labels = { es: 'Cerrar consulta', en: 'Close enquiry', pt: 'Fechar consulta', fr: 'Fermer la demande' };
+    title.textContent = trigger.textContent.trim();
+    frame.title = title.textContent;
+    close.setAttribute('aria-label', labels[lang] || labels.es);
+    if (frame.getAttribute('src') !== target.href) frame.src = target.href;
+    opener = trigger;
+    dialog.showModal();
+  });
+  window.addEventListener('message', event => {
+    if (dialog.open && event.source === frame.contentWindow && event.origin === root.origin &&
+        event.data === 'tempo:close-contact') dialog.close();
+  });
+  dialog.addEventListener('close', () => opener?.focus({ preventScroll: true }));
 })();

@@ -9,7 +9,6 @@ return [
         'https://tempolegal.com',
         'https://pruebas.tempolegal.com',
     ],
-    'recipient' => 'info@tempolegal.com',
     'sender_email' => 'info@tempolegal.com',
     'sender_name' => 'TempoLegal website',
     'smtp_host' => 'smtp.hostinger.com',
