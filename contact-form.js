@@ -11,6 +11,7 @@
   const consent = document.getElementById('contact-privacy-accepted');
   const consentBlock = document.getElementById('contact-server-consent');
   const review = document.getElementById('contact-review');
+  const editButton = document.getElementById('edit-request');
   const translations = {
     es: { send: 'Enviar consulta por correo', sending: 'Enviando consulta...', consent: 'He leído la', policy: 'Política de privacidad', review: 'Revise los datos de su consulta', accepted: 'La consulta fue aceptada por el servidor de correo. Referencia: {reference}.', unavailable: 'El envío directo por correo no está disponible. Puede continuar por WhatsApp o abrir su correo.', invalid: 'Revise los datos de la consulta y vuelva a intentarlo.', privacy: 'Confirme que ha leído la información de privacidad antes de enviar.', limited: 'Ha realizado varias solicitudes. Espere unos minutos o utilice los otros canales de contacto.', uncertain: 'No pudimos confirmar el envío. Evite reenviar la misma solicitud y contáctenos por otro canal.', token: 'La sesión de envío expiró. Se ha renovado; vuelva a pulsar Enviar.', prepared: 'Consulta preparada', success: 'Consulta enviada', required: 'Complete este campo.', name: 'Nombre', email: 'Correo', company: 'Empresa', service: 'Servicio', message: 'Consulta', edit: 'Editar consulta', reviewButton: 'Revisar consulta' },
     en: { send: 'Send enquiry by email', sending: 'Sending enquiry...', consent: 'I have read the', policy: 'Privacy policy', review: 'Review your enquiry details', accepted: 'The mail server accepted the enquiry. Reference: {reference}.', unavailable: 'Direct email submission is unavailable. You can continue on WhatsApp or open your email app.', invalid: 'Review your enquiry details and try again.', privacy: 'Confirm that you have read the privacy information before sending.', limited: 'You have made several requests. Wait a few minutes or use another contact channel.', uncertain: 'We could not confirm delivery. Avoid resending the same request and contact us through another channel.', token: 'Your submission session expired and has been renewed. Press Send again.', prepared: 'Enquiry prepared', success: 'Enquiry sent', required: 'Complete this field.', name: 'Name', email: 'Email', company: 'Company', service: 'Service', message: 'Enquiry', edit: 'Edit enquiry', reviewButton: 'Review enquiry' },
@@ -18,6 +19,8 @@
     fr: { send: 'Envoyer la demande par courriel', sending: 'Envoi en cours...', consent: 'J’ai lu la', policy: 'Politique de confidentialité', review: 'Vérifiez les informations de votre demande', accepted: 'Le serveur de messagerie a accepté la demande. Référence : {reference}.', unavailable: 'L’envoi direct est indisponible. Vous pouvez utiliser WhatsApp ou votre messagerie.', invalid: 'Vérifiez les informations de votre demande et réessayez.', privacy: 'Confirmez avoir lu les informations de confidentialité avant l’envoi.', limited: 'Vous avez effectué plusieurs demandes. Patientez quelques minutes ou utilisez un autre moyen de contact.', uncertain: 'Nous n’avons pas pu confirmer l’envoi. Évitez de renvoyer la même demande et utilisez un autre canal.', token: 'Votre session d’envoi a expiré et a été renouvelée. Cliquez à nouveau sur Envoyer.', prepared: 'Demande préparée', success: 'Demande envoyée', required: 'Remplissez ce champ.', name: 'Nom', email: 'Courriel', company: 'Entreprise', service: 'Service', message: 'Demande', edit: 'Modifier la demande', reviewButton: 'Vérifier la demande' }
   };
   let prepared = null;
+  const requestIds = new Map();
+  const acceptedRequests = new Set();
   const localPreviewCopy = {
     es: 'El envío directo requiere abrir el sitio publicado con HTTPS. Desde este archivo local puede continuar por WhatsApp o abrir su aplicación de correo.',
     en: 'Direct submission requires the published HTTPS site. From this local file, you can continue on WhatsApp or open your email app.',
@@ -171,6 +174,9 @@
   function render() {
     sendButton.hidden = !prepared || sent;
     sendButton.disabled = busy || sent;
+    editButton.disabled = busy;
+    consent.disabled = busy;
+    result.setAttribute('aria-busy', String(busy));
     sendButton.textContent = text(busy ? 'sending' : 'send');
     consentBlock.hidden = !prepared || sent;
     consentBlock.querySelector('span').textContent = text('consent');
@@ -194,19 +200,26 @@
       const data = await response.json();
       available = response.ok && data.available === true && typeof data.token === 'string';
       token = available ? data.token : '';
-    } catch (_) { available = false; }
+    } catch (_) {
+      available = false;
+      token = '';
+    }
     render();
     return available;
   }
 
   function prepare(data, summary, assessment = '') {
+    if (busy) return;
     const selected = originalServices().find(item => item.formValue === data.servicio);
     const selectedOption = [...form.elements.servicio.options].find(option => option.value === data.servicio);
-    prepared = {
+    const payload = {
       name: data.nombre.trim(), email: data.correo.trim(), company: (data.empresa || '').trim(),
       phone: (data.telefono || '').trim(), message: data.mensaje.trim(), language: language(), service: (form.dataset.serviceContext === 'data' && dataServices.find(service => service.id === data.servicio)?.id) || selected?.id || (data.servicio === 'Radar legal empresarial' ? 'radar' : form.dataset.serviceContext === 'data' ? 'data' : 'general'),
-      requestId: requestId(), website: form.elements.website?.value || '', assessment
+      website: form.elements.website?.value || '', assessment
     };
+    const fingerprint = JSON.stringify(payload);
+    if (!requestIds.has(fingerprint)) requestIds.set(fingerprint, requestId());
+    prepared = { ...payload, requestId: requestIds.get(fingerprint) };
     sent = false;
     consent.checked = false;
     const preview = summary || [text('name') + ': ' + prepared.name, text('email') + ': ' + prepared.email, text('company') + ': ' + prepared.company, text('service') + ': ' + (selectedOption?.textContent || ''), '', prepared.message].join('\n');
@@ -258,7 +271,10 @@
         sent = true;
         reference = data.reference;
         showStatus('accepted');
+        if (!acceptedRequests.has(prepared.requestId)) {
+        acceptedRequests.add(prepared.requestId);
         document.dispatchEvent(new CustomEvent('tempo:formaccepted', { detail: { requestId: prepared.requestId } }));
+      }
         document.getElementById('contact-send').hidden = true;
         document.getElementById('contact-send-email').hidden = true;
       } else if (data.code === 'csrf_expired') {
@@ -275,12 +291,14 @@
   if (form.dataset.directInquiry !== undefined) {
     form.addEventListener('submit', event => {
       event.preventDefault();
+      if (busy) return;
       [...form.querySelectorAll('input:not([name=website]),textarea')].forEach(field => { field.value = field.value.trim(); });
       if (!form.reportValidity()) return;
       const data = Object.fromEntries(new FormData(form).entries());
       prepare(data);
     });
-    document.getElementById('edit-request').addEventListener('click', () => {
+    editButton.addEventListener('click', () => {
+      if (busy) return;
       result.hidden = true; form.hidden = false; form.elements.nombre.focus({ preventScroll: true });
       form.closest('dialog')?.scrollTo(0, 0);
     });

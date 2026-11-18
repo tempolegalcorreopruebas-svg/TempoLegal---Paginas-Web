@@ -376,7 +376,13 @@
     prepareRequest();
     form.hidden = true;$('#contact-result').hidden = false;$('#contact-result h3').tabIndex = -1;$('#contact-result h3').focus({preventScroll:true});
   });
-  $('#edit-request').addEventListener('click', () => { $('#contact-result').hidden = true;form.hidden = false;form.elements.nombre.focus(); });
+  $('#edit-request').addEventListener('click', event => {
+    if (event.currentTarget.disabled) return;
+    $('#contact-result').hidden = true;
+    form.hidden = false;
+    form.elements.nombre.focus({ preventScroll: true });
+    form.closest('dialog')?.scrollTo(0, 0);
+  });
   $('#download-request').addEventListener('click', () => {
     const url = URL.createObjectURL(new Blob(['\uFEFF' + requestText],{type:'text/plain;charset=utf-8'}));
     const link = document.createElement('a');link.href = url;link.download = `TempoLegal-${I18n.language}.txt`;
@@ -397,11 +403,14 @@
     $('.menu-toggle .sr-only').textContent = t(menuButton.getAttribute('aria-expanded') === 'true' ? 'menuClose' : 'menuOpen');
     updateContactCopy();
     fields.forEach(field => field.setCustomValidity(''));
-    if (!$('#contact-result').hidden) prepareRequest();
     requestScrollUpdate();
   });
   updateContactCopy();
   function openInquiry(service) {
+    if ($('#contact-result').getAttribute('aria-busy') === 'true') {
+      openDialog('contact-dialog');
+      return;
+    }
     if(service)form.elements.servicio.value=service;
     form.hidden=false;$('#contact-result').hidden=true;
     openDialog('contact-dialog');
