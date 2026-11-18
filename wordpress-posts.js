@@ -69,13 +69,13 @@
     const bySlug = new Map(posts.map((post) => [post.slug, post]));
     if (language !== "es") articleUrl.searchParams.set("lang", language);
 
-    for (const original of posts) {
-      const sourceSlug = original.slug?.replace(/-(?:en|pt|fr)$/, "");
-      if (sourceSlug !== original.slug && bySlug.has(sourceSlug)) continue;
-      const translation = language === "es" ? null : bySlug.get(original.slug + "-" + language);
-      const post = translation || original;
-      const contentLanguage = translation ? language : "es";
-      if (!post.slug || displayedSlugs.has(post.slug)) continue;
+    for (const entry of posts) {
+      const baseSlug = entry.slug.replace(/-(?:en|pt|fr)$/, "");
+      if (displayedSlugs.has(baseSlug)) continue;
+      const original = bySlug.get(baseSlug);
+      const translation = language === "es" ? null : bySlug.get(baseSlug + "-" + language);
+      const post = translation || original || entry;
+      const contentLanguage = post.slug.match(/-(en|pt|fr)$/)?.[1] || "es";
       if (!directory && displayedSlugs.size === 3) break;
 
       const card = template.content.firstElementChild.cloneNode(true);
@@ -91,11 +91,11 @@
       titleElement.textContent = title;
       titleElement.lang = contentLanguage;
       card.querySelector("p").lang = contentLanguage;
-      const excerpt = toText(post.excerpt.rendered);
+      const excerpt = toText(post.excerpt?.rendered);
       card.querySelector("p").textContent = directory
         ? excerpt
         : excerpt.split(/\s+(?:Actualizado|Autor|Revisado por|Aprobado por):/i, 1)[0];
-      articleUrl.searchParams.set("slug", original.slug);
+      articleUrl.searchParams.set("slug", original ? baseSlug : post.slug);
       card.querySelectorAll("a").forEach((link) => {
         link.href = articleUrl.href;
       });
@@ -116,7 +116,7 @@
       }
 
       fragment.appendChild(card);
-      displayedSlugs.add(post.slug);
+      displayedSlugs.add(baseSlug);
     }
 
     grid.replaceChildren(fragment);
@@ -128,6 +128,8 @@
   async function loadPage() {
     if (pending || !hasMore) return;
     pending = true;
+    const hadFocus = document.activeElement === more;
+    const previousCount = grid.children.length;
     more.disabled = true;
     if (!more.hidden) more.textContent = loadingLabel;
     try {
@@ -143,9 +145,11 @@
         return;
       }
       if (!Array.isArray(batch)) throw new Error("Invalid WordPress response");
-      posts.push(...batch);
+      const validPosts = batch.filter(post => typeof post?.slug === "string" && post.slug &&
+        typeof post.title?.rendered === "string");
+      posts.push(...validPosts);
       const total = Number.parseInt(response.headers.get("X-WP-TotalPages"), 10);
-      hasMore = Number.isFinite(total) ? page < total : batch.length === pageSize;
+      hasMore = batch.length > 0 && (Number.isFinite(total) ? page < total : batch.length === pageSize);
       page += 1;
       const shown = render();
       if (!directory && shown >= 3) hasMore = false;
@@ -159,6 +163,12 @@
       pending = false;
       more.disabled = false;
       more.hidden = !hasMore;
+      if (hadFocus && (document.activeElement === more || document.activeElement === document.body)) {
+        const next = grid.children[previousCount]?.querySelector(directory ? "h2 a" : "a[href]");
+        if (next) next.focus();
+        else if (hasMore) more.focus({ preventScroll: true });
+        else grid.lastElementChild?.querySelector("a[href]")?.focus({ preventScroll: true });
+      }
     }
   }
 

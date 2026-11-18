@@ -29,6 +29,11 @@
     back.textContent = backLabel;
     back.href = language === "es" ? "../publicaciones/index.html" : "../" + language + "/publicaciones/index.html";
   }
+  const contact = document.querySelector("[data-article-contact]");
+  if (contact) {
+    const locale = language === "es" ? "" : language + "/";
+    contact.href = "../" + locale + "contactanos/index.html#solicitar-orientacion";
+  }
   const indexTitle = document.getElementById("article-index-title");
   if (indexTitle) indexTitle.textContent = tocTitle;
 
@@ -68,9 +73,15 @@
       return posts[0];
     }
 
-    const translated = language === "es" ? null : await fetchPost(slug + "-" + language);
-    const post = translated || await fetchPost(slug);
-    const contentLanguage = translated ? language : "es";
+    const baseSlug = slug.replace(/-(?:en|pt|fr)$/, "");
+    const preferredSlug = language === "es" ? baseSlug : baseSlug + "-" + language;
+    const candidates = new Set([preferredSlug, baseSlug, slug]);
+    let post;
+    for (const candidate of candidates) {
+      post = await fetchPost(candidate);
+      if (post) break;
+    }
+    const contentLanguage = post?.slug?.match(/-(en|pt|fr)$/)?.[1] || "es";
 
     if (!post) {
       titleElement.textContent = notFound;
@@ -106,7 +117,7 @@
     contentSection.innerHTML = post.content.rendered;
 
     storyElement.replaceChildren();
-    if (!translated && fallback) {
+    if (contentLanguage === "es" && language !== "es" && fallback) {
       const notice = document.createElement("p");
       notice.textContent = fallback;
       storyElement.appendChild(notice);
