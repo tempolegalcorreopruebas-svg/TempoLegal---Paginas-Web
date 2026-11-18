@@ -190,9 +190,35 @@
   close.addEventListener('click', () => dialog.close());
 
   const frame = document.createElement('iframe');
-  dialog.append(title, close, frame);
+  const loading = document.createElement('p');
+  loading.className = 'contact-frame-loading';
+  loading.setAttribute('role', 'status');
+  frame.addEventListener('load', () => {
+    if (!frame.hasAttribute('src')) return;
+    frame.style.visibility = '';
+    loading.hidden = true;
+  });
+  dialog.append(title, close, loading, frame);
   document.body.append(dialog);
+
+  function loadForm() {
+    const current = window.TempoI18n?.language || document.documentElement.lang;
+    const lang = ['en', 'pt', 'fr'].includes(current) ? current : 'es';
+    const target = new URL('contactanos/formulario.html', root);
+    target.searchParams.set('lang', lang);
+    if (frame.getAttribute('src') === target.href) return lang;
+
+    const messages = { es: 'Cargando formulario…', en: 'Loading form…', pt: 'Carregando formulário…', fr: 'Chargement du formulaire…' };
+    loading.textContent = messages[lang];
+    loading.hidden = false;
+    frame.style.visibility = 'hidden';
+    frame.src = target.href;
+    return lang;
+  }
+
   triggers.forEach(trigger => {
+    trigger.addEventListener('pointerenter', loadForm);
+    trigger.addEventListener('focus', loadForm);
     trigger.setAttribute('aria-haspopup', 'dialog');
     trigger.setAttribute('aria-controls', dialog.id);
   });
@@ -204,15 +230,11 @@
     if (!trigger || dialog.open) return;
     event.preventDefault();
 
-    const lang = window.TempoI18n?.language || document.documentElement.lang;
-    const locale = ['en', 'pt', 'fr'].includes(lang) ? lang + '/' : '';
-    const target = new URL(locale + 'contactanos/index.html', root);
-    target.searchParams.set('formulario', 'modal');
+    const lang = loadForm();
     const labels = { es: 'Cerrar consulta', en: 'Close enquiry', pt: 'Fechar consulta', fr: 'Fermer la demande' };
     title.textContent = trigger.textContent.trim();
     frame.title = title.textContent;
     close.setAttribute('aria-label', labels[lang] || labels.es);
-    if (frame.getAttribute('src') !== target.href) frame.src = target.href;
     opener = trigger;
     dialog.showModal();
   });

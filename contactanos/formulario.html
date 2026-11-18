@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es" class="contact-embedded">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <title>TempoLegal</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../contact-form.css">
+  <script defer src="../local-navigation.js"></script>
+  <script defer src="../content.js"></script>
+  <script defer src="../i18n.js"></script>
+  <script defer src="../contact-form.js"></script>
+</head>
+<body>
+<section aria-labelledby="direct-contact-title" class="contact-page-form contact-embedded-panel" id="solicitar-orientacion"><h2 id="direct-contact-title">Preparemos su consulta.</h2><form action="../api/contact.php" data-direct-inquiry="" data-endpoint="../api/contact.php" id="contact-form" method="post">
+<div class="form-row"><label><span data-i18n="name">Nombre</span><input autocomplete="name" data-i18n-placeholder="namePlaceholder" maxlength="120" minlength="2" name="nombre" placeholder="Su nombre" required=""/></label><label><span data-i18n="email">Correo electrónico</span><input autocomplete="email" data-i18n-placeholder="emailPlaceholder" maxlength="180" name="correo" placeholder="nombre@empresa.com" required="" type="email"/></label></div>
+<label><span data-i18n="company">Empresa o proyecto</span><input autocomplete="organization" data-i18n-placeholder="companyPlaceholder" maxlength="160" name="empresa" placeholder="Nombre de su empresa"/></label><label><span data-i18n="service">Área de consulta</span><select name="servicio">
+<option data-i18n="businessAdvice" value="Asesoría empresarial">Asesoría empresarial</option>
+<option data-i18n="serviceLabel_data" value="Protección de datos">Protección de datos y DPD externo</option>
+<option data-i18n="serviceLabel_corporate" value="Corporativo">Derecho corporativo y societario</option>
+<option data-i18n="serviceLabel_incorporation" value="Constitución de empresas">Constitución de empresas SAS</option>
+<option data-i18n="serviceLabel_foreign" value="Empresas extranjeras">Empresas extranjeras en Ecuador</option>
+<option data-i18n="serviceLabel_employment" value="Derecho laboral">Derecho laboral empresarial</option>
+<option data-i18n="serviceLabel_accounting" value="Contabilidad y tributario">Soporte contable y tributario</option>
+<option data-i18n="serviceLabel_ip" value="Marcas y propiedad intelectual">Marcas y propiedad intelectual</option>
+<option data-i18n="serviceLabel_disputes" value="Recuperación de cartera">Recuperación de cartera y litigios</option>
+<option data-i18n="serviceLabel_notarial" value="Trámites notariales">Trámites notariales y societarios</option>
+<option data-i18n="radarEyebrow" value="Radar legal empresarial">Radar legal empresarial</option>
+</select></label><label><span data-i18n="message">¿En qué podemos ayudarle?</span><textarea data-i18n-placeholder="messagePlaceholder" maxlength="3000" minlength="10" name="mensaje" placeholder="Cuéntenos brevemente qué necesita." required="" rows="3"></textarea></label>
+<p class="form-note" data-i18n="contactLocalNote" id="contact-note">La solicitud se prepara en su dispositivo. Aún no se envía a la firma.</p>
+<p class="form-privacy"><span data-i18n="contactProcessingPurpose">Usaremos sus datos para responder su solicitud y coordinar la reunión. Más información en la </span><a data-i18n="privacyLink" data-privacy-link="" href="../politica-de-privacidad/index.html" rel="noopener noreferrer" target="_blank">Privacidad</a><span data-i18n="contactNoMarketing">. Enviar este formulario no le obliga a contratar ni le suscribe a publicidad.</span></p><button class="button button-primary" id="contact-submit" type="submit"><span data-i18n="prepare">Preparar consulta</span><span aria-hidden="true">↗</span></button>
+<label aria-hidden="true" class="contact-honeypot">Website<input autocomplete="off" name="website" tabindex="-1"/></label></form><div hidden="" id="contact-result">
+<p class="eyebrow" data-i18n="prepared">Consulta preparada</p>
+<h3 data-i18n="nextStep">Su próximo paso,<br/>con claridad.</h3>
+<p id="contact-result-note"></p>
+<p class="contact-review-label" id="contact-review-label"></p><pre aria-labelledby="contact-review-label" class="contact-review" id="contact-review"></pre><label class="contact-consent" hidden="" id="contact-server-consent"><input id="contact-privacy-accepted" type="checkbox"/><div><span></span> <a href="../politica-de-privacidad/index.html" rel="noopener noreferrer" target="_blank"></a></div></label><p aria-live="polite" class="contact-delivery-status" hidden="" id="contact-delivery-status" role="status"></p><div class="result-actions"><button class="button button-primary" hidden="" id="contact-send-server" type="button"></button><a class="button button-primary" data-i18n="continue" hidden="" id="contact-send">Continuar</a><a class="button button-outline" data-i18n="openEmail" hidden="hidden" id="contact-send-email">Abrir correo ↗</a><button class="button button-outline" data-i18n="download" id="download-request">Descargar solicitud</button></div><button class="text-link" data-i18n="edit" id="edit-request">Editar consulta</button>
+</div></section>
+</body>
+</html>

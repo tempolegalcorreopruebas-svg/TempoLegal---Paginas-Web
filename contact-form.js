@@ -136,15 +136,23 @@
     document.body.append(dialog);
   }
 
-  const embedded = window.parent !== window && new URLSearchParams(location.search).get('formulario') === 'modal';
+  const standaloneForm = document.documentElement.classList?.contains('contact-embedded');
+  const embedded = standaloneForm ||
+    (window.parent !== window && new URLSearchParams(location.search).get('formulario') === 'modal');
   if (embedded) {
     const panel = form.closest('#solicitar-orientacion');
     if (panel) {
+      if (standaloneForm) {
+        const locale = ['en', 'pt', 'fr'].includes(language()) ? language() + '/' : '';
+        panel.querySelectorAll('a[href*="politica-de-privacidad"]').forEach(link => {
+          link.href = '../' + locale + 'politica-de-privacidad/index.html';
+        });
+      }
       panel.classList.add('contact-embedded-panel');
       document.body.append(panel);
       document.documentElement.classList.add('contact-embedded');
       document.addEventListener('keydown', event => {
-        if (event.key === 'Escape') {
+        if (event.key === 'Escape' && window.parent !== window) {
           window.parent.postMessage('tempo:close-contact', location.protocol === 'file:' ? '*' : location.origin);
         }
       });

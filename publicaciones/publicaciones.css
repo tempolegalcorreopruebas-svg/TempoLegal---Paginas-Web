@@ -23,3 +23,5 @@
   .publication-entry{grid-template-columns:1fr;gap:14px}
   .publication-entry>.text-link{grid-column:1}
 }
+
+.wordpress-load-more{margin-block:24px 0}

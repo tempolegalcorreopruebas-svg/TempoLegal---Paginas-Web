@@ -1,6 +1,6 @@
 
 (async function loadWordPressArticle() {
-  const apiBase = "http://localhost/blogTempolegal/wp-json/wp/v2/posts";
+  const apiBase = new URL(window.TEMPO_CONFIG?.wordpressPostsUrl || "/wp-json/wp/v2/posts", document.baseURI);
 
   const params = new URLSearchParams(window.location.search);
   const slug = params.get("slug");
@@ -18,10 +18,10 @@
   })));
 
   const labels = {
-    es: ["Cargando artículo…", "Consultando WordPress…", "Artículo no seleccionado", "Regresa a Publicaciones y selecciona un artículo.", "Artículo no encontrado", "Esta publicación no está disponible.", "No se pudo cargar el artículo", "Comprueba que WAMP esté encendido y vuelve a intentarlo.", "", "En esta lectura", "Volver a Publicaciones"],
-    en: ["Loading article…", "Connecting to WordPress…", "No article selected", "Go back to Publications and select an article.", "Article not found", "This publication is unavailable.", "Could not load the article", "Check that WAMP is running and try again.", "This article is currently available in Spanish.", "In this article", "Back to Publications"],
-    pt: ["Carregando artigo…", "Consultando o WordPress…", "Nenhum artigo selecionado", "Volte a Publicações e selecione um artigo.", "Artigo não encontrado", "Esta publicação está indisponível.", "Não foi possível carregar o artigo", "Verifique se o WAMP está em execução e tente novamente.", "Este artigo está disponível em espanhol.", "Neste artigo", "Voltar para Publicações"],
-    fr: ["Chargement de l’article…", "Connexion à WordPress…", "Aucun article sélectionné", "Retournez aux publications et sélectionnez un article.", "Article introuvable", "Cette publication est indisponible.", "Impossible de charger l’article", "Vérifiez que WAMP est démarré, puis réessayez.", "Cet article est actuellement disponible en espagnol.", "Dans cet article", "Retour aux publications"]
+    es: ["Cargando artículo…", "Consultando WordPress…", "Artículo no seleccionado", "Regresa a Publicaciones y selecciona un artículo.", "Artículo no encontrado", "Esta publicación no está disponible.", "No se pudo cargar el artículo", "Vuelve a intentarlo en unos minutos.", "", "En esta lectura", "Volver a Publicaciones"],
+    en: ["Loading article…", "Connecting to WordPress…", "No article selected", "Go back to Publications and select an article.", "Article not found", "This publication is unavailable.", "Could not load the article", "Please try again in a few minutes.", "This article is currently available in Spanish.", "In this article", "Back to Publications"],
+    pt: ["Carregando artigo…", "Consultando o WordPress…", "Nenhum artigo selecionado", "Volte a Publicações e selecione um artigo.", "Artigo não encontrado", "Esta publicação está indisponível.", "Não foi possível carregar o artigo", "Tente novamente em alguns minutos.", "Este artigo está disponível em espanhol.", "Neste artigo", "Voltar para Publicações"],
+    fr: ["Chargement de l’article…", "Connexion à WordPress…", "Aucun article sélectionné", "Retournez aux publications et sélectionnez un article.", "Article introuvable", "Cette publication est indisponible.", "Impossible de charger l’article", "Réessayez dans quelques minutes.", "Cet article est actuellement disponible en espagnol.", "Dans cet article", "Retour aux publications"]
   };
   const [loading, connecting, noSelection, selectArticle, notFound, unavailable, failed, retry, fallback, tocTitle, backLabel] = labels[language];
   const back = document.querySelector(".article-breadcrumb");
@@ -62,7 +62,7 @@
       const apiUrl = new URL(apiBase);
       apiUrl.searchParams.set("slug", postSlug);
       apiUrl.searchParams.set("_embed", "1");
-      const response = await fetch(apiUrl);
+      const response = await fetch(apiUrl, { signal: AbortSignal.timeout(8000) });
       if (!response.ok) throw new Error("HTTP " + response.status);
       const posts = await response.json();
       return posts[0];

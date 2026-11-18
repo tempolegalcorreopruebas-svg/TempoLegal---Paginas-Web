@@ -229,3 +229,11 @@ dialog.contact-popout > h2 {
   border: 1px solid var(--form-teal);
   border-radius: 12px;
 }
+
+.contact-frame-loading {
+  position: absolute;
+  inset: 50% 16px auto;
+  margin: 0;
+  text-align: center;
+  color: var(--muted, #566268);
+}

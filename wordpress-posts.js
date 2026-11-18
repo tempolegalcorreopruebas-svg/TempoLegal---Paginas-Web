@@ -6,9 +6,9 @@
 
   if (!grid || !template || !status) return;
 
-  const apiUrl = new URL("http://localhost/blogTempolegal/wp-json/wp/v2/posts");
-  apiUrl.searchParams.set("_embed", "1");
-  apiUrl.searchParams.set("per_page", "20");
+  const apiUrl = new URL(window.TEMPO_CONFIG?.wordpressPostsUrl || "/wp-json/wp/v2/posts", document.baseURI);
+  apiUrl.searchParams.set("_embed", directory ? "wp:featuredmedia" : "wp:featuredmedia,wp:term");
+  apiUrl.searchParams.set("_fields", "slug,title,excerpt,_links,_embedded");
 
   const articleUrl = new URL("articulo-wordpress/index.html", document.currentScript.src);
   const language = document.documentElement.lang.split("-")[0];
@@ -42,20 +42,27 @@
     return textTemplate.content.textContent.trim();
   };
 
-  try {
-    const response = await fetch(apiUrl);
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  const posts = [];
+  const pageSize = 20;
+  apiUrl.searchParams.set("per_page", String(pageSize));
+  let page = 1;
+  let pending = false;
+  let hasMore = true;
 
-    const posts = await response.json();
-    const totalPages = Number(response.headers.get("X-WP-TotalPages"));
+  const labelsByAction = {
+    es: ["Cargando publicaciones…", "Cargar más publicaciones", "Reintentar"],
+    en: ["Loading publications…", "Load more publications", "Try again"],
+    pt: ["Carregando publicações…", "Carregar mais publicações", "Tentar novamente"],
+    fr: ["Chargement des publications…", "Charger plus de publications", "Réessayer"]
+  };
+  const [loadingLabel, moreLabel, retryLabel] = labelsByAction[language] || labelsByAction.es;
+  const more = document.createElement("button");
+  more.type = "button";
+  more.className = "button button-outline wordpress-load-more";
+  more.hidden = true;
+  grid.after(more);
 
-    for (let page = 2; page <= totalPages; page += 1) {
-      apiUrl.searchParams.set("page", String(page));
-      const next = await fetch(apiUrl);
-      if (!next.ok) throw new Error(`HTTP ${next.status}`);
-      posts.push(...await next.json());
-    }
-
+  function render() {
     const fragment = document.createDocumentFragment();
     const displayedSlugs = new Set();
 
@@ -115,8 +122,46 @@
     grid.replaceChildren(fragment);
     status.textContent = displayedSlugs.size ? "" : copy.empty;
     status.hidden = displayedSlugs.size > 0;
-  } catch (error) {
-    console.error("WordPress connection failed:", error);
-    status.textContent = copy.error;
+    return displayedSlugs.size;
   }
+
+  async function loadPage() {
+    if (pending || !hasMore) return;
+    pending = true;
+    more.disabled = true;
+    if (!more.hidden) more.textContent = loadingLabel;
+    try {
+      apiUrl.searchParams.set("page", String(page));
+      const response = await fetch(apiUrl, { signal: AbortSignal.timeout(8000) });
+      const batch = await response.json();
+      if (!response.ok) {
+        if (page === 1 || batch?.code !== "rest_post_invalid_page_number") {
+          throw new Error("HTTP " + response.status);
+        }
+        hasMore = false;
+        status.hidden = true;
+        return;
+      }
+      if (!Array.isArray(batch)) throw new Error("Invalid WordPress response");
+      posts.push(...batch);
+      const total = Number.parseInt(response.headers.get("X-WP-TotalPages"), 10);
+      hasMore = Number.isFinite(total) ? page < total : batch.length === pageSize;
+      page += 1;
+      const shown = render();
+      if (!directory && shown >= 3) hasMore = false;
+      more.textContent = moreLabel;
+    } catch (error) {
+      console.error("WordPress connection failed:", error);
+      status.textContent = copy.error;
+      status.hidden = false;
+      more.textContent = retryLabel;
+    } finally {
+      pending = false;
+      more.disabled = false;
+      more.hidden = !hasMore;
+    }
+  }
+
+  more.addEventListener("click", loadPage);
+  await loadPage();
 })();
